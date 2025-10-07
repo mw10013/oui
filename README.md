@@ -6,10 +6,9 @@
 ## TODO
 
 - tooltip
-- registry recon component prompt: handle shadcn new-york
+- code
 - registry:build: delete r/\*
 - tags
-- code
 - search
 - index
 - browser console.log errors
