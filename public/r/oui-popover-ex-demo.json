@@ -3,11 +3,11 @@
   "name": "oui-popover-ex-demo",
   "type": "registry:component",
   "registryDependencies": [
-    "https://oui-production.mw10013.workers.dev/r/oui-button.json",
-    "https://oui-production.mw10013.workers.dev/r/oui-dialog.json",
-    "https://oui-production.mw10013.workers.dev/r/oui-heading.json",
-    "https://oui-production.mw10013.workers.dev/r/oui-popover-ex.json",
-    "https://oui-production.mw10013.workers.dev/r/oui-text-field-ex-horizontal.json"
+    "https://oui.mw10013.workers.dev/r/oui-button.json",
+    "https://oui.mw10013.workers.dev/r/oui-dialog.json",
+    "https://oui.mw10013.workers.dev/r/oui-heading.json",
+    "https://oui.mw10013.workers.dev/r/oui-popover-ex.json",
+    "https://oui.mw10013.workers.dev/r/oui-text-field-ex-horizontal.json"
   ],
   "files": [
     {

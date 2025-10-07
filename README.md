@@ -1,7 +1,7 @@
 # Oui
 
 - React Aria Components with Shadcn characteristics
-- https://oui-production.mw10013.workers.dev
+- https://oui.mw10013.workers.dev
 
 ## TODO
 
@@ -24,7 +24,7 @@
 ## Deploy
 
 - pnpm deploy:PRODUCTION
-- Workers & Pages Settings: <WRANGLER_NAME>-production
+- Workers & Pages Settings: <WRANGLER_NAME>
   - Git repository: connect to git repo
   - Build configuration
     - Build command: CLOUDFLARE_ENV=production pnpm build

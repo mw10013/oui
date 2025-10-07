@@ -4,7 +4,7 @@
  */
 {
   "$schema": "./node_modules/wrangler/config-schema.json",
-  "name": "oui",
+  "name": "oui-local",
   "main": "./workers/app.ts",
   "compatibility_date": "2025-06-04",
   "observability": {
@@ -19,6 +19,7 @@
   },
   "env": {
     "production": {
+      "name": "oui",
       "observability": {
         "enabled": true,
         "logs": {

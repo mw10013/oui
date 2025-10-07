@@ -3,8 +3,8 @@
   "name": "oui-slider-ex",
   "type": "registry:component",
   "registryDependencies": [
-    "https://oui-production.mw10013.workers.dev/r/oui-label.json",
-    "https://oui-production.mw10013.workers.dev/r/oui-slider.json"
+    "https://oui.mw10013.workers.dev/r/oui-label.json",
+    "https://oui.mw10013.workers.dev/r/oui-slider.json"
   ],
   "files": [
     {

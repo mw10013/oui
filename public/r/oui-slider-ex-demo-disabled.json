@@ -3,7 +3,7 @@
   "name": "oui-slider-ex-demo-disabled",
   "type": "registry:component",
   "registryDependencies": [
-    "https://oui-production.mw10013.workers.dev/r/oui-slider-ex.json"
+    "https://oui.mw10013.workers.dev/r/oui-slider-ex.json"
   ],
   "files": [
     {

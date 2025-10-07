@@ -3,7 +3,7 @@
   "name": "oui-table-demo",
   "type": "registry:component",
   "registryDependencies": [
-    "https://oui-production.mw10013.workers.dev/r/oui-table.json"
+    "https://oui.mw10013.workers.dev/r/oui-table.json"
   ],
   "files": [
     {

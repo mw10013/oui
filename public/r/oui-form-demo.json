@@ -3,18 +3,18 @@
   "name": "oui-form-demo",
   "type": "registry:component",
   "registryDependencies": [
-    "https://oui-production.mw10013.workers.dev/r/oui-button.json",
-    "https://oui-production.mw10013.workers.dev/r/oui-checkbox-ex.json",
-    "https://oui-production.mw10013.workers.dev/r/oui-checkbox-group-ex.json",
-    "https://oui-production.mw10013.workers.dev/r/oui-checkbox.json",
-    "https://oui-production.mw10013.workers.dev/r/oui-form.json",
-    "https://oui-production.mw10013.workers.dev/r/oui-list-box.json",
-    "https://oui-production.mw10013.workers.dev/r/oui-radio-group-ex.json",
-    "https://oui-production.mw10013.workers.dev/r/oui-radio-group.json",
-    "https://oui-production.mw10013.workers.dev/r/oui-select-ex.json",
-    "https://oui-production.mw10013.workers.dev/r/oui-switch-ex.json",
-    "https://oui-production.mw10013.workers.dev/r/oui-text-area.json",
-    "https://oui-production.mw10013.workers.dev/r/oui-text-field-ex.json"
+    "https://oui.mw10013.workers.dev/r/oui-button.json",
+    "https://oui.mw10013.workers.dev/r/oui-checkbox-ex.json",
+    "https://oui.mw10013.workers.dev/r/oui-checkbox-group-ex.json",
+    "https://oui.mw10013.workers.dev/r/oui-checkbox.json",
+    "https://oui.mw10013.workers.dev/r/oui-form.json",
+    "https://oui.mw10013.workers.dev/r/oui-list-box.json",
+    "https://oui.mw10013.workers.dev/r/oui-radio-group-ex.json",
+    "https://oui.mw10013.workers.dev/r/oui-radio-group.json",
+    "https://oui.mw10013.workers.dev/r/oui-select-ex.json",
+    "https://oui.mw10013.workers.dev/r/oui-switch-ex.json",
+    "https://oui.mw10013.workers.dev/r/oui-text-area.json",
+    "https://oui.mw10013.workers.dev/r/oui-text-field-ex.json"
   ],
   "files": [
     {

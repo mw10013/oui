@@ -3,7 +3,7 @@
   "name": "oui-checkbox-ex-demo",
   "type": "registry:component",
   "registryDependencies": [
-    "https://oui-production.mw10013.workers.dev/r/oui-checkbox-ex.json"
+    "https://oui.mw10013.workers.dev/r/oui-checkbox-ex.json"
   ],
   "files": [
     {

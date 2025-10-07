@@ -3,10 +3,10 @@
   "name": "oui-dialog-ex-demo-alert",
   "type": "registry:component",
   "registryDependencies": [
-    "https://oui-production.mw10013.workers.dev/r/oui-button.json",
-    "https://oui-production.mw10013.workers.dev/r/oui-dialog.json",
-    "https://oui-production.mw10013.workers.dev/r/oui-dialog-ex.json",
-    "https://oui-production.mw10013.workers.dev/r/oui-heading.json"
+    "https://oui.mw10013.workers.dev/r/oui-button.json",
+    "https://oui.mw10013.workers.dev/r/oui-dialog.json",
+    "https://oui.mw10013.workers.dev/r/oui-dialog-ex.json",
+    "https://oui.mw10013.workers.dev/r/oui-heading.json"
   ],
   "files": [
     {

@@ -3,7 +3,7 @@
   "name": "oui-text-area-demo",
   "type": "registry:component",
   "registryDependencies": [
-    "https://oui-production.mw10013.workers.dev/r/oui-text-area.json"
+    "https://oui.mw10013.workers.dev/r/oui-text-area.json"
   ],
   "files": [
     {

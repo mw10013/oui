@@ -3,11 +3,11 @@
   "name": "oui-dialog-ex-sheet-demo",
   "type": "registry:component",
   "registryDependencies": [
-    "https://oui-production.mw10013.workers.dev/r/oui-button.json",
-    "https://oui-production.mw10013.workers.dev/r/oui-dialog.json",
-    "https://oui-production.mw10013.workers.dev/r/oui-dialog-ex-sheet.json",
-    "https://oui-production.mw10013.workers.dev/r/oui-heading.json",
-    "https://oui-production.mw10013.workers.dev/r/oui-text-field-ex.json"
+    "https://oui.mw10013.workers.dev/r/oui-button.json",
+    "https://oui.mw10013.workers.dev/r/oui-dialog.json",
+    "https://oui.mw10013.workers.dev/r/oui-dialog-ex-sheet.json",
+    "https://oui.mw10013.workers.dev/r/oui-heading.json",
+    "https://oui.mw10013.workers.dev/r/oui-text-field-ex.json"
   ],
   "files": [
     {

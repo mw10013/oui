@@ -3,11 +3,11 @@
   "name": "oui-menu-ex-demo-checkboxes",
   "type": "registry:component",
   "registryDependencies": [
-    "https://oui-production.mw10013.workers.dev/r/oui-button.json",
-    "https://oui-production.mw10013.workers.dev/r/oui-header.json",
-    "https://oui-production.mw10013.workers.dev/r/oui-menu.json",
-    "https://oui-production.mw10013.workers.dev/r/oui-menu-ex.json",
-    "https://oui-production.mw10013.workers.dev/r/oui-separator.json"
+    "https://oui.mw10013.workers.dev/r/oui-button.json",
+    "https://oui.mw10013.workers.dev/r/oui-header.json",
+    "https://oui.mw10013.workers.dev/r/oui-menu.json",
+    "https://oui.mw10013.workers.dev/r/oui-menu-ex.json",
+    "https://oui.mw10013.workers.dev/r/oui-separator.json"
   ],
   "files": [
     {

@@ -3,7 +3,7 @@
   "name": "oui-text-field-ex-horizontal-demo",
   "type": "registry:component",
   "registryDependencies": [
-    "https://oui-production.mw10013.workers.dev/r/oui-text-field-ex-horizontal.json"
+    "https://oui.mw10013.workers.dev/r/oui-text-field-ex-horizontal.json"
   ],
   "files": [
     {

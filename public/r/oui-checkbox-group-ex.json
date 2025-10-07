@@ -3,10 +3,10 @@
   "name": "oui-checkbox-group-ex",
   "type": "registry:component",
   "registryDependencies": [
-    "https://oui-production.mw10013.workers.dev/r/oui-checkbox-group.json",
-    "https://oui-production.mw10013.workers.dev/r/oui-field-error.json",
-    "https://oui-production.mw10013.workers.dev/r/oui-label.json",
-    "https://oui-production.mw10013.workers.dev/r/oui-text.json"
+    "https://oui.mw10013.workers.dev/r/oui-checkbox-group.json",
+    "https://oui.mw10013.workers.dev/r/oui-field-error.json",
+    "https://oui.mw10013.workers.dev/r/oui-label.json",
+    "https://oui.mw10013.workers.dev/r/oui-text.json"
   ],
   "files": [
     {

@@ -3,7 +3,7 @@
   "name": "oui-disclosure-ex-demo-text",
   "type": "registry:component",
   "registryDependencies": [
-    "https://oui-production.mw10013.workers.dev/r/oui-disclosure-ex.json"
+    "https://oui.mw10013.workers.dev/r/oui-disclosure-ex.json"
   ],
   "files": [
     {

@@ -6,12 +6,12 @@
     "lucide-react"
   ],
   "registryDependencies": [
-    "https://oui-production.mw10013.workers.dev/r/oui-button.json",
-    "https://oui-production.mw10013.workers.dev/r/oui-checkbox.json",
-    "https://oui-production.mw10013.workers.dev/r/oui-menu-ex.json",
-    "https://oui-production.mw10013.workers.dev/r/oui-menu.json",
-    "https://oui-production.mw10013.workers.dev/r/oui-separator.json",
-    "https://oui-production.mw10013.workers.dev/r/oui-table.json"
+    "https://oui.mw10013.workers.dev/r/oui-button.json",
+    "https://oui.mw10013.workers.dev/r/oui-checkbox.json",
+    "https://oui.mw10013.workers.dev/r/oui-menu-ex.json",
+    "https://oui.mw10013.workers.dev/r/oui-menu.json",
+    "https://oui.mw10013.workers.dev/r/oui-separator.json",
+    "https://oui.mw10013.workers.dev/r/oui-table.json"
   ],
   "files": [
     {

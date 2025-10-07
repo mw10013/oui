@@ -3,8 +3,8 @@
   "name": "oui-disclosure-ex",
   "type": "registry:component",
   "registryDependencies": [
-    "https://oui-production.mw10013.workers.dev/r/oui-disclosure.json",
-    "https://oui-production.mw10013.workers.dev/r/oui-heading.json"
+    "https://oui.mw10013.workers.dev/r/oui-disclosure.json",
+    "https://oui.mw10013.workers.dev/r/oui-heading.json"
   ],
   "files": [
     {

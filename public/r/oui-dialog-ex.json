@@ -3,9 +3,9 @@
   "name": "oui-dialog-ex",
   "type": "registry:component",
   "registryDependencies": [
-    "https://oui-production.mw10013.workers.dev/r/oui-dialog.json",
-    "https://oui-production.mw10013.workers.dev/r/oui-button.json",
-    "https://oui-production.mw10013.workers.dev/r/oui-modal-ex.json"
+    "https://oui.mw10013.workers.dev/r/oui-dialog.json",
+    "https://oui.mw10013.workers.dev/r/oui-button.json",
+    "https://oui.mw10013.workers.dev/r/oui-modal-ex.json"
   ],
   "files": [
     {

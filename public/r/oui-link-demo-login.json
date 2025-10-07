@@ -4,10 +4,10 @@
   "type": "registry:component",
   "registryDependencies": [
     "https://ui.shadcn.com/r/styles/new-york/card.json",
-    "https://oui-production.mw10013.workers.dev/r/oui-button.json",
-    "https://oui-production.mw10013.workers.dev/r/oui-label.json",
-    "https://oui-production.mw10013.workers.dev/r/oui-link.json",
-    "https://oui-production.mw10013.workers.dev/r/oui-text-field-ex.json"
+    "https://oui.mw10013.workers.dev/r/oui-button.json",
+    "https://oui.mw10013.workers.dev/r/oui-label.json",
+    "https://oui.mw10013.workers.dev/r/oui-link.json",
+    "https://oui.mw10013.workers.dev/r/oui-text-field-ex.json"
   ],
   "files": [
     {

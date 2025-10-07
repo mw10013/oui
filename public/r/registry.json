@@ -24,7 +24,7 @@
           "type": "registry:ui"
         }
       ],
-      "registryDependencies": ["https://oui-production.mw10013.workers.dev/r/oui-base.json"],
+      "registryDependencies": ["https://oui.mw10013.workers.dev/r/oui-base.json"],
       "dependencies": [
         "react-aria-components",
         "class-variance-authority",
@@ -41,8 +41,8 @@
         }
       ],
       "registryDependencies": [
-        "https://oui-production.mw10013.workers.dev/r/oui-label.json",
-        "https://oui-production.mw10013.workers.dev/r/oui-text.json"
+        "https://oui.mw10013.workers.dev/r/oui-label.json",
+        "https://oui.mw10013.workers.dev/r/oui-text.json"
       ],
       "dependencies": [
         "react-aria-components",
@@ -59,7 +59,7 @@
           "type": "registry:ui"
         }
       ],
-      "registryDependencies": ["https://oui-production.mw10013.workers.dev/r/oui-base.json"],
+      "registryDependencies": ["https://oui.mw10013.workers.dev/r/oui-base.json"],
       "dependencies": ["react-aria-components"]
     },
     {
@@ -72,9 +72,9 @@
         }
       ],
       "registryDependencies": [
-        "https://oui-production.mw10013.workers.dev/r/oui-button.json",
-        "https://oui-production.mw10013.workers.dev/r/oui-heading.json",
-        "https://oui-production.mw10013.workers.dev/r/oui-modal.json"
+        "https://oui.mw10013.workers.dev/r/oui-button.json",
+        "https://oui.mw10013.workers.dev/r/oui-heading.json",
+        "https://oui.mw10013.workers.dev/r/oui-modal.json"
       ],
       "dependencies": [
         "react-aria-components",
@@ -92,7 +92,7 @@
           "type": "registry:ui"
         }
       ],
-      "registryDependencies": ["https://oui-production.mw10013.workers.dev/r/oui-heading.json"],
+      "registryDependencies": ["https://oui.mw10013.workers.dev/r/oui-heading.json"],
       "dependencies": ["react-aria-components", "lucide-react"]
     },
     {
@@ -104,7 +104,7 @@
           "type": "registry:ui"
         }
       ],
-      "registryDependencies": ["https://oui-production.mw10013.workers.dev/r/oui-base.json"],
+      "registryDependencies": ["https://oui.mw10013.workers.dev/r/oui-base.json"],
       "dependencies": ["react-aria-components"]
     },
     {
@@ -128,7 +128,7 @@
           "type": "registry:ui"
         }
       ],
-      "registryDependencies": ["https://oui-production.mw10013.workers.dev/r/oui-base.json"],
+      "registryDependencies": ["https://oui.mw10013.workers.dev/r/oui-base.json"],
       "dependencies": ["react-aria-components"]
     },
     {
@@ -172,7 +172,7 @@
           "type": "registry:ui"
         }
       ],
-      "registryDependencies": ["https://oui-production.mw10013.workers.dev/r/oui-base.json"],
+      "registryDependencies": ["https://oui.mw10013.workers.dev/r/oui-base.json"],
       "dependencies": [
         "react-aria-components",
         "class-variance-authority",
@@ -200,7 +200,7 @@
           "type": "registry:ui"
         }
       ],
-      "registryDependencies": ["https://oui-production.mw10013.workers.dev/r/oui-base.json"],
+      "registryDependencies": ["https://oui.mw10013.workers.dev/r/oui-base.json"],
       "dependencies": ["react-aria-components", "tailwind-merge"]
     },
     {
@@ -212,7 +212,7 @@
           "type": "registry:ui"
         }
       ],
-      "registryDependencies": ["https://oui-production.mw10013.workers.dev/r/oui-base.json"],
+      "registryDependencies": ["https://oui.mw10013.workers.dev/r/oui-base.json"],
       "dependencies": [
         "react-aria-components",
         "class-variance-authority",
@@ -228,7 +228,7 @@
           "type": "registry:ui"
         }
       ],
-      "registryDependencies": ["https://oui-production.mw10013.workers.dev/r/oui-button.json"],
+      "registryDependencies": ["https://oui.mw10013.workers.dev/r/oui-button.json"],
       "dependencies": [
         "react-aria-components",
         "lucide-react",
@@ -245,9 +245,9 @@
         }
       ],
       "registryDependencies": [
-        "https://oui-production.mw10013.workers.dev/r/oui-base.json",
-        "https://oui-production.mw10013.workers.dev/r/oui-button.json",
-        "https://oui-production.mw10013.workers.dev/r/oui-popover.json"
+        "https://oui.mw10013.workers.dev/r/oui-base.json",
+        "https://oui.mw10013.workers.dev/r/oui-button.json",
+        "https://oui.mw10013.workers.dev/r/oui-popover.json"
       ],
       "dependencies": [
         "react-aria-components",
@@ -265,7 +265,7 @@
           "type": "registry:ui"
         }
       ],
-      "registryDependencies": ["https://oui-production.mw10013.workers.dev/r/oui-base.json"],
+      "registryDependencies": ["https://oui.mw10013.workers.dev/r/oui-base.json"],
       "dependencies": [
         "react-aria-components",
         "class-variance-authority",
@@ -282,12 +282,12 @@
         }
       ],
       "registryDependencies": [
-        "https://oui-production.mw10013.workers.dev/r/oui-base.json",
-        "https://oui-production.mw10013.workers.dev/r/oui-field-error.json",
-        "https://oui-production.mw10013.workers.dev/r/oui-group.json",
-        "https://oui-production.mw10013.workers.dev/r/oui-input.json",
-        "https://oui-production.mw10013.workers.dev/r/oui-label.json",
-        "https://oui-production.mw10013.workers.dev/r/oui-text.json"
+        "https://oui.mw10013.workers.dev/r/oui-base.json",
+        "https://oui.mw10013.workers.dev/r/oui-field-error.json",
+        "https://oui.mw10013.workers.dev/r/oui-group.json",
+        "https://oui.mw10013.workers.dev/r/oui-input.json",
+        "https://oui.mw10013.workers.dev/r/oui-label.json",
+        "https://oui.mw10013.workers.dev/r/oui-text.json"
       ],
       "dependencies": ["react-aria-components", "lucide-react"]
     },
@@ -301,8 +301,8 @@
         }
       ],
       "registryDependencies": [
-        "https://oui-production.mw10013.workers.dev/r/oui-button.json",
-        "https://oui-production.mw10013.workers.dev/r/oui-dialog.json"
+        "https://oui.mw10013.workers.dev/r/oui-button.json",
+        "https://oui.mw10013.workers.dev/r/oui-dialog.json"
       ],
       "dependencies": [
         "react-aria-components",
@@ -320,9 +320,9 @@
         }
       ],
       "registryDependencies": [
-        "https://oui-production.mw10013.workers.dev/r/oui-field-error.json",
-        "https://oui-production.mw10013.workers.dev/r/oui-label.json",
-        "https://oui-production.mw10013.workers.dev/r/oui-text.json"
+        "https://oui.mw10013.workers.dev/r/oui-field-error.json",
+        "https://oui.mw10013.workers.dev/r/oui-label.json",
+        "https://oui.mw10013.workers.dev/r/oui-text.json"
       ],
       "dependencies": [
         "react-aria-components",
@@ -340,11 +340,11 @@
         }
       ],
       "registryDependencies": [
-        "https://oui-production.mw10013.workers.dev/r/oui-base.json",
-        "https://oui-production.mw10013.workers.dev/r/oui-field-error.json",
-        "https://oui-production.mw10013.workers.dev/r/oui-input.json",
-        "https://oui-production.mw10013.workers.dev/r/oui-label.json",
-        "https://oui-production.mw10013.workers.dev/r/oui-text.json"
+        "https://oui.mw10013.workers.dev/r/oui-base.json",
+        "https://oui.mw10013.workers.dev/r/oui-field-error.json",
+        "https://oui.mw10013.workers.dev/r/oui-input.json",
+        "https://oui.mw10013.workers.dev/r/oui-label.json",
+        "https://oui.mw10013.workers.dev/r/oui-text.json"
       ],
       "dependencies": ["react-aria-components"]
     },
@@ -358,10 +358,10 @@
         }
       ],
       "registryDependencies": [
-        "https://oui-production.mw10013.workers.dev/r/oui-field-error.json",
-        "https://oui-production.mw10013.workers.dev/r/oui-label.json",
-        "https://oui-production.mw10013.workers.dev/r/oui-popover.json",
-        "https://oui-production.mw10013.workers.dev/r/oui-text.json"
+        "https://oui.mw10013.workers.dev/r/oui-field-error.json",
+        "https://oui.mw10013.workers.dev/r/oui-label.json",
+        "https://oui.mw10013.workers.dev/r/oui-popover.json",
+        "https://oui.mw10013.workers.dev/r/oui-text.json"
       ],
       "dependencies": [
         "react-aria-components",
@@ -394,7 +394,7 @@
           "type": "registry:ui"
         }
       ],
-      "registryDependencies": ["https://oui-production.mw10013.workers.dev/r/oui-label.json"],
+      "registryDependencies": ["https://oui.mw10013.workers.dev/r/oui-label.json"],
       "dependencies": ["react-aria-components"]
     },
     {
@@ -407,8 +407,8 @@
         }
       ],
       "registryDependencies": [
-        "https://oui-production.mw10013.workers.dev/r/oui-label.json",
-        "https://oui-production.mw10013.workers.dev/r/oui-text.json"
+        "https://oui.mw10013.workers.dev/r/oui-label.json",
+        "https://oui.mw10013.workers.dev/r/oui-text.json"
       ],
       "dependencies": ["react-aria-components", "tailwind-merge"]
     },
@@ -421,7 +421,7 @@
           "type": "registry:ui"
         }
       ],
-      "registryDependencies": ["https://oui-production.mw10013.workers.dev/r/oui-base.json"],
+      "registryDependencies": ["https://oui.mw10013.workers.dev/r/oui-base.json"],
       "dependencies": [
         "react-aria-components",
         "lucide-react",
@@ -466,11 +466,11 @@
         }
       ],
       "registryDependencies": [
-        "https://oui-production.mw10013.workers.dev/r/oui-base.json",
-        "https://oui-production.mw10013.workers.dev/r/oui-field-error.json",
-        "https://oui-production.mw10013.workers.dev/r/oui-input.json",
-        "https://oui-production.mw10013.workers.dev/r/oui-label.json",
-        "https://oui-production.mw10013.workers.dev/r/oui-text.json"
+        "https://oui.mw10013.workers.dev/r/oui-base.json",
+        "https://oui.mw10013.workers.dev/r/oui-field-error.json",
+        "https://oui.mw10013.workers.dev/r/oui-input.json",
+        "https://oui.mw10013.workers.dev/r/oui-label.json",
+        "https://oui.mw10013.workers.dev/r/oui-text.json"
       ],
       "dependencies": ["react-aria-components"]
     },
@@ -484,9 +484,9 @@
         }
       ],
       "registryDependencies": [
-        "https://oui-production.mw10013.workers.dev/r/oui-dialog.json",
-        "https://oui-production.mw10013.workers.dev/r/oui-button.json",
-        "https://oui-production.mw10013.workers.dev/r/oui-modal-ex.json"
+        "https://oui.mw10013.workers.dev/r/oui-dialog.json",
+        "https://oui.mw10013.workers.dev/r/oui-button.json",
+        "https://oui.mw10013.workers.dev/r/oui-modal-ex.json"
       ],
       "meta": {
         "tags": ["dialog", "dialog ex"]
@@ -502,11 +502,11 @@
         }
       ],
       "registryDependencies": [
-        "https://oui-production.mw10013.workers.dev/r/oui-button.json",
-        "https://oui-production.mw10013.workers.dev/r/oui-dialog.json",
-        "https://oui-production.mw10013.workers.dev/r/oui-dialog-ex.json",
-        "https://oui-production.mw10013.workers.dev/r/oui-heading.json",
-        "https://oui-production.mw10013.workers.dev/r/oui-text-field-ex.json"
+        "https://oui.mw10013.workers.dev/r/oui-button.json",
+        "https://oui.mw10013.workers.dev/r/oui-dialog.json",
+        "https://oui.mw10013.workers.dev/r/oui-dialog-ex.json",
+        "https://oui.mw10013.workers.dev/r/oui-heading.json",
+        "https://oui.mw10013.workers.dev/r/oui-text-field-ex.json"
       ],
       "meta": {
         "tags": ["dialog", "dialog ex"],
@@ -522,7 +522,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["https://oui-production.mw10013.workers.dev/r/oui-modal.json"],
+      "registryDependencies": ["https://oui.mw10013.workers.dev/r/oui-modal.json"],
       "meta": {
         "tags": ["modal", "modal ex"]
       }
@@ -536,7 +536,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["https://oui-production.mw10013.workers.dev/r/oui-modal.json"],
+      "registryDependencies": ["https://oui.mw10013.workers.dev/r/oui-modal.json"],
       "meta": {
         "tags": ["modal"]
       }
@@ -551,11 +551,11 @@
         }
       ],
       "registryDependencies": [
-        "https://oui-production.mw10013.workers.dev/r/oui-button.json",
-        "https://oui-production.mw10013.workers.dev/r/oui-header.json",
-        "https://oui-production.mw10013.workers.dev/r/oui-menu.json",
-        "https://oui-production.mw10013.workers.dev/r/oui-menu-ex.json",
-        "https://oui-production.mw10013.workers.dev/r/oui-separator.json"
+        "https://oui.mw10013.workers.dev/r/oui-button.json",
+        "https://oui.mw10013.workers.dev/r/oui-header.json",
+        "https://oui.mw10013.workers.dev/r/oui-menu.json",
+        "https://oui.mw10013.workers.dev/r/oui-menu-ex.json",
+        "https://oui.mw10013.workers.dev/r/oui-separator.json"
       ],
       "meta": {
         "tags": ["menu"]
@@ -570,7 +570,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["https://oui-production.mw10013.workers.dev/r/oui-button.json"],
+      "registryDependencies": ["https://oui.mw10013.workers.dev/r/oui-button.json"],
       "meta": {
         "tags": ["button"],
         "style": "text-center"
@@ -585,7 +585,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["https://oui-production.mw10013.workers.dev/r/oui-button.json"],
+      "registryDependencies": ["https://oui.mw10013.workers.dev/r/oui-button.json"],
       "meta": {
         "tags": ["button"],
         "style": "text-center"
@@ -600,7 +600,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["https://oui-production.mw10013.workers.dev/r/oui-button.json"],
+      "registryDependencies": ["https://oui.mw10013.workers.dev/r/oui-button.json"],
       "meta": {
         "tags": ["button"],
         "style": "text-center"
@@ -615,7 +615,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["https://oui-production.mw10013.workers.dev/r/oui-button.json"],
+      "registryDependencies": ["https://oui.mw10013.workers.dev/r/oui-button.json"],
       "meta": {
         "tags": ["button"],
         "style": "text-center"
@@ -630,7 +630,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["https://oui-production.mw10013.workers.dev/r/oui-button.json"],
+      "registryDependencies": ["https://oui.mw10013.workers.dev/r/oui-button.json"],
       "meta": {
         "tags": ["button"],
         "style": "text-center"
@@ -645,7 +645,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["https://oui-production.mw10013.workers.dev/r/oui-button.json"],
+      "registryDependencies": ["https://oui.mw10013.workers.dev/r/oui-button.json"],
       "dependencies": ["lucide-react"],
       "meta": {
         "tags": ["button"],
@@ -661,7 +661,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["https://oui-production.mw10013.workers.dev/r/oui-button.json"],
+      "registryDependencies": ["https://oui.mw10013.workers.dev/r/oui-button.json"],
       "dependencies": ["lucide-react"],
       "meta": {
         "tags": ["button"],
@@ -677,7 +677,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["https://oui-production.mw10013.workers.dev/r/oui-button.json"],
+      "registryDependencies": ["https://oui.mw10013.workers.dev/r/oui-button.json"],
       "meta": {
         "tags": ["button"],
         "style": "text-center"
@@ -692,7 +692,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["https://oui-production.mw10013.workers.dev/r/oui-button.json"],
+      "registryDependencies": ["https://oui.mw10013.workers.dev/r/oui-button.json"],
       "meta": {
         "tags": ["button"],
         "style": "text-center"
@@ -707,7 +707,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["https://oui-production.mw10013.workers.dev/r/oui-button.json"],
+      "registryDependencies": ["https://oui.mw10013.workers.dev/r/oui-button.json"],
       "meta": {
         "tags": ["button"],
         "style": "text-center"
@@ -722,7 +722,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["https://oui-production.mw10013.workers.dev/r/oui-button.json"],
+      "registryDependencies": ["https://oui.mw10013.workers.dev/r/oui-button.json"],
       "meta": {
         "tags": ["button"],
         "style": "text-center"
@@ -737,7 +737,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["https://oui-production.mw10013.workers.dev/r/oui-button.json"],
+      "registryDependencies": ["https://oui.mw10013.workers.dev/r/oui-button.json"],
       "meta": {
         "tags": ["button"],
         "style": "text-center"
@@ -752,7 +752,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["https://oui-production.mw10013.workers.dev/r/oui-input.json"],
+      "registryDependencies": ["https://oui.mw10013.workers.dev/r/oui-input.json"],
       "meta": {
         "tags": ["input"]
       }
@@ -766,7 +766,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["https://oui-production.mw10013.workers.dev/r/oui-input.json"],
+      "registryDependencies": ["https://oui.mw10013.workers.dev/r/oui-input.json"],
       "meta": {
         "tags": ["input"]
       }
@@ -780,7 +780,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["https://oui-production.mw10013.workers.dev/r/oui-input.json"],
+      "registryDependencies": ["https://oui.mw10013.workers.dev/r/oui-input.json"],
       "meta": {
         "tags": ["input"]
       }
@@ -795,11 +795,11 @@
         }
       ],
       "registryDependencies": [
-        "https://oui-production.mw10013.workers.dev/r/oui-text-field.json",
-        "https://oui-production.mw10013.workers.dev/r/oui-input.json",
-        "https://oui-production.mw10013.workers.dev/r/oui-label.json",
-        "https://oui-production.mw10013.workers.dev/r/oui-field-error.json",
-        "https://oui-production.mw10013.workers.dev/r/oui-text.json"
+        "https://oui.mw10013.workers.dev/r/oui-text-field.json",
+        "https://oui.mw10013.workers.dev/r/oui-input.json",
+        "https://oui.mw10013.workers.dev/r/oui-label.json",
+        "https://oui.mw10013.workers.dev/r/oui-field-error.json",
+        "https://oui.mw10013.workers.dev/r/oui-text.json"
       ],
       "meta": {
         "tags": ["text field"]
@@ -815,11 +815,11 @@
         }
       ],
       "registryDependencies": [
-        "https://oui-production.mw10013.workers.dev/r/oui-text-field.json",
-        "https://oui-production.mw10013.workers.dev/r/oui-input.json",
-        "https://oui-production.mw10013.workers.dev/r/oui-label.json",
-        "https://oui-production.mw10013.workers.dev/r/oui-field-error.json",
-        "https://oui-production.mw10013.workers.dev/r/oui-text.json"
+        "https://oui.mw10013.workers.dev/r/oui-text-field.json",
+        "https://oui.mw10013.workers.dev/r/oui-input.json",
+        "https://oui.mw10013.workers.dev/r/oui-label.json",
+        "https://oui.mw10013.workers.dev/r/oui-field-error.json",
+        "https://oui.mw10013.workers.dev/r/oui-text.json"
       ],
       "meta": {
         "tags": ["text field"]
@@ -835,10 +835,10 @@
         }
       ],
       "registryDependencies": [
-        "https://oui-production.mw10013.workers.dev/r/oui-button.json",
-        "https://oui-production.mw10013.workers.dev/r/oui-dialog.json",
-        "https://oui-production.mw10013.workers.dev/r/oui-dialog-ex.json",
-        "https://oui-production.mw10013.workers.dev/r/oui-heading.json"
+        "https://oui.mw10013.workers.dev/r/oui-button.json",
+        "https://oui.mw10013.workers.dev/r/oui-dialog.json",
+        "https://oui.mw10013.workers.dev/r/oui-dialog-ex.json",
+        "https://oui.mw10013.workers.dev/r/oui-heading.json"
       ],
       "meta": {
         "tags": ["dialog"],
@@ -855,10 +855,10 @@
         }
       ],
       "registryDependencies": [
-        "https://oui-production.mw10013.workers.dev/r/oui-button.json",
-        "https://oui-production.mw10013.workers.dev/r/oui-dialog.json",
-        "https://oui-production.mw10013.workers.dev/r/oui-dialog-ex.json",
-        "https://oui-production.mw10013.workers.dev/r/oui-heading.json"
+        "https://oui.mw10013.workers.dev/r/oui-button.json",
+        "https://oui.mw10013.workers.dev/r/oui-dialog.json",
+        "https://oui.mw10013.workers.dev/r/oui-dialog-ex.json",
+        "https://oui.mw10013.workers.dev/r/oui-heading.json"
       ],
       "meta": {
         "tags": ["dialog"],
@@ -875,10 +875,10 @@
         }
       ],
       "registryDependencies": [
-        "https://oui-production.mw10013.workers.dev/r/oui-button.json",
-        "https://oui-production.mw10013.workers.dev/r/oui-dialog.json",
-        "https://oui-production.mw10013.workers.dev/r/oui-heading.json",
-        "https://oui-production.mw10013.workers.dev/r/oui-modal-ex.json"
+        "https://oui.mw10013.workers.dev/r/oui-button.json",
+        "https://oui.mw10013.workers.dev/r/oui-dialog.json",
+        "https://oui.mw10013.workers.dev/r/oui-heading.json",
+        "https://oui.mw10013.workers.dev/r/oui-modal-ex.json"
       ],
       "meta": {
         "tags": ["dialog"]
@@ -894,9 +894,9 @@
         }
       ],
       "registryDependencies": [
-        "https://oui-production.mw10013.workers.dev/r/oui-button.json",
-        "https://oui-production.mw10013.workers.dev/r/oui-dialog.json",
-        "https://oui-production.mw10013.workers.dev/r/oui-modal-ex-sheet.json"
+        "https://oui.mw10013.workers.dev/r/oui-button.json",
+        "https://oui.mw10013.workers.dev/r/oui-dialog.json",
+        "https://oui.mw10013.workers.dev/r/oui-modal-ex-sheet.json"
       ],
       "meta": {
         "tags": ["dialog"]
@@ -912,10 +912,10 @@
         }
       ],
       "registryDependencies": [
-        "https://oui-production.mw10013.workers.dev/r/oui-button.json",
-        "https://oui-production.mw10013.workers.dev/r/oui-dialog.json",
-        "https://oui-production.mw10013.workers.dev/r/oui-dialog-ex.json",
-        "https://oui-production.mw10013.workers.dev/r/oui-heading.json"
+        "https://oui.mw10013.workers.dev/r/oui-button.json",
+        "https://oui.mw10013.workers.dev/r/oui-dialog.json",
+        "https://oui.mw10013.workers.dev/r/oui-dialog-ex.json",
+        "https://oui.mw10013.workers.dev/r/oui-heading.json"
       ],
       "meta": {
         "tags": ["dialog"],
@@ -932,8 +932,8 @@
         }
       ],
       "registryDependencies": [
-        "https://oui-production.mw10013.workers.dev/r/oui-button.json",
-        "https://oui-production.mw10013.workers.dev/r/oui-dialog-ex-alert.json"
+        "https://oui.mw10013.workers.dev/r/oui-button.json",
+        "https://oui.mw10013.workers.dev/r/oui-dialog-ex-alert.json"
       ],
       "meta": {
         "tags": ["dialog"],
@@ -950,8 +950,8 @@
         }
       ],
       "registryDependencies": [
-        "https://oui-production.mw10013.workers.dev/r/oui-button.json",
-        "https://oui-production.mw10013.workers.dev/r/oui-dialog-ex-alert.json"
+        "https://oui.mw10013.workers.dev/r/oui-button.json",
+        "https://oui.mw10013.workers.dev/r/oui-dialog-ex-alert.json"
       ],
       "meta": {
         "tags": ["dialog"],
@@ -968,8 +968,8 @@
         }
       ],
       "registryDependencies": [
-        "https://oui-production.mw10013.workers.dev/r/oui-button.json",
-        "https://oui-production.mw10013.workers.dev/r/oui-dialog-ex-alert.json"
+        "https://oui.mw10013.workers.dev/r/oui-button.json",
+        "https://oui.mw10013.workers.dev/r/oui-dialog-ex-alert.json"
       ],
       "meta": {
         "tags": ["dialog"],
@@ -986,7 +986,7 @@
         }
       ],
       "registryDependencies": [
-        "https://oui-production.mw10013.workers.dev/r/oui-text-field-ex.json"
+        "https://oui.mw10013.workers.dev/r/oui-text-field-ex.json"
       ],
       "meta": {
         "tags": ["text-field"]
@@ -1002,7 +1002,7 @@
         }
       ],
       "registryDependencies": [
-        "https://oui-production.mw10013.workers.dev/r/oui-text-field-ex-horizontal.json"
+        "https://oui.mw10013.workers.dev/r/oui-text-field-ex-horizontal.json"
       ],
       "meta": {
         "tags": ["text-field"]
@@ -1018,9 +1018,9 @@
         }
       ],
       "registryDependencies": [
-        "https://oui-production.mw10013.workers.dev/r/oui-base.json",
-        "https://oui-production.mw10013.workers.dev/r/oui-switch.json",
-        "https://oui-production.mw10013.workers.dev/r/oui-text.json"
+        "https://oui.mw10013.workers.dev/r/oui-base.json",
+        "https://oui.mw10013.workers.dev/r/oui-switch.json",
+        "https://oui.mw10013.workers.dev/r/oui-text.json"
       ],
       "meta": {
         "tags": ["switch"]
@@ -1035,7 +1035,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["https://oui-production.mw10013.workers.dev/r/oui-switch-ex.json"],
+      "registryDependencies": ["https://oui.mw10013.workers.dev/r/oui-switch-ex.json"],
       "meta": {
         "tags": ["switch"]
       }
@@ -1049,7 +1049,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["https://oui-production.mw10013.workers.dev/r/oui-switch-ex.json"],
+      "registryDependencies": ["https://oui.mw10013.workers.dev/r/oui-switch-ex.json"],
       "meta": {
         "tags": ["switch"]
       }
@@ -1063,7 +1063,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["https://oui-production.mw10013.workers.dev/r/oui-switch-ex.json"],
+      "registryDependencies": ["https://oui.mw10013.workers.dev/r/oui-switch-ex.json"],
       "meta": {
         "tags": ["switch"]
       }
@@ -1077,7 +1077,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["https://oui-production.mw10013.workers.dev/r/oui-switch-ex.json"],
+      "registryDependencies": ["https://oui.mw10013.workers.dev/r/oui-switch-ex.json"],
       "meta": {
         "tags": ["switch"]
       }
@@ -1092,11 +1092,11 @@
         }
       ],
       "registryDependencies": [
-        "https://oui-production.mw10013.workers.dev/r/oui-field-error.json",
-        "https://oui-production.mw10013.workers.dev/r/oui-label.json",
-        "https://oui-production.mw10013.workers.dev/r/oui-input.json",
-        "https://oui-production.mw10013.workers.dev/r/oui-search-field.json",
-        "https://oui-production.mw10013.workers.dev/r/oui-text.json"
+        "https://oui.mw10013.workers.dev/r/oui-field-error.json",
+        "https://oui.mw10013.workers.dev/r/oui-label.json",
+        "https://oui.mw10013.workers.dev/r/oui-input.json",
+        "https://oui.mw10013.workers.dev/r/oui-search-field.json",
+        "https://oui.mw10013.workers.dev/r/oui-text.json"
       ],
       "meta": {
         "tags": ["search-field"]
@@ -1112,7 +1112,7 @@
         }
       ],
       "registryDependencies": [
-        "https://oui-production.mw10013.workers.dev/r/oui-search-field-ex.json"
+        "https://oui.mw10013.workers.dev/r/oui-search-field-ex.json"
       ],
       "meta": {
         "tags": ["search-field"]
@@ -1129,10 +1129,10 @@
         }
       ],
       "registryDependencies": [
-        "https://oui-production.mw10013.workers.dev/r/oui-field-error.json",
-        "https://oui-production.mw10013.workers.dev/r/oui-label.json",
-        "https://oui-production.mw10013.workers.dev/r/oui-radio-group.json",
-        "https://oui-production.mw10013.workers.dev/r/oui-text.json"
+        "https://oui.mw10013.workers.dev/r/oui-field-error.json",
+        "https://oui.mw10013.workers.dev/r/oui-label.json",
+        "https://oui.mw10013.workers.dev/r/oui-radio-group.json",
+        "https://oui.mw10013.workers.dev/r/oui-text.json"
       ],
       "meta": {
         "tags": ["radio-group"]
@@ -1148,8 +1148,8 @@
         }
       ],
       "registryDependencies": [
-        "https://oui-production.mw10013.workers.dev/r/oui-radio-group-ex.json",
-        "https://oui-production.mw10013.workers.dev/r/oui-radio-group.json"
+        "https://oui.mw10013.workers.dev/r/oui-radio-group-ex.json",
+        "https://oui.mw10013.workers.dev/r/oui-radio-group.json"
       ],
       "meta": {
         "tags": ["radio-group"]
@@ -1165,8 +1165,8 @@
         }
       ],
       "registryDependencies": [
-        "https://oui-production.mw10013.workers.dev/r/oui-radio-group-ex.json",
-        "https://oui-production.mw10013.workers.dev/r/oui-radio-group.json"
+        "https://oui.mw10013.workers.dev/r/oui-radio-group-ex.json",
+        "https://oui.mw10013.workers.dev/r/oui-radio-group.json"
       ],
       "meta": {
         "tags": ["radio-group"]
@@ -1182,11 +1182,11 @@
         }
       ],
       "registryDependencies": [
-        "https://oui-production.mw10013.workers.dev/r/oui-field-error.json",
-        "https://oui-production.mw10013.workers.dev/r/oui-label.json",
-        "https://oui-production.mw10013.workers.dev/r/oui-popover.json",
-        "https://oui-production.mw10013.workers.dev/r/oui-select.json",
-        "https://oui-production.mw10013.workers.dev/r/oui-text.json"
+        "https://oui.mw10013.workers.dev/r/oui-field-error.json",
+        "https://oui.mw10013.workers.dev/r/oui-label.json",
+        "https://oui.mw10013.workers.dev/r/oui-popover.json",
+        "https://oui.mw10013.workers.dev/r/oui-select.json",
+        "https://oui.mw10013.workers.dev/r/oui-text.json"
       ],
       "meta": {
         "tags": ["select"]
@@ -1202,11 +1202,11 @@
         }
       ],
       "registryDependencies": [
-        "https://oui-production.mw10013.workers.dev/r/oui-field-error.json",
-        "https://oui-production.mw10013.workers.dev/r/oui-label.json",
-        "https://oui-production.mw10013.workers.dev/r/oui-popover.json",
-        "https://oui-production.mw10013.workers.dev/r/oui-select.json",
-        "https://oui-production.mw10013.workers.dev/r/oui-text.json"
+        "https://oui.mw10013.workers.dev/r/oui-field-error.json",
+        "https://oui.mw10013.workers.dev/r/oui-label.json",
+        "https://oui.mw10013.workers.dev/r/oui-popover.json",
+        "https://oui.mw10013.workers.dev/r/oui-select.json",
+        "https://oui.mw10013.workers.dev/r/oui-text.json"
       ],
       "meta": {
         "tags": ["select"]
@@ -1222,9 +1222,9 @@
         }
       ],
       "registryDependencies": [
-        "https://oui-production.mw10013.workers.dev/r/oui-header.json",
-        "https://oui-production.mw10013.workers.dev/r/oui-list-box.json",
-        "https://oui-production.mw10013.workers.dev/r/oui-select-ex.json"
+        "https://oui.mw10013.workers.dev/r/oui-header.json",
+        "https://oui.mw10013.workers.dev/r/oui-list-box.json",
+        "https://oui.mw10013.workers.dev/r/oui-select-ex.json"
       ],
       "meta": {
         "tags": ["select"]
@@ -1240,8 +1240,8 @@
         }
       ],
       "registryDependencies": [
-        "https://oui-production.mw10013.workers.dev/r/oui-list-box.json",
-        "https://oui-production.mw10013.workers.dev/r/oui-select-ex.json"
+        "https://oui.mw10013.workers.dev/r/oui-list-box.json",
+        "https://oui.mw10013.workers.dev/r/oui-select-ex.json"
       ],
       "meta": {
         "tags": ["select"]
@@ -1257,8 +1257,8 @@
         }
       ],
       "registryDependencies": [
-        "https://oui-production.mw10013.workers.dev/r/oui-list-box.json",
-        "https://oui-production.mw10013.workers.dev/r/oui-select-ex.json"
+        "https://oui.mw10013.workers.dev/r/oui-list-box.json",
+        "https://oui.mw10013.workers.dev/r/oui-select-ex.json"
       ],
       "dependencies": ["lucide-react"],
       "meta": {
@@ -1275,8 +1275,8 @@
         }
       ],
       "registryDependencies": [
-        "https://oui-production.mw10013.workers.dev/r/oui-list-box.json",
-        "https://oui-production.mw10013.workers.dev/r/oui-select-ex.json"
+        "https://oui.mw10013.workers.dev/r/oui-list-box.json",
+        "https://oui.mw10013.workers.dev/r/oui-select-ex.json"
       ],
       "meta": {
         "tags": ["select"]
@@ -1292,7 +1292,7 @@
         }
       ],
       "registryDependencies": [
-        "https://oui-production.mw10013.workers.dev/r/oui-search-field-ex.json"
+        "https://oui.mw10013.workers.dev/r/oui-search-field-ex.json"
       ],
       "meta": {
         "tags": ["autocomplete"]
@@ -1309,9 +1309,9 @@
       ],
       "registryDependencies": [
         "https://ui.shadcn.com/r/styles/new-york/avatar.json",
-        "https://oui-production.mw10013.workers.dev/r/oui-autocomplete-ex.json",
-        "https://oui-production.mw10013.workers.dev/r/oui-list-box.json",
-        "https://oui-production.mw10013.workers.dev/r/oui-select-ex-popover.json"
+        "https://oui.mw10013.workers.dev/r/oui-autocomplete-ex.json",
+        "https://oui.mw10013.workers.dev/r/oui-list-box.json",
+        "https://oui.mw10013.workers.dev/r/oui-select-ex-popover.json"
       ],
       "meta": {
         "tags": ["autocomplete"]
@@ -1327,9 +1327,9 @@
         }
       ],
       "registryDependencies": [
-        "https://oui-production.mw10013.workers.dev/r/oui-autocomplete-ex.json",
-        "https://oui-production.mw10013.workers.dev/r/oui-list-box.json",
-        "https://oui-production.mw10013.workers.dev/r/oui-select-ex-popover.json"
+        "https://oui.mw10013.workers.dev/r/oui-autocomplete-ex.json",
+        "https://oui.mw10013.workers.dev/r/oui-list-box.json",
+        "https://oui.mw10013.workers.dev/r/oui-select-ex-popover.json"
       ],
       "meta": {
         "tags": ["autocomplete"]
@@ -1345,8 +1345,8 @@
         }
       ],
       "registryDependencies": [
-        "https://oui-production.mw10013.workers.dev/r/oui-checkbox.json",
-        "https://oui-production.mw10013.workers.dev/r/oui-text.json"
+        "https://oui.mw10013.workers.dev/r/oui-checkbox.json",
+        "https://oui.mw10013.workers.dev/r/oui-text.json"
       ],
       "meta": {
         "tags": ["checkbox"]
@@ -1361,7 +1361,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["https://oui-production.mw10013.workers.dev/r/oui-checkbox.json"],
+      "registryDependencies": ["https://oui.mw10013.workers.dev/r/oui-checkbox.json"],
       "meta": {
         "tags": ["checkbox"]
       }
@@ -1375,7 +1375,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["https://oui-production.mw10013.workers.dev/r/oui-checkbox.json"],
+      "registryDependencies": ["https://oui.mw10013.workers.dev/r/oui-checkbox.json"],
       "meta": {
         "tags": ["checkbox"]
       }
@@ -1389,7 +1389,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["https://oui-production.mw10013.workers.dev/r/oui-checkbox.json"],
+      "registryDependencies": ["https://oui.mw10013.workers.dev/r/oui-checkbox.json"],
       "meta": {
         "tags": ["checkbox"]
       }
@@ -1403,7 +1403,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["https://oui-production.mw10013.workers.dev/r/oui-checkbox-ex.json"],
+      "registryDependencies": ["https://oui.mw10013.workers.dev/r/oui-checkbox-ex.json"],
       "meta": {
         "tags": ["checkbox"]
       }
@@ -1419,10 +1419,10 @@
         }
       ],
       "registryDependencies": [
-        "https://oui-production.mw10013.workers.dev/r/oui-checkbox-group.json",
-        "https://oui-production.mw10013.workers.dev/r/oui-field-error.json",
-        "https://oui-production.mw10013.workers.dev/r/oui-label.json",
-        "https://oui-production.mw10013.workers.dev/r/oui-text.json"
+        "https://oui.mw10013.workers.dev/r/oui-checkbox-group.json",
+        "https://oui.mw10013.workers.dev/r/oui-field-error.json",
+        "https://oui.mw10013.workers.dev/r/oui-label.json",
+        "https://oui.mw10013.workers.dev/r/oui-text.json"
       ],
       "meta": {
         "tags": ["checkbox-group"]
@@ -1438,8 +1438,8 @@
         }
       ],
       "registryDependencies": [
-        "https://oui-production.mw10013.workers.dev/r/oui-checkbox-group-ex.json",
-        "https://oui-production.mw10013.workers.dev/r/oui-checkbox.json"
+        "https://oui.mw10013.workers.dev/r/oui-checkbox-group-ex.json",
+        "https://oui.mw10013.workers.dev/r/oui-checkbox.json"
       ],
       "meta": {
         "tags": ["checkbox group"]
@@ -1456,13 +1456,13 @@
         }
       ],
       "registryDependencies": [
-        "https://oui-production.mw10013.workers.dev/r/oui-button.json",
-        "https://oui-production.mw10013.workers.dev/r/oui-field-error.json",
-        "https://oui-production.mw10013.workers.dev/r/oui-group.json",
-        "https://oui-production.mw10013.workers.dev/r/oui-input.json",
-        "https://oui-production.mw10013.workers.dev/r/oui-label.json",
-        "https://oui-production.mw10013.workers.dev/r/oui-popover.json",
-        "https://oui-production.mw10013.workers.dev/r/oui-text.json"
+        "https://oui.mw10013.workers.dev/r/oui-button.json",
+        "https://oui.mw10013.workers.dev/r/oui-field-error.json",
+        "https://oui.mw10013.workers.dev/r/oui-group.json",
+        "https://oui.mw10013.workers.dev/r/oui-input.json",
+        "https://oui.mw10013.workers.dev/r/oui-label.json",
+        "https://oui.mw10013.workers.dev/r/oui-popover.json",
+        "https://oui.mw10013.workers.dev/r/oui-text.json"
       ],
       "dependencies": ["lucide-react"],
       "meta": {
@@ -1480,8 +1480,8 @@
         }
       ],
       "registryDependencies": [
-        "https://oui-production.mw10013.workers.dev/r/oui-combo-box-ex.json",
-        "https://oui-production.mw10013.workers.dev/r/oui-list-box.json"
+        "https://oui.mw10013.workers.dev/r/oui-combo-box-ex.json",
+        "https://oui.mw10013.workers.dev/r/oui-list-box.json"
       ],
       "meta": {
         "tags": ["combo-box"]
@@ -1498,8 +1498,8 @@
       ],
       "registryDependencies": [
         "https://ui.shadcn.com/r/styles/new-york/avatar.json",
-        "https://oui-production.mw10013.workers.dev/r/oui-combo-box-ex.json",
-        "https://oui-production.mw10013.workers.dev/r/oui-list-box.json"
+        "https://oui.mw10013.workers.dev/r/oui-combo-box-ex.json",
+        "https://oui.mw10013.workers.dev/r/oui-list-box.json"
       ],
       "meta": {
         "tags": ["combo-box"]
@@ -1515,9 +1515,9 @@
         }
       ],
       "registryDependencies": [
-        "https://oui-production.mw10013.workers.dev/r/oui-combo-box-ex.json",
-        "https://oui-production.mw10013.workers.dev/r/oui-header.json",
-        "https://oui-production.mw10013.workers.dev/r/oui-list-box.json"
+        "https://oui.mw10013.workers.dev/r/oui-combo-box-ex.json",
+        "https://oui.mw10013.workers.dev/r/oui-header.json",
+        "https://oui.mw10013.workers.dev/r/oui-list-box.json"
       ],
       "meta": {
         "tags": ["combo box"]
@@ -1533,8 +1533,8 @@
         }
       ],
       "registryDependencies": [
-        "https://oui-production.mw10013.workers.dev/r/oui-disclosure.json",
-        "https://oui-production.mw10013.workers.dev/r/oui-heading.json"
+        "https://oui.mw10013.workers.dev/r/oui-disclosure.json",
+        "https://oui.mw10013.workers.dev/r/oui-heading.json"
       ],
       "meta": {
         "tags": ["disclosure"]
@@ -1550,7 +1550,7 @@
         }
       ],
       "registryDependencies": [
-        "https://oui-production.mw10013.workers.dev/r/oui-disclosure-ex.json"
+        "https://oui.mw10013.workers.dev/r/oui-disclosure-ex.json"
       ],
       "meta": {
         "tags": ["disclosure"]
@@ -1566,7 +1566,7 @@
         }
       ],
       "registryDependencies": [
-        "https://oui-production.mw10013.workers.dev/r/oui-disclosure-ex.json"
+        "https://oui.mw10013.workers.dev/r/oui-disclosure-ex.json"
       ],
       "meta": {
         "tags": ["disclosure"]
@@ -1582,9 +1582,9 @@
         }
       ],
       "registryDependencies": [
-        "https://oui-production.mw10013.workers.dev/r/oui-button.json",
-        "https://oui-production.mw10013.workers.dev/r/oui-menu.json",
-        "https://oui-production.mw10013.workers.dev/r/oui-popover.json"
+        "https://oui.mw10013.workers.dev/r/oui-button.json",
+        "https://oui.mw10013.workers.dev/r/oui-menu.json",
+        "https://oui.mw10013.workers.dev/r/oui-popover.json"
       ],
       "meta": {
         "tags": ["menu"]
@@ -1600,13 +1600,13 @@
         }
       ],
       "registryDependencies": [
-        "https://oui-production.mw10013.workers.dev/r/oui-button.json",
-        "https://oui-production.mw10013.workers.dev/r/oui-header.json",
-        "https://oui-production.mw10013.workers.dev/r/oui-keyboard.json",
-        "https://oui-production.mw10013.workers.dev/r/oui-menu.json",
-        "https://oui-production.mw10013.workers.dev/r/oui-menu-ex.json",
-        "https://oui-production.mw10013.workers.dev/r/oui-popover.json",
-        "https://oui-production.mw10013.workers.dev/r/oui-separator.json"
+        "https://oui.mw10013.workers.dev/r/oui-button.json",
+        "https://oui.mw10013.workers.dev/r/oui-header.json",
+        "https://oui.mw10013.workers.dev/r/oui-keyboard.json",
+        "https://oui.mw10013.workers.dev/r/oui-menu.json",
+        "https://oui.mw10013.workers.dev/r/oui-menu-ex.json",
+        "https://oui.mw10013.workers.dev/r/oui-popover.json",
+        "https://oui.mw10013.workers.dev/r/oui-separator.json"
       ],
       "meta": {
         "tags": ["menu"]
@@ -1622,10 +1622,10 @@
         }
       ],
       "registryDependencies": [
-        "https://oui-production.mw10013.workers.dev/r/oui-button.json",
-        "https://oui-production.mw10013.workers.dev/r/oui-header.json",
-        "https://oui-production.mw10013.workers.dev/r/oui-menu.json",
-        "https://oui-production.mw10013.workers.dev/r/oui-menu-ex.json"
+        "https://oui.mw10013.workers.dev/r/oui-button.json",
+        "https://oui.mw10013.workers.dev/r/oui-header.json",
+        "https://oui.mw10013.workers.dev/r/oui-menu.json",
+        "https://oui.mw10013.workers.dev/r/oui-menu-ex.json"
       ],
       "meta": {
         "tags": ["menu"]
@@ -1642,10 +1642,10 @@
       ],
       "registryDependencies": [
         "https://ui.shadcn.com/r/styles/new-york/avatar.json",
-        "https://oui-production.mw10013.workers.dev/r/oui-button.json",
-        "https://oui-production.mw10013.workers.dev/r/oui-menu.json",
-        "https://oui-production.mw10013.workers.dev/r/oui-menu-ex.json",
-        "https://oui-production.mw10013.workers.dev/r/oui-separator.json"
+        "https://oui.mw10013.workers.dev/r/oui-button.json",
+        "https://oui.mw10013.workers.dev/r/oui-menu.json",
+        "https://oui.mw10013.workers.dev/r/oui-menu-ex.json",
+        "https://oui.mw10013.workers.dev/r/oui-separator.json"
       ],
       "dependencies": ["lucide-react"],
       "meta": {
@@ -1663,10 +1663,10 @@
       ],
       "registryDependencies": [
         "https://ui.shadcn.com/r/styles/new-york/avatar.json",
-        "https://oui-production.mw10013.workers.dev/r/oui-button.json",
-        "https://oui-production.mw10013.workers.dev/r/oui-menu.json",
-        "https://oui-production.mw10013.workers.dev/r/oui-menu-ex.json",
-        "https://oui-production.mw10013.workers.dev/r/oui-separator.json"
+        "https://oui.mw10013.workers.dev/r/oui-button.json",
+        "https://oui.mw10013.workers.dev/r/oui-menu.json",
+        "https://oui.mw10013.workers.dev/r/oui-menu-ex.json",
+        "https://oui.mw10013.workers.dev/r/oui-separator.json"
       ],
       "dependencies": ["lucide-react"],
       "meta": {
@@ -1683,10 +1683,10 @@
         }
       ],
       "registryDependencies": [
-        "https://oui-production.mw10013.workers.dev/r/oui-button.json",
-        "https://oui-production.mw10013.workers.dev/r/oui-menu.json",
-        "https://oui-production.mw10013.workers.dev/r/oui-menu-ex.json",
-        "https://oui-production.mw10013.workers.dev/r/oui-separator.json"
+        "https://oui.mw10013.workers.dev/r/oui-button.json",
+        "https://oui.mw10013.workers.dev/r/oui-menu.json",
+        "https://oui.mw10013.workers.dev/r/oui-menu-ex.json",
+        "https://oui.mw10013.workers.dev/r/oui-separator.json"
       ],
       "dependencies": ["lucide-react"],
       "meta": {
@@ -1703,9 +1703,9 @@
         }
       ],
       "registryDependencies": [
-        "https://oui-production.mw10013.workers.dev/r/oui-button.json",
-        "https://oui-production.mw10013.workers.dev/r/oui-dialog.json",
-        "https://oui-production.mw10013.workers.dev/r/oui-popover.json"
+        "https://oui.mw10013.workers.dev/r/oui-button.json",
+        "https://oui.mw10013.workers.dev/r/oui-dialog.json",
+        "https://oui.mw10013.workers.dev/r/oui-popover.json"
       ],
       "meta": {
         "tags": ["popover"]
@@ -1721,11 +1721,11 @@
         }
       ],
       "registryDependencies": [
-        "https://oui-production.mw10013.workers.dev/r/oui-button.json",
-        "https://oui-production.mw10013.workers.dev/r/oui-dialog.json",
-        "https://oui-production.mw10013.workers.dev/r/oui-heading.json",
-        "https://oui-production.mw10013.workers.dev/r/oui-popover-ex.json",
-        "https://oui-production.mw10013.workers.dev/r/oui-text-field-ex-horizontal.json"
+        "https://oui.mw10013.workers.dev/r/oui-button.json",
+        "https://oui.mw10013.workers.dev/r/oui-dialog.json",
+        "https://oui.mw10013.workers.dev/r/oui-heading.json",
+        "https://oui.mw10013.workers.dev/r/oui-popover-ex.json",
+        "https://oui.mw10013.workers.dev/r/oui-text-field-ex-horizontal.json"
       ],
       "meta": {
         "tags": ["popover"]
@@ -1741,12 +1741,12 @@
         }
       ],
       "registryDependencies": [
-        "https://oui-production.mw10013.workers.dev/r/oui-field-error.json",
-        "https://oui-production.mw10013.workers.dev/r/oui-group.json",
-        "https://oui-production.mw10013.workers.dev/r/oui-input.json",
-        "https://oui-production.mw10013.workers.dev/r/oui-label.json",
-        "https://oui-production.mw10013.workers.dev/r/oui-number-field.json",
-        "https://oui-production.mw10013.workers.dev/r/oui-text.json"
+        "https://oui.mw10013.workers.dev/r/oui-field-error.json",
+        "https://oui.mw10013.workers.dev/r/oui-group.json",
+        "https://oui.mw10013.workers.dev/r/oui-input.json",
+        "https://oui.mw10013.workers.dev/r/oui-label.json",
+        "https://oui.mw10013.workers.dev/r/oui-number-field.json",
+        "https://oui.mw10013.workers.dev/r/oui-text.json"
       ],
       "dependencies": ["lucide-react"],
       "meta": {
@@ -1763,8 +1763,8 @@
         }
       ],
       "registryDependencies": [
-        "https://oui-production.mw10013.workers.dev/r/oui-button.json",
-        "https://oui-production.mw10013.workers.dev/r/oui-number-field-ex.json"
+        "https://oui.mw10013.workers.dev/r/oui-button.json",
+        "https://oui.mw10013.workers.dev/r/oui-number-field-ex.json"
       ],
       "meta": {
         "tags": ["number-field"]
@@ -1780,18 +1780,18 @@
         }
       ],
       "registryDependencies": [
-        "https://oui-production.mw10013.workers.dev/r/oui-button.json",
-        "https://oui-production.mw10013.workers.dev/r/oui-checkbox-ex.json",
-        "https://oui-production.mw10013.workers.dev/r/oui-checkbox-group-ex.json",
-        "https://oui-production.mw10013.workers.dev/r/oui-checkbox.json",
-        "https://oui-production.mw10013.workers.dev/r/oui-form.json",
-        "https://oui-production.mw10013.workers.dev/r/oui-list-box.json",
-        "https://oui-production.mw10013.workers.dev/r/oui-radio-group-ex.json",
-        "https://oui-production.mw10013.workers.dev/r/oui-radio-group.json",
-        "https://oui-production.mw10013.workers.dev/r/oui-select-ex.json",
-        "https://oui-production.mw10013.workers.dev/r/oui-switch-ex.json",
-        "https://oui-production.mw10013.workers.dev/r/oui-text-area.json",
-        "https://oui-production.mw10013.workers.dev/r/oui-text-field-ex.json"
+        "https://oui.mw10013.workers.dev/r/oui-button.json",
+        "https://oui.mw10013.workers.dev/r/oui-checkbox-ex.json",
+        "https://oui.mw10013.workers.dev/r/oui-checkbox-group-ex.json",
+        "https://oui.mw10013.workers.dev/r/oui-checkbox.json",
+        "https://oui.mw10013.workers.dev/r/oui-form.json",
+        "https://oui.mw10013.workers.dev/r/oui-list-box.json",
+        "https://oui.mw10013.workers.dev/r/oui-radio-group-ex.json",
+        "https://oui.mw10013.workers.dev/r/oui-radio-group.json",
+        "https://oui.mw10013.workers.dev/r/oui-select-ex.json",
+        "https://oui.mw10013.workers.dev/r/oui-switch-ex.json",
+        "https://oui.mw10013.workers.dev/r/oui-text-area.json",
+        "https://oui.mw10013.workers.dev/r/oui-text-field-ex.json"
       ],
       "meta": {
         "tags": ["form"]
@@ -1807,8 +1807,8 @@
         }
       ],
       "registryDependencies": [
-        "https://oui-production.mw10013.workers.dev/r/oui-label.json",
-        "https://oui-production.mw10013.workers.dev/r/oui-slider.json"
+        "https://oui.mw10013.workers.dev/r/oui-label.json",
+        "https://oui.mw10013.workers.dev/r/oui-slider.json"
       ],
       "meta": {
         "tags": ["slider"]
@@ -1823,7 +1823,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["https://oui-production.mw10013.workers.dev/r/oui-slider-ex.json"],
+      "registryDependencies": ["https://oui.mw10013.workers.dev/r/oui-slider-ex.json"],
       "meta": {
         "tags": ["slider"]
       }
@@ -1837,7 +1837,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["https://oui-production.mw10013.workers.dev/r/oui-slider-ex.json"],
+      "registryDependencies": ["https://oui.mw10013.workers.dev/r/oui-slider-ex.json"],
       "meta": {
         "tags": ["slider"]
       }
@@ -1852,8 +1852,8 @@
         }
       ],
       "registryDependencies": [
-        "https://oui-production.mw10013.workers.dev/r/oui-input.json",
-        "https://oui-production.mw10013.workers.dev/r/oui-label.json"
+        "https://oui.mw10013.workers.dev/r/oui-input.json",
+        "https://oui.mw10013.workers.dev/r/oui-label.json"
       ],
       "meta": {
         "tags": ["label"]
@@ -1869,8 +1869,8 @@
         }
       ],
       "registryDependencies": [
-        "https://oui-production.mw10013.workers.dev/r/oui-input.json",
-        "https://oui-production.mw10013.workers.dev/r/oui-label.json"
+        "https://oui.mw10013.workers.dev/r/oui-input.json",
+        "https://oui.mw10013.workers.dev/r/oui-label.json"
       ],
       "meta": {
         "tags": ["label"]
@@ -1885,7 +1885,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["https://oui-production.mw10013.workers.dev/r/oui-link.json"],
+      "registryDependencies": ["https://oui.mw10013.workers.dev/r/oui-link.json"],
       "meta": {
         "tags": ["link"]
       }
@@ -1899,7 +1899,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["https://oui-production.mw10013.workers.dev/r/oui-link.json"],
+      "registryDependencies": ["https://oui.mw10013.workers.dev/r/oui-link.json"],
       "meta": {
         "tags": ["link"]
       }
@@ -1913,7 +1913,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["https://oui-production.mw10013.workers.dev/r/oui-link.json"],
+      "registryDependencies": ["https://oui.mw10013.workers.dev/r/oui-link.json"],
       "meta": {
         "tags": ["link"]
       }
@@ -1927,7 +1927,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["https://oui-production.mw10013.workers.dev/r/oui-link.json"],
+      "registryDependencies": ["https://oui.mw10013.workers.dev/r/oui-link.json"],
       "meta": {
         "tags": ["link"]
       }
@@ -1941,7 +1941,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["https://oui-production.mw10013.workers.dev/r/oui-link.json"],
+      "registryDependencies": ["https://oui.mw10013.workers.dev/r/oui-link.json"],
       "meta": {
         "tags": ["link"]
       }
@@ -1955,7 +1955,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["https://oui-production.mw10013.workers.dev/r/oui-link.json"],
+      "registryDependencies": ["https://oui.mw10013.workers.dev/r/oui-link.json"],
       "meta": {
         "tags": ["link"]
       }
@@ -1970,8 +1970,8 @@
         }
       ],
       "registryDependencies": [
-        "https://oui-production.mw10013.workers.dev/r/oui-button.json",
-        "https://oui-production.mw10013.workers.dev/r/oui-link.json"
+        "https://oui.mw10013.workers.dev/r/oui-button.json",
+        "https://oui.mw10013.workers.dev/r/oui-link.json"
       ],
       "meta": {
         "tags": ["link"]
@@ -1987,8 +1987,8 @@
         }
       ],
       "registryDependencies": [
-        "https://oui-production.mw10013.workers.dev/r/oui-button.json",
-        "https://oui-production.mw10013.workers.dev/r/oui-link.json"
+        "https://oui.mw10013.workers.dev/r/oui-button.json",
+        "https://oui.mw10013.workers.dev/r/oui-link.json"
       ],
       "meta": {
         "tags": ["link"]
@@ -2004,8 +2004,8 @@
         }
       ],
       "registryDependencies": [
-        "https://oui-production.mw10013.workers.dev/r/oui-button.json",
-        "https://oui-production.mw10013.workers.dev/r/oui-link.json"
+        "https://oui.mw10013.workers.dev/r/oui-button.json",
+        "https://oui.mw10013.workers.dev/r/oui-link.json"
       ],
       "meta": {
         "tags": ["link"]
@@ -2021,8 +2021,8 @@
         }
       ],
       "registryDependencies": [
-        "https://oui-production.mw10013.workers.dev/r/oui-button.json",
-        "https://oui-production.mw10013.workers.dev/r/oui-link.json"
+        "https://oui.mw10013.workers.dev/r/oui-button.json",
+        "https://oui.mw10013.workers.dev/r/oui-link.json"
       ],
       "meta": {
         "tags": ["link"]
@@ -2039,10 +2039,10 @@
       ],
       "registryDependencies": [
         "https://ui.shadcn.com/r/styles/new-york/card.json",
-        "https://oui-production.mw10013.workers.dev/r/oui-button.json",
-        "https://oui-production.mw10013.workers.dev/r/oui-label.json",
-        "https://oui-production.mw10013.workers.dev/r/oui-link.json",
-        "https://oui-production.mw10013.workers.dev/r/oui-text-field-ex.json"
+        "https://oui.mw10013.workers.dev/r/oui-button.json",
+        "https://oui.mw10013.workers.dev/r/oui-label.json",
+        "https://oui.mw10013.workers.dev/r/oui-link.json",
+        "https://oui.mw10013.workers.dev/r/oui-text-field-ex.json"
       ],
       "meta": {
         "tags": ["link"]
@@ -2058,8 +2058,8 @@
         }
       ],
       "registryDependencies": [
-        "https://oui-production.mw10013.workers.dev/r/oui-base.json",
-        "https://oui-production.mw10013.workers.dev/r/oui-button.json"
+        "https://oui.mw10013.workers.dev/r/oui-base.json",
+        "https://oui.mw10013.workers.dev/r/oui-button.json"
       ],
       "meta": {
         "tags": ["list-box"]
@@ -2075,7 +2075,7 @@
         }
       ],
       "registryDependencies": [
-        "https://oui-production.mw10013.workers.dev/r/oui-list-box-ex-pagination.json"
+        "https://oui.mw10013.workers.dev/r/oui-list-box-ex-pagination.json"
       ],
       "meta": {
         "tags": ["list-box"]
@@ -2090,7 +2090,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["https://oui-production.mw10013.workers.dev/r/oui-separator.json"],
+      "registryDependencies": ["https://oui.mw10013.workers.dev/r/oui-separator.json"],
       "meta": {
         "tags": ["separator"]
       }
@@ -2105,7 +2105,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["https://oui-production.mw10013.workers.dev/r/oui-text-area.json"],
+      "registryDependencies": ["https://oui.mw10013.workers.dev/r/oui-text-area.json"],
       "meta": {
         "tags": ["text-area"]
       }
@@ -2121,8 +2121,8 @@
         }
       ],
       "registryDependencies": [
-        "https://oui-production.mw10013.workers.dev/r/oui-text-area.json",
-        "https://oui-production.mw10013.workers.dev/r/oui-text-field-ex.json"
+        "https://oui.mw10013.workers.dev/r/oui-text-area.json",
+        "https://oui.mw10013.workers.dev/r/oui-text-field-ex.json"
       ],
       "meta": {
         "tags": ["text-area"]
@@ -2139,8 +2139,8 @@
         }
       ],
       "registryDependencies": [
-        "https://oui-production.mw10013.workers.dev/r/oui-text-area.json",
-        "https://oui-production.mw10013.workers.dev/r/oui-text-field-ex.json"
+        "https://oui.mw10013.workers.dev/r/oui-text-area.json",
+        "https://oui.mw10013.workers.dev/r/oui-text-field-ex.json"
       ],
       "meta": {
         "tags": ["text-area"]
@@ -2156,7 +2156,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["https://oui-production.mw10013.workers.dev/r/oui-table.json"],
+      "registryDependencies": ["https://oui.mw10013.workers.dev/r/oui-table.json"],
       "meta": {
         "tags": ["table"]
       }
@@ -2172,12 +2172,12 @@
         }
       ],
       "registryDependencies": [
-        "https://oui-production.mw10013.workers.dev/r/oui-button.json",
-        "https://oui-production.mw10013.workers.dev/r/oui-checkbox.json",
-        "https://oui-production.mw10013.workers.dev/r/oui-menu-ex.json",
-        "https://oui-production.mw10013.workers.dev/r/oui-menu.json",
-        "https://oui-production.mw10013.workers.dev/r/oui-separator.json",
-        "https://oui-production.mw10013.workers.dev/r/oui-table.json"
+        "https://oui.mw10013.workers.dev/r/oui-button.json",
+        "https://oui.mw10013.workers.dev/r/oui-checkbox.json",
+        "https://oui.mw10013.workers.dev/r/oui-menu-ex.json",
+        "https://oui.mw10013.workers.dev/r/oui-menu.json",
+        "https://oui.mw10013.workers.dev/r/oui-separator.json",
+        "https://oui.mw10013.workers.dev/r/oui-table.json"
       ],
       "dependencies": ["lucide-react"],
       "meta": {
@@ -2194,11 +2194,11 @@
         }
       ],
       "registryDependencies": [
-        "https://oui-production.mw10013.workers.dev/r/oui-button.json",
-        "https://oui-production.mw10013.workers.dev/r/oui-dialog.json",
-        "https://oui-production.mw10013.workers.dev/r/oui-dialog-ex-sheet.json",
-        "https://oui-production.mw10013.workers.dev/r/oui-heading.json",
-        "https://oui-production.mw10013.workers.dev/r/oui-text-field-ex.json"
+        "https://oui.mw10013.workers.dev/r/oui-button.json",
+        "https://oui.mw10013.workers.dev/r/oui-dialog.json",
+        "https://oui.mw10013.workers.dev/r/oui-dialog-ex-sheet.json",
+        "https://oui.mw10013.workers.dev/r/oui-heading.json",
+        "https://oui.mw10013.workers.dev/r/oui-text-field-ex.json"
       ],
       "meta": {
         "tags": ["dialog"]
@@ -2214,10 +2214,10 @@
         }
       ],
       "registryDependencies": [
-        "https://oui-production.mw10013.workers.dev/r/oui-button.json",
-        "https://oui-production.mw10013.workers.dev/r/oui-dialog.json",
-        "https://oui-production.mw10013.workers.dev/r/oui-dialog-ex-sheet.json",
-        "https://oui-production.mw10013.workers.dev/r/oui-heading.json"
+        "https://oui.mw10013.workers.dev/r/oui-button.json",
+        "https://oui.mw10013.workers.dev/r/oui-dialog.json",
+        "https://oui.mw10013.workers.dev/r/oui-dialog-ex-sheet.json",
+        "https://oui.mw10013.workers.dev/r/oui-heading.json"
       ],
       "meta": {
         "tags": ["dialog"]
