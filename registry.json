@@ -1,0 +1,2227 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry.json",
+  "name": "oui",
+  "homepage": "https://github.com/mw10013/cloudflare-effect-react-router-saas",
+  "items": [
+    {
+      "name": "oui-base",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "registry/components/ui/oui-base.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "registryDependencies": [],
+      "dependencies": ["react-aria-components", "tailwind-merge"]
+    },
+    {
+      "name": "oui-button",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "registry/components/ui/oui-button.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "registryDependencies": ["http://localhost:5173/r/oui-base.json"],
+      "dependencies": [
+        "react-aria-components",
+        "class-variance-authority",
+        "tailwind-merge"
+      ]
+    },
+    {
+      "name": "oui-checkbox",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "registry/components/ui/oui-checkbox.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "registryDependencies": [
+        "http://localhost:5173/r/oui-label.json",
+        "http://localhost:5173/r/oui-text.json"
+      ],
+      "dependencies": [
+        "react-aria-components",
+        "lucide-react",
+        "tailwind-merge"
+      ]
+    },
+    {
+      "name": "oui-checkbox-group",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "registry/components/ui/oui-checkbox-group.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "registryDependencies": ["http://localhost:5173/r/oui-base.json"],
+      "dependencies": ["react-aria-components"]
+    },
+    {
+      "name": "oui-dialog",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "registry/components/ui/oui-dialog.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "registryDependencies": [
+        "http://localhost:5173/r/oui-button.json",
+        "http://localhost:5173/r/oui-heading.json",
+        "http://localhost:5173/r/oui-modal.json"
+      ],
+      "dependencies": [
+        "react-aria-components",
+        "lucide-react",
+        "class-variance-authority",
+        "tailwind-merge"
+      ]
+    },
+    {
+      "name": "oui-disclosure",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "registry/components/ui/oui-disclosure.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "registryDependencies": ["http://localhost:5173/r/oui-heading.json"],
+      "dependencies": ["react-aria-components", "lucide-react"]
+    },
+    {
+      "name": "oui-field-error",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "registry/components/ui/oui-field-error.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "registryDependencies": ["http://localhost:5173/r/oui-base.json"],
+      "dependencies": ["react-aria-components"]
+    },
+    {
+      "name": "oui-form",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "registry/components/ui/oui-form.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "registryDependencies": [],
+      "dependencies": ["react-aria-components", "tailwind-merge"]
+    },
+    {
+      "name": "oui-group",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "registry/components/ui/oui-group.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "registryDependencies": ["http://localhost:5173/r/oui-base.json"],
+      "dependencies": ["react-aria-components"]
+    },
+    {
+      "name": "oui-header",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "registry/components/ui/oui-header.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "registryDependencies": [],
+      "dependencies": [
+        "react-aria-components",
+        "class-variance-authority",
+        "tailwind-merge"
+      ]
+    },
+    {
+      "name": "oui-heading",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "registry/components/ui/oui-heading.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "registryDependencies": [],
+      "dependencies": [
+        "react-aria-components",
+        "class-variance-authority",
+        "tailwind-merge"
+      ]
+    },
+    {
+      "name": "oui-input",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "registry/components/ui/oui-input.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "registryDependencies": ["http://localhost:5173/r/oui-base.json"],
+      "dependencies": [
+        "react-aria-components",
+        "class-variance-authority",
+        "tailwind-merge"
+      ]
+    },
+    {
+      "name": "oui-keyboard",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "registry/components/ui/oui-keyboard.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "registryDependencies": [],
+      "dependencies": ["react-aria-components", "tailwind-merge"]
+    },
+    {
+      "name": "oui-label",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "registry/components/ui/oui-label.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "registryDependencies": ["http://localhost:5173/r/oui-base.json"],
+      "dependencies": ["react-aria-components", "tailwind-merge"]
+    },
+    {
+      "name": "oui-link",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "registry/components/ui/oui-link.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "registryDependencies": ["http://localhost:5173/r/oui-base.json"],
+      "dependencies": [
+        "react-aria-components",
+        "class-variance-authority",
+        "tailwind-merge"
+      ]
+    },
+    {
+      "name": "oui-list-box",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "registry/components/ui/oui-list-box.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "registryDependencies": ["http://localhost:5173/r/oui-button.json"],
+      "dependencies": [
+        "react-aria-components",
+        "lucide-react",
+        "tailwind-merge"
+      ]
+    },
+    {
+      "name": "oui-menu",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "registry/components/ui/oui-menu.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "registryDependencies": [
+        "http://localhost:5173/r/oui-base.json",
+        "http://localhost:5173/r/oui-button.json",
+        "http://localhost:5173/r/oui-popover.json"
+      ],
+      "dependencies": [
+        "react-aria-components",
+        "class-variance-authority",
+        "lucide-react",
+        "tailwind-merge"
+      ]
+    },
+    {
+      "name": "oui-modal",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "registry/components/ui/oui-modal.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "registryDependencies": ["http://localhost:5173/r/oui-base.json"],
+      "dependencies": [
+        "react-aria-components",
+        "class-variance-authority",
+        "tailwind-merge"
+      ]
+    },
+    {
+      "name": "oui-number-field",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "registry/components/ui/oui-number-field.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "registryDependencies": [
+        "http://localhost:5173/r/oui-base.json",
+        "http://localhost:5173/r/oui-field-error.json",
+        "http://localhost:5173/r/oui-group.json",
+        "http://localhost:5173/r/oui-input.json",
+        "http://localhost:5173/r/oui-label.json",
+        "http://localhost:5173/r/oui-text.json"
+      ],
+      "dependencies": ["react-aria-components", "lucide-react"]
+    },
+    {
+      "name": "oui-popover",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "registry/components/ui/oui-popover.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "registryDependencies": [
+        "http://localhost:5173/r/oui-button.json",
+        "http://localhost:5173/r/oui-dialog.json"
+      ],
+      "dependencies": [
+        "react-aria-components",
+        "class-variance-authority",
+        "tailwind-merge"
+      ]
+    },
+    {
+      "name": "oui-radio-group",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "registry/components/ui/oui-radio-group.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "registryDependencies": [
+        "http://localhost:5173/r/oui-field-error.json",
+        "http://localhost:5173/r/oui-label.json",
+        "http://localhost:5173/r/oui-text.json"
+      ],
+      "dependencies": [
+        "react-aria-components",
+        "lucide-react",
+        "tailwind-merge"
+      ]
+    },
+    {
+      "name": "oui-search-field",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "registry/components/ui/oui-search-field.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "registryDependencies": [
+        "http://localhost:5173/r/oui-base.json",
+        "http://localhost:5173/r/oui-field-error.json",
+        "http://localhost:5173/r/oui-input.json",
+        "http://localhost:5173/r/oui-label.json",
+        "http://localhost:5173/r/oui-text.json"
+      ],
+      "dependencies": ["react-aria-components"]
+    },
+    {
+      "name": "oui-select",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "registry/components/ui/oui-select.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "registryDependencies": [
+        "http://localhost:5173/r/oui-field-error.json",
+        "http://localhost:5173/r/oui-label.json",
+        "http://localhost:5173/r/oui-popover.json",
+        "http://localhost:5173/r/oui-text.json"
+      ],
+      "dependencies": [
+        "react-aria-components",
+        "lucide-react",
+        "tailwind-merge"
+      ]
+    },
+    {
+      "name": "oui-separator",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "registry/components/ui/oui-separator.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "registryDependencies": [],
+      "dependencies": [
+        "react-aria-components",
+        "class-variance-authority",
+        "tailwind-merge"
+      ]
+    },
+    {
+      "name": "oui-slider",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "registry/components/ui/oui-slider.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "registryDependencies": ["http://localhost:5173/r/oui-label.json"],
+      "dependencies": ["react-aria-components"]
+    },
+    {
+      "name": "oui-switch",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "registry/components/ui/oui-switch.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "registryDependencies": [
+        "http://localhost:5173/r/oui-label.json",
+        "http://localhost:5173/r/oui-text.json"
+      ],
+      "dependencies": ["react-aria-components", "tailwind-merge"]
+    },
+    {
+      "name": "oui-table",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "registry/components/ui/oui-table.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "registryDependencies": ["http://localhost:5173/r/oui-base.json"],
+      "dependencies": [
+        "react-aria-components",
+        "lucide-react",
+        "tailwind-merge"
+      ]
+    },
+    {
+      "name": "oui-text",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "registry/components/ui/oui-text.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "registryDependencies": [],
+      "dependencies": [
+        "react-aria-components",
+        "class-variance-authority",
+        "tailwind-merge"
+      ]
+    },
+    {
+      "name": "oui-text-area",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "registry/components/ui/oui-text-area.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "registryDependencies": [],
+      "dependencies": ["react-aria-components"]
+    },
+    {
+      "name": "oui-text-field",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "registry/components/ui/oui-text-field.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "registryDependencies": [
+        "http://localhost:5173/r/oui-base.json",
+        "http://localhost:5173/r/oui-field-error.json",
+        "http://localhost:5173/r/oui-input.json",
+        "http://localhost:5173/r/oui-label.json",
+        "http://localhost:5173/r/oui-text.json"
+      ],
+      "dependencies": ["react-aria-components"]
+    },
+    {
+      "name": "oui-dialog-ex",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-dialog-ex.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "http://localhost:5173/r/oui-dialog.json",
+        "http://localhost:5173/r/oui-button.json",
+        "http://localhost:5173/r/oui-modal-ex.json"
+      ],
+      "meta": {
+        "tags": ["dialog", "dialog ex"]
+      }
+    },
+    {
+      "name": "oui-dialog-ex-demo-form",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-dialog-ex-demo-form.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "http://localhost:5173/r/oui-button.json",
+        "http://localhost:5173/r/oui-dialog.json",
+        "http://localhost:5173/r/oui-dialog-ex.json",
+        "http://localhost:5173/r/oui-heading.json",
+        "http://localhost:5173/r/oui-text-field-ex.json"
+      ],
+      "meta": {
+        "tags": ["dialog", "dialog ex"],
+        "style": "flex-center"
+      }
+    },
+    {
+      "name": "oui-modal-ex",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-modal-ex.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": ["http://localhost:5173/r/oui-modal.json"],
+      "meta": {
+        "tags": ["modal", "modal ex"]
+      }
+    },
+    {
+      "name": "oui-modal-ex-sheet",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-modal-ex-sheet.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": ["http://localhost:5173/r/oui-modal.json"],
+      "meta": {
+        "tags": ["modal"]
+      }
+    },
+    {
+      "name": "oui-menu-ex-demo-checkboxes",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-menu-ex-demo-checkboxes.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "http://localhost:5173/r/oui-button.json",
+        "http://localhost:5173/r/oui-header.json",
+        "http://localhost:5173/r/oui-menu.json",
+        "http://localhost:5173/r/oui-menu-ex.json",
+        "http://localhost:5173/r/oui-separator.json"
+      ],
+      "meta": {
+        "tags": ["menu"]
+      }
+    },
+    {
+      "name": "oui-button-demo",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-button-demo.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": ["http://localhost:5173/r/oui-button.json"],
+      "meta": {
+        "tags": ["button"],
+        "style": "text-center"
+      }
+    },
+    {
+      "name": "oui-button-demo-destructive",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-button-demo-destructive.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": ["http://localhost:5173/r/oui-button.json"],
+      "meta": {
+        "tags": ["button"],
+        "style": "text-center"
+      }
+    },
+    {
+      "name": "oui-button-demo-disabled",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-button-demo-disabled.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": ["http://localhost:5173/r/oui-button.json"],
+      "meta": {
+        "tags": ["button"],
+        "style": "text-center"
+      }
+    },
+    {
+      "name": "oui-button-demo-disabled-animation",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-button-demo-disabled-animation.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": ["http://localhost:5173/r/oui-button.json"],
+      "meta": {
+        "tags": ["button"],
+        "style": "text-center"
+      }
+    },
+    {
+      "name": "oui-button-demo-ghost",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-button-demo-ghost.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": ["http://localhost:5173/r/oui-button.json"],
+      "meta": {
+        "tags": ["button"],
+        "style": "text-center"
+      }
+    },
+    {
+      "name": "oui-button-demo-icon-left",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-button-demo-icon-left.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": ["http://localhost:5173/r/oui-button.json"],
+      "dependencies": ["lucide-react"],
+      "meta": {
+        "tags": ["button"],
+        "style": "text-center"
+      }
+    },
+    {
+      "name": "oui-button-demo-icon-right",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-button-demo-icon-right.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": ["http://localhost:5173/r/oui-button.json"],
+      "dependencies": ["lucide-react"],
+      "meta": {
+        "tags": ["button"],
+        "style": "text-center"
+      }
+    },
+    {
+      "name": "oui-button-demo-lg",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-button-demo-lg.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": ["http://localhost:5173/r/oui-button.json"],
+      "meta": {
+        "tags": ["button"],
+        "style": "text-center"
+      }
+    },
+    {
+      "name": "oui-button-demo-link",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-button-demo-link.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": ["http://localhost:5173/r/oui-button.json"],
+      "meta": {
+        "tags": ["button"],
+        "style": "text-center"
+      }
+    },
+    {
+      "name": "oui-button-demo-outline",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-button-demo-outline.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": ["http://localhost:5173/r/oui-button.json"],
+      "meta": {
+        "tags": ["button"],
+        "style": "text-center"
+      }
+    },
+    {
+      "name": "oui-button-demo-secondary",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-button-demo-secondary.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": ["http://localhost:5173/r/oui-button.json"],
+      "meta": {
+        "tags": ["button"],
+        "style": "text-center"
+      }
+    },
+    {
+      "name": "oui-button-demo-sm",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-button-demo-sm.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": ["http://localhost:5173/r/oui-button.json"],
+      "meta": {
+        "tags": ["button"],
+        "style": "text-center"
+      }
+    },
+    {
+      "name": "oui-input-demo",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-input-demo.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": ["http://localhost:5173/r/oui-input.json"],
+      "meta": {
+        "tags": ["input"]
+      }
+    },
+    {
+      "name": "oui-input-demo-disabled",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-input-demo-disabled.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": ["http://localhost:5173/r/oui-input.json"],
+      "meta": {
+        "tags": ["input"]
+      }
+    },
+    {
+      "name": "oui-input-demo-password",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-input-demo-password.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": ["http://localhost:5173/r/oui-input.json"],
+      "meta": {
+        "tags": ["input"]
+      }
+    },
+    {
+      "name": "oui-text-field-ex",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-text-field-ex.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "http://localhost:5173/r/oui-text-field.json",
+        "http://localhost:5173/r/oui-input.json",
+        "http://localhost:5173/r/oui-label.json",
+        "http://localhost:5173/r/oui-field-error.json",
+        "http://localhost:5173/r/oui-text.json"
+      ],
+      "meta": {
+        "tags": ["text field"]
+      }
+    },
+    {
+      "name": "oui-text-field-ex-horizontal",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-text-field-ex-horizontal.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "http://localhost:5173/r/oui-text-field.json",
+        "http://localhost:5173/r/oui-input.json",
+        "http://localhost:5173/r/oui-label.json",
+        "http://localhost:5173/r/oui-field-error.json",
+        "http://localhost:5173/r/oui-text.json"
+      ],
+      "meta": {
+        "tags": ["text field"]
+      }
+    },
+    {
+      "name": "oui-dialog-ex-demo-scrollable-content",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-dialog-ex-demo-scrollable-content.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "http://localhost:5173/r/oui-button.json",
+        "http://localhost:5173/r/oui-dialog.json",
+        "http://localhost:5173/r/oui-dialog-ex.json",
+        "http://localhost:5173/r/oui-heading.json"
+      ],
+      "meta": {
+        "tags": ["dialog"],
+        "style": "flex-center"
+      }
+    },
+    {
+      "name": "oui-dialog-ex-demo-sticky-footer",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-dialog-ex-demo-sticky-footer.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "http://localhost:5173/r/oui-button.json",
+        "http://localhost:5173/r/oui-dialog.json",
+        "http://localhost:5173/r/oui-dialog-ex.json",
+        "http://localhost:5173/r/oui-heading.json"
+      ],
+      "meta": {
+        "tags": ["dialog"],
+        "style": "flex-center"
+      }
+    },
+    {
+      "name": "oui-dialog-ex-alert",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-dialog-ex-alert.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "http://localhost:5173/r/oui-button.json",
+        "http://localhost:5173/r/oui-dialog.json",
+        "http://localhost:5173/r/oui-heading.json",
+        "http://localhost:5173/r/oui-modal-ex.json"
+      ],
+      "meta": {
+        "tags": ["dialog"]
+      }
+    },
+    {
+      "name": "oui-dialog-ex-sheet",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-dialog-ex-sheet.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "http://localhost:5173/r/oui-button.json",
+        "http://localhost:5173/r/oui-dialog.json",
+        "http://localhost:5173/r/oui-modal-ex-sheet.json"
+      ],
+      "meta": {
+        "tags": ["dialog"]
+      }
+    },
+    {
+      "name": "oui-dialog-ex-demo-alert",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-dialog-ex-demo-alert.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "http://localhost:5173/r/oui-button.json",
+        "http://localhost:5173/r/oui-dialog.json",
+        "http://localhost:5173/r/oui-dialog-ex.json",
+        "http://localhost:5173/r/oui-heading.json"
+      ],
+      "meta": {
+        "tags": ["dialog"],
+        "style": "flex-center"
+      }
+    },
+    {
+      "name": "oui-dialog-ex-alert-demo-confirm",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-dialog-ex-alert-demo-confirm.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "http://localhost:5173/r/oui-button.json",
+        "http://localhost:5173/r/oui-dialog-ex-alert.json"
+      ],
+      "meta": {
+        "tags": ["dialog"],
+        "style": "flex-center"
+      }
+    },
+    {
+      "name": "oui-dialog-ex-alert-demo-ack",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-dialog-ex-alert-demo-ack.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "http://localhost:5173/r/oui-button.json",
+        "http://localhost:5173/r/oui-dialog-ex-alert.json"
+      ],
+      "meta": {
+        "tags": ["dialog"],
+        "style": "flex-center"
+      }
+    },
+    {
+      "name": "oui-dialog-ex-alert-demo-programmatic",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-dialog-ex-alert-demo-programmatic.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "http://localhost:5173/r/oui-button.json",
+        "http://localhost:5173/r/oui-dialog-ex-alert.json"
+      ],
+      "meta": {
+        "tags": ["dialog"],
+        "style": "flex-center"
+      }
+    },
+    {
+      "name": "oui-text-field-ex-demo",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-text-field-ex-demo.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "http://localhost:5173/r/oui-text-field-ex.json"
+      ],
+      "meta": {
+        "tags": ["text-field"]
+      }
+    },
+    {
+      "name": "oui-text-field-ex-horizontal-demo",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-text-field-ex-horizontal-demo.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "http://localhost:5173/r/oui-text-field-ex-horizontal.json"
+      ],
+      "meta": {
+        "tags": ["text-field"]
+      }
+    },
+    {
+      "name": "oui-switch-ex",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-switch-ex.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "http://localhost:5173/r/oui-base.json",
+        "http://localhost:5173/r/oui-switch.json",
+        "http://localhost:5173/r/oui-text.json"
+      ],
+      "meta": {
+        "tags": ["switch"]
+      }
+    },
+    {
+      "name": "oui-switch-ex-demo",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-switch-ex-demo.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": ["http://localhost:5173/r/oui-switch-ex.json"],
+      "meta": {
+        "tags": ["switch"]
+      }
+    },
+    {
+      "name": "oui-switch-ex-demo-blue",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-switch-ex-demo-blue.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": ["http://localhost:5173/r/oui-switch-ex.json"],
+      "meta": {
+        "tags": ["switch"]
+      }
+    },
+    {
+      "name": "oui-switch-ex-demo-description",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-switch-ex-demo-description.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": ["http://localhost:5173/r/oui-switch-ex.json"],
+      "meta": {
+        "tags": ["switch"]
+      }
+    },
+    {
+      "name": "oui-switch-ex-demo-disabled",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-switch-ex-demo-disabled.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": ["http://localhost:5173/r/oui-switch-ex.json"],
+      "meta": {
+        "tags": ["switch"]
+      }
+    },
+    {
+      "name": "oui-search-field-ex",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-search-field-ex.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "http://localhost:5173/r/oui-field-error.json",
+        "http://localhost:5173/r/oui-label.json",
+        "http://localhost:5173/r/oui-input.json",
+        "http://localhost:5173/r/oui-search-field.json",
+        "http://localhost:5173/r/oui-text.json"
+      ],
+      "meta": {
+        "tags": ["search-field"]
+      }
+    },
+    {
+      "name": "oui-search-field-ex-demo",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-search-field-ex-demo.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "http://localhost:5173/r/oui-search-field-ex.json"
+      ],
+      "meta": {
+        "tags": ["search-field"]
+      }
+    },
+
+    {
+      "name": "oui-radio-group-ex",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-radio-group-ex.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "http://localhost:5173/r/oui-field-error.json",
+        "http://localhost:5173/r/oui-label.json",
+        "http://localhost:5173/r/oui-radio-group.json",
+        "http://localhost:5173/r/oui-text.json"
+      ],
+      "meta": {
+        "tags": ["radio-group"]
+      }
+    },
+    {
+      "name": "oui-radio-group-ex-demo",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-radio-group-ex-demo.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "http://localhost:5173/r/oui-radio-group-ex.json",
+        "http://localhost:5173/r/oui-radio-group.json"
+      ],
+      "meta": {
+        "tags": ["radio-group"]
+      }
+    },
+    {
+      "name": "oui-radio-group-ex-demo-description",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-radio-group-ex-demo-description.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "http://localhost:5173/r/oui-radio-group-ex.json",
+        "http://localhost:5173/r/oui-radio-group.json"
+      ],
+      "meta": {
+        "tags": ["radio-group"]
+      }
+    },
+    {
+      "name": "oui-select-ex",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-select-ex.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "http://localhost:5173/r/oui-field-error.json",
+        "http://localhost:5173/r/oui-label.json",
+        "http://localhost:5173/r/oui-popover.json",
+        "http://localhost:5173/r/oui-select.json",
+        "http://localhost:5173/r/oui-text.json"
+      ],
+      "meta": {
+        "tags": ["select"]
+      }
+    },
+    {
+      "name": "oui-select-ex-popover",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-select-ex-popover.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "http://localhost:5173/r/oui-field-error.json",
+        "http://localhost:5173/r/oui-label.json",
+        "http://localhost:5173/r/oui-popover.json",
+        "http://localhost:5173/r/oui-select.json",
+        "http://localhost:5173/r/oui-text.json"
+      ],
+      "meta": {
+        "tags": ["select"]
+      }
+    },
+    {
+      "name": "oui-select-ex-demo",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-select-ex-demo.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "http://localhost:5173/r/oui-header.json",
+        "http://localhost:5173/r/oui-list-box.json",
+        "http://localhost:5173/r/oui-select-ex.json"
+      ],
+      "meta": {
+        "tags": ["select"]
+      }
+    },
+    {
+      "name": "oui-select-ex-demo-large-list",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-select-ex-demo-large-list.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "http://localhost:5173/r/oui-list-box.json",
+        "http://localhost:5173/r/oui-select-ex.json"
+      ],
+      "meta": {
+        "tags": ["select"]
+      }
+    },
+    {
+      "name": "oui-select-ex-demo-icon",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-select-ex-demo-icon.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "http://localhost:5173/r/oui-list-box.json",
+        "http://localhost:5173/r/oui-select-ex.json"
+      ],
+      "dependencies": ["lucide-react"],
+      "meta": {
+        "tags": ["select"]
+      }
+    },
+    {
+      "name": "oui-select-ex-demo-disabled",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-select-ex-demo-disabled.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "http://localhost:5173/r/oui-list-box.json",
+        "http://localhost:5173/r/oui-select-ex.json"
+      ],
+      "meta": {
+        "tags": ["select"]
+      }
+    },
+    {
+      "name": "oui-autocomplete-ex",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-autocomplete-ex.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "http://localhost:5173/r/oui-search-field-ex.json"
+      ],
+      "meta": {
+        "tags": ["autocomplete"]
+      }
+    },
+    {
+      "name": "oui-autocomplete-ex-demo",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-autocomplete-ex-demo.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "https://ui.shadcn.com/r/styles/new-york/avatar.json",
+        "http://localhost:5173/r/oui-autocomplete-ex.json",
+        "http://localhost:5173/r/oui-list-box.json",
+        "http://localhost:5173/r/oui-select-ex-popover.json"
+      ],
+      "meta": {
+        "tags": ["autocomplete"]
+      }
+    },
+    {
+      "name": "oui-autocomplete-ex-demo-searchable",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-autocomplete-ex-demo-searchable.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "http://localhost:5173/r/oui-autocomplete-ex.json",
+        "http://localhost:5173/r/oui-list-box.json",
+        "http://localhost:5173/r/oui-select-ex-popover.json"
+      ],
+      "meta": {
+        "tags": ["autocomplete"]
+      }
+    },
+    {
+      "name": "oui-checkbox-ex",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-checkbox-ex.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "http://localhost:5173/r/oui-checkbox.json",
+        "http://localhost:5173/r/oui-text.json"
+      ],
+      "meta": {
+        "tags": ["checkbox"]
+      }
+    },
+    {
+      "name": "oui-checkbox-demo",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-checkbox-demo.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": ["http://localhost:5173/r/oui-checkbox.json"],
+      "meta": {
+        "tags": ["checkbox"]
+      }
+    },
+    {
+      "name": "oui-checkbox-demo-disabled",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-checkbox-demo-disabled.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": ["http://localhost:5173/r/oui-checkbox.json"],
+      "meta": {
+        "tags": ["checkbox"]
+      }
+    },
+    {
+      "name": "oui-checkbox-demo-border",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-checkbox-demo-border.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": ["http://localhost:5173/r/oui-checkbox.json"],
+      "meta": {
+        "tags": ["checkbox"]
+      }
+    },
+    {
+      "name": "oui-checkbox-ex-demo",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-checkbox-ex-demo.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": ["http://localhost:5173/r/oui-checkbox-ex.json"],
+      "meta": {
+        "tags": ["checkbox"]
+      }
+    },
+
+    {
+      "name": "oui-checkbox-group-ex",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-checkbox-group-ex.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "http://localhost:5173/r/oui-checkbox-group.json",
+        "http://localhost:5173/r/oui-field-error.json",
+        "http://localhost:5173/r/oui-label.json",
+        "http://localhost:5173/r/oui-text.json"
+      ],
+      "meta": {
+        "tags": ["checkbox-group"]
+      }
+    },
+    {
+      "name": "oui-checkbox-group-ex-demo",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-checkbox-group-ex-demo.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "http://localhost:5173/r/oui-checkbox-group-ex.json",
+        "http://localhost:5173/r/oui-checkbox.json"
+      ],
+      "meta": {
+        "tags": ["checkbox group"]
+      }
+    },
+
+    {
+      "name": "oui-combo-box-ex",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-combo-box-ex.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "http://localhost:5173/r/oui-button.json",
+        "http://localhost:5173/r/oui-field-error.json",
+        "http://localhost:5173/r/oui-group.json",
+        "http://localhost:5173/r/oui-input.json",
+        "http://localhost:5173/r/oui-label.json",
+        "http://localhost:5173/r/oui-popover.json",
+        "http://localhost:5173/r/oui-text.json"
+      ],
+      "dependencies": ["lucide-react"],
+      "meta": {
+        "tags": ["combo-box"]
+      }
+    },
+
+    {
+      "name": "oui-combo-box-ex-demo",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-combo-box-ex-demo.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "http://localhost:5173/r/oui-combo-box-ex.json",
+        "http://localhost:5173/r/oui-list-box.json"
+      ],
+      "meta": {
+        "tags": ["combo-box"]
+      }
+    },
+    {
+      "name": "oui-combo-box-ex-demo-avatar",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-combo-box-ex-demo-avatar.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "https://ui.shadcn.com/r/styles/new-york/avatar.json",
+        "http://localhost:5173/r/oui-combo-box-ex.json",
+        "http://localhost:5173/r/oui-list-box.json"
+      ],
+      "meta": {
+        "tags": ["combo-box"]
+      }
+    },
+    {
+      "name": "oui-combo-box-ex-demo-header",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-combo-box-ex-demo-header.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "http://localhost:5173/r/oui-combo-box-ex.json",
+        "http://localhost:5173/r/oui-header.json",
+        "http://localhost:5173/r/oui-list-box.json"
+      ],
+      "meta": {
+        "tags": ["combo box"]
+      }
+    },
+    {
+      "name": "oui-disclosure-ex",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-disclosure-ex.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "http://localhost:5173/r/oui-disclosure.json",
+        "http://localhost:5173/r/oui-heading.json"
+      ],
+      "meta": {
+        "tags": ["disclosure"]
+      }
+    },
+    {
+      "name": "oui-disclosure-ex-demo",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-disclosure-ex-demo.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "http://localhost:5173/r/oui-disclosure-ex.json"
+      ],
+      "meta": {
+        "tags": ["disclosure"]
+      }
+    },
+    {
+      "name": "oui-disclosure-ex-demo-text",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-disclosure-ex-demo-text.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "http://localhost:5173/r/oui-disclosure-ex.json"
+      ],
+      "meta": {
+        "tags": ["disclosure"]
+      }
+    },
+    {
+      "name": "oui-menu-ex",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-menu-ex.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "http://localhost:5173/r/oui-button.json",
+        "http://localhost:5173/r/oui-menu.json",
+        "http://localhost:5173/r/oui-popover.json"
+      ],
+      "meta": {
+        "tags": ["menu"]
+      }
+    },
+    {
+      "name": "oui-menu-ex-demo",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-menu-ex-demo.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "http://localhost:5173/r/oui-button.json",
+        "http://localhost:5173/r/oui-header.json",
+        "http://localhost:5173/r/oui-keyboard.json",
+        "http://localhost:5173/r/oui-menu.json",
+        "http://localhost:5173/r/oui-menu-ex.json",
+        "http://localhost:5173/r/oui-popover.json",
+        "http://localhost:5173/r/oui-separator.json"
+      ],
+      "meta": {
+        "tags": ["menu"]
+      }
+    },
+    {
+      "name": "oui-menu-ex-demo-radio-group",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-menu-ex-demo-radio-group.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "http://localhost:5173/r/oui-button.json",
+        "http://localhost:5173/r/oui-header.json",
+        "http://localhost:5173/r/oui-menu.json",
+        "http://localhost:5173/r/oui-menu-ex.json"
+      ],
+      "meta": {
+        "tags": ["menu"]
+      }
+    },
+    {
+      "name": "oui-menu-ex-demo-avatar",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-menu-ex-demo-avatar.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "https://ui.shadcn.com/r/styles/new-york/avatar.json",
+        "http://localhost:5173/r/oui-button.json",
+        "http://localhost:5173/r/oui-menu.json",
+        "http://localhost:5173/r/oui-menu-ex.json",
+        "http://localhost:5173/r/oui-separator.json"
+      ],
+      "dependencies": ["lucide-react"],
+      "meta": {
+        "tags": ["menu"]
+      }
+    },
+    {
+      "name": "oui-menu-ex-demo-avatar-only",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-menu-ex-demo-avatar-only.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "https://ui.shadcn.com/r/styles/new-york/avatar.json",
+        "http://localhost:5173/r/oui-button.json",
+        "http://localhost:5173/r/oui-menu.json",
+        "http://localhost:5173/r/oui-menu-ex.json",
+        "http://localhost:5173/r/oui-separator.json"
+      ],
+      "dependencies": ["lucide-react"],
+      "meta": {
+        "tags": ["menu"]
+      }
+    },
+    {
+      "name": "oui-menu-ex-demo-icon",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-menu-ex-demo-icon.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "http://localhost:5173/r/oui-button.json",
+        "http://localhost:5173/r/oui-menu.json",
+        "http://localhost:5173/r/oui-menu-ex.json",
+        "http://localhost:5173/r/oui-separator.json"
+      ],
+      "dependencies": ["lucide-react"],
+      "meta": {
+        "tags": ["menu"]
+      }
+    },
+    {
+      "name": "oui-popover-ex",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-popover-ex.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "http://localhost:5173/r/oui-button.json",
+        "http://localhost:5173/r/oui-dialog.json",
+        "http://localhost:5173/r/oui-popover.json"
+      ],
+      "meta": {
+        "tags": ["popover"]
+      }
+    },
+    {
+      "name": "oui-popover-ex-demo",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-popover-ex-demo.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "http://localhost:5173/r/oui-button.json",
+        "http://localhost:5173/r/oui-dialog.json",
+        "http://localhost:5173/r/oui-heading.json",
+        "http://localhost:5173/r/oui-popover-ex.json",
+        "http://localhost:5173/r/oui-text-field-ex-horizontal.json"
+      ],
+      "meta": {
+        "tags": ["popover"]
+      }
+    },
+    {
+      "name": "oui-number-field-ex",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-number-field-ex.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "http://localhost:5173/r/oui-field-error.json",
+        "http://localhost:5173/r/oui-group.json",
+        "http://localhost:5173/r/oui-input.json",
+        "http://localhost:5173/r/oui-label.json",
+        "http://localhost:5173/r/oui-number-field.json",
+        "http://localhost:5173/r/oui-text.json"
+      ],
+      "dependencies": ["lucide-react"],
+      "meta": {
+        "tags": ["number-field"]
+      }
+    },
+    {
+      "name": "oui-number-field-ex-demo",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-number-field-ex-demo.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "http://localhost:5173/r/oui-button.json",
+        "http://localhost:5173/r/oui-number-field-ex.json"
+      ],
+      "meta": {
+        "tags": ["number-field"]
+      }
+    },
+    {
+      "name": "oui-form-demo",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-form-demo.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "http://localhost:5173/r/oui-button.json",
+        "http://localhost:5173/r/oui-checkbox-ex.json",
+        "http://localhost:5173/r/oui-checkbox-group-ex.json",
+        "http://localhost:5173/r/oui-checkbox.json",
+        "http://localhost:5173/r/oui-form.json",
+        "http://localhost:5173/r/oui-list-box.json",
+        "http://localhost:5173/r/oui-radio-group-ex.json",
+        "http://localhost:5173/r/oui-radio-group.json",
+        "http://localhost:5173/r/oui-select-ex.json",
+        "http://localhost:5173/r/oui-switch-ex.json",
+        "http://localhost:5173/r/oui-text-area.json",
+        "http://localhost:5173/r/oui-text-field-ex.json"
+      ],
+      "meta": {
+        "tags": ["form"]
+      }
+    },
+    {
+      "name": "oui-slider-ex",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-slider-ex.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "http://localhost:5173/r/oui-label.json",
+        "http://localhost:5173/r/oui-slider.json"
+      ],
+      "meta": {
+        "tags": ["slider"]
+      }
+    },
+    {
+      "name": "oui-slider-ex-demo",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-slider-ex-demo.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": ["http://localhost:5173/r/oui-slider-ex.json"],
+      "meta": {
+        "tags": ["slider"]
+      }
+    },
+    {
+      "name": "oui-slider-ex-demo-disabled",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-slider-ex-demo-disabled.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": ["http://localhost:5173/r/oui-slider-ex.json"],
+      "meta": {
+        "tags": ["slider"]
+      }
+    },
+    {
+      "name": "oui-label-demo",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-label-demo.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "http://localhost:5173/r/oui-input.json",
+        "http://localhost:5173/r/oui-label.json"
+      ],
+      "meta": {
+        "tags": ["label"]
+      }
+    },
+    {
+      "name": "oui-label-demo-disabled",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-label-demo-disabled.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "http://localhost:5173/r/oui-input.json",
+        "http://localhost:5173/r/oui-label.json"
+      ],
+      "meta": {
+        "tags": ["label"]
+      }
+    },
+    {
+      "name": "oui-link-demo",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-link-demo.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": ["http://localhost:5173/r/oui-link.json"],
+      "meta": {
+        "tags": ["link"]
+      }
+    },
+    {
+      "name": "oui-link-demo-hover",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-link-demo-hover.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": ["http://localhost:5173/r/oui-link.json"],
+      "meta": {
+        "tags": ["link"]
+      }
+    },
+    {
+      "name": "oui-link-demo-always",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-link-demo-always.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": ["http://localhost:5173/r/oui-link.json"],
+      "meta": {
+        "tags": ["link"]
+      }
+    },
+    {
+      "name": "oui-link-demo-current",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-link-demo-current.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": ["http://localhost:5173/r/oui-link.json"],
+      "meta": {
+        "tags": ["link"]
+      }
+    },
+    {
+      "name": "oui-link-demo-focus",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-link-demo-focus.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": ["http://localhost:5173/r/oui-link.json"],
+      "meta": {
+        "tags": ["link"]
+      }
+    },
+    {
+      "name": "oui-link-demo-disabled",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-link-demo-disabled.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": ["http://localhost:5173/r/oui-link.json"],
+      "meta": {
+        "tags": ["link"]
+      }
+    },
+    {
+      "name": "oui-link-demo-button",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-link-demo-button.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "http://localhost:5173/r/oui-button.json",
+        "http://localhost:5173/r/oui-link.json"
+      ],
+      "meta": {
+        "tags": ["link"]
+      }
+    },
+    {
+      "name": "oui-link-demo-button-outline",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-link-demo-button-outline.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "http://localhost:5173/r/oui-button.json",
+        "http://localhost:5173/r/oui-link.json"
+      ],
+      "meta": {
+        "tags": ["link"]
+      }
+    },
+    {
+      "name": "oui-link-demo-button-destructive",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-link-demo-button-destructive.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "http://localhost:5173/r/oui-button.json",
+        "http://localhost:5173/r/oui-link.json"
+      ],
+      "meta": {
+        "tags": ["link"]
+      }
+    },
+    {
+      "name": "oui-link-demo-button-disabled",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-link-demo-button-disabled.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "http://localhost:5173/r/oui-button.json",
+        "http://localhost:5173/r/oui-link.json"
+      ],
+      "meta": {
+        "tags": ["link"]
+      }
+    },
+    {
+      "name": "oui-link-demo-login",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-link-demo-login.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "https://ui.shadcn.com/r/styles/new-york/card.json",
+        "http://localhost:5173/r/oui-button.json",
+        "http://localhost:5173/r/oui-label.json",
+        "http://localhost:5173/r/oui-link.json",
+        "http://localhost:5173/r/oui-text-field-ex.json"
+      ],
+      "meta": {
+        "tags": ["link"]
+      }
+    },
+    {
+      "name": "oui-list-box-ex-pagination",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-list-box-ex-pagination.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "http://localhost:5173/r/oui-base.json",
+        "http://localhost:5173/r/oui-button.json"
+      ],
+      "meta": {
+        "tags": ["list-box"]
+      }
+    },
+    {
+      "name": "oui-list-box-ex-pagination-demo",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-list-box-ex-pagination-demo.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "http://localhost:5173/r/oui-list-box-ex-pagination.json"
+      ],
+      "meta": {
+        "tags": ["list-box"]
+      }
+    },
+    {
+      "name": "oui-separator-demo",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-separator-demo.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": ["http://localhost:5173/r/oui-separator.json"],
+      "meta": {
+        "tags": ["separator"]
+      }
+    },
+
+    {
+      "name": "oui-text-area-demo",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-text-area-demo.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": ["http://localhost:5173/r/oui-text-area.json"],
+      "meta": {
+        "tags": ["text-area"]
+      }
+    },
+
+    {
+      "name": "oui-text-area-demo-text-field",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-text-area-demo-text-field.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "http://localhost:5173/r/oui-text-area.json",
+        "http://localhost:5173/r/oui-text-field-ex.json"
+      ],
+      "meta": {
+        "tags": ["text-area"]
+      }
+    },
+
+    {
+      "name": "oui-text-area-demo-disabled",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-text-area-demo-disabled.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "http://localhost:5173/r/oui-text-area.json",
+        "http://localhost:5173/r/oui-text-field-ex.json"
+      ],
+      "meta": {
+        "tags": ["text-area"]
+      }
+    },
+
+    {
+      "name": "oui-table-demo",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-table-demo.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": ["http://localhost:5173/r/oui-table.json"],
+      "meta": {
+        "tags": ["table"]
+      }
+    },
+
+    {
+      "name": "oui-table-demo-action-menu",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-table-demo-action-menu.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "http://localhost:5173/r/oui-button.json",
+        "http://localhost:5173/r/oui-checkbox.json",
+        "http://localhost:5173/r/oui-menu-ex.json",
+        "http://localhost:5173/r/oui-menu.json",
+        "http://localhost:5173/r/oui-separator.json",
+        "http://localhost:5173/r/oui-table.json"
+      ],
+      "dependencies": ["lucide-react"],
+      "meta": {
+        "tags": ["table"]
+      }
+    },
+    {
+      "name": "oui-dialog-ex-sheet-demo",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-dialog-ex-sheet-demo.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "http://localhost:5173/r/oui-button.json",
+        "http://localhost:5173/r/oui-dialog.json",
+        "http://localhost:5173/r/oui-dialog-ex-sheet.json",
+        "http://localhost:5173/r/oui-heading.json",
+        "http://localhost:5173/r/oui-text-field-ex.json"
+      ],
+      "meta": {
+        "tags": ["dialog"]
+      }
+    },
+    {
+      "name": "oui-dialog-ex-sheet-demo-sides",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-dialog-ex-sheet-demo-sides.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "http://localhost:5173/r/oui-button.json",
+        "http://localhost:5173/r/oui-dialog.json",
+        "http://localhost:5173/r/oui-dialog-ex-sheet.json",
+        "http://localhost:5173/r/oui-heading.json"
+      ],
+      "meta": {
+        "tags": ["dialog"]
+      }
+    }
+  ]
+}
