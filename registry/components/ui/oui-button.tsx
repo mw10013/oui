@@ -47,12 +47,12 @@ export const buttonVariants = cva(
  * Returns a className function to style a React Aria Component as a button.
  *
  * @example
- * <Oui.Link
+ * <Link
  *   href="#"
- *   className={Oui.buttonClassName({ variant: "outline" })}
+ *   className={buttonClassName({ variant: "outline" })}
  * >
  *   Button Link
- * </Oui.Link>
+ * </Link>
  */
 export const buttonClassName =
   (props: VariantProps<typeof buttonVariants>) =>
