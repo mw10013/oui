@@ -9,7 +9,6 @@
 - registry recon component prompt: handle shadcn new-york
 - registry:build: delete r/\*
 - tags
-- install
 - code
 - search
 - index

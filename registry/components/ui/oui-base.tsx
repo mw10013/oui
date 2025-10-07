@@ -37,11 +37,11 @@ export const groupFocusVisibleStyles = tw`group-data-[focus-visible]:border-ring
 /**
  * Base disabled styles.
  * 
- * 'cursor-not-allowed' is omitted as it's mainly for form controls in shadcn; visual/interaction cues are sufficient.
+ * `cursor-not-allowed` is omitted as it is mainly for form controls in shadcn; visual/interaction cues are sufficient.
  *
- * Note that it includes 'pointer-events-none' which prevents any cursor style (including 'cursor-not-allowed').
+ * Note that it includes `pointer-events-none` which prevents any cursor style (including `cursor-not-allowed`).
  * This may not be suitable for RAC components that structure with a <label> (eg. radio, checkbox and switch)
- * and 'labelComponentStyles' from 'oui-label' is preferred.
+ * and `labelComponentStyles` from `oui-label` is preferred.
  */
 export const disabledStyles = tw`data-[disabled]:pointer-events-none data-[disabled]:opacity-50`;
 
