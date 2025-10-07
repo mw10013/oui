@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "oui-button-demo-outline",
+  "type": "registry:component",
+  "registryDependencies": [
+    "https://oui-production.mw10013.workers.dev/r/oui-button.json"
+  ],
+  "files": [
+    {
+      "path": "registry/components/oui-button-demo-outline.tsx",
+      "content": "import { Button } from \"@/registry/components/ui/oui-button\";\n\nexport default function Component() {\n  return <Button variant=\"outline\">Outline</Button>;\n}\n",
+      "type": "registry:component"
+    }
+  ],
+  "meta": {
+    "tags": [
+      "button"
+    ],
+    "style": "text-center"
+  }
+}

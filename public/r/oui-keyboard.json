@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "oui-keyboard",
+  "type": "registry:ui",
+  "dependencies": [
+    "react-aria-components",
+    "tailwind-merge"
+  ],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/components/ui/oui-keyboard.tsx",
+      "content": "import * as Rac from \"react-aria-components\";\nimport { twMerge } from \"tailwind-merge\";\n\n/**\n * Derived from shadcn DropdownMenuShortcut.\n */\nexport function Keyboard({\n  className,\n  ...props\n}: React.ComponentProps<typeof Rac.Keyboard>) {\n  return (\n    <Rac.Keyboard\n      className={twMerge(\n        // Specify font-sans since <kbd> uses mono font by default.\n        \"ml-auto font-sans text-xs tracking-widest opacity-60\",\n        className,\n      )}\n      {...props}\n    />\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ]
+}

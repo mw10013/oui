@@ -1,0 +1,20 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "oui-autocomplete-ex",
+  "type": "registry:component",
+  "registryDependencies": [
+    "https://oui-production.mw10013.workers.dev/r/oui-search-field-ex.json"
+  ],
+  "files": [
+    {
+      "path": "registry/components/oui-autocomplete-ex.tsx",
+      "content": "import * as Rac from \"react-aria-components\";\nimport { SearchFieldEx } from \"@/registry/components/oui-search-field-ex\";\n\nexport interface AutocompleteExProps\n  extends Omit<Rac.AutocompleteProps, \"children\"> {\n  label?: React.ReactNode;\n  description?: React.ReactNode;\n  errorMessage?: string | ((validation: Rac.ValidationResult) => string);\n  placeholder?: string;\n  searchFieldProps?: Rac.SearchFieldProps;\n  children: React.ReactNode;\n}\n\nexport function AutocompleteEx({\n  label,\n  description,\n  errorMessage,\n  placeholder,\n  searchFieldProps,\n  children,\n  filter,\n  ...rest\n}: AutocompleteExProps) {\n  /* eslint-disable-next-line @typescript-eslint/unbound-method --\n   * React Aria uses functional patterns, so destructured functions don't use 'this'\n   */\n  const { contains: defaultFilter } = Rac.useFilter({ sensitivity: \"base\" });\n\n  return (\n    <Rac.Autocomplete {...rest} filter={filter ?? defaultFilter}>\n      <SearchFieldEx\n        {...searchFieldProps}\n        label={label}\n        description={description}\n        errorMessage={errorMessage}\n        placeholder={placeholder}\n      />\n      {children}\n    </Rac.Autocomplete>\n  );\n}\n\nexport default function Component() {\n  return <div className=\"p-4\">AutocompleteEx</div>;\n}\n\n",
+      "type": "registry:component"
+    }
+  ],
+  "meta": {
+    "tags": [
+      "autocomplete"
+    ]
+  }
+}

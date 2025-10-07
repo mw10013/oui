@@ -1,0 +1,22 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "oui-dialog-ex-sheet",
+  "type": "registry:component",
+  "registryDependencies": [
+    "https://oui-production.mw10013.workers.dev/r/oui-button.json",
+    "https://oui-production.mw10013.workers.dev/r/oui-dialog.json",
+    "https://oui-production.mw10013.workers.dev/r/oui-modal-ex-sheet.json"
+  ],
+  "files": [
+    {
+      "path": "registry/components/oui-dialog-ex-sheet.tsx",
+      "content": "import type { VariantProps } from \"class-variance-authority\";\nimport {\n  ModalExSheet,\n  sheetModalVariants,\n} from \"@/registry/components/oui-modal-ex-sheet\";\nimport { Button } from \"@/registry/components/ui/oui-button\";\nimport { Dialog, type DialogProps } from \"@/registry/components/ui/oui-dialog\";\nimport * as Rac from \"react-aria-components\";\nimport type { ReactElement } from \"react\";\n\nexport interface DialogExSheetProps\n  extends Omit<DialogProps, \"role\">, // Prevent 'alertdialog' role\n    Pick<VariantProps<typeof sheetModalVariants>, \"side\"> {\n  triggerElement: string | ReactElement;\n  modalClassName?: string;\n  overlayClassName?: string;\n}\n\n/**\n * A sheet modal that slides in from a side of the screen.\n * The modal is always dismissable via an outside press.\n */\nexport function DialogExSheet({\n  triggerElement,\n  modalClassName,\n  overlayClassName,\n  side,\n  ...props\n}: DialogExSheetProps) {\n  return (\n    <Rac.DialogTrigger>\n      {typeof triggerElement === \"string\" ? (\n        <Button variant=\"ghost\">{triggerElement}</Button>\n      ) : (\n        triggerElement\n      )}\n      <ModalExSheet\n        className={modalClassName}\n        overlayClassName={overlayClassName}\n        side={side}\n        isDismissable\n      >\n        <Dialog {...props} />\n      </ModalExSheet>\n    </Rac.DialogTrigger>\n  );\n}\n\nexport default function Component() {\n  return <div className=\"p-4\">DialogExSheet</div>;\n}\n",
+      "type": "registry:component"
+    }
+  ],
+  "meta": {
+    "tags": [
+      "dialog"
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "oui-checkbox-group-ex",
+  "type": "registry:component",
+  "registryDependencies": [
+    "https://oui-production.mw10013.workers.dev/r/oui-checkbox-group.json",
+    "https://oui-production.mw10013.workers.dev/r/oui-field-error.json",
+    "https://oui-production.mw10013.workers.dev/r/oui-label.json",
+    "https://oui-production.mw10013.workers.dev/r/oui-text.json"
+  ],
+  "files": [
+    {
+      "path": "registry/components/oui-checkbox-group-ex.tsx",
+      "content": "import { CheckboxGroup } from \"@/registry/components/ui/oui-checkbox-group\";\nimport { FieldError } from \"@/registry/components/ui/oui-field-error\";\nimport { Label } from \"@/registry/components/ui/oui-label\";\nimport { Text } from \"@/registry/components/ui/oui-text\";\nimport * as Rac from \"react-aria-components\";\n\nexport interface CheckboxGroupExProps extends Rac.CheckboxGroupProps {\n  labelClassName?: string;\n  label?: React.ReactNode;\n  descriptionClassName?: string;\n  description?: React.ReactNode;\n  errorMessage?: string | ((validation: Rac.ValidationResult) => string);\n}\n\n/**\n * Derived from shadcn FormDemo FormItem and div\n */\nexport function CheckboxGroupEx({\n  labelClassName,\n  label,\n  descriptionClassName,\n  description,\n  errorMessage,\n  className,\n  children,\n  ...props\n}: CheckboxGroupExProps) {\n  return (\n    <CheckboxGroup {...props} className={className}>\n      {(renderProps) => (\n        <>\n          <div>\n            <Label className={labelClassName}>{label}</Label>\n            {description && (\n              <Text className={descriptionClassName} slot=\"description\">\n                {description}\n              </Text>\n            )}\n          </div>\n          <div className=\"flex flex-col gap-2\">\n            {typeof children === \"function\" ? children(renderProps) : children}\n          </div>\n          <FieldError>{errorMessage}</FieldError>\n        </>\n      )}\n    </CheckboxGroup>\n  );\n}\n\nexport default function Component() {\n  return <div className=\"p-4\">CheckboxGroupEx</div>;\n}\n",
+      "type": "registry:component"
+    }
+  ],
+  "meta": {
+    "tags": [
+      "checkbox-group"
+    ]
+  }
+}

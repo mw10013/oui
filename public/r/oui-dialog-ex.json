@@ -1,0 +1,23 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "oui-dialog-ex",
+  "type": "registry:component",
+  "registryDependencies": [
+    "https://oui-production.mw10013.workers.dev/r/oui-dialog.json",
+    "https://oui-production.mw10013.workers.dev/r/oui-button.json",
+    "https://oui-production.mw10013.workers.dev/r/oui-modal-ex.json"
+  ],
+  "files": [
+    {
+      "path": "registry/components/oui-dialog-ex.tsx",
+      "content": "import type { DialogProps } from \"@/registry/components/ui/oui-dialog\";\nimport type { ReactElement } from \"react\";\nimport { ModalEx } from \"@/registry/components/oui-modal-ex\";\nimport { Button } from \"@/registry/components/ui/button\";\nimport { Dialog } from \"@/registry/components/ui/oui-dialog\";\nimport * as Rac from \"react-aria-components\";\n\nexport interface DialogExProps\n  extends DialogProps,\n    Partial<\n      Pick<Rac.ModalOverlayProps, \"isOpen\" | \"defaultOpen\" | \"onOpenChange\">\n    > {\n  triggerElement?: string | ReactElement;\n  modalClassName?: string;\n}\n\n/**\n * A modal dialog that can be opened via a trigger element or programmatically.\n *\n * If `triggerElement` is provided, it will be rendered and will open the dialog\n * when pressed.\n *\n * If `triggerElement` is omitted, the dialog must be controlled programmatically.\n *\n * In both cases, the open state can be uncontrolled (using `defaultOpen`) or\n * controlled (using `isOpen` and `onOpenChange`).\n */\nexport function DialogEx({\n  triggerElement,\n  modalClassName,\n  isOpen,\n  defaultOpen,\n  onOpenChange,\n  ...props\n}: DialogExProps) {\n  const modal = (\n    <ModalEx\n      className={modalClassName}\n      isDismissable={props.role !== \"alertdialog\"}\n      isOpen={isOpen}\n      defaultOpen={defaultOpen}\n      onOpenChange={onOpenChange}\n    >\n      <Dialog {...props} />\n    </ModalEx>\n  );\n  if (triggerElement) {\n    return (\n      <Rac.DialogTrigger\n        isOpen={isOpen}\n        defaultOpen={defaultOpen}\n        onOpenChange={onOpenChange}\n      >\n        {typeof triggerElement === \"string\" ? (\n          <Button variant=\"ghost\">{triggerElement}</Button>\n        ) : (\n          triggerElement\n        )}\n        {modal}\n      </Rac.DialogTrigger>\n    );\n  }\n  return modal;\n}\n\nexport default function Component() {\n  return <div className=\"p-4\">DialogEx</div>;\n}\n",
+      "type": "registry:component"
+    }
+  ],
+  "meta": {
+    "tags": [
+      "dialog",
+      "dialog ex"
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "oui-select",
+  "type": "registry:ui",
+  "dependencies": [
+    "react-aria-components",
+    "lucide-react",
+    "tailwind-merge"
+  ],
+  "registryDependencies": [
+    "https://oui-production.mw10013.workers.dev/r/oui-field-error.json",
+    "https://oui-production.mw10013.workers.dev/r/oui-label.json",
+    "https://oui-production.mw10013.workers.dev/r/oui-popover.json",
+    "https://oui-production.mw10013.workers.dev/r/oui-text.json"
+  ],
+  "files": [
+    {
+      "path": "registry/components/ui/oui-select.tsx",
+      "content": "import {\n  composeTailwindRenderProps,\n  disabledStyles,\n  focusVisibleStyles,\n} from \"@/registry/components/ui/oui-base\";\nimport { ChevronDown } from \"lucide-react\";\nimport * as Rac from \"react-aria-components\";\nimport { twMerge } from \"tailwind-merge\";\n\nexport function Select<T extends object>({\n  className,\n  ...props\n}: Rac.SelectProps<T>) {\n  return (\n    <Rac.Select\n      data-slot=\"select\"\n      className={composeTailwindRenderProps(className, \"grid gap-2\")}\n      {...props}\n    />\n  );\n}\n\nexport function SelectButton({\n  className,\n  size = \"default\",\n  children,\n  ...props\n}: Rac.ButtonProps & {\n  size?: \"sm\" | \"default\";\n}) {\n  return (\n    <Rac.Button\n      data-slot=\"select-trigger\"\n      data-size={size}\n      className={composeTailwindRenderProps(className, [\n        focusVisibleStyles,\n        disabledStyles,\n        \"flex w-fit items-center justify-between gap-2 rounded-md border border-input bg-transparent px-3 py-2 text-sm whitespace-nowrap shadow-xs transition-[color,box-shadow] outline-none data-[disabled]:cursor-not-allowed data-[size=default]:h-9 data-[size=sm]:h-8 *:data-[slot=select-value]:line-clamp-1 *:data-[slot=select-value]:flex *:data-[slot=select-value]:items-center *:data-[slot=select-value]:gap-2 dark:bg-input/30 dark:data-[hovered]:bg-input/50 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4 [&_svg:not([class*='text-'])]:text-muted-foreground\",\n      ])}\n      {...props}\n    >\n      {Rac.composeRenderProps(children, (children) => (\n        <>\n          {children}\n          <ChevronDown className=\"size-4 opacity-50\" aria-hidden=\"true\" />\n        </>\n      ))}\n    </Rac.Button>\n  );\n}\n\nexport function SelectValue<T extends object>({\n  className,\n  ...props\n}: Rac.SelectValueProps<T>) {\n  return (\n    <Rac.SelectValue\n      data-slot=\"select-value\"\n      className={Rac.composeRenderProps(\n        className,\n        (className, { isPlaceholder }) =>\n          twMerge(isPlaceholder ? \"text-muted-foreground\" : \"\", className),\n      )}\n      {...props}\n    />\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "oui-form-demo",
+  "type": "registry:component",
+  "registryDependencies": [
+    "https://oui-production.mw10013.workers.dev/r/oui-button.json",
+    "https://oui-production.mw10013.workers.dev/r/oui-checkbox-ex.json",
+    "https://oui-production.mw10013.workers.dev/r/oui-checkbox-group-ex.json",
+    "https://oui-production.mw10013.workers.dev/r/oui-checkbox.json",
+    "https://oui-production.mw10013.workers.dev/r/oui-form.json",
+    "https://oui-production.mw10013.workers.dev/r/oui-list-box.json",
+    "https://oui-production.mw10013.workers.dev/r/oui-radio-group-ex.json",
+    "https://oui-production.mw10013.workers.dev/r/oui-radio-group.json",
+    "https://oui-production.mw10013.workers.dev/r/oui-select-ex.json",
+    "https://oui-production.mw10013.workers.dev/r/oui-switch-ex.json",
+    "https://oui-production.mw10013.workers.dev/r/oui-text-area.json",
+    "https://oui-production.mw10013.workers.dev/r/oui-text-field-ex.json"
+  ],
+  "files": [
+    {
+      "path": "registry/components/oui-form-demo.tsx",
+      "content": "import { CheckboxEx } from \"@/registry/components/oui-checkbox-ex\";\nimport { CheckboxGroupEx } from \"@/registry/components/oui-checkbox-group-ex\";\nimport { RadioGroupEx } from \"@/registry/components/oui-radio-group-ex\";\nimport { SelectEx } from \"@/registry/components/oui-select-ex\";\nimport { SwitchEx } from \"@/registry/components/oui-switch-ex\";\nimport { TextFieldEx } from \"@/registry/components/oui-text-field-ex\";\nimport { Button } from \"@/registry/components/ui/oui-button\";\nimport { Checkbox } from \"@/registry/components/ui/oui-checkbox\";\nimport { Form } from \"@/registry/components/ui/oui-form\";\nimport { ListBoxItem } from \"@/registry/components/ui/oui-list-box\";\nimport { Radio } from \"@/registry/components/ui/oui-radio-group\";\nimport { TextArea } from \"@/registry/components/ui/oui-text-area\";\n\nconst items = [\n  {\n    id: \"recents\",\n    label: \"Recents\",\n  },\n  {\n    id: \"home\",\n    label: \"Home\",\n  },\n  {\n    id: \"applications\",\n    label: \"Applications\",\n  },\n  {\n    id: \"desktop\",\n    label: \"Desktop\",\n  },\n  {\n    id: \"downloads\",\n    label: \"Downloads\",\n  },\n  {\n    id: \"documents\",\n    label: \"Documents\",\n  },\n] as const;\n\nexport default function Component() {\n  return (\n    <Form className=\"max-w-sm\">\n      <TextFieldEx\n        name=\"username\"\n        placeholder=\"shadcn\"\n        label=\"Username\"\n        description=\"This is your public display name.\"\n      />\n      <SelectEx\n        placeholder=\"Select a verified email to display\"\n        label=\"Email\"\n        description=\"You can manage email addresses in your email settings.\"\n      >\n        <ListBoxItem>m@example.com</ListBoxItem>\n        <ListBoxItem>me@google.com</ListBoxItem>\n        <ListBoxItem>m@support.com</ListBoxItem>\n      </SelectEx>\n      <TextFieldEx\n        name=\"bio\"\n        label=\"Bio\"\n        description=\"You can @mention other users and organizations.\"\n      >\n        <TextArea\n          className=\"resize-none\"\n          placeholder=\"Tell us a little bit about yourself\"\n        />\n      </TextFieldEx>\n      <RadioGroupEx\n        name=\"type\"\n        label=\"Notify me about...\"\n        className=\"flex flex-col gap-3\"\n      >\n        <Radio value=\"all\" className=\"font-normal\">\n          All new messages\n        </Radio>\n        <Radio value=\"mentions\" className=\"font-normal\">\n          Direct messages and mentions\n        </Radio>\n        <Radio value=\"none\" className=\"font-normal\">\n          Nothing\n        </Radio>\n      </RadioGroupEx>\n      <CheckboxEx\n        name=\"mobile\"\n        descriptionClassName=\"leading-snug\"\n        description=\"You can manage your mobile notifications in the mobile settings page.\"\n        containerClassName=\"shadow-xs rounded-md border p-4\"\n        className=\"leading-snug\"\n      >\n        Use different settings for my mobile devices\n      </CheckboxEx>\n      <CheckboxGroupEx\n        name=\"items\"\n        labelClassName=\"text-base\"\n        label=\"Sidebar\"\n        description=\"Select the items you want to display in the sidebar.\"\n        defaultValue={[\"recents\", \"home\"]}\n      >\n        {items.map((item) => (\n          <Checkbox\n            key={item.id}\n            value={item.id}\n            className=\"text-sm leading-tight font-normal\"\n          >\n            {item.label}\n          </Checkbox>\n        ))}\n      </CheckboxGroupEx>\n      <div>\n        <h3 className=\"mb-4 text-lg font-medium\">Email Notifications</h3>\n        <div className=\"flex flex-col gap-4\">\n          <SwitchEx\n            name=\"marketing_emails\"\n            descriptionClassName=\"leading-snug\"\n            description=\"Receive emails about new products, features, and more.\"\n            indicatorPosition=\"end\"\n            // shadcn FormDemo FormItem: shadow-xs flex flex-row items-start justify-between rounded-lg border p-4\n            containerClassName=\"shadow-xs rounded-lg border p-4\"\n            className=\"leading-snug\"\n          >\n            Marketing emails\n          </SwitchEx>\n          <SwitchEx\n            name=\"security_emails\"\n            descriptionClassName=\"leading-snug\"\n            description=\"Receive emails about your account security.\"\n            indicatorPosition=\"end\"\n            // shadcn FormDemo FormItem: shadow-xs flex flex-row items-start justify-between rounded-lg border p-4\n            containerClassName=\"shadow-xs rounded-lg border p-4\"\n            className=\"leading-normal\"\n            isDisabled\n          >\n            Security emails\n          </SwitchEx>\n        </div>\n      </div>\n      <Button type=\"submit\">Submit</Button>\n    </Form>\n  );\n}\n",
+      "type": "registry:component"
+    }
+  ],
+  "meta": {
+    "tags": [
+      "form"
+    ]
+  }
+}

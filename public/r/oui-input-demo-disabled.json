@@ -1,0 +1,20 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "oui-input-demo-disabled",
+  "type": "registry:component",
+  "registryDependencies": [
+    "https://oui-production.mw10013.workers.dev/r/oui-input.json"
+  ],
+  "files": [
+    {
+      "path": "registry/components/oui-input-demo-disabled.tsx",
+      "content": "import { Input } from \"@/registry/components/ui/oui-input\";\n\nexport default function Component() {\n  return <Input disabled placeholder=\"Disabled\" />;\n}\n",
+      "type": "registry:component"
+    }
+  ],
+  "meta": {
+    "tags": [
+      "input"
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "oui-text-area-demo-text-field",
+  "type": "registry:component",
+  "registryDependencies": [
+    "https://oui-production.mw10013.workers.dev/r/oui-text-area.json",
+    "https://oui-production.mw10013.workers.dev/r/oui-text-field-ex.json"
+  ],
+  "files": [
+    {
+      "path": "registry/components/oui-text-area-demo-text-field.tsx",
+      "content": "import { TextFieldEx } from \"@/registry/components/oui-text-field-ex\";\nimport { TextArea } from \"@/registry/components/ui/oui-text-area\";\n\nexport default function Component() {\n  return (\n    <TextFieldEx\n      name=\"textarea-textarea\"\n      label=\"With label and description\"\n      description=\"Type your message and press enter to send.\"\n    >\n      <TextArea placeholder=\"Type your message here.\" rows={6} />\n    </TextFieldEx>\n  );\n}\n",
+      "type": "registry:component"
+    }
+  ],
+  "meta": {
+    "tags": [
+      "text-area"
+    ]
+  }
+}

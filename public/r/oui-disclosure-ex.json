@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "oui-disclosure-ex",
+  "type": "registry:component",
+  "registryDependencies": [
+    "https://oui-production.mw10013.workers.dev/r/oui-disclosure.json",
+    "https://oui-production.mw10013.workers.dev/r/oui-heading.json"
+  ],
+  "files": [
+    {
+      "path": "registry/components/oui-disclosure-ex.tsx",
+      "content": "import {\n  Disclosure,\n  DisclosureButton,\n  DisclosurePanel,\n} from \"@/registry/components/ui/oui-disclosure\";\nimport { Heading } from \"@/registry/components/ui/oui-heading\";\nimport * as Rac from \"react-aria-components\";\n\nexport interface DisclosureExProps\n  extends Omit<Rac.DisclosureProps, \"children\"> {\n  title?: string;\n  children?: Rac.DisclosurePanelProps[\"children\"];\n}\n\nexport function DisclosureEx({ title, children, ...props }: DisclosureExProps) {\n  return (\n    <Disclosure {...props}>\n      <Heading variant=\"disclosure\">\n        <DisclosureButton>{title}</DisclosureButton>\n      </Heading>\n      <DisclosurePanel>{children}</DisclosurePanel>\n    </Disclosure>\n  );\n}\n\nexport default function Component() {\n  return <div className=\"p-4\">DisclosureEx</div>;\n}\n",
+      "type": "registry:component"
+    }
+  ],
+  "meta": {
+    "tags": [
+      "disclosure"
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "oui-modal-ex",
+  "type": "registry:component",
+  "registryDependencies": [
+    "https://oui-production.mw10013.workers.dev/r/oui-modal.json"
+  ],
+  "files": [
+    {
+      "path": "registry/components/oui-modal-ex.tsx",
+      "content": "import { Modal, ModalOverlay } from \"@/registry/components/ui/oui-modal\";\nimport * as Rac from \"react-aria-components\";\n\nexport interface ModalExProps extends Rac.ModalOverlayProps {\n  overlayClassName?: Rac.ModalOverlayProps[\"className\"];\n}\n\n/**\n * Composes ModalOverlay and Modal.\n * `className` is applied to Modal, `overlayClassName` and other props are applied to ModalOverlay.\n */\nexport function ModalEx({\n  className,\n  overlayClassName,\n  children,\n  ...props\n}: ModalExProps) {\n  return (\n    <ModalOverlay className={overlayClassName} {...props}>\n      <Modal className={className}>{children}</Modal>\n    </ModalOverlay>\n  );\n}\n\nexport default function Component() {\n  return <div className=\"p-4\">ModalEx</div>;\n}\n",
+      "type": "registry:component"
+    }
+  ],
+  "meta": {
+    "tags": [
+      "modal",
+      "modal ex"
+    ]
+  }
+}

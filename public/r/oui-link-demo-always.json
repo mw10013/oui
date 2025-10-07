@@ -1,0 +1,20 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "oui-link-demo-always",
+  "type": "registry:component",
+  "registryDependencies": [
+    "https://oui-production.mw10013.workers.dev/r/oui-link.json"
+  ],
+  "files": [
+    {
+      "path": "registry/components/oui-link-demo-always.tsx",
+      "content": "import { Link } from \"@/registry/components/ui/oui-link\";\n\nexport default function Component() {\n  return (\n    <Link href=\"#\" underline=\"always\">\n      Always Link\n    </Link>\n  );\n}\n",
+      "type": "registry:component"
+    }
+  ],
+  "meta": {
+    "tags": [
+      "link"
+    ]
+  }
+}

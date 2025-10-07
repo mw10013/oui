@@ -1,0 +1,24 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "oui-button-demo-icon-right",
+  "type": "registry:component",
+  "dependencies": [
+    "lucide-react"
+  ],
+  "registryDependencies": [
+    "https://oui-production.mw10013.workers.dev/r/oui-button.json"
+  ],
+  "files": [
+    {
+      "path": "registry/components/oui-button-demo-icon-right.tsx",
+      "content": "import { Button } from \"@/registry/components/ui/oui-button\";\nimport { ArrowRight } from \"lucide-react\";\n\nexport default function Component() {\n  return (\n    <Button variant=\"outline\">\n      Learn More <ArrowRight />\n    </Button>\n  );\n}\n",
+      "type": "registry:component"
+    }
+  ],
+  "meta": {
+    "tags": [
+      "button"
+    ],
+    "style": "text-center"
+  }
+}

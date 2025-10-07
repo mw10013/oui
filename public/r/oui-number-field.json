@@ -1,0 +1,24 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "oui-number-field",
+  "type": "registry:ui",
+  "dependencies": [
+    "react-aria-components",
+    "lucide-react"
+  ],
+  "registryDependencies": [
+    "https://oui-production.mw10013.workers.dev/r/oui-base.json",
+    "https://oui-production.mw10013.workers.dev/r/oui-field-error.json",
+    "https://oui-production.mw10013.workers.dev/r/oui-group.json",
+    "https://oui-production.mw10013.workers.dev/r/oui-input.json",
+    "https://oui-production.mw10013.workers.dev/r/oui-label.json",
+    "https://oui-production.mw10013.workers.dev/r/oui-text.json"
+  ],
+  "files": [
+    {
+      "path": "registry/components/ui/oui-number-field.tsx",
+      "content": "import { composeTailwindRenderProps } from \"@/registry/components/ui/oui-base\";\nimport * as Rac from \"react-aria-components\";\n\nexport function NumberField({ className, ...props }: Rac.NumberFieldProps) {\n  return (\n    <Rac.NumberField\n      className={composeTailwindRenderProps(className, \"group grid gap-2\")}\n      {...props}\n    />\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ]
+}

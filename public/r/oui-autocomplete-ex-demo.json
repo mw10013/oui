@@ -1,0 +1,23 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "oui-autocomplete-ex-demo",
+  "type": "registry:component",
+  "registryDependencies": [
+    "https://ui.shadcn.com/r/styles/new-york/avatar.json",
+    "https://oui-production.mw10013.workers.dev/r/oui-autocomplete-ex.json",
+    "https://oui-production.mw10013.workers.dev/r/oui-list-box.json",
+    "https://oui-production.mw10013.workers.dev/r/oui-select-ex-popover.json"
+  ],
+  "files": [
+    {
+      "path": "registry/components/oui-autocomplete-ex-demo.tsx",
+      "content": "import { AutocompleteEx } from \"@/registry/components/oui-autocomplete-ex\";\nimport { SelectExPopover } from \"@/registry/components/oui-select-ex-popover\";\nimport {\n  Avatar,\n  AvatarFallback,\n  AvatarImage,\n} from \"@/registry/components/ui/avatar\";\nimport { ListBoxItem } from \"@/registry/components/ui/oui-list-box\";\nimport * as Rac from \"react-aria-components\";\n\nconst users = [\n  {\n    id: \"1\",\n    username: \"shadcn\",\n  },\n  {\n    id: \"2\",\n    username: \"leerob\",\n  },\n  {\n    id: \"3\",\n    username: \"evilrabbit\",\n  },\n];\n\nexport default function Component() {\n  return (\n    <SelectExPopover label=\"Users\" defaultSelectedKey={users[0].id}>\n      <AutocompleteEx\n        placeholder=\"Select user...\"\n        searchFieldProps={{ \"aria-label\": \"User\", autoFocus: true }}\n      >\n        <Rac.ListBox items={users}>\n          {(item) => (\n            <ListBoxItem id={item.id} textValue={item.username}>\n              <div className=\"flex items-center gap-2\">\n                <Avatar className=\"size-5\">\n                  <AvatarImage\n                    src={`https://github.com/${item.username}.png`}\n                    alt={item.username}\n                  />\n                  <AvatarFallback>\n                    {item.username[0].toUpperCase()}\n                  </AvatarFallback>\n                </Avatar>\n                {item.username}\n              </div>\n            </ListBoxItem>\n          )}\n        </Rac.ListBox>\n      </AutocompleteEx>\n    </SelectExPopover>\n  );\n}\n",
+      "type": "registry:component"
+    }
+  ],
+  "meta": {
+    "tags": [
+      "autocomplete"
+    ]
+  }
+}

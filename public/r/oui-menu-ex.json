@@ -1,0 +1,22 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "oui-menu-ex",
+  "type": "registry:component",
+  "registryDependencies": [
+    "https://oui-production.mw10013.workers.dev/r/oui-button.json",
+    "https://oui-production.mw10013.workers.dev/r/oui-menu.json",
+    "https://oui-production.mw10013.workers.dev/r/oui-popover.json"
+  ],
+  "files": [
+    {
+      "path": "registry/components/oui-menu-ex.tsx",
+      "content": "import { Button } from \"@/registry/components/ui/oui-button\";\nimport { Menu } from \"@/registry/components/ui/oui-menu\";\nimport { Popover } from \"@/registry/components/ui/oui-popover\";\nimport * as Rac from \"react-aria-components\";\n\nexport interface MenuExProps<T> extends Rac.MenuProps<T> {\n  triggerElement: string | React.ReactElement;\n}\n\n/**\n * If `triggerElement` is a string, it's rendered as a ghost `Button`.\n */\nexport function MenuEx<T extends object>({\n  triggerElement,\n  children,\n  ...rest\n}: MenuExProps<T>) {\n  return (\n    <Rac.MenuTrigger>\n      {typeof triggerElement === \"string\" ? (\n        <Button variant=\"ghost\">{triggerElement}</Button>\n      ) : (\n        triggerElement\n      )}\n      <Popover>\n        <Menu {...rest}>{children}</Menu>\n      </Popover>\n    </Rac.MenuTrigger>\n  );\n}\n\nexport default function Component() {\n  return <div className=\"p-4\">MenuEx</div>;\n}\n",
+      "type": "registry:component"
+    }
+  ],
+  "meta": {
+    "tags": [
+      "menu"
+    ]
+  }
+}

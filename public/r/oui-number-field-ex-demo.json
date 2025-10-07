@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "oui-number-field-ex-demo",
+  "type": "registry:component",
+  "registryDependencies": [
+    "https://oui-production.mw10013.workers.dev/r/oui-button.json",
+    "https://oui-production.mw10013.workers.dev/r/oui-number-field-ex.json"
+  ],
+  "files": [
+    {
+      "path": "registry/components/oui-number-field-ex-demo.tsx",
+      "content": "import { NumberFieldEx } from \"@/registry/components/oui-number-field-ex\";\nimport { Button } from \"@/registry/components/ui/oui-button\";\nimport * as Rac from \"react-aria-components\";\n\nexport default function Component() {\n  return (\n    <Rac.Form\n      method=\"post\"\n      validationBehavior=\"aria\"\n      onSubmit={(e) => {\n        e.preventDefault();\n      }}\n      className=\"grid w-full max-w-sm gap-6\"\n    >\n      <NumberFieldEx\n        name=\"age\"\n        placeholder=\"age\"\n        label=\"Age\"\n        description=\"This is your age.\"\n      />\n      <NumberFieldEx\n        name=\"quantity\"\n        label=\"Quantity\"\n        description=\"Your best quantity.\"\n      />\n      <Button type=\"submit\">Submit</Button>\n    </Rac.Form>\n  );\n}\n",
+      "type": "registry:component"
+    }
+  ],
+  "meta": {
+    "tags": [
+      "number-field"
+    ]
+  }
+}

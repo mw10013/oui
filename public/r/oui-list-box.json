@@ -1,0 +1,20 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "oui-list-box",
+  "type": "registry:ui",
+  "dependencies": [
+    "react-aria-components",
+    "lucide-react",
+    "tailwind-merge"
+  ],
+  "registryDependencies": [
+    "https://oui-production.mw10013.workers.dev/r/oui-button.json"
+  ],
+  "files": [
+    {
+      "path": "registry/components/ui/oui-list-box.tsx",
+      "content": "import {\n  composeTailwindRenderProps,\n  disabledStyles,\n  focusVisibleStyles,\n} from \"@/registry/components/ui/oui-base\";\nimport { Check } from \"lucide-react\";\nimport * as Rac from \"react-aria-components\";\n\n/** Styles derived from shadcn SelectItem.\n * https://github.com/adobe/react-spectrum/issues/7601\n */\nexport function ListBoxItem<T extends object>({\n  className,\n  children,\n  ...props\n}: Rac.ListBoxItemProps<T>) {\n  return (\n    <Rac.ListBoxItem\n      {...props}\n      textValue={\n        props.textValue ?? (typeof children === \"string\" ? children : undefined)\n      }\n      className={composeTailwindRenderProps(className, [\n        focusVisibleStyles,\n        disabledStyles,\n        \"relative flex w-full cursor-default items-center gap-2 rounded-sm py-1.5 pr-8 pl-2 text-sm outline-none select-none\",\n        \"[&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4 [&_svg:not([class*='text-'])]:text-muted-foreground\",\n        \"data-[focused]:bg-accent data-[focused]:text-accent-foreground\",\n        \"data-[hovered]:bg-accent data-[hovered]:text-accent-foreground\",\n      ])}\n    >\n      {Rac.composeRenderProps(children, (children, renderProps) => (\n        <>\n          {renderProps.isSelected && (\n            <span className=\"absolute right-2 flex size-3.5 items-center justify-center\">\n              <Check className=\"size-4\" />\n            </span>\n          )}\n          {children}\n        </>\n      ))}\n    </Rac.ListBoxItem>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ]
+}

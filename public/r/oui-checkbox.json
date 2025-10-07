@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "oui-checkbox",
+  "type": "registry:ui",
+  "dependencies": [
+    "react-aria-components",
+    "lucide-react",
+    "tailwind-merge"
+  ],
+  "registryDependencies": [
+    "https://oui-production.mw10013.workers.dev/r/oui-label.json",
+    "https://oui-production.mw10013.workers.dev/r/oui-text.json"
+  ],
+  "files": [
+    {
+      "path": "registry/components/ui/oui-checkbox.tsx",
+      "content": "import { CheckIcon, MinusIcon } from \"lucide-react\";\nimport * as Rac from \"react-aria-components\";\nimport { twMerge } from \"tailwind-merge\";\nimport {\n  composeTailwindRenderProps,\n  groupFocusVisibleStyles,\n} from \"@/registry/components/ui/oui-base\";\nimport { labelComponentStyles } from \"@/registry/components/ui/oui-label\";\n\nexport interface CheckboxProps extends Rac.CheckboxProps {\n  indicatorClassName?: string;\n}\n\n/**\n * Derived from shadcn FormDemo FormItem and CheckboxPrimitive.Root\n * Radix has CheckboxPrimitive.Root which is separate from label while RAC structures with a label.\n */\nexport function Checkbox({\n  indicatorClassName,\n  className,\n  children,\n  ...props\n}: CheckboxProps) {\n  return (\n    <Rac.Checkbox\n      {...props}\n      className={composeTailwindRenderProps(className, [\n        labelComponentStyles,\n        \"group items-start gap-3\",\n      ])}\n    >\n      {(renderProps) => (\n        <>\n          <span\n            data-slot=\"checkbox-indicator\"\n            className={twMerge(\n              [\n                groupFocusVisibleStyles,\n                \"border-input dark:bg-input/30 shadow-xs size-4 shrink-0 rounded-[4px] border transition-shadow\",\n                \"group-data-[selected]:bg-primary group-data-[selected]:text-primary-foreground dark:group-data-[selected]:bg-primary group-data-[selected]:border-primary\",\n                \"group-data-[interminate]:bg-primary group-data-[interminate]:text-primary-foreground dark:group-data-[interminate]:bg-primary group-data-[interminate]:border-primary\",\n                \"group-data-[invalid]:ring-destructive/20 group-data-[invalid]:dark:ring-destructive/40 group-data-[invalid]:border-destructive\",\n              ],\n              indicatorClassName,\n            )}\n          >\n            {renderProps.isIndeterminate ? (\n              <MinusIcon aria-hidden className=\"size-3.5\" />\n            ) : renderProps.isSelected ? (\n              <CheckIcon aria-hidden className=\"size-3.5\" />\n            ) : null}\n          </span>\n          {typeof children === \"function\" ? children(renderProps) : children}\n        </>\n      )}\n    </Rac.Checkbox>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ]
+}

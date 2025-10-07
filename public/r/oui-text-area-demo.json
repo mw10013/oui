@@ -1,0 +1,20 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "oui-text-area-demo",
+  "type": "registry:component",
+  "registryDependencies": [
+    "https://oui-production.mw10013.workers.dev/r/oui-text-area.json"
+  ],
+  "files": [
+    {
+      "path": "registry/components/oui-text-area-demo.tsx",
+      "content": "import { TextArea } from \"@/registry/components/ui/oui-text-area\";\n\nexport default function Component() {\n  return <TextArea placeholder=\"Type your message here.\" />;\n}\n",
+      "type": "registry:component"
+    }
+  ],
+  "meta": {
+    "tags": [
+      "text-area"
+    ]
+  }
+}
