@@ -140,3 +140,24 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* originui css: https://github.com/origin-space/originui/blob/921a9b2e200d11de690ee11e8c55206b167ed427/app/globals.css */
+
+@layer base {
+  /* Custom scrollbar styling. Thanks @pranathiperii. */
+  pre::-webkit-scrollbar {
+    width: 5px;
+  }
+  pre::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  pre::-webkit-scrollbar-thumb {
+    background: var(--border);
+    border-radius: 5px;
+  }
+  pre {
+    scrollbar-width: thin;
+    scrollbar-color: var(--border) transparent;
+  }
+}
+

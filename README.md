@@ -5,15 +5,16 @@
 
 ## TODO
 
-- tooltip
 - code
-- registry:build: delete r/\*
+- tooltip: https://react-spectrum.adobe.com/react-aria/Tooltip.html
+- tabs: https://react-spectrum.adobe.com/react-aria/Tabs.html
 - tags
 - search
 - index
+- registry:build: delete r/\*
 - browser console.log errors
+- buttonVariants vs buttonClassName (asChild)
 - sidebar-ex: SidebarTreeEx, SidebarTrigger?, probably not SidebarListBox
-- buttonVariants vs buttonClassName
 
 ## Local Dev
 
