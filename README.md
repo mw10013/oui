@@ -13,6 +13,7 @@
 - index
 - browser console.log errors
 - sidebar-ex: SidebarTreeEx, SidebarTrigger?, probably not SidebarListBox
+- buttonVariants vs buttonClassName
 
 ## Local Dev
 

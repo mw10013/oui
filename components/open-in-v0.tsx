@@ -1,4 +1,4 @@
-import { buttonClassName } from "@/registry/components/ui/oui-button";
+import { buttonVariants } from "@/registry/components/ui/oui-button";
 import { Link } from "@/registry/components/ui/oui-link";
 import {
   Tooltip,
@@ -15,19 +15,12 @@ const OpenInV0 = ({ componentSource }: { componentSource: string }) => {
       <Tooltip>
         <TooltipTrigger asChild>
           <Link
-            className={buttonClassName({
+            className={buttonVariants({
               variant: "ghost",
               size: "icon",
               className:
                 "text-muted-foreground/80 transition-none hover:bg-transparent hover:text-foreground disabled:opacity-100 lg:opacity-0 lg:group-focus-within/item:opacity-100 lg:group-hover/item:opacity-100",
             })}
-            // className={cn(
-            //   buttonVariants({
-            //     variant: "ghost",
-            //     size: "icon",
-            //   }),
-            //   "text-muted-foreground/80 transition-none hover:bg-transparent hover:text-foreground disabled:opacity-100 lg:opacity-0 lg:group-focus-within/item:opacity-100 lg:group-hover/item:opacity-100",
-            // )}
             href={`https://v0.dev/chat/api/open?url=${encodeURIComponent(componentSource)}`}
             target="_blank"
             aria-label="Open in v0"

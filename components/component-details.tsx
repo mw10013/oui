@@ -1,9 +1,8 @@
-"use client";
-
 // import type { JSX } from "react";
 import type { RegistryItem } from "shadcn/schema";
 // import { useEffect, useState } from "react";
 import CopyRegistry from "@/components/copy-registry";
+import OpenInV0 from "@/components/open-in-v0";
 // import ComponentCli from "@/components/cli-commands";
 // import CodeBlock, { highlight } from "@/components/code-block";
 // import CopyButton from "@/components/copy-button";
@@ -78,9 +77,9 @@ export default function ComponentDetails({
       <CopyRegistry
         url={`https://oui.mw10013.workers.dev/r/${component.name}.json`}
       />
-      {/* <OpenInV0
+      <OpenInV0
         componentSource={`https://oui.mw10013.workers.dev/r/${component.name}.json`}
-      /> */}
+      />
       {/* <Dialog>
         <TooltipProvider delayDuration={0}>
           <Tooltip>

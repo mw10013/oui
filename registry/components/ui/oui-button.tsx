@@ -55,7 +55,7 @@ export const buttonVariants = cva(
  * </Link>
  */
 export const buttonClassName =
-  (props: VariantProps<typeof buttonVariants>) =>
+  ({className, ...props}: VariantProps<typeof buttonVariants> & { className?: string }) =>
   // The renderProps type omits variant props (variant, size) from the buttonVariants parameters,
   // resulting in the RAC render props (isHovered, isPressed, etc.) for compatibility across components.
   (
@@ -64,7 +64,7 @@ export const buttonClassName =
       keyof VariantProps<typeof buttonVariants>
     >,
   ) =>
-    buttonVariants({ ...renderProps, ...props });
+    twMerge(buttonVariants({ ...renderProps, ...props, className }));
 
 export interface ButtonProps
   extends Rac.ButtonProps,
