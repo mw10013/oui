@@ -1,13 +1,11 @@
 import type { JSX } from "react";
 import type { RegistryItem } from "shadcn/schema";
 import { useEffect, useState } from "react";
-import CopyRegistry from "@/components/copy-registry";
-import OpenInV0 from "@/components/open-in-v0";
 import ComponentCli from "@/components/cli-commands";
 import CodeBlock, { highlight } from "@/components/code-block";
 import CopyButton from "@/components/copy-button";
-import { convertRegistryPaths } from "@/lib/utils";
-import { Button } from "@/registry/components/ui/oui-button";
+import CopyRegistry from "@/components/copy-registry";
+import OpenInV0 from "@/components/open-in-v0";
 import {
   Dialog,
   DialogContent,
@@ -16,6 +14,7 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/registry/components/ui/dialog";
+import { Button } from "@/registry/components/ui/oui-button";
 import {
   Tooltip,
   TooltipContent,
@@ -144,3 +143,7 @@ export default function ComponentDetails({
     </div>
   );
 }
+
+const convertRegistryPaths = (content: string): string => {
+  return content.replace(/@\/registry\//g, "@/");
+};
