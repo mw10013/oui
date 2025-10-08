@@ -1,3 +1,4 @@
+import SearchButton from "@/components/search-button";
 import { categories } from "@/config/categories";
 import { Link } from "@/registry/components/ui/oui-link";
 
@@ -11,7 +12,7 @@ export default function RouteComponent() {
         <p className="mb-8 text-lg text-muted-foreground">
           An open-source collection of copy-and-paste components for UIs.
         </p>
-        {/* <SearchButton /> */}
+        <SearchButton />
       </div>
 
       <div className="relative my-16">

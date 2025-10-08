@@ -10,6 +10,7 @@
 - tabs: https://react-spectrum.adobe.com/react-aria/Tabs.html
 - tags
 - search
+- ASSET
 - index
 - registry:build: delete r/\*
 - browser console.log errors
