@@ -8,8 +8,8 @@
 - tooltip: https://react-spectrum.adobe.com/react-aria/Tooltip.html
 - tabs: https://react-spectrum.adobe.com/react-aria/Tabs.html
 - eslint-disable-next-line react-hooks/exhaustive-deps
-- tags
-- search
+- search-button: keyboard
+- search dynamic tags
 - index
 - registry:build: delete r/\*
 - browser console.log errors

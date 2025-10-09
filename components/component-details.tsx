@@ -6,15 +6,13 @@ import CodeBlock, { highlight } from "@/components/code-block";
 import CopyButton from "@/components/copy-button";
 import CopyRegistry from "@/components/copy-registry";
 import OpenInV0 from "@/components/open-in-v0";
+import { DialogEx } from "@/registry/components/oui-dialog-ex";
+import { Button } from "@/registry/components/ui/oui-button";
 import {
-  Dialog,
-  DialogContent,
   DialogDescription,
   DialogHeader,
-  DialogTitle,
-  DialogTrigger,
-} from "@/registry/components/ui/dialog";
-import { Button } from "@/registry/components/ui/oui-button";
+} from "@/registry/components/ui/oui-dialog";
+import { Heading } from "@/registry/components/ui/oui-heading";
 import {
   Tooltip,
   TooltipContent,
@@ -79,12 +77,13 @@ export default function ComponentDetails({
       <OpenInV0
         componentSource={`https://oui.mw10013.workers.dev/r/${component.name}.json`}
       />
-      <Dialog>
-        <TooltipProvider delayDuration={0}>
-          <Tooltip>
-            <TooltipTrigger asChild>
-              <span>
-                <DialogTrigger asChild>
+      <DialogEx
+        className="sm:max-w-[600px]"
+        triggerElement={
+          <TooltipProvider delayDuration={0}>
+            <Tooltip>
+              <TooltipTrigger asChild>
+                <span>
                   <Button
                     variant="ghost"
                     size="icon"
@@ -92,54 +91,55 @@ export default function ComponentDetails({
                   >
                     <CodeIcon size={16} aria-hidden={true} />
                   </Button>
-                </DialogTrigger>
-              </span>
-            </TooltipTrigger>
-            <TooltipContent className="px-2 py-1 text-xs text-muted-foreground">
-              View code
-            </TooltipContent>
-          </Tooltip>
-        </TooltipProvider>
-        <DialogContent className="sm:max-w-[600px]">
-          <DialogHeader>
-            <DialogTitle className="text-left">Installation</DialogTitle>
-            <DialogDescription className="sr-only">
-              Use the CLI to add components to your project
-            </DialogDescription>
-          </DialogHeader>
-          <div className="min-w-0 space-y-5">
-            <ComponentCli name={component.name} />
-            <div className="space-y-4">
-              <p className="text-lg font-semibold tracking-tight">Code</p>
-              <div className="relative">
-                {code === "" ? (
-                  <p className="text-sm text-muted-foreground">
-                    No code available. If you think this is an error, please{" "}
-                    <a
-                      href="https://github.com/mw10013/oui/issues"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="font-medium text-foreground underline hover:no-underline"
-                    >
-                      open an issue
-                    </a>
-                    .
-                  </p>
-                ) : (
-                  <>
-                    <CodeBlock
-                      code={code}
-                      lang="tsx"
-                      preHighlighted={highlightedCode}
-                    />
-                    <CopyButton componentSource={code} />
-                  </>
-                )}
-              </div>
+                </span>
+              </TooltipTrigger>
+              <TooltipContent className="px-2 py-1 text-xs text-muted-foreground">
+                View code
+              </TooltipContent>
+            </Tooltip>
+          </TooltipProvider>
+        }
+      >
+        <DialogHeader>
+          <Heading slot="title" className="text-left">
+            Installation
+          </Heading>
+          <DialogDescription className="sr-only">
+            Use the CLI to add components to your project
+          </DialogDescription>
+        </DialogHeader>
+        <div className="min-w-0 space-y-5">
+          <ComponentCli name={component.name} />
+          <div className="space-y-4">
+            <p className="text-lg font-semibold tracking-tight">Code</p>
+            <div className="relative">
+              {code === "" ? (
+                <p className="text-sm text-muted-foreground">
+                  No code available. If you think this is an error, please{" "}
+                  <a
+                    href="https://github.com/mw10013/oui/issues"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="font-medium text-foreground underline hover:no-underline"
+                  >
+                    open an issue
+                  </a>
+                  .
+                </p>
+              ) : (
+                <>
+                  <CodeBlock
+                    code={code}
+                    lang="tsx"
+                    preHighlighted={highlightedCode}
+                  />
+                  <CopyButton componentSource={code} />
+                </>
+              )}
             </div>
           </div>
-        </DialogContent>
-      </Dialog>
+        </div>
+      </DialogEx>
     </div>
   );
 }
