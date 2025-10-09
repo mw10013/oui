@@ -24,7 +24,9 @@
           "type": "registry:ui"
         }
       ],
-      "registryDependencies": ["https://oui.mw10013.workers.dev/r/oui-base.json"],
+      "registryDependencies": [
+        "https://oui.mw10013.workers.dev/r/oui-base.json"
+      ],
       "dependencies": [
         "react-aria-components",
         "class-variance-authority",
@@ -59,7 +61,9 @@
           "type": "registry:ui"
         }
       ],
-      "registryDependencies": ["https://oui.mw10013.workers.dev/r/oui-base.json"],
+      "registryDependencies": [
+        "https://oui.mw10013.workers.dev/r/oui-base.json"
+      ],
       "dependencies": ["react-aria-components"]
     },
     {
@@ -92,7 +96,9 @@
           "type": "registry:ui"
         }
       ],
-      "registryDependencies": ["https://oui.mw10013.workers.dev/r/oui-heading.json"],
+      "registryDependencies": [
+        "https://oui.mw10013.workers.dev/r/oui-heading.json"
+      ],
       "dependencies": ["react-aria-components", "lucide-react"]
     },
     {
@@ -104,7 +110,9 @@
           "type": "registry:ui"
         }
       ],
-      "registryDependencies": ["https://oui.mw10013.workers.dev/r/oui-base.json"],
+      "registryDependencies": [
+        "https://oui.mw10013.workers.dev/r/oui-base.json"
+      ],
       "dependencies": ["react-aria-components"]
     },
     {
@@ -128,7 +136,9 @@
           "type": "registry:ui"
         }
       ],
-      "registryDependencies": ["https://oui.mw10013.workers.dev/r/oui-base.json"],
+      "registryDependencies": [
+        "https://oui.mw10013.workers.dev/r/oui-base.json"
+      ],
       "dependencies": ["react-aria-components"]
     },
     {
@@ -172,7 +182,9 @@
           "type": "registry:ui"
         }
       ],
-      "registryDependencies": ["https://oui.mw10013.workers.dev/r/oui-base.json"],
+      "registryDependencies": [
+        "https://oui.mw10013.workers.dev/r/oui-base.json"
+      ],
       "dependencies": [
         "react-aria-components",
         "class-variance-authority",
@@ -200,7 +212,9 @@
           "type": "registry:ui"
         }
       ],
-      "registryDependencies": ["https://oui.mw10013.workers.dev/r/oui-base.json"],
+      "registryDependencies": [
+        "https://oui.mw10013.workers.dev/r/oui-base.json"
+      ],
       "dependencies": ["react-aria-components", "tailwind-merge"]
     },
     {
@@ -212,7 +226,9 @@
           "type": "registry:ui"
         }
       ],
-      "registryDependencies": ["https://oui.mw10013.workers.dev/r/oui-base.json"],
+      "registryDependencies": [
+        "https://oui.mw10013.workers.dev/r/oui-base.json"
+      ],
       "dependencies": [
         "react-aria-components",
         "class-variance-authority",
@@ -228,7 +244,9 @@
           "type": "registry:ui"
         }
       ],
-      "registryDependencies": ["https://oui.mw10013.workers.dev/r/oui-button.json"],
+      "registryDependencies": [
+        "https://oui.mw10013.workers.dev/r/oui-button.json"
+      ],
       "dependencies": [
         "react-aria-components",
         "lucide-react",
@@ -265,7 +283,9 @@
           "type": "registry:ui"
         }
       ],
-      "registryDependencies": ["https://oui.mw10013.workers.dev/r/oui-base.json"],
+      "registryDependencies": [
+        "https://oui.mw10013.workers.dev/r/oui-base.json"
+      ],
       "dependencies": [
         "react-aria-components",
         "class-variance-authority",
@@ -394,7 +414,9 @@
           "type": "registry:ui"
         }
       ],
-      "registryDependencies": ["https://oui.mw10013.workers.dev/r/oui-label.json"],
+      "registryDependencies": [
+        "https://oui.mw10013.workers.dev/r/oui-label.json"
+      ],
       "dependencies": ["react-aria-components"]
     },
     {
@@ -421,7 +443,9 @@
           "type": "registry:ui"
         }
       ],
-      "registryDependencies": ["https://oui.mw10013.workers.dev/r/oui-base.json"],
+      "registryDependencies": [
+        "https://oui.mw10013.workers.dev/r/oui-base.json"
+      ],
       "dependencies": [
         "react-aria-components",
         "lucide-react",
@@ -522,7 +546,9 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["https://oui.mw10013.workers.dev/r/oui-modal.json"],
+      "registryDependencies": [
+        "https://oui.mw10013.workers.dev/r/oui-modal.json"
+      ],
       "meta": {
         "tags": ["modal", "modal ex"]
       }
@@ -536,7 +562,9 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["https://oui.mw10013.workers.dev/r/oui-modal.json"],
+      "registryDependencies": [
+        "https://oui.mw10013.workers.dev/r/oui-modal.json"
+      ],
       "meta": {
         "tags": ["modal"]
       }
@@ -570,7 +598,9 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["https://oui.mw10013.workers.dev/r/oui-button.json"],
+      "registryDependencies": [
+        "https://oui.mw10013.workers.dev/r/oui-button.json"
+      ],
       "meta": {
         "tags": ["button"],
         "style": "text-center"
@@ -585,7 +615,9 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["https://oui.mw10013.workers.dev/r/oui-button.json"],
+      "registryDependencies": [
+        "https://oui.mw10013.workers.dev/r/oui-button.json"
+      ],
       "meta": {
         "tags": ["button"],
         "style": "text-center"
@@ -600,7 +632,9 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["https://oui.mw10013.workers.dev/r/oui-button.json"],
+      "registryDependencies": [
+        "https://oui.mw10013.workers.dev/r/oui-button.json"
+      ],
       "meta": {
         "tags": ["button"],
         "style": "text-center"
@@ -615,7 +649,9 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["https://oui.mw10013.workers.dev/r/oui-button.json"],
+      "registryDependencies": [
+        "https://oui.mw10013.workers.dev/r/oui-button.json"
+      ],
       "meta": {
         "tags": ["button"],
         "style": "text-center"
@@ -630,7 +666,9 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["https://oui.mw10013.workers.dev/r/oui-button.json"],
+      "registryDependencies": [
+        "https://oui.mw10013.workers.dev/r/oui-button.json"
+      ],
       "meta": {
         "tags": ["button"],
         "style": "text-center"
@@ -645,7 +683,9 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["https://oui.mw10013.workers.dev/r/oui-button.json"],
+      "registryDependencies": [
+        "https://oui.mw10013.workers.dev/r/oui-button.json"
+      ],
       "dependencies": ["lucide-react"],
       "meta": {
         "tags": ["button"],
@@ -661,7 +701,9 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["https://oui.mw10013.workers.dev/r/oui-button.json"],
+      "registryDependencies": [
+        "https://oui.mw10013.workers.dev/r/oui-button.json"
+      ],
       "dependencies": ["lucide-react"],
       "meta": {
         "tags": ["button"],
@@ -677,7 +719,9 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["https://oui.mw10013.workers.dev/r/oui-button.json"],
+      "registryDependencies": [
+        "https://oui.mw10013.workers.dev/r/oui-button.json"
+      ],
       "meta": {
         "tags": ["button"],
         "style": "text-center"
@@ -692,7 +736,9 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["https://oui.mw10013.workers.dev/r/oui-button.json"],
+      "registryDependencies": [
+        "https://oui.mw10013.workers.dev/r/oui-button.json"
+      ],
       "meta": {
         "tags": ["button"],
         "style": "text-center"
@@ -707,7 +753,9 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["https://oui.mw10013.workers.dev/r/oui-button.json"],
+      "registryDependencies": [
+        "https://oui.mw10013.workers.dev/r/oui-button.json"
+      ],
       "meta": {
         "tags": ["button"],
         "style": "text-center"
@@ -722,7 +770,9 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["https://oui.mw10013.workers.dev/r/oui-button.json"],
+      "registryDependencies": [
+        "https://oui.mw10013.workers.dev/r/oui-button.json"
+      ],
       "meta": {
         "tags": ["button"],
         "style": "text-center"
@@ -737,7 +787,9 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["https://oui.mw10013.workers.dev/r/oui-button.json"],
+      "registryDependencies": [
+        "https://oui.mw10013.workers.dev/r/oui-button.json"
+      ],
       "meta": {
         "tags": ["button"],
         "style": "text-center"
@@ -752,7 +804,9 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["https://oui.mw10013.workers.dev/r/oui-input.json"],
+      "registryDependencies": [
+        "https://oui.mw10013.workers.dev/r/oui-input.json"
+      ],
       "meta": {
         "tags": ["input"]
       }
@@ -766,7 +820,9 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["https://oui.mw10013.workers.dev/r/oui-input.json"],
+      "registryDependencies": [
+        "https://oui.mw10013.workers.dev/r/oui-input.json"
+      ],
       "meta": {
         "tags": ["input"]
       }
@@ -780,7 +836,9 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["https://oui.mw10013.workers.dev/r/oui-input.json"],
+      "registryDependencies": [
+        "https://oui.mw10013.workers.dev/r/oui-input.json"
+      ],
       "meta": {
         "tags": ["input"]
       }
@@ -1035,7 +1093,9 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["https://oui.mw10013.workers.dev/r/oui-switch-ex.json"],
+      "registryDependencies": [
+        "https://oui.mw10013.workers.dev/r/oui-switch-ex.json"
+      ],
       "meta": {
         "tags": ["switch"]
       }
@@ -1049,7 +1109,9 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["https://oui.mw10013.workers.dev/r/oui-switch-ex.json"],
+      "registryDependencies": [
+        "https://oui.mw10013.workers.dev/r/oui-switch-ex.json"
+      ],
       "meta": {
         "tags": ["switch"]
       }
@@ -1063,7 +1125,9 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["https://oui.mw10013.workers.dev/r/oui-switch-ex.json"],
+      "registryDependencies": [
+        "https://oui.mw10013.workers.dev/r/oui-switch-ex.json"
+      ],
       "meta": {
         "tags": ["switch"]
       }
@@ -1077,7 +1141,9 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["https://oui.mw10013.workers.dev/r/oui-switch-ex.json"],
+      "registryDependencies": [
+        "https://oui.mw10013.workers.dev/r/oui-switch-ex.json"
+      ],
       "meta": {
         "tags": ["switch"]
       }
@@ -1361,7 +1427,9 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["https://oui.mw10013.workers.dev/r/oui-checkbox.json"],
+      "registryDependencies": [
+        "https://oui.mw10013.workers.dev/r/oui-checkbox.json"
+      ],
       "meta": {
         "tags": ["checkbox"]
       }
@@ -1375,7 +1443,9 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["https://oui.mw10013.workers.dev/r/oui-checkbox.json"],
+      "registryDependencies": [
+        "https://oui.mw10013.workers.dev/r/oui-checkbox.json"
+      ],
       "meta": {
         "tags": ["checkbox"]
       }
@@ -1389,7 +1459,9 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["https://oui.mw10013.workers.dev/r/oui-checkbox.json"],
+      "registryDependencies": [
+        "https://oui.mw10013.workers.dev/r/oui-checkbox.json"
+      ],
       "meta": {
         "tags": ["checkbox"]
       }
@@ -1403,7 +1475,9 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["https://oui.mw10013.workers.dev/r/oui-checkbox-ex.json"],
+      "registryDependencies": [
+        "https://oui.mw10013.workers.dev/r/oui-checkbox-ex.json"
+      ],
       "meta": {
         "tags": ["checkbox"]
       }
@@ -1823,7 +1897,9 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["https://oui.mw10013.workers.dev/r/oui-slider-ex.json"],
+      "registryDependencies": [
+        "https://oui.mw10013.workers.dev/r/oui-slider-ex.json"
+      ],
       "meta": {
         "tags": ["slider"]
       }
@@ -1837,7 +1913,9 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["https://oui.mw10013.workers.dev/r/oui-slider-ex.json"],
+      "registryDependencies": [
+        "https://oui.mw10013.workers.dev/r/oui-slider-ex.json"
+      ],
       "meta": {
         "tags": ["slider"]
       }
@@ -1885,7 +1963,9 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["https://oui.mw10013.workers.dev/r/oui-link.json"],
+      "registryDependencies": [
+        "https://oui.mw10013.workers.dev/r/oui-link.json"
+      ],
       "meta": {
         "tags": ["link"]
       }
@@ -1899,7 +1979,9 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["https://oui.mw10013.workers.dev/r/oui-link.json"],
+      "registryDependencies": [
+        "https://oui.mw10013.workers.dev/r/oui-link.json"
+      ],
       "meta": {
         "tags": ["link"]
       }
@@ -1913,7 +1995,9 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["https://oui.mw10013.workers.dev/r/oui-link.json"],
+      "registryDependencies": [
+        "https://oui.mw10013.workers.dev/r/oui-link.json"
+      ],
       "meta": {
         "tags": ["link"]
       }
@@ -1927,7 +2011,9 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["https://oui.mw10013.workers.dev/r/oui-link.json"],
+      "registryDependencies": [
+        "https://oui.mw10013.workers.dev/r/oui-link.json"
+      ],
       "meta": {
         "tags": ["link"]
       }
@@ -1941,7 +2027,9 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["https://oui.mw10013.workers.dev/r/oui-link.json"],
+      "registryDependencies": [
+        "https://oui.mw10013.workers.dev/r/oui-link.json"
+      ],
       "meta": {
         "tags": ["link"]
       }
@@ -1955,7 +2043,9 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["https://oui.mw10013.workers.dev/r/oui-link.json"],
+      "registryDependencies": [
+        "https://oui.mw10013.workers.dev/r/oui-link.json"
+      ],
       "meta": {
         "tags": ["link"]
       }
@@ -2090,7 +2180,9 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["https://oui.mw10013.workers.dev/r/oui-separator.json"],
+      "registryDependencies": [
+        "https://oui.mw10013.workers.dev/r/oui-separator.json"
+      ],
       "meta": {
         "tags": ["separator"]
       }
@@ -2105,7 +2197,9 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["https://oui.mw10013.workers.dev/r/oui-text-area.json"],
+      "registryDependencies": [
+        "https://oui.mw10013.workers.dev/r/oui-text-area.json"
+      ],
       "meta": {
         "tags": ["text-area"]
       }
@@ -2156,7 +2250,9 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["https://oui.mw10013.workers.dev/r/oui-table.json"],
+      "registryDependencies": [
+        "https://oui.mw10013.workers.dev/r/oui-table.json"
+      ],
       "meta": {
         "tags": ["table"]
       }
@@ -2221,6 +2317,26 @@
       ],
       "meta": {
         "tags": ["dialog"]
+      }
+    },
+    {
+      "name": "oui-text-field-demo",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-text-field-demo.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "https://oui.mw10013.workers.dev/r/oui-field-error.json",
+        "https://oui.mw10013.workers.dev/r/oui-input.json",
+        "https://oui.mw10013.workers.dev/r/oui-label.json",
+        "https://oui.mw10013.workers.dev/r/oui-text.json",
+        "https://oui.mw10013.workers.dev/r/oui-text-field.json"
+      ],
+      "meta": {
+        "tags": ["text-field"]
       }
     }
   ]
