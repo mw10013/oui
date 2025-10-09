@@ -15,7 +15,8 @@
   ],
   "meta": {
     "tags": [
-      "select"
+      "select",
+      "disabled"
     ]
   }
 }

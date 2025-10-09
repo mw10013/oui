@@ -15,7 +15,8 @@
   ],
   "meta": {
     "tags": [
-      "label"
+      "label",
+      "disabled"
     ]
   }
 }

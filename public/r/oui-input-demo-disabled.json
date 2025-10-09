@@ -14,7 +14,8 @@
   ],
   "meta": {
     "tags": [
-      "input"
+      "input",
+      "disabled"
     ]
   }
 }

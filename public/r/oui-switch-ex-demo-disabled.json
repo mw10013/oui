@@ -14,7 +14,8 @@
   ],
   "meta": {
     "tags": [
-      "switch"
+      "switch",
+      "disabled"
     ]
   }
 }

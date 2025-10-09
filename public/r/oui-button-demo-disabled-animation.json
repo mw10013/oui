@@ -14,7 +14,8 @@
   ],
   "meta": {
     "tags": [
-      "button"
+      "button",
+      "disabled"
     ],
     "style": "text-center"
   }
