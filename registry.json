@@ -469,6 +469,36 @@
       ]
     },
     {
+      "name": "oui-tooltip",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "registry/components/ui/oui-tooltip.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "registryDependencies": [],
+      "dependencies": ["react-aria-components", "tailwind-merge"]
+    },
+    {
+      "name": "oui-tooltip-demo",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-tooltip-demo.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "https://oui.mw10013.workers.dev/r/oui-button.json",
+        "https://oui.mw10013.workers.dev/r/oui-tooltip.json"
+      ],
+      "meta": {
+        "tags": ["tooltip"],
+        "style": "text-center"
+      }
+    },
+    {
       "name": "oui-text-area",
       "type": "registry:ui",
       "files": [

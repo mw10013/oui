@@ -33,6 +33,7 @@ export const registryTags = [
   "text-area",
   "text-field",
   "text",
+  "tooltip",
 
   // generic tags
   "disabled"

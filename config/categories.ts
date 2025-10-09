@@ -283,6 +283,11 @@ export const categories: Category[] = [
       { name: "oui-text-field-ex-horizontal" },
     ],
   },
+  {
+    name: "Tooltip",
+    slug: "tooltip",
+    components: [{ name: "oui-tooltip-demo" }],
+  },
 ];
 
 export function getCategory(slug: string): Category | undefined {
