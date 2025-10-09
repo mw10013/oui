@@ -5,9 +5,9 @@
 
 ## TODO
 
-- code
 - tooltip: https://react-spectrum.adobe.com/react-aria/Tooltip.html
 - tabs: https://react-spectrum.adobe.com/react-aria/Tabs.html
+- eslint-disable-next-line react-hooks/exhaustive-deps
 - tags
 - search
 - ASSET
@@ -65,4 +65,3 @@ import type { VariantProps } from "class-variance-authority";
 - **Theme Mapping:** Maps semantic utility names (e.g., `primary`) via `@theme` (e.g., `--color-primary`) to CSS variables (e.g., `var(--primary)`) holding the actual values.
 
 - https://nicolasgallagher.com/about-html-semantics-front-end-architecture/#component-modifiers
-

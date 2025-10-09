@@ -1,5 +1,3 @@
-"use client";
-
 import type { RegistryTag } from "@/registry/registry-tags";
 import type { RegistryItem } from "shadcn/schema";
 import { useCallback, useMemo } from "react";
@@ -7,9 +5,10 @@ import ComponentCard from "@/components/component-card";
 import ComponentDetails from "@/components/component-details";
 // import ComponentLoader from "@/components/component-loader-client";
 import PageGrid from "@/components/page-grid";
+import SearchField from "@/components/search-field";
 import { getComponents } from "@/lib/utils";
 import { useSearchParams } from "react-router";
-import SearchField from "@/components/search-field";
+import ComponentLoader from "@/components/component-loader-client";
 
 export default function ComponentSearch() {
   const [searchParams, setSearchParams] = useSearchParams();
@@ -50,7 +49,7 @@ export default function ComponentSearch() {
             component={component}
             isSearchPage
           >
-            {/* <ComponentLoader component={component} /> */}
+            <ComponentLoader component={component} />
             <ComponentDetails component={component} />
           </ComponentCard>
         ))}

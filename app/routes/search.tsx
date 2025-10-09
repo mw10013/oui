@@ -10,7 +10,7 @@ import PageHeader from "@/components/page-header";
 export default function Page() {
   return (
     <>
-      <PageHeader title="Search Origin UI" className="mb-10">
+      <PageHeader title="Search Oui" className="mb-10">
         Use this page to quickly find a component (e.g., multiselect, vertical
         slider, etc.)
       </PageHeader>
