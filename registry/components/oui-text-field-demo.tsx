@@ -8,7 +8,7 @@ export default function Component() {
   return (
     <TextField>
       <Label>Label</Label>
-      <Input></Input>
+      <Input placeholder="Placeholder" />
       <Text slot="description">Description</Text>
       <FieldError />
     </TextField>

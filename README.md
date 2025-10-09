@@ -10,7 +10,6 @@
 - eslint-disable-next-line react-hooks/exhaustive-deps
 - tags
 - search
-- ASSET
 - index
 - registry:build: delete r/\*
 - browser console.log errors

@@ -5,7 +5,7 @@ export default function Component() {
     <TextFieldEx
       label="Label"
       placeholder="Placeholder"
-      description="This is a text field."
+      description="This is TextFieldEx."
     />
   );
 }

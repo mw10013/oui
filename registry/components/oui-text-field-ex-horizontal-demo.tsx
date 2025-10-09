@@ -5,7 +5,7 @@ export default function Component() {
     <TextFieldExHorizontal
       label="Label"
       placeholder="Placeholder"
-      description="This is a horizontal text field."
+      description="This is TextFieldExHorizontal."
     />
   );
 }
