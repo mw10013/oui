@@ -1,8 +1,6 @@
-// import { Suspense } from "react"
-
-import PageHeader from "@/components/page-header"
-
-// import ComponentsContainer from "./components-container"
+import { Suspense } from "react";
+import ComponentSearch from "@/components/component-search";
+import PageHeader from "@/components/page-header";
 
 // export const metadata: Metadata = {
 //   title: "Search a Origin UI component",
@@ -16,9 +14,9 @@ export default function Page() {
         Use this page to quickly find a component (e.g., multiselect, vertical
         slider, etc.)
       </PageHeader>
-      {/* <Suspense>
-        <ComponentsContainer />
-      </Suspense> */}
+      <Suspense>
+        <ComponentSearch />
+      </Suspense>
     </>
-  )
+  );
 }

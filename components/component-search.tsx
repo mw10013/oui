@@ -9,7 +9,7 @@ import ComponentDetails from "@/components/component-details";
 import PageGrid from "@/components/page-grid";
 import { getComponents } from "@/lib/utils";
 import { useSearchParams } from "react-router";
-// import SearchField from "./search-field";
+import SearchField from "@/components/search-field";
 
 export default function ComponentSearch() {
   const [searchParams, setSearchParams] = useSearchParams();
@@ -26,7 +26,7 @@ export default function ComponentSearch() {
     return getComponents(tags);
   }, [tags]);
 
-  const _updateTags = useCallback(
+  const updateTags = useCallback(
     (newTags: string[]) => {
       if (newTags.length > 0) {
         const formattedTags = newTags
@@ -42,7 +42,7 @@ export default function ComponentSearch() {
 
   return (
     <div className="space-y-4">
-      {/* <SearchField selectedTags={tags} onTagChange={updateTags} /> */}
+      <SearchField selectedTags={tags} onTagChange={updateTags} />
       <PageGrid>
         {filtered.map((component: RegistryItem) => (
           <ComponentCard
