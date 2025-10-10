@@ -6,7 +6,7 @@ export function Tooltip({
   className,
   offset = 7,
   ...props
-}: React.ComponentProps<typeof Rac.Tooltip> & { offset?: number }) {
+}: React.ComponentProps<typeof Rac.Tooltip>) {
   return (
     <Rac.Tooltip
       offset={offset}

@@ -2368,6 +2368,23 @@
       "meta": {
         "tags": ["text-field"]
       }
+    },
+    {
+      "name": "oui-tooltip-ex",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-tooltip-ex.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "https://oui.mw10013.workers.dev/r/oui-button.json",
+        "https://oui.mw10013.workers.dev/r/oui-tooltip.json"
+      ],
+      "meta": {
+        "tags": ["tooltip"]
+      }
     }
   ]
 }
