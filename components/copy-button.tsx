@@ -1,39 +1,39 @@
-import { useCopy } from "@/hooks/use-copy"
-import { cn } from "@/registry/lib/utils"
-import { Button } from "@/registry/components/ui/button"
+import { useCopy } from "@/hooks/use-copy";
+import { Button } from "@/registry/components/ui/oui-button";
 import {
   Tooltip,
   TooltipContent,
   TooltipProvider,
   TooltipTrigger,
-} from "@/registry/components/ui/tooltip"
+} from "@/registry/components/ui/tooltip";
+import { twJoin } from "tailwind-merge";
 
 const CopyButton = ({
   componentSource,
   className,
 }: {
-  componentSource: string | null
-  className?: string
+  componentSource: string | null;
+  className?: string;
 }) => {
-  const { copied, copy } = useCopy()
+  const { copied, copy } = useCopy();
 
   return (
-    <div className={cn("dark absolute top-2 right-2", className)}>
+    <div className={twJoin("dark absolute top-2 right-2", className)}>
       <TooltipProvider delayDuration={0}>
         <Tooltip>
           <TooltipTrigger asChild>
             <Button
               variant="ghost"
               size="icon"
-              className="text-muted-foreground hover:text-foreground transition-none hover:bg-transparent disabled:opacity-100"
-              onClick={() => void copy(componentSource ?? "")}
+              className="text-muted-foreground transition-none hover:bg-transparent hover:text-foreground disabled:opacity-100"
+              onPress={() => void copy(componentSource ?? "")}
               aria-label={copied ? "Copied" : "Copy component source"}
-              disabled={copied}
+              isDisabled={copied}
             >
               <div
-                className={cn(
+                className={twJoin(
                   "transition-all",
-                  copied ? "scale-100 opacity-100" : "scale-0 opacity-0"
+                  copied ? "scale-100 opacity-100" : "scale-0 opacity-0",
                 )}
               >
                 <svg
@@ -50,9 +50,9 @@ const CopyButton = ({
                 </svg>
               </div>
               <div
-                className={cn(
+                className={twJoin(
                   "absolute transition-all",
-                  copied ? "scale-0 opacity-0" : "scale-100 opacity-100"
+                  copied ? "scale-0 opacity-0" : "scale-100 opacity-100",
                 )}
               >
                 <svg
@@ -68,13 +68,13 @@ const CopyButton = ({
               </div>
             </Button>
           </TooltipTrigger>
-          <TooltipContent className="text-muted-foreground px-2 py-1 text-xs">
+          <TooltipContent className="px-2 py-1 text-xs text-muted-foreground">
             Copy
           </TooltipContent>
         </Tooltip>
       </TooltipProvider>
     </div>
-  )
-}
+  );
+};
 
-export default CopyButton
+export default CopyButton;
