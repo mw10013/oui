@@ -1,8 +1,11 @@
 import type { VariantProps } from "class-variance-authority";
+import {
+  disabledStyles,
+  focusVisibleStyles,
+} from "@/registry/components/ui/oui-base";
 import { cva } from "class-variance-authority";
 import * as Rac from "react-aria-components";
 import { twMerge } from "tailwind-merge";
-import { disabledStyles, focusVisibleStyles } from "@/registry/components/ui/oui-base";
 
 /**
  * Derived from shadcn Button.
@@ -12,7 +15,7 @@ export const buttonVariants = cva(
   [
     focusVisibleStyles,
     disabledStyles,
-    "inline-flex shrink-0 items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all [&_svg:not([class*='size-'])]:size-4 [&_svg]:pointer-events-none [&_svg]:shrink-0",
+    "inline-flex shrink-0 items-center justify-center gap-2 rounded-md text-sm font-medium whitespace-nowrap transition-all [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4",
   ],
   {
     variants: {
@@ -20,9 +23,9 @@ export const buttonVariants = cva(
         default:
           "bg-primary text-primary-foreground shadow-xs data-[hovered]:bg-primary/90",
         destructive:
-          "bg-destructive shadow-xs data-[hovered]:bg-destructive/90 data-[focus-visible]:ring-destructive/20 dark:data-[focus-visible]:ring-destructive/40 dark:bg-destructive/60 text-white",
+          "bg-destructive text-white shadow-xs data-[focus-visible]:ring-destructive/20 data-[hovered]:bg-destructive/90 dark:bg-destructive/60 dark:data-[focus-visible]:ring-destructive/40",
         outline:
-          "bg-background shadow-xs data-[hovered]:bg-accent data-[hovered]:text-accent-foreground dark:bg-input/30 dark:border-input dark:data-[hovered]:bg-input/50 border",
+          "border bg-background shadow-xs data-[hovered]:bg-accent data-[hovered]:text-accent-foreground dark:border-input dark:bg-input/30 dark:data-[hovered]:bg-input/50",
         secondary:
           "bg-secondary text-secondary-foreground shadow-xs data-[hovered]:bg-secondary/80",
         ghost:
@@ -55,7 +58,10 @@ export const buttonVariants = cva(
  * </Link>
  */
 export const buttonClassName =
-  ({className, ...props}: VariantProps<typeof buttonVariants> & { className?: string }) =>
+  ({
+    className,
+    ...props
+  }: VariantProps<typeof buttonVariants> & { className?: string }) =>
   // The renderProps type omits variant props (variant, size) from the buttonVariants parameters,
   // resulting in the RAC render props (isHovered, isPressed, etc.) for compatibility across components.
   (
@@ -64,7 +70,7 @@ export const buttonClassName =
       keyof VariantProps<typeof buttonVariants>
     >,
   ) =>
-    twMerge(buttonVariants({ ...renderProps, ...props, className }));
+    buttonVariants({ ...renderProps, ...props, className });
 
 export interface ButtonProps
   extends Rac.ButtonProps,
