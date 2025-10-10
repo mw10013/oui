@@ -7,18 +7,13 @@ import CopyButton from "@/components/copy-button";
 import CopyRegistry from "@/components/copy-registry";
 import OpenInV0 from "@/components/open-in-v0";
 import { DialogEx } from "@/registry/components/oui-dialog-ex";
+import { TooltipEx } from "@/registry/components/oui-tooltip-ex";
 import { Button } from "@/registry/components/ui/oui-button";
 import {
   DialogDescription,
   DialogHeader,
 } from "@/registry/components/ui/oui-dialog";
 import { Heading } from "@/registry/components/ui/oui-heading";
-import {
-  Tooltip,
-  TooltipContent,
-  TooltipProvider,
-  TooltipTrigger,
-} from "@/registry/components/ui/tooltip";
 import { CodeIcon } from "lucide-react";
 
 export default function ComponentDetails({
@@ -80,24 +75,23 @@ export default function ComponentDetails({
       <DialogEx
         className="sm:max-w-[600px]"
         triggerElement={
-          <TooltipProvider delayDuration={0}>
-            <Tooltip>
-              <TooltipTrigger asChild>
-                <span>
-                  <Button
-                    variant="ghost"
-                    size="icon"
-                    className="text-muted-foreground/80 transition-none hover:bg-transparent hover:text-foreground disabled:opacity-100 lg:opacity-0 lg:group-focus-within/item:opacity-100 lg:group-hover/item:opacity-100"
-                  >
-                    <CodeIcon size={16} aria-hidden={true} />
-                  </Button>
-                </span>
-              </TooltipTrigger>
-              <TooltipContent className="px-2 py-1 text-xs text-muted-foreground">
-                View code
-              </TooltipContent>
-            </Tooltip>
-          </TooltipProvider>
+          <TooltipEx
+            delay={0}
+            triggerElement={
+              <span>
+                <Button
+                  variant="ghost"
+                  size="icon"
+                  className="text-muted-foreground/80 transition-none hover:bg-transparent hover:text-foreground disabled:opacity-100 lg:opacity-0 lg:group-focus-within/item:opacity-100 lg:group-hover/item:opacity-100"
+                >
+                  <CodeIcon size={16} aria-hidden={true} />
+                </Button>
+              </span>
+            }
+            className="px-2 py-1 text-xs text-muted-foreground"
+          >
+            View code
+          </TooltipEx>
         }
       >
         <DialogHeader>

@@ -8,7 +8,7 @@ export interface TooltipExProps
     Partial<
       Pick<
         React.ComponentProps<typeof Rac.TooltipTrigger>,
-        "isOpen" | "defaultOpen" | "onOpenChange"
+        "isOpen" | "defaultOpen" | "onOpenChange" | "delay"
       >
     > {
   triggerElement?: string | ReactElement;
@@ -26,6 +26,7 @@ export function TooltipEx({
   isOpen,
   defaultOpen,
   onOpenChange,
+  delay,
   children,
   ...props
 }: TooltipExProps) {
@@ -37,6 +38,7 @@ export function TooltipEx({
       isOpen={isOpen}
       defaultOpen={defaultOpen}
       onOpenChange={onOpenChange}
+      delay={delay}
     >
       {typeof triggerElement === "string" ? (
         <Button variant="ghost">{triggerElement}</Button>
