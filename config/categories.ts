@@ -286,7 +286,11 @@ export const categories: Category[] = [
   {
     name: "Tooltip",
     slug: "tooltip",
-    components: [{ name: "oui-tooltip-demo" }, { name: "oui-tooltip-ex" }],
+    components: [
+      { name: "oui-tooltip-demo" },
+      { name: "oui-tooltip-ex-demo" },
+      { name: "oui-tooltip-ex" },
+    ],
   },
 ];
 

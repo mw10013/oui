@@ -10,7 +10,8 @@ export default function RouteComponent() {
           React Aria Components with Shadcn characteristics.
         </h1>
         <p className="mb-8 text-lg text-muted-foreground">
-          An open-source collection of copy-and-paste components for UIs.
+          {/* An open-source collection of copy-and-paste components for UIs. */}
+          Copy-and-paste react aria components that run side-by-side with shadcn components.
         </p>
         <SearchButton />
       </div>
