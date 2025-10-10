@@ -1,9 +1,7 @@
-"use client";
-
 import { useCopy } from "@/hooks/use-copy";
 import { TooltipEx } from "@/registry/components/oui-tooltip-ex";
 import { Button } from "@/registry/components/ui/oui-button";
-import { cn } from "@/registry/lib/utils";
+import { twJoin } from "tailwind-merge";
 
 const CopyButton = ({ url }: { url: string | null }) => {
   // @typescript-eslint/no-unsafe-call
@@ -12,7 +10,6 @@ const CopyButton = ({ url }: { url: string | null }) => {
   return (
     <TooltipEx
       delay={0}
-      className="px-2 py-1 text-xs text-muted-foreground"
       triggerElement={
         <Button
           variant="ghost"
@@ -23,7 +20,7 @@ const CopyButton = ({ url }: { url: string | null }) => {
           isDisabled={copied}
         >
           <div
-            className={cn(
+            className={twJoin(
               "transition-all",
               copied ? "scale-100 opacity-100" : "scale-0 opacity-0",
             )}
@@ -42,7 +39,7 @@ const CopyButton = ({ url }: { url: string | null }) => {
             </svg>
           </div>
           <div
-            className={cn(
+            className={twJoin(
               "absolute transition-all",
               copied ? "scale-0 opacity-0" : "scale-100 opacity-100",
             )}
@@ -61,6 +58,7 @@ const CopyButton = ({ url }: { url: string | null }) => {
           </div>
         </Button>
       }
+      className="px-2 py-1 text-xs text-muted-foreground"
     >
       Copy Registry URL
     </TooltipEx>
