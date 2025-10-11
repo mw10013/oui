@@ -1,6 +1,5 @@
 ---
 mode: "agent"
-description: "This prompt reconciles a component filename with `registry.json`"
 ---
 
 You are an AI assistant that reconciles a component filename with `registry.json`.
@@ -67,7 +66,7 @@ The reconciled or new item should have the following shape:
     // List of registry dependencies derived from the imports in the component file.
     // For each import from "@/registry/components/ui/oui-<UI-COMPONENT-NAME>", add
     // "https://oui.mw10013.workers.dev/r/oui-<UI-COMPONENT-NAME>.json" to this array.
-    // For each import from "@/registry/components/ui/<UI-COMPONENT-NAME-WITHOUT-OUI-PREFIX>" 
+    // For each import from "@/registry/components/ui/<UI-COMPONENT-NAME-WITHOUT-OUI-PREFIX>"
     // that does not have `oui-*` prefix, add
     // "https://ui.shadcn.com/r/styles/new-york/r/<UI-COMPONENT-NAME-WITHOUT-OUI-PREFIX>.json" to this array.
     // For each import from "@/registry/components/oui-<COMPONENT-NAME>", add

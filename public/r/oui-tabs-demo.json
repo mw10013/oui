@@ -1,0 +1,20 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "oui-tabs-demo",
+  "type": "registry:component",
+  "registryDependencies": [
+    "https://oui.mw10013.workers.dev/r/oui-tabs.json"
+  ],
+  "files": [
+    {
+      "path": "registry/components/oui-tabs-demo.tsx",
+      "content": "import {\n  Tab,\n  TabList,\n  TabPanel,\n  Tabs,\n} from \"@/registry/components/ui/oui-tabs\";\n\nexport default function Component() {\n  return (\n    <Tabs>\n      <TabList aria-label=\"History of Ancient Rome\">\n        <Tab id=\"FoR\">\n          <span>Founding of Rome</span>\n        </Tab>\n        <Tab id=\"MaR\">\n          <span>Monarchy and Republic</span>\n        </Tab>\n        <Tab id=\"Emp\">\n          <span>Empire</span>\n        </Tab>\n      </TabList>\n      <TabPanel id=\"FoR\">\n        Arma virumque cano, Troiae qui primus ab oris.\n      </TabPanel>\n      <TabPanel id=\"MaR\">Senatus Populusque Romanus.</TabPanel>\n      <TabPanel id=\"Emp\">Alea jacta est.</TabPanel>\n    </Tabs>\n  );\n}\n",
+      "type": "registry:component"
+    }
+  ],
+  "meta": {
+    "tags": [
+      "tabs"
+    ]
+  }
+}

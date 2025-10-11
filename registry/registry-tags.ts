@@ -30,13 +30,14 @@ export const registryTags = [
   "separrator",
   "switch",
   "table",
+  "tabs",
   "text-area",
   "text-field",
   "text",
   "tooltip",
 
   // generic tags
-  "disabled"
+  "disabled",
 
   // Component tags
   // "accordion",
@@ -173,6 +174,6 @@ export const registryTags = [
   // "warning",
   // "week",
   // "zoom",
-] as const
+] as const;
 
-export type RegistryTag = (typeof registryTags)[number]
+export type RegistryTag = (typeof registryTags)[number];

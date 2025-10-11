@@ -259,6 +259,11 @@ export const categories: Category[] = [
     ],
   },
   {
+    name: "Tabs",
+    slug: "tabs",
+    components: [{ name: "oui-tabs-demo" }],
+  },
+  {
     name: "Text",
     slug: "text",
     components: [],

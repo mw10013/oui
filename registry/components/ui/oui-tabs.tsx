@@ -6,6 +6,9 @@ import {
 import * as Rac from "react-aria-components";
 import { twMerge } from "tailwind-merge";
 
+/**
+ * Derived from shadcn Tabs.
+ */
 export function Tabs({ className, ...props }: Rac.TabsProps) {
   return (
     <Rac.Tabs
@@ -16,10 +19,13 @@ export function Tabs({ className, ...props }: Rac.TabsProps) {
   );
 }
 
-export function TabsList({ className, ...props }: Rac.TabListProps<object>) {
+/**
+ * Derived from shadcn TabsList.
+ */
+export function TabList({ className, ...props }: Rac.TabListProps<object>) {
   return (
     <Rac.TabList
-      data-slot="tabs-list"
+      data-slot="tab-list"
       className={composeTailwindRenderProps(className, [
         "inline-flex h-9 w-fit items-center justify-center rounded-lg bg-muted p-[3px] text-muted-foreground",
       ])}
@@ -28,10 +34,13 @@ export function TabsList({ className, ...props }: Rac.TabListProps<object>) {
   );
 }
 
-export function TabsTrigger({ className, children, ...props }: Rac.TabProps) {
+/**
+ * Derived from shadcn TabsTrigger.
+ */
+export function Tab({ className, children, ...props }: Rac.TabProps) {
   return (
     <Rac.Tab
-      data-slot="tabs-trigger"
+      data-slot="tab"
       className={Rac.composeRenderProps(className, (className, _renderProps) =>
         twMerge(
           focusVisibleStyles,
@@ -47,10 +56,13 @@ export function TabsTrigger({ className, children, ...props }: Rac.TabProps) {
   );
 }
 
-export function TabsContent({ className, ...props }: Rac.TabPanelProps) {
+/**
+ * Derived from shadcn TabsContent.
+ */
+export function TabPanel({ className, ...props }: Rac.TabPanelProps) {
   return (
     <Rac.TabPanel
-      data-slot="tabs-content"
+      data-slot="tab-panel"
       className={composeTailwindRenderProps(className, "flex-1 outline-none")}
       {...props}
     />
