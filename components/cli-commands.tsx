@@ -1,11 +1,11 @@
 import CopyButton from "@/components/copy-button";
 import { useConfig } from "@/hooks/use-config";
 import {
+  Tab,
+  TabList,
+  TabPanel,
   Tabs,
-  TabsContent,
-  TabsList,
-  TabsTrigger,
-} from "@/registry/components/ui/tabs";
+} from "@/registry/components/ui/oui-tabs";
 
 export default function CliCommands({ name }: { name: string }) {
   const [config, setConfig] = useConfig();
@@ -22,47 +22,46 @@ export default function CliCommands({ name }: { name: string }) {
   return (
     <div className="relative">
       <Tabs
-        value={packageManager}
-        onValueChange={(value) => {
+        selectedKey={packageManager}
+        onSelectionChange={(key) => {
           setConfig({
             ...config,
-            packageManager: value as "pnpm" | "npm" | "yarn" | "bun",
-          })
+            packageManager: key as "pnpm" | "npm" | "yarn" | "bun",
+          });
         }}
-        className="rounded-md bg-zinc-950 dark:bg-zinc-900"
       >
-        <TabsList className="dark h-auto w-full justify-start rounded-none border-b bg-transparent px-4 py-0">
-          <TabsTrigger
-            className="relative rounded-none py-3 after:absolute after:inset-x-0 after:bottom-0 after:h-0.5 data-[state=active]:bg-transparent data-[state=active]:shadow-none data-[state=active]:after:bg-primary"
-            value="pnpm"
+        <TabList>
+          <Tab
+            id="pnpm"
+            // className="relative rounded-none py-3 after:absolute after:inset-x-0 after:bottom-0 after:h-0.5 data-[selected]:bg-transparent data-[selected]:shadow-none data-[selected]:after:bg-primary"
           >
             pnpm
-          </TabsTrigger>
-          <TabsTrigger
-            className="relative rounded-none py-3 after:absolute after:inset-x-0 after:bottom-0 after:h-0.5 data-[state=active]:bg-transparent data-[state=active]:shadow-none data-[state=active]:after:bg-primary"
-            value="npm"
+          </Tab>
+          <Tab
+            id="npm"
+            // className="relative rounded-none py-3 after:absolute after:inset-x-0 after:bottom-0 after:h-0.5 data-[selected]:bg-transparent data-[selected]:shadow-none data-[selected]:after:bg-primary"
           >
             npm
-          </TabsTrigger>
-          <TabsTrigger
-            className="relative rounded-none py-3 after:absolute after:inset-x-0 after:bottom-0 after:h-0.5 data-[state=active]:bg-transparent data-[state=active]:shadow-none data-[state=active]:after:bg-primary"
-            value="yarn"
+          </Tab>
+          <Tab
+            id="yarn"
+            // className="relative rounded-none py-3 after:absolute after:inset-x-0 after:bottom-0 after:h-0.5 data-[selected]:bg-transparent data-[selected]:shadow-none data-[selected]:after:bg-primary"
           >
             yarn
-          </TabsTrigger>
-          <TabsTrigger
-            className="relative rounded-none py-3 after:absolute after:inset-x-0 after:bottom-0 after:h-0.5 data-[state=active]:bg-transparent data-[state=active]:shadow-none data-[state=active]:after:bg-primary"
-            value="bun"
+          </Tab>
+          <Tab
+            id="bun"
+            // className="relative rounded-none py-3 after:absolute after:inset-x-0 after:bottom-0 after:h-0.5 data-[selected]:bg-transparent data-[selected]:shadow-none data-[selected]:after:bg-primary"
           >
             bun
-          </TabsTrigger>
-        </TabsList>
+          </Tab>
+        </TabList>
         {Object.entries(commands).map(([pkg, command]) => (
-          <TabsContent className="m-0" key={pkg} value={pkg}>
-            <pre className="overflow-auto p-4 font-mono text-[12.8px] text-zinc-100">
+          <TabPanel id={pkg} key={pkg}>
+            <pre className="overflow-auto p-4 font-mono text-[12.8px]">
               {command}
             </pre>
-          </TabsContent>
+          </TabPanel>
         ))}
       </Tabs>
       <CopyButton

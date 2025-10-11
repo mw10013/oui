@@ -1,7 +1,7 @@
 import { useCopy } from "@/hooks/use-copy";
 import { TooltipEx } from "@/registry/components/oui-tooltip-ex";
 import { Button } from "@/registry/components/ui/oui-button";
-import { twJoin } from "tailwind-merge";
+import { twJoin, twMerge } from "tailwind-merge";
 
 const CopyButton = ({
   componentSource,
@@ -13,7 +13,7 @@ const CopyButton = ({
   const { copied, copy } = useCopy();
 
   return (
-    <div className={twJoin("dark absolute top-2 right-2", className)}>
+    <div className={twMerge("dark absolute top-2 right-2", className)}>
       <TooltipEx
         delay={0}
         triggerElement={
