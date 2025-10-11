@@ -464,7 +464,7 @@
       "registryDependencies": [
         "https://oui.mw10013.workers.dev/r/oui-base.json"
       ],
-      "dependencies": ["react-aria-components", "tailwind-merge"]
+      "dependencies": ["react-aria-components"]
     },
     {
       "name": "oui-text",
