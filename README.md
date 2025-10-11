@@ -3,17 +3,21 @@
 - React Aria Components with Shadcn characteristics
 - https://oui.mw10013.workers.dev
 
+## Credit
+
+- Concept by https://coss.com/origin
+- https://github.com/cosscom/coss/tree/main/apps/origin
+
 ## TODO
 
-- tooltip: https://react-spectrum.adobe.com/react-aria/Tooltip.html
 - tabs: https://react-spectrum.adobe.com/react-aria/Tabs.html
+- multiselect
 - eslint-disable-next-line react-hooks/exhaustive-deps
 - search-button: keyboard
 - search dynamic tags
 - index
 - registry:build: delete r/\*
 - browser console.log errors
-- buttonVariants vs buttonClassName (asChild)
 - sidebar-ex: SidebarTreeEx, SidebarTrigger?, probably not SidebarListBox
 
 ## Local Dev

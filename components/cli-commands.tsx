@@ -1,5 +1,5 @@
-// import { useConfig } from "@/hooks/use-config"
 import CopyButton from "@/components/copy-button";
+import { useConfig } from "@/hooks/use-config";
 import {
   Tabs,
   TabsContent,
@@ -8,9 +8,9 @@ import {
 } from "@/registry/components/ui/tabs";
 
 export default function CliCommands({ name }: { name: string }) {
-  // const [config, setConfig] = useConfig()
-  // const packageManager = config.packageManager || "pnpm"
-  const packageManager = "pnpm";
+  const [config, setConfig] = useConfig();
+  // eslint-disable-next-line @typescript-eslint/no-unnecessary-condition
+  const packageManager = config.packageManager || "pnpm";
 
   const commands = {
     pnpm: `pnpm dlx shadcn@latest add https://oui.mw10013.workers.dev/r/${name}.json`,
@@ -23,11 +23,11 @@ export default function CliCommands({ name }: { name: string }) {
     <div className="relative">
       <Tabs
         value={packageManager}
-        onValueChange={(_value) => {
-          // setConfig({
-          //   ...config,
-          //   packageManager: value as "pnpm" | "npm" | "yarn" | "bun",
-          // })
+        onValueChange={(value) => {
+          setConfig({
+            ...config,
+            packageManager: value as "pnpm" | "npm" | "yarn" | "bun",
+          })
         }}
         className="rounded-md bg-zinc-950 dark:bg-zinc-900"
       >
@@ -66,7 +66,7 @@ export default function CliCommands({ name }: { name: string }) {
         ))}
       </Tabs>
       <CopyButton
-        componentSource={commands[packageManager as keyof typeof commands]}
+        componentSource={commands[packageManager]}
         className="top-1"
       />
     </div>
