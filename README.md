@@ -10,7 +10,6 @@
 
 ## TODO
 
-- tabs: https://react-spectrum.adobe.com/react-aria/Tabs.html
 - multiselect
 - eslint-disable-next-line react-hooks/exhaustive-deps
 - search-button: keyboard

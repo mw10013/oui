@@ -453,6 +453,20 @@
       ]
     },
     {
+      "name": "oui-tabs",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "registry/components/ui/oui-tabs.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "registryDependencies": [
+        "https://oui.mw10013.workers.dev/r/oui-base.json"
+      ],
+      "dependencies": ["react-aria-components", "tailwind-merge"]
+    },
+    {
       "name": "oui-text",
       "type": "registry:ui",
       "files": [
