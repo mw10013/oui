@@ -18,6 +18,7 @@ export default function Component() {
     <Item>
       <ItemContent>
         <ItemTitle>Select</ItemTitle>
+        <ItemDescription>Single selection</ItemDescription>
         <Select>
           <SelectButton>
             <SelectValue />
@@ -33,7 +34,6 @@ export default function Component() {
             </Rac.ListBox>
           </Popover>
         </Select>
-        <ItemDescription>Single selection</ItemDescription>
       </ItemContent>
     </Item>
   );
