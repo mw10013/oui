@@ -2443,7 +2443,7 @@
         }
       ],
       "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/oui-label.json",
+        "https://ui.shadcn.com/r/styles/new-york/r/item.json",
         "https://oui.mw10013.workers.dev/r/oui-list-box.json",
         "https://oui.mw10013.workers.dev/r/oui-popover.json",
         "https://oui.mw10013.workers.dev/r/oui-select.json"
@@ -2462,7 +2462,7 @@
         }
       ],
       "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/oui-label.json",
+        "https://ui.shadcn.com/r/styles/new-york/r/item.json",
         "https://oui.mw10013.workers.dev/r/oui-list-box.json",
         "https://oui.mw10013.workers.dev/r/oui-popover.json",
         "https://oui.mw10013.workers.dev/r/oui-select.json"
