@@ -6,6 +6,7 @@ import { getAvailableTags, getComponents } from "@/lib/utils";
 import { SelectEx } from "@/registry/components/oui-select-ex";
 import { ListBoxItem } from "@/registry/components/ui/oui-list-box";
 import { registryTags } from "@/registry/registry-tags";
+import { useSearchParams } from "react-router";
 
 // export const metadata: Metadata = {
 //   title: "Filter Oui components",
@@ -28,8 +29,10 @@ export function loader({ request }: LoaderFunctionArgs) {
 }
 
 export default function RouteComponent({
-  loaderData: { items, ...loaderData },
+  loaderData: { items, tags, ...loaderData },
 }: Route.ComponentProps) {
+  const [_, setSearchParams] = useSearchParams();
+
   return (
     <>
       <PageHeader title="Filter" className="mb-10">
@@ -37,9 +40,20 @@ export default function RouteComponent({
       </PageHeader>
       <SelectEx
         aria-label="Select tags"
+        placeholder="Select tags"
         items={items}
         selectionMode="multiple"
-        placeholder="Select tags"
+        value={tags}
+        onChange={(value) => {
+          if (value.length > 0) {
+            const formattedTags = value
+              .map((tag) => String(tag).replace(/\s+/g, "+"))
+              .join(",");
+            setSearchParams({ tags: formattedTags });
+          } else {
+            setSearchParams({}, { replace: true });
+          }
+        }}
       >
         {(item) => <ListBoxItem>{item.id}</ListBoxItem>}
       </SelectEx>
