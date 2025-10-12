@@ -11,15 +11,6 @@ importers:
       '@epic-web/invariant':
         specifier: 1.0.0
         version: 1.0.0
-      '@radix-ui/react-dialog':
-        specifier: ^1.1.15
-        version: 1.1.15(@types/react-dom@19.1.2(@types/react@19.1.0))(@types/react@19.1.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
-      '@radix-ui/react-scroll-area':
-        specifier: ^1.2.10
-        version: 1.2.10(@types/react-dom@19.1.2(@types/react@19.1.0))(@types/react@19.1.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
-      '@radix-ui/react-tabs':
-        specifier: ^1.1.13
-        version: 1.1.13(@types/react-dom@19.1.2(@types/react@19.1.0))(@types/react@19.1.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       class-variance-authority:
         specifier: 0.7.1
         version: 0.7.1
@@ -42,7 +33,7 @@ importers:
         specifier: 0.514.0
         version: 0.514.0(react@19.1.0)
       radix-ui:
-        specifier: 1.4.3
+        specifier: ^1.4.3
         version: 1.4.3(@types/react-dom@19.1.2(@types/react@19.1.0))(@types/react@19.1.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       react:
         specifier: 19.1.0
@@ -103,8 +94,8 @@ importers:
         specifier: ^0.6.11
         version: 0.6.14(@ianvs/prettier-plugin-sort-imports@4.4.1(prettier@3.4.2))(prettier@3.4.2)
       shadcn:
-        specifier: 3.3.1
-        version: 3.3.1(@types/node@22.13.14)(typescript@5.9.2)
+        specifier: 3.4.0
+        version: 3.4.0(@types/node@22.13.14)(typescript@5.9.2)
       shiki:
         specifier: 3.7.0
         version: 3.7.0
@@ -4630,8 +4621,8 @@ packages:
   setprototypeof@1.2.0:
     resolution: {integrity: sha512-E5LDX7Wrp85Kil5bhZv46j8jOeboKq5JMmYM3gVGdGH8xFpPWXUMsNrlODCrkoxMEeNi/XZIwuRvY4XNwYMJpw==}
 
-  shadcn@3.3.1:
-    resolution: {integrity: sha512-sgai5gahy/TiyTiqJEwIFpAuPhmkpt7sGVdRfcmNH53Yc3yI57+zFVmIaqbTST0jP/7tSqZuI0aSllXL2HIw5w==}
+  shadcn@3.4.0:
+    resolution: {integrity: sha512-2fZC7+seml8/Eq77TKRJEotJY+llQsuFK4j8cHWk1oe4Qhit/ekai4w+cyaudwKNc+eTFqldR7rLxtTGCxJZ7Q==}
     hasBin: true
 
   sharp@0.33.5:
@@ -10563,7 +10554,7 @@ snapshots:
 
   setprototypeof@1.2.0: {}
 
-  shadcn@3.3.1(@types/node@22.13.14)(typescript@5.9.2):
+  shadcn@3.4.0(@types/node@22.13.14)(typescript@5.9.2):
     dependencies:
       '@antfu/ni': 25.0.0
       '@babel/core': 7.28.4
