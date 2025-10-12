@@ -22,6 +22,7 @@ export interface Option {
   /** Group the options by providing key. */
   [key: string]: string | boolean | undefined
 }
+// eslint-disable-next-line @typescript-eslint/consistent-indexed-object-style
 interface GroupOption {
   [key: string]: Option[]
 }
@@ -94,7 +95,7 @@ export function useDebounce<T>(value: T, delay?: number): T {
   const [debouncedValue, setDebouncedValue] = React.useState<T>(value)
 
   useEffect(() => {
-    const timer = setTimeout(() => setDebouncedValue(value), delay || 500)
+    const timer = setTimeout(() => { setDebouncedValue(value); }, delay ?? 500)
 
     return () => {
       clearTimeout(timer)
@@ -117,6 +118,7 @@ function transToGroupOption(options: Option[], groupBy?: string) {
   const groupOption: GroupOption = {}
   options.forEach((option) => {
     const key = (option[groupBy] as string) || ""
+    // eslint-disable-next-line @typescript-eslint/no-unnecessary-condition
     if (!groupOption[key]) {
       groupOption[key] = []
     }
@@ -197,12 +199,12 @@ const MultipleSelector = ({
   const [isLoading, setIsLoading] = React.useState(false)
   const dropdownRef = React.useRef<HTMLDivElement>(null) // Added this
 
-  const [selected, setSelected] = React.useState<Option[]>(value || [])
+  const [selected, setSelected] = React.useState<Option[]>(value ?? [])
   const [options, setOptions] = React.useState<GroupOption>(
     transToGroupOption(arrayDefaultOptions, groupBy)
   )
   const [inputValue, setInputValue] = React.useState("")
-  const debouncedSearchTerm = useDebounce(inputValue, delay || 500)
+  const debouncedSearchTerm = useDebounce(inputValue, delay ?? 500)
 
   const handleClickOutside = (event: MouseEvent | TouchEvent) => {
     if (
@@ -273,6 +275,7 @@ const MultipleSelector = ({
     if (!arrayOptions || onSearch) {
       return
     }
+    // eslint-disable-next-line @typescript-eslint/no-unnecessary-condition
     const newOption = transToGroupOption(arrayOptions || [], groupBy)
     if (JSON.stringify(newOption) !== JSON.stringify(options)) {
       setOptions(newOption)
@@ -284,9 +287,10 @@ const MultipleSelector = ({
 
     const doSearchSync = () => {
       const res = onSearchSync?.(debouncedSearchTerm)
-      setOptions(transToGroupOption(res || [], groupBy))
+      setOptions(transToGroupOption(res ?? [], groupBy))
     }
 
+    // eslint-disable-next-line @typescript-eslint/require-await
     const exec = async () => {
       if (!onSearchSync || !open) return
 
@@ -300,7 +304,7 @@ const MultipleSelector = ({
     }
 
     void exec()
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+    // -eslint-disable-next-line react-hooks/exhaustive-deps
   }, [debouncedSearchTerm, groupBy, open, triggerSearchOnFocus])
 
   useEffect(() => {
@@ -309,7 +313,7 @@ const MultipleSelector = ({
     const doSearch = async () => {
       setIsLoading(true)
       const res = await onSearch?.(debouncedSearchTerm)
-      setOptions(transToGroupOption(res || [], groupBy))
+      setOptions(transToGroupOption(res ?? [], groupBy))
       setIsLoading(false)
     }
 
@@ -326,7 +330,7 @@ const MultipleSelector = ({
     }
 
     void exec()
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+    // -eslint-disable-next-line react-hooks/exhaustive-deps
   }, [debouncedSearchTerm, groupBy, open, triggerSearchOnFocus])
 
   const CreatableItem = () => {
@@ -422,9 +426,7 @@ const MultipleSelector = ({
         commandProps?.className
       )}
       shouldFilter={
-        commandProps?.shouldFilter !== undefined
-          ? commandProps.shouldFilter
-          : !onSearch
+        commandProps?.shouldFilter ?? !onSearch
       } // When onSearch is provided, we don&lsquo;t want to filter the options. You can still override it.
       filter={commandFilter()}
     >
@@ -440,7 +442,7 @@ const MultipleSelector = ({
         )}
         onClick={() => {
           if (disabled) return
-          inputRef?.current?.focus()
+          inputRef.current?.focus()
         }}
       >
         <div className="flex flex-wrap gap-1">
@@ -453,7 +455,7 @@ const MultipleSelector = ({
                   badgeClassName
                 )}
                 data-fixed={option.fixed}
-                data-disabled={disabled || undefined}
+                data-disabled={disabled ?? undefined}
               >
                 {option.label}
                 <button
@@ -467,7 +469,7 @@ const MultipleSelector = ({
                     e.preventDefault()
                     e.stopPropagation()
                   }}
-                  onClick={() => handleUnselect(option)}
+                  onClick={() => { handleUnselect(option); }}
                   aria-label="Remove"
                 >
                   <XIcon size={14} aria-hidden="true" />
@@ -494,7 +496,7 @@ const MultipleSelector = ({
             onFocus={(event) => {
               setOpen(true)
               if (triggerSearchOnFocus) {
-                onSearch?.(debouncedSearchTerm)
+                void onSearch?.(debouncedSearchTerm)
               }
               inputProps?.onFocus?.(event)
             }}
@@ -522,8 +524,8 @@ const MultipleSelector = ({
             className={cn(
               "absolute end-0 top-0 flex size-9 items-center justify-center rounded-md border border-transparent text-muted-foreground/80 transition-[color,box-shadow] outline-none hover:text-foreground focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50",
               (hideClearAllButton ||
-                disabled ||
-                selected.length < 1 ||
+                (disabled ??
+                selected.length < 1) ||
                 selected.filter((s) => s.fixed).length === selected.length) &&
                 "hidden"
             )}
@@ -552,7 +554,7 @@ const MultipleSelector = ({
                 setOnScrollbar(true)
               }}
               onMouseUp={() => {
-                inputRef?.current?.focus()
+                inputRef.current?.focus()
               }}
             >
               {isLoading ? (
