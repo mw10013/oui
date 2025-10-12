@@ -18,7 +18,7 @@ export default function Component() {
     <Item>
       <ItemContent>
         <ItemTitle>Select</ItemTitle>
-        <ItemDescription>Single selection</ItemDescription>
+        <ItemDescription>Single selection.</ItemDescription>
         <Select>
           <SelectButton>
             <SelectValue />

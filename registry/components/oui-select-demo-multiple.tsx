@@ -29,7 +29,7 @@ export default function Component() {
     <Item>
       <ItemContent>
         <ItemTitle>Select</ItemTitle>
-        <ItemDescription>Multiple selection</ItemDescription>
+        <ItemDescription>Multiple selection.</ItemDescription>
         <Select<object, "multiple">
           selectionMode="multiple"
           value={animals}
