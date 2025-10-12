@@ -213,6 +213,7 @@ export const categories: Category[] = [
     slug: "select",
     components: [
       { name: "oui-select-demo" },
+      { name: "oui-select-demo-multiple" },
       { name: "oui-select-ex" },
       { name: "oui-select-ex-demo" },
       { name: "oui-select-ex-demo-large-list" },

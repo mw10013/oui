@@ -14,9 +14,9 @@ const fruitItemsForSection = [
 export default function Component() {
   return (
     <SelectEx
-      aria-label="Fruit"
+      aria-label="SelectEx a fruit"
       buttonClassName="w-[180px]"
-      placeholder="Select a fruit"
+      placeholder="SelectEx a fruit"
     >
       <Rac.ListBoxSection id="fruits-section">
         <Header variant="select">Fruits</Header>

@@ -9,7 +9,7 @@
   "files": [
     {
       "path": "registry/components/oui-select-ex-demo-disabled.tsx",
-      "content": "import { SelectEx } from \"@/registry/components/oui-select-ex\";\nimport { ListBoxItem } from \"@/registry/components/ui/oui-list-box\";\n\nconst simpleItems = [\n  { id: \"apple\", name: \"Apple\" },\n  { id: \"banana\", name: \"Banana\" },\n  { id: \"blueberry\", name: \"Blueberry\" },\n  { id: \"grapes\", name: \"Grapes\", isDisabled: true },\n  { id: \"pineapple\", name: \"Pineapple\" },\n];\n\nexport default function Component() {\n  return (\n    <SelectEx\n      aria-label=\"Disabled\"\n      isDisabled\n      buttonClassName=\"w-[180px]\"\n      placeholder=\"Disabled\"\n      items={simpleItems}\n    >\n      {(item) => (\n        <ListBoxItem isDisabled={item.isDisabled}>{item.name}</ListBoxItem>\n      )}\n    </SelectEx>\n  );\n}\n",
+      "content": "import { SelectEx } from \"@/registry/components/oui-select-ex\";\nimport { ListBoxItem } from \"@/registry/components/ui/oui-list-box\";\n\nconst simpleItems = [\n  { id: \"apple\", name: \"Apple\" },\n  { id: \"banana\", name: \"Banana\" },\n  { id: \"blueberry\", name: \"Blueberry\" },\n  { id: \"grapes\", name: \"Grapes\", isDisabled: true },\n  { id: \"pineapple\", name: \"Pineapple\" },\n];\n\nexport default function Component() {\n  return (\n    <SelectEx\n      aria-label=\"SelectEx disabled\"\n      isDisabled\n      buttonClassName=\"w-[180px]\"\n      placeholder=\"SelectEx disabled\"\n      items={simpleItems}\n    >\n      {(item) => (\n        <ListBoxItem isDisabled={item.isDisabled}>{item.name}</ListBoxItem>\n      )}\n    </SelectEx>\n  );\n}\n",
       "type": "registry:component"
     }
   ],

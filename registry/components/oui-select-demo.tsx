@@ -11,7 +11,7 @@ import * as Rac from "react-aria-components";
 export default function Component() {
   return (
     <Select>
-      <Label>Favorite Animal</Label>
+      <Label>Favorite Animal (select)</Label>
       <SelectButton>
         <SelectValue />
       </SelectButton>
