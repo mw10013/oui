@@ -1,3 +1,4 @@
+import type { SelectionMode } from "@/registry/components/ui/oui-select";
 import { FieldError } from "@/registry/components/ui/oui-field-error";
 import { Label } from "@/registry/components/ui/oui-label";
 import { Popover } from "@/registry/components/ui/oui-popover";
@@ -9,8 +10,8 @@ import {
 import { Text } from "@/registry/components/ui/oui-text";
 import * as Rac from "react-aria-components";
 
-export interface SelectExProps<T extends object>
-  extends Omit<Rac.SelectProps<T>, "children"> {
+export interface SelectExProps<T extends object, M extends SelectionMode>
+  extends Omit<Rac.SelectProps<T, M>, "children"> {
   label?: React.ReactNode;
   description?: React.ReactNode;
   errorMessage?: string | ((validation: Rac.ValidationResult) => string);
@@ -45,7 +46,7 @@ export interface SelectExProps<T extends object>
  * </SelectEx>
  * ```
  */
-export function SelectEx<T extends object>({
+export function SelectEx<T extends object, M extends SelectionMode = "single">({
   label,
   description,
   errorMessage,
@@ -54,7 +55,7 @@ export function SelectEx<T extends object>({
   buttonClassName,
   renderSelectValue,
   ...props
-}: SelectExProps<T>) {
+}: SelectExProps<T, M>) {
   return (
     <Select {...props}>
       {label && <Label>{label}</Label>}

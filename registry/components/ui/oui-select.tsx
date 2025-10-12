@@ -7,10 +7,14 @@ import { ChevronDown } from "lucide-react";
 import * as Rac from "react-aria-components";
 import { twMerge } from "tailwind-merge";
 
-export function Select<
-  T extends object,
-  M extends "single" | "multiple" = "single",
->({ className, ...props }: Rac.SelectProps<T, M>) {
+export type SelectionMode = NonNullable<
+  React.ComponentProps<typeof Rac.Select>["selectionMode"]
+>;
+
+export function Select<T extends object, M extends SelectionMode = "single">({
+  className,
+  ...props
+}: Rac.SelectProps<T, M>) {
   return (
     <Rac.Select
       data-slot="select"
