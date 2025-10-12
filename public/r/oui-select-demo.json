@@ -1,0 +1,23 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "oui-select-demo",
+  "type": "registry:component",
+  "registryDependencies": [
+    "https://oui.mw10013.workers.dev/r/oui-label.json",
+    "https://oui.mw10013.workers.dev/r/oui-list-box.json",
+    "https://oui.mw10013.workers.dev/r/oui-popover.json",
+    "https://oui.mw10013.workers.dev/r/oui-select.json"
+  ],
+  "files": [
+    {
+      "path": "registry/components/oui-select-demo.tsx",
+      "content": "import { Label } from \"@/registry/components/ui/oui-label\";\nimport { ListBoxItem } from \"@/registry/components/ui/oui-list-box\";\nimport { Popover } from \"@/registry/components/ui/oui-popover\";\nimport {\n  Select,\n  SelectButton,\n  SelectValue,\n} from \"@/registry/components/ui/oui-select\";\nimport * as Rac from \"react-aria-components\";\n\nexport default function Component() {\n  return (\n    <Select>\n      <Label>Favorite Animal</Label>\n      <SelectButton>\n        <SelectValue />\n      </SelectButton>\n      <Popover>\n        <Rac.ListBox>\n          <ListBoxItem>Aardvark</ListBoxItem>\n          <ListBoxItem>Cat</ListBoxItem>\n          <ListBoxItem>Dog</ListBoxItem>\n          <ListBoxItem>Kangaroo</ListBoxItem>\n          <ListBoxItem>Panda</ListBoxItem>\n          <ListBoxItem>Snake</ListBoxItem>\n        </Rac.ListBox>\n      </Popover>\n    </Select>\n  );\n}\n",
+      "type": "registry:component"
+    }
+  ],
+  "meta": {
+    "tags": [
+      "select"
+    ]
+  }
+}
