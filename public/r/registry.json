@@ -2482,10 +2482,29 @@
         }
       ],
       "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/oui-list-box.json"
+        "https://oui.mw10013.workers.dev/r/oui-list-box.json",
+        "https://ui.shadcn.com/r/styles/new-york/r/item.json"
       ],
       "meta": {
         "tags": ["list box"]
+      }
+    },
+
+    {
+      "name": "oui-list-box-demo-multiple",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-list-box-demo-multiple.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "https://oui.mw10013.workers.dev/r/oui-list-box.json",
+        "https://ui.shadcn.com/r/styles/new-york/r/item.json"
+      ],
+      "meta": {
+        "tags": ["list-box"]
       }
     }
   ]

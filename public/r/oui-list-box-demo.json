@@ -3,12 +3,13 @@
   "name": "oui-list-box-demo",
   "type": "registry:component",
   "registryDependencies": [
-    "https://oui.mw10013.workers.dev/r/oui-list-box.json"
+    "https://oui.mw10013.workers.dev/r/oui-list-box.json",
+    "https://ui.shadcn.com/r/styles/new-york/r/item.json"
   ],
   "files": [
     {
       "path": "registry/components/oui-list-box-demo.tsx",
-      "content": "import { ListBoxItem } from \"@/registry/components/ui/oui-list-box\";\nimport * as Rac from \"react-aria-components\";\n\nexport default function Component() {\n  return (\n    <Rac.ListBox aria-label=\"Favorite animal\" selectionMode=\"single\">\n      <ListBoxItem>Aardvark</ListBoxItem>\n      <ListBoxItem>Cat</ListBoxItem>\n      <ListBoxItem>Dog</ListBoxItem>\n      <ListBoxItem>Kangaroo</ListBoxItem>\n      <ListBoxItem>Panda</ListBoxItem>\n      <ListBoxItem>Snake</ListBoxItem>\n    </Rac.ListBox>\n  );\n}\n",
+      "content": "import {\n  Item,\n  ItemContent,\n  ItemDescription,\n  ItemTitle,\n} from \"@/registry/components/ui/item\";\nimport { ListBoxItem } from \"@/registry/components/ui/oui-list-box\";\nimport * as Rac from \"react-aria-components\";\n\nexport default function Component() {\n  return (\n    <Item>\n      <ItemContent>\n        <ItemTitle>ListBox</ItemTitle>\n        <Rac.ListBox aria-label=\"Favorite animal\" selectionMode=\"single\">\n          <ListBoxItem>Aardvark</ListBoxItem>\n          <ListBoxItem>Cat</ListBoxItem>\n          <ListBoxItem>Dog</ListBoxItem>\n          <ListBoxItem>Kangaroo</ListBoxItem>\n          <ListBoxItem>Panda</ListBoxItem>\n          <ListBoxItem>Snake</ListBoxItem>\n        </Rac.ListBox>\n        <ItemDescription>Single selection</ItemDescription>\n      </ItemContent>\n    </Item>\n  );\n}\n",
       "type": "registry:component"
     }
   ],
