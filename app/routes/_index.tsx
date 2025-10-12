@@ -1,6 +1,7 @@
 import SearchButton from "@/components/search-button";
 import { categories } from "@/config/categories";
 import { Link } from "@/registry/components/ui/oui-link";
+import { Funnel } from "lucide-react";
 
 export default function RouteComponent() {
   return (
@@ -11,8 +12,17 @@ export default function RouteComponent() {
         </h1>
         <p className="mb-8 text-lg text-muted-foreground">
           {/* An open-source collection of copy-and-paste components for UIs. */}
-          Copy-and-paste react aria components that run side-by-side with shadcn components.
+          Copy-and-paste react aria components that run side-by-side with shadcn
+          components.
         </p>
+        <Link
+          href="/filter"
+          className="mr-4 inline-flex items-center text-sm"
+          underline="hover"
+        >
+          <Funnel className="me-2" size={14} />
+          Filter by Tags
+        </Link>
         <SearchButton />
       </div>
 

@@ -10,10 +10,10 @@
 
 ## TODO
 
-- multiselect
+- multiselect: remove in favor of select with multiple
 - eslint-disable-next-line react-hooks/exhaustive-deps
 - search-button: keyboard
-- search dynamic tags
+- theme
 - index
 - registry:build: delete r/\*
 - browser console.log errors
