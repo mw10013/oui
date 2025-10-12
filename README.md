@@ -18,6 +18,7 @@
 - registry:build: delete r/\*
 - browser console.log errors
 - sidebar-ex: SidebarTreeEx, SidebarTrigger?, probably not SidebarListBox
+- autocomplete: 'defaultSelectedKey' is deprecated.ts(6385)
 
 ## Local Dev
 

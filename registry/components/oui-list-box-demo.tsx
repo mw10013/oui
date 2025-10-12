@@ -1,0 +1,18 @@
+import { ListBoxItem } from "@/registry/components/ui/oui-list-box";
+import * as Rac from "react-aria-components";
+
+export default function Component() {
+  return (
+    <>
+      <Rac.ListBox aria-label="Favorite animal" selectionMode="single">
+        <ListBoxItem>Aardvark</ListBoxItem>
+        <ListBoxItem>Cat</ListBoxItem>
+        <ListBoxItem>Dog</ListBoxItem>
+        <ListBoxItem>Kangaroo</ListBoxItem>
+        <ListBoxItem>Panda</ListBoxItem>
+        <ListBoxItem>Snake</ListBoxItem>
+      </Rac.ListBox>
+      <p>ListBox</p>
+    </>
+  );
+}

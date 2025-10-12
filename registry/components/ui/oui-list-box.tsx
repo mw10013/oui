@@ -1,3 +1,54 @@
+/**
+ * @fileoverview ListBox components for the Oui UI library.
+ *
+ * This module provides styled ListBoxItem components but intentionally does not
+ * provide a styled ListBox wrapper. The Rac.ListBox component is used directly
+ * without additional styling for the following reasons:
+ *
+ * 1. **Context-Dependent Styling**: ListBox containers are often used in different
+ *    contexts (standalone lists, dropdowns, sidebars, pagination) where styling
+ *    needs vary significantly. A single styled wrapper would be too restrictive.
+ *
+ * 2. **Minimal Container Role**: The ListBox component primarily handles behavior
+ *    (keyboard navigation, selection, accessibility) rather than visual presentation.
+ *    Visual styling is typically applied to the items themselves or the parent container.
+ *
+ * 3. **React Aria Design**: Following React Aria Components' philosophy, ListBox
+ *    provides unstyled behavior primitives that can be composed with any styling
+ *    system. This allows maximum flexibility for different design systems.
+ *
+ * 4. **Common Usage Patterns**: In most cases, ListBox is used within other
+ *    components like Select, ComboBox, or Popover, where the container styling
+ *    is handled by the parent component.
+ *
+ * @example
+ * // Standalone list with custom `container` styling
+ * <div className="max-h-64 overflow-auto border rounded-md">
+ *   <Rac.ListBox aria-label="Options" selectionMode="single">
+ *     <ListBoxItem>Option 1</ListBoxItem>
+ *     <ListBoxItem>Option 2</ListBoxItem>
+ *   </Rac.ListBox>
+ * </div>
+ *
+ * @example
+ * // Within a Select dropdown (container styled by Popover)
+ * <Select>
+ *   <SelectButton>Select an option</SelectButton>
+ *   <Popover>
+ *     <Rac.ListBox items={options}>
+ *       {(item) => <ListBoxItem>{item.name}</ListBoxItem>}
+ *     </Rac.ListBox>
+ *   </Popover>
+ * </Select>
+ *
+ * @example
+ * // Horizontal pagination (custom wrapper for specific use case)
+ * <ListBoxExPagination>
+ *   <ListBoxItemExPagination>1</ListBoxItemExPagination>
+ *   <ListBoxItemExPagination>2</ListBoxItemExPagination>
+ * </ListBoxExPagination>
+ */
+
 import {
   composeTailwindRenderProps,
   disabledStyles,
