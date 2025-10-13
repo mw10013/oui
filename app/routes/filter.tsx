@@ -1,10 +1,10 @@
 import type { RegistryTag } from "@/registry/registry-tags";
 import type { LoaderFunctionArgs } from "react-router";
 import type { Route } from "./+types/filter";
-import ComponentCard from "@/components/component-card";
-import ComponentDetails from "@/components/component-details";
-import ComponentLoader from "@/components/component-loader-server";
-import PageGrid from "@/components/page-grid";
+// import ComponentCard from "@/components/component-card";
+// import ComponentDetails from "@/components/component-details";
+// import ComponentLoader from "@/components/component-loader-server";
+// import PageGrid from "@/components/page-grid";
 import PageHeader from "@/components/page-header";
 import { getAvailableTags, getComponents, getDisabledTags } from "@/lib/utils";
 import { SelectEx } from "@/registry/components/oui-select-ex";
@@ -34,7 +34,7 @@ export function loader({ request }: LoaderFunctionArgs) {
 }
 
 export default function RouteComponent({
-  loaderData: { disabledTags, items, tags, components, ...loaderData },
+  loaderData: { disabledTags, items, tags, components },
 }: Route.ComponentProps) {
   const [_, setSearchParams] = useSearchParams();
 
@@ -64,16 +64,21 @@ export default function RouteComponent({
       >
         {(item) => <ListBoxItem>{item.id}</ListBoxItem>}
       </SelectEx>
-      <PageGrid>
+      <div className="flex flex-col gap-2">
+        {components.map((component) => (
+          <div key={component.name}>{component.name}</div>
+        ))}
+      </div>
+      {/* <PageGrid>
         {components.map((component) => (
           <ComponentCard key={component.name} component={component}>
             <ComponentLoader component={component} />
             <ComponentDetails component={component} />
           </ComponentCard>
         ))}
-      </PageGrid>
+      </PageGrid> */}
 
-      <pre>{JSON.stringify(loaderData, null, 2)}</pre>
+      <pre>{JSON.stringify({ tags }, null, 2)}</pre>
     </>
   );
 }
