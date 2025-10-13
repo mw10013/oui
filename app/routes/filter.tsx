@@ -1,6 +1,10 @@
 import type { RegistryTag } from "@/registry/registry-tags";
 import type { LoaderFunctionArgs } from "react-router";
 import type { Route } from "./+types/filter";
+import ComponentCard from "@/components/component-card";
+import ComponentDetails from "@/components/component-details";
+import ComponentLoader from "@/components/component-loader-server";
+import PageGrid from "@/components/page-grid";
 import PageHeader from "@/components/page-header";
 import { getAvailableTags, getComponents, getDisabledTags } from "@/lib/utils";
 import { SelectEx } from "@/registry/components/oui-select-ex";
@@ -22,14 +26,15 @@ export function loader({ request }: LoaderFunctionArgs) {
         .filter(Boolean)
         .map((tag) => tag.replace(/\+/g, " "))
     : [];
-  const components = getComponents(tags as RegistryTag[]);
+  const components = tags.length ? getComponents(tags as RegistryTag[]) : [];
   const availableTags = getAvailableTags(tags as RegistryTag[]);
   const disabledTags = getDisabledTags(tags as RegistryTag[]);
+  console.log({ tags, availableTags, disabledTags, components });
   return { disabledTags, tags, items, availableTags, components };
 }
 
 export default function RouteComponent({
-  loaderData: { disabledTags, items, tags, ...loaderData },
+  loaderData: { disabledTags, items, tags, components, ...loaderData },
 }: Route.ComponentProps) {
   const [_, setSearchParams] = useSearchParams();
 
@@ -58,6 +63,15 @@ export default function RouteComponent({
       >
         {(item) => <ListBoxItem>{item.id}</ListBoxItem>}
       </SelectEx>
+      <PageGrid>
+        {components.map((component) => (
+          <ComponentCard key={component.name} component={component}>
+            <ComponentLoader component={component} />
+            <ComponentDetails component={component} />
+          </ComponentCard>
+        ))}
+      </PageGrid>
+
       <pre>{JSON.stringify(loaderData, null, 2)}</pre>
     </>
   );
