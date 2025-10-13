@@ -10,11 +10,12 @@
 
 ## TODO
 
-- multiselect: remove in favor of select with multiple
-- eslint-disable-next-line react-hooks/exhaustive-deps
-- search-button: keyboard
+- component code/layout
+- header/footer
 - theme
 - index
+- tags
+- eslint-disable-next-line react-hooks/exhaustive-deps
 - registry:build: delete r/\*
 - browser console.log errors
 - sidebar-ex: SidebarTreeEx, SidebarTrigger?, probably not SidebarListBox

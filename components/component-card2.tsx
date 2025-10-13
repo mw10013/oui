@@ -1,16 +1,6 @@
 import type { RegistryItem } from "shadcn/schema";
 import { twJoin, twMerge } from "tailwind-merge";
 
-// layout: undefined | "wide" | "full"
-// alignment: undfined | "center" | "text-center"
-
-/**
- * Renders a component card with configurable layout and styling.
- * @param isSearchPage - Whether the card is displayed on a search page.
- * @param children - The content to render inside the card.
- * @param component - The registry item metadata, including colSpan and style ("flex-center" | "text-center").
- * @param className - Additional CSS classes.
- */
 export default function ComponentCard({
   isSearchPage = false,
   children,
@@ -47,21 +37,35 @@ export default function ComponentCard({
         ? "text-center"
         : "";
 
+  type LayoutConfig =
+    | { outer: string; wrapChildren: false }
+    | { outer: string; inner: string; wrapChildren: true };
+
+  const layoutConfigs: Record<string, LayoutConfig> = {
+    standard: {
+      outer: twJoin(getColSpanClasses(), styleClasses),
+      wrapChildren: false,
+    },
+    centered: {
+      outer: "col-span-12 grid grid-cols-12",
+      inner: twMerge(getColSpanClasses(true), styleClasses),
+      wrapChildren: true,
+    },
+  };
+
+  const config = isSearchPage ? layoutConfigs.centered : layoutConfigs.standard;
+
   return (
     <div
       className={twMerge(
         "group/item relative border has-[[data-comp-loading=true]]:border-none",
-        isSearchPage
-          ? "col-span-12 grid grid-cols-12"
-          : twJoin(getColSpanClasses(), styleClasses),
+        config.outer,
         className,
       )}
       data-slot={component.name}
     >
-      {isSearchPage ? (
-        <div className={twMerge(getColSpanClasses(true), styleClasses)}>
-          {children}
-        </div>
+      {config.wrapChildren ? (
+        <div className={config.inner}>{children}</div>
       ) : (
         children
       )}
