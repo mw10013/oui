@@ -2,21 +2,12 @@ import type { RegistryTag } from "@/registry/registry-tags";
 import type { LoaderFunctionArgs } from "react-router";
 import type { Route } from "./+types/filter";
 import { lazy, Suspense } from "react";
-// import ComponentCard from "@/components/component-card";
-// import ComponentDetails from "@/components/component-details";
-// import ComponentLoader from "@/components/component-loader-server";
-// import PageGrid from "@/components/page-grid";
 import PageHeader from "@/components/page-header";
 import { getAvailableTags, getComponents, getDisabledTags } from "@/lib/utils";
 import { SelectEx } from "@/registry/components/oui-select-ex";
 import { ListBoxItem } from "@/registry/components/ui/oui-list-box";
 import { registryTags } from "@/registry/registry-tags";
 import { useSearchParams } from "react-router";
-
-// export const metadata: Metadata = {
-//   title: "Filter Oui components",
-//   description: "Filter components in the Oui library.",
-// }
 
 export function loader({ request }: LoaderFunctionArgs) {
   const items = registryTags.map((tag) => ({ id: tag }));
@@ -80,16 +71,13 @@ export default function RouteComponent({
           );
         })}
       </div>
-      {/* <PageGrid>
-        {components.map((component) => (
-          <ComponentCard key={component.name} component={component}>
-            <ComponentLoader component={component} />
-            <ComponentDetails component={component} />
-          </ComponentCard>
-        ))}
-      </PageGrid> */}
-
-      <pre>{JSON.stringify({ tags, searchParams: Object.fromEntries(searchParams) }, null, 2)}</pre>
+      <pre>
+        {JSON.stringify(
+          { tags, searchParams: Object.fromEntries(searchParams) },
+          null,
+          2,
+        )}
+      </pre>
     </>
   );
 }
