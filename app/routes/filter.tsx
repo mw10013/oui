@@ -1,6 +1,7 @@
 import type { RegistryTag } from "@/registry/registry-tags";
 import type { LoaderFunctionArgs } from "react-router";
 import type { Route } from "./+types/filter";
+import { lazy, Suspense } from "react";
 // import ComponentCard from "@/components/component-card";
 // import ComponentDetails from "@/components/component-details";
 // import ComponentLoader from "@/components/component-loader-server";
@@ -29,7 +30,7 @@ export function loader({ request }: LoaderFunctionArgs) {
   const components = tags.length ? getComponents(tags as RegistryTag[]) : [];
   const availableTags = getAvailableTags(tags as RegistryTag[]);
   const disabledTags = getDisabledTags(tags as RegistryTag[]);
-  console.log({ tags, availableTags, disabledTags, components });
+  console.log({ tags, components: components.map((c) => c.name) });
   return { disabledTags, tags, items, availableTags, components };
 }
 
@@ -65,9 +66,19 @@ export default function RouteComponent({
         {(item) => <ListBoxItem>{item.id}</ListBoxItem>}
       </SelectEx>
       <div className="flex flex-col gap-2">
-        {components.map((component) => (
-          <div key={component.name}>{component.name}</div>
-        ))}
+        {components.map((component) => {
+          const Component = lazy(
+            () => import(`../../registry/components/${component.name}.tsx`),
+          );
+          return (
+            <div key={component.name} className="flex flex-col gap-1">
+              {component.name}
+              <Suspense>
+                <Component />
+              </Suspense>
+            </div>
+          );
+        })}
       </div>
       {/* <PageGrid>
         {components.map((component) => (
