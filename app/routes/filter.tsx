@@ -15,8 +15,7 @@ import { useSearchParams } from "react-router";
 
 export function loader({ request }: LoaderFunctionArgs) {
   const items = registryTags.map((tag) => ({ id: tag }));
-  const url = new URL(request.url);
-  const tagsParam = url.searchParams.get("tags");
+  const tagsParam = new URL(request.url).searchParams.get("tags");
   const tags = tagsParam
     ? tagsParam
         .split(",")

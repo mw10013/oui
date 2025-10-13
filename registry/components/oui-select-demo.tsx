@@ -2,6 +2,7 @@ import {
   Item,
   ItemContent,
   ItemDescription,
+  ItemHeader,
   ItemTitle,
 } from "@/registry/components/ui/item";
 import { ListBoxItem } from "@/registry/components/ui/oui-list-box";
@@ -16,9 +17,7 @@ import * as Rac from "react-aria-components";
 export default function Component() {
   return (
     <Item>
-      <ItemContent>
-        <ItemTitle>Select</ItemTitle>
-        <ItemDescription>Single selection.</ItemDescription>
+      <ItemHeader>
         <Select>
           <SelectButton>
             <SelectValue />
@@ -34,6 +33,10 @@ export default function Component() {
             </Rac.ListBox>
           </Popover>
         </Select>
+      </ItemHeader>
+      <ItemContent>
+        <ItemTitle>Select</ItemTitle>
+        <ItemDescription>Single selection.</ItemDescription>
       </ItemContent>
     </Item>
   );
