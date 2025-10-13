@@ -1,6 +1,7 @@
 import type { RegistryTag } from "@/registry/registry-tags";
 import type { RegistryItem } from "shadcn/schema";
 import registry from "@/registry.json";
+import { registryTags } from "@/registry/registry-tags";
 
 const components = registry.items as unknown as RegistryItem[];
 
@@ -50,22 +51,12 @@ export const getAvailableTags = (
   return Array.from(availableTags);
 };
 
-export const getAllTags = (): RegistryTag[] => {
-  // eslint-disable-next-line @typescript-eslint/no-unsafe-return
-  const tags = components.flatMap(
-    // eslint-disable-next-line @typescript-eslint/no-unsafe-return
-    (component) => component.meta?.tags ?? [],
-  ) as RegistryTag[];
-  return Array.from(new Set(tags));
-};
-
 export const getDisabledTags = (selectedTags: RegistryTag[]): RegistryTag[] => {
   if (!selectedTags.length) return [];
 
   const availableTags = getAvailableTags(selectedTags);
-  const allTags = getAllTags();
 
-  return allTags.filter(
+  return registryTags.filter(
     (tag) => !availableTags.includes(tag) && !selectedTags.includes(tag),
   );
 };
