@@ -1,13 +1,28 @@
 import type { RegistryTag } from "@/registry/registry-tags";
 import type { LoaderFunctionArgs } from "react-router";
 import type { Route } from "./+types/filter";
-import { lazy, Suspense } from "react";
+import { lazy, Suspense, useMemo } from "react";
 import PageHeader from "@/components/page-header";
 import { getAvailableTags, getComponents, getDisabledTags } from "@/lib/utils";
 import { SelectEx } from "@/registry/components/oui-select-ex";
 import { ListBoxItem } from "@/registry/components/ui/oui-list-box";
 import { registryTags } from "@/registry/registry-tags";
 import { useSearchParams } from "react-router";
+
+function ComponentItem({ name }: { name: string }) {
+  const Component = useMemo(
+    () => lazy(() => import(`../../registry/components/${name}.tsx`)),
+    [name],
+  );
+  return (
+    <div className="flex flex-col gap-1">
+      {name}
+      <Suspense fallback={<div>Loading...</div>}>
+        <Component />
+      </Suspense>
+    </div>
+  );
+}
 
 export function loader({ request }: LoaderFunctionArgs) {
   const items = registryTags.map((tag) => ({ id: tag }));
@@ -59,19 +74,9 @@ export default function RouteComponent({
         {(item) => <ListBoxItem>{item.id}</ListBoxItem>}
       </SelectEx>
       <div className="flex flex-col gap-2">
-        {components.map((component) => {
-          const Component = lazy(
-            () => import(`../../registry/components/${component.name}.tsx`),
-          );
-          return (
-            <div key={component.name} className="flex flex-col gap-1">
-              {component.name}
-              <Suspense>
-                <Component />
-              </Suspense>
-            </div>
-          );
-        })}
+        {components.map((component) => (
+          <ComponentItem key={component.name} name={component.name} />
+        ))}
       </div>
       <pre>
         {JSON.stringify(
