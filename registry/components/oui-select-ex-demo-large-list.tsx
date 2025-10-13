@@ -14,9 +14,9 @@ export default function Component() {
         <ItemTitle>SelectEx</ItemTitle>
         <ItemDescription>With large list of items.</ItemDescription>
         <SelectEx
-          aria-label="Large list"
+          aria-label="Select item"
           buttonClassName="w-[180px]"
-          placeholder="Select an item"
+          placeholder="Select item"
           items={largeListItems}
         >
           {(item) => <ListBoxItem>{item.name}</ListBoxItem>}

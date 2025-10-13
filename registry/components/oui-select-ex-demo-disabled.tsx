@@ -22,7 +22,7 @@ export default function Component() {
         <ItemTitle>SelectEx</ItemTitle>
         <ItemDescription>Disabled.</ItemDescription>
         <SelectEx
-          aria-label="SelectEx disabled"
+          aria-label="Select item"
           isDisabled
           buttonClassName="w-[180px]"
           placeholder="SelectEx disabled"

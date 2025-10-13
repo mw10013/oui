@@ -18,7 +18,7 @@ export default function Component() {
   return (
     <Item>
       <ItemHeader>
-        <Select>
+        <Select aria-label="Select animal">
           <SelectButton>
             <SelectValue />
           </SelectButton>

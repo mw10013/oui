@@ -24,7 +24,7 @@ export default function Component() {
         <ItemTitle>SelectEx</ItemTitle>
         <ItemDescription>With header and disabled item.</ItemDescription>
         <SelectEx
-          aria-label="SelectEx a fruit"
+          aria-label="Select fruit"
           buttonClassName="w-[180px]"
           placeholder="Select a fruit"
         >

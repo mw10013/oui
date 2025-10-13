@@ -30,11 +30,7 @@ export default function Component() {
       <ItemContent>
         <ItemTitle>Select</ItemTitle>
         <ItemDescription>Multiple selection.</ItemDescription>
-        <Select<object, "multiple">
-          selectionMode="multiple"
-          value={animals}
-          onChange={setAnimals}
-        >
+        <Select aria-label="Select animal" selectionMode="multiple" value={animals} onChange={setAnimals}>
           <SelectButton>
             <SelectValue />
           </SelectButton>

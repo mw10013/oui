@@ -26,7 +26,7 @@ export default function Component() {
         <ItemTitle>SelectEx</ItemTitle>
         <ItemDescription>With icon.</ItemDescription>
         <SelectEx
-          aria-label="Select an item"
+          aria-label="Select item"
           buttonClassName="w-[180px]"
           placeholder="Select an item"
           items={iconItems}

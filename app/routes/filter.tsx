@@ -37,7 +37,7 @@ export function loader({ request }: LoaderFunctionArgs) {
 export default function RouteComponent({
   loaderData: { disabledTags, items, tags, components },
 }: Route.ComponentProps) {
-  const [_, setSearchParams] = useSearchParams();
+  const [searchParams, setSearchParams] = useSearchParams();
 
   return (
     <>
@@ -89,7 +89,7 @@ export default function RouteComponent({
         ))}
       </PageGrid> */}
 
-      <pre>{JSON.stringify({ tags }, null, 2)}</pre>
+      <pre>{JSON.stringify({ tags, searchParams: Object.fromEntries(searchParams) }, null, 2)}</pre>
     </>
   );
 }
