@@ -2,7 +2,7 @@ import type { RegistryTag } from "@/registry/registry-tags";
 import type { LoaderFunctionArgs } from "react-router";
 import type { Route } from "./+types/filter";
 import PageHeader from "@/components/page-header";
-import { getAvailableTags, getComponents } from "@/lib/utils";
+import { getAvailableTags, getComponents, getDisabledTags } from "@/lib/utils";
 import { SelectEx } from "@/registry/components/oui-select-ex";
 import { ListBoxItem } from "@/registry/components/ui/oui-list-box";
 import { registryTags } from "@/registry/registry-tags";
@@ -24,11 +24,12 @@ export function loader({ request }: LoaderFunctionArgs) {
     : [];
   const components = getComponents(tags as RegistryTag[]);
   const availableTags = getAvailableTags(tags as RegistryTag[]);
-  return { tags, items, availableTags, components };
+  const disabledTags = getDisabledTags(tags as RegistryTag[]);
+  return { disabledTags, tags, items, availableTags, components };
 }
 
 export default function RouteComponent({
-  loaderData: { items, tags, ...loaderData },
+  loaderData: { disabledTags, items, tags, ...loaderData },
 }: Route.ComponentProps) {
   const [_, setSearchParams] = useSearchParams();
 
@@ -42,6 +43,7 @@ export default function RouteComponent({
         placeholder="Select tags"
         items={items}
         selectionMode="multiple"
+        disabledKeys={disabledTags}
         value={tags}
         onChange={(value) => {
           if (value.length > 0) {

@@ -49,3 +49,23 @@ export const getAvailableTags = (
 
   return Array.from(availableTags);
 };
+
+export const getAllTags = (): RegistryTag[] => {
+  // eslint-disable-next-line @typescript-eslint/no-unsafe-return
+  const tags = components.flatMap(
+    // eslint-disable-next-line @typescript-eslint/no-unsafe-return
+    (component) => component.meta?.tags ?? [],
+  ) as RegistryTag[];
+  return Array.from(new Set(tags));
+};
+
+export const getDisabledTags = (selectedTags: RegistryTag[]): RegistryTag[] => {
+  if (!selectedTags.length) return [];
+
+  const availableTags = getAvailableTags(selectedTags);
+  const allTags = getAllTags();
+
+  return allTags.filter(
+    (tag) => !availableTags.includes(tag) && !selectedTags.includes(tag),
+  );
+};

@@ -27,7 +27,7 @@ export const registryTags = [
   "radio group",
   "search field",
   "select",
-  "separrator",
+  "separator",
   "switch",
   "table",
   "tabs",
