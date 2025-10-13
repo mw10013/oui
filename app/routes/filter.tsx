@@ -21,7 +21,7 @@ export function loader({ request }: LoaderFunctionArgs) {
   const components = tags.length ? getComponents(tags as RegistryTag[]) : [];
   const availableTags = getAvailableTags(tags as RegistryTag[]);
   const disabledTags = getDisabledTags(tags as RegistryTag[]);
-  console.log({ tags, components: components.map((c) => c.name) });
+  console.log("loader", { tags, components: components.map((c) => c.name) });
   return { disabledTags, tags, items, availableTags, components };
 }
 
@@ -30,6 +30,7 @@ export default function RouteComponent({
 }: Route.ComponentProps) {
   const [searchParams, setSearchParams] = useSearchParams();
 
+  console.log(`RouteComponent render: tags: ${tags.join(", ")}`);
   return (
     <>
       <PageHeader title="Filter" className="mb-10">
@@ -43,6 +44,7 @@ export default function RouteComponent({
         disabledKeys={disabledTags}
         value={tags}
         onChange={(value) => {
+          console.log(`onChange: ${value.join(", ")}`);
           const tags = value as string[];
           if (tags.length > 0) {
             const formattedTags = tags
@@ -50,7 +52,7 @@ export default function RouteComponent({
               .join(",");
             setSearchParams({ tags: formattedTags });
           } else {
-            setSearchParams({}, { replace: true });
+            setSearchParams({});
           }
         }}
       >
