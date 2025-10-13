@@ -29,7 +29,8 @@ export const getComponentsByNames = (names: string[]): RegistryItem[] => {
 export const getAvailableTags = (
   selectedTags: RegistryTag[],
 ): RegistryTag[] => {
-  if (!selectedTags.length) return [];
+  // if (!selectedTags.length) return [];
+  if (!selectedTags.length) return registryTags.slice().sort();
 
   // Get all components that have all the selected tags
   const matchingComponents = components.filter((component) =>
@@ -48,7 +49,7 @@ export const getAvailableTags = (
     });
   });
 
-  return Array.from(availableTags);
+  return Array.from(availableTags).sort();
 };
 
 export const getDisabledTags = (selectedTags: RegistryTag[]): RegistryTag[] => {
@@ -56,7 +57,9 @@ export const getDisabledTags = (selectedTags: RegistryTag[]): RegistryTag[] => {
 
   const availableTags = getAvailableTags(selectedTags);
 
-  return registryTags.filter(
-    (tag) => !availableTags.includes(tag) && !selectedTags.includes(tag),
-  );
+  return registryTags
+    .filter(
+      (tag) => !availableTags.includes(tag) && !selectedTags.includes(tag),
+    )
+    .sort();
 };
