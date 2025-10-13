@@ -51,9 +51,10 @@ export default function RouteComponent({
         disabledKeys={disabledTags}
         value={tags}
         onChange={(value) => {
-          if (value.length > 0) {
-            const formattedTags = value
-              .map((tag) => String(tag).replace(/\s+/g, "+"))
+          const tags = value as string[];
+          if (tags.length > 0) {
+            const formattedTags = tags
+              .map((tag) => tag.replace(/\s+/g, "+"))
               .join(",");
             setSearchParams({ tags: formattedTags });
           } else {

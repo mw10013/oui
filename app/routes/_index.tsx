@@ -1,4 +1,3 @@
-import SearchButton from "@/components/search-button";
 import { categories } from "@/config/categories";
 import { Link } from "@/registry/components/ui/oui-link";
 import { Funnel } from "lucide-react";
@@ -23,7 +22,6 @@ export default function RouteComponent() {
           <Funnel className="me-2" size={14} />
           Filter by Tags
         </Link>
-        <SearchButton />
       </div>
 
       <div className="relative my-16">
