@@ -44,6 +44,9 @@ importers:
       react-router:
         specifier: 7.9.1
         version: 7.9.1(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      remix-themes:
+        specifier: 2.0.4
+        version: 2.0.4(react-router@7.9.1(react-dom@19.1.0(react@19.1.0))(react@19.1.0))
       simple-icons:
         specifier: 15.16.1
         version: 15.16.1
@@ -4510,6 +4513,11 @@ packages:
   regexp.prototype.flags@1.5.4:
     resolution: {integrity: sha512-dYqgNSZbDwkaJ2ceRd9ojCGjBq+mOm9LmtXnAnEGyHhN/5R7iDW2TRw3h+o/jCFxus3P2LfWIIiwowAjANm7IA==}
     engines: {node: '>= 0.4'}
+
+  remix-themes@2.0.4:
+    resolution: {integrity: sha512-S1vIx86xdsMv+ceaWGWtlVZBMhU4tmZeBOBzOiZnhbHnGBbd5YeyIlZ5EL3BSEhZq35oEcINeTrMrVju9GPYEA==}
+    peerDependencies:
+      react-router: '>=7.0.0'
 
   require-directory@2.1.1:
     resolution: {integrity: sha512-fGxEI7+wsG9xrvdjsrlmL22OMTTiHRwAMroiEeMgq8gzoLC/PQr7RsRDSTLUg/bZAZtF+TVIkHc6/4RIKrui+Q==}
@@ -10376,6 +10384,10 @@ snapshots:
       get-proto: 1.0.1
       gopd: 1.2.0
       set-function-name: 2.0.2
+
+  remix-themes@2.0.4(react-router@7.9.1(react-dom@19.1.0(react@19.1.0))(react@19.1.0)):
+    dependencies:
+      react-router: 7.9.1(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
 
   require-directory@2.1.1: {}
 

@@ -10,9 +10,12 @@
 
 ## TODO
 
-- index: recon
-- registry: disclosure accordion css dependency
 - theme
+- index: recon
+- oui-base.tsx -> out-base.ts
+- components: remove pagination and sidebar
+- registry: disclosure accordion css dependency
+- layout width on wide screens
 - component code/layout
 - tags
 - style/alignment

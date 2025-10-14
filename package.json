@@ -32,6 +32,7 @@
     "react-aria-components": "1.13.0",
     "react-dom": "19.1.0",
     "react-router": "7.9.1",
+    "remix-themes": "2.0.4",
     "simple-icons": "15.16.1",
     "tailwind-merge": "3.3.1"
   },
