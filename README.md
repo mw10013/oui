@@ -29,6 +29,7 @@
 - license
 - v0
 - PR to add to shadcn
+- theme toggle: use oui checkbox/focus ring?
 
 ## Local Dev
 

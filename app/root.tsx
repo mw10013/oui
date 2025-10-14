@@ -9,9 +9,9 @@ import {
   Outlet,
   Scripts,
   ScrollRestoration,
+  unstable_useRoute,
   useHref,
   useNavigate,
-  useRouteLoaderData,
 } from "react-router";
 import {
   PreventFlashOnWrongTheme,
@@ -63,10 +63,10 @@ function useHrefEx(href: string) {
 
 function Html({
   children,
-  data,
+  ssrTheme,
 }: {
   children: React.ReactNode;
-  data: { theme: string | null } | undefined;
+  ssrTheme: boolean;
 }) {
   const [theme] = useTheme();
   const navigate = useNavigate();
@@ -76,7 +76,7 @@ function Html({
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <Meta />
-        <PreventFlashOnWrongTheme ssrTheme={Boolean(data?.theme)} />
+        <PreventFlashOnWrongTheme ssrTheme={ssrTheme} />
         <Links />
       </head>
       <body>
@@ -101,14 +101,14 @@ function Html({
 }
 
 export function Layout({ children }: { children: React.ReactNode }) {
-  const data = useRouteLoaderData("root")!;
+  const data = unstable_useRoute("root");
   return (
     <ThemeProvider
-      specifiedTheme={data.theme ?? null}
+      specifiedTheme={data.loaderData?.theme ?? null}
       themeAction="/action/set-theme"
       disableTransitionOnThemeChange
     >
-      <Html data={data}>{children}</Html>
+      <Html ssrTheme={Boolean(data.loaderData?.theme)}>{children}</Html>
     </ThemeProvider>
   );
 }
