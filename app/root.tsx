@@ -1,5 +1,6 @@
 import type { NavigateOptions } from "react-router";
 import type { Route } from "./+types/root";
+import { themeSessionResolver } from "@/lib/theme.server";
 import * as Rac from "react-aria-components";
 import {
   isRouteErrorResponse,
@@ -10,10 +11,17 @@ import {
   ScrollRestoration,
   useHref,
   useNavigate,
+  useRouteLoaderData,
 } from "react-router";
+import {
+  PreventFlashOnWrongTheme,
+  Theme,
+  ThemeProvider,
+  useTheme,
+} from "remix-themes";
 import "@/app/app.css";
-import Header from "@/components/header";
 import Footer from "@/components/footer";
+import Header from "@/components/header";
 
 declare module "react-aria-components" {
   interface RouterConfig {
@@ -34,6 +42,11 @@ export const links: Route.LinksFunction = () => [
   },
 ];
 
+export async function loader({ request }: Route.LoaderArgs) {
+  const { getTheme } = await themeSessionResolver(request);
+  return { theme: getTheme() };
+}
+
 // https://github.com/adobe/react-spectrum/issues/6397
 // https://github.com/argos-ci/argos/blob/4822931b05c78e1b4a79e15cf4437fb0297369a6/apps/frontend/src/router.tsx#L21-L31
 function useHrefEx(href: string) {
@@ -48,14 +61,26 @@ function useHrefEx(href: string) {
   return resolvedHref;
 }
 
-export function Layout({ children }: { children: React.ReactNode }) {
+function Html({
+  children,
+  data,
+}: {
+  children: React.ReactNode;
+  data: { theme: string | null } | undefined;
+}) {
+  const [theme] = useTheme();
   const navigate = useNavigate();
   return (
-    <html lang="en" className="dark" suppressHydrationWarning>
+    <html
+      lang="en"
+      className={theme === Theme.DARK ? "dark" : ""}
+      data-theme={theme ?? ""}
+    >
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <Meta />
+        <PreventFlashOnWrongTheme ssrTheme={Boolean(data?.theme)} />
         <Links />
       </head>
       <body>
@@ -71,11 +96,23 @@ export function Layout({ children }: { children: React.ReactNode }) {
               <Footer />
             </div>
           </div>
-          <ScrollRestoration />
-          <Scripts />
         </Rac.RouterProvider>
+        <ScrollRestoration />
+        <Scripts />
       </body>
     </html>
+  );
+}
+
+export function Layout({ children }: { children: React.ReactNode }) {
+  const data = useRouteLoaderData("root")!;
+  return (
+    <ThemeProvider
+      specifiedTheme={data.theme ?? null}
+      themeAction="/action/set-theme"
+    >
+      <Html data={data}>{children}</Html>
+    </ThemeProvider>
   );
 }
 
