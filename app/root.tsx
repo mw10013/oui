@@ -71,11 +71,7 @@ function Html({
   const [theme] = useTheme();
   const navigate = useNavigate();
   return (
-    <html
-      lang="en"
-      className={theme === Theme.DARK ? "dark" : ""}
-      data-theme={theme ?? ""}
-    >
+    <html lang="en" className={theme === Theme.DARK ? "dark" : ""}>
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -110,6 +106,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
     <ThemeProvider
       specifiedTheme={data.theme ?? null}
       themeAction="/action/set-theme"
+      disableTransitionOnThemeChange
     >
       <Html data={data}>{children}</Html>
     </ThemeProvider>

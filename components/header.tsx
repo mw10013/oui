@@ -1,6 +1,7 @@
 import { buttonClassName } from "@/registry/components/ui/oui-button";
 import { Link } from "@/registry/components/ui/oui-link";
 import { siGithub } from "simple-icons";
+import ThemeToggle from "@/components/theme-toggle";
 
 export default function Header() {
   return (
@@ -35,7 +36,7 @@ export default function Header() {
               <path d={siGithub.path} />
             </svg>
           </Link>
-          {/* <ThemeToggle /> */}
+          <ThemeToggle />
         </div>
       </div>
     </header>
