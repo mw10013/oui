@@ -8,6 +8,13 @@ import { twMerge } from "tailwind-merge";
 import { composeTailwindRenderProps } from "@/registry/components/ui/oui-base";
 import { Button } from "@/registry/components/ui/oui-button";
 
+/**
+ * Experimental
+ * Do we need SidebarTrigger? Then should be moved to button-ex-sidebar
+ * Probably don't need SidbarListBox, et al since that experiment was unsuccessful
+ * SidebarTreeEx -> tree-ex-sidebar
+ */
+
 export function SidebarTrigger({
   "aria-label": ariaLabel,
   "aria-labelledby": ariaLabelledBy,

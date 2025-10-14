@@ -11,15 +11,12 @@
 ## TODO
 
 - index: recon
-- oui-base.tsx -> out-base.ts
-- components: remove pagination and sidebar
 - registry: disclosure accordion css dependency
 - layout width on wide screens
 - component code/layout
 - tags
 - style/alignment
 - browser console.log errors
-- sidebar-ex: SidebarTreeEx, SidebarTrigger?, probably not SidebarListBox
 - autocomplete: 'defaultSelectedKey' is deprecated.ts(6385)
 - logo, favicon
 - eslint-disable-next-line react-hooks/exhaustive-deps
@@ -28,7 +25,7 @@
 - license
 - v0
 - PR to add to shadcn
-- theme toggle: use oui checkbox/focus ring?
+- theme toggle: use oui checkbox/focus ring? oui-toggle?
 
 ## Local Dev
 
