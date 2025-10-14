@@ -10,7 +10,6 @@
 
 ## TODO
 
-- theme
 - index: recon
 - oui-base.tsx -> out-base.ts
 - components: remove pagination and sidebar

@@ -8,7 +8,7 @@
       "type": "registry:ui",
       "files": [
         {
-          "path": "registry/components/ui/oui-base.tsx",
+          "path": "registry/components/ui/oui-base.ts",
           "type": "registry:ui"
         }
       ],
