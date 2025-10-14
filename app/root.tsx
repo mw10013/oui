@@ -13,6 +13,7 @@ import {
 } from "react-router";
 import "@/app/app.css";
 import Header from "@/components/header";
+import Footer from "@/components/footer";
 
 declare module "react-aria-components" {
   interface RouterConfig {
@@ -67,7 +68,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
             <div className="relative flex min-h-screen flex-col">
               <Header />
               <main className="grow">{children}</main>
-              {/* <Footer /> */}
+              <Footer />
             </div>
           </div>
           <ScrollRestoration />

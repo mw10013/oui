@@ -21,6 +21,7 @@
 - browser console.log errors
 - sidebar-ex: SidebarTreeEx, SidebarTrigger?, probably not SidebarListBox
 - autocomplete: 'defaultSelectedKey' is deprecated.ts(6385)
+- logo, favicon
 
 ## Local Dev
 
