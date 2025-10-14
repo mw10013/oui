@@ -114,6 +114,11 @@ export const categories: Category[] = [
     components: [],
   },
   {
+    name: "Index",
+    slug: "index",
+    components: [{ name: "oui-index-demo" }],
+  },
+  {
     name: "Input",
     slug: "input",
     components: [

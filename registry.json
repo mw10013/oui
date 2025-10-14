@@ -2572,6 +2572,22 @@
         "https://oui.mw10013.workers.dev/r/oui-text-field-ex.json",
         "https://oui.mw10013.workers.dev/r/oui-tooltip-ex.json"
       ]
+    },
+    {
+      "name": "oui-index-demo",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-index-demo.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "https://oui.mw10013.workers.dev/r/oui-index.json"
+      ],
+      "meta": {
+        "tags": ["index"]
+      }
     }
   ]
 }

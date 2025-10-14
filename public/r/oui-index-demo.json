@@ -1,0 +1,20 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "oui-index-demo",
+  "type": "registry:component",
+  "registryDependencies": [
+    "https://oui.mw10013.workers.dev/r/oui-index.json"
+  ],
+  "files": [
+    {
+      "path": "registry/components/oui-index-demo.tsx",
+      "content": "import * as Oui from \"@/registry/components/ui/oui-index\";\n\nexport default function Component() {\n  return <Oui.Button>Oui Index</Oui.Button>;\n}\n",
+      "type": "registry:component"
+    }
+  ],
+  "meta": {
+    "tags": [
+      "index"
+    ]
+  }
+}

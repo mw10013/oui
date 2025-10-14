@@ -10,7 +10,6 @@
 
 ## TODO
 
-- index: recon
 - registry: disclosure accordion css dependency
 - layout width on wide screens
 - component code/layout
