@@ -10,18 +10,21 @@
 
 ## TODO
 
-- component code/layout
-- header/footer
-- theme
 - index
+- theme
+- component code/layout
 - tags
 - style/alignment
-- eslint-disable-next-line react-hooks/exhaustive-deps
-- registry:build: delete r/\*
 - browser console.log errors
 - sidebar-ex: SidebarTreeEx, SidebarTrigger?, probably not SidebarListBox
 - autocomplete: 'defaultSelectedKey' is deprecated.ts(6385)
 - logo, favicon
+- eslint-disable-next-line react-hooks/exhaustive-deps
+- registry:build: delete r/\*
+- readme, contributing
+- license
+- v0
+- PR to add to shadcn
 
 ## Local Dev
 
