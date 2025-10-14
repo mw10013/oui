@@ -1,24 +1,15 @@
 import type { RegistryTag } from "@/registry/registry-tags";
 import type { LoaderFunctionArgs } from "react-router";
 import type { Route } from "./+types/filter";
-import { lazy, Suspense, useMemo } from "react";
+import ComponentCard from "@/components/component-card";
+import ComponentDetails from "@/components/component-details";
+import ComponentLoader from "@/components/component-loader";
+import PageGrid from "@/components/page-grid";
 import PageHeader from "@/components/page-header";
 import { getAvailableTags, getComponents, getDisabledTags } from "@/lib/utils";
 import { SelectEx } from "@/registry/components/oui-select-ex";
 import { ListBoxItem } from "@/registry/components/ui/oui-list-box";
 import { useSearchParams } from "react-router";
-
-function ComponentItem({ name }: { name: string }) {
-  const Component = useMemo(
-    () => lazy(() => import(`../../registry/components/${name}.tsx`)),
-    [name],
-  );
-  return (
-    <Suspense fallback={<div>Loading...</div>}>
-      <Component />
-    </Suspense>
-  );
-}
 
 export function loader({ request }: LoaderFunctionArgs) {
   const tagsParam = new URL(request.url).searchParams.get("tags");
@@ -73,11 +64,14 @@ export default function RouteComponent({
           {(item) => <ListBoxItem>{item.id}</ListBoxItem>}
         </SelectEx>
       </div>
-      <div className="mx-auto flex max-w-lg flex-col gap-4">
+      <PageGrid>
         {components.map((component) => (
-          <ComponentItem key={component.name} name={component.name} />
+          <ComponentCard key={component.name} component={component} isSearchPage>
+            <ComponentLoader name={component.name} />
+            <ComponentDetails component={component} />
+          </ComponentCard>
         ))}
-      </div>
+      </PageGrid>
     </>
   );
 }
