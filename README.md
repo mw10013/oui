@@ -15,6 +15,7 @@
 - theme
 - index
 - tags
+- style/alignment
 - eslint-disable-next-line react-hooks/exhaustive-deps
 - registry:build: delete r/\*
 - browser console.log errors

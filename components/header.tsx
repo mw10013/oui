@@ -1,4 +1,5 @@
 import { Link } from "@/registry/components/ui/oui-link";
+import { Github } from "lucide-react";
 
 export default function Header() {
   return (
@@ -7,6 +8,18 @@ export default function Header() {
         <Link href="/" className="shrink-0">
           Oui
         </Link>
+        <div className="flex items-center gap-1">
+          <a
+            className="inline-flex size-9 items-center justify-center rounded text-muted-foreground outline-none hover:text-foreground/80 focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50"
+            href="https://github.com/origin-space/originui"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span className="sr-only">GitHub</span>
+            <Github size={20} />
+          </a>
+          {/* <ThemeToggle /> */}
+        </div>
       </div>
     </header>
   );
