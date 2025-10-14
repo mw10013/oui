@@ -6,8 +6,22 @@ export default function Header() {
   return (
     <header className="relative mb-14">
       <div className="mx-auto flex h-[72px] w-full max-w-6xl items-center justify-between gap-3">
-        <Link href="/" className="shrink-0">
-          Oui
+        <Link href="/" className="shrink-0" aria-label="Home">
+          <span className="sr-only">Oui</span>
+          <img
+            src="/logo.svg"
+            alt="Oui logo"
+            width={117}
+            height={24}
+            className="dark:hidden"
+          />
+          <img
+            src="/logo-dark.svg"
+            alt="Oui logo"
+            width={117}
+            height={24}
+            className="hidden dark:block"
+          />
         </Link>
         <div className="flex items-center gap-1">
           <Link
