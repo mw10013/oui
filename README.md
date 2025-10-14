@@ -10,7 +10,8 @@
 
 ## TODO
 
-- index
+- index: recon
+- registry: disclosure accordion css dependency
 - theme
 - component code/layout
 - tags

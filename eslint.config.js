@@ -10,8 +10,8 @@ export default defineConfig(
     "**/.wrangler/",
     "**/worker-configuration.d.ts",
     "**/.react-router/",
-    "functions/x/registry/components/ui/sidebar.tsx",
-    "functions/x/registry/hooks/use-mobile.ts",
+    "registry/components/ui/sidebar.tsx",
+    "registry/hooks/use-mobile.ts",
   ]),
 
   eslint.configs.recommended,
