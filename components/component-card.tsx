@@ -37,8 +37,7 @@ export default function ComponentCard({
   const colSpan =
     component.meta?.colSpan === 2 ? 2 : component.meta?.colSpan === 3 ? 3 : 1;
   const baseStyles = colSpanMap[colSpan].base;
-  const startStyles =
-    layoutMode === "subgrid" && colSpan !== 3 ? colSpanMap[colSpan].start : "";
+  const startStyles = layoutMode === "subgrid" ? colSpanMap[colSpan].start : "";
   const colStyles = twJoin(baseStyles, startStyles);
 
   const alignmentStyles =
