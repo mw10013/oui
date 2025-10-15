@@ -20,16 +20,13 @@ export default function RouteComponent({
   loaderData: { components },
 }: Route.ComponentProps) {
   return (
-    <div className="p-6">
-      <PageGrid>
-        {components.map((component) => (
-          <ComponentCard key={component.name} component={component}>
-            <ComponentLoader name={component.name} />
-            <ComponentDetails component={component} />
-          </ComponentCard>
-        ))}
-      </PageGrid>
-      {/* <pre>{JSON.stringify({ category, components }, null, 2)}</pre> */}
-    </div>
+    <PageGrid>
+      {components.map((component) => (
+        <ComponentCard key={component.name} component={component}>
+          <ComponentLoader name={component.name} />
+          <ComponentDetails component={component} />
+        </ComponentCard>
+      ))}
+    </PageGrid>
   );
 }

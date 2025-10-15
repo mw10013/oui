@@ -6,7 +6,7 @@ import ThemeToggle from "@/components/theme-toggle";
 export default function Header() {
   return (
     <header className="relative mb-14">
-      <div className="mx-auto flex h-[72px] w-full max-w-6xl items-center justify-between gap-3">
+      <div className="flex h-[72px] w-full items-center justify-between gap-3">
         <Link href="/" className="shrink-0" aria-label="Home">
           <span className="sr-only">Oui</span>
           <img
