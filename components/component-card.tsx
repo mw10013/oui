@@ -1,23 +1,61 @@
 import type { RegistryItem } from "shadcn/schema";
-import { twJoin, twMerge } from "tailwind-merge";
+import { cva } from "class-variance-authority";
 
-const widthStyles = {
-  default: {
-    span: "col-span-12 sm:col-span-6 lg:col-span-4",
-    start: "sm:col-start-4 lg:col-start-5",
+const container = cva(
+  "group/item relative border has-[[data-comp-loading=true]]:border-none",
+  {
+    variants: {
+      layoutMode: {
+        subgrid: "col-span-12 grid grid-cols-12",
+        direct: "",
+      },
+    },
+    defaultVariants: {
+      layoutMode: "direct",
+    },
   },
-  wide: {
-    span: "col-span-12 sm:col-span-6 lg:col-span-6",
-    start: "sm:col-start-4 lg:col-start-4",
-  },
-  full: { span: "col-span-12 sm:col-span-12 lg:col-span-12", start: "" },
-};
+);
 
-const alignmentStyles = {
-  default: "",
-  "flex-center": "flex justify-center items-center",
-  "text-center": "text-center",
-};
+const content = cva("", {
+  variants: {
+    width: {
+      default: "col-span-12 sm:col-span-6 lg:col-span-4",
+      wide: "col-span-12 sm:col-span-6 lg:col-span-6",
+      full: "col-span-12 sm:col-span-12 lg:col-span-12",
+    },
+    alignment: {
+      default: "",
+      "flex-center": "flex items-center justify-center",
+      "text-center": "text-center",
+    },
+    layoutMode: {
+      subgrid: "",
+      direct: "",
+    },
+  },
+  compoundVariants: [
+    {
+      width: "default",
+      layoutMode: "subgrid",
+      class: "sm:col-start-4 lg:col-start-5",
+    },
+    {
+      width: "wide",
+      layoutMode: "subgrid",
+      class: "sm:col-start-4 lg:col-start-4",
+    },
+    {
+      width: "full",
+      layoutMode: "subgrid",
+      class: "",
+    },
+  ],
+  defaultVariants: {
+    width: "default",
+    alignment: "default",
+    layoutMode: "direct",
+  },
+});
 
 /**
  * Renders a component card with configurable layout and styling.
@@ -53,19 +91,10 @@ export default function ComponentCard({
   if (layoutMode === "subgrid") {
     return (
       <div
-        className={twMerge(
-          "group/item relative col-span-12 grid grid-cols-12 border has-[[data-comp-loading=true]]:border-none",
-          className,
-        )}
+        className={container({ layoutMode, className })}
         data-slot={component.name}
       >
-        <div
-          className={twJoin(
-            widthStyles[width].span,
-            widthStyles[width].start,
-            alignmentStyles[alignment],
-          )}
-        >
+        <div className={content({ width, alignment, layoutMode })}>
           {children}
         </div>
       </div>
@@ -74,12 +103,10 @@ export default function ComponentCard({
 
   return (
     <div
-      className={twMerge(
-        "group/item relative border has-[[data-comp-loading=true]]:border-none",
-        widthStyles[width].span,
-        alignmentStyles[alignment],
-        className,
-      )}
+      className={container({
+        layoutMode,
+        className: content({ width, alignment, layoutMode, className }),
+      })}
       data-slot={component.name}
     >
       {children}
