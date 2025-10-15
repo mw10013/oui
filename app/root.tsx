@@ -73,7 +73,7 @@ function Html({
           useHref={useHrefEx}
         >
           <div className="overflow-hidden px-4 supports-[overflow:clip]:overflow-clip sm:px-6">
-            <div className="relative flex min-h-screen flex-col">
+            <div className="relative mx-auto flex min-h-screen w-full max-w-6xl flex-col">
               <Header />
               <main className="grow">{children}</main>
               <Footer />
