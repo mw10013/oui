@@ -1,6 +1,24 @@
 import type { RegistryItem } from "shadcn/schema";
 import { twJoin, twMerge } from "tailwind-merge";
 
+const widthStyles = {
+  default: {
+    base: "col-span-12 sm:col-span-6 lg:col-span-4",
+    start: "sm:col-start-4 lg:col-start-5",
+  },
+  wide: {
+    base: "col-span-12 sm:col-span-6 lg:col-span-6",
+    start: "sm:col-start-4 lg:col-start-4",
+  },
+  full: { base: "col-span-12 sm:col-span-12 lg:col-span-12", start: "" },
+};
+
+const alignmentStyles = {
+  default: "",
+  "flex-center": "flex justify-center items-center",
+  "text-center": "text-center",
+};
+
 /**
  * Renders a component card with configurable layout and styling.
  * @param layoutMode - The layout mode: "subgrid" for nested grid, "direct" for flat span.
@@ -19,24 +37,6 @@ export default function ComponentCard({
   component: RegistryItem;
   className?: string;
 }) {
-  const widthStyles = {
-    default: {
-      base: "col-span-12 sm:col-span-6 lg:col-span-4",
-      start: "sm:col-start-4 lg:col-start-5",
-    },
-    wide: {
-      base: "col-span-12 sm:col-span-6 lg:col-span-6",
-      start: "sm:col-start-4 lg:col-start-4",
-    },
-    full: { base: "col-span-12 sm:col-span-12 lg:col-span-12", start: "" },
-  };
-
-  const alignmentStyles = {
-    default: "",
-    "flex-center": "flex justify-center items-center",
-    "text-center": "text-center",
-  };
-
   const width =
     component.meta?.width === "wide"
       ? "wide"
