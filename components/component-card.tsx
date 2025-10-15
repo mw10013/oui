@@ -3,14 +3,14 @@ import { twJoin, twMerge } from "tailwind-merge";
 
 const widthStyles = {
   default: {
-    base: "col-span-12 sm:col-span-6 lg:col-span-4",
+    span: "col-span-12 sm:col-span-6 lg:col-span-4",
     start: "sm:col-start-4 lg:col-start-5",
   },
   wide: {
-    base: "col-span-12 sm:col-span-6 lg:col-span-6",
+    span: "col-span-12 sm:col-span-6 lg:col-span-6",
     start: "sm:col-start-4 lg:col-start-4",
   },
-  full: { base: "col-span-12 sm:col-span-12 lg:col-span-12", start: "" },
+  full: { span: "col-span-12 sm:col-span-12 lg:col-span-12", start: "" },
 };
 
 const alignmentStyles = {
@@ -58,13 +58,13 @@ export default function ComponentCard({
       ? {
           outer: "col-span-12 grid grid-cols-12",
           inner: twJoin(
-            widthStyles[width].base,
+            widthStyles[width].span,
             widthStyles[width].start,
             alignmentStyles[alignment],
           ),
         }
       : {
-          outer: twJoin(widthStyles[width].base, alignmentStyles[alignment]),
+          outer: twJoin(widthStyles[width].span, alignmentStyles[alignment]),
         };
 
   return (
