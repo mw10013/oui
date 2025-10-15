@@ -50,33 +50,39 @@ export default function ComponentCard({
         ? "text-center"
         : "default";
 
-  const styles: {
-    outer: string;
-    inner?: string;
-  } =
-    layoutMode === "subgrid"
-      ? {
-          outer: "col-span-12 grid grid-cols-12",
-          inner: twJoin(
+  if (layoutMode === "subgrid") {
+    return (
+      <div
+        className={twMerge(
+          "group/item relative col-span-12 grid grid-cols-12 border has-[[data-comp-loading=true]]:border-none",
+          className,
+        )}
+        data-slot={component.name}
+      >
+        <div
+          className={twJoin(
             widthStyles[width].span,
             widthStyles[width].start,
             alignmentStyles[alignment],
-          ),
-        }
-      : {
-          outer: twJoin(widthStyles[width].span, alignmentStyles[alignment]),
-        };
+          )}
+        >
+          {children}
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div
       className={twMerge(
         "group/item relative border has-[[data-comp-loading=true]]:border-none",
-        styles.outer,
+        widthStyles[width].span,
+        alignmentStyles[alignment],
         className,
       )}
       data-slot={component.name}
     >
-      {styles.inner ? <div className={styles.inner}>{children}</div> : children}
+      {children}
     </div>
   );
 }
