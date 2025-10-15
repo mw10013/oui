@@ -3,6 +3,7 @@ import ComponentCard from "@/components/component-card";
 import ComponentDetails from "@/components/component-details";
 import ComponentLoader from "@/components/component-loader";
 import PageGrid from "@/components/page-grid";
+import PageHeader from "@/components/page-header";
 import { getCategory } from "@/config/categories";
 import { getComponentsByNames } from "@/lib/utils";
 import { invariant } from "@epic-web/invariant";
@@ -13,20 +14,23 @@ export function loader({ params }: Route.LoaderArgs) {
   const components = getComponentsByNames(
     category.components.map((item) => item.name),
   );
-  return { category, components };
+  return { categoryName: category.name, components };
 }
 
 export default function RouteComponent({
-  loaderData: { components },
+  loaderData: { categoryName, components },
 }: Route.ComponentProps) {
   return (
-    <PageGrid>
-      {components.map((component) => (
-        <ComponentCard key={component.name} component={component}>
-          <ComponentLoader name={component.name} />
-          <ComponentDetails component={component} />
-        </ComponentCard>
-      ))}
-    </PageGrid>
+    <>
+      <PageHeader title={categoryName} className="mb-10" />
+      <PageGrid>
+        {components.map((component) => (
+          <ComponentCard key={component.name} component={component}>
+            <ComponentLoader name={component.name} />
+            <ComponentDetails component={component} />
+          </ComponentCard>
+        ))}
+      </PageGrid>
+    </>
   );
 }

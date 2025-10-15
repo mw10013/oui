@@ -10,11 +10,11 @@
 
 ## TODO
 
-- layout width on wide screens
 - component code/layout
 - style/alignment
 - tags
 - theme toggle: use oui checkbox/focus ring? oui-toggle?
+- loading...
 - browser console.log errors
 - logo, favicon
 - eslint-disable-next-line react-hooks/exhaustive-deps
@@ -22,6 +22,8 @@
 - readme, contributing?
 - v0
 - PR to add to shadcn
+- seo, meta
+- analytics
 
 ## Local Dev
 

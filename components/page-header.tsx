@@ -3,7 +3,7 @@ import { twMerge } from "tailwind-merge";
 interface PageHeaderProps {
   title: string;
   className?: string;
-  children: React.ReactNode;
+  children?: React.ReactNode;
 }
 
 export default function PageHeader({

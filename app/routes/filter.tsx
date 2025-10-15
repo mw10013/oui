@@ -39,9 +39,7 @@ export default function RouteComponent({
   const [_, setSearchParams] = useSearchParams();
   return (
     <>
-      <PageHeader title="Filter" className="mb-10">
-        Use this page to filter components by tags.
-      </PageHeader>
+      <PageHeader title="Filter" className="mb-10" />
       <div className="mb-4 flex justify-center">
         <SelectEx
           aria-label="Select tags"
@@ -66,7 +64,11 @@ export default function RouteComponent({
       </div>
       <PageGrid>
         {components.map((component) => (
-          <ComponentCard key={component.name} component={component} isSearchPage>
+          <ComponentCard
+            key={component.name}
+            component={component}
+            isSearchPage
+          >
             <ComponentLoader name={component.name} />
             <ComponentDetails component={component} />
           </ComponentCard>
