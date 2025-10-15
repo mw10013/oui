@@ -11,7 +11,6 @@
 ## TODO
 
 - layout width on wide screens
-- autocomplete: 'defaultSelectedKey' is deprecated.ts(6385)
 - component code/layout
 - style/alignment
 - tags
@@ -20,8 +19,7 @@
 - logo, favicon
 - eslint-disable-next-line react-hooks/exhaustive-deps
 - registry:build: delete r/\*
-- readme, contributing
-- license
+- readme, contributing?
 - v0
 - PR to add to shadcn
 

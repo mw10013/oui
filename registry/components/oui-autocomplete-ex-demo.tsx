@@ -25,7 +25,7 @@ const users = [
 
 export default function Component() {
   return (
-    <SelectExPopover label="Users" defaultSelectedKey={users[0].id}>
+    <SelectExPopover label="Users" defaultValue={users[0].id}>
       <AutocompleteEx
         placeholder="Select user..."
         searchFieldProps={{ "aria-label": "User", autoFocus: true }}
