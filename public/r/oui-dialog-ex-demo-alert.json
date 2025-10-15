@@ -19,6 +19,6 @@
     "tags": [
       "dialog"
     ],
-    "style": "flex-center"
+    "alignment": "flex-center"
   }
 }

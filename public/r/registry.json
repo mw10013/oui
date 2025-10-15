@@ -509,7 +509,7 @@
       ],
       "meta": {
         "tags": ["tooltip"],
-        "style": "text-center"
+        "alignment": "text-center"
       }
     },
     {
@@ -578,7 +578,7 @@
       ],
       "meta": {
         "tags": ["dialog", "dialog ex"],
-        "style": "flex-center"
+        "alignment": "flex-center"
       }
     },
     {
@@ -647,7 +647,7 @@
       ],
       "meta": {
         "tags": ["button"],
-        "style": "text-center"
+        "alignment": "text-center"
       }
     },
     {
@@ -664,7 +664,7 @@
       ],
       "meta": {
         "tags": ["button"],
-        "style": "text-center"
+        "alignment": "text-center"
       }
     },
     {
@@ -681,7 +681,7 @@
       ],
       "meta": {
         "tags": ["button", "disabled"],
-        "style": "text-center"
+        "alignment": "text-center"
       }
     },
     {
@@ -698,7 +698,7 @@
       ],
       "meta": {
         "tags": ["button", "disabled"],
-        "style": "text-center"
+        "alignment": "text-center"
       }
     },
     {
@@ -715,7 +715,7 @@
       ],
       "meta": {
         "tags": ["button"],
-        "style": "text-center"
+        "alignment": "text-center"
       }
     },
     {
@@ -733,7 +733,7 @@
       "dependencies": ["lucide-react"],
       "meta": {
         "tags": ["button"],
-        "style": "text-center"
+        "alignment": "text-center"
       }
     },
     {
@@ -751,7 +751,7 @@
       "dependencies": ["lucide-react"],
       "meta": {
         "tags": ["button"],
-        "style": "text-center"
+        "alignment": "text-center"
       }
     },
     {
@@ -768,7 +768,7 @@
       ],
       "meta": {
         "tags": ["button"],
-        "style": "text-center"
+        "alignment": "text-center"
       }
     },
     {
@@ -785,7 +785,7 @@
       ],
       "meta": {
         "tags": ["button"],
-        "style": "text-center"
+        "alignment": "text-center"
       }
     },
     {
@@ -802,7 +802,7 @@
       ],
       "meta": {
         "tags": ["button"],
-        "style": "text-center"
+        "alignment": "text-center"
       }
     },
     {
@@ -819,7 +819,7 @@
       ],
       "meta": {
         "tags": ["button"],
-        "style": "text-center"
+        "alignment": "text-center"
       }
     },
     {
@@ -836,7 +836,7 @@
       ],
       "meta": {
         "tags": ["button"],
-        "style": "text-center"
+        "alignment": "text-center"
       }
     },
     {
@@ -944,7 +944,7 @@
       ],
       "meta": {
         "tags": ["dialog"],
-        "style": "flex-center"
+        "alignment": "flex-center"
       }
     },
     {
@@ -964,7 +964,7 @@
       ],
       "meta": {
         "tags": ["dialog"],
-        "style": "flex-center"
+        "alignment": "flex-center"
       }
     },
     {
@@ -1021,7 +1021,7 @@
       ],
       "meta": {
         "tags": ["dialog"],
-        "style": "flex-center"
+        "alignment": "flex-center"
       }
     },
     {
@@ -1039,7 +1039,7 @@
       ],
       "meta": {
         "tags": ["dialog"],
-        "style": "flex-center"
+        "alignment": "flex-center"
       }
     },
     {
@@ -1057,7 +1057,7 @@
       ],
       "meta": {
         "tags": ["dialog"],
-        "style": "flex-center"
+        "alignment": "flex-center"
       }
     },
     {
@@ -1075,7 +1075,7 @@
       ],
       "meta": {
         "tags": ["dialog"],
-        "style": "flex-center"
+        "alignment": "flex-center"
       }
     },
     {

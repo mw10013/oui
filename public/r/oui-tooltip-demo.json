@@ -17,6 +17,6 @@
     "tags": [
       "tooltip"
     ],
-    "style": "text-center"
+    "alignment": "text-center"
   }
 }

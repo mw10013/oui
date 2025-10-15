@@ -19,6 +19,6 @@
     "tags": [
       "button"
     ],
-    "style": "text-center"
+    "alignment": "text-center"
   }
 }

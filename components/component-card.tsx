@@ -1,14 +1,11 @@
 import type { RegistryItem } from "shadcn/schema";
 import { twJoin, twMerge } from "tailwind-merge";
 
-// layout: undefined | "wide" | "full"
-// alignment: undfined | "center" | "text-center"
-
 /**
  * Renders a component card with configurable layout and styling.
  * @param layoutMode - The layout mode: "subgrid" for nested grid, "direct" for flat span.
  * @param children - The content to render inside the card.
- * @param component - The registry item metadata, including colSpan and style ("flex-center" | "text-center").
+ * @param component - The registry item metadata, including width ("wide" | "full", defaults to "default") and alignment ("flex-center" | "text-center", defaults to "default").
  * @param className - Additional CSS classes.
  */
 export default function ComponentCard({
@@ -22,26 +19,36 @@ export default function ComponentCard({
   component: RegistryItem;
   className?: string;
 }) {
-  const colSpanMap = {
-    1: {
+  const widthStyles = {
+    default: {
       base: "col-span-12 sm:col-span-6 lg:col-span-4",
       start: "sm:col-start-4 lg:col-start-5",
     },
-    2: {
+    wide: {
       base: "col-span-12 sm:col-span-6 lg:col-span-6",
       start: "sm:col-start-4 lg:col-start-4",
     },
-    3: { base: "col-span-12 sm:col-span-12 lg:col-span-12", start: "" },
+    full: { base: "col-span-12 sm:col-span-12 lg:col-span-12", start: "" },
   };
 
-  const colSpan =
-    component.meta?.colSpan === 2 ? 2 : component.meta?.colSpan === 3 ? 3 : 1;
-  const alignmentStyles =
-    component.meta?.style === "flex-center"
-      ? "flex justify-center items-center"
-      : component.meta?.style === "text-center"
+  const alignmentStyles = {
+    default: "",
+    "flex-center": "flex justify-center items-center",
+    "text-center": "text-center",
+  };
+
+  const width =
+    component.meta?.width === "wide"
+      ? "wide"
+      : component.meta?.width === "full"
+        ? "full"
+        : "default";
+  const alignment =
+    component.meta?.alignment === "flex-center"
+      ? "flex-center"
+      : component.meta?.alignment === "text-center"
         ? "text-center"
-        : "";
+        : "default";
 
   const styles: {
     outer: string;
@@ -51,13 +58,13 @@ export default function ComponentCard({
       ? {
           outer: "col-span-12 grid grid-cols-12",
           inner: twJoin(
-            colSpanMap[colSpan].base,
-            colSpanMap[colSpan].start,
-            alignmentStyles,
+            widthStyles[width].base,
+            widthStyles[width].start,
+            alignmentStyles[alignment],
           ),
         }
       : {
-          outer: twJoin(colSpanMap[colSpan].base, alignmentStyles),
+          outer: twJoin(widthStyles[width].base, alignmentStyles[alignment]),
         };
 
   return (

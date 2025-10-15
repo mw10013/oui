@@ -17,6 +17,6 @@
       "button",
       "disabled"
     ],
-    "style": "text-center"
+    "alignment": "text-center"
   }
 }

@@ -21,6 +21,6 @@
       "dialog",
       "dialog ex"
     ],
-    "style": "flex-center"
+    "alignment": "flex-center"
   }
 }
