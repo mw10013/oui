@@ -6,18 +6,18 @@ import { twJoin, twMerge } from "tailwind-merge";
 
 /**
  * Renders a component card with configurable layout and styling.
- * @param isSearchPage - Whether the card is displayed on a search page.
+ * @param layoutMode - The layout mode: "subgrid" for nested grid, "direct" for flat span.
  * @param children - The content to render inside the card.
  * @param component - The registry item metadata, including colSpan and style ("flex-center" | "text-center").
  * @param className - Additional CSS classes.
  */
 export default function ComponentCard({
-  isSearchPage = false,
+  layoutMode = "direct",
   children,
   component,
   className,
 }: {
-  isSearchPage?: boolean;
+  layoutMode?: "subgrid" | "direct";
   children: React.ReactNode;
   component: RegistryItem;
   className?: string;
@@ -38,7 +38,7 @@ export default function ComponentCard({
     component.meta?.colSpan === 2 ? 2 : component.meta?.colSpan === 3 ? 3 : 1;
   const baseStyles = colSpanMap[colSpan].base;
   const startStyles =
-    isSearchPage && colSpan !== 3 ? colSpanMap[colSpan].start : "";
+    layoutMode === "subgrid" && colSpan !== 3 ? colSpanMap[colSpan].start : "";
   const colStyles = twJoin(baseStyles, startStyles);
 
   const alignmentStyles =
@@ -51,14 +51,15 @@ export default function ComponentCard({
   const styles: {
     outer: string;
     inner?: string;
-  } = isSearchPage
-    ? {
-        outer: "col-span-12 grid grid-cols-12",
-        inner: twJoin(colStyles, alignmentStyles),
-      }
-    : {
-        outer: twJoin(colStyles, alignmentStyles),
-      };
+  } =
+    layoutMode === "subgrid"
+      ? {
+          outer: "col-span-12 grid grid-cols-12",
+          inner: twJoin(colStyles, alignmentStyles),
+        }
+      : {
+          outer: twJoin(colStyles, alignmentStyles),
+        };
 
   return (
     <div

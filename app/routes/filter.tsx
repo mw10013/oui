@@ -67,7 +67,7 @@ export default function RouteComponent({
           <ComponentCard
             key={component.name}
             component={component}
-            isSearchPage
+            layoutMode="subgrid"
           >
             <ComponentLoader name={component.name} />
             <ComponentDetails component={component} />
