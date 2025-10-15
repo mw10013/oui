@@ -36,10 +36,6 @@ export default function ComponentCard({
 
   const colSpan =
     component.meta?.colSpan === 2 ? 2 : component.meta?.colSpan === 3 ? 3 : 1;
-  const baseStyles = colSpanMap[colSpan].base;
-  const startStyles = layoutMode === "subgrid" ? colSpanMap[colSpan].start : "";
-  const colStyles = twJoin(baseStyles, startStyles);
-
   const alignmentStyles =
     component.meta?.style === "flex-center"
       ? "flex justify-center items-center"
@@ -54,10 +50,14 @@ export default function ComponentCard({
     layoutMode === "subgrid"
       ? {
           outer: "col-span-12 grid grid-cols-12",
-          inner: twJoin(colStyles, alignmentStyles),
+          inner: twJoin(
+            colSpanMap[colSpan].base,
+            colSpanMap[colSpan].start,
+            alignmentStyles,
+          ),
         }
       : {
-          outer: twJoin(colStyles, alignmentStyles),
+          outer: twJoin(colSpanMap[colSpan].base, alignmentStyles),
         };
 
   return (
