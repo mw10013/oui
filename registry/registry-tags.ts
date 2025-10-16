@@ -9,6 +9,8 @@ export const registryTags = [
   "checkbox ex",
   "checkbox group",
   "checkbox group ex",
+  "combo box",
+  "combo box ex",
   "dialog",
   "disclosure",
   "disclosure ex",
