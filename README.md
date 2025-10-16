@@ -12,7 +12,6 @@
 
 - component code/layout
 - tags
-- v0
 - loading...
 - logo, favicon
 - readme, contributing?
