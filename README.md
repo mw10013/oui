@@ -1,32 +1,75 @@
-# Oui
-
-- React Aria Components with Shadcn characteristics
-- https://oui.mw10013.workers.dev
-
-## Credit
-
-- Concept by https://coss.com/origin
-- https://github.com/cosscom/coss/tree/main/apps/origin
-
 ## TODO
 
 - component code/layout
 - tags
-- loading...
-- logo, favicon
-- readme, contributing?
-- analytics
-- theme toggle: use oui checkbox/focus ring? oui-toggle?
 - browser console.log errors
+- loading...
+- theme toggle: use oui checkbox/focus ring? oui-toggle?
+- seo, meta
+- analytics
+- staging
+- readme
+- PR to add to shadcn
+
 - eslint-disable-next-line react-hooks/exhaustive-deps
 - registry:build: delete r/\*
-- seo, meta
-- PR to add to shadcn
+- favicon?
+- contributing?
+
+# Oui
+
+**React Aria Components with Shadcn characteristics**
+
+Copy-and-paste react aria components that run side-by-side with shadcn components.
+
+**Demo** → [https://oui.mw10013.workers.dev](https://oui.mw10013.workers.dev)
+
+## Getting Started
+
+Oui is designed to integrate seamlessly with the shadcn ecosystem. The components follow shadcn conventions and use the shadcn design system, so they'll feel familiar to anyone who has used shadcn before.
+
+**1. Install Shadcn**
+
+Install [shadcn](https://ui.shadcn.com/) using the official [instructions](https://ui.shadcn.com/docs/installation).
+
+**2. Add oui components using the shadcn cli**
+
+Use the shadcn [cli](https://ui.shadcn.com/docs/cli) to add oui components.
+
+```
+pnpm dlx shadcn@latest add https://oui.mw10013.workers.dev/r/[COMPONENT].json
+npx shadcn@latest add https://oui.mw10013.workers.dev/r/[COMPONENT].json
+bunx --bun shadcn@latest add https://oui.mw10013.workers.dev/r/[COMPONENT].json
+```
+
+You can use the [demo](https://oui.mw10013.workers.dev) to find components. View code for a component contains the cli to add.
+
+Note: Oui does not overwrite any shadcn files so you can run oui and shadcn components side-by-side.
+
+**3. Add all oui components (optional)**
+
+You can add all oui components with a single command by adding `oui-index`. Only the core ui and ex (extension) components are added, not the demos.
+
+```
+pnpm dlx shadcn@latest add https://oui.mw10013.workers.dev/r/oui-index.json
+npx shadcn@latest add https://oui.mw10013.workers.dev/r/oui-index.json
+bunx --bun shadcn@latest add https://oui.mw10013.workers.dev/r/oui-index.json
+```
+
+```ts
+import * as Oui from "@/components/ui/oui-index"
+
+export default Component() {
+  return (<Oui.Button>Hello, Oui</Oui.Button>)
+}
+```
 
 ## Local Dev
 
-- pnpm i
-- pnpm dev
+```
+pnpm i
+pnpm dev
+```
 
 ## Deploy
 
@@ -37,37 +80,10 @@
     - Build command: CLOUDFLARE_ENV=production pnpm build
     - Deploy command: pnpm exec wrangler deploy
 
-## Shadcn
+## Credit
 
-```
-pnpm exec shadcn help
-pnpm exec shadcn help build
-pnpm exec shadcn add button
-pnpm exec shadcn add --all --yes --overwrite
-pnpm exec shadcn migrate radix
-pnpm registry:build
+Concept by [https://coss.com/origin](https://coss.com/origin)
 
-```
+## License
 
-### VariantProps
-
-May need to patch to import `VariantProps` as a type, especially `sidebar.tsx`.
-
-```
-import type { VariantProps } from "class-variance-authority";
-```
-
-## React Aria Components
-
-- Modals are Massive (block everything), Popovers are Petite (just pop up), both make Dialog Content (happy, accessible contents)
-- Menus mean Motion (action), Dialogs deliver Depth (details), keep them separate and do not Nest.
-
-## Tailwind
-
-- **Utility Class:** A class applying a specific, predefined style rule.
-- **Variant (Condition):** Controls when a utility applies (e.g., `hover:`, `md:`, `dark:`).
-- **Modifier (Adjustment):** Adjusts a utility's value or behavior (e.g., `/50`, `-`, `!`).
-- **Property:** The standard CSS property name targeted by utilities or used in arbitrary syntax (`[property:value]`).
-- **Theme Mapping:** Maps semantic utility names (e.g., `primary`) via `@theme` (e.g., `--color-primary`) to CSS variables (e.g., `var(--primary)`) holding the actual values.
-
-- https://nicolasgallagher.com/about-html-semantics-front-end-architecture/#component-modifiers
+Licensed under the [MIT License](https://github.com/mw10013/oui/blob/main/LICENSE).

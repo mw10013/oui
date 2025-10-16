@@ -14,23 +14,6 @@ export default function Header() {
         >
           Oui
         </Link>
-        {/* <Link href="/" className="shrink-0" aria-label="Home">
-          <span className="sr-only">Oui</span>
-          <img
-            src="/logo.svg"
-            alt="Oui logo"
-            width={117}
-            height={24}
-            className="dark:hidden"
-          />
-          <img
-            src="/logo-dark.svg"
-            alt="Oui logo"
-            width={117}
-            height={24}
-            className="hidden dark:block"
-          />
-        </Link> */}
         <div className="flex items-center gap-1">
           <Link
             href="https://github.com/mw10013/oui"

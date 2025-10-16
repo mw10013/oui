@@ -17,7 +17,8 @@
     "clean:wrangler": "rm -rf .wrangler",
     "clean:etc": "rm -rf .react-router build dist",
     "tail:PRODUCTION": "wrangler tail oui",
-    "registry:build": "shadcn build"
+    "registry:build": "shadcn build",
+    "migrate:radix": "shadcn migrate radix"
   },
   "dependencies": {
     "@epic-web/invariant": "1.0.0",
