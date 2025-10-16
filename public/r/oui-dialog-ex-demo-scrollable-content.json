@@ -17,7 +17,10 @@
   ],
   "meta": {
     "tags": [
-      "dialog"
+      "dialog",
+      "dialog ex",
+      "button",
+      "heading"
     ],
     "alignment": "flex-center"
   }

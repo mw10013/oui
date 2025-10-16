@@ -17,7 +17,11 @@
   ],
   "meta": {
     "tags": [
-      "dialog"
+      "dialog",
+      "dialog ex alert",
+      "button",
+      "heading",
+      "modal ex"
     ]
   }
 }

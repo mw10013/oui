@@ -642,6 +642,274 @@
       ]
     },
     {
+      "name": "oui-dialog-demo",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-dialog-demo.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "https://oui.mw10013.workers.dev/r/oui-button.json",
+        "https://oui.mw10013.workers.dev/r/oui-dialog.json",
+        "https://oui.mw10013.workers.dev/r/oui-form.json",
+        "https://oui.mw10013.workers.dev/r/oui-heading.json",
+        "https://oui.mw10013.workers.dev/r/oui-input.json",
+        "https://oui.mw10013.workers.dev/r/oui-label.json",
+        "https://oui.mw10013.workers.dev/r/oui-modal.json",
+        "https://oui.mw10013.workers.dev/r/oui-text-field.json"
+      ],
+      "meta": {
+        "tags": [
+          "dialog",
+          "button",
+          "form",
+          "heading",
+          "input",
+          "label",
+          "modal",
+          "text-field"
+        ],
+        "alignment": "flex-center"
+      }
+    },
+    {
+      "name": "oui-dialog-ex",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-dialog-ex.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "https://oui.mw10013.workers.dev/r/oui-dialog.json",
+        "https://oui.mw10013.workers.dev/r/oui-button.json",
+        "https://oui.mw10013.workers.dev/r/oui-modal-ex.json"
+      ],
+      "meta": {
+        "tags": ["dialog", "dialog ex", "button", "modal ex"]
+      }
+    },
+    {
+      "name": "oui-dialog-ex-demo-form",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-dialog-ex-demo-form.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "https://oui.mw10013.workers.dev/r/oui-button.json",
+        "https://oui.mw10013.workers.dev/r/oui-dialog.json",
+        "https://oui.mw10013.workers.dev/r/oui-dialog-ex.json",
+        "https://oui.mw10013.workers.dev/r/oui-heading.json",
+        "https://oui.mw10013.workers.dev/r/oui-text-field-ex.json"
+      ],
+      "meta": {
+        "tags": ["dialog", "dialog ex", "button", "text field ex", "heading"],
+        "alignment": "flex-center"
+      }
+    },
+    {
+      "name": "oui-dialog-ex-demo-scrollable-content",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-dialog-ex-demo-scrollable-content.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "https://oui.mw10013.workers.dev/r/oui-button.json",
+        "https://oui.mw10013.workers.dev/r/oui-dialog.json",
+        "https://oui.mw10013.workers.dev/r/oui-dialog-ex.json",
+        "https://oui.mw10013.workers.dev/r/oui-heading.json"
+      ],
+      "meta": {
+        "tags": ["dialog", "dialog ex", "button", "heading"],
+        "alignment": "flex-center"
+      }
+    },
+    {
+      "name": "oui-dialog-ex-demo-sticky-footer",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-dialog-ex-demo-sticky-footer.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "https://oui.mw10013.workers.dev/r/oui-button.json",
+        "https://oui.mw10013.workers.dev/r/oui-dialog.json",
+        "https://oui.mw10013.workers.dev/r/oui-dialog-ex.json",
+        "https://oui.mw10013.workers.dev/r/oui-heading.json"
+      ],
+      "meta": {
+        "tags": ["dialog", "dialog ex", "button", "heading"],
+        "alignment": "flex-center"
+      }
+    },
+    {
+      "name": "oui-dialog-ex-alert",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-dialog-ex-alert.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "https://oui.mw10013.workers.dev/r/oui-button.json",
+        "https://oui.mw10013.workers.dev/r/oui-dialog.json",
+        "https://oui.mw10013.workers.dev/r/oui-heading.json",
+        "https://oui.mw10013.workers.dev/r/oui-modal-ex.json"
+      ],
+      "meta": {
+        "tags": ["dialog", "dialog ex alert", "button", "heading", "modal ex"]
+      }
+    },
+    {
+      "name": "oui-dialog-ex-demo-alert",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-dialog-ex-demo-alert.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "https://oui.mw10013.workers.dev/r/oui-button.json",
+        "https://oui.mw10013.workers.dev/r/oui-dialog.json",
+        "https://oui.mw10013.workers.dev/r/oui-dialog-ex.json",
+        "https://oui.mw10013.workers.dev/r/oui-heading.json"
+      ],
+      "meta": {
+        "tags": ["dialog", "dialog ex", "button", "heading"],
+        "alignment": "flex-center"
+      }
+    },
+    {
+      "name": "oui-dialog-ex-alert-demo-confirm",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-dialog-ex-alert-demo-confirm.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "https://oui.mw10013.workers.dev/r/oui-button.json",
+        "https://oui.mw10013.workers.dev/r/oui-dialog-ex-alert.json"
+      ],
+      "meta": {
+        "tags": ["dialog", "dialog ex alert", "button"],
+        "alignment": "flex-center"
+      }
+    },
+    {
+      "name": "oui-dialog-ex-alert-demo-ack",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-dialog-ex-alert-demo-ack.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "https://oui.mw10013.workers.dev/r/oui-button.json",
+        "https://oui.mw10013.workers.dev/r/oui-dialog-ex-alert.json"
+      ],
+      "meta": {
+        "tags": ["dialog", "dialog ex alert", "button"],
+        "alignment": "flex-center"
+      }
+    },
+    {
+      "name": "oui-dialog-ex-alert-demo-programmatic",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-dialog-ex-alert-demo-programmatic.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "https://oui.mw10013.workers.dev/r/oui-button.json",
+        "https://oui.mw10013.workers.dev/r/oui-dialog-ex-alert.json"
+      ],
+      "meta": {
+        "tags": ["dialog", "dialog ex alert", "button"],
+        "alignment": "flex-center"
+      }
+    },
+    {
+      "name": "oui-dialog-ex-sheet",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-dialog-ex-sheet.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "https://oui.mw10013.workers.dev/r/oui-button.json",
+        "https://oui.mw10013.workers.dev/r/oui-dialog.json",
+        "https://oui.mw10013.workers.dev/r/oui-modal-ex-sheet.json"
+      ],
+      "meta": {
+        "tags": ["dialog", "dialog ex sheet", "button", "modal ex sheet"]
+      }
+    },
+    {
+      "name": "oui-dialog-ex-sheet-demo",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-dialog-ex-sheet-demo.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "https://oui.mw10013.workers.dev/r/oui-button.json",
+        "https://oui.mw10013.workers.dev/r/oui-dialog.json",
+        "https://oui.mw10013.workers.dev/r/oui-dialog-ex-sheet.json",
+        "https://oui.mw10013.workers.dev/r/oui-heading.json",
+        "https://oui.mw10013.workers.dev/r/oui-text-field-ex.json"
+      ],
+      "meta": {
+        "tags": [
+          "dialog",
+          "dialog ex sheet",
+          "button",
+          "heading",
+          "text field ex"
+        ]
+      }
+    },
+    {
+      "name": "oui-dialog-ex-sheet-demo-sides",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-dialog-ex-sheet-demo-sides.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "https://oui.mw10013.workers.dev/r/oui-button.json",
+        "https://oui.mw10013.workers.dev/r/oui-dialog.json",
+        "https://oui.mw10013.workers.dev/r/oui-dialog-ex-sheet.json",
+        "https://oui.mw10013.workers.dev/r/oui-heading.json"
+      ],
+      "meta": {
+        "tags": ["dialog", "dialog ex sheet", "button", "heading"]
+      }
+    },
+    {
       "name": "oui-disclosure",
       "type": "registry:ui",
       "files": [
@@ -1164,45 +1432,6 @@
       "dependencies": ["react-aria-components"]
     },
     {
-      "name": "oui-dialog-ex",
-      "type": "registry:component",
-      "files": [
-        {
-          "path": "registry/components/oui-dialog-ex.tsx",
-          "type": "registry:component"
-        }
-      ],
-      "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/oui-dialog.json",
-        "https://oui.mw10013.workers.dev/r/oui-button.json",
-        "https://oui.mw10013.workers.dev/r/oui-modal-ex.json"
-      ],
-      "meta": {
-        "tags": ["dialog", "dialog ex"]
-      }
-    },
-    {
-      "name": "oui-dialog-ex-demo-form",
-      "type": "registry:component",
-      "files": [
-        {
-          "path": "registry/components/oui-dialog-ex-demo-form.tsx",
-          "type": "registry:component"
-        }
-      ],
-      "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/oui-button.json",
-        "https://oui.mw10013.workers.dev/r/oui-dialog.json",
-        "https://oui.mw10013.workers.dev/r/oui-dialog-ex.json",
-        "https://oui.mw10013.workers.dev/r/oui-heading.json",
-        "https://oui.mw10013.workers.dev/r/oui-text-field-ex.json"
-      ],
-      "meta": {
-        "tags": ["dialog", "dialog ex"],
-        "alignment": "flex-center"
-      }
-    },
-    {
       "name": "oui-modal-ex",
       "type": "registry:component",
       "files": [
@@ -1340,157 +1569,6 @@
       ],
       "meta": {
         "tags": ["text field"]
-      }
-    },
-    {
-      "name": "oui-dialog-ex-demo-scrollable-content",
-      "type": "registry:component",
-      "files": [
-        {
-          "path": "registry/components/oui-dialog-ex-demo-scrollable-content.tsx",
-          "type": "registry:component"
-        }
-      ],
-      "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/oui-button.json",
-        "https://oui.mw10013.workers.dev/r/oui-dialog.json",
-        "https://oui.mw10013.workers.dev/r/oui-dialog-ex.json",
-        "https://oui.mw10013.workers.dev/r/oui-heading.json"
-      ],
-      "meta": {
-        "tags": ["dialog"],
-        "alignment": "flex-center"
-      }
-    },
-    {
-      "name": "oui-dialog-ex-demo-sticky-footer",
-      "type": "registry:component",
-      "files": [
-        {
-          "path": "registry/components/oui-dialog-ex-demo-sticky-footer.tsx",
-          "type": "registry:component"
-        }
-      ],
-      "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/oui-button.json",
-        "https://oui.mw10013.workers.dev/r/oui-dialog.json",
-        "https://oui.mw10013.workers.dev/r/oui-dialog-ex.json",
-        "https://oui.mw10013.workers.dev/r/oui-heading.json"
-      ],
-      "meta": {
-        "tags": ["dialog"],
-        "alignment": "flex-center"
-      }
-    },
-    {
-      "name": "oui-dialog-ex-alert",
-      "type": "registry:component",
-      "files": [
-        {
-          "path": "registry/components/oui-dialog-ex-alert.tsx",
-          "type": "registry:component"
-        }
-      ],
-      "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/oui-button.json",
-        "https://oui.mw10013.workers.dev/r/oui-dialog.json",
-        "https://oui.mw10013.workers.dev/r/oui-heading.json",
-        "https://oui.mw10013.workers.dev/r/oui-modal-ex.json"
-      ],
-      "meta": {
-        "tags": ["dialog"]
-      }
-    },
-    {
-      "name": "oui-dialog-ex-sheet",
-      "type": "registry:component",
-      "files": [
-        {
-          "path": "registry/components/oui-dialog-ex-sheet.tsx",
-          "type": "registry:component"
-        }
-      ],
-      "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/oui-button.json",
-        "https://oui.mw10013.workers.dev/r/oui-dialog.json",
-        "https://oui.mw10013.workers.dev/r/oui-modal-ex-sheet.json"
-      ],
-      "meta": {
-        "tags": ["dialog"]
-      }
-    },
-    {
-      "name": "oui-dialog-ex-demo-alert",
-      "type": "registry:component",
-      "files": [
-        {
-          "path": "registry/components/oui-dialog-ex-demo-alert.tsx",
-          "type": "registry:component"
-        }
-      ],
-      "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/oui-button.json",
-        "https://oui.mw10013.workers.dev/r/oui-dialog.json",
-        "https://oui.mw10013.workers.dev/r/oui-dialog-ex.json",
-        "https://oui.mw10013.workers.dev/r/oui-heading.json"
-      ],
-      "meta": {
-        "tags": ["dialog"],
-        "alignment": "flex-center"
-      }
-    },
-    {
-      "name": "oui-dialog-ex-alert-demo-confirm",
-      "type": "registry:component",
-      "files": [
-        {
-          "path": "registry/components/oui-dialog-ex-alert-demo-confirm.tsx",
-          "type": "registry:component"
-        }
-      ],
-      "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/oui-button.json",
-        "https://oui.mw10013.workers.dev/r/oui-dialog-ex-alert.json"
-      ],
-      "meta": {
-        "tags": ["dialog"],
-        "alignment": "flex-center"
-      }
-    },
-    {
-      "name": "oui-dialog-ex-alert-demo-ack",
-      "type": "registry:component",
-      "files": [
-        {
-          "path": "registry/components/oui-dialog-ex-alert-demo-ack.tsx",
-          "type": "registry:component"
-        }
-      ],
-      "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/oui-button.json",
-        "https://oui.mw10013.workers.dev/r/oui-dialog-ex-alert.json"
-      ],
-      "meta": {
-        "tags": ["dialog"],
-        "alignment": "flex-center"
-      }
-    },
-    {
-      "name": "oui-dialog-ex-alert-demo-programmatic",
-      "type": "registry:component",
-      "files": [
-        {
-          "path": "registry/components/oui-dialog-ex-alert-demo-programmatic.tsx",
-          "type": "registry:component"
-        }
-      ],
-      "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/oui-button.json",
-        "https://oui.mw10013.workers.dev/r/oui-dialog-ex-alert.json"
-      ],
-      "meta": {
-        "tags": ["dialog"],
-        "alignment": "flex-center"
       }
     },
     {
@@ -2439,45 +2517,6 @@
       "dependencies": ["lucide-react"],
       "meta": {
         "tags": ["table"]
-      }
-    },
-    {
-      "name": "oui-dialog-ex-sheet-demo",
-      "type": "registry:component",
-      "files": [
-        {
-          "path": "registry/components/oui-dialog-ex-sheet-demo.tsx",
-          "type": "registry:component"
-        }
-      ],
-      "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/oui-button.json",
-        "https://oui.mw10013.workers.dev/r/oui-dialog.json",
-        "https://oui.mw10013.workers.dev/r/oui-dialog-ex-sheet.json",
-        "https://oui.mw10013.workers.dev/r/oui-heading.json",
-        "https://oui.mw10013.workers.dev/r/oui-text-field-ex.json"
-      ],
-      "meta": {
-        "tags": ["dialog"]
-      }
-    },
-    {
-      "name": "oui-dialog-ex-sheet-demo-sides",
-      "type": "registry:component",
-      "files": [
-        {
-          "path": "registry/components/oui-dialog-ex-sheet-demo-sides.tsx",
-          "type": "registry:component"
-        }
-      ],
-      "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/oui-button.json",
-        "https://oui.mw10013.workers.dev/r/oui-dialog.json",
-        "https://oui.mw10013.workers.dev/r/oui-dialog-ex-sheet.json",
-        "https://oui.mw10013.workers.dev/r/oui-heading.json"
-      ],
-      "meta": {
-        "tags": ["dialog"]
       }
     },
     {

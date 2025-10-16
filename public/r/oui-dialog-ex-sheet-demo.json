@@ -18,7 +18,11 @@
   ],
   "meta": {
     "tags": [
-      "dialog"
+      "dialog",
+      "dialog ex sheet",
+      "button",
+      "heading",
+      "text field ex"
     ]
   }
 }

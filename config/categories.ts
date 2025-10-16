@@ -68,6 +68,7 @@ export const categories: Category[] = [
     name: "Dialog",
     slug: "dialog",
     components: [
+      { name: "oui-dialog-demo" },
       { name: "oui-dialog-ex" },
       { name: "oui-dialog-ex-demo-form" },
       { name: "oui-dialog-ex-demo-scrollable-content" },

@@ -16,7 +16,10 @@
   ],
   "meta": {
     "tags": [
-      "dialog"
+      "dialog",
+      "dialog ex sheet",
+      "button",
+      "modal ex sheet"
     ]
   }
 }
