@@ -17,7 +17,9 @@
   "meta": {
     "tags": [
       "autocomplete",
-      "autocomplete ex"
+      "autocomplete ex",
+      "list box",
+      "select ex popover"
     ]
   }
 }

@@ -1460,6 +1460,25 @@
       }
     },
     {
+      "name": "oui-autocomplete-demo",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-autocomplete-demo.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "https://oui.mw10013.workers.dev/r/oui-input.json",
+        "https://oui.mw10013.workers.dev/r/oui-label.json",
+        "https://oui.mw10013.workers.dev/r/oui-list-box.json",
+        "https://oui.mw10013.workers.dev/r/oui-search-field.json"
+      ],
+      "meta": {
+        "tags": ["autocomplete", "input", "label", "list box", "search field"]
+      }
+    },
+    {
       "name": "oui-autocomplete-ex",
       "type": "registry:component",
       "files": [
@@ -1491,7 +1510,13 @@
         "https://oui.mw10013.workers.dev/r/oui-select-ex-popover.json"
       ],
       "meta": {
-        "tags": ["autocomplete", "autocomplete ex"]
+        "tags": [
+          "autocomplete",
+          "autocomplete ex",
+          "avatar",
+          "list box",
+          "select ex popover"
+        ]
       }
     },
     {
@@ -1509,7 +1534,12 @@
         "https://oui.mw10013.workers.dev/r/oui-select-ex-popover.json"
       ],
       "meta": {
-        "tags": ["autocomplete", "autocomplete ex"]
+        "tags": [
+          "autocomplete",
+          "autocomplete ex",
+          "list box",
+          "select ex popover"
+        ]
       }
     },
     {

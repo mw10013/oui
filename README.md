@@ -11,6 +11,10 @@
 - readme
 - PR to add to shadcn
 
+- checkbox: layout
+- disclosure: animation
+- autocomplete: button x
+
 - eslint-disable-next-line react-hooks/exhaustive-deps
 - registry:build: delete r/\*
 - favicon?
