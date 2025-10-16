@@ -106,7 +106,7 @@ export const categories: Category[] = [
   {
     name: "Group",
     slug: "group",
-    components: [],
+    components: [{ name: "oui-group-demo" }],
   },
   {
     name: "Header",
