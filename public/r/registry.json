@@ -497,6 +497,20 @@
       }
     },
     {
+      "name": "oui-combo-box",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "registry/components/ui/oui-combo-box.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "registryDependencies": [
+        "https://oui.mw10013.workers.dev/r/oui-base.json"
+      ],
+      "dependencies": ["react-aria-components"]
+    },
+    {
       "name": "oui-combo-box-demo",
       "type": "registry:component",
       "files": [
@@ -506,6 +520,7 @@
         }
       ],
       "registryDependencies": [
+        "https://oui.mw10013.workers.dev/r/oui-combo-box.json",
         "https://oui.mw10013.workers.dev/r/oui-button.json",
         "https://oui.mw10013.workers.dev/r/oui-group.json",
         "https://oui.mw10013.workers.dev/r/oui-input.json",
@@ -528,6 +543,7 @@
         }
       ],
       "registryDependencies": [
+        "https://oui.mw10013.workers.dev/r/oui-combo-box.json",
         "https://oui.mw10013.workers.dev/r/oui-button.json",
         "https://oui.mw10013.workers.dev/r/oui-field-error.json",
         "https://oui.mw10013.workers.dev/r/oui-group.json",

@@ -6,6 +6,7 @@
     "lucide-react"
   ],
   "registryDependencies": [
+    "https://oui.mw10013.workers.dev/r/oui-combo-box.json",
     "https://oui.mw10013.workers.dev/r/oui-button.json",
     "https://oui.mw10013.workers.dev/r/oui-group.json",
     "https://oui.mw10013.workers.dev/r/oui-input.json",
@@ -16,7 +17,7 @@
   "files": [
     {
       "path": "registry/components/oui-combo-box-demo.tsx",
-      "content": "import { Button } from \"@/registry/components/ui/oui-button\";\nimport { Group } from \"@/registry/components/ui/oui-group\";\nimport { Input } from \"@/registry/components/ui/oui-input\";\nimport { Label } from \"@/registry/components/ui/oui-label\";\nimport { ListBoxItem } from \"@/registry/components/ui/oui-list-box\";\nimport { Popover } from \"@/registry/components/ui/oui-popover\";\nimport { ChevronDown } from \"lucide-react\";\nimport * as Rac from \"react-aria-components\";\n\nexport default function Component() {\n  return (\n    <Rac.ComboBox>\n      <Label>Favorite Animal</Label>\n      <Group>\n        <Input />\n        <Button>\n          <ChevronDown size={16} />\n        </Button>\n      </Group>\n      <Popover>\n        <Rac.ListBox>\n          <ListBoxItem>Aardvark</ListBoxItem>\n          <ListBoxItem>Cat</ListBoxItem>\n          <ListBoxItem>Dog</ListBoxItem>\n          <ListBoxItem>Kangaroo</ListBoxItem>\n          <ListBoxItem>Panda</ListBoxItem>\n          <ListBoxItem>Snake</ListBoxItem>\n        </Rac.ListBox>\n      </Popover>\n    </Rac.ComboBox>\n  );\n}\n",
+      "content": "import { Button } from \"@/registry/components/ui/oui-button\";\nimport { ComboBox } from \"@/registry/components/ui/oui-combo-box\";\nimport { Group } from \"@/registry/components/ui/oui-group\";\nimport { Input } from \"@/registry/components/ui/oui-input\";\nimport { Label } from \"@/registry/components/ui/oui-label\";\nimport { ListBoxItem } from \"@/registry/components/ui/oui-list-box\";\nimport { Popover } from \"@/registry/components/ui/oui-popover\";\nimport { ChevronDown } from \"lucide-react\";\nimport * as Rac from \"react-aria-components\";\n\nexport default function Component() {\n  return (\n    <ComboBox>\n      <Label>Favorite Animal</Label>\n      <Group>\n        <Input variant=\"ghost\" />\n        <Button variant=\"ghost\" size=\"icon\">\n          <ChevronDown className=\"size-4 shrink-0 opacity-50\" />\n        </Button>\n      </Group>\n      <Popover>\n        <Rac.ListBox>\n          <ListBoxItem>Aardvark</ListBoxItem>\n          <ListBoxItem>Cat</ListBoxItem>\n          <ListBoxItem>Dog</ListBoxItem>\n          <ListBoxItem>Kangaroo</ListBoxItem>\n          <ListBoxItem>Panda</ListBoxItem>\n          <ListBoxItem>Snake</ListBoxItem>\n        </Rac.ListBox>\n      </Popover>\n    </ComboBox>\n  );\n}\n",
       "type": "registry:component"
     }
   ],

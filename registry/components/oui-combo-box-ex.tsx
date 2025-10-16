@@ -7,6 +7,7 @@ import { Input } from "@/registry/components/ui/oui-input";
 import { Label } from "@/registry/components/ui/oui-label";
 import { Popover } from "@/registry/components/ui/oui-popover";
 import { Text } from "@/registry/components/ui/oui-text";
+import { ComboBox } from "@/registry/components/ui/oui-combo-box";
 
 export interface ComboBoxExProps<T extends object>
   extends Omit<Rac.ComboBoxProps<T>, "children"> {
@@ -28,7 +29,7 @@ export function ComboBoxEx<T extends object>({
   ...props
 }: ComboBoxExProps<T>) {
   return (
-    <Rac.ComboBox {...props}>
+    <ComboBox {...props}>
       {label && <Label>{label}</Label>}
       <Group>
         <Input variant="ghost" placeholder={placeholder} />
@@ -41,7 +42,7 @@ export function ComboBoxEx<T extends object>({
       <Popover>
         <Rac.ListBox items={items}>{children}</Rac.ListBox>
       </Popover>
-    </Rac.ComboBox>
+    </ComboBox>
   );
 }
 

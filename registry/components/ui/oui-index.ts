@@ -2,6 +2,7 @@ export * from "@/registry/components/ui/oui-base";
 export * from "@/registry/components/ui/oui-button";
 export * from "@/registry/components/ui/oui-checkbox-group";
 export * from "@/registry/components/ui/oui-checkbox";
+export * from "@/registry/components/ui/oui-combo-box";
 export * from "@/registry/components/ui/oui-dialog";
 export * from "@/registry/components/ui/oui-disclosure";
 export * from "@/registry/components/ui/oui-field-error";
