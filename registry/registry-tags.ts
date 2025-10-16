@@ -1,17 +1,15 @@
 // Before adding a new tag, ensure it doesn't already exist in the array.
 export const registryTags = [
-  "disabled",
-
   // oui ui and ex tags
   "autocomplete",
   "autocomplete ex",
-
   "base",
   "button",
   "checkbox group",
   "checkbox",
   "dialog",
   "disclosure",
+  "disclosure ex",
   "field error",
   "form",
   "group",
@@ -40,7 +38,7 @@ export const registryTags = [
   "tooltip",
 
   // generic tags
-  // "disabled",
+  "disabled",
 
   // Component tags
   // "accordion",
