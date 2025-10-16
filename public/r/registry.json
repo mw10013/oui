@@ -115,7 +115,7 @@
         "https://oui.mw10013.workers.dev/r/oui-heading.json"
       ],
       "meta": {
-        "tags": ["disclosure"]
+        "tags": ["disclosure", "heading"]
       }
     },
     {
@@ -132,7 +132,7 @@
         "https://oui.mw10013.workers.dev/r/oui-heading.json"
       ],
       "meta": {
-        "tags": ["disclosure", "disclosure ex"]
+        "tags": ["disclosure", "disclosure ex", "heading"]
       }
     },
     {
