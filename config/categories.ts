@@ -96,7 +96,7 @@ export const categories: Category[] = [
   {
     name: "Field Error",
     slug: "field-error",
-    components: [],
+    components: [{ name: "oui-field-error-demo" }],
   },
   {
     name: "Form",
