@@ -4,6 +4,89 @@
   "homepage": "https://github.com/mw10013/cloudflare-effect-react-router-saas",
   "items": [
     {
+      "name": "oui-autocomplete-demo",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-autocomplete-demo.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "https://oui.mw10013.workers.dev/r/oui-input.json",
+        "https://oui.mw10013.workers.dev/r/oui-label.json",
+        "https://oui.mw10013.workers.dev/r/oui-list-box.json",
+        "https://oui.mw10013.workers.dev/r/oui-search-field.json"
+      ],
+      "meta": {
+        "tags": ["autocomplete", "input", "label", "list box", "search field"]
+      }
+    },
+    {
+      "name": "oui-autocomplete-ex",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-autocomplete-ex.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "https://oui.mw10013.workers.dev/r/oui-search-field-ex.json"
+      ],
+      "meta": {
+        "tags": ["autocomplete", "autocomplete ex"]
+      }
+    },
+    {
+      "name": "oui-autocomplete-ex-demo",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-autocomplete-ex-demo.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "https://ui.shadcn.com/r/styles/new-york/avatar.json",
+        "https://oui.mw10013.workers.dev/r/oui-autocomplete-ex.json",
+        "https://oui.mw10013.workers.dev/r/oui-list-box.json",
+        "https://oui.mw10013.workers.dev/r/oui-select-ex-popover.json"
+      ],
+      "meta": {
+        "tags": [
+          "autocomplete",
+          "autocomplete ex",
+          "avatar",
+          "list box",
+          "select ex popover"
+        ]
+      }
+    },
+    {
+      "name": "oui-autocomplete-ex-demo-searchable",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-autocomplete-ex-demo-searchable.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "https://oui.mw10013.workers.dev/r/oui-autocomplete-ex.json",
+        "https://oui.mw10013.workers.dev/r/oui-list-box.json",
+        "https://oui.mw10013.workers.dev/r/oui-select-ex-popover.json"
+      ],
+      "meta": {
+        "tags": [
+          "autocomplete",
+          "autocomplete ex",
+          "list box",
+          "select ex popover"
+        ]
+      }
+    },
+    {
       "name": "oui-base",
       "type": "registry:ui",
       "files": [
@@ -32,6 +115,212 @@
         "class-variance-authority",
         "tailwind-merge"
       ]
+    },
+    {
+      "name": "oui-button-demo",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-button-demo.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "https://oui.mw10013.workers.dev/r/oui-button.json"
+      ],
+      "meta": {
+        "tags": ["button"],
+        "alignment": "text-center"
+      }
+    },
+    {
+      "name": "oui-button-demo-outline",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-button-demo-outline.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "https://oui.mw10013.workers.dev/r/oui-button.json"
+      ],
+      "meta": {
+        "tags": ["button"],
+        "alignment": "text-center"
+      }
+    },
+    {
+      "name": "oui-button-demo-destructive",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-button-demo-destructive.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "https://oui.mw10013.workers.dev/r/oui-button.json"
+      ],
+      "meta": {
+        "tags": ["button"],
+        "alignment": "text-center"
+      }
+    },
+    {
+      "name": "oui-button-demo-disabled",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-button-demo-disabled.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "https://oui.mw10013.workers.dev/r/oui-button.json"
+      ],
+      "meta": {
+        "tags": ["button", "disabled"],
+        "alignment": "text-center"
+      }
+    },
+    {
+      "name": "oui-button-demo-disabled-animation",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-button-demo-disabled-animation.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "https://oui.mw10013.workers.dev/r/oui-button.json"
+      ],
+      "meta": {
+        "tags": ["button", "disabled"],
+        "alignment": "text-center"
+      }
+    },
+    {
+      "name": "oui-button-demo-ghost",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-button-demo-ghost.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "https://oui.mw10013.workers.dev/r/oui-button.json"
+      ],
+      "meta": {
+        "tags": ["button"],
+        "alignment": "text-center"
+      }
+    },
+    {
+      "name": "oui-button-demo-icon-left",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-button-demo-icon-left.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "https://oui.mw10013.workers.dev/r/oui-button.json"
+      ],
+      "dependencies": ["lucide-react"],
+      "meta": {
+        "tags": ["button"],
+        "alignment": "text-center"
+      }
+    },
+    {
+      "name": "oui-button-demo-icon-right",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-button-demo-icon-right.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "https://oui.mw10013.workers.dev/r/oui-button.json"
+      ],
+      "dependencies": ["lucide-react"],
+      "meta": {
+        "tags": ["button"],
+        "alignment": "text-center"
+      }
+    },
+    {
+      "name": "oui-button-demo-lg",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-button-demo-lg.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "https://oui.mw10013.workers.dev/r/oui-button.json"
+      ],
+      "meta": {
+        "tags": ["button"],
+        "alignment": "text-center"
+      }
+    },
+    {
+      "name": "oui-button-demo-link",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-button-demo-link.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "https://oui.mw10013.workers.dev/r/oui-button.json"
+      ],
+      "meta": {
+        "tags": ["button"],
+        "alignment": "text-center"
+      }
+    },
+    {
+      "name": "oui-button-demo-secondary",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-button-demo-secondary.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "https://oui.mw10013.workers.dev/r/oui-button.json"
+      ],
+      "meta": {
+        "tags": ["button"],
+        "alignment": "text-center"
+      }
+    },
+    {
+      "name": "oui-button-demo-sm",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-button-demo-sm.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "https://oui.mw10013.workers.dev/r/oui-button.json"
+      ],
+      "meta": {
+        "tags": ["button"],
+        "alignment": "text-center"
+      }
     },
     {
       "name": "oui-checkbox",
@@ -701,212 +990,6 @@
       }
     },
     {
-      "name": "oui-button-demo",
-      "type": "registry:component",
-      "files": [
-        {
-          "path": "registry/components/oui-button-demo.tsx",
-          "type": "registry:component"
-        }
-      ],
-      "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/oui-button.json"
-      ],
-      "meta": {
-        "tags": ["button"],
-        "alignment": "text-center"
-      }
-    },
-    {
-      "name": "oui-button-demo-destructive",
-      "type": "registry:component",
-      "files": [
-        {
-          "path": "registry/components/oui-button-demo-destructive.tsx",
-          "type": "registry:component"
-        }
-      ],
-      "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/oui-button.json"
-      ],
-      "meta": {
-        "tags": ["button"],
-        "alignment": "text-center"
-      }
-    },
-    {
-      "name": "oui-button-demo-disabled",
-      "type": "registry:component",
-      "files": [
-        {
-          "path": "registry/components/oui-button-demo-disabled.tsx",
-          "type": "registry:component"
-        }
-      ],
-      "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/oui-button.json"
-      ],
-      "meta": {
-        "tags": ["button", "disabled"],
-        "alignment": "text-center"
-      }
-    },
-    {
-      "name": "oui-button-demo-disabled-animation",
-      "type": "registry:component",
-      "files": [
-        {
-          "path": "registry/components/oui-button-demo-disabled-animation.tsx",
-          "type": "registry:component"
-        }
-      ],
-      "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/oui-button.json"
-      ],
-      "meta": {
-        "tags": ["button", "disabled"],
-        "alignment": "text-center"
-      }
-    },
-    {
-      "name": "oui-button-demo-ghost",
-      "type": "registry:component",
-      "files": [
-        {
-          "path": "registry/components/oui-button-demo-ghost.tsx",
-          "type": "registry:component"
-        }
-      ],
-      "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/oui-button.json"
-      ],
-      "meta": {
-        "tags": ["button"],
-        "alignment": "text-center"
-      }
-    },
-    {
-      "name": "oui-button-demo-icon-left",
-      "type": "registry:component",
-      "files": [
-        {
-          "path": "registry/components/oui-button-demo-icon-left.tsx",
-          "type": "registry:component"
-        }
-      ],
-      "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/oui-button.json"
-      ],
-      "dependencies": ["lucide-react"],
-      "meta": {
-        "tags": ["button"],
-        "alignment": "text-center"
-      }
-    },
-    {
-      "name": "oui-button-demo-icon-right",
-      "type": "registry:component",
-      "files": [
-        {
-          "path": "registry/components/oui-button-demo-icon-right.tsx",
-          "type": "registry:component"
-        }
-      ],
-      "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/oui-button.json"
-      ],
-      "dependencies": ["lucide-react"],
-      "meta": {
-        "tags": ["button"],
-        "alignment": "text-center"
-      }
-    },
-    {
-      "name": "oui-button-demo-lg",
-      "type": "registry:component",
-      "files": [
-        {
-          "path": "registry/components/oui-button-demo-lg.tsx",
-          "type": "registry:component"
-        }
-      ],
-      "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/oui-button.json"
-      ],
-      "meta": {
-        "tags": ["button"],
-        "alignment": "text-center"
-      }
-    },
-    {
-      "name": "oui-button-demo-link",
-      "type": "registry:component",
-      "files": [
-        {
-          "path": "registry/components/oui-button-demo-link.tsx",
-          "type": "registry:component"
-        }
-      ],
-      "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/oui-button.json"
-      ],
-      "meta": {
-        "tags": ["button"],
-        "alignment": "text-center"
-      }
-    },
-    {
-      "name": "oui-button-demo-outline",
-      "type": "registry:component",
-      "files": [
-        {
-          "path": "registry/components/oui-button-demo-outline.tsx",
-          "type": "registry:component"
-        }
-      ],
-      "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/oui-button.json"
-      ],
-      "meta": {
-        "tags": ["button"],
-        "alignment": "text-center"
-      }
-    },
-    {
-      "name": "oui-button-demo-secondary",
-      "type": "registry:component",
-      "files": [
-        {
-          "path": "registry/components/oui-button-demo-secondary.tsx",
-          "type": "registry:component"
-        }
-      ],
-      "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/oui-button.json"
-      ],
-      "meta": {
-        "tags": ["button"],
-        "alignment": "text-center"
-      }
-    },
-    {
-      "name": "oui-button-demo-sm",
-      "type": "registry:component",
-      "files": [
-        {
-          "path": "registry/components/oui-button-demo-sm.tsx",
-          "type": "registry:component"
-        }
-      ],
-      "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/oui-button.json"
-      ],
-      "meta": {
-        "tags": ["button"],
-        "alignment": "text-center"
-      }
-    },
-    {
       "name": "oui-input-demo",
       "type": "registry:component",
       "files": [
@@ -1457,89 +1540,6 @@
       ],
       "meta": {
         "tags": ["select", "disabled"]
-      }
-    },
-    {
-      "name": "oui-autocomplete-demo",
-      "type": "registry:component",
-      "files": [
-        {
-          "path": "registry/components/oui-autocomplete-demo.tsx",
-          "type": "registry:component"
-        }
-      ],
-      "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/oui-input.json",
-        "https://oui.mw10013.workers.dev/r/oui-label.json",
-        "https://oui.mw10013.workers.dev/r/oui-list-box.json",
-        "https://oui.mw10013.workers.dev/r/oui-search-field.json"
-      ],
-      "meta": {
-        "tags": ["autocomplete", "input", "label", "list box", "search field"]
-      }
-    },
-    {
-      "name": "oui-autocomplete-ex",
-      "type": "registry:component",
-      "files": [
-        {
-          "path": "registry/components/oui-autocomplete-ex.tsx",
-          "type": "registry:component"
-        }
-      ],
-      "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/oui-search-field-ex.json"
-      ],
-      "meta": {
-        "tags": ["autocomplete", "autocomplete ex"]
-      }
-    },
-    {
-      "name": "oui-autocomplete-ex-demo",
-      "type": "registry:component",
-      "files": [
-        {
-          "path": "registry/components/oui-autocomplete-ex-demo.tsx",
-          "type": "registry:component"
-        }
-      ],
-      "registryDependencies": [
-        "https://ui.shadcn.com/r/styles/new-york/avatar.json",
-        "https://oui.mw10013.workers.dev/r/oui-autocomplete-ex.json",
-        "https://oui.mw10013.workers.dev/r/oui-list-box.json",
-        "https://oui.mw10013.workers.dev/r/oui-select-ex-popover.json"
-      ],
-      "meta": {
-        "tags": [
-          "autocomplete",
-          "autocomplete ex",
-          "avatar",
-          "list box",
-          "select ex popover"
-        ]
-      }
-    },
-    {
-      "name": "oui-autocomplete-ex-demo-searchable",
-      "type": "registry:component",
-      "files": [
-        {
-          "path": "registry/components/oui-autocomplete-ex-demo-searchable.tsx",
-          "type": "registry:component"
-        }
-      ],
-      "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/oui-autocomplete-ex.json",
-        "https://oui.mw10013.workers.dev/r/oui-list-box.json",
-        "https://oui.mw10013.workers.dev/r/oui-select-ex-popover.json"
-      ],
-      "meta": {
-        "tags": [
-          "autocomplete",
-          "autocomplete ex",
-          "list box",
-          "select ex popover"
-        ]
       }
     },
     {
