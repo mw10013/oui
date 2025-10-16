@@ -23,7 +23,15 @@
   ],
   "meta": {
     "tags": [
-      "combo-box"
+      "combo-box",
+      "combo box ex",
+      "input",
+      "label",
+      "popover",
+      "button",
+      "field error",
+      "group",
+      "text"
     ]
   }
 }

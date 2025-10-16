@@ -451,7 +451,7 @@
         "https://oui.mw10013.workers.dev/r/oui-label.json"
       ],
       "meta": {
-        "tags": ["checkbox-group", "checkbox", "label"]
+        "tags": ["checkbox group"]
       }
     },
     {
@@ -471,7 +471,7 @@
       ],
       "meta": {
         "tags": [
-          "checkbox-group",
+          "checkbox group",
           "checkbox group ex",
           "field error",
           "label",
@@ -494,6 +494,114 @@
       ],
       "meta": {
         "tags": ["checkbox group", "checkbox group ex", "checkbox"]
+      }
+    },
+    {
+      "name": "oui-combo-box-demo",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-combo-box-demo.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "https://oui.mw10013.workers.dev/r/oui-button.json",
+        "https://oui.mw10013.workers.dev/r/oui-group.json",
+        "https://oui.mw10013.workers.dev/r/oui-input.json",
+        "https://oui.mw10013.workers.dev/r/oui-label.json",
+        "https://oui.mw10013.workers.dev/r/oui-list-box.json",
+        "https://oui.mw10013.workers.dev/r/oui-popover.json"
+      ],
+      "dependencies": ["lucide-react"],
+      "meta": {
+        "tags": ["combo-box", "input", "label", "list box", "popover", "button"]
+      }
+    },
+    {
+      "name": "oui-combo-box-ex",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-combo-box-ex.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "https://oui.mw10013.workers.dev/r/oui-button.json",
+        "https://oui.mw10013.workers.dev/r/oui-field-error.json",
+        "https://oui.mw10013.workers.dev/r/oui-group.json",
+        "https://oui.mw10013.workers.dev/r/oui-input.json",
+        "https://oui.mw10013.workers.dev/r/oui-label.json",
+        "https://oui.mw10013.workers.dev/r/oui-popover.json",
+        "https://oui.mw10013.workers.dev/r/oui-text.json"
+      ],
+      "dependencies": ["lucide-react"],
+      "meta": {
+        "tags": [
+          "combo-box",
+          "combo box ex",
+          "input",
+          "label",
+          "popover",
+          "button",
+          "field error",
+          "group",
+          "text"
+        ]
+      }
+    },
+    {
+      "name": "oui-combo-box-ex-demo",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-combo-box-ex-demo.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "https://oui.mw10013.workers.dev/r/oui-combo-box-ex.json",
+        "https://oui.mw10013.workers.dev/r/oui-list-box.json"
+      ],
+      "meta": {
+        "tags": ["combo-box", "combo box ex", "list box"]
+      }
+    },
+    {
+      "name": "oui-combo-box-ex-demo-avatar",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-combo-box-ex-demo-avatar.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "https://ui.shadcn.com/r/styles/new-york/avatar.json",
+        "https://oui.mw10013.workers.dev/r/oui-combo-box-ex.json",
+        "https://oui.mw10013.workers.dev/r/oui-list-box.json"
+      ],
+      "meta": {
+        "tags": ["combo-box", "combo box ex", "avatar", "list box"]
+      }
+    },
+    {
+      "name": "oui-combo-box-ex-demo-header",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-combo-box-ex-demo-header.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "https://oui.mw10013.workers.dev/r/oui-combo-box-ex.json",
+        "https://oui.mw10013.workers.dev/r/oui-header.json",
+        "https://oui.mw10013.workers.dev/r/oui-list-box.json"
+      ],
+      "meta": {
+        "tags": ["combo box", "combo box ex", "header", "list box"]
       }
     },
     {
@@ -1681,83 +1789,6 @@
       ],
       "meta": {
         "tags": ["select", "disabled"]
-      }
-    },
-    {
-      "name": "oui-combo-box-ex",
-      "type": "registry:component",
-      "files": [
-        {
-          "path": "registry/components/oui-combo-box-ex.tsx",
-          "type": "registry:component"
-        }
-      ],
-      "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/oui-button.json",
-        "https://oui.mw10013.workers.dev/r/oui-field-error.json",
-        "https://oui.mw10013.workers.dev/r/oui-group.json",
-        "https://oui.mw10013.workers.dev/r/oui-input.json",
-        "https://oui.mw10013.workers.dev/r/oui-label.json",
-        "https://oui.mw10013.workers.dev/r/oui-popover.json",
-        "https://oui.mw10013.workers.dev/r/oui-text.json"
-      ],
-      "dependencies": ["lucide-react"],
-      "meta": {
-        "tags": ["combo-box"]
-      }
-    },
-
-    {
-      "name": "oui-combo-box-ex-demo",
-      "type": "registry:component",
-      "files": [
-        {
-          "path": "registry/components/oui-combo-box-ex-demo.tsx",
-          "type": "registry:component"
-        }
-      ],
-      "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/oui-combo-box-ex.json",
-        "https://oui.mw10013.workers.dev/r/oui-list-box.json"
-      ],
-      "meta": {
-        "tags": ["combo-box"]
-      }
-    },
-    {
-      "name": "oui-combo-box-ex-demo-avatar",
-      "type": "registry:component",
-      "files": [
-        {
-          "path": "registry/components/oui-combo-box-ex-demo-avatar.tsx",
-          "type": "registry:component"
-        }
-      ],
-      "registryDependencies": [
-        "https://ui.shadcn.com/r/styles/new-york/avatar.json",
-        "https://oui.mw10013.workers.dev/r/oui-combo-box-ex.json",
-        "https://oui.mw10013.workers.dev/r/oui-list-box.json"
-      ],
-      "meta": {
-        "tags": ["combo-box"]
-      }
-    },
-    {
-      "name": "oui-combo-box-ex-demo-header",
-      "type": "registry:component",
-      "files": [
-        {
-          "path": "registry/components/oui-combo-box-ex-demo-header.tsx",
-          "type": "registry:component"
-        }
-      ],
-      "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/oui-combo-box-ex.json",
-        "https://oui.mw10013.workers.dev/r/oui-header.json",
-        "https://oui.mw10013.workers.dev/r/oui-list-box.json"
-      ],
-      "meta": {
-        "tags": ["combo box"]
       }
     },
     {

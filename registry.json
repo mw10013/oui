@@ -497,6 +497,28 @@
       }
     },
     {
+      "name": "oui-combo-box-demo",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-combo-box-demo.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "https://oui.mw10013.workers.dev/r/oui-button.json",
+        "https://oui.mw10013.workers.dev/r/oui-group.json",
+        "https://oui.mw10013.workers.dev/r/oui-input.json",
+        "https://oui.mw10013.workers.dev/r/oui-label.json",
+        "https://oui.mw10013.workers.dev/r/oui-list-box.json",
+        "https://oui.mw10013.workers.dev/r/oui-popover.json"
+      ],
+      "dependencies": ["lucide-react"],
+      "meta": {
+        "tags": ["combo-box", "input", "label", "list box", "popover", "button"]
+      }
+    },
+    {
       "name": "oui-combo-box-ex",
       "type": "registry:component",
       "files": [
@@ -516,10 +538,19 @@
       ],
       "dependencies": ["lucide-react"],
       "meta": {
-        "tags": ["combo-box", "combo box ex", "input", "label", "popover", "button", "field error", "group", "text"]
+        "tags": [
+          "combo-box",
+          "combo box ex",
+          "input",
+          "label",
+          "popover",
+          "button",
+          "field error",
+          "group",
+          "text"
+        ]
       }
     },
-
     {
       "name": "oui-combo-box-ex-demo",
       "type": "registry:component",

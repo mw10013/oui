@@ -7,8 +7,10 @@ import * as Rac from "react-aria-components";
 export function TextField({ className, ...props }: Rac.TextFieldProps) {
   return (
     <Rac.TextField
-      data-slot="form-item"
-      className={composeTailwindRenderProps(className, "group grid gap-2")}
+      className={composeTailwindRenderProps(
+        className,
+        "group flex flex-col gap-2",
+      )}
       {...props}
     />
   );
