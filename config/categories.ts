@@ -48,8 +48,8 @@ export const categories: Category[] = [
     name: "Checkbox Group",
     slug: "checkbox-group",
     components: [
-      { name: "oui-checkbox-group-ex-demo" },
       { name: "oui-checkbox-group-ex" },
+      { name: "oui-checkbox-group-ex-demo" },
     ],
   },
   {
