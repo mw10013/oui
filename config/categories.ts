@@ -83,9 +83,10 @@ export const categories: Category[] = [
     name: "Disclosure",
     slug: "disclosure",
     components: [
+      { name: "oui-disclosure-demo" },
+      { name: "oui-disclosure-ex" },
       { name: "oui-disclosure-ex-demo" },
       { name: "oui-disclosure-ex-demo-text" },
-      { name: "oui-disclosure-ex" },
     ],
   },
   {
