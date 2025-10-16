@@ -29,8 +29,11 @@ export default function CliCommands({ name }: { name: string }) {
             packageManager: key as "pnpm" | "npm" | "yarn" | "bun",
           });
         }}
+        // className="rounded-md bg-zinc-950 dark:bg-zinc-900"
       >
-        <TabList>
+        <TabList
+        // className="bg-zinc-950 dark:bg-zinc-900"
+        >
           <Tab
             id="pnpm"
             // className="relative rounded-none py-3 after:absolute after:inset-x-0 after:bottom-0 after:h-0.5 data-[selected]:bg-transparent data-[selected]:shadow-none data-[selected]:after:bg-primary"
@@ -57,8 +60,12 @@ export default function CliCommands({ name }: { name: string }) {
           </Tab>
         </TabList>
         {Object.entries(commands).map(([pkg, command]) => (
-          <TabPanel id={pkg} key={pkg}>
-            <pre className="overflow-auto p-4 font-mono text-[12.8px]">
+          <TabPanel
+            id={pkg}
+            key={pkg}
+            className="rounded-md bg-zinc-950 dark:bg-zinc-900"
+          >
+            <pre className="overflow-auto p-4 font-mono text-[12.8px] text-zinc-100">
               {command}
             </pre>
           </TabPanel>

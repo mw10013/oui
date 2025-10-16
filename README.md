@@ -11,19 +11,18 @@
 ## TODO
 
 - component code/layout
-- style/alignment
 - tags
-- theme toggle: use oui checkbox/focus ring? oui-toggle?
+- v0
 - loading...
-- browser console.log errors
 - logo, favicon
+- readme, contributing?
+- analytics
+- theme toggle: use oui checkbox/focus ring? oui-toggle?
+- browser console.log errors
 - eslint-disable-next-line react-hooks/exhaustive-deps
 - registry:build: delete r/\*
-- readme, contributing?
-- v0
-- PR to add to shadcn
 - seo, meta
-- analytics
+- PR to add to shadcn
 
 ## Local Dev
 
