@@ -342,6 +342,87 @@
       ]
     },
     {
+      "name": "oui-checkbox-demo",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-checkbox-demo.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "https://oui.mw10013.workers.dev/r/oui-checkbox.json"
+      ],
+      "meta": {
+        "tags": ["checkbox"]
+      }
+    },
+    {
+      "name": "oui-checkbox-demo-border",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-checkbox-demo-border.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "https://oui.mw10013.workers.dev/r/oui-checkbox.json"
+      ],
+      "meta": {
+        "tags": ["checkbox"]
+      }
+    },
+    {
+      "name": "oui-checkbox-demo-disabled",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-checkbox-demo-disabled.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "https://oui.mw10013.workers.dev/r/oui-checkbox.json"
+      ],
+      "meta": {
+        "tags": ["checkbox", "disabled"]
+      }
+    },
+    {
+      "name": "oui-checkbox-ex",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-checkbox-ex.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "https://oui.mw10013.workers.dev/r/oui-checkbox.json",
+        "https://oui.mw10013.workers.dev/r/oui-text.json"
+      ],
+      "meta": {
+        "tags": ["checkbox", "checkbox ex", "text"]
+      }
+    },
+    {
+      "name": "oui-checkbox-ex-demo",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-checkbox-ex-demo.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "https://oui.mw10013.workers.dev/r/oui-checkbox-ex.json"
+      ],
+      "meta": {
+        "tags": ["checkbox", "checkbox ex"]
+      }
+    },
+    {
       "name": "oui-checkbox-group",
       "type": "registry:ui",
       "files": [
@@ -1542,88 +1623,6 @@
         "tags": ["select", "disabled"]
       }
     },
-    {
-      "name": "oui-checkbox-ex",
-      "type": "registry:component",
-      "files": [
-        {
-          "path": "registry/components/oui-checkbox-ex.tsx",
-          "type": "registry:component"
-        }
-      ],
-      "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/oui-checkbox.json",
-        "https://oui.mw10013.workers.dev/r/oui-text.json"
-      ],
-      "meta": {
-        "tags": ["checkbox"]
-      }
-    },
-    {
-      "name": "oui-checkbox-demo",
-      "type": "registry:component",
-      "files": [
-        {
-          "path": "registry/components/oui-checkbox-demo.tsx",
-          "type": "registry:component"
-        }
-      ],
-      "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/oui-checkbox.json"
-      ],
-      "meta": {
-        "tags": ["checkbox"]
-      }
-    },
-    {
-      "name": "oui-checkbox-demo-disabled",
-      "type": "registry:component",
-      "files": [
-        {
-          "path": "registry/components/oui-checkbox-demo-disabled.tsx",
-          "type": "registry:component"
-        }
-      ],
-      "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/oui-checkbox.json"
-      ],
-      "meta": {
-        "tags": ["checkbox", "disabled"]
-      }
-    },
-    {
-      "name": "oui-checkbox-demo-border",
-      "type": "registry:component",
-      "files": [
-        {
-          "path": "registry/components/oui-checkbox-demo-border.tsx",
-          "type": "registry:component"
-        }
-      ],
-      "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/oui-checkbox.json"
-      ],
-      "meta": {
-        "tags": ["checkbox"]
-      }
-    },
-    {
-      "name": "oui-checkbox-ex-demo",
-      "type": "registry:component",
-      "files": [
-        {
-          "path": "registry/components/oui-checkbox-ex-demo.tsx",
-          "type": "registry:component"
-        }
-      ],
-      "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/oui-checkbox-ex.json"
-      ],
-      "meta": {
-        "tags": ["checkbox"]
-      }
-    },
-
     {
       "name": "oui-checkbox-group-ex",
       "type": "registry:component",

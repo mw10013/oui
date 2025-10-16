@@ -1,26 +1,3 @@
-## TODO
-
-- component code/layout
-- ex (reusable wrappers): layout, link, uses, composes with
-- tags
-- browser console.log errors
-- loading...
-- theme toggle: use oui checkbox/focus ring? oui-toggle?
-- seo, meta
-- analytics
-- staging
-- readme
-- PR to add to shadcn
-
-- checkbox: layout
-- disclosure: animation
-- autocomplete: button x
-
-- eslint-disable-next-line react-hooks/exhaustive-deps
-- registry:build: delete r/\*
-- favicon?
-- contributing?
-
 # Oui
 
 **React Aria Components with Shadcn characteristics**
