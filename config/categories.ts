@@ -68,18 +68,18 @@ export const categories: Category[] = [
     name: "Dialog",
     slug: "dialog",
     components: [
+      { name: "oui-dialog-ex" },
       { name: "oui-dialog-ex-demo-form" },
       { name: "oui-dialog-ex-demo-scrollable-content" },
       { name: "oui-dialog-ex-demo-sticky-footer" },
+      { name: "oui-dialog-ex-alert" },
       { name: "oui-dialog-ex-demo-alert" },
       { name: "oui-dialog-ex-alert-demo-confirm" },
       { name: "oui-dialog-ex-alert-demo-ack" },
       { name: "oui-dialog-ex-alert-demo-programmatic" },
+      { name: "oui-dialog-ex-sheet" },
       { name: "oui-dialog-ex-sheet-demo" },
       { name: "oui-dialog-ex-sheet-demo-sides" },
-      { name: "oui-dialog-ex" },
-      { name: "oui-dialog-ex-alert" },
-      { name: "oui-dialog-ex-sheet" },
     ],
   },
   {
@@ -175,13 +175,13 @@ export const categories: Category[] = [
     name: "Menu",
     slug: "menu",
     components: [
+      { name: "oui-menu-ex" },
       { name: "oui-menu-ex-demo" },
       { name: "oui-menu-ex-demo-checkboxes" },
       { name: "oui-menu-ex-demo-radio-group" },
       { name: "oui-menu-ex-demo-avatar" },
       { name: "oui-menu-ex-demo-avatar-only" },
       { name: "oui-menu-ex-demo-icon" },
-      { name: "oui-menu-ex" },
     ],
   },
   {
@@ -193,30 +193,30 @@ export const categories: Category[] = [
     name: "Number Field",
     slug: "number-field",
     components: [
-      { name: "oui-number-field-ex-demo" },
       { name: "oui-number-field-ex" },
+      { name: "oui-number-field-ex-demo" },
     ],
   },
   {
     name: "Popover",
     slug: "popover",
-    components: [{ name: "oui-popover-ex-demo" }, { name: "oui-popover-ex" }],
+    components: [{ name: "oui-popover-ex" }, { name: "oui-popover-ex-demo" }],
   },
   {
     name: "Radio Group",
     slug: "radio-group",
     components: [
+      { name: "oui-radio-group-ex" },
       { name: "oui-radio-group-ex-demo" },
       { name: "oui-radio-group-ex-demo-description" },
-      { name: "oui-radio-group-ex" },
     ],
   },
   {
     name: "Search Field",
     slug: "search-field",
     components: [
-      { name: "oui-search-field-ex-demo" },
       { name: "oui-search-field-ex" },
+      { name: "oui-search-field-ex-demo" },
     ],
   },
   {
@@ -247,20 +247,20 @@ export const categories: Category[] = [
     name: "Slider",
     slug: "slider",
     components: [
+      { name: "oui-slider-ex" },
       { name: "oui-slider-ex-demo" },
       { name: "oui-slider-ex-demo-disabled" },
-      { name: "oui-slider-ex" },
     ],
   },
   {
     name: "Switch",
     slug: "switch",
     components: [
+      { name: "oui-switch-ex" },
       { name: "oui-switch-ex-demo" },
       { name: "oui-switch-ex-demo-blue" },
       { name: "oui-switch-ex-demo-description" },
       { name: "oui-switch-ex-demo-disabled" },
-      { name: "oui-switch-ex" },
     ],
   },
   {
@@ -295,10 +295,10 @@ export const categories: Category[] = [
     slug: "text-field",
     components: [
       { name: "oui-text-field-demo" },
-      { name: "oui-text-field-ex-demo" },
-      { name: "oui-text-field-ex-horizontal-demo" },
       { name: "oui-text-field-ex" },
+      { name: "oui-text-field-ex-demo" },
       { name: "oui-text-field-ex-horizontal" },
+      { name: "oui-text-field-ex-horizontal-demo" },
     ],
   },
   {
@@ -306,8 +306,8 @@ export const categories: Category[] = [
     slug: "tooltip",
     components: [
       { name: "oui-tooltip-demo" },
-      { name: "oui-tooltip-ex-demo" },
       { name: "oui-tooltip-ex" },
+      { name: "oui-tooltip-ex-demo" },
     ],
   },
 ];
