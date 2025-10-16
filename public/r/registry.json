@@ -437,6 +437,24 @@
       "dependencies": ["react-aria-components"]
     },
     {
+      "name": "oui-checkbox-group-demo",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-checkbox-group-demo.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "https://oui.mw10013.workers.dev/r/oui-checkbox-group.json",
+        "https://oui.mw10013.workers.dev/r/oui-checkbox.json",
+        "https://oui.mw10013.workers.dev/r/oui-label.json"
+      ],
+      "meta": {
+        "tags": ["checkbox-group", "checkbox", "label"]
+      }
+    },
+    {
       "name": "oui-checkbox-group-ex",
       "type": "registry:component",
       "files": [

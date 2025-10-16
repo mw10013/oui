@@ -1,0 +1,24 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "oui-checkbox-group-demo",
+  "type": "registry:component",
+  "registryDependencies": [
+    "https://oui.mw10013.workers.dev/r/oui-checkbox-group.json",
+    "https://oui.mw10013.workers.dev/r/oui-checkbox.json",
+    "https://oui.mw10013.workers.dev/r/oui-label.json"
+  ],
+  "files": [
+    {
+      "path": "registry/components/oui-checkbox-group-demo.tsx",
+      "content": "import { Checkbox } from \"@/registry/components/ui/oui-checkbox\";\nimport { CheckboxGroup } from \"@/registry/components/ui/oui-checkbox-group\";\nimport { Label } from \"@/registry/components/ui/oui-label\";\n\nexport default function Component() {\n  return (\n    <CheckboxGroup>\n      <Label>Favorite sports</Label>\n      <Checkbox value=\"soccer\">Soccer</Checkbox>\n      <Checkbox value=\"baseball\">Baseball</Checkbox>\n      <Checkbox value=\"basketball\">Basketball</Checkbox>\n    </CheckboxGroup>\n  );\n}\n",
+      "type": "registry:component"
+    }
+  ],
+  "meta": {
+    "tags": [
+      "checkbox-group",
+      "checkbox",
+      "label"
+    ]
+  }
+}
