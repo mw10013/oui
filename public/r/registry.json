@@ -1361,6 +1361,52 @@
       ]
     },
     {
+      "name": "oui-popover-ex",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-popover-ex.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "https://oui.mw10013.workers.dev/r/oui-button.json",
+        "https://oui.mw10013.workers.dev/r/oui-dialog.json",
+        "https://oui.mw10013.workers.dev/r/oui-popover.json"
+      ],
+      "meta": {
+        "tags": ["popover"]
+      }
+    },
+    {
+      "name": "oui-popover-ex-demo",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-popover-ex-demo.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "https://oui.mw10013.workers.dev/r/oui-button.json",
+        "https://oui.mw10013.workers.dev/r/oui-dialog.json",
+        "https://oui.mw10013.workers.dev/r/oui-heading.json",
+        "https://oui.mw10013.workers.dev/r/oui-popover-ex.json",
+        "https://oui.mw10013.workers.dev/r/oui-text-field-ex-horizontal.json"
+      ],
+      "meta": {
+        "tags": [
+          "popover",
+          "popover ex",
+          "button",
+          "dialog",
+          "heading",
+          "text-field"
+        ],
+        "alignment": "flex-center"
+      }
+    },
+    {
       "name": "oui-radio-group",
       "type": "registry:ui",
       "files": [
@@ -2145,44 +2191,6 @@
       "dependencies": ["lucide-react"],
       "meta": {
         "tags": ["menu"]
-      }
-    },
-    {
-      "name": "oui-popover-ex",
-      "type": "registry:component",
-      "files": [
-        {
-          "path": "registry/components/oui-popover-ex.tsx",
-          "type": "registry:component"
-        }
-      ],
-      "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/oui-button.json",
-        "https://oui.mw10013.workers.dev/r/oui-dialog.json",
-        "https://oui.mw10013.workers.dev/r/oui-popover.json"
-      ],
-      "meta": {
-        "tags": ["popover"]
-      }
-    },
-    {
-      "name": "oui-popover-ex-demo",
-      "type": "registry:component",
-      "files": [
-        {
-          "path": "registry/components/oui-popover-ex-demo.tsx",
-          "type": "registry:component"
-        }
-      ],
-      "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/oui-button.json",
-        "https://oui.mw10013.workers.dev/r/oui-dialog.json",
-        "https://oui.mw10013.workers.dev/r/oui-heading.json",
-        "https://oui.mw10013.workers.dev/r/oui-popover-ex.json",
-        "https://oui.mw10013.workers.dev/r/oui-text-field-ex-horizontal.json"
-      ],
-      "meta": {
-        "tags": ["popover"]
       }
     },
     {

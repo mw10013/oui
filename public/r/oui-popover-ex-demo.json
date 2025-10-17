@@ -18,7 +18,13 @@
   ],
   "meta": {
     "tags": [
-      "popover"
-    ]
+      "popover",
+      "popover ex",
+      "button",
+      "dialog",
+      "heading",
+      "text-field"
+    ],
+    "alignment": "flex-center"
   }
 }
