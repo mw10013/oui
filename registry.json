@@ -1595,26 +1595,6 @@
       }
     },
     {
-      "name": "oui-text-field-demo",
-      "type": "registry:component",
-      "files": [
-        {
-          "path": "registry/components/oui-text-field-demo.tsx",
-          "type": "registry:component"
-        }
-      ],
-      "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/oui-field-error.json",
-        "https://oui.mw10013.workers.dev/r/oui-input.json",
-        "https://oui.mw10013.workers.dev/r/oui-label.json",
-        "https://oui.mw10013.workers.dev/r/oui-text.json",
-        "https://oui.mw10013.workers.dev/r/oui-text-field.json"
-      ],
-      "meta": {
-        "tags": ["text-field", "text field", "field error", "input", "label", "text"]
-      }
-    },
-    {
       "name": "oui-tooltip",
       "type": "registry:ui",
       "files": [
@@ -1694,7 +1674,6 @@
         "tags": ["text field", "field error", "input", "label", "text"]
       }
     },
-
     {
       "name": "oui-modal-ex",
       "type": "registry:component",

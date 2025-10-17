@@ -18,7 +18,11 @@
   ],
   "meta": {
     "tags": [
-      "text-field"
+      "text field",
+      "field error",
+      "input",
+      "label",
+      "text"
     ]
   }
 }
