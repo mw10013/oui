@@ -530,7 +530,7 @@
       ],
       "dependencies": ["lucide-react"],
       "meta": {
-        "tags": ["combo-box", "input", "label", "list box", "popover", "button"]
+        "tags": ["combo box", "input", "label", "list box", "popover", "button"]
       }
     },
     {
@@ -555,7 +555,7 @@
       "dependencies": ["lucide-react"],
       "meta": {
         "tags": [
-          "combo-box",
+          "combo box",
           "combo box ex",
           "input",
           "label",
@@ -581,7 +581,7 @@
         "https://oui.mw10013.workers.dev/r/oui-list-box.json"
       ],
       "meta": {
-        "tags": ["combo-box", "combo box ex", "list box"]
+        "tags": ["combo box", "combo box ex", "list box"]
       }
     },
     {
@@ -599,7 +599,7 @@
         "https://oui.mw10013.workers.dev/r/oui-list-box.json"
       ],
       "meta": {
-        "tags": ["combo-box", "combo box ex", "avatar", "list box"]
+        "tags": ["combo box", "combo box ex", "avatar", "list box"]
       }
     },
     {
@@ -1563,7 +1563,7 @@
         "https://oui.mw10013.workers.dev/r/oui-select-ex.json"
       ],
       "meta": {
-        "tags": ["select", "select ex", "large list"],
+        "tags": ["select", "select ex", "list box"],
         "alignment": "flex-center"
       }
     },
@@ -2190,7 +2190,7 @@
         "https://oui.mw10013.workers.dev/r/oui-text.json"
       ],
       "meta": {
-        "tags": ["search-field"]
+        "tags": ["search field"]
       }
     },
     {
@@ -2206,7 +2206,7 @@
         "https://oui.mw10013.workers.dev/r/oui-search-field-ex.json"
       ],
       "meta": {
-        "tags": ["search-field"]
+        "tags": ["search field"]
       }
     },
 
@@ -2226,7 +2226,7 @@
         "https://oui.mw10013.workers.dev/r/oui-text.json"
       ],
       "meta": {
-        "tags": ["radio-group"]
+        "tags": ["radio group"]
       }
     },
     {
@@ -2243,7 +2243,7 @@
         "https://oui.mw10013.workers.dev/r/oui-radio-group.json"
       ],
       "meta": {
-        "tags": ["radio-group"]
+        "tags": ["radio group"]
       }
     },
     {
@@ -2260,7 +2260,7 @@
         "https://oui.mw10013.workers.dev/r/oui-radio-group.json"
       ],
       "meta": {
-        "tags": ["radio-group"]
+        "tags": ["radio group"]
       }
     },
     {
@@ -2403,7 +2403,7 @@
       ],
       "dependencies": ["lucide-react"],
       "meta": {
-        "tags": ["number-field"]
+        "tags": ["number field"]
       }
     },
     {
@@ -2420,7 +2420,7 @@
         "https://oui.mw10013.workers.dev/r/oui-number-field-ex.json"
       ],
       "meta": {
-        "tags": ["number-field"]
+        "tags": ["number field"]
       }
     },
 
@@ -2705,7 +2705,7 @@
         "https://oui.mw10013.workers.dev/r/oui-button.json"
       ],
       "meta": {
-        "tags": ["list-box"]
+        "tags": ["list box"]
       }
     },
     {
@@ -2721,7 +2721,7 @@
         "https://oui.mw10013.workers.dev/r/oui-list-box-ex-pagination.json"
       ],
       "meta": {
-        "tags": ["list-box"]
+        "tags": ["list box"]
       }
     },
     {
@@ -2810,7 +2810,7 @@
         "https://ui.shadcn.com/r/styles/new-york/r/item.json"
       ],
       "meta": {
-        "tags": ["list-box"]
+        "tags": ["list box"]
       }
     },
     {
