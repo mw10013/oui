@@ -69,3 +69,27 @@ Concept by [https://coss.com/origin](https://coss.com/origin)
 ## License
 
 Licensed under the [MIT License](https://github.com/mw10013/oui/blob/main/LICENSE).
+
+## TODO
+
+- oui-index demo
+- ex (reusable wrappers): layout, link, uses, composes with
+- recon tags
+- browser console.log errors
+- loading...
+- theme toggle: use oui checkbox/focus ring? oui-toggle?
+- seo, meta
+- analytics
+- staging
+- readme
+- PR to add to shadcn
+
+- checkbox: layout
+- disclosure: animation
+- autocomplete: button x
+- group: with ghost button icon
+
+- eslint-disable-next-line react-hooks/exhaustive-deps
+- registry:build: delete r/\*
+- favicon?
+- contributing?

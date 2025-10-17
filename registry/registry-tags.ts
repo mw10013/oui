@@ -43,6 +43,7 @@ export const registryTags = [
 
   // generic tags
   "disabled",
+  "multiple",
 
   // Component tags
   // "accordion",
