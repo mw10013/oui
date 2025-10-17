@@ -1,0 +1,26 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "oui-keyboard-demo",
+  "type": "registry:component",
+  "registryDependencies": [
+    "https://oui.mw10013.workers.dev/r/oui-button.json",
+    "https://oui.mw10013.workers.dev/r/oui-keyboard.json",
+    "https://oui.mw10013.workers.dev/r/oui-menu-ex.json",
+    "https://oui.mw10013.workers.dev/r/oui-menu.json"
+  ],
+  "files": [
+    {
+      "path": "registry/components/oui-keyboard-demo.tsx",
+      "content": "import { MenuEx } from \"@/registry/components/oui-menu-ex\";\nimport { Button } from \"@/registry/components/ui/oui-button\";\nimport { Keyboard } from \"@/registry/components/ui/oui-keyboard\";\nimport { MenuItem } from \"@/registry/components/ui/oui-menu\";\n\nexport default function Component() {\n  return (\n    <MenuEx\n      triggerElement={<Button variant=\"outline\">Keyboard</Button>}\n      className=\"w-56\"\n    >\n      <MenuItem id=\"keyboard\">\n        Keyboard\n        <Keyboard>⌘K</Keyboard>\n      </MenuItem>\n    </MenuEx>\n  );\n}\n",
+      "type": "registry:component"
+    }
+  ],
+  "meta": {
+    "tags": [
+      "keyboard",
+      "button",
+      "menu ex",
+      "menu"
+    ]
+  }
+}

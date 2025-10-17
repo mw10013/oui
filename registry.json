@@ -1215,6 +1215,25 @@
       "dependencies": ["react-aria-components", "tailwind-merge"]
     },
     {
+      "name": "oui-keyboard-demo",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-keyboard-demo.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "https://oui.mw10013.workers.dev/r/oui-button.json",
+        "https://oui.mw10013.workers.dev/r/oui-keyboard.json",
+        "https://oui.mw10013.workers.dev/r/oui-menu-ex.json",
+        "https://oui.mw10013.workers.dev/r/oui-menu.json"
+      ],
+      "meta": {
+        "tags": ["keyboard", "button", "menu ex", "menu"]
+      }
+    },
+    {
       "name": "oui-label",
       "type": "registry:ui",
       "files": [

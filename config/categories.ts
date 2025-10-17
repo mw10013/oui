@@ -135,7 +135,7 @@ export const categories: Category[] = [
   {
     name: "Keyboard",
     slug: "keyboard",
-    components: [],
+    components: [{ name: "oui-keyboard-demo" }],
   },
   {
     name: "Label",
