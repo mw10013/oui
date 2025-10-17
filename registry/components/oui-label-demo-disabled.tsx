@@ -4,9 +4,9 @@ import * as Rac from "react-aria-components";
 
 export default function Component() {
   return (
-      <Rac.TextField className="group grid gap-3" isDisabled>
-      <Label>Disabled</Label>
-      <Input placeholder="Disabled" />
+    <Rac.TextField className="group grid gap-2" isDisabled>
+      <Label>Label Disabled</Label>
+      <Input placeholder="Placeholder" />
     </Rac.TextField>
   );
 }
