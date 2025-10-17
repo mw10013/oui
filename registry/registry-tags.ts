@@ -36,12 +36,13 @@ export const registryTags = [
   "switch",
   "table",
   "tabs",
-  "text-area",
-  "text-field",
+  "text area",
+  "text field",
   "text",
   "tooltip",
 
   // generic tags
+  "avatar",
   "disabled",
   "multiple",
 

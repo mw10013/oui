@@ -670,7 +670,7 @@
           "input",
           "label",
           "modal",
-          "text-field"
+          "text field"
         ],
         "alignment": "flex-center"
       }
@@ -1401,7 +1401,7 @@
           "button",
           "dialog",
           "heading",
-          "text-field"
+          "text field"
         ],
         "alignment": "flex-center"
       }
@@ -2072,7 +2072,7 @@
         "https://oui.mw10013.workers.dev/r/oui-text-field-ex.json"
       ],
       "meta": {
-        "tags": ["text-field"]
+        "tags": ["text field"]
       }
     },
     {
@@ -2088,7 +2088,7 @@
         "https://oui.mw10013.workers.dev/r/oui-text-field-ex-horizontal.json"
       ],
       "meta": {
-        "tags": ["text-field"]
+        "tags": ["text field"]
       }
     },
     {
