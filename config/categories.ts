@@ -280,7 +280,7 @@ export const categories: Category[] = [
   {
     name: "Text",
     slug: "text",
-    components: [],
+    components: [{ name: "oui-text-demo" }],
   },
   {
     name: "Text Area",
