@@ -15,6 +15,9 @@ import {
   DialogHeader,
 } from "@/registry/components/ui/oui-dialog";
 import { Heading } from "@/registry/components/ui/oui-heading";
+import { Label } from "@/registry/components/ui/oui-label";
+import { Link } from "@/registry/components/ui/oui-link";
+import { Text } from "@/registry/components/ui/oui-text";
 import * as Rac from "react-aria-components";
 
 export interface DialogExAlertProps
@@ -159,5 +162,26 @@ export function DialogExAlertProvider({ children }: { children: ReactNode }) {
 }
 
 export default function Component() {
-  return <div className="p-4">DialogExAlert</div>;
+  return (
+    <div className="grid gap-2">
+      <Label>DialogExAlert</Label>
+      <Text slot="description">
+        A reusable wrapper for an alert{" "}
+        <Link
+          href="https://react-spectrum.adobe.com/react-aria/Dialog.html"
+          underline="always"
+        >
+          Dialog
+        </Link>{" "}
+        — see{" "}
+        <Link
+          href="https://oui.mw10013.workers.dev/filter?tags=dialog%2Bex%2Balert"
+          underline="always"
+        >
+          Uses
+        </Link>
+        .
+      </Text>
+    </div>
+  );
 }

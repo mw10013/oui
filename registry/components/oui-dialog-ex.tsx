@@ -76,7 +76,7 @@ export default function Component() {
           href="https://react-spectrum.adobe.com/react-aria/Dialog.html"
           underline="always"
         >
-          dialog
+          Dialog
         </Link>{" "}
         that can be opened via a trigger element or programmatically — see{" "}
         <Link
