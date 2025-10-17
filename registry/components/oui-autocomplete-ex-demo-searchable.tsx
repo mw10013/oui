@@ -24,7 +24,7 @@ export default function Component() {
 
   return (
     <SelectExPopover
-      label="Language"
+      label="Autocomplete Language"
       description="Select your preferred language"
     >
       <AutocompleteEx

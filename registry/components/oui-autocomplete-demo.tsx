@@ -12,7 +12,7 @@ export default function Component() {
   return (
     <Rac.Autocomplete filter={contains}>
       <SearchField>
-        <Label>Commands</Label>
+        <Label>Autocomplete Commands</Label>
         <Input placeholder="Search commands...." />
       </SearchField>
       <Rac.ListBox className="w-full min-w-[8rem] overflow-x-hidden overflow-y-auto p-1">
