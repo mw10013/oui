@@ -9,14 +9,15 @@
   "files": [
     {
       "path": "registry/components/oui-tooltip-demo.tsx",
-      "content": "import { Button } from \"@/registry/components/ui/oui-button\";\nimport { OverlayArrow, Tooltip } from \"@/registry/components/ui/oui-tooltip\";\nimport { TooltipTrigger } from \"react-aria-components\";\n\nexport default function Component() {\n  return (\n    <TooltipTrigger>\n      <Button>Tooltip</Button>\n      <Tooltip>\n        <OverlayArrow />\n        This is a tooltip\n      </Tooltip>\n    </TooltipTrigger>\n  );\n}\n",
+      "content": "import { Button } from \"@/registry/components/ui/oui-button\";\nimport { OverlayArrow, Tooltip } from \"@/registry/components/ui/oui-tooltip\";\nimport { TooltipTrigger } from \"react-aria-components\";\n\nexport default function Component() {\n  return (\n    <TooltipTrigger>\n      <Button variant=\"outline\">Tooltip</Button>\n      <Tooltip>\n        <OverlayArrow />\n        This is a tooltip\n      </Tooltip>\n    </TooltipTrigger>\n  );\n}\n",
       "type": "registry:component"
     }
   ],
   "meta": {
     "tags": [
-      "tooltip"
+      "tooltip",
+      "button"
     ],
-    "alignment": "text-center"
+    "alignment": "flex-center"
   }
 }

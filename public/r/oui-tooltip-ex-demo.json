@@ -9,13 +9,16 @@
   "files": [
     {
       "path": "registry/components/oui-tooltip-ex-demo.tsx",
-      "content": "import { TooltipEx } from \"@/registry/components/oui-tooltip-ex\";\nimport { Button } from \"@/registry/components/ui/oui-button\";\n\nexport default function Component() {\n  return (\n    <TooltipEx triggerElement={<Button>TooltipEx</Button>}>\n      This is a tooltip\n    </TooltipEx>\n  );\n}\n",
+      "content": "import { TooltipEx } from \"@/registry/components/oui-tooltip-ex\";\nimport { Button } from \"@/registry/components/ui/oui-button\";\n\nexport default function Component() {\n  return (\n    <TooltipEx triggerElement={<Button variant=\"outline\">TooltipEx</Button>}>\n      This is a tooltip\n    </TooltipEx>\n  );\n}\n",
       "type": "registry:component"
     }
   ],
   "meta": {
     "tags": [
-      "tooltip"
-    ]
+      "tooltip",
+      "tooltip ex",
+      "button"
+    ],
+    "alignment": "flex-center"
   }
 }

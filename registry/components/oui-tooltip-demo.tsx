@@ -5,7 +5,7 @@ import { TooltipTrigger } from "react-aria-components";
 export default function Component() {
   return (
     <TooltipTrigger>
-      <Button>Tooltip</Button>
+      <Button variant="outline">Tooltip</Button>
       <Tooltip>
         <OverlayArrow />
         This is a tooltip

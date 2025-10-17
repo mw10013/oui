@@ -7,7 +7,7 @@ import { TextField } from "@/registry/components/ui/oui-text-field";
 export default function Component() {
   return (
     <TextField>
-      <Label>Label</Label>
+      <Label>Text Field</Label>
       <Input placeholder="Placeholder" />
       <Text slot="description">Description</Text>
       <FieldError />

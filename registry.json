@@ -1620,8 +1620,43 @@
         "https://oui.mw10013.workers.dev/r/oui-tooltip.json"
       ],
       "meta": {
-        "tags": ["tooltip"],
-        "alignment": "text-center"
+        "tags": ["tooltip", "button"],
+        "alignment": "flex-center"
+      }
+    },
+    {
+      "name": "oui-tooltip-ex",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-tooltip-ex.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "https://oui.mw10013.workers.dev/r/oui-button.json",
+        "https://oui.mw10013.workers.dev/r/oui-tooltip.json"
+      ],
+      "meta": {
+        "tags": ["tooltip", "tooltip ex", "button"]
+      }
+    },
+    {
+      "name": "oui-tooltip-ex-demo",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-tooltip-ex-demo.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "https://oui.mw10013.workers.dev/r/oui-button.json",
+        "https://oui.mw10013.workers.dev/r/oui-tooltip-ex.json"
+      ],
+      "meta": {
+        "tags": ["tooltip", "tooltip ex", "button"],
+        "alignment": "flex-center"
       }
     },
     {
@@ -2692,40 +2727,6 @@
       "dependencies": ["lucide-react"],
       "meta": {
         "tags": ["table"]
-      }
-    },
-    {
-      "name": "oui-tooltip-ex",
-      "type": "registry:component",
-      "files": [
-        {
-          "path": "registry/components/oui-tooltip-ex.tsx",
-          "type": "registry:component"
-        }
-      ],
-      "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/oui-button.json",
-        "https://oui.mw10013.workers.dev/r/oui-tooltip.json"
-      ],
-      "meta": {
-        "tags": ["tooltip"]
-      }
-    },
-    {
-      "name": "oui-tooltip-ex-demo",
-      "type": "registry:component",
-      "files": [
-        {
-          "path": "registry/components/oui-tooltip-ex-demo.tsx",
-          "type": "registry:component"
-        }
-      ],
-      "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/oui-button.json",
-        "https://oui.mw10013.workers.dev/r/oui-tooltip-ex.json"
-      ],
-      "meta": {
-        "tags": ["tooltip"]
       }
     },
     {

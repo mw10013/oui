@@ -15,7 +15,9 @@
   ],
   "meta": {
     "tags": [
-      "tooltip"
+      "tooltip",
+      "tooltip ex",
+      "button"
     ]
   }
 }
