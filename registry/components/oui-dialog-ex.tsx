@@ -3,6 +3,9 @@ import type { ReactElement } from "react";
 import { ModalEx } from "@/registry/components/oui-modal-ex";
 import { Button } from "@/registry/components/ui/button";
 import { Dialog } from "@/registry/components/ui/oui-dialog";
+import { Label } from "@/registry/components/ui/oui-label";
+import { Link } from "@/registry/components/ui/oui-link";
+import { Text } from "@/registry/components/ui/oui-text";
 import * as Rac from "react-aria-components";
 
 export interface DialogExProps
@@ -64,5 +67,26 @@ export function DialogEx({
 }
 
 export default function Component() {
-  return <div className="p-4">DialogEx</div>;
+  return (
+    <div className="grid gap-2">
+      <Label>DialogEx</Label>
+      <Text slot="description">
+        A reusable wrapper for a modal{" "}
+        <Link
+          href="https://react-spectrum.adobe.com/react-aria/Dialog.html"
+          underline="always"
+        >
+          dialog
+        </Link>{" "}
+        that can be opened via a trigger element or programmatically — see{" "}
+        <Link
+          href="https://oui.mw10013.workers.dev/filter?tags=dialog%2Bex"
+          underline="always"
+        >
+          Uses
+        </Link>
+        .
+      </Text>
+    </div>
+  );
 }

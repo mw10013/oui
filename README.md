@@ -72,9 +72,11 @@ Licensed under the [MIT License](https://github.com/mw10013/oui/blob/main/LICENS
 
 ## TODO
 
-- oui-index demo
+- tag: sheet
 - ex (reusable wrappers): layout, link, uses, composes with
-- recon tags
+- oui-index demo
+  - https://oui.mw10013.workers.dev/filter?tags=dialog%2Bex
+- dialog ex and modal ex
 - browser console.log errors
 - loading...
 - theme toggle: use oui checkbox/focus ring? oui-toggle?
