@@ -58,6 +58,7 @@ export const registryTags = [
   "avatar",
   "disabled",
   "multiple",
+  "sheet",
 
   // Component tags
   // "accordion",
