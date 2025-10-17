@@ -1020,7 +1020,7 @@
         "https://oui.mw10013.workers.dev/r/oui-text-field.json"
       ],
       "meta": {
-        "tags": ["field error"]
+        "tags": ["field error", "input", "label", "text field"]
       }
     },
     {

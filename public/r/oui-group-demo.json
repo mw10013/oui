@@ -1,0 +1,26 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "oui-group-demo",
+  "type": "registry:component",
+  "dependencies": [
+    "lucide-react"
+  ],
+  "registryDependencies": [
+    "https://oui.mw10013.workers.dev/r/oui-button.json",
+    "https://oui.mw10013.workers.dev/r/oui-group.json",
+    "https://oui.mw10013.workers.dev/r/oui-input.json",
+    "https://oui.mw10013.workers.dev/r/oui-label.json"
+  ],
+  "files": [
+    {
+      "path": "registry/components/oui-group-demo.tsx",
+      "content": "import { Button } from \"@/registry/components/ui/oui-button\";\nimport { Group } from \"@/registry/components/ui/oui-group\";\nimport { Input } from \"@/registry/components/ui/oui-input\";\nimport { Label } from \"@/registry/components/ui/oui-label\";\nimport { ChevronDown } from \"lucide-react\";\n\nexport default function Component() {\n  return (\n    <div className=\"grid gap-2\">\n      <Label>Group</Label>\n      <Group>\n        <Input variant=\"ghost\" placeholder=\"Search...\" />\n        <Button variant=\"ghost\" size=\"icon\">\n          <ChevronDown className=\"size-4 shrink-0 opacity-50\" />\n        </Button>\n      </Group>\n    </div>\n  );\n}\n",
+      "type": "registry:component"
+    }
+  ],
+  "meta": {
+    "tags": [
+      "group"
+    ]
+  }
+}
