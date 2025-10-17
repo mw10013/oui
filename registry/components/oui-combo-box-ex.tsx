@@ -1,13 +1,14 @@
-import { ChevronsUpDown } from "lucide-react";
-import * as Rac from "react-aria-components";
 import { Button } from "@/registry/components/ui/oui-button";
+import { ComboBox } from "@/registry/components/ui/oui-combo-box";
 import { FieldError } from "@/registry/components/ui/oui-field-error";
 import { Group } from "@/registry/components/ui/oui-group";
 import { Input } from "@/registry/components/ui/oui-input";
 import { Label } from "@/registry/components/ui/oui-label";
+import { Link } from "@/registry/components/ui/oui-link";
 import { Popover } from "@/registry/components/ui/oui-popover";
 import { Text } from "@/registry/components/ui/oui-text";
-import { ComboBox } from "@/registry/components/ui/oui-combo-box";
+import { ChevronsUpDown } from "lucide-react";
+import * as Rac from "react-aria-components";
 
 export interface ComboBoxExProps<T extends object>
   extends Omit<Rac.ComboBoxProps<T>, "children"> {
@@ -47,5 +48,26 @@ export function ComboBoxEx<T extends object>({
 }
 
 export default function Component() {
-  return <div className="p-4">ComboBoxEx</div>;
+  return (
+    <div className="grid gap-2">
+      <Label>ComboBoxEx</Label>
+      <Text slot="description">
+        A reusable wrapper for{" "}
+        <Link
+          href="https://react-spectrum.adobe.com/react-aria/ComboBox.html"
+          underline="always"
+        >
+          ComboBox
+        </Link>{" "}
+        — see{" "}
+        <Link
+          href="https://oui.mw10013.workers.dev/filter?tags=combo%2Bbox%2Bex"
+          underline="always"
+        >
+          Uses
+        </Link>
+        .
+      </Text>
+    </div>
+  );
 }
