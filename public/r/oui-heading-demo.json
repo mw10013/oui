@@ -1,0 +1,27 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "oui-heading-demo",
+  "type": "registry:component",
+  "registryDependencies": [
+    "https://oui.mw10013.workers.dev/r/oui-button.json",
+    "https://oui.mw10013.workers.dev/r/oui-dialog.json",
+    "https://oui.mw10013.workers.dev/r/oui-heading.json",
+    "https://oui.mw10013.workers.dev/r/oui-modal.json"
+  ],
+  "files": [
+    {
+      "path": "registry/components/oui-heading-demo.tsx",
+      "content": "import { Button } from \"@/registry/components/ui/oui-button\";\nimport { Dialog } from \"@/registry/components/ui/oui-dialog\";\nimport { Heading } from \"@/registry/components/ui/oui-heading\";\nimport { Modal, ModalOverlay } from \"@/registry/components/ui/oui-modal\";\nimport * as Rac from \"react-aria-components\";\n\nexport default function Component() {\n  return (\n    <Rac.DialogTrigger>\n      <Button variant=\"outline\">Heading</Button>\n      <ModalOverlay>\n        <Modal>\n          <Dialog>\n            <Heading slot=\"title\">Heading</Heading>\n            <p>This dialog demonstrates the Heading component.</p>\n            <Button slot=\"close\">Close</Button>\n          </Dialog>\n        </Modal>\n      </ModalOverlay>\n    </Rac.DialogTrigger>\n  );\n}\n",
+      "type": "registry:component"
+    }
+  ],
+  "meta": {
+    "tags": [
+      "heading",
+      "button",
+      "dialog",
+      "modal"
+    ],
+    "alignment": "flex-center"
+  }
+}

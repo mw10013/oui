@@ -1165,6 +1165,26 @@
       ]
     },
     {
+      "name": "oui-heading-demo",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-heading-demo.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "https://oui.mw10013.workers.dev/r/oui-button.json",
+        "https://oui.mw10013.workers.dev/r/oui-dialog.json",
+        "https://oui.mw10013.workers.dev/r/oui-heading.json",
+        "https://oui.mw10013.workers.dev/r/oui-modal.json"
+      ],
+      "meta": {
+        "tags": ["heading", "button", "dialog", "modal"],
+        "alignment": "flex-center"
+      }
+    },
+    {
       "name": "oui-input",
       "type": "registry:ui",
       "files": [
