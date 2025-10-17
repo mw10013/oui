@@ -25,7 +25,18 @@
   ],
   "meta": {
     "tags": [
-      "form"
+      "form",
+      "button",
+      "checkbox ex",
+      "checkbox group ex",
+      "checkbox",
+      "list box",
+      "radio group ex",
+      "radio group",
+      "select ex",
+      "switch ex",
+      "text area",
+      "text field ex"
     ]
   }
 }

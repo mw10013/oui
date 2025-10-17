@@ -1061,7 +1061,20 @@
         "https://oui.mw10013.workers.dev/r/oui-text-field-ex.json"
       ],
       "meta": {
-        "tags": ["form"]
+        "tags": [
+          "form",
+          "button",
+          "checkbox ex",
+          "checkbox group ex",
+          "checkbox",
+          "list box",
+          "radio group ex",
+          "radio group",
+          "select ex",
+          "switch ex",
+          "text area",
+          "text field ex"
+        ]
       }
     },
 
@@ -1096,7 +1109,7 @@
       ],
       "dependencies": ["lucide-react"],
       "meta": {
-        "tags": ["group"]
+        "tags": ["group", "button", "input", "label"]
       }
     },
     {
@@ -2786,6 +2799,22 @@
       ],
       "meta": {
         "tags": ["index"]
+      }
+    },
+    {
+      "name": "oui-header-demo",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-header-demo.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "https://oui.mw10013.workers.dev/r/oui-header.json"
+      ],
+      "meta": {
+        "tags": ["header"]
       }
     }
   ]

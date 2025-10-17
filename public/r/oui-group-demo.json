@@ -20,7 +20,10 @@
   ],
   "meta": {
     "tags": [
-      "group"
+      "group",
+      "button",
+      "input",
+      "label"
     ]
   }
 }
