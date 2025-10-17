@@ -1129,6 +1129,23 @@
       ]
     },
     {
+      "name": "oui-header-demo",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-header-demo.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "https://oui.mw10013.workers.dev/r/oui-header.json"
+      ],
+      "meta": {
+        "tags": ["header"],
+        "alignment": "flex-center"
+      }
+    },
+    {
       "name": "oui-heading",
       "type": "registry:ui",
       "files": [
@@ -2799,22 +2816,6 @@
       ],
       "meta": {
         "tags": ["index"]
-      }
-    },
-    {
-      "name": "oui-header-demo",
-      "type": "registry:component",
-      "files": [
-        {
-          "path": "registry/components/oui-header-demo.tsx",
-          "type": "registry:component"
-        }
-      ],
-      "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/oui-header.json"
-      ],
-      "meta": {
-        "tags": ["header"]
       }
     }
   ]
