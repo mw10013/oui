@@ -5,7 +5,7 @@ export default function Component() {
   return (
     <TextFieldEx
       name="textarea-textarea"
-      label="With label and description"
+      label="Text Area"
       description="Type your message and press enter to send."
     >
       <TextArea placeholder="Type your message here." rows={6} />

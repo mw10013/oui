@@ -9,13 +9,14 @@
   "files": [
     {
       "path": "registry/components/oui-text-area-demo-text-field.tsx",
-      "content": "import { TextFieldEx } from \"@/registry/components/oui-text-field-ex\";\nimport { TextArea } from \"@/registry/components/ui/oui-text-area\";\n\nexport default function Component() {\n  return (\n    <TextFieldEx\n      name=\"textarea-textarea\"\n      label=\"With label and description\"\n      description=\"Type your message and press enter to send.\"\n    >\n      <TextArea placeholder=\"Type your message here.\" rows={6} />\n    </TextFieldEx>\n  );\n}\n",
+      "content": "import { TextFieldEx } from \"@/registry/components/oui-text-field-ex\";\nimport { TextArea } from \"@/registry/components/ui/oui-text-area\";\n\nexport default function Component() {\n  return (\n    <TextFieldEx\n      name=\"textarea-textarea\"\n      label=\"Text Area\"\n      description=\"Type your message and press enter to send.\"\n    >\n      <TextArea placeholder=\"Type your message here.\" rows={6} />\n    </TextFieldEx>\n  );\n}\n",
       "type": "registry:component"
     }
   ],
   "meta": {
     "tags": [
-      "text-area"
+      "text area",
+      "text field ex"
     ]
   }
 }

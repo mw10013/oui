@@ -1637,6 +1637,56 @@
       "dependencies": ["react-aria-components"]
     },
     {
+      "name": "oui-text-area-demo",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-text-area-demo.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "https://oui.mw10013.workers.dev/r/oui-text-area.json"
+      ],
+      "meta": {
+        "tags": ["text area"]
+      }
+    },
+    {
+      "name": "oui-text-area-demo-text-field",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-text-area-demo-text-field.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "https://oui.mw10013.workers.dev/r/oui-text-area.json",
+        "https://oui.mw10013.workers.dev/r/oui-text-field-ex.json"
+      ],
+      "meta": {
+        "tags": ["text area", "text field ex"]
+      }
+    },
+    {
+      "name": "oui-text-area-demo-disabled",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-text-area-demo-disabled.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "https://oui.mw10013.workers.dev/r/oui-text-area.json",
+        "https://oui.mw10013.workers.dev/r/oui-text-field-ex.json"
+      ],
+      "meta": {
+        "tags": ["text area", "text field ex", "disabled"]
+      }
+    },
+    {
       "name": "oui-text-field",
       "type": "registry:ui",
       "files": [
@@ -2605,60 +2655,6 @@
         "tags": ["separator"]
       }
     },
-
-    {
-      "name": "oui-text-area-demo",
-      "type": "registry:component",
-      "files": [
-        {
-          "path": "registry/components/oui-text-area-demo.tsx",
-          "type": "registry:component"
-        }
-      ],
-      "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/oui-text-area.json"
-      ],
-      "meta": {
-        "tags": ["text-area"]
-      }
-    },
-
-    {
-      "name": "oui-text-area-demo-text-field",
-      "type": "registry:component",
-      "files": [
-        {
-          "path": "registry/components/oui-text-area-demo-text-field.tsx",
-          "type": "registry:component"
-        }
-      ],
-      "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/oui-text-area.json",
-        "https://oui.mw10013.workers.dev/r/oui-text-field-ex.json"
-      ],
-      "meta": {
-        "tags": ["text-area"]
-      }
-    },
-
-    {
-      "name": "oui-text-area-demo-disabled",
-      "type": "registry:component",
-      "files": [
-        {
-          "path": "registry/components/oui-text-area-demo-disabled.tsx",
-          "type": "registry:component"
-        }
-      ],
-      "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/oui-text-area.json",
-        "https://oui.mw10013.workers.dev/r/oui-text-field-ex.json"
-      ],
-      "meta": {
-        "tags": ["text-area"]
-      }
-    },
-
     {
       "name": "oui-table-demo",
       "type": "registry:component",

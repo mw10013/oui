@@ -9,13 +9,15 @@
   "files": [
     {
       "path": "registry/components/oui-text-area-demo-disabled.tsx",
-      "content": "import { TextFieldEx } from \"@/registry/components/oui-text-field-ex\";\nimport { TextArea } from \"@/registry/components/ui/oui-text-area\";\n\nexport default function Component() {\n  return (\n    <TextFieldEx name=\"textarea-demo-disabled\" label=\"Disabled\" isDisabled>\n      <TextArea placeholder=\"Type your message here.\" />\n    </TextFieldEx>\n  );\n}\n",
+      "content": "import { TextFieldEx } from \"@/registry/components/oui-text-field-ex\";\nimport { TextArea } from \"@/registry/components/ui/oui-text-area\";\n\nexport default function Component() {\n  return (\n    <TextFieldEx name=\"textarea-demo-disabled\" label=\"Text Area Disabled\" isDisabled>\n      <TextArea placeholder=\"Type your message here.\" />\n    </TextFieldEx>\n  );\n}\n",
       "type": "registry:component"
     }
   ],
   "meta": {
     "tags": [
-      "text-area"
+      "text area",
+      "text field ex",
+      "disabled"
     ]
   }
 }
