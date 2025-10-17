@@ -1,5 +1,8 @@
 import type { ReactElement } from "react";
 import { Button } from "@/registry/components/ui/oui-button";
+import { Label } from "@/registry/components/ui/oui-label";
+import { Link } from "@/registry/components/ui/oui-link";
+import { Text } from "@/registry/components/ui/oui-text";
 import { OverlayArrow, Tooltip } from "@/registry/components/ui/oui-tooltip";
 import * as Rac from "react-aria-components";
 
@@ -58,5 +61,26 @@ export function TooltipEx({
 }
 
 export default function Component() {
-  return <div className="p-4">TooltipEx</div>;
+  return (
+    <div className="grid gap-2">
+      <Label>TooltipEx</Label>
+      <Text slot="description">
+        A reusable wrapper for{" "}
+        <Link
+          href="https://react-spectrum.adobe.com/react-aria/Tooltip.html"
+          underline="always"
+        >
+          Tooltip
+        </Link>{" "}
+        — see{" "}
+        <Link
+          href="https://oui.mw10013.workers.dev/filter?tags=tooltip%2Bex"
+          underline="always"
+        >
+          Uses
+        </Link>
+        .
+      </Text>
+    </div>
+  );
 }

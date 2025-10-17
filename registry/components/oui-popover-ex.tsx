@@ -1,6 +1,9 @@
 import { Button } from "@/registry/components/ui/oui-button";
 import { Dialog } from "@/registry/components/ui/oui-dialog";
+import { Label } from "@/registry/components/ui/oui-label";
+import { Link } from "@/registry/components/ui/oui-link";
 import { Popover } from "@/registry/components/ui/oui-popover";
+import { Text } from "@/registry/components/ui/oui-text";
 import * as Rac from "react-aria-components";
 
 export interface PopoverExProps extends Omit<Rac.PopoverProps, "children"> {
@@ -37,5 +40,26 @@ export function PopoverEx({
 }
 
 export default function Component() {
-  return <div className="p-4">PopoverEx</div>;
+  return (
+    <div className="grid gap-2">
+      <Label>PopoverEx</Label>
+      <Text slot="description">
+        A reusable wrapper for{" "}
+        <Link
+          href="https://react-spectrum.adobe.com/react-aria/Popover.html"
+          underline="always"
+        >
+          Popover
+        </Link>{" "}
+        — see{" "}
+        <Link
+          href="https://oui.mw10013.workers.dev/filter?tags=popover%2Bex"
+          underline="always"
+        >
+          Uses
+        </Link>
+        .
+      </Text>
+    </div>
+  );
 }

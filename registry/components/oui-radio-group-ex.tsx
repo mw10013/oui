@@ -1,6 +1,7 @@
 import React from "react";
 import { FieldError } from "@/registry/components/ui/oui-field-error";
 import { Label } from "@/registry/components/ui/oui-label";
+import { Link } from "@/registry/components/ui/oui-link";
 import { RadioGroup } from "@/registry/components/ui/oui-radio-group";
 import { Text } from "@/registry/components/ui/oui-text";
 import * as Rac from "react-aria-components";
@@ -33,5 +34,26 @@ export function RadioGroupEx({
 }
 
 export default function Component() {
-  return <div className="p-4">RadioGroupEx</div>;
+  return (
+    <div className="grid gap-2">
+      <Label>RadioGroupEx</Label>
+      <Text slot="description">
+        A reusable wrapper for{" "}
+        <Link
+          href="https://react-spectrum.adobe.com/react-aria/RadioGroup.html"
+          underline="always"
+        >
+          RadioGroup
+        </Link>{" "}
+        — see{" "}
+        <Link
+          href="https://oui.mw10013.workers.dev/filter?tags=radio-group%2Bex"
+          underline="always"
+        >
+          Uses
+        </Link>
+        .
+      </Text>
+    </div>
+  );
 }

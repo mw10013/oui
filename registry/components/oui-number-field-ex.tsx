@@ -2,6 +2,7 @@ import { FieldError } from "@/registry/components/ui/oui-field-error";
 import { Group } from "@/registry/components/ui/oui-group";
 import { Input } from "@/registry/components/ui/oui-input";
 import { Label } from "@/registry/components/ui/oui-label";
+import { Link } from "@/registry/components/ui/oui-link";
 import { NumberField } from "@/registry/components/ui/oui-number-field";
 import { Text } from "@/registry/components/ui/oui-text";
 import { ChevronDown, ChevronUp } from "lucide-react";
@@ -56,5 +57,26 @@ export function NumberFieldEx({
 }
 
 export default function Component() {
-  return <div className="p-4">NumberFieldEx</div>;
+  return (
+    <div className="grid gap-2">
+      <Label>NumberFieldEx</Label>
+      <Text slot="description">
+        A reusable wrapper for{" "}
+        <Link
+          href="https://react-spectrum.adobe.com/react-aria/NumberField.html"
+          underline="always"
+        >
+          NumberField
+        </Link>{" "}
+        — see{" "}
+        <Link
+          href="https://oui.mw10013.workers.dev/filter?tags=number-field%2Bex"
+          underline="always"
+        >
+          Uses
+        </Link>
+        .
+      </Text>
+    </div>
+  );
 }

@@ -1,10 +1,11 @@
 import React from "react";
+import { FieldError } from "@/registry/components/ui/oui-field-error";
+import { Input } from "@/registry/components/ui/oui-input";
+import { Label } from "@/registry/components/ui/oui-label";
+import { Link } from "@/registry/components/ui/oui-link";
 import { SearchField } from "@/registry/components/ui/oui-search-field";
 import { Text } from "@/registry/components/ui/oui-text";
 import * as Rac from "react-aria-components";
-import { Label } from "@/registry/components/ui/oui-label";
-import { Input } from "@/registry/components/ui/oui-input";
-import { FieldError } from "@/registry/components/ui/oui-field-error";
 
 export interface SearchFieldExProps extends Rac.SearchFieldProps {
   label?: React.ReactNode;
@@ -34,5 +35,26 @@ export function SearchFieldEx({
 }
 
 export default function Component() {
-  return <div className="p-4">SearchFieldEx</div>;
+  return (
+    <div className="grid gap-2">
+      <Label>SearchFieldEx</Label>
+      <Text slot="description">
+        A reusable wrapper for{" "}
+        <Link
+          href="https://react-spectrum.adobe.com/react-aria/SearchField.html"
+          underline="always"
+        >
+          SearchField
+        </Link>{" "}
+        — see{" "}
+        <Link
+          href="https://oui.mw10013.workers.dev/filter?tags=search%2Bfield%2Bex"
+          underline="always"
+        >
+          Uses
+        </Link>
+        .
+      </Text>
+    </div>
+  );
 }
