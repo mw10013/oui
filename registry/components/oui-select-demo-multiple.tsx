@@ -1,10 +1,4 @@
 import { useState } from "react";
-import {
-  Item,
-  ItemContent,
-  ItemDescription,
-  ItemTitle,
-} from "@/registry/components/ui/item";
 import { ListBoxItem } from "@/registry/components/ui/oui-list-box";
 import { Popover } from "@/registry/components/ui/oui-popover";
 import {
@@ -26,25 +20,25 @@ export default function Component() {
   const [animals, setAnimals] = useState<Rac.Key[]>(["Bison", "Kangaroo"]);
 
   return (
-    <Item>
-      <ItemContent>
-        <ItemTitle>Select</ItemTitle>
-        <ItemDescription>Multiple selection.</ItemDescription>
-        <Select aria-label="Select animal" selectionMode="multiple" value={animals} onChange={setAnimals}>
-          <SelectButton>
-            <SelectValue />
-          </SelectButton>
-          <Popover>
-            <Rac.ListBox>
-              {options.map((item) => (
-                <ListBoxItem key={item.name} id={item.name}>
-                  {item.name}
-                </ListBoxItem>
-              ))}
-            </Rac.ListBox>
-          </Popover>
-        </Select>
-      </ItemContent>
-    </Item>
+    <Select
+      aria-label="Select multiple"
+      placeholder="Select multiple"
+      selectionMode="multiple"
+      value={animals}
+      onChange={setAnimals}
+    >
+      <SelectButton>
+        <SelectValue />
+      </SelectButton>
+      <Popover>
+        <Rac.ListBox>
+          {options.map((item) => (
+            <ListBoxItem key={item.name} id={item.name}>
+              {item.name}
+            </ListBoxItem>
+          ))}
+        </Rac.ListBox>
+      </Popover>
+    </Select>
   );
 }

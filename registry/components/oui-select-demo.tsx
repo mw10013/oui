@@ -1,10 +1,3 @@
-import {
-  Item,
-  ItemContent,
-  ItemDescription,
-  ItemHeader,
-  ItemTitle,
-} from "@/registry/components/ui/item";
 import { ListBoxItem } from "@/registry/components/ui/oui-list-box";
 import { Popover } from "@/registry/components/ui/oui-popover";
 import {
@@ -16,28 +9,20 @@ import * as Rac from "react-aria-components";
 
 export default function Component() {
   return (
-    <Item>
-      <ItemHeader>
-        <Select aria-label="Select animal">
-          <SelectButton>
-            <SelectValue />
-          </SelectButton>
-          <Popover>
-            <Rac.ListBox>
-              <ListBoxItem>Aardvark</ListBoxItem>
-              <ListBoxItem>Cat</ListBoxItem>
-              <ListBoxItem>Dog</ListBoxItem>
-              <ListBoxItem>Kangaroo</ListBoxItem>
-              <ListBoxItem>Panda</ListBoxItem>
-              <ListBoxItem>Snake</ListBoxItem>
-            </Rac.ListBox>
-          </Popover>
-        </Select>
-      </ItemHeader>
-      <ItemContent>
-        <ItemTitle>Select</ItemTitle>
-        <ItemDescription>Single selection.</ItemDescription>
-      </ItemContent>
-    </Item>
+    <Select aria-label="Select" placeholder="Select">
+      <SelectButton>
+        <SelectValue />
+      </SelectButton>
+      <Popover>
+        <Rac.ListBox>
+          <ListBoxItem>Aardvark</ListBoxItem>
+          <ListBoxItem>Cat</ListBoxItem>
+          <ListBoxItem>Dog</ListBoxItem>
+          <ListBoxItem>Kangaroo</ListBoxItem>
+          <ListBoxItem>Panda</ListBoxItem>
+          <ListBoxItem>Snake</ListBoxItem>
+        </Rac.ListBox>
+      </Popover>
+    </Select>
   );
 }

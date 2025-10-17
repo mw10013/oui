@@ -9,13 +9,16 @@
   "files": [
     {
       "path": "registry/components/oui-select-ex-demo-large-list.tsx",
-      "content": "import { SelectEx } from \"@/registry/components/oui-select-ex\";\nimport { Item, ItemContent, ItemDescription, ItemTitle } from \"@/registry/components/ui/item\";\nimport { ListBoxItem } from \"@/registry/components/ui/oui-list-box\";\n\nconst largeListItems = Array.from({ length: 100 }).map((_, i) => ({\n  id: `item-${String(i)}`,\n  name: `Item ${String(i)}`,\n}));\n\nexport default function Component() {\n  return (\n    <Item>\n      <ItemContent>\n        <ItemTitle>SelectEx</ItemTitle>\n        <ItemDescription>With large list of items.</ItemDescription>\n        <SelectEx\n          aria-label=\"Select item\"\n          buttonClassName=\"w-[180px]\"\n          placeholder=\"Select item\"\n          items={largeListItems}\n        >\n          {(item) => <ListBoxItem>{item.name}</ListBoxItem>}\n        </SelectEx>\n      </ItemContent>\n    </Item>\n  );\n}\n",
+      "content": "import { SelectEx } from \"@/registry/components/oui-select-ex\";\nimport { ListBoxItem } from \"@/registry/components/ui/oui-list-box\";\n\nconst largeListItems = Array.from({ length: 100 }).map((_, i) => ({\n  id: `item-${String(i)}`,\n  name: `Item ${String(i)}`,\n}));\n\nexport default function Component() {\n  return (\n    <SelectEx\n      aria-label=\"SelectEx large list\"\n      placeholder=\"SelectEx large list\"\n      buttonClassName=\"w-[180px]\"\n      items={largeListItems}\n    >\n      {(item) => <ListBoxItem>{item.name}</ListBoxItem>}\n    </SelectEx>\n  );\n}\n",
       "type": "registry:component"
     }
   ],
   "meta": {
     "tags": [
-      "select"
-    ]
+      "select",
+      "select ex",
+      "large list"
+    ],
+    "alignment": "flex-center"
   }
 }

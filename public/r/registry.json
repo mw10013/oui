@@ -1466,6 +1466,166 @@
       ]
     },
     {
+      "name": "oui-select-demo",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-select-demo.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "https://oui.mw10013.workers.dev/r/oui-list-box.json",
+        "https://oui.mw10013.workers.dev/r/oui-popover.json",
+        "https://oui.mw10013.workers.dev/r/oui-select.json"
+      ],
+      "meta": {
+        "tags": ["select", "list box", "popover"],
+        "alignment": "flex-center"
+      }
+    },
+    {
+      "name": "oui-select-demo-multiple",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-select-demo-multiple.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "https://oui.mw10013.workers.dev/r/oui-list-box.json",
+        "https://oui.mw10013.workers.dev/r/oui-popover.json",
+        "https://oui.mw10013.workers.dev/r/oui-select.json"
+      ],
+      "meta": {
+        "tags": ["select", "list box", "popover", "multiple"],
+        "alignment": "flex-center"
+      }
+    },
+    {
+      "name": "oui-select-ex",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-select-ex.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "https://oui.mw10013.workers.dev/r/oui-field-error.json",
+        "https://oui.mw10013.workers.dev/r/oui-label.json",
+        "https://oui.mw10013.workers.dev/r/oui-popover.json",
+        "https://oui.mw10013.workers.dev/r/oui-select.json",
+        "https://oui.mw10013.workers.dev/r/oui-text.json"
+      ],
+      "meta": {
+        "tags": [
+          "select",
+          "select ex",
+          "field error",
+          "label",
+          "popover",
+          "text"
+        ]
+      }
+    },
+    {
+      "name": "oui-select-ex-demo",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-select-ex-demo.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "https://oui.mw10013.workers.dev/r/oui-header.json",
+        "https://oui.mw10013.workers.dev/r/oui-list-box.json",
+        "https://oui.mw10013.workers.dev/r/oui-select-ex.json"
+      ],
+      "meta": {
+        "tags": ["select", "select ex", "header", "list box", "disabled"],
+        "alignment": "flex-center"
+      }
+    },
+    {
+      "name": "oui-select-ex-demo-large-list",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-select-ex-demo-large-list.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "https://oui.mw10013.workers.dev/r/oui-list-box.json",
+        "https://oui.mw10013.workers.dev/r/oui-select-ex.json"
+      ],
+      "meta": {
+        "tags": ["select", "select ex", "large list"],
+        "alignment": "flex-center"
+      }
+    },
+    {
+      "name": "oui-select-ex-demo-icon",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-select-ex-demo-icon.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "https://oui.mw10013.workers.dev/r/oui-list-box.json",
+        "https://oui.mw10013.workers.dev/r/oui-select-ex.json"
+      ],
+      "dependencies": ["lucide-react"],
+      "meta": {
+        "tags": ["select", "select ex", "list box"],
+        "alignment": "flex-center"
+      }
+    },
+    {
+      "name": "oui-select-ex-demo-disabled",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-select-ex-demo-disabled.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "https://oui.mw10013.workers.dev/r/oui-list-box.json",
+        "https://oui.mw10013.workers.dev/r/oui-select-ex.json"
+      ],
+      "meta": {
+        "tags": ["select", "select ex", "disabled"],
+        "alignment": "flex-center"
+      }
+    },
+
+    {
+      "name": "oui-select-ex-popover",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-select-ex-popover.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "https://oui.mw10013.workers.dev/r/oui-field-error.json",
+        "https://oui.mw10013.workers.dev/r/oui-label.json",
+        "https://oui.mw10013.workers.dev/r/oui-popover.json",
+        "https://oui.mw10013.workers.dev/r/oui-select.json",
+        "https://oui.mw10013.workers.dev/r/oui-text.json"
+      ],
+      "meta": {
+        "tags": ["select"]
+      }
+    },
+    {
       "name": "oui-separator",
       "type": "registry:ui",
       "files": [
@@ -2104,116 +2264,6 @@
       }
     },
     {
-      "name": "oui-select-ex",
-      "type": "registry:component",
-      "files": [
-        {
-          "path": "registry/components/oui-select-ex.tsx",
-          "type": "registry:component"
-        }
-      ],
-      "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/oui-field-error.json",
-        "https://oui.mw10013.workers.dev/r/oui-label.json",
-        "https://oui.mw10013.workers.dev/r/oui-popover.json",
-        "https://oui.mw10013.workers.dev/r/oui-select.json",
-        "https://oui.mw10013.workers.dev/r/oui-text.json"
-      ],
-      "meta": {
-        "tags": ["select"]
-      }
-    },
-    {
-      "name": "oui-select-ex-popover",
-      "type": "registry:component",
-      "files": [
-        {
-          "path": "registry/components/oui-select-ex-popover.tsx",
-          "type": "registry:component"
-        }
-      ],
-      "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/oui-field-error.json",
-        "https://oui.mw10013.workers.dev/r/oui-label.json",
-        "https://oui.mw10013.workers.dev/r/oui-popover.json",
-        "https://oui.mw10013.workers.dev/r/oui-select.json",
-        "https://oui.mw10013.workers.dev/r/oui-text.json"
-      ],
-      "meta": {
-        "tags": ["select"]
-      }
-    },
-    {
-      "name": "oui-select-ex-demo",
-      "type": "registry:component",
-      "files": [
-        {
-          "path": "registry/components/oui-select-ex-demo.tsx",
-          "type": "registry:component"
-        }
-      ],
-      "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/oui-header.json",
-        "https://oui.mw10013.workers.dev/r/oui-list-box.json",
-        "https://oui.mw10013.workers.dev/r/oui-select-ex.json"
-      ],
-      "meta": {
-        "tags": ["select"]
-      }
-    },
-    {
-      "name": "oui-select-ex-demo-large-list",
-      "type": "registry:component",
-      "files": [
-        {
-          "path": "registry/components/oui-select-ex-demo-large-list.tsx",
-          "type": "registry:component"
-        }
-      ],
-      "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/oui-list-box.json",
-        "https://oui.mw10013.workers.dev/r/oui-select-ex.json"
-      ],
-      "meta": {
-        "tags": ["select"]
-      }
-    },
-    {
-      "name": "oui-select-ex-demo-icon",
-      "type": "registry:component",
-      "files": [
-        {
-          "path": "registry/components/oui-select-ex-demo-icon.tsx",
-          "type": "registry:component"
-        }
-      ],
-      "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/oui-list-box.json",
-        "https://oui.mw10013.workers.dev/r/oui-select-ex.json"
-      ],
-      "dependencies": ["lucide-react"],
-      "meta": {
-        "tags": ["select"]
-      }
-    },
-    {
-      "name": "oui-select-ex-demo-disabled",
-      "type": "registry:component",
-      "files": [
-        {
-          "path": "registry/components/oui-select-ex-demo-disabled.tsx",
-          "type": "registry:component"
-        }
-      ],
-      "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/oui-list-box.json",
-        "https://oui.mw10013.workers.dev/r/oui-select-ex.json"
-      ],
-      "meta": {
-        "tags": ["select", "disabled"]
-      }
-    },
-    {
       "name": "oui-menu-ex",
       "type": "registry:component",
       "files": [
@@ -2729,45 +2779,6 @@
         "tags": ["table"]
       }
     },
-    {
-      "name": "oui-select-demo",
-      "type": "registry:component",
-      "files": [
-        {
-          "path": "registry/components/oui-select-demo.tsx",
-          "type": "registry:component"
-        }
-      ],
-      "registryDependencies": [
-        "https://ui.shadcn.com/r/styles/new-york/r/item.json",
-        "https://oui.mw10013.workers.dev/r/oui-list-box.json",
-        "https://oui.mw10013.workers.dev/r/oui-popover.json",
-        "https://oui.mw10013.workers.dev/r/oui-select.json"
-      ],
-      "meta": {
-        "tags": ["select"]
-      }
-    },
-    {
-      "name": "oui-select-demo-multiple",
-      "type": "registry:component",
-      "files": [
-        {
-          "path": "registry/components/oui-select-demo-multiple.tsx",
-          "type": "registry:component"
-        }
-      ],
-      "registryDependencies": [
-        "https://ui.shadcn.com/r/styles/new-york/r/item.json",
-        "https://oui.mw10013.workers.dev/r/oui-list-box.json",
-        "https://oui.mw10013.workers.dev/r/oui-popover.json",
-        "https://oui.mw10013.workers.dev/r/oui-select.json"
-      ],
-      "meta": {
-        "tags": ["select"]
-      }
-    },
-
     {
       "name": "oui-list-box-demo",
       "type": "registry:component",
