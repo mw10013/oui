@@ -641,6 +641,7 @@
         "tailwind-merge"
       ]
     },
+
     {
       "name": "oui-dialog-demo",
       "type": "registry:component",
@@ -674,6 +675,7 @@
         "alignment": "flex-center"
       }
     },
+
     {
       "name": "oui-dialog-ex",
       "type": "registry:component",
@@ -1035,6 +1037,34 @@
       "registryDependencies": [],
       "dependencies": ["react-aria-components", "tailwind-merge"]
     },
+    {
+      "name": "oui-form-demo",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-form-demo.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "https://oui.mw10013.workers.dev/r/oui-button.json",
+        "https://oui.mw10013.workers.dev/r/oui-checkbox-ex.json",
+        "https://oui.mw10013.workers.dev/r/oui-checkbox-group-ex.json",
+        "https://oui.mw10013.workers.dev/r/oui-checkbox.json",
+        "https://oui.mw10013.workers.dev/r/oui-form.json",
+        "https://oui.mw10013.workers.dev/r/oui-list-box.json",
+        "https://oui.mw10013.workers.dev/r/oui-radio-group-ex.json",
+        "https://oui.mw10013.workers.dev/r/oui-radio-group.json",
+        "https://oui.mw10013.workers.dev/r/oui-select-ex.json",
+        "https://oui.mw10013.workers.dev/r/oui-switch-ex.json",
+        "https://oui.mw10013.workers.dev/r/oui-text-area.json",
+        "https://oui.mw10013.workers.dev/r/oui-text-field-ex.json"
+      ],
+      "meta": {
+        "tags": ["form"]
+      }
+    },
+
     {
       "name": "oui-group",
       "type": "registry:ui",
@@ -2122,33 +2152,7 @@
         "tags": ["number-field"]
       }
     },
-    {
-      "name": "oui-form-demo",
-      "type": "registry:component",
-      "files": [
-        {
-          "path": "registry/components/oui-form-demo.tsx",
-          "type": "registry:component"
-        }
-      ],
-      "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/oui-button.json",
-        "https://oui.mw10013.workers.dev/r/oui-checkbox-ex.json",
-        "https://oui.mw10013.workers.dev/r/oui-checkbox-group-ex.json",
-        "https://oui.mw10013.workers.dev/r/oui-checkbox.json",
-        "https://oui.mw10013.workers.dev/r/oui-form.json",
-        "https://oui.mw10013.workers.dev/r/oui-list-box.json",
-        "https://oui.mw10013.workers.dev/r/oui-radio-group-ex.json",
-        "https://oui.mw10013.workers.dev/r/oui-radio-group.json",
-        "https://oui.mw10013.workers.dev/r/oui-select-ex.json",
-        "https://oui.mw10013.workers.dev/r/oui-switch-ex.json",
-        "https://oui.mw10013.workers.dev/r/oui-text-area.json",
-        "https://oui.mw10013.workers.dev/r/oui-text-field-ex.json"
-      ],
-      "meta": {
-        "tags": ["form"]
-      }
-    },
+
     {
       "name": "oui-slider-ex",
       "type": "registry:component",
