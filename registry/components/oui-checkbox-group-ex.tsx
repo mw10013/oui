@@ -1,6 +1,7 @@
 import { CheckboxGroup } from "@/registry/components/ui/oui-checkbox-group";
 import { FieldError } from "@/registry/components/ui/oui-field-error";
 import { Label } from "@/registry/components/ui/oui-label";
+import { Link } from "@/registry/components/ui/oui-link";
 import { Text } from "@/registry/components/ui/oui-text";
 import * as Rac from "react-aria-components";
 
@@ -48,5 +49,26 @@ export function CheckboxGroupEx({
 }
 
 export default function Component() {
-  return <div className="p-4">CheckboxGroupEx</div>;
+  return (
+    <div className="grid gap-2">
+      <Label>CheckboxGroupEx</Label>
+      <Text slot="description">
+        A reusable wrapper for{" "}
+        <Link
+          href="https://react-spectrum.adobe.com/react-aria/CheckboxGroup.html"
+          underline="always"
+        >
+          CheckboxGroup
+        </Link>{" "}
+        — see{" "}
+        <Link
+          href="https://oui.mw10013.workers.dev/filter?tags=checkbox%2Bgroup%2Bex"
+          underline="always"
+        >
+          Uses
+        </Link>
+        .
+      </Text>
+    </div>
+  );
 }

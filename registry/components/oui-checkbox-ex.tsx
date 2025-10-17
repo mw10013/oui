@@ -1,5 +1,7 @@
 import React from "react";
 import { Checkbox } from "@/registry/components/ui/oui-checkbox";
+import { Label } from "@/registry/components/ui/oui-label";
+import { Link } from "@/registry/components/ui/oui-link";
 import { Text } from "@/registry/components/ui/oui-text";
 import * as Rac from "react-aria-components";
 import { twMerge } from "tailwind-merge";
@@ -45,5 +47,26 @@ export function CheckboxEx({
 }
 
 export default function Component() {
-  return <div className="p-4">CheckboxEx</div>;
+  return (
+    <div className="grid gap-2">
+      <Label>CheckboxEx</Label>
+      <Text slot="description">
+        A reusable wrapper for{" "}
+        <Link
+          href="https://react-spectrum.adobe.com/react-aria/Checkbox.html"
+          underline="always"
+        >
+          Checkbox
+        </Link>{" "}
+        — see{" "}
+        <Link
+          href="https://oui.mw10013.workers.dev/filter?tags=checkbox%2Bex"
+          underline="always"
+        >
+          Uses
+        </Link>
+        .
+      </Text>
+    </div>
+  );
 }
