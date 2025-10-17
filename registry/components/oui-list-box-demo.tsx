@@ -1,7 +1,6 @@
 import {
   Item,
   ItemContent,
-  ItemDescription,
   ItemTitle,
 } from "@/registry/components/ui/item";
 import { ListBoxItem } from "@/registry/components/ui/oui-list-box";
@@ -20,7 +19,6 @@ export default function Component() {
           <ListBoxItem>Panda</ListBoxItem>
           <ListBoxItem>Snake</ListBoxItem>
         </Rac.ListBox>
-        <ItemDescription>Single selection</ItemDescription>
       </ItemContent>
     </Item>
   );

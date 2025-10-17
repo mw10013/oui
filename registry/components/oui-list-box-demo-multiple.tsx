@@ -1,9 +1,4 @@
-import {
-  Item,
-  ItemContent,
-  ItemDescription,
-  ItemTitle,
-} from "@/registry/components/ui/item";
+import { Item, ItemContent, ItemTitle } from "@/registry/components/ui/item";
 import { ListBoxItem } from "@/registry/components/ui/oui-list-box";
 import * as Rac from "react-aria-components";
 
@@ -11,7 +6,7 @@ export default function Component() {
   return (
     <Item>
       <ItemContent>
-        <ItemTitle>ListBox</ItemTitle>
+        <ItemTitle>ListBox (multiple selection)</ItemTitle>
         <Rac.ListBox aria-label="Favorite animal" selectionMode="multiple">
           <ListBoxItem>Aardvark</ListBoxItem>
           <ListBoxItem>Cat</ListBoxItem>
@@ -20,7 +15,6 @@ export default function Component() {
           <ListBoxItem>Panda</ListBoxItem>
           <ListBoxItem>Snake</ListBoxItem>
         </Rac.ListBox>
-        <ItemDescription>Multiple selection</ItemDescription>
       </ItemContent>
     </Item>
   );
