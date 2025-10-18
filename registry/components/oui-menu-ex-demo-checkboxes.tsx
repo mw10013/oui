@@ -19,7 +19,7 @@ export default function Component() {
 
   return (
     <MenuEx
-      triggerElement={<Button variant="outline">Menu Checkboxes</Button>}
+      triggerElement={<Button variant="outline">MenuEx Checkboxes</Button>}
       className="w-56"
     >
       <Rac.MenuSection>

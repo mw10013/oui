@@ -10,7 +10,7 @@ import { Heading } from "@/registry/components/ui/oui-heading";
 export default function Component() {
   return (
     <PopoverEx
-      triggerElement={<Button variant="outline">Popover</Button>}
+      triggerElement={<Button variant="outline">PopoverEx</Button>}
       className="w-80"
     >
       <DialogHeader>

@@ -10,7 +10,7 @@ import * as Rac from "react-aria-components";
 export default function Component() {
   return (
     <MenuEx
-      triggerElement={<Button variant="outline">Menu</Button>}
+      triggerElement={<Button variant="outline">MenuEx</Button>}
       className="w-56"
     >
       <Rac.MenuSection>
