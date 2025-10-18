@@ -1,6 +1,7 @@
 import { FieldError } from "@/registry/components/ui/oui-field-error";
 import { Input } from "@/registry/components/ui/oui-input";
 import { Label } from "@/registry/components/ui/oui-label";
+import { Link } from "@/registry/components/ui/oui-link";
 import { Text } from "@/registry/components/ui/oui-text";
 import { TextField } from "@/registry/components/ui/oui-text-field";
 import * as Rac from "react-aria-components";
@@ -55,5 +56,26 @@ export function TextFieldExHorizontal({
 }
 
 export default function Component() {
-  return <div className="p-4">TextFieldExHorizontal</div>;
+  return (
+    <div className="grid gap-2">
+      <Label>TextFieldExHorizontal</Label>
+      <Text slot="description">
+        A reusable wrapper for{" "}
+        <Link
+          href="https://react-spectrum.adobe.com/react-aria/TextField.html"
+          underline="always"
+        >
+          TextField
+        </Link>{" "}
+        with a horizonbtal layout — see{" "}
+        <Link
+          href="https://oui.mw10013.workers.dev/filter?tags=text-field-ex-horizontal"
+          underline="always"
+        >
+          Uses
+        </Link>
+        .
+      </Text>
+    </div>
+  );
 }
