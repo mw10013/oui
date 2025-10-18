@@ -84,7 +84,6 @@ export default function ComponentDetails({
                 </Button>
               </span>
             }
-            className="px-2 py-1 text-xs text-muted-foreground"
           >
             View code
           </TooltipEx>

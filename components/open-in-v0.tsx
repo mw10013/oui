@@ -34,7 +34,6 @@ const OpenInV0 = ({ componentSource }: { componentSource: string }) => {
           </svg>
         </Link>
       }
-      className="px-2 py-1 text-xs text-muted-foreground"
     >
       Open in v0
     </TooltipEx>
