@@ -691,7 +691,7 @@
         "https://oui.mw10013.workers.dev/r/oui-modal-ex.json"
       ],
       "meta": {
-        "tags": ["dialog", "dialog-ex", "button", "modal-ex"]
+        "tags": ["dialog", "dialog-ex", "modal-ex", "button", "modal-ex"]
       }
     },
     {
@@ -711,7 +711,7 @@
         "https://oui.mw10013.workers.dev/r/oui-text-field-ex.json"
       ],
       "meta": {
-        "tags": ["dialog", "dialog-ex", "button", "text-field-ex", "heading"],
+        "tags": ["dialog", "dialog-ex", "modal-ex", "button", "text-field-ex", "heading"],
         "alignment": "flex-center"
       }
     },
@@ -731,7 +731,7 @@
         "https://oui.mw10013.workers.dev/r/oui-heading.json"
       ],
       "meta": {
-        "tags": ["dialog", "dialog-ex", "button", "heading"],
+        "tags": ["dialog", "dialog-ex", "modal-ex", "button", "heading"],
         "alignment": "flex-center"
       }
     },
@@ -751,7 +751,7 @@
         "https://oui.mw10013.workers.dev/r/oui-heading.json"
       ],
       "meta": {
-        "tags": ["dialog", "dialog-ex", "button", "heading"],
+        "tags": ["dialog", "dialog-ex", "modal-ex", "button", "heading"],
         "alignment": "flex-center"
       }
     },
@@ -790,7 +790,7 @@
         "https://oui.mw10013.workers.dev/r/oui-heading.json"
       ],
       "meta": {
-        "tags": ["dialog", "dialog-ex", "button", "heading"],
+        "tags": ["dialog", "dialog-ex", "modal-ex", "button", "heading"],
         "alignment": "flex-center"
       }
     },
