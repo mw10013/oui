@@ -1822,6 +1822,53 @@
       "dependencies": ["react-aria-components", "lucide-react"]
     },
     {
+      "name": "oui-number-field-ex",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-number-field-ex.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "https://oui.mw10013.workers.dev/r/oui-field-error.json",
+        "https://oui.mw10013.workers.dev/r/oui-group.json",
+        "https://oui.mw10013.workers.dev/r/oui-input.json",
+        "https://oui.mw10013.workers.dev/r/oui-label.json",
+        "https://oui.mw10013.workers.dev/r/oui-number-field.json",
+        "https://oui.mw10013.workers.dev/r/oui-text.json"
+      ],
+      "dependencies": ["lucide-react"],
+      "meta": {
+        "tags": [
+          "number-field",
+          "number-field-ex",
+          "input",
+          "label",
+          "field-error",
+          "text",
+          "group"
+        ]
+      }
+    },
+    {
+      "name": "oui-number-field-ex-demo",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-number-field-ex-demo.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "https://oui.mw10013.workers.dev/r/oui-button.json",
+        "https://oui.mw10013.workers.dev/r/oui-number-field-ex.json"
+      ],
+      "meta": {
+        "tags": ["number-field", "number-field-ex", "button"]
+      }
+    },
+    {
       "name": "oui-popover",
       "type": "registry:ui",
       "files": [
@@ -2665,46 +2712,6 @@
         "tags": ["radio-group"]
       }
     },
-    {
-      "name": "oui-number-field-ex",
-      "type": "registry:component",
-      "files": [
-        {
-          "path": "registry/components/oui-number-field-ex.tsx",
-          "type": "registry:component"
-        }
-      ],
-      "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/oui-field-error.json",
-        "https://oui.mw10013.workers.dev/r/oui-group.json",
-        "https://oui.mw10013.workers.dev/r/oui-input.json",
-        "https://oui.mw10013.workers.dev/r/oui-label.json",
-        "https://oui.mw10013.workers.dev/r/oui-number-field.json",
-        "https://oui.mw10013.workers.dev/r/oui-text.json"
-      ],
-      "dependencies": ["lucide-react"],
-      "meta": {
-        "tags": ["number-field"]
-      }
-    },
-    {
-      "name": "oui-number-field-ex-demo",
-      "type": "registry:component",
-      "files": [
-        {
-          "path": "registry/components/oui-number-field-ex-demo.tsx",
-          "type": "registry:component"
-        }
-      ],
-      "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/oui-button.json",
-        "https://oui.mw10013.workers.dev/r/oui-number-field-ex.json"
-      ],
-      "meta": {
-        "tags": ["number-field"]
-      }
-    },
-
     {
       "name": "oui-slider-ex",
       "type": "registry:component",

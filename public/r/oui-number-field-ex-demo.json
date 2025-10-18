@@ -15,7 +15,9 @@
   ],
   "meta": {
     "tags": [
-      "number-field"
+      "number-field",
+      "number-field-ex",
+      "button"
     ]
   }
 }

@@ -73,10 +73,10 @@ Licensed under the [MIT License](https://github.com/mw10013/oui/blob/main/LICENS
 ## TODO
 
 - tag: sheet
-- ex (reusable wrappers): layout, link, uses, composes with
 - oui-index demo
   - https://oui.mw10013.workers.dev/filter?tags=dialog%2Bex
-- dialog ex and modal ex
+- dialog ex and modal ex tags
+- order/tags
 - browser console.log errors
 - loading...
 - theme toggle: use oui checkbox/focus ring? oui-toggle?
@@ -86,10 +86,10 @@ Licensed under the [MIT License](https://github.com/mw10013/oui/blob/main/LICENS
 - readme
 - PR to add to shadcn
 
+- group: with ghost button icon
 - checkbox: layout
 - disclosure: animation
 - autocomplete: button x
-- group: with ghost button icon
 
 - eslint-disable-next-line react-hooks/exhaustive-deps
 - registry:build: delete r/\*

@@ -22,7 +22,13 @@
   ],
   "meta": {
     "tags": [
-      "number-field"
+      "number-field",
+      "number-field-ex",
+      "input",
+      "label",
+      "field-error",
+      "text",
+      "group"
     ]
   }
 }
