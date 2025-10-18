@@ -8,7 +8,7 @@
   "files": [
     {
       "path": "registry/components/oui-index-demo.tsx",
-      "content": "import { Label } from \"@/registry/components/ui/oui-label\";\nimport { Text } from \"@/registry/components/ui/oui-text\";\n\nexport default function Component() {\n  return (\n    <div className=\"grid gap-2\">\n      <Label>Index</Label>\n      <Text slot=\"description\">\n        All ui and ex (extension or reusable wrapper) components. Only\n        core components. No demos.\n        <pre className=\"mt-2 rounded bg-muted p-2 text-sm\">\n          {`import * as Oui from '@/registry/components/ui/oui-index'\n<Oui.Button>Oui Index</Oui.Button>`}\n        </pre>\n      </Text>\n    </div>\n  );\n}\n",
+      "content": "import * as Oui from \"@/registry/components/ui/oui-index\";\n\nexport default function Component() {\n  return (\n    <div className=\"grid gap-2\">\n      <Oui.Label>Index</Oui.Label>\n      <Oui.Text slot=\"description\">\n        All ui and ex (extension or reusable wrapper) components. Only core\n        components. No demos.\n        <pre className=\"mt-2 rounded bg-muted p-2 text-sm\">\n          {`import * as Oui from '@/registry/components/ui/oui-index'\n<Oui.Button>Oui Index</Oui.Button>`}\n        </pre>\n      </Oui.Text>\n    </div>\n  );\n}\n",
       "type": "registry:component"
     }
   ],
