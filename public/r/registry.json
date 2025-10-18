@@ -662,14 +662,7 @@
         "https://oui.mw10013.workers.dev/r/oui-text-field.json"
       ],
       "meta": {
-        "tags": [
-          "dialog",
-          "form",
-          "heading",
-          "input",
-          "modal",
-          "text-field"
-        ],
+        "tags": ["dialog", "form", "heading", "input", "modal", "text-field"],
         "alignment": "flex-center"
       }
     },
@@ -693,11 +686,11 @@
       }
     },
     {
-      "name": "oui-dialog-ex-demo-form",
+      "name": "oui-dialog-ex-demo",
       "type": "registry:component",
       "files": [
         {
-          "path": "registry/components/oui-dialog-ex-demo-form.tsx",
+          "path": "registry/components/oui-dialog-ex-demo.tsx",
           "type": "registry:component"
         }
       ],
@@ -717,6 +710,26 @@
           "text-field-ex",
           "heading"
         ],
+        "alignment": "flex-center"
+      }
+    },
+    {
+      "name": "oui-dialog-ex-demo-alert",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-dialog-ex-demo-alert.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "https://oui.mw10013.workers.dev/r/oui-button.json",
+        "https://oui.mw10013.workers.dev/r/oui-dialog.json",
+        "https://oui.mw10013.workers.dev/r/oui-dialog-ex.json",
+        "https://oui.mw10013.workers.dev/r/oui-heading.json"
+      ],
+      "meta": {
+        "tags": ["dialog", "dialog-ex", "modal-ex", "heading"],
         "alignment": "flex-center"
       }
     },
@@ -777,26 +790,6 @@
       ],
       "meta": {
         "tags": ["dialog", "dialog-ex-alert", "heading", "modal-ex"]
-      }
-    },
-    {
-      "name": "oui-dialog-ex-demo-alert",
-      "type": "registry:component",
-      "files": [
-        {
-          "path": "registry/components/oui-dialog-ex-demo-alert.tsx",
-          "type": "registry:component"
-        }
-      ],
-      "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/oui-button.json",
-        "https://oui.mw10013.workers.dev/r/oui-dialog.json",
-        "https://oui.mw10013.workers.dev/r/oui-dialog-ex.json",
-        "https://oui.mw10013.workers.dev/r/oui-heading.json"
-      ],
-      "meta": {
-        "tags": ["dialog", "dialog-ex", "modal-ex", "heading"],
-        "alignment": "flex-center"
       }
     },
     {
@@ -868,12 +861,7 @@
         "https://oui.mw10013.workers.dev/r/oui-modal-ex-sheet.json"
       ],
       "meta": {
-        "tags": [
-          "dialog",
-          "dialog-ex-sheet",
-          "modal-ex-sheet",
-          "sheet"
-        ]
+        "tags": ["dialog", "dialog-ex-sheet", "modal-ex-sheet", "sheet"]
       }
     },
     {

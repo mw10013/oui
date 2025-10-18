@@ -10,7 +10,7 @@ import { Heading } from "@/registry/components/ui/oui-heading";
 export default function Component() {
   return (
     <DialogEx
-      triggerElement={<Button variant="outline">Alert</Button>}
+      triggerElement={<Button variant="outline">DialogEx Alert</Button>}
       role="alertdialog"
     >
       <DialogHeader>
