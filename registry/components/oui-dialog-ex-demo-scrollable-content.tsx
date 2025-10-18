@@ -9,7 +9,7 @@ import { Heading } from "@/registry/components/ui/oui-heading";
 export default function Component() {
   return (
     <DialogEx
-      triggerElement={<Button variant="outline">Scrollable Content</Button>}
+      triggerElement={<Button variant="outline">DialogEx Scrollable Content</Button>}
       modalClassName="sm:max-w-[425px]"
     >
       <DialogHeader>

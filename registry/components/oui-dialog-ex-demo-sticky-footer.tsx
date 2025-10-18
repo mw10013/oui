@@ -10,7 +10,7 @@ import { Heading } from "@/registry/components/ui/oui-heading";
 export default function Component() {
   return (
     <DialogEx
-      triggerElement={<Button variant="outline">Sticky Footer</Button>}
+      triggerElement={<Button variant="outline">DialogEx Sticky Footer</Button>}
       modalClassName="sm:max-w-lg"
     >
       <DialogHeader>
