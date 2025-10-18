@@ -66,18 +66,18 @@ export function ModalExSheet({
 }
 
 export default function Component() {
-  return (
+    return (
     <div className="grid gap-2">
       <Label>ModalExSheet</Label>
       <Text slot="description">
-        A reusable wrapper for{" "}
+        A reusable wrapper that extends{" "}
         <Link
           href="https://react-spectrum.adobe.com/react-aria/Modal.html"
           underline="always"
         >
           Modal
         </Link>{" "}
-        — see{" "}
+        to display content that complements the main content of the screen — see{" "}
         <Link
           href="https://oui.mw10013.workers.dev/filter?tags=modal-ex-sheet"
           underline="always"

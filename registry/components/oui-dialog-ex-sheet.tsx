@@ -73,6 +73,4 @@ export default function Component() {
       </Text>
     </div>
   );
-
-  return <div className="p-4">DialogExSheet</div>;
 }
