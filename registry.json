@@ -2601,7 +2601,8 @@
         "https://oui.mw10013.workers.dev/r/oui-table.json"
       ],
       "meta": {
-        "tags": ["table"]
+        "tags": ["table"],
+        "width": "wide"
       }
     },
     {
@@ -2623,7 +2624,8 @@
       ],
       "dependencies": ["lucide-react"],
       "meta": {
-        "tags": ["table", "menu", "menu-ex", "button", "separator", "checkbox"]
+        "tags": ["table", "menu", "menu-ex", "separator", "checkbox"],
+        "width": "wide"
       }
     },
     {
@@ -2904,7 +2906,7 @@
         "https://oui.mw10013.workers.dev/r/oui-tooltip.json"
       ],
       "meta": {
-        "tags": ["tooltip", "button"],
+        "tags": ["tooltip"],
         "alignment": "flex-center"
       }
     },
@@ -2939,7 +2941,7 @@
         "https://oui.mw10013.workers.dev/r/oui-tooltip-ex.json"
       ],
       "meta": {
-        "tags": ["tooltip", "tooltip-ex", "button"],
+        "tags": ["tooltip", "tooltip-ex"],
         "alignment": "flex-center"
       }
     }

@@ -16,8 +16,7 @@
   "meta": {
     "tags": [
       "tooltip",
-      "tooltip-ex",
-      "button"
+      "tooltip-ex"
     ],
     "alignment": "flex-center"
   }

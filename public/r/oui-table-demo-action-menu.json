@@ -25,9 +25,9 @@
       "table",
       "menu",
       "menu-ex",
-      "button",
       "separator",
       "checkbox"
-    ]
+    ],
+    "width": "wide"
   }
 }
