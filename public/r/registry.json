@@ -1970,6 +1970,59 @@
       ]
     },
     {
+      "name": "oui-radio-group-ex",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-radio-group-ex.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "https://oui.mw10013.workers.dev/r/oui-field-error.json",
+        "https://oui.mw10013.workers.dev/r/oui-label.json",
+        "https://oui.mw10013.workers.dev/r/oui-radio-group.json",
+        "https://oui.mw10013.workers.dev/r/oui-text.json"
+      ],
+      "meta": {
+        "tags": ["radio-group"]
+      }
+    },
+    {
+      "name": "oui-radio-group-ex-demo",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-radio-group-ex-demo.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "https://oui.mw10013.workers.dev/r/oui-radio-group-ex.json",
+        "https://oui.mw10013.workers.dev/r/oui-radio-group.json"
+      ],
+      "meta": {
+        "tags": ["radio-group"]
+      }
+    },
+    {
+      "name": "oui-radio-group-ex-demo-description",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-radio-group-ex-demo-description.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "https://oui.mw10013.workers.dev/r/oui-radio-group-ex.json",
+        "https://oui.mw10013.workers.dev/r/oui-radio-group.json"
+      ],
+      "meta": {
+        "tags": ["radio-group"]
+      }
+    },
+    {
       "name": "oui-search-field",
       "type": "registry:ui",
       "files": [
@@ -1986,6 +2039,42 @@
         "https://oui.mw10013.workers.dev/r/oui-text.json"
       ],
       "dependencies": ["react-aria-components"]
+    },
+    {
+      "name": "oui-search-field-ex",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-search-field-ex.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "https://oui.mw10013.workers.dev/r/oui-field-error.json",
+        "https://oui.mw10013.workers.dev/r/oui-label.json",
+        "https://oui.mw10013.workers.dev/r/oui-input.json",
+        "https://oui.mw10013.workers.dev/r/oui-search-field.json",
+        "https://oui.mw10013.workers.dev/r/oui-text.json"
+      ],
+      "meta": {
+        "tags": ["search-field"]
+      }
+    },
+    {
+      "name": "oui-search-field-ex-demo",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-search-field-ex-demo.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "https://oui.mw10013.workers.dev/r/oui-search-field-ex.json"
+      ],
+      "meta": {
+        "tags": ["search-field"]
+      }
     },
     {
       "name": "oui-select",
@@ -2185,6 +2274,22 @@
       ]
     },
     {
+      "name": "oui-separator-demo",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-separator-demo.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "https://oui.mw10013.workers.dev/r/oui-separator.json"
+      ],
+      "meta": {
+        "tags": ["separator"]
+      }
+    },
+    {
       "name": "oui-slider",
       "type": "registry:ui",
       "files": [
@@ -2197,6 +2302,55 @@
         "https://oui.mw10013.workers.dev/r/oui-label.json"
       ],
       "dependencies": ["react-aria-components"]
+    },
+    {
+      "name": "oui-slider-ex",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-slider-ex.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "https://oui.mw10013.workers.dev/r/oui-label.json",
+        "https://oui.mw10013.workers.dev/r/oui-slider.json"
+      ],
+      "meta": {
+        "tags": ["slider"]
+      }
+    },
+    {
+      "name": "oui-slider-ex-demo",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-slider-ex-demo.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "https://oui.mw10013.workers.dev/r/oui-slider-ex.json"
+      ],
+      "meta": {
+        "tags": ["slider"]
+      }
+    },
+    {
+      "name": "oui-slider-ex-demo-disabled",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-slider-ex-demo-disabled.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "https://oui.mw10013.workers.dev/r/oui-slider-ex.json"
+      ],
+      "meta": {
+        "tags": ["slider", "disabled"]
+      }
     },
     {
       "name": "oui-switch",
@@ -2639,145 +2793,6 @@
       }
     },
     {
-      "name": "oui-search-field-ex",
-      "type": "registry:component",
-      "files": [
-        {
-          "path": "registry/components/oui-search-field-ex.tsx",
-          "type": "registry:component"
-        }
-      ],
-      "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/oui-field-error.json",
-        "https://oui.mw10013.workers.dev/r/oui-label.json",
-        "https://oui.mw10013.workers.dev/r/oui-input.json",
-        "https://oui.mw10013.workers.dev/r/oui-search-field.json",
-        "https://oui.mw10013.workers.dev/r/oui-text.json"
-      ],
-      "meta": {
-        "tags": ["search-field"]
-      }
-    },
-    {
-      "name": "oui-search-field-ex-demo",
-      "type": "registry:component",
-      "files": [
-        {
-          "path": "registry/components/oui-search-field-ex-demo.tsx",
-          "type": "registry:component"
-        }
-      ],
-      "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/oui-search-field-ex.json"
-      ],
-      "meta": {
-        "tags": ["search-field"]
-      }
-    },
-
-    {
-      "name": "oui-radio-group-ex",
-      "type": "registry:component",
-      "files": [
-        {
-          "path": "registry/components/oui-radio-group-ex.tsx",
-          "type": "registry:component"
-        }
-      ],
-      "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/oui-field-error.json",
-        "https://oui.mw10013.workers.dev/r/oui-label.json",
-        "https://oui.mw10013.workers.dev/r/oui-radio-group.json",
-        "https://oui.mw10013.workers.dev/r/oui-text.json"
-      ],
-      "meta": {
-        "tags": ["radio-group"]
-      }
-    },
-    {
-      "name": "oui-radio-group-ex-demo",
-      "type": "registry:component",
-      "files": [
-        {
-          "path": "registry/components/oui-radio-group-ex-demo.tsx",
-          "type": "registry:component"
-        }
-      ],
-      "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/oui-radio-group-ex.json",
-        "https://oui.mw10013.workers.dev/r/oui-radio-group.json"
-      ],
-      "meta": {
-        "tags": ["radio-group"]
-      }
-    },
-    {
-      "name": "oui-radio-group-ex-demo-description",
-      "type": "registry:component",
-      "files": [
-        {
-          "path": "registry/components/oui-radio-group-ex-demo-description.tsx",
-          "type": "registry:component"
-        }
-      ],
-      "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/oui-radio-group-ex.json",
-        "https://oui.mw10013.workers.dev/r/oui-radio-group.json"
-      ],
-      "meta": {
-        "tags": ["radio-group"]
-      }
-    },
-    {
-      "name": "oui-slider-ex",
-      "type": "registry:component",
-      "files": [
-        {
-          "path": "registry/components/oui-slider-ex.tsx",
-          "type": "registry:component"
-        }
-      ],
-      "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/oui-label.json",
-        "https://oui.mw10013.workers.dev/r/oui-slider.json"
-      ],
-      "meta": {
-        "tags": ["slider"]
-      }
-    },
-    {
-      "name": "oui-slider-ex-demo",
-      "type": "registry:component",
-      "files": [
-        {
-          "path": "registry/components/oui-slider-ex-demo.tsx",
-          "type": "registry:component"
-        }
-      ],
-      "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/oui-slider-ex.json"
-      ],
-      "meta": {
-        "tags": ["slider"]
-      }
-    },
-    {
-      "name": "oui-slider-ex-demo-disabled",
-      "type": "registry:component",
-      "files": [
-        {
-          "path": "registry/components/oui-slider-ex-demo-disabled.tsx",
-          "type": "registry:component"
-        }
-      ],
-      "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/oui-slider-ex.json"
-      ],
-      "meta": {
-        "tags": ["slider", "disabled"]
-      }
-    },
-    {
       "name": "oui-list-box-ex-pagination",
       "type": "registry:component",
       "files": [
@@ -2808,22 +2823,6 @@
       ],
       "meta": {
         "tags": ["list-box"]
-      }
-    },
-    {
-      "name": "oui-separator-demo",
-      "type": "registry:component",
-      "files": [
-        {
-          "path": "registry/components/oui-separator-demo.tsx",
-          "type": "registry:component"
-        }
-      ],
-      "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/oui-separator.json"
-      ],
-      "meta": {
-        "tags": ["separator"]
       }
     },
     {
