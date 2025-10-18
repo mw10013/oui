@@ -64,7 +64,7 @@ export default function Component() {
         </Link>{" "}
         to display content that complements the main content of the screen — see{" "}
         <Link
-          href="https://oui.mw10013.workers.dev/filter?tags=dialog%2Bex%2Bsheet"
+          href="https://oui.mw10013.workers.dev/filter?tags=dialog-ex-sheet"
           underline="always"
         >
           Uses

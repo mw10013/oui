@@ -48,7 +48,7 @@ export default function Component() {
         </Link>{" "}
         — see{" "}
         <Link
-          href="https://oui.mw10013.workers.dev/filter?tags=search%2Bfield%2Bex"
+          href="https://oui.mw10013.workers.dev/filter?tags=search-field-ex"
           underline="always"
         >
           Uses

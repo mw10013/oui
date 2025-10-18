@@ -17,9 +17,9 @@
   "meta": {
     "tags": [
       "select",
-      "select ex",
+      "select-ex",
       "header",
-      "list box",
+      "list-box",
       "disabled"
     ],
     "alignment": "flex-center"

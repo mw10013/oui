@@ -61,7 +61,7 @@ export default function Component() {
         </Link>{" "}
         — see{" "}
         <Link
-          href="https://oui.mw10013.workers.dev/filter?tags=combo%2Bbox%2Bex"
+          href="https://oui.mw10013.workers.dev/filter?tags=combo-box-ex"
           underline="always"
         >
           Uses

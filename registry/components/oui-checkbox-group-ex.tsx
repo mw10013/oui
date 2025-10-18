@@ -62,7 +62,7 @@ export default function Component() {
         </Link>{" "}
         — see{" "}
         <Link
-          href="https://oui.mw10013.workers.dev/filter?tags=checkbox%2Bgroup%2Bex"
+          href="https://oui.mw10013.workers.dev/filter?tags=checkbox-group-ex"
           underline="always"
         >
           Uses

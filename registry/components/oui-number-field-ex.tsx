@@ -70,7 +70,7 @@ export default function Component() {
         </Link>{" "}
         — see{" "}
         <Link
-          href="https://oui.mw10013.workers.dev/filter?tags=number-field%2Bex"
+          href="https://oui.mw10013.workers.dev/filter?tags=number-field-ex"
           underline="always"
         >
           Uses

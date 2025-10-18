@@ -47,7 +47,7 @@ export default function Component() {
         </Link>{" "}
         — see{" "}
         <Link
-          href="https://oui.mw10013.workers.dev/filter?tags=radio-group%2Bex"
+          href="https://oui.mw10013.workers.dev/filter?tags=radio-group-ex"
           underline="always"
         >
           Uses

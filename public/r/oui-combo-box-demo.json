@@ -23,10 +23,10 @@
   ],
   "meta": {
     "tags": [
-      "combo box",
+      "combo-box",
       "input",
       "label",
-      "list box",
+      "list-box",
       "popover",
       "button"
     ]

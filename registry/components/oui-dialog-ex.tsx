@@ -80,7 +80,7 @@ export default function Component() {
         </Link>{" "}
         that can be opened via a trigger element or programmatically — see{" "}
         <Link
-          href="https://oui.mw10013.workers.dev/filter?tags=dialog%2Bex"
+          href="https://oui.mw10013.workers.dev/filter?tags=dialog-ex"
           underline="always"
         >
           Uses

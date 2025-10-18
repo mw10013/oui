@@ -86,7 +86,7 @@ export default function Component() {
         </Link>{" "}
         — see{" "}
         <Link
-          href="https://oui.mw10013.workers.dev/filter?tags=select%2Bex"
+          href="https://oui.mw10013.workers.dev/filter?tags=select-ex"
           underline="always"
         >
           Uses

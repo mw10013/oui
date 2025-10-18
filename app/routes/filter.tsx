@@ -13,13 +13,7 @@ import { useSearchParams } from "react-router";
 
 export function loader({ request }: LoaderFunctionArgs) {
   const tagsParam = new URL(request.url).searchParams.get("tags");
-  const tags = tagsParam
-    ? tagsParam
-        .split(",")
-        .filter(Boolean)
-        .map((tag) => tag.replace(/\+/g, " "))
-        .sort()
-    : [];
+  const tags = tagsParam ? tagsParam.split(",").filter(Boolean).sort() : [];
   const components = tags.length ? getComponents(tags as RegistryTag[]) : [];
   const availableTags = getAvailableTags(tags as RegistryTag[]);
   const disabledTags = getDisabledTags(tags as RegistryTag[]);
@@ -50,9 +44,7 @@ export default function RouteComponent({
           value={tags}
           onChange={(value) => {
             if (value.length > 0) {
-              const tags = value
-                .map((key) => String(key).replace(/\s+/g, "+"))
-                .join(",");
+              const tags = value.join(",");
               setSearchParams({ tags });
             } else {
               setSearchParams({});

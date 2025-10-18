@@ -18,10 +18,10 @@
   "meta": {
     "tags": [
       "autocomplete",
-      "autocomplete ex",
+      "autocomplete-ex",
       "avatar",
-      "list box",
-      "select ex popover"
+      "list-box",
+      "select-ex-popover"
     ]
   }
 }

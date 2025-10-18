@@ -17,10 +17,10 @@
   ],
   "meta": {
     "tags": [
-      "field error",
+      "field-error",
       "input",
       "label",
-      "text field"
+      "text-field"
     ]
   }
 }

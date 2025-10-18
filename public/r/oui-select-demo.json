@@ -17,7 +17,7 @@
   "meta": {
     "tags": [
       "select",
-      "list box",
+      "list-box",
       "popover"
     ],
     "alignment": "flex-center"

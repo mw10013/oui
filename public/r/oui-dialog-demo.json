@@ -28,7 +28,7 @@
       "input",
       "label",
       "modal",
-      "text field"
+      "text-field"
     ],
     "alignment": "flex-center"
   }

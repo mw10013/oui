@@ -175,7 +175,7 @@ export default function Component() {
         </Link>{" "}
         — see{" "}
         <Link
-          href="https://oui.mw10013.workers.dev/filter?tags=dialog%2Bex%2Balert"
+          href="https://oui.mw10013.workers.dev/filter?tags=dialog-ex-alert"
           underline="always"
         >
           Uses

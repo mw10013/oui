@@ -19,11 +19,11 @@
   "meta": {
     "tags": [
       "popover",
-      "popover ex",
+      "popover-ex",
       "button",
       "dialog",
       "heading",
-      "text field"
+      "text-field"
     ],
     "alignment": "flex-center"
   }

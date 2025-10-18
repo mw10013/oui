@@ -39,7 +39,7 @@ export default function Component() {
         </Link>{" "}
         — see{" "}
         <Link
-          href="https://oui.mw10013.workers.dev/filter?tags=modal%2Bex"
+          href="https://oui.mw10013.workers.dev/filter?tags=modal-ex"
           underline="always"
         >
           Uses

@@ -16,10 +16,10 @@
   ],
   "meta": {
     "tags": [
-      "combo box",
-      "combo box ex",
+      "combo-box",
+      "combo-box-ex",
       "header",
-      "list box"
+      "list-box"
     ]
   }
 }

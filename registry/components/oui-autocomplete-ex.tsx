@@ -57,7 +57,7 @@ export default function Component() {
         </Link>{" "}
         — see{" "}
         <Link
-          href="https://oui.mw10013.workers.dev/filter?tags=autocomplete%2Bex"
+          href="https://oui.mw10013.workers.dev/filter?tags=autocomplete-ex"
           underline="always"
         >
           Uses
