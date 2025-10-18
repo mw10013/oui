@@ -12,7 +12,7 @@ import * as Rac from "react-aria-components";
 export default function Component() {
   return (
     <DialogExSheet
-      triggerElement={<Button variant="outline">Sheet</Button>}
+      triggerElement={<Button variant="outline">DialogExSheet</Button>}
       side="right"
     >
       <Rac.Form>

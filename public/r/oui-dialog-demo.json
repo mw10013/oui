@@ -22,11 +22,9 @@
   "meta": {
     "tags": [
       "dialog",
-      "button",
       "form",
       "heading",
       "input",
-      "label",
       "modal",
       "text-field"
     ],

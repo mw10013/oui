@@ -16,8 +16,7 @@
   "meta": {
     "tags": [
       "dialog",
-      "dialog-ex-alert",
-      "button"
+      "dialog-ex-alert"
     ],
     "alignment": "flex-center"
   }

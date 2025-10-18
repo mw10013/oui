@@ -12,7 +12,7 @@
   "files": [
     {
       "path": "registry/components/oui-dialog-ex-sheet-demo.tsx",
-      "content": "import { DialogExSheet } from \"@/registry/components/oui-dialog-ex-sheet\";\nimport { TextFieldEx } from \"@/registry/components/oui-text-field-ex\";\nimport { Button } from \"@/registry/components/ui/oui-button\";\nimport {\n  DialogDescription,\n  DialogFooter,\n  DialogHeader,\n} from \"@/registry/components/ui/oui-dialog\";\nimport { Heading } from \"@/registry/components/ui/oui-heading\";\nimport * as Rac from \"react-aria-components\";\n\nexport default function Component() {\n  return (\n    <DialogExSheet\n      triggerElement={<Button variant=\"outline\">Sheet</Button>}\n      side=\"right\"\n    >\n      <Rac.Form>\n        <DialogHeader>\n          <Heading slot=\"title\">Edit profile</Heading>\n          <DialogDescription>\n            Make changes to your profile here. Click save when you&apos;re done.\n          </DialogDescription>\n        </DialogHeader>\n        <div className=\"grid gap-4 py-4\">\n          <TextFieldEx\n            name=\"name\"\n            label=\"Name\"\n            defaultValue=\"Pedro Duarte\"\n            autoFocus\n          />\n          <TextFieldEx\n            name=\"username\"\n            label=\"Username\"\n            defaultValue=\"@peduarte\"\n          />\n        </div>\n        <DialogFooter>\n          <Button type=\"submit\" slot=\"close\">\n            Save changes\n          </Button>\n          <Button variant=\"outline\" slot=\"close\">\n            Close\n          </Button>\n        </DialogFooter>\n      </Rac.Form>\n    </DialogExSheet>\n  );\n}\n",
+      "content": "import { DialogExSheet } from \"@/registry/components/oui-dialog-ex-sheet\";\nimport { TextFieldEx } from \"@/registry/components/oui-text-field-ex\";\nimport { Button } from \"@/registry/components/ui/oui-button\";\nimport {\n  DialogDescription,\n  DialogFooter,\n  DialogHeader,\n} from \"@/registry/components/ui/oui-dialog\";\nimport { Heading } from \"@/registry/components/ui/oui-heading\";\nimport * as Rac from \"react-aria-components\";\n\nexport default function Component() {\n  return (\n    <DialogExSheet\n      triggerElement={<Button variant=\"outline\">DialogExSheet</Button>}\n      side=\"right\"\n    >\n      <Rac.Form>\n        <DialogHeader>\n          <Heading slot=\"title\">Edit profile</Heading>\n          <DialogDescription>\n            Make changes to your profile here. Click save when you&apos;re done.\n          </DialogDescription>\n        </DialogHeader>\n        <div className=\"grid gap-4 py-4\">\n          <TextFieldEx\n            name=\"name\"\n            label=\"Name\"\n            defaultValue=\"Pedro Duarte\"\n            autoFocus\n          />\n          <TextFieldEx\n            name=\"username\"\n            label=\"Username\"\n            defaultValue=\"@peduarte\"\n          />\n        </div>\n        <DialogFooter>\n          <Button type=\"submit\" slot=\"close\">\n            Save changes\n          </Button>\n          <Button variant=\"outline\" slot=\"close\">\n            Close\n          </Button>\n        </DialogFooter>\n      </Rac.Form>\n    </DialogExSheet>\n  );\n}\n",
       "type": "registry:component"
     }
   ],
@@ -21,10 +21,10 @@
       "dialog",
       "dialog-ex-sheet",
       "modal-ex-sheet",
-      "button",
       "heading",
       "text-field-ex",
       "sheet"
-    ]
+    ],
+    "alignment": "flex-center"
   }
 }
