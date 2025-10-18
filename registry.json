@@ -1612,6 +1612,169 @@
       ]
     },
     {
+      "name": "oui-menu-ex",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-menu-ex.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "https://oui.mw10013.workers.dev/r/oui-button.json",
+        "https://oui.mw10013.workers.dev/r/oui-menu.json",
+        "https://oui.mw10013.workers.dev/r/oui-popover.json"
+      ],
+      "meta": {
+        "tags": ["menu"]
+      }
+    },
+    {
+      "name": "oui-menu-ex-demo",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-menu-ex-demo.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "https://oui.mw10013.workers.dev/r/oui-button.json",
+        "https://oui.mw10013.workers.dev/r/oui-header.json",
+        "https://oui.mw10013.workers.dev/r/oui-keyboard.json",
+        "https://oui.mw10013.workers.dev/r/oui-menu.json",
+        "https://oui.mw10013.workers.dev/r/oui-menu-ex.json",
+        "https://oui.mw10013.workers.dev/r/oui-popover.json",
+        "https://oui.mw10013.workers.dev/r/oui-separator.json"
+      ],
+      "meta": {
+        "tags": ["menu"]
+      }
+    },
+    {
+      "name": "oui-menu-ex-demo-checkboxes",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-menu-ex-demo-checkboxes.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "https://oui.mw10013.workers.dev/r/oui-button.json",
+        "https://oui.mw10013.workers.dev/r/oui-header.json",
+        "https://oui.mw10013.workers.dev/r/oui-menu.json",
+        "https://oui.mw10013.workers.dev/r/oui-menu-ex.json",
+        "https://oui.mw10013.workers.dev/r/oui-separator.json"
+      ],
+      "meta": {
+        "tags": ["menu"]
+      }
+    },
+    {
+      "name": "oui-menu-ex-demo-radio-group",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-menu-ex-demo-radio-group.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "https://oui.mw10013.workers.dev/r/oui-button.json",
+        "https://oui.mw10013.workers.dev/r/oui-header.json",
+        "https://oui.mw10013.workers.dev/r/oui-menu.json",
+        "https://oui.mw10013.workers.dev/r/oui-menu-ex.json"
+      ],
+      "meta": {
+        "tags": ["menu"]
+      }
+    },
+    {
+      "name": "oui-menu-ex-demo-avatar",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-menu-ex-demo-avatar.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "https://ui.shadcn.com/r/styles/new-york/avatar.json",
+        "https://oui.mw10013.workers.dev/r/oui-button.json",
+        "https://oui.mw10013.workers.dev/r/oui-menu.json",
+        "https://oui.mw10013.workers.dev/r/oui-menu-ex.json",
+        "https://oui.mw10013.workers.dev/r/oui-separator.json"
+      ],
+      "dependencies": ["lucide-react"],
+      "meta": {
+        "tags": ["menu"]
+      }
+    },
+    {
+      "name": "oui-menu-ex-demo-avatar-only",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-menu-ex-demo-avatar-only.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "https://ui.shadcn.com/r/styles/new-york/avatar.json",
+        "https://oui.mw10013.workers.dev/r/oui-button.json",
+        "https://oui.mw10013.workers.dev/r/oui-menu.json",
+        "https://oui.mw10013.workers.dev/r/oui-menu-ex.json",
+        "https://oui.mw10013.workers.dev/r/oui-separator.json"
+      ],
+      "dependencies": ["lucide-react"],
+      "meta": {
+        "tags": ["menu"]
+      }
+    },
+    {
+      "name": "oui-menu-ex-demo-icon",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-menu-ex-demo-icon.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "https://oui.mw10013.workers.dev/r/oui-button.json",
+        "https://oui.mw10013.workers.dev/r/oui-menu.json",
+        "https://oui.mw10013.workers.dev/r/oui-menu-ex.json",
+        "https://oui.mw10013.workers.dev/r/oui-separator.json"
+      ],
+      "dependencies": ["lucide-react"],
+      "meta": {
+        "tags": ["menu"]
+      }
+    },
+    {
+      "name": "oui-table-demo-action-menu",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-table-demo-action-menu.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "https://oui.mw10013.workers.dev/r/oui-button.json",
+        "https://oui.mw10013.workers.dev/r/oui-checkbox.json",
+        "https://oui.mw10013.workers.dev/r/oui-menu-ex.json",
+        "https://oui.mw10013.workers.dev/r/oui-menu.json",
+        "https://oui.mw10013.workers.dev/r/oui-separator.json",
+        "https://oui.mw10013.workers.dev/r/oui-table.json"
+      ],
+      "dependencies": ["lucide-react"],
+      "meta": {
+        "tags": ["table"]
+      }
+    },
+    {
       "name": "oui-modal",
       "type": "registry:ui",
       "files": [
@@ -2259,26 +2422,6 @@
       }
     },
     {
-      "name": "oui-menu-ex-demo-checkboxes",
-      "type": "registry:component",
-      "files": [
-        {
-          "path": "registry/components/oui-menu-ex-demo-checkboxes.tsx",
-          "type": "registry:component"
-        }
-      ],
-      "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/oui-button.json",
-        "https://oui.mw10013.workers.dev/r/oui-header.json",
-        "https://oui.mw10013.workers.dev/r/oui-menu.json",
-        "https://oui.mw10013.workers.dev/r/oui-menu-ex.json",
-        "https://oui.mw10013.workers.dev/r/oui-separator.json"
-      ],
-      "meta": {
-        "tags": ["menu"]
-      }
-    },
-    {
       "name": "oui-text-field-ex",
       "type": "registry:component",
       "files": [
@@ -2523,127 +2666,6 @@
       }
     },
     {
-      "name": "oui-menu-ex",
-      "type": "registry:component",
-      "files": [
-        {
-          "path": "registry/components/oui-menu-ex.tsx",
-          "type": "registry:component"
-        }
-      ],
-      "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/oui-button.json",
-        "https://oui.mw10013.workers.dev/r/oui-menu.json",
-        "https://oui.mw10013.workers.dev/r/oui-popover.json"
-      ],
-      "meta": {
-        "tags": ["menu"]
-      }
-    },
-    {
-      "name": "oui-menu-ex-demo",
-      "type": "registry:component",
-      "files": [
-        {
-          "path": "registry/components/oui-menu-ex-demo.tsx",
-          "type": "registry:component"
-        }
-      ],
-      "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/oui-button.json",
-        "https://oui.mw10013.workers.dev/r/oui-header.json",
-        "https://oui.mw10013.workers.dev/r/oui-keyboard.json",
-        "https://oui.mw10013.workers.dev/r/oui-menu.json",
-        "https://oui.mw10013.workers.dev/r/oui-menu-ex.json",
-        "https://oui.mw10013.workers.dev/r/oui-popover.json",
-        "https://oui.mw10013.workers.dev/r/oui-separator.json"
-      ],
-      "meta": {
-        "tags": ["menu"]
-      }
-    },
-    {
-      "name": "oui-menu-ex-demo-radio-group",
-      "type": "registry:component",
-      "files": [
-        {
-          "path": "registry/components/oui-menu-ex-demo-radio-group.tsx",
-          "type": "registry:component"
-        }
-      ],
-      "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/oui-button.json",
-        "https://oui.mw10013.workers.dev/r/oui-header.json",
-        "https://oui.mw10013.workers.dev/r/oui-menu.json",
-        "https://oui.mw10013.workers.dev/r/oui-menu-ex.json"
-      ],
-      "meta": {
-        "tags": ["menu"]
-      }
-    },
-    {
-      "name": "oui-menu-ex-demo-avatar",
-      "type": "registry:component",
-      "files": [
-        {
-          "path": "registry/components/oui-menu-ex-demo-avatar.tsx",
-          "type": "registry:component"
-        }
-      ],
-      "registryDependencies": [
-        "https://ui.shadcn.com/r/styles/new-york/avatar.json",
-        "https://oui.mw10013.workers.dev/r/oui-button.json",
-        "https://oui.mw10013.workers.dev/r/oui-menu.json",
-        "https://oui.mw10013.workers.dev/r/oui-menu-ex.json",
-        "https://oui.mw10013.workers.dev/r/oui-separator.json"
-      ],
-      "dependencies": ["lucide-react"],
-      "meta": {
-        "tags": ["menu"]
-      }
-    },
-    {
-      "name": "oui-menu-ex-demo-avatar-only",
-      "type": "registry:component",
-      "files": [
-        {
-          "path": "registry/components/oui-menu-ex-demo-avatar-only.tsx",
-          "type": "registry:component"
-        }
-      ],
-      "registryDependencies": [
-        "https://ui.shadcn.com/r/styles/new-york/avatar.json",
-        "https://oui.mw10013.workers.dev/r/oui-button.json",
-        "https://oui.mw10013.workers.dev/r/oui-menu.json",
-        "https://oui.mw10013.workers.dev/r/oui-menu-ex.json",
-        "https://oui.mw10013.workers.dev/r/oui-separator.json"
-      ],
-      "dependencies": ["lucide-react"],
-      "meta": {
-        "tags": ["menu"]
-      }
-    },
-    {
-      "name": "oui-menu-ex-demo-icon",
-      "type": "registry:component",
-      "files": [
-        {
-          "path": "registry/components/oui-menu-ex-demo-icon.tsx",
-          "type": "registry:component"
-        }
-      ],
-      "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/oui-button.json",
-        "https://oui.mw10013.workers.dev/r/oui-menu.json",
-        "https://oui.mw10013.workers.dev/r/oui-menu-ex.json",
-        "https://oui.mw10013.workers.dev/r/oui-separator.json"
-      ],
-      "dependencies": ["lucide-react"],
-      "meta": {
-        "tags": ["menu"]
-      }
-    },
-    {
       "name": "oui-number-field-ex",
       "type": "registry:component",
       "files": [
@@ -2793,29 +2815,6 @@
       "registryDependencies": [
         "https://oui.mw10013.workers.dev/r/oui-table.json"
       ],
-      "meta": {
-        "tags": ["table"]
-      }
-    },
-
-    {
-      "name": "oui-table-demo-action-menu",
-      "type": "registry:component",
-      "files": [
-        {
-          "path": "registry/components/oui-table-demo-action-menu.tsx",
-          "type": "registry:component"
-        }
-      ],
-      "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/oui-button.json",
-        "https://oui.mw10013.workers.dev/r/oui-checkbox.json",
-        "https://oui.mw10013.workers.dev/r/oui-menu-ex.json",
-        "https://oui.mw10013.workers.dev/r/oui-menu.json",
-        "https://oui.mw10013.workers.dev/r/oui-separator.json",
-        "https://oui.mw10013.workers.dev/r/oui-table.json"
-      ],
-      "dependencies": ["lucide-react"],
       "meta": {
         "tags": ["table"]
       }

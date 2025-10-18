@@ -1,5 +1,8 @@
 import type { VariantProps } from "class-variance-authority";
+import { Label } from "@/registry/components/ui/oui-label";
+import { Link } from "@/registry/components/ui/oui-link";
 import { Modal, ModalOverlay } from "@/registry/components/ui/oui-modal";
+import { Text } from "@/registry/components/ui/oui-text";
 import { cva } from "class-variance-authority";
 import * as Rac from "react-aria-components";
 import { twMerge } from "tailwind-merge";
@@ -63,5 +66,26 @@ export function ModalExSheet({
 }
 
 export default function Component() {
-  return <div className="p-4">ModalExSheet</div>;
+  return (
+    <div className="grid gap-2">
+      <Label>ModalExSheet</Label>
+      <Text slot="description">
+        A reusable wrapper for{" "}
+        <Link
+          href="https://react-spectrum.adobe.com/react-aria/Modal.html"
+          underline="always"
+        >
+          Modal
+        </Link>{" "}
+        — see{" "}
+        <Link
+          href="https://oui.mw10013.workers.dev/filter?tags=modal-ex-sheet"
+          underline="always"
+        >
+          Uses
+        </Link>
+        .
+      </Text>
+    </div>
+  );
 }
