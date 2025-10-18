@@ -5,21 +5,10 @@ export default function ComponentLoader({ name }: { name: string }) {
   // https://github.com/rollup/plugins/tree/master/packages/dynamic-import-vars#limitations
   const Component = useMemo(
     () =>
-      lazy(
-        () =>
-          // Original code (uncomment to remove delay):
-          // import(`../registry/components/${name}.tsx`).catch(() => ({
-          //   default: () => <div>Failed to load {name}.</div>,
-          // })),
-          new Promise((resolve) =>
-            setTimeout(() => {
-              resolve(
-                import(`../registry/components/${name}.tsx`).catch(() => ({
-                  default: () => <div>Failed to load {name}.</div>,
-                })),
-              );
-            }, 3000),
-          ),
+      lazy(() =>
+        import(`../registry/components/${name}.tsx`).catch(() => ({
+          default: () => null,
+        })),
       ),
     [name],
   );
