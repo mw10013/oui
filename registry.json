@@ -1683,6 +1683,39 @@
       }
     },
     {
+      "name": "oui-list-box-ex-pagination",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-list-box-ex-pagination.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "https://oui.mw10013.workers.dev/r/oui-base.json",
+        "https://oui.mw10013.workers.dev/r/oui-button.json"
+      ],
+      "meta": {
+        "tags": ["list-box"]
+      }
+    },
+    {
+      "name": "oui-list-box-ex-pagination-demo",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-list-box-ex-pagination-demo.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "https://oui.mw10013.workers.dev/r/oui-list-box-ex-pagination.json"
+      ],
+      "meta": {
+        "tags": ["list-box"]
+      }
+    },
+    {
       "name": "oui-menu",
       "type": "registry:ui",
       "files": [
@@ -2656,71 +2689,6 @@
       }
     },
     {
-      "name": "oui-tooltip",
-      "type": "registry:ui",
-      "files": [
-        {
-          "path": "registry/components/ui/oui-tooltip.tsx",
-          "type": "registry:ui"
-        }
-      ],
-      "registryDependencies": [],
-      "dependencies": ["react-aria-components", "tailwind-merge"]
-    },
-    {
-      "name": "oui-tooltip-demo",
-      "type": "registry:component",
-      "files": [
-        {
-          "path": "registry/components/oui-tooltip-demo.tsx",
-          "type": "registry:component"
-        }
-      ],
-      "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/oui-button.json",
-        "https://oui.mw10013.workers.dev/r/oui-tooltip.json"
-      ],
-      "meta": {
-        "tags": ["tooltip", "button"],
-        "alignment": "flex-center"
-      }
-    },
-    {
-      "name": "oui-tooltip-ex",
-      "type": "registry:component",
-      "files": [
-        {
-          "path": "registry/components/oui-tooltip-ex.tsx",
-          "type": "registry:component"
-        }
-      ],
-      "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/oui-button.json",
-        "https://oui.mw10013.workers.dev/r/oui-tooltip.json"
-      ],
-      "meta": {
-        "tags": ["tooltip", "tooltip-ex", "button"]
-      }
-    },
-    {
-      "name": "oui-tooltip-ex-demo",
-      "type": "registry:component",
-      "files": [
-        {
-          "path": "registry/components/oui-tooltip-ex-demo.tsx",
-          "type": "registry:component"
-        }
-      ],
-      "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/oui-button.json",
-        "https://oui.mw10013.workers.dev/r/oui-tooltip-ex.json"
-      ],
-      "meta": {
-        "tags": ["tooltip", "tooltip-ex", "button"],
-        "alignment": "flex-center"
-      }
-    },
-    {
       "name": "oui-text-area",
       "type": "registry:ui",
       "files": [
@@ -2841,6 +2809,22 @@
       }
     },
     {
+      "name": "oui-text-field-ex-demo",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-text-field-ex-demo.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "https://oui.mw10013.workers.dev/r/oui-text-field-ex.json"
+      ],
+      "meta": {
+        "tags": ["text-field"]
+      }
+    },
+    {
       "name": "oui-text-field-ex-horizontal",
       "type": "registry:component",
       "files": [
@@ -2861,22 +2845,6 @@
       }
     },
     {
-      "name": "oui-text-field-ex-demo",
-      "type": "registry:component",
-      "files": [
-        {
-          "path": "registry/components/oui-text-field-ex-demo.tsx",
-          "type": "registry:component"
-        }
-      ],
-      "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/oui-text-field-ex.json"
-      ],
-      "meta": {
-        "tags": ["text-field"]
-      }
-    },
-    {
       "name": "oui-text-field-ex-horizontal-demo",
       "type": "registry:component",
       "files": [
@@ -2893,36 +2861,68 @@
       }
     },
     {
-      "name": "oui-list-box-ex-pagination",
+      "name": "oui-tooltip",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "registry/components/ui/oui-tooltip.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "registryDependencies": [],
+      "dependencies": ["react-aria-components", "tailwind-merge"]
+    },
+    {
+      "name": "oui-tooltip-demo",
       "type": "registry:component",
       "files": [
         {
-          "path": "registry/components/oui-list-box-ex-pagination.tsx",
+          "path": "registry/components/oui-tooltip-demo.tsx",
           "type": "registry:component"
         }
       ],
       "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/oui-base.json",
-        "https://oui.mw10013.workers.dev/r/oui-button.json"
+        "https://oui.mw10013.workers.dev/r/oui-button.json",
+        "https://oui.mw10013.workers.dev/r/oui-tooltip.json"
       ],
       "meta": {
-        "tags": ["list-box"]
+        "tags": ["tooltip", "button"],
+        "alignment": "flex-center"
       }
     },
     {
-      "name": "oui-list-box-ex-pagination-demo",
+      "name": "oui-tooltip-ex",
       "type": "registry:component",
       "files": [
         {
-          "path": "registry/components/oui-list-box-ex-pagination-demo.tsx",
+          "path": "registry/components/oui-tooltip-ex.tsx",
           "type": "registry:component"
         }
       ],
       "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/oui-list-box-ex-pagination.json"
+        "https://oui.mw10013.workers.dev/r/oui-button.json",
+        "https://oui.mw10013.workers.dev/r/oui-tooltip.json"
       ],
       "meta": {
-        "tags": ["list-box"]
+        "tags": ["tooltip", "tooltip-ex", "button"]
+      }
+    },
+    {
+      "name": "oui-tooltip-ex-demo",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-tooltip-ex-demo.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "https://oui.mw10013.workers.dev/r/oui-button.json",
+        "https://oui.mw10013.workers.dev/r/oui-tooltip-ex.json"
+      ],
+      "meta": {
+        "tags": ["tooltip", "tooltip-ex", "button"],
+        "alignment": "flex-center"
       }
     }
   ]

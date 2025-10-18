@@ -72,8 +72,9 @@ Licensed under the [MIT License](https://github.com/mw10013/oui/blob/main/LICENS
 
 ## TODO
 
+- tags
 - dialog ex and modal ex tags
-- order/tags
+- alignment
 - loading...
 - browser console.log errors
 - theme toggle: use oui checkbox/focus ring? oui-toggle?
