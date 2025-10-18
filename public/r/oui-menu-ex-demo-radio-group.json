@@ -17,7 +17,10 @@
   ],
   "meta": {
     "tags": [
-      "menu"
+      "menu",
+      "menu-ex",
+      "button",
+      "header"
     ]
   }
 }

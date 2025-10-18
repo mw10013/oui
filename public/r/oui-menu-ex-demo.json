@@ -20,7 +20,13 @@
   ],
   "meta": {
     "tags": [
-      "menu"
+      "menu",
+      "menu-ex",
+      "keyboard",
+      "popover",
+      "button",
+      "header",
+      "separator"
     ]
   }
 }

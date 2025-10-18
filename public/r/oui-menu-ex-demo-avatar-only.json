@@ -21,7 +21,11 @@
   ],
   "meta": {
     "tags": [
-      "menu"
+      "menu",
+      "menu-ex",
+      "button",
+      "separator",
+      "avatar"
     ]
   }
 }

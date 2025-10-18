@@ -1626,7 +1626,7 @@
         "https://oui.mw10013.workers.dev/r/oui-popover.json"
       ],
       "meta": {
-        "tags": ["menu"]
+        "tags": ["menu", "menu-ex", "popover", "button"]
       }
     },
     {
@@ -1648,7 +1648,7 @@
         "https://oui.mw10013.workers.dev/r/oui-separator.json"
       ],
       "meta": {
-        "tags": ["menu"]
+        "tags": ["menu", "menu-ex", "keyboard", "popover", "button", "header", "separator"]
       }
     },
     {
@@ -1668,7 +1668,7 @@
         "https://oui.mw10013.workers.dev/r/oui-separator.json"
       ],
       "meta": {
-        "tags": ["menu"]
+        "tags": ["menu", "menu-ex", "button", "header", "separator"]
       }
     },
     {
@@ -1687,7 +1687,7 @@
         "https://oui.mw10013.workers.dev/r/oui-menu-ex.json"
       ],
       "meta": {
-        "tags": ["menu"]
+        "tags": ["menu", "menu-ex", "button", "header"]
       }
     },
     {
@@ -1708,7 +1708,7 @@
       ],
       "dependencies": ["lucide-react"],
       "meta": {
-        "tags": ["menu"]
+        "tags": ["menu", "menu-ex", "avatar", "button", "separator"]
       }
     },
     {
@@ -1729,7 +1729,7 @@
       ],
       "dependencies": ["lucide-react"],
       "meta": {
-        "tags": ["menu"]
+        "tags": ["menu", "menu-ex", "button", "separator", "avatar"]
       }
     },
     {
@@ -1749,7 +1749,7 @@
       ],
       "dependencies": ["lucide-react"],
       "meta": {
-        "tags": ["menu"]
+        "tags": ["menu", "menu-ex", "button", "separator"]
       }
     },
     {
