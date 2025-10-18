@@ -75,7 +75,6 @@ Licensed under the [MIT License](https://github.com/mw10013/oui/blob/main/LICENS
 - DialogEx, DialogExAlert demos
 - alignment
 - tags: prune button, label
-- loading...
 - browser console.log errors
 - theme toggle: use oui checkbox/focus ring? oui-toggle?
 - seo, meta
@@ -91,6 +90,5 @@ Licensed under the [MIT License](https://github.com/mw10013/oui/blob/main/LICENS
 
 - font-heading
 - eslint-disable-next-line react-hooks/exhaustive-deps
-- registry:build: delete r/\*
 - favicon?
 - contributing?

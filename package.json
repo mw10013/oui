@@ -17,7 +17,7 @@
     "clean:wrangler": "rm -rf .wrangler",
     "clean:etc": "rm -rf .react-router build dist",
     "tail:PRODUCTION": "wrangler tail oui",
-    "registry:build": "shadcn build",
+    "registry:build": "rm -rf public/r && shadcn build",
     "migrate:radix": "shadcn migrate radix"
   },
   "dependencies": {
