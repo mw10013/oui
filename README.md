@@ -72,13 +72,10 @@ Licensed under the [MIT License](https://github.com/mw10013/oui/blob/main/LICENS
 
 ## TODO
 
-- tag: sheet
-- oui-index demo
-  - https://oui.mw10013.workers.dev/filter?tags=dialog%2Bex
 - dialog ex and modal ex tags
 - order/tags
-- browser console.log errors
 - loading...
+- browser console.log errors
 - theme toggle: use oui checkbox/focus ring? oui-toggle?
 - seo, meta
 - analytics
