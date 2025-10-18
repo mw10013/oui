@@ -72,21 +72,22 @@ Licensed under the [MIT License](https://github.com/mw10013/oui/blob/main/LICENS
 
 ## TODO
 
-- DialogEx, DialogExAlert demos
-- alignment
-- tags: prune button, label
 - browser console.log errors
-- theme toggle: use oui checkbox/focus ring? oui-toggle?
 - seo, meta
 - analytics
 - staging
 - readme
 - PR to add to shadcn
 
+- alignment
+- tags: prune button, label
+
 - group: with ghost button icon
+- autocomplete: button x
 - checkbox: layout
 - disclosure: animation
-- autocomplete: button x
+- theme toggle: use oui checkbox/focus ring? oui-toggle?
+- jsdocs
 
 - font-heading
 - eslint-disable-next-line react-hooks/exhaustive-deps
