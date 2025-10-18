@@ -1164,6 +1164,90 @@
       }
     },
     {
+      "name": "oui-index",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "registry/components/ui/oui-index.ts",
+          "type": "registry:ui"
+        }
+      ],
+      "registryDependencies": [
+        "https://oui.mw10013.workers.dev/r/oui-base.json",
+        "https://oui.mw10013.workers.dev/r/oui-button.json",
+        "https://oui.mw10013.workers.dev/r/oui-checkbox-group.json",
+        "https://oui.mw10013.workers.dev/r/oui-checkbox.json",
+        "https://oui.mw10013.workers.dev/r/oui-dialog.json",
+        "https://oui.mw10013.workers.dev/r/oui-disclosure.json",
+        "https://oui.mw10013.workers.dev/r/oui-field-error.json",
+        "https://oui.mw10013.workers.dev/r/oui-form.json",
+        "https://oui.mw10013.workers.dev/r/oui-group.json",
+        "https://oui.mw10013.workers.dev/r/oui-header.json",
+        "https://oui.mw10013.workers.dev/r/oui-heading.json",
+        "https://oui.mw10013.workers.dev/r/oui-input.json",
+        "https://oui.mw10013.workers.dev/r/oui-keyboard.json",
+        "https://oui.mw10013.workers.dev/r/oui-label.json",
+        "https://oui.mw10013.workers.dev/r/oui-link.json",
+        "https://oui.mw10013.workers.dev/r/oui-list-box.json",
+        "https://oui.mw10013.workers.dev/r/oui-menu.json",
+        "https://oui.mw10013.workers.dev/r/oui-modal.json",
+        "https://oui.mw10013.workers.dev/r/oui-number-field.json",
+        "https://oui.mw10013.workers.dev/r/oui-popover.json",
+        "https://oui.mw10013.workers.dev/r/oui-radio-group.json",
+        "https://oui.mw10013.workers.dev/r/oui-search-field.json",
+        "https://oui.mw10013.workers.dev/r/oui-select.json",
+        "https://oui.mw10013.workers.dev/r/oui-separator.json",
+        "https://oui.mw10013.workers.dev/r/oui-slider.json",
+        "https://oui.mw10013.workers.dev/r/oui-switch.json",
+        "https://oui.mw10013.workers.dev/r/oui-table.json",
+        "https://oui.mw10013.workers.dev/r/oui-tabs.json",
+        "https://oui.mw10013.workers.dev/r/oui-text-area.json",
+        "https://oui.mw10013.workers.dev/r/oui-text-field.json",
+        "https://oui.mw10013.workers.dev/r/oui-text.json",
+        "https://oui.mw10013.workers.dev/r/oui-tooltip.json",
+        "https://oui.mw10013.workers.dev/r/oui-autocomplete-ex.json",
+        "https://oui.mw10013.workers.dev/r/oui-checkbox-ex.json",
+        "https://oui.mw10013.workers.dev/r/oui-checkbox-group-ex.json",
+        "https://oui.mw10013.workers.dev/r/oui-combo-box-ex.json",
+        "https://oui.mw10013.workers.dev/r/oui-dialog-ex-alert.json",
+        "https://oui.mw10013.workers.dev/r/oui-dialog-ex-sheet.json",
+        "https://oui.mw10013.workers.dev/r/oui-dialog-ex.json",
+        "https://oui.mw10013.workers.dev/r/oui-disclosure-ex.json",
+        "https://oui.mw10013.workers.dev/r/oui-list-box-ex-pagination.json",
+        "https://oui.mw10013.workers.dev/r/oui-menu-ex.json",
+        "https://oui.mw10013.workers.dev/r/oui-modal-ex-sheet.json",
+        "https://oui.mw10013.workers.dev/r/oui-modal-ex.json",
+        "https://oui.mw10013.workers.dev/r/oui-number-field-ex.json",
+        "https://oui.mw10013.workers.dev/r/oui-popover-ex.json",
+        "https://oui.mw10013.workers.dev/r/oui-radio-group-ex.json",
+        "https://oui.mw10013.workers.dev/r/oui-search-field-ex.json",
+        "https://oui.mw10013.workers.dev/r/oui-select-ex-popover.json",
+        "https://oui.mw10013.workers.dev/r/oui-select-ex.json",
+        "https://oui.mw10013.workers.dev/r/oui-sidebar-ex.json",
+        "https://oui.mw10013.workers.dev/r/oui-slider-ex.json",
+        "https://oui.mw10013.workers.dev/r/oui-switch-ex.json",
+        "https://oui.mw10013.workers.dev/r/oui-text-field-ex.json",
+        "https://oui.mw10013.workers.dev/r/oui-tooltip-ex.json"
+      ]
+    },
+    {
+      "name": "oui-index-demo",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-index-demo.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "https://oui.mw10013.workers.dev/r/oui-index.json"
+      ],
+      "meta": {
+        "tags": ["index"],
+        "width": "wide"
+      }
+    },
+    {
       "name": "oui-heading",
       "type": "registry:ui",
       "files": [
@@ -2368,6 +2452,88 @@
       "dependencies": ["react-aria-components", "tailwind-merge"]
     },
     {
+      "name": "oui-switch-ex",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-switch-ex.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "https://oui.mw10013.workers.dev/r/oui-base.json",
+        "https://oui.mw10013.workers.dev/r/oui-switch.json",
+        "https://oui.mw10013.workers.dev/r/oui-text.json"
+      ],
+      "meta": {
+        "tags": ["switch"]
+      }
+    },
+    {
+      "name": "oui-switch-ex-demo",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-switch-ex-demo.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "https://oui.mw10013.workers.dev/r/oui-switch-ex.json"
+      ],
+      "meta": {
+        "tags": ["switch"]
+      }
+    },
+    {
+      "name": "oui-switch-ex-demo-blue",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-switch-ex-demo-blue.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "https://oui.mw10013.workers.dev/r/oui-switch-ex.json"
+      ],
+      "meta": {
+        "tags": ["switch"]
+      }
+    },
+    {
+      "name": "oui-switch-ex-demo-description",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-switch-ex-demo-description.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "https://oui.mw10013.workers.dev/r/oui-switch-ex.json"
+      ],
+      "meta": {
+        "tags": ["switch"]
+      }
+    },
+    {
+      "name": "oui-switch-ex-demo-disabled",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-switch-ex-demo-disabled.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "https://oui.mw10013.workers.dev/r/oui-switch-ex.json"
+      ],
+      "meta": {
+        "tags": ["switch", "disabled"]
+      }
+    },
+    {
       "name": "oui-table",
       "type": "registry:ui",
       "files": [
@@ -2384,6 +2550,22 @@
         "lucide-react",
         "tailwind-merge"
       ]
+    },
+    {
+      "name": "oui-table-demo",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-table-demo.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "https://oui.mw10013.workers.dev/r/oui-table.json"
+      ],
+      "meta": {
+        "tags": ["table"]
+      }
     },
     {
       "name": "oui-table-demo-action-menu",
@@ -2711,88 +2893,6 @@
       }
     },
     {
-      "name": "oui-switch-ex",
-      "type": "registry:component",
-      "files": [
-        {
-          "path": "registry/components/oui-switch-ex.tsx",
-          "type": "registry:component"
-        }
-      ],
-      "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/oui-base.json",
-        "https://oui.mw10013.workers.dev/r/oui-switch.json",
-        "https://oui.mw10013.workers.dev/r/oui-text.json"
-      ],
-      "meta": {
-        "tags": ["switch"]
-      }
-    },
-    {
-      "name": "oui-switch-ex-demo",
-      "type": "registry:component",
-      "files": [
-        {
-          "path": "registry/components/oui-switch-ex-demo.tsx",
-          "type": "registry:component"
-        }
-      ],
-      "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/oui-switch-ex.json"
-      ],
-      "meta": {
-        "tags": ["switch"]
-      }
-    },
-    {
-      "name": "oui-switch-ex-demo-blue",
-      "type": "registry:component",
-      "files": [
-        {
-          "path": "registry/components/oui-switch-ex-demo-blue.tsx",
-          "type": "registry:component"
-        }
-      ],
-      "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/oui-switch-ex.json"
-      ],
-      "meta": {
-        "tags": ["switch"]
-      }
-    },
-    {
-      "name": "oui-switch-ex-demo-description",
-      "type": "registry:component",
-      "files": [
-        {
-          "path": "registry/components/oui-switch-ex-demo-description.tsx",
-          "type": "registry:component"
-        }
-      ],
-      "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/oui-switch-ex.json"
-      ],
-      "meta": {
-        "tags": ["switch"]
-      }
-    },
-    {
-      "name": "oui-switch-ex-demo-disabled",
-      "type": "registry:component",
-      "files": [
-        {
-          "path": "registry/components/oui-switch-ex-demo-disabled.tsx",
-          "type": "registry:component"
-        }
-      ],
-      "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/oui-switch-ex.json"
-      ],
-      "meta": {
-        "tags": ["switch", "disabled"]
-      }
-    },
-    {
       "name": "oui-list-box-ex-pagination",
       "type": "registry:component",
       "files": [
@@ -2823,106 +2923,6 @@
       ],
       "meta": {
         "tags": ["list-box"]
-      }
-    },
-    {
-      "name": "oui-table-demo",
-      "type": "registry:component",
-      "files": [
-        {
-          "path": "registry/components/oui-table-demo.tsx",
-          "type": "registry:component"
-        }
-      ],
-      "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/oui-table.json"
-      ],
-      "meta": {
-        "tags": ["table"]
-      }
-    },
-    {
-      "name": "oui-index",
-      "type": "registry:ui",
-      "files": [
-        {
-          "path": "registry/components/ui/oui-index.ts",
-          "type": "registry:ui"
-        }
-      ],
-      "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/oui-base.json",
-        "https://oui.mw10013.workers.dev/r/oui-button.json",
-        "https://oui.mw10013.workers.dev/r/oui-checkbox-group.json",
-        "https://oui.mw10013.workers.dev/r/oui-checkbox.json",
-        "https://oui.mw10013.workers.dev/r/oui-dialog.json",
-        "https://oui.mw10013.workers.dev/r/oui-disclosure.json",
-        "https://oui.mw10013.workers.dev/r/oui-field-error.json",
-        "https://oui.mw10013.workers.dev/r/oui-form.json",
-        "https://oui.mw10013.workers.dev/r/oui-group.json",
-        "https://oui.mw10013.workers.dev/r/oui-header.json",
-        "https://oui.mw10013.workers.dev/r/oui-heading.json",
-        "https://oui.mw10013.workers.dev/r/oui-input.json",
-        "https://oui.mw10013.workers.dev/r/oui-keyboard.json",
-        "https://oui.mw10013.workers.dev/r/oui-label.json",
-        "https://oui.mw10013.workers.dev/r/oui-link.json",
-        "https://oui.mw10013.workers.dev/r/oui-list-box.json",
-        "https://oui.mw10013.workers.dev/r/oui-menu.json",
-        "https://oui.mw10013.workers.dev/r/oui-modal.json",
-        "https://oui.mw10013.workers.dev/r/oui-number-field.json",
-        "https://oui.mw10013.workers.dev/r/oui-popover.json",
-        "https://oui.mw10013.workers.dev/r/oui-radio-group.json",
-        "https://oui.mw10013.workers.dev/r/oui-search-field.json",
-        "https://oui.mw10013.workers.dev/r/oui-select.json",
-        "https://oui.mw10013.workers.dev/r/oui-separator.json",
-        "https://oui.mw10013.workers.dev/r/oui-slider.json",
-        "https://oui.mw10013.workers.dev/r/oui-switch.json",
-        "https://oui.mw10013.workers.dev/r/oui-table.json",
-        "https://oui.mw10013.workers.dev/r/oui-tabs.json",
-        "https://oui.mw10013.workers.dev/r/oui-text-area.json",
-        "https://oui.mw10013.workers.dev/r/oui-text-field.json",
-        "https://oui.mw10013.workers.dev/r/oui-text.json",
-        "https://oui.mw10013.workers.dev/r/oui-tooltip.json",
-        "https://oui.mw10013.workers.dev/r/oui-autocomplete-ex.json",
-        "https://oui.mw10013.workers.dev/r/oui-checkbox-ex.json",
-        "https://oui.mw10013.workers.dev/r/oui-checkbox-group-ex.json",
-        "https://oui.mw10013.workers.dev/r/oui-combo-box-ex.json",
-        "https://oui.mw10013.workers.dev/r/oui-dialog-ex-alert.json",
-        "https://oui.mw10013.workers.dev/r/oui-dialog-ex-sheet.json",
-        "https://oui.mw10013.workers.dev/r/oui-dialog-ex.json",
-        "https://oui.mw10013.workers.dev/r/oui-disclosure-ex.json",
-        "https://oui.mw10013.workers.dev/r/oui-list-box-ex-pagination.json",
-        "https://oui.mw10013.workers.dev/r/oui-menu-ex.json",
-        "https://oui.mw10013.workers.dev/r/oui-modal-ex-sheet.json",
-        "https://oui.mw10013.workers.dev/r/oui-modal-ex.json",
-        "https://oui.mw10013.workers.dev/r/oui-number-field-ex.json",
-        "https://oui.mw10013.workers.dev/r/oui-popover-ex.json",
-        "https://oui.mw10013.workers.dev/r/oui-radio-group-ex.json",
-        "https://oui.mw10013.workers.dev/r/oui-search-field-ex.json",
-        "https://oui.mw10013.workers.dev/r/oui-select-ex-popover.json",
-        "https://oui.mw10013.workers.dev/r/oui-select-ex.json",
-        "https://oui.mw10013.workers.dev/r/oui-sidebar-ex.json",
-        "https://oui.mw10013.workers.dev/r/oui-slider-ex.json",
-        "https://oui.mw10013.workers.dev/r/oui-switch-ex.json",
-        "https://oui.mw10013.workers.dev/r/oui-text-field-ex.json",
-        "https://oui.mw10013.workers.dev/r/oui-tooltip-ex.json"
-      ]
-    },
-    {
-      "name": "oui-index-demo",
-      "type": "registry:component",
-      "files": [
-        {
-          "path": "registry/components/oui-index-demo.tsx",
-          "type": "registry:component"
-        }
-      ],
-      "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/oui-index.json"
-      ],
-      "meta": {
-        "tags": ["index"],
-        "width": "wide"
       }
     }
   ]
