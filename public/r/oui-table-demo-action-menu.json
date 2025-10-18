@@ -22,7 +22,12 @@
   ],
   "meta": {
     "tags": [
-      "table"
+      "table",
+      "menu",
+      "menu-ex",
+      "button",
+      "separator",
+      "checkbox"
     ]
   }
 }

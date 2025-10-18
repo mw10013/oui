@@ -16,7 +16,10 @@
   ],
   "meta": {
     "tags": [
-      "popover"
+      "popover",
+      "popover-ex",
+      "button",
+      "dialog"
     ]
   }
 }

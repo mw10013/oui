@@ -14,7 +14,8 @@
   ],
   "meta": {
     "tags": [
-      "text-field"
+      "text-field",
+      "text-field-ex"
     ]
   }
 }

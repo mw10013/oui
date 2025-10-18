@@ -19,7 +19,11 @@
   "meta": {
     "tags": [
       "text-field",
-      "text-field-ex-horizontal"
+      "text-field-ex-horizontal",
+      "field-error",
+      "input",
+      "label",
+      "text"
     ]
   }
 }

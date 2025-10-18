@@ -1679,7 +1679,7 @@
         "https://ui.shadcn.com/r/styles/new-york/r/item.json"
       ],
       "meta": {
-        "tags": ["list-box"]
+        "tags": ["list-box", "multiple"]
       }
     },
     {
@@ -1696,7 +1696,7 @@
         "https://oui.mw10013.workers.dev/r/oui-button.json"
       ],
       "meta": {
-        "tags": ["list-box"]
+        "tags": ["list-box", "button"]
       }
     },
     {
@@ -2035,7 +2035,7 @@
         "https://oui.mw10013.workers.dev/r/oui-popover.json"
       ],
       "meta": {
-        "tags": ["popover"]
+        "tags": ["popover", "popover-ex", "button", "dialog"]
       }
     },
     {
@@ -2102,7 +2102,7 @@
         "https://oui.mw10013.workers.dev/r/oui-text.json"
       ],
       "meta": {
-        "tags": ["radio-group"]
+        "tags": ["radio-group", "radio-group-ex", "field-error", "label", "text"]
       }
     },
     {
@@ -2119,7 +2119,7 @@
         "https://oui.mw10013.workers.dev/r/oui-radio-group.json"
       ],
       "meta": {
-        "tags": ["radio-group"]
+        "tags": ["radio-group", "radio-group-ex"]
       }
     },
     {
@@ -2136,7 +2136,7 @@
         "https://oui.mw10013.workers.dev/r/oui-radio-group.json"
       ],
       "meta": {
-        "tags": ["radio-group"]
+        "tags": ["radio-group", "radio-group-ex"]
       }
     },
     {
@@ -2174,7 +2174,7 @@
         "https://oui.mw10013.workers.dev/r/oui-text.json"
       ],
       "meta": {
-        "tags": ["search-field"]
+        "tags": ["search-field", "search-field-ex", "field-error", "label", "input", "text"]
       }
     },
     {
@@ -2190,7 +2190,7 @@
         "https://oui.mw10013.workers.dev/r/oui-search-field-ex.json"
       ],
       "meta": {
-        "tags": ["search-field"]
+        "tags": ["search-field", "search-field-ex"]
       }
     },
     {
@@ -2434,7 +2434,7 @@
         "https://oui.mw10013.workers.dev/r/oui-slider.json"
       ],
       "meta": {
-        "tags": ["slider"]
+        "tags": ["slider", "slider-ex", "label"]
       }
     },
     {
@@ -2450,7 +2450,7 @@
         "https://oui.mw10013.workers.dev/r/oui-slider-ex.json"
       ],
       "meta": {
-        "tags": ["slider"]
+        "tags": ["slider", "slider-ex"]
       }
     },
     {
@@ -2466,7 +2466,7 @@
         "https://oui.mw10013.workers.dev/r/oui-slider-ex.json"
       ],
       "meta": {
-        "tags": ["slider", "disabled"]
+        "tags": ["slider", "slider-ex", "disabled"]
       }
     },
     {
@@ -2515,7 +2515,7 @@
         "https://oui.mw10013.workers.dev/r/oui-switch-ex.json"
       ],
       "meta": {
-        "tags": ["switch"]
+        "tags": ["switch", "switch-ex"]
       }
     },
     {
@@ -2531,7 +2531,7 @@
         "https://oui.mw10013.workers.dev/r/oui-switch-ex.json"
       ],
       "meta": {
-        "tags": ["switch"]
+        "tags": ["switch", "switch-ex"]
       }
     },
     {
@@ -2547,7 +2547,7 @@
         "https://oui.mw10013.workers.dev/r/oui-switch-ex.json"
       ],
       "meta": {
-        "tags": ["switch"]
+        "tags": ["switch", "switch-ex"]
       }
     },
     {
@@ -2563,7 +2563,7 @@
         "https://oui.mw10013.workers.dev/r/oui-switch-ex.json"
       ],
       "meta": {
-        "tags": ["switch", "disabled"]
+        "tags": ["switch", "switch-ex","disabled"]
       }
     },
     {
@@ -2619,7 +2619,7 @@
       ],
       "dependencies": ["lucide-react"],
       "meta": {
-        "tags": ["table"]
+        "tags": ["table", "menu", "menu-ex", "button", "separator", "checkbox"]
       }
     },
     {
@@ -2805,7 +2805,7 @@
         "https://oui.mw10013.workers.dev/r/oui-text.json"
       ],
       "meta": {
-        "tags": ["text-field"]
+        "tags": ["text-field", "text-field-ex", "field-error", "input", "label", "text"]
       }
     },
     {
@@ -2821,7 +2821,7 @@
         "https://oui.mw10013.workers.dev/r/oui-text-field-ex.json"
       ],
       "meta": {
-        "tags": ["text-field"]
+        "tags": ["text-field", "text-field-ex"]
       }
     },
     {
@@ -2841,7 +2841,7 @@
         "https://oui.mw10013.workers.dev/r/oui-text.json"
       ],
       "meta": {
-        "tags": ["text-field", "text-field-ex-horizontal"]
+        "tags": ["text-field", "text-field-ex-horizontal", "field-error", "input", "label", "text"]
       }
     },
     {

@@ -18,7 +18,12 @@
   ],
   "meta": {
     "tags": [
-      "text-field"
+      "text-field",
+      "text-field-ex",
+      "field-error",
+      "input",
+      "label",
+      "text"
     ]
   }
 }

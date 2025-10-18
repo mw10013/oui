@@ -17,7 +17,11 @@
   ],
   "meta": {
     "tags": [
-      "radio-group"
+      "radio-group",
+      "radio-group-ex",
+      "field-error",
+      "label",
+      "text"
     ]
   }
 }
