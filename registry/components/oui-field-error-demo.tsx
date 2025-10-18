@@ -6,9 +6,9 @@ import { TextField } from "@/registry/components/ui/oui-text-field";
 export default function Component() {
   return (
     <TextField isInvalid>
-      <Label>Label</Label>
+      <Label>Field Error</Label>
       <Input placeholder="Placeholder" />
-      <FieldError>This field is required</FieldError>
+      <FieldError>This field is FieldError.</FieldError>
     </TextField>
   );
 }

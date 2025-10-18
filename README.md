@@ -72,6 +72,7 @@ Licensed under the [MIT License](https://github.com/mw10013/oui/blob/main/LICENS
 
 ## TODO
 
+- DialogEx, DialogExAlert demos
 - alignment
 - loading...
 - browser console.log errors
