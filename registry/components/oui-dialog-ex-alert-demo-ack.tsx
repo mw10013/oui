@@ -7,8 +7,13 @@ export default function Component() {
 
   return (
     <>
-      <Button variant="outline" onPress={() => { setOpen(true); }}>
-        Ack Alert
+      <Button
+        variant="outline"
+        onPress={() => {
+          setOpen(true);
+        }}
+      >
+        DialogExAlert Ack
       </Button>
       <DialogExAlert
         isOpen={isOpen}
