@@ -1210,6 +1210,54 @@
       ]
     },
     {
+      "name": "oui-input-demo",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-input-demo.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "https://oui.mw10013.workers.dev/r/oui-input.json"
+      ],
+      "meta": {
+        "tags": ["input"]
+      }
+    },
+    {
+      "name": "oui-input-demo-password",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-input-demo-password.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "https://oui.mw10013.workers.dev/r/oui-input.json"
+      ],
+      "meta": {
+        "tags": ["input"]
+      }
+    },
+    {
+      "name": "oui-input-demo-disabled",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-input-demo-disabled.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "https://oui.mw10013.workers.dev/r/oui-input.json"
+      ],
+      "meta": {
+        "tags": ["input", "disabled"]
+      }
+    },
+    {
       "name": "oui-keyboard",
       "type": "registry:ui",
       "files": [
@@ -1253,6 +1301,40 @@
         "https://oui.mw10013.workers.dev/r/oui-base.json"
       ],
       "dependencies": ["react-aria-components", "tailwind-merge"]
+    },
+    {
+      "name": "oui-label-demo",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-label-demo.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "https://oui.mw10013.workers.dev/r/oui-input.json",
+        "https://oui.mw10013.workers.dev/r/oui-label.json"
+      ],
+      "meta": {
+        "tags": ["label"]
+      }
+    },
+    {
+      "name": "oui-label-demo-disabled",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/components/oui-label-demo-disabled.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "https://oui.mw10013.workers.dev/r/oui-input.json",
+        "https://oui.mw10013.workers.dev/r/oui-label.json"
+      ],
+      "meta": {
+        "tags": ["label", "disabled"]
+      }
     },
     {
       "name": "oui-link",
@@ -1979,54 +2061,6 @@
       }
     },
     {
-      "name": "oui-input-demo",
-      "type": "registry:component",
-      "files": [
-        {
-          "path": "registry/components/oui-input-demo.tsx",
-          "type": "registry:component"
-        }
-      ],
-      "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/oui-input.json"
-      ],
-      "meta": {
-        "tags": ["input"]
-      }
-    },
-    {
-      "name": "oui-input-demo-disabled",
-      "type": "registry:component",
-      "files": [
-        {
-          "path": "registry/components/oui-input-demo-disabled.tsx",
-          "type": "registry:component"
-        }
-      ],
-      "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/oui-input.json"
-      ],
-      "meta": {
-        "tags": ["input", "disabled"]
-      }
-    },
-    {
-      "name": "oui-input-demo-password",
-      "type": "registry:component",
-      "files": [
-        {
-          "path": "registry/components/oui-input-demo-password.tsx",
-          "type": "registry:component"
-        }
-      ],
-      "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/oui-input.json"
-      ],
-      "meta": {
-        "tags": ["input"]
-      }
-    },
-    {
       "name": "oui-text-field-ex",
       "type": "registry:component",
       "files": [
@@ -2478,40 +2512,6 @@
       ],
       "meta": {
         "tags": ["slider", "disabled"]
-      }
-    },
-    {
-      "name": "oui-label-demo",
-      "type": "registry:component",
-      "files": [
-        {
-          "path": "registry/components/oui-label-demo.tsx",
-          "type": "registry:component"
-        }
-      ],
-      "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/oui-input.json",
-        "https://oui.mw10013.workers.dev/r/oui-label.json"
-      ],
-      "meta": {
-        "tags": ["label"]
-      }
-    },
-    {
-      "name": "oui-label-demo-disabled",
-      "type": "registry:component",
-      "files": [
-        {
-          "path": "registry/components/oui-label-demo-disabled.tsx",
-          "type": "registry:component"
-        }
-      ],
-      "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/oui-input.json",
-        "https://oui.mw10013.workers.dev/r/oui-label.json"
-      ],
-      "meta": {
-        "tags": ["label", "disabled"]
       }
     },
     {
