@@ -11,7 +11,7 @@ import * as Rac from "react-aria-components";
 export default function Component() {
   return (
     <ComboBox>
-      <Label>Favorite Animal</Label>
+      <Label>ComboBox</Label>
       <Group>
         <Input variant="ghost" />
         <Button variant="ghost" size="icon">

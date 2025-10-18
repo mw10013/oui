@@ -42,8 +42,7 @@ const timezones = [
 export default function Component() {
   return (
     <ComboBoxEx
-      aria-label="Timezone"
-      placeholder="Select timezone"
+      label="ComboBoxEx with Headers"
       defaultSelectedKey={timezones[0].timezones[0].value}
       className="md:max-w-[200px]"
     >

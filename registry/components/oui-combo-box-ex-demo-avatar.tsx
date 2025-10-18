@@ -24,7 +24,7 @@ const users = [
 export default function Component() {
   return (
     <ComboBoxEx
-      aria-label="User"
+      label="ComboBoxEx with Avatar"
       placeholder="Select user..."
       defaultSelectedKey={users[0].id}
       items={users}

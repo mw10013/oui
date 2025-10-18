@@ -72,7 +72,6 @@ Licensed under the [MIT License](https://github.com/mw10013/oui/blob/main/LICENS
 
 ## TODO
 
-- tags
 - alignment
 - loading...
 - browser console.log errors

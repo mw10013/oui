@@ -27,7 +27,7 @@ const frameworks = [
 export default function Component() {
   return (
     <ComboBoxEx
-      aria-label="Framework"
+      label="ComboBoxEx"
       placeholder="Select framework..."
       items={frameworks}
       className="md:max-w-[200px]"
