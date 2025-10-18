@@ -892,6 +892,7 @@
         "tags": [
           "dialog",
           "dialog-ex-sheet",
+          "modal-ex-sheet",
           "button",
           "heading",
           "text-field-ex",
@@ -915,7 +916,14 @@
         "https://oui.mw10013.workers.dev/r/oui-heading.json"
       ],
       "meta": {
-        "tags": ["dialog", "dialog-ex-sheet", "button", "heading", "sheet"]
+        "tags": [
+          "dialog",
+          "dialog-ex-sheet",
+          "modal-ex-sheet",
+          "button",
+          "heading",
+          "sheet"
+        ]
       }
     },
     {
@@ -1648,7 +1656,15 @@
         "https://oui.mw10013.workers.dev/r/oui-separator.json"
       ],
       "meta": {
-        "tags": ["menu", "menu-ex", "keyboard", "popover", "button", "header", "separator"]
+        "tags": [
+          "menu",
+          "menu-ex",
+          "keyboard",
+          "popover",
+          "button",
+          "header",
+          "separator"
+        ]
       }
     },
     {
@@ -2906,7 +2922,8 @@
         "https://oui.mw10013.workers.dev/r/oui-index.json"
       ],
       "meta": {
-        "tags": ["index"]
+        "tags": ["index"],
+        "width": "wide"
       }
     }
   ]
