@@ -18,7 +18,12 @@
   ],
   "meta": {
     "tags": [
-      "select"
+      "select",
+      "select-ex-popover",
+      "field-error",
+      "popover",
+      "text",
+      "label"
     ]
   }
 }

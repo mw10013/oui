@@ -530,7 +530,7 @@
       ],
       "dependencies": ["lucide-react"],
       "meta": {
-        "tags": ["combo-box", "input", "label", "list-box", "popover", "button"]
+        "tags": ["combo-box", "input", "list-box", "popover"]
       }
     },
     {
@@ -702,14 +702,7 @@
         "https://oui.mw10013.workers.dev/r/oui-text-field-ex.json"
       ],
       "meta": {
-        "tags": [
-          "dialog",
-          "dialog-ex",
-          "modal-ex",
-          "button",
-          "text-field-ex",
-          "heading"
-        ],
+        "tags": ["dialog", "dialog-ex", "modal-ex", "text-field-ex", "heading"],
         "alignment": "flex-center"
       }
     },
@@ -1150,7 +1143,7 @@
         "https://oui.mw10013.workers.dev/r/oui-menu.json"
       ],
       "meta": {
-        "tags": ["header", "button", "menu-ex", "menu"],
+        "tags": ["header", "menu-ex", "menu"],
         "alignment": "flex-center"
       }
     },
@@ -1270,7 +1263,7 @@
         "https://oui.mw10013.workers.dev/r/oui-modal.json"
       ],
       "meta": {
-        "tags": ["heading", "button", "dialog", "modal"],
+        "tags": ["heading", "dialog", "modal"],
         "alignment": "flex-center"
       }
     },
@@ -1368,7 +1361,7 @@
         "https://oui.mw10013.workers.dev/r/oui-menu.json"
       ],
       "meta": {
-        "tags": ["keyboard", "button", "menu-ex", "menu"]
+        "tags": ["keyboard", "menu-ex", "menu"]
       }
     },
     {
@@ -1779,7 +1772,6 @@
           "menu-ex",
           "keyboard",
           "popover",
-          "button",
           "header",
           "separator"
         ]
@@ -1802,7 +1794,7 @@
         "https://oui.mw10013.workers.dev/r/oui-separator.json"
       ],
       "meta": {
-        "tags": ["menu", "menu-ex", "button", "header", "separator"]
+        "tags": ["menu", "menu-ex", "header", "separator"]
       }
     },
     {
@@ -1821,7 +1813,7 @@
         "https://oui.mw10013.workers.dev/r/oui-menu-ex.json"
       ],
       "meta": {
-        "tags": ["menu", "menu-ex", "button", "header"]
+        "tags": ["menu", "menu-ex", "header"]
       }
     },
     {
@@ -1842,7 +1834,7 @@
       ],
       "dependencies": ["lucide-react"],
       "meta": {
-        "tags": ["menu", "menu-ex", "avatar", "button", "separator"]
+        "tags": ["menu", "menu-ex", "avatar", "separator"]
       }
     },
     {
@@ -1863,7 +1855,7 @@
       ],
       "dependencies": ["lucide-react"],
       "meta": {
-        "tags": ["menu", "menu-ex", "button", "separator", "avatar"]
+        "tags": ["menu", "menu-ex", "separator", "avatar"]
       }
     },
     {
@@ -1883,7 +1875,7 @@
       ],
       "dependencies": ["lucide-react"],
       "meta": {
-        "tags": ["menu", "menu-ex", "button", "separator"]
+        "tags": ["menu", "menu-ex", "separator"]
       }
     },
     {
@@ -2036,7 +2028,7 @@
         "https://oui.mw10013.workers.dev/r/oui-popover.json"
       ],
       "meta": {
-        "tags": ["popover", "popover-ex", "button", "dialog"]
+        "tags": ["popover", "popover-ex", "dialog"]
       }
     },
     {
@@ -2059,7 +2051,6 @@
         "tags": [
           "popover",
           "popover-ex",
-          "button",
           "dialog",
           "heading",
           "text-field-ex-horizontal"
@@ -2283,14 +2274,7 @@
         "https://oui.mw10013.workers.dev/r/oui-text.json"
       ],
       "meta": {
-        "tags": [
-          "select",
-          "select-ex",
-          "field-error",
-          "label",
-          "popover",
-          "text"
-        ]
+        "tags": ["select", "select-ex", "field-error", "popover", "text"]
       }
     },
     {
@@ -2367,7 +2351,6 @@
         "alignment": "flex-center"
       }
     },
-
     {
       "name": "oui-select-ex-popover",
       "type": "registry:component",
@@ -2385,7 +2368,14 @@
         "https://oui.mw10013.workers.dev/r/oui-text.json"
       ],
       "meta": {
-        "tags": ["select"]
+        "tags": [
+          "select",
+          "select-ex-popover",
+          "field-error",
+          "popover",
+          "text",
+          "label"
+        ]
       }
     },
     {
@@ -2513,7 +2503,7 @@
         "https://oui.mw10013.workers.dev/r/oui-text.json"
       ],
       "meta": {
-        "tags": ["switch"]
+        "tags": ["switch", "switch-ex", "text"]
       }
     },
     {

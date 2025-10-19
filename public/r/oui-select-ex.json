@@ -21,7 +21,6 @@
       "select",
       "select-ex",
       "field-error",
-      "label",
       "popover",
       "text"
     ]

@@ -86,8 +86,6 @@ Licensed under the [MIT License](https://github.com/mw10013/oui/blob/main/LICENS
 - theme toggle: use oui checkbox/focus ring? oui-toggle?
 - jsdocs
 
-- tags: prune button, label
-
 - oui-use-react-router-routing.ts?
 - eslint-disable-next-line react-hooks/exhaustive-deps
 - font-heading

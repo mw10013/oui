@@ -25,10 +25,8 @@
     "tags": [
       "combo-box",
       "input",
-      "label",
       "list-box",
-      "popover",
-      "button"
+      "popover"
     ]
   }
 }
