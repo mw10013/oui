@@ -73,7 +73,6 @@ Licensed under the [MIT License](https://github.com/mw10013/oui/blob/main/LICENS
 ## TODO
 
 - v0: use client?
-- grid lines
 - group: with ghost button icon
 - autocomplete: button x
 - checkbox: layout

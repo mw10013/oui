@@ -2,12 +2,12 @@ import type { RegistryItem } from "shadcn/schema";
 import { cva } from "class-variance-authority";
 
 const container = cva(
-  "group/item relative border has-[[data-comp-loading=true]]:border-none",
+  "group/item relative border-b has-[[data-comp-loading=true]]:border-none",
   {
     variants: {
       layoutMode: {
         subgrid: "col-span-12 grid grid-cols-12",
-        direct: "",
+        direct: "border-r",
       },
     },
     defaultVariants: {
