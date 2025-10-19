@@ -4,10 +4,10 @@
   "type": "module",
   "scripts": {
     "build": "react-router build",
-    "build:staging": "CLOUDFLARE_ENV=staging pnpm build",
+    "build:int": "CLOUDFLARE_ENV=int pnpm build",
     "build:PRODUCTION": "CLOUDFLARE_ENV=production pnpm build",
     "deploy": "pnpm run build && wrangler deploy",
-    "deploy:staging": "pnpm run build:staging && wrangler deploy",
+    "deploy:int": "pnpm run build:int && wrangler deploy",
     "deploy:PRODUCTION": "pnpm build:PRODUCTION && wrangler deploy",
     "dev": "react-router dev",
     "preview": "pnpm run build && vite preview",
@@ -18,7 +18,7 @@
     "clean:node": "rm -rf node_modules",
     "clean:wrangler": "rm -rf .wrangler",
     "clean:etc": "rm -rf .react-router build dist",
-    "tail:staging": "wrangler tail oui-staging",
+    "tail:int": "wrangler tail oui-int",
     "tail:PRODUCTION": "wrangler tail oui",
     "registry:build": "rm -rf public/r && shadcn build",
     "migrate:radix": "shadcn migrate radix"

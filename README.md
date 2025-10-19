@@ -75,7 +75,7 @@ Licensed under the [MIT License](https://github.com/mw10013/oui/blob/main/LICENS
 - browser console.log errors
 - seo, meta
 - analytics
-- staging
+- int
 - readme
 - PR to add to shadcn
 

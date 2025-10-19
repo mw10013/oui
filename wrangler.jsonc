@@ -18,10 +18,10 @@
     "ENVIRONMENT": "local"
   },
   "env": {
-    "staging": {
-      "name": "oui-staging",
+    "int": {
+      "name": "oui-int",
       "vars": {
-        "ENVIRONMENT": "staging"
+        "ENVIRONMENT": "int"
       }
     },
     "production": {
