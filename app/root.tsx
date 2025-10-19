@@ -15,7 +15,6 @@ import {
 } from "react-router";
 import {
   PreventFlashOnWrongTheme,
-  Theme,
   ThemeProvider,
   useTheme,
 } from "remix-themes";
@@ -58,7 +57,7 @@ function Html({
   const [theme] = useTheme();
   const navigate = useNavigate();
   return (
-    <html lang="en" className={theme === Theme.DARK ? "dark" : ""}>
+    <html lang="en" className={theme ?? ""}>
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
