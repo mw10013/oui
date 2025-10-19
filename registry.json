@@ -1,7 +1,7 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry.json",
   "name": "oui",
-  "homepage": "https://github.com/mw10013/cloudflare-effect-react-router-saas",
+  "homepage": "https://oui.mw10013.workers.dev",
   "items": [
     {
       "name": "oui-autocomplete-demo",

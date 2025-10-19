@@ -76,7 +76,8 @@ Licensed under the [MIT License](https://github.com/mw10013/oui/blob/main/LICENS
 - seo, meta
 - analytics
 - readme
-- PR to add to shadcn
+- PR to add to shadcn: registries.json: "@oui": "https://oui.mw10013.workers.dev/r/{name}.json",
+  - https://github.com/shadcn-ui/ui/pull/8490/files
 
 - tags: prune button, label
 
