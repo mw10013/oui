@@ -1,7 +1,7 @@
 import type { NavigateOptions } from "react-router";
 import type { Route } from "./+types/root";
-import { useCallback } from "react";
 import { themeSessionResolver } from "@/lib/theme.server";
+import { useReactRouterRouting } from "@/registry/hooks/oui-use-react-router-routing";
 import * as Rac from "react-aria-components";
 import {
   isRouteErrorResponse,
@@ -11,8 +11,6 @@ import {
   Scripts,
   ScrollRestoration,
   unstable_useRoute,
-  useHref,
-  useNavigate,
 } from "react-router";
 import {
   PreventFlashOnWrongTheme,
@@ -45,15 +43,6 @@ export async function loader({ request }: Route.LoaderArgs) {
   return { theme: getTheme() };
 }
 
-const isExternal = (href: string) =>
-  href.startsWith("https://") ||
-  href.startsWith("http://") ||
-  href.startsWith("mailto:");
-
-// https://github.com/adobe/react-spectrum/issues/6397
-// https://github.com/argos-ci/argos/blob/4822931b05c78e1b4a79e15cf4437fb0297369a6/apps/frontend/src/router.tsx#L21-L31
-const useHrefEx = (href: string) => (isExternal(href) ? href : useHref(href));
-
 function Html({
   children,
   ssrTheme,
@@ -62,18 +51,7 @@ function Html({
   ssrTheme: boolean;
 }) {
   const [theme] = useTheme();
-  // https://github.com/adobe/react-spectrum/issues/6397#issuecomment-2838553394
-  const reactRouterNavigate = useNavigate();
-  const navigate = useCallback(
-    (path: string, options?: NavigateOptions) => {
-      if (isExternal(path)) {
-        window.location.href = path;
-      } else {
-        void reactRouterNavigate(path, options);
-      }
-    },
-    [reactRouterNavigate],
-  );
+  const { navigate, useHref } = useReactRouterRouting();
   return (
     <html lang="en" className={theme ?? ""}>
       <head>
@@ -84,8 +62,7 @@ function Html({
         <Links />
       </head>
       <body>
-        {/* useNavigate returns a Promise, but RouterProvider expects void; void ignores the Promise */}
-        <Rac.RouterProvider navigate={navigate} useHref={useHrefEx}>
+        <Rac.RouterProvider navigate={navigate} useHref={useHref}>
           <div className="overflow-hidden px-4 supports-[overflow:clip]:overflow-clip sm:px-6">
             <div className="relative mx-auto flex min-h-screen w-full max-w-6xl flex-col">
               <Header />

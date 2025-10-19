@@ -72,7 +72,6 @@ Licensed under the [MIT License](https://github.com/mw10013/oui/blob/main/LICENS
 
 ## TODO
 
-- comboboxex uses: https://oui.mw10013.workers.dev/https://oui.mw10013.workers.dev/filter?tags=combo-box-ex
 - v0: use client?
 - grid lines
 - group: with ghost button icon
@@ -89,6 +88,7 @@ Licensed under the [MIT License](https://github.com/mw10013/oui/blob/main/LICENS
 
 - tags: prune button, label
 
+- oui-use-react-router-routing.ts?
 - eslint-disable-next-line react-hooks/exhaustive-deps
 - font-heading
 - favicon?
