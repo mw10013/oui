@@ -28,6 +28,17 @@ declare module "react-aria-components" {
   }
 }
 
+/** Sets a minimal transparent favicon to avoid 404 errors. */
+export function links() {
+  return [
+    {
+      rel: "icon",
+      href: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=",
+      type: "image/png",
+    },
+  ];
+}
+
 export async function loader({ request }: Route.LoaderArgs) {
   const { getTheme } = await themeSessionResolver(request);
   return { theme: getTheme() };

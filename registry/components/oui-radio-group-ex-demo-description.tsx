@@ -19,7 +19,11 @@ const plans = [
 
 export default function Component() {
   return (
-    <RadioGroupEx defaultValue="starter" className="max-w-sm">
+    <RadioGroupEx
+      defaultValue="starter"
+      className="max-w-sm"
+      aria-label="RadioGroupEx"
+    >
       {plans.map((plan) => (
         <Radio
           value={plan.id}

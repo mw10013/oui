@@ -72,7 +72,7 @@ Licensed under the [MIT License](https://github.com/mw10013/oui/blob/main/LICENS
 
 ## TODO
 
-- browser console.log errors
+- v0: use client?
 - seo, meta
 - analytics
 - readme

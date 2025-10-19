@@ -3,7 +3,7 @@ import { Radio } from "@/registry/components/ui/oui-radio-group";
 
 export default function Component() {
   return (
-    <RadioGroupEx defaultValue="comfortable">
+    <RadioGroupEx defaultValue="comfortable" aria-label="RadioGroupEx">
       <Radio value="default" className="gap-3">
         Default
       </Radio>
