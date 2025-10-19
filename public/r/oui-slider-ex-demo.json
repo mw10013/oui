@@ -8,7 +8,7 @@
   "files": [
     {
       "path": "registry/components/oui-slider-ex-demo.tsx",
-      "content": "import { SliderEx } from \"@/registry/components/oui-slider-ex\";\n\nexport default function Component() {\n  return <SliderEx defaultValue={[50]} maxValue={100} step={1} />;\n}\n",
+      "content": "import { SliderEx } from \"@/registry/components/oui-slider-ex\";\n\nexport default function Component() {\n  return <SliderEx aria-label=\"SliderEx\" defaultValue={[50]} maxValue={100} step={1} />;\n}\n",
       "type": "registry:component"
     }
   ],

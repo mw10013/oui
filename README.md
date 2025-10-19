@@ -78,7 +78,6 @@ Licensed under the [MIT License](https://github.com/mw10013/oui/blob/main/LICENS
 - readme
 - PR to add to shadcn
 
-- alignment
 - tags: prune button, label
 
 - group: with ghost button icon
@@ -88,7 +87,7 @@ Licensed under the [MIT License](https://github.com/mw10013/oui/blob/main/LICENS
 - theme toggle: use oui checkbox/focus ring? oui-toggle?
 - jsdocs
 
-- font-heading
 - eslint-disable-next-line react-hooks/exhaustive-deps
+- font-heading
 - favicon?
 - contributing?
