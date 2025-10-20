@@ -5,6 +5,7 @@
   "registryDependencies": [
     "https://oui.mw10013.workers.dev/r/oui-field-error.json",
     "https://oui.mw10013.workers.dev/r/oui-label.json",
+    "https://oui.mw10013.workers.dev/r/oui-link.json",
     "https://oui.mw10013.workers.dev/r/oui-popover.json",
     "https://oui.mw10013.workers.dev/r/oui-select.json",
     "https://oui.mw10013.workers.dev/r/oui-text.json"
