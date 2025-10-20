@@ -66,11 +66,11 @@ export default function ComponentDetails({
 
   return (
     <div className="absolute top-2 right-2 flex gap-1 peer-data-comp-loading:hidden">
-      <OpenInV0
-        componentSource={`https://oui.mw10013.workers.dev/r/${component.name}.json`}
-      />
       <CopyRegistry
         url={`https://oui.mw10013.workers.dev/r/${component.name}.json`}
+      />
+      <OpenInV0
+        componentSource={`https://oui.mw10013.workers.dev/r/${component.name}.json`}
       />
       <DialogEx
         className="sm:max-w-[600px]"
