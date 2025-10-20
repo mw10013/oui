@@ -7,7 +7,7 @@ const container = cva(
     variants: {
       layoutMode: {
         subgrid: "col-span-12 grid grid-cols-12",
-        direct: "border-r",
+        direct: "",
       },
     },
     defaultVariants: {
