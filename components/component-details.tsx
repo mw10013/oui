@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import ComponentCli from "@/components/cli-commands";
 import CodeBlock, { highlight } from "@/components/code-block";
 import CopyButton from "@/components/copy-button";
+import CopyRegistry from "@/components/copy-registry";
 import OpenInV0 from "@/components/open-in-v0";
 import { DialogEx } from "@/registry/components/oui-dialog-ex";
 import { TooltipEx } from "@/registry/components/oui-tooltip-ex";
@@ -67,6 +68,9 @@ export default function ComponentDetails({
     <div className="absolute top-2 right-2 flex gap-1 peer-data-comp-loading:hidden">
       <OpenInV0
         componentSource={`https://oui.mw10013.workers.dev/r/${component.name}.json`}
+      />
+      <CopyRegistry
+        url={`https://oui.mw10013.workers.dev/r/${component.name}.json`}
       />
       <DialogEx
         className="sm:max-w-[600px]"
