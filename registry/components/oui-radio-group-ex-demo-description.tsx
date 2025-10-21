@@ -28,8 +28,8 @@ export default function Component() {
         <Radio
           value={plan.id}
           key={plan.id}
-          className="flex items-start gap-3 rounded-lg border p-4 data-[hovered]:bg-accent/50 data-[selected]:border-green-600 data-[selected]:bg-green-50 dark:data-[selected]:border-green-900 dark:data-[selected]:bg-green-950"
-          radioGroupItemClassName="shadow-none group-data-[selected]:border-green-600  group-data-[selected]:bg-green-600 [&_svg]:fill-white [&_svg]:stroke-white"
+          className="flex items-start gap-3 rounded-lg border p-4 data-hovered:bg-accent/50 data-selected:border-green-600 data-selected:bg-green-50 dark:data-selected:border-green-900 dark:data-selected:bg-green-950"
+          radioGroupItemClassName="shadow-none group-data-selected:border-green-600  group-data-selected:bg-green-600 [&_svg]:fill-white [&_svg]:stroke-white"
         >
           <div className="grid gap-1 font-normal">
             <div className="font-medium">{plan.name}</div>

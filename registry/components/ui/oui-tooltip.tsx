@@ -12,8 +12,8 @@ export function Tooltip({
       offset={offset}
       className={composeTailwindRenderProps(className, [
         "z-50 w-fit rounded-md bg-foreground px-3 py-1.5 text-xs text-balance text-background",
-        "data-[entering]:animate-in data-[entering]:fade-in-0 data-[entering]:zoom-in-95",
-        "data-[exiting]:animate-out data-[exiting]:fade-out-0 data-[exiting]:zoom-out-95",
+        "data-entering:animate-in data-entering:fade-in-0 data-entering:zoom-in-95",
+        "data-exiting:animate-out data-exiting:fade-out-0 data-exiting:zoom-out-95",
         "data-[placement=bottom]:slide-in-from-top-2",
         "data-[placement=left]:slide-in-from-right-2",
         "data-[placement=right]:slide-in-from-left-2",

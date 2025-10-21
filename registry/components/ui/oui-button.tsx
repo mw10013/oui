@@ -22,16 +22,16 @@ export const buttonVariants = cva(
     variants: {
       variant: {
         default:
-          "bg-primary text-primary-foreground shadow-xs data-[hovered]:bg-primary/90",
+          "bg-primary text-primary-foreground shadow-xs data-hovered:bg-primary/90",
         destructive:
-          "bg-destructive text-white shadow-xs data-[focus-visible]:ring-destructive/20 data-[hovered]:bg-destructive/90 dark:bg-destructive/60 dark:data-[focus-visible]:ring-destructive/40",
+          "bg-destructive text-white shadow-xs data-focus-visible:ring-destructive/20 data-hovered:bg-destructive/90 dark:bg-destructive/60 dark:data-focus-visible:ring-destructive/40",
         outline:
-          "border bg-background shadow-xs data-[hovered]:bg-accent data-[hovered]:text-accent-foreground dark:border-input dark:bg-input/30 dark:data-[hovered]:bg-input/50",
+          "border bg-background shadow-xs data-hovered:bg-accent data-hovered:text-accent-foreground dark:border-input dark:bg-input/30 dark:data-hovered:bg-input/50",
         secondary:
-          "bg-secondary text-secondary-foreground shadow-xs data-[hovered]:bg-secondary/80",
+          "bg-secondary text-secondary-foreground shadow-xs data-hovered:bg-secondary/80",
         ghost:
-          "data-[hovered]:bg-accent data-[hovered]:text-accent-foreground dark:data-[hovered]:bg-accent/50",
-        link: "text-primary underline-offset-4 data-[hovered]:underline",
+          "data-hovered:bg-accent data-hovered:text-accent-foreground dark:data-hovered:bg-accent/50",
+        link: "text-primary underline-offset-4 data-hovered:underline",
       },
       size: {
         default: "h-9 px-4 py-2 has-[>svg]:px-3",

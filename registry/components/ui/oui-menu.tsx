@@ -15,7 +15,7 @@ export function Menu<T extends object>({
     <Rac.Menu
       className={composeTailwindRenderProps(
         className,
-        "w-full min-w-[8rem] overflow-x-hidden overflow-y-auto p-1",
+        "w-full min-w-32 overflow-x-hidden overflow-y-auto p-1",
       )}
       {...props}
     />
@@ -29,8 +29,8 @@ export const menuItemVariants = cva(
   [
     "relative flex cursor-default items-center gap-x-2 rounded-sm px-2 py-1.5 text-sm transition-colors outline-none select-none",
     '[&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*="size-"])]:size-4 [&_svg:not([class*="text-"])]:text-muted-foreground',
-    "data-[focused]:bg-accent data-[focused]:text-accent-foreground",
-    "data-[disabled]:pointer-events-none data-[disabled]:opacity-50",
+    "data-focused:bg-accent data-focused:text-accent-foreground",
+    "data-disabled:pointer-events-none data-disabled:opacity-50",
   ],
   {
     variants: {
@@ -38,7 +38,7 @@ export const menuItemVariants = cva(
         default: "",
         destructive: [
           "text-destructive [&_svg]:text-destructive",
-          "data-[focused]:bg-destructive/10 data-[focused]:text-destructive dark:data-[focused]:bg-destructive/20",
+          "data-focused:bg-destructive/10 data-focused:text-destructive dark:data-focused:bg-destructive/20",
         ],
       },
       selectionMode: {

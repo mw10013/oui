@@ -17,7 +17,7 @@ export const baseLabelStyles = tw`flex select-none items-center gap-2 text-sm fo
 export const labelComponentStyles = twJoin(
   baseLabelStyles,
   // Cannot use 'disabledStyles' from oui-base since it includes pointer-events-none preventing cursor style.
-  "data-[disabled]:cursor-not-allowed data-[disabled]:opacity-50",
+  "data-disabled:cursor-not-allowed data-disabled:opacity-50",
 );
 
 export function Label({ className, ...props }: Rac.LabelProps) {
@@ -26,7 +26,7 @@ export function Label({ className, ...props }: Rac.LabelProps) {
       data-slot="label"
       className={twMerge(
         baseLabelStyles,
-        "group-data-[invalid]:text-destructive group-data-[disabled]:pointer-events-none group-data-[disabled]:opacity-50",
+        "group-data-invalid:text-destructive group-data-disabled:pointer-events-none group-data-disabled:opacity-50",
         className,
       )}
       {...props}

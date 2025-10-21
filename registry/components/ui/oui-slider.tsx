@@ -69,7 +69,7 @@ export function SliderThumb({ className, ...props }: Rac.SliderThumbProps) {
       {...props}
       className={composeTailwindRenderProps(className, [
         focusVisibleStyles,
-        "border-primary/50 bg-background top-[50%] size-4 rounded-full border shadow transition-colors data-[disabled]:opacity-100",
+        "border-primary/50 bg-background top-[50%] size-4 rounded-full border shadow transition-colors data-disabled:opacity-100",
       ])}
     ></Rac.SliderThumb>
   );

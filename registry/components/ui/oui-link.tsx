@@ -16,10 +16,10 @@ export const linkVariants = cva(
     variants: {
       underline: {
         none: "no-underline",
-        hover: "data-[hovered]:underline",
+        hover: "data-hovered:underline",
         always: "underline",
-        current: "data-[current]:underline",
-        focus: "data-[focused]:underline",
+        current: "data-current:underline",
+        focus: "data-focused:underline",
       },
     },
     defaultVariants: {

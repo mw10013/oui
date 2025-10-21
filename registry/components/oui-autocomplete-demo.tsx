@@ -15,7 +15,7 @@ export default function Component() {
         <Label>Autocomplete Commands</Label>
         <Input placeholder="Search commands...." />
       </SearchField>
-      <Rac.ListBox className="w-full min-w-[8rem] overflow-x-hidden overflow-y-auto p-1">
+      <Rac.ListBox className="w-full min-w-32 overflow-x-hidden overflow-y-auto p-1">
         <ListBoxItem id="1" textValue="Create new file...">
           Create new file...
         </ListBoxItem>

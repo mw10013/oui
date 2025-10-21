@@ -31,7 +31,7 @@ export default function Component() {
       <MenuItem
         id="deleteIconColor"
         textValue="Delete"
-        className="text-destructive data-[focused]:bg-destructive/10 data-[focused]:text-destructive"
+        className="text-destructive data-focused:bg-destructive/10 data-focused:text-destructive"
       >
         <TrashIcon className="mr-2 size-4 text-destructive" />
         Delete

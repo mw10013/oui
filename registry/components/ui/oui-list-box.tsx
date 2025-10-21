@@ -76,8 +76,8 @@ export function ListBoxItem<T extends object>({
         disabledStyles,
         "relative flex w-full cursor-default items-center gap-2 rounded-sm py-1.5 pr-8 pl-2 text-sm outline-none select-none",
         "[&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4 [&_svg:not([class*='text-'])]:text-muted-foreground",
-        "data-[focused]:bg-accent data-[focused]:text-accent-foreground",
-        "data-[hovered]:bg-accent data-[hovered]:text-accent-foreground",
+        "data-focused:bg-accent data-focused:text-accent-foreground",
+        "data-hovered:bg-accent data-hovered:text-accent-foreground",
       ])}
     >
       {Rac.composeRenderProps(children, (children, renderProps) => (

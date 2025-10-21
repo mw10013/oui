@@ -37,9 +37,9 @@ export function Checkbox({
               [
                 groupFocusVisibleStyles,
                 "border-input dark:bg-input/30 shadow-xs size-4 shrink-0 rounded-[4px] border transition-shadow",
-                "group-data-[selected]:bg-primary group-data-[selected]:text-primary-foreground dark:group-data-[selected]:bg-primary group-data-[selected]:border-primary",
-                "group-data-[interminate]:bg-primary group-data-[interminate]:text-primary-foreground dark:group-data-[interminate]:bg-primary group-data-[interminate]:border-primary",
-                "group-data-[invalid]:ring-destructive/20 group-data-[invalid]:dark:ring-destructive/40 group-data-[invalid]:border-destructive",
+                "group-data-selected:bg-primary group-data-selected:text-primary-foreground dark:group-data-selected:bg-primary group-data-selected:border-primary",
+                "group-data-interminate:bg-primary group-data-interminate:text-primary-foreground dark:group-data-interminate:bg-primary group-data-interminate:border-primary",
+                "group-data-invalid:ring-destructive/20 group-data-invalid:dark:ring-destructive/40 group-data-invalid:border-destructive",
               ],
               indicatorClassName,
             )}

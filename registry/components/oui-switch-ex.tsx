@@ -54,7 +54,7 @@ export function SwitchEx({
           id={descriptionId}
           slot="description"
           className={twMerge(
-            "peer-data-[disabled]:opacity-60",
+            "peer-data-disabled:opacity-60",
             descriptionClassName,
           )}
         >

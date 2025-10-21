@@ -83,7 +83,7 @@ export function Row<T extends object>({
     <Rac.Row
       className={composeTailwindRenderProps(
         className,
-        "data-[hovered]:bg-muted/50 data-[selected]:bg-muted border-b transition-colors data-[disabled]:opacity-50",
+        "data-hovered:bg-muted/50 data-selected:bg-muted border-b transition-colors data-disabled:opacity-50",
       )}
       {...props}
     />

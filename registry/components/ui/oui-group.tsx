@@ -10,7 +10,7 @@ export function Group({ className, ...props }: Rac.GroupProps) {
       className={composeTailwindRenderProps(className, [
         focusVisibleStyles,
         "border-input inline-flex h-9 w-full items-center overflow-hidden whitespace-nowrap rounded-md border",
-        "data-[invalid]:ring-destructive/20 dark:data-[invalid]:ring-destructive/40 data-[invalid]:border-destructive",
+        "data-invalid:ring-destructive/20 dark:data-invalid:ring-destructive/40 data-invalid:border-destructive",
       ])}
       {...props}
     />

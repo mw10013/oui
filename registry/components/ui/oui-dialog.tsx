@@ -33,9 +33,9 @@ export function Dialog({
               slot="close"
               className={twJoin(
                 "absolute top-4 right-4 rounded-sm p-1 opacity-70 transition-opacity",
-                "data-[hovered]:bg-accent data-[hovered]:text-muted-foreground data-[hovered]:opacity-100",
-                "data-[focus-visible]:ring-2 data-[focus-visible]:ring-ring data-[focus-visible]:ring-offset-2 data-[focus-visible]:ring-offset-background data-[focus-visible]:outline-none",
-                "data-[disabled]:pointer-events-none",
+                "data-hovered:bg-accent data-hovered:text-muted-foreground data-hovered:opacity-100",
+                "data-focus-visible:ring-2 data-focus-visible:ring-ring data-focus-visible:ring-offset-2 data-focus-visible:ring-offset-background data-focus-visible:outline-none",
+                "data-disabled:pointer-events-none",
               )}
             >
               <XIcon className="size-4" />

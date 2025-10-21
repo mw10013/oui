@@ -14,8 +14,8 @@ const trigger = {
   DialogTrigger: "min-w-72 p-4",
   MenuTrigger: "",
   SubmenuTrigger: "shadow-lg",
-  Select: "min-w-[var(--trigger-width)] p-1",
-  ComboBox: "min-w-[var(--trigger-width)] p-1",
+  Select: "min-w-(--trigger-width) p-1",
+  ComboBox: "min-w-(--trigger-width) p-1",
 } as const;
 
 const placement = {
@@ -27,9 +27,9 @@ const placement = {
 
 export const popoverVariants = cva(
   [
-    "relative min-w-[8rem] overflow-x-hidden overflow-y-auto rounded-md border bg-popover text-popover-foreground shadow-md outline-none",
-    "data-[entering]:animate-in data-[entering]:fade-in-0 data-[entering]:zoom-in-95",
-    "data-[exiting]:animate-out data-[exiting]:fade-out-0 data-[exiting]:zoom-out-95",
+    "relative min-w-32 overflow-x-hidden overflow-y-auto rounded-md border bg-popover text-popover-foreground shadow-md outline-none",
+    "data-entering:animate-in data-entering:fade-in-0 data-entering:zoom-in-95",
+    "data-exiting:animate-out data-exiting:fade-out-0 data-exiting:zoom-out-95",
   ],
   {
     variants: { trigger, placement },

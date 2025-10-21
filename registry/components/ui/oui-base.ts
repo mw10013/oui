@@ -25,14 +25,14 @@ export const tw = (strings: TemplateStringsArray, ...values: string[]) =>
  * 
  * 'outline-none' resets user agent styles especially on Chrome
  */
-export const focusVisibleStyles = tw`data-[focus-visible]:border-ring data-[focus-visible]:ring-ring/50 outline-none data-[focus-visible]:ring-[3px]`;
+export const focusVisibleStyles = tw`data-focus-visible:border-ring data-focus-visible:ring-ring/50 outline-none data-focus-visible:ring-[3px]`;
 
 /**
  * Base group focus visible styles.
  * 
  * Intended for child elements within a RAC component that structures with a label (eg. checkbox, radio).
  */
-export const groupFocusVisibleStyles = tw`group-data-[focus-visible]:border-ring group-data-[focus-visible]:ring-ring/50 outline-none group-data-[focus-visible]:ring-[3px]`;
+export const groupFocusVisibleStyles = tw`group-data-focus-visible:border-ring group-data-focus-visible:ring-ring/50 outline-none group-data-focus-visible:ring-[3px]`;
 
 /**
  * Base disabled styles.
@@ -43,7 +43,7 @@ export const groupFocusVisibleStyles = tw`group-data-[focus-visible]:border-ring
  * This may not be suitable for RAC components that structure with a <label> (eg. radio, checkbox and switch)
  * and `labelComponentStyles` from `oui-label` is preferred.
  */
-export const disabledStyles = tw`data-[disabled]:pointer-events-none data-[disabled]:opacity-50`;
+export const disabledStyles = tw`data-disabled:pointer-events-none data-disabled:opacity-50`;
 
 /**
  * Composes Tailwind CSS classes with render props.

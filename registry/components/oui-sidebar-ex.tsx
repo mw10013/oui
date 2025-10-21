@@ -188,7 +188,7 @@ export function SidebarTreeItemContentEx({
           <div
             className={twMerge(
               "text-sidebar-foreground ring-sidebar-ring outline-hidden flex h-8 shrink-0 items-center rounded-md px-2 text-sm transition-[margin,opacity] duration-200 ease-linear [&>svg]:size-4 [&>svg]:shrink-0",
-              "data-[hovered]:bg-transparent data-[hovered]:text-current dark:data-[hovered]:bg-transparent",
+              "data-hovered:bg-transparent data-hovered:text-current dark:data-hovered:bg-transparent",
               renderProps.hasChildItems && "font-medium",
               renderProps.isHovered &&
                 "bg-sidebar-accent text-sidebar-accent-foreground",

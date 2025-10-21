@@ -50,7 +50,7 @@ export function Radio({
               [
                 groupFocusVisibleStyles,
                 "relative aspect-square size-4 shrink-0 rounded-full border border-input text-primary shadow-xs transition-[color,box-shadow] dark:bg-input/30",
-                "group-data-[invalid]:border-destructive group-data-[invalid]:ring-destructive/20 group-data-[invalid]:dark:ring-destructive/40",
+                "group-data-invalid:border-destructive group-data-invalid:ring-destructive/20 group-data-invalid:dark:ring-destructive/40",
               ],
               radioGroupItemClassName,
             )}
