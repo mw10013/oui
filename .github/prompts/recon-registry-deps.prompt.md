@@ -4,11 +4,22 @@ mode: "agent"
 
 Your goal is to reconcile the `registryDependencies` of an item in `registry.json` based on the imports in its corresponding component file.
 
-You are given a component name in the format `oui-*`. Ask for it if not given.
+You are given either a single component name in the format `oui-*`, a single filename in the format `oui-*.tsx`, or a list of component names or filenames. Ask for it if not given.
 
-Check that the item exists in `registry.json` with `type` equal to `registry:component`. If it does not exist, respond with an error message.
+If given a list, apply the prompt instructions to each one iteratively. Do not try to "batch". Complete the first item completely and then move to the next one. If there is an interruption, we don't want to lose work.
 
-The component file is located at `registry/components/${componentName}.tsx`.
+For each component name or filename:
+
+You are given either a component name in the format `oui-*` or a filename in the format `oui-*.tsx`. Ask for it if not given.
+
+If given a component name, derive the filename as `${componentName}.tsx`.
+If given a filename, derive the component name by removing the `.tsx` extension.
+
+Check that the component file exists at `registry/components/${filename}`. If it does not exist, respond with an error message.
+
+Use grep to search for the item in `registry.json` by the component name (e.g., grep for `"name": "${componentName}"`). If not found, respond with an error message. Note that items are unique by name.
+
+To efficiently locate the item, use grep to find the line number where the item starts, then read only the relevant lines from that point to extract the `registryDependencies` array and ensure `type` is `registry:component`.
 
 Analyze the imports in this file. Look for imports from `@/registry/components/ui/*` (e.g., `import { Checkbox } from "@/registry/components/ui/oui-checkbox";` or `import { Avatar } from "@/registry/components/ui/avatar";`).
 
