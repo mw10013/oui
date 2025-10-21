@@ -1,3 +1,5 @@
+"use client";
+
 import { SelectEx } from "@/registry/components/oui-select-ex";
 import { Header } from "@/registry/components/ui/oui-header";
 import { ListBoxItem } from "@/registry/components/ui/oui-list-box";
@@ -17,7 +19,7 @@ export default function Component() {
       aria-label="Select fruit"
       placeholder="SelectEx"
       buttonClassName="w-[180px]"
-      >
+    >
       <Rac.ListBoxSection id="fruits-section">
         <Header variant="select">Fruits</Header>
         <Rac.Collection items={fruitItemsForSection}>

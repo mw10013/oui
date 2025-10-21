@@ -1,3 +1,5 @@
+"use client";
+
 import type { SelectionMode } from "@/registry/components/ui/oui-select";
 import { FieldError } from "@/registry/components/ui/oui-field-error";
 import { Label } from "@/registry/components/ui/oui-label";

@@ -1,3 +1,5 @@
+"use client";
+
 import { useState } from "react";
 import { DialogExAlert } from "@/registry/components/oui-dialog-ex-alert";
 import { Button } from "@/registry/components/ui/oui-button";

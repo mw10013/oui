@@ -1,3 +1,5 @@
+"use client";
+
 import { DialogEx } from "@/registry/components/oui-dialog-ex";
 import { TextFieldEx } from "@/registry/components/oui-text-field-ex";
 import { Button } from "@/registry/components/ui/oui-button";

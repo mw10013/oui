@@ -1,3 +1,5 @@
+"use client";
+
 import { Button } from "@/registry/components/ui/oui-button";
 import { ComboBox } from "@/registry/components/ui/oui-combo-box";
 import { FieldError } from "@/registry/components/ui/oui-field-error";

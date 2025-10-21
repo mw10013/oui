@@ -1,3 +1,5 @@
+"use client";
+
 import type { ReactElement } from "react";
 import { Button } from "@/registry/components/ui/oui-button";
 import { Label } from "@/registry/components/ui/oui-label";

@@ -1,3 +1,5 @@
+"use client";
+
 import { Button } from "@/registry/components/ui/oui-button";
 import { Dialog } from "@/registry/components/ui/oui-dialog";
 import { Form } from "@/registry/components/ui/oui-form";

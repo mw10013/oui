@@ -1,3 +1,5 @@
+"use client";
+
 import { SearchFieldEx } from "@/registry/components/oui-search-field-ex";
 import { Label } from "@/registry/components/ui/oui-label";
 import { Link } from "@/registry/components/ui/oui-link";

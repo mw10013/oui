@@ -1,3 +1,5 @@
+"use client";
+
 import type { Selection } from "react-aria-components";
 import * as React from "react";
 import { MenuEx } from "@/registry/components/oui-menu-ex";

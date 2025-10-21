@@ -1,3 +1,5 @@
+"use client";
+
 import { AutocompleteEx } from "@/registry/components/oui-autocomplete-ex";
 import { SelectExPopover } from "@/registry/components/oui-select-ex-popover";
 import {

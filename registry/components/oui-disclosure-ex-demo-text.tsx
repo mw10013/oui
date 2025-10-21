@@ -1,3 +1,5 @@
+"use client";
+
 import { DisclosureEx } from "@/registry/components/oui-disclosure-ex";
 import * as Rac from "react-aria-components";
 

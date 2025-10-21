@@ -1,3 +1,5 @@
+"use client";
+
 import { Input } from "@/registry/components/ui/oui-input";
 import { Label } from "@/registry/components/ui/oui-label";
 import { ListBoxItem } from "@/registry/components/ui/oui-list-box";

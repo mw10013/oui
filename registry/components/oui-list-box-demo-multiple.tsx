@@ -1,3 +1,5 @@
+"use client";
+
 import { Item, ItemContent, ItemTitle } from "@/registry/components/ui/item";
 import { ListBoxItem } from "@/registry/components/ui/oui-list-box";
 import * as Rac from "react-aria-components";

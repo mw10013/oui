@@ -1,12 +1,14 @@
+"use client";
+
 import type { VariantProps } from "class-variance-authority";
 import * as React from "react";
+import { composeTailwindRenderProps } from "@/registry/components/ui/oui-base";
+import { Button } from "@/registry/components/ui/oui-button";
 import { useSidebar } from "@/registry/components/ui/sidebar";
 import { cva } from "class-variance-authority";
 import { ChevronRight, PanelLeftIcon } from "lucide-react";
 import * as Rac from "react-aria-components";
 import { twMerge } from "tailwind-merge";
-import { composeTailwindRenderProps } from "@/registry/components/ui/oui-base";
-import { Button } from "@/registry/components/ui/oui-button";
 
 /**
  * Experimental
@@ -86,7 +88,7 @@ export function SidebarListBoxSection<T extends object>({
       )}
       {...props}
     >
-      <Rac.Header className="text-sidebar-foreground/70 ring-sidebar-ring outline-hidden flex h-8 shrink-0 items-center rounded-md px-2 text-xs font-medium transition-[margin,opacity] duration-200 ease-linear focus-visible:ring-2 group-data-[collapsible=icon]:-mt-8 group-data-[collapsible=icon]:opacity-0 [&>svg]:size-4 [&>svg]:shrink-0">
+      <Rac.Header className="flex h-8 shrink-0 items-center rounded-md px-2 text-xs font-medium text-sidebar-foreground/70 ring-sidebar-ring outline-hidden transition-[margin,opacity] duration-200 ease-linear group-data-[collapsible=icon]:-mt-8 group-data-[collapsible=icon]:opacity-0 focus-visible:ring-2 [&>svg]:size-4 [&>svg]:shrink-0">
         {title}
       </Rac.Header>
       <div className="w-full text-sm">
@@ -99,7 +101,7 @@ export function SidebarListBoxSection<T extends object>({
 export const sidebarListBoxItemVariants = cva(
   [
     "group/menu-item relative", // from SidebarMenuItem
-    "peer/menu-button outline-hidden ring-sidebar-ring flex w-full items-center gap-2 overflow-hidden rounded-md p-2 text-left text-sm transition-[width,height,padding]",
+    "peer/menu-button flex w-full items-center gap-2 overflow-hidden rounded-md p-2 text-left text-sm ring-sidebar-ring outline-hidden transition-[width,height,padding]",
     "group-has-data-[sidebar=menu-action]/menu-item:pr-8", // Adjusted from -has-data-[sidebar=menu-action]/menu-item:pr-8
     "[&>span:last-child]:truncate [&>svg]:size-4 [&>svg]:shrink-0",
     // States from sidebarMenuButtonVariants
@@ -108,7 +110,7 @@ export const sidebarListBoxItemVariants = cva(
     "data-[focus-visible]:ring-2", // RAC uses focus-visible
     "data-[pressed]:bg-sidebar-accent data-[pressed]:text-sidebar-accent-foreground", // from active:
     "data-[disabled]:pointer-events-none data-[disabled]:opacity-50",
-    "data-[selected]:bg-sidebar-accent data-[selected]:text-sidebar-accent-foreground data-[selected]:font-medium", // from data-[active=true]
+    "data-[selected]:bg-sidebar-accent data-[selected]:font-medium data-[selected]:text-sidebar-accent-foreground", // from data-[active=true]
     // data-[state=open] is not directly applicable to ListBoxItem, but hover styles are covered
     "group-data-[collapsible=icon]:size-8! group-data-[collapsible=icon]:p-2!", // These are from the parent context, might need adjustment or removal if not applicable via RAC props
   ],
@@ -118,12 +120,12 @@ export const sidebarListBoxItemVariants = cva(
         default:
           "data-[hovered]:bg-sidebar-accent data-[hovered]:text-sidebar-accent-foreground", // from hover:bg-sidebar-accent hover:text-sidebar-accent-foreground
         outline:
-          "bg-background data-[hovered]:bg-sidebar-accent data-[hovered]:text-sidebar-accent-foreground shadow-[0_0_0_1px_hsl(var(--sidebar-border))] data-[hovered]:shadow-[0_0_0_1px_hsl(var(--sidebar-accent))]",
+          "bg-background shadow-[0_0_0_1px_hsl(var(--sidebar-border))] data-[hovered]:bg-sidebar-accent data-[hovered]:text-sidebar-accent-foreground data-[hovered]:shadow-[0_0_0_1px_hsl(var(--sidebar-accent))]",
       },
       size: {
         default: "h-8 text-sm",
         sm: "h-7 text-xs",
-        lg: "group-data-[collapsible=icon]:p-0! h-12 text-sm", // This might also need context adjustment
+        lg: "h-12 text-sm group-data-[collapsible=icon]:p-0!", // This might also need context adjustment
       },
     },
     defaultVariants: {
@@ -167,7 +169,7 @@ export interface SidebarTreeNodeEx {
   id: string;
   title?: string;
   href?: string;
-  'data-testid'?: string;
+  "data-testid"?: string;
   children?: SidebarTreeNodeEx[];
 }
 
@@ -187,7 +189,7 @@ export function SidebarTreeItemContentEx({
         return (
           <div
             className={twMerge(
-              "text-sidebar-foreground ring-sidebar-ring outline-hidden flex h-8 shrink-0 items-center rounded-md px-2 text-sm transition-[margin,opacity] duration-200 ease-linear [&>svg]:size-4 [&>svg]:shrink-0",
+              "flex h-8 shrink-0 items-center rounded-md px-2 text-sm text-sidebar-foreground ring-sidebar-ring outline-hidden transition-[margin,opacity] duration-200 ease-linear [&>svg]:size-4 [&>svg]:shrink-0",
               "data-hovered:bg-transparent data-hovered:text-current dark:data-hovered:bg-transparent",
               renderProps.hasChildItems && "font-medium",
               renderProps.isHovered &&

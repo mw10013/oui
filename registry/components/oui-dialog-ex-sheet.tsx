@@ -1,3 +1,5 @@
+"use client";
+
 import type { DialogProps } from "@/registry/components/ui/oui-dialog";
 import type { VariantProps } from "class-variance-authority";
 import type { ReactElement } from "react";

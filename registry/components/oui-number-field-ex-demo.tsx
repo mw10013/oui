@@ -1,3 +1,5 @@
+"use client";
+
 import { NumberFieldEx } from "@/registry/components/oui-number-field-ex";
 import { Button } from "@/registry/components/ui/oui-button";
 import * as Rac from "react-aria-components";

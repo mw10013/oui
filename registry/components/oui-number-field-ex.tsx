@@ -1,3 +1,5 @@
+"use client";
+
 import { FieldError } from "@/registry/components/ui/oui-field-error";
 import { Group } from "@/registry/components/ui/oui-group";
 import { Input } from "@/registry/components/ui/oui-input";

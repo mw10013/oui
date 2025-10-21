@@ -1,3 +1,5 @@
+"use client";
+
 import { MenuEx } from "@/registry/components/oui-menu-ex";
 import {
   Avatar,

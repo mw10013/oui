@@ -1,3 +1,5 @@
+"use client";
+
 import { ComboBoxEx } from "@/registry/components/oui-combo-box-ex";
 import { Header } from "@/registry/components/ui/oui-header";
 import { ListBoxItem } from "@/registry/components/ui/oui-list-box";

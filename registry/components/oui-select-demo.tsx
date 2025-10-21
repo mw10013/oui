@@ -1,3 +1,5 @@
+"use client";
+
 import { ListBoxItem } from "@/registry/components/ui/oui-list-box";
 import { Popover } from "@/registry/components/ui/oui-popover";
 import {

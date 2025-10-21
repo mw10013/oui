@@ -1,3 +1,5 @@
+"use client";
+
 import { useState } from "react";
 import { ListBoxItem } from "@/registry/components/ui/oui-list-box";
 import { Popover } from "@/registry/components/ui/oui-popover";

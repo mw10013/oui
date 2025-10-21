@@ -1,3 +1,5 @@
+"use client";
+
 import type { DialogProps } from "@/registry/components/ui/oui-dialog";
 import type { ReactElement } from "react";
 import { ModalEx } from "@/registry/components/oui-modal-ex";
