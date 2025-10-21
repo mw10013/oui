@@ -1751,7 +1751,10 @@
       "registryDependencies": [
         "https://oui.mw10013.workers.dev/r/oui-button.json",
         "https://oui.mw10013.workers.dev/r/oui-menu.json",
-        "https://oui.mw10013.workers.dev/r/oui-popover.json"
+        "https://oui.mw10013.workers.dev/r/oui-popover.json",
+        "https://oui.mw10013.workers.dev/r/oui-label.json",
+        "https://oui.mw10013.workers.dev/r/oui-link.json",
+        "https://oui.mw10013.workers.dev/r/oui-text.json"
       ],
       "meta": {
         "tags": ["menu", "menu-ex", "popover", "button"]
@@ -2179,7 +2182,8 @@
         "https://oui.mw10013.workers.dev/r/oui-label.json",
         "https://oui.mw10013.workers.dev/r/oui-input.json",
         "https://oui.mw10013.workers.dev/r/oui-search-field.json",
-        "https://oui.mw10013.workers.dev/r/oui-text.json"
+        "https://oui.mw10013.workers.dev/r/oui-text.json",
+        "https://oui.mw10013.workers.dev/r/oui-link.json"
       ],
       "meta": {
         "tags": [
