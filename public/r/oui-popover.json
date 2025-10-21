@@ -7,10 +7,7 @@
     "class-variance-authority",
     "tailwind-merge"
   ],
-  "registryDependencies": [
-    "https://oui.mw10013.workers.dev/r/oui-button.json",
-    "https://oui.mw10013.workers.dev/r/oui-dialog.json"
-  ],
+  "registryDependencies": [],
   "files": [
     {
       "path": "registry/components/ui/oui-popover.tsx",

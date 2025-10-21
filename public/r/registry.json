@@ -335,8 +335,7 @@
         }
       ],
       "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/oui-label.json",
-        "https://oui.mw10013.workers.dev/r/oui-text.json"
+        "https://oui.mw10013.workers.dev/r/oui-label.json"
       ],
       "dependencies": [
         "react-aria-components",
@@ -788,7 +787,10 @@
         "https://oui.mw10013.workers.dev/r/oui-button.json",
         "https://oui.mw10013.workers.dev/r/oui-dialog.json",
         "https://oui.mw10013.workers.dev/r/oui-heading.json",
-        "https://oui.mw10013.workers.dev/r/oui-modal-ex.json"
+        "https://oui.mw10013.workers.dev/r/oui-modal-ex.json",
+        "https://oui.mw10013.workers.dev/r/oui-label.json",
+        "https://oui.mw10013.workers.dev/r/oui-link.json",
+        "https://oui.mw10013.workers.dev/r/oui-text.json"
       ],
       "meta": {
         "tags": ["dialog", "dialog-ex-alert", "heading", "modal-ex"]
@@ -860,7 +862,10 @@
       "registryDependencies": [
         "https://oui.mw10013.workers.dev/r/oui-button.json",
         "https://oui.mw10013.workers.dev/r/oui-dialog.json",
-        "https://oui.mw10013.workers.dev/r/oui-modal-ex-sheet.json"
+        "https://oui.mw10013.workers.dev/r/oui-modal-ex-sheet.json",
+        "https://oui.mw10013.workers.dev/r/oui-label.json",
+        "https://oui.mw10013.workers.dev/r/oui-link.json",
+        "https://oui.mw10013.workers.dev/r/oui-text.json"
       ],
       "meta": {
         "tags": ["dialog", "dialog-ex-sheet", "modal-ex-sheet", "sheet"]
@@ -1645,7 +1650,7 @@
         }
       ],
       "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/oui-button.json"
+        "https://oui.mw10013.workers.dev/r/oui-base.json"
       ],
       "dependencies": [
         "react-aria-components",
@@ -1730,9 +1735,7 @@
         }
       ],
       "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/oui-base.json",
-        "https://oui.mw10013.workers.dev/r/oui-button.json",
-        "https://oui.mw10013.workers.dev/r/oui-popover.json"
+        "https://oui.mw10013.workers.dev/r/oui-base.json"
       ],
       "dependencies": [
         "react-aria-components",
@@ -1939,7 +1942,10 @@
         }
       ],
       "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/oui-modal.json"
+        "https://oui.mw10013.workers.dev/r/oui-modal.json",
+        "https://oui.mw10013.workers.dev/r/oui-label.json",
+        "https://oui.mw10013.workers.dev/r/oui-link.json",
+        "https://oui.mw10013.workers.dev/r/oui-text.json"
       ],
       "meta": {
         "tags": ["modal", "modal-ex-sheet", "sheet"]
@@ -2016,10 +2022,7 @@
           "type": "registry:ui"
         }
       ],
-      "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/oui-button.json",
-        "https://oui.mw10013.workers.dev/r/oui-dialog.json"
-      ],
+      "registryDependencies": [],
       "dependencies": [
         "react-aria-components",
         "class-variance-authority",
@@ -2084,9 +2087,8 @@
         }
       ],
       "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/oui-field-error.json",
-        "https://oui.mw10013.workers.dev/r/oui-label.json",
-        "https://oui.mw10013.workers.dev/r/oui-text.json"
+        "https://oui.mw10013.workers.dev/r/oui-base.json",
+        "https://oui.mw10013.workers.dev/r/oui-label.json"
       ],
       "dependencies": [
         "react-aria-components",
@@ -2164,11 +2166,7 @@
         }
       ],
       "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/oui-base.json",
-        "https://oui.mw10013.workers.dev/r/oui-field-error.json",
-        "https://oui.mw10013.workers.dev/r/oui-input.json",
-        "https://oui.mw10013.workers.dev/r/oui-label.json",
-        "https://oui.mw10013.workers.dev/r/oui-text.json"
+        "https://oui.mw10013.workers.dev/r/oui-base.json"
       ],
       "dependencies": ["react-aria-components"]
     },
@@ -2226,10 +2224,7 @@
         }
       ],
       "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/oui-field-error.json",
-        "https://oui.mw10013.workers.dev/r/oui-label.json",
-        "https://oui.mw10013.workers.dev/r/oui-popover.json",
-        "https://oui.mw10013.workers.dev/r/oui-text.json"
+        "https://oui.mw10013.workers.dev/r/oui-base.json"
       ],
       "dependencies": [
         "react-aria-components",
@@ -2439,7 +2434,7 @@
         }
       ],
       "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/oui-label.json"
+        "https://oui.mw10013.workers.dev/r/oui-base.json"
       ],
       "dependencies": ["react-aria-components"]
     },
@@ -2505,7 +2500,7 @@
       ],
       "registryDependencies": [
         "https://oui.mw10013.workers.dev/r/oui-label.json",
-        "https://oui.mw10013.workers.dev/r/oui-text.json"
+        "https://oui.mw10013.workers.dev/r/oui-base.json"
       ],
       "dependencies": ["react-aria-components", "tailwind-merge"]
     },
@@ -2789,11 +2784,7 @@
         }
       ],
       "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/oui-base.json",
-        "https://oui.mw10013.workers.dev/r/oui-field-error.json",
-        "https://oui.mw10013.workers.dev/r/oui-input.json",
-        "https://oui.mw10013.workers.dev/r/oui-label.json",
-        "https://oui.mw10013.workers.dev/r/oui-text.json"
+        "https://oui.mw10013.workers.dev/r/oui-base.json"
       ],
       "dependencies": ["react-aria-components"]
     },
@@ -2875,6 +2866,7 @@
         "https://oui.mw10013.workers.dev/r/oui-input.json",
         "https://oui.mw10013.workers.dev/r/oui-label.json",
         "https://oui.mw10013.workers.dev/r/oui-field-error.json",
+        "https://oui.mw10013.workers.dev/r/oui-link.json",
         "https://oui.mw10013.workers.dev/r/oui-text.json"
       ],
       "meta": {

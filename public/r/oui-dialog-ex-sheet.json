@@ -5,7 +5,10 @@
   "registryDependencies": [
     "https://oui.mw10013.workers.dev/r/oui-button.json",
     "https://oui.mw10013.workers.dev/r/oui-dialog.json",
-    "https://oui.mw10013.workers.dev/r/oui-modal-ex-sheet.json"
+    "https://oui.mw10013.workers.dev/r/oui-modal-ex-sheet.json",
+    "https://oui.mw10013.workers.dev/r/oui-label.json",
+    "https://oui.mw10013.workers.dev/r/oui-link.json",
+    "https://oui.mw10013.workers.dev/r/oui-text.json"
   ],
   "files": [
     {

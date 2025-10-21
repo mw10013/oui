@@ -9,9 +9,7 @@
     "tailwind-merge"
   ],
   "registryDependencies": [
-    "https://oui.mw10013.workers.dev/r/oui-base.json",
-    "https://oui.mw10013.workers.dev/r/oui-button.json",
-    "https://oui.mw10013.workers.dev/r/oui-popover.json"
+    "https://oui.mw10013.workers.dev/r/oui-base.json"
   ],
   "files": [
     {
