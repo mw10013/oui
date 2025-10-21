@@ -8,7 +8,7 @@
   "files": [
     {
       "path": "registry/components/oui-switch-ex-demo-blue.tsx",
-      "content": "import { SwitchEx } from \"@/registry/components/oui-switch-ex\";\n\nexport default function Component() {\n  return (\n    <SwitchEx\n      id=\"switch-demo-bluetooth\"\n      defaultSelected\n      indicatorClassName=\"group-data-[selected]:bg-blue-500 dark:group-data-[selected]:bg-blue-600\"\n    >\n      Bluetooth\n    </SwitchEx>\n  );\n}\n",
+      "content": "import { SwitchEx } from \"@/registry/components/oui-switch-ex\";\n\nexport default function Component() {\n  return (\n    <SwitchEx\n      id=\"switch-demo-bluetooth\"\n      defaultSelected\n      indicatorClassName=\"group-data-selected:bg-blue-500 dark:group-data-selected:bg-blue-600\"\n    >\n      Bluetooth\n    </SwitchEx>\n  );\n}\n",
       "type": "registry:component"
     }
   ],

@@ -10,7 +10,7 @@
   "files": [
     {
       "path": "registry/components/ui/oui-form.tsx",
-      "content": "import type { ComponentProps } from \"react\";\nimport * as Rac from \"react-aria-components\";\nimport { twMerge } from \"tailwind-merge\";\n\n/**\n * A styled form component based on shadcn.\n * If you don't want default styles, use Rac.Form directly.\n */\nexport function Form({ className, ...props }: ComponentProps<typeof Rac.Form>) {\n  // \"grid\" vs \"flex flex-col\"\n  return (\n    <Rac.Form\n      className={twMerge(\"flex flex-col gap-6\", className)}\n      {...props}\n    />\n  );\n}\n",
+      "content": "\"use client\";\n\nimport type { ComponentProps } from \"react\";\nimport * as Rac from \"react-aria-components\";\nimport { twMerge } from \"tailwind-merge\";\n\n/**\n * A styled form component based on shadcn.\n * If you don't want default styles, use Rac.Form directly.\n */\nexport function Form({ className, ...props }: ComponentProps<typeof Rac.Form>) {\n  // \"grid\" vs \"flex flex-col\"\n  return (\n    <Rac.Form\n      className={twMerge(\"flex flex-col gap-6\", className)}\n      {...props}\n    />\n  );\n}\n",
       "type": "registry:ui"
     }
   ]

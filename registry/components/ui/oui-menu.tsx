@@ -1,3 +1,5 @@
+"use client";
+
 import { composeTailwindRenderProps } from "@/registry/components/ui/oui-base";
 import { cva } from "class-variance-authority";
 import { CheckIcon, ChevronRightIcon, CircleIcon } from "lucide-react";

@@ -1,8 +1,10 @@
+"use client";
+
 import * as React from "react";
+import { composeTailwindRenderProps } from "@/registry/components/ui/oui-base";
 import { ArrowDown, ArrowUp } from "lucide-react";
 import * as Rac from "react-aria-components";
 import { twMerge } from "tailwind-merge";
-import { composeTailwindRenderProps } from "@/registry/components/ui/oui-base";
 
 // Table is not interactive on first click in SSR : https://github.com/adobe/react-spectrum/issues/8239
 
@@ -67,7 +69,7 @@ export function TableFooter({
   return (
     <tfoot
       className={twMerge(
-        "bg-muted/50 border-t font-medium [&>tr]:last:border-b-0",
+        "border-t bg-muted/50 font-medium [&>tr]:last:border-b-0",
         className,
       )}
       {...props}
@@ -83,7 +85,7 @@ export function Row<T extends object>({
     <Rac.Row
       className={composeTailwindRenderProps(
         className,
-        "data-hovered:bg-muted/50 data-selected:bg-muted border-b transition-colors data-disabled:opacity-50",
+        "border-b transition-colors data-disabled:opacity-50 data-hovered:bg-muted/50 data-selected:bg-muted",
       )}
       {...props}
     />
@@ -95,7 +97,7 @@ export function Column({ className, children, ...props }: Rac.ColumnProps) {
     <Rac.Column
       className={composeTailwindRenderProps(
         className,
-        "text-foreground h-10 whitespace-nowrap px-2 text-left align-middle font-medium",
+        "h-10 px-2 text-left align-middle font-medium whitespace-nowrap text-foreground",
       )}
       {...props}
     >
@@ -125,7 +127,7 @@ export function Cell({ className, ...props }: Rac.CellProps) {
     <Rac.Cell
       className={composeTailwindRenderProps(
         className,
-        "whitespace-nowrap p-2 align-middle",
+        "p-2 align-middle whitespace-nowrap",
       )}
       {...props}
     />
@@ -138,7 +140,7 @@ export function TableCaption({
 }: React.HTMLAttributes<HTMLTableCaptionElement>) {
   return (
     <caption
-      className={twMerge("text-muted-foreground mt-4 text-sm", className)}
+      className={twMerge("mt-4 text-sm text-muted-foreground", className)}
       {...props}
     />
   );

@@ -1,11 +1,13 @@
-import { CheckIcon, MinusIcon } from "lucide-react";
-import * as Rac from "react-aria-components";
-import { twMerge } from "tailwind-merge";
+"use client";
+
 import {
   composeTailwindRenderProps,
   groupFocusVisibleStyles,
 } from "@/registry/components/ui/oui-base";
 import { labelComponentStyles } from "@/registry/components/ui/oui-label";
+import { CheckIcon, MinusIcon } from "lucide-react";
+import * as Rac from "react-aria-components";
+import { twMerge } from "tailwind-merge";
 
 export interface CheckboxProps extends Rac.CheckboxProps {
   indicatorClassName?: string;
@@ -36,10 +38,10 @@ export function Checkbox({
             className={twMerge(
               [
                 groupFocusVisibleStyles,
-                "border-input dark:bg-input/30 shadow-xs size-4 shrink-0 rounded-[4px] border transition-shadow",
-                "group-data-selected:bg-primary group-data-selected:text-primary-foreground dark:group-data-selected:bg-primary group-data-selected:border-primary",
-                "group-data-interminate:bg-primary group-data-interminate:text-primary-foreground dark:group-data-interminate:bg-primary group-data-interminate:border-primary",
-                "group-data-invalid:ring-destructive/20 group-data-invalid:dark:ring-destructive/40 group-data-invalid:border-destructive",
+                "size-4 shrink-0 rounded-[4px] border border-input shadow-xs transition-shadow dark:bg-input/30",
+                "group-data-selected:border-primary group-data-selected:bg-primary group-data-selected:text-primary-foreground dark:group-data-selected:bg-primary",
+                "group-data-interminate:border-primary group-data-interminate:bg-primary group-data-interminate:text-primary-foreground dark:group-data-interminate:bg-primary",
+                "group-data-invalid:border-destructive group-data-invalid:ring-destructive/20 group-data-invalid:dark:ring-destructive/40",
               ],
               indicatorClassName,
             )}

@@ -1,13 +1,15 @@
+"use client";
+
+import { tw } from "@/registry/components/ui/oui-base";
 import * as Rac from "react-aria-components";
 import { twJoin, twMerge } from "tailwind-merge";
-import { tw } from "@/registry/components/ui/oui-base";
 
 /**
  * Derived from shadcn Label and FormLabel
- * 
+ *
  * For RAC components that structure with a 'label' prefer 'labelComponentStyles' instead.
  */
-export const baseLabelStyles = tw`flex select-none items-center gap-2 text-sm font-medium leading-none`;
+export const baseLabelStyles = tw`flex items-center gap-2 text-sm leading-none font-medium select-none`;
 
 /**
  * Label styles for RAC components that structure with a 'label' and have render props (eg. radio, checkbox and switch).
@@ -26,7 +28,7 @@ export function Label({ className, ...props }: Rac.LabelProps) {
       data-slot="label"
       className={twMerge(
         baseLabelStyles,
-        "group-data-invalid:text-destructive group-data-disabled:pointer-events-none group-data-disabled:opacity-50",
+        "group-data-disabled:pointer-events-none group-data-disabled:opacity-50 group-data-invalid:text-destructive",
         className,
       )}
       {...props}

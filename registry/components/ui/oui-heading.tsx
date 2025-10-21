@@ -1,3 +1,5 @@
+"use client";
+
 import type { VariantProps } from "class-variance-authority";
 import { cva } from "class-variance-authority";
 import * as Rac from "react-aria-components";
@@ -9,9 +11,9 @@ import { twMerge } from "tailwind-merge";
 export const headingVariants = cva(undefined, {
   variants: {
     variant: {
-      default: "text-lg font-semibold leading-none",
+      default: "text-lg leading-none font-semibold",
       alert: "text-lg font-semibold",
-      popover: "text-base font-medium leading-none",
+      popover: "text-base leading-none font-medium",
       disclosure: "flex",
     },
   },
@@ -26,6 +28,9 @@ export interface HeadingProps
 
 export function Heading({ className, variant, ...rest }: HeadingProps) {
   return (
-    <Rac.Heading className={twMerge(headingVariants({ className, variant }))} {...rest} />
+    <Rac.Heading
+      className={twMerge(headingVariants({ className, variant }))}
+      {...rest}
+    />
   );
 }

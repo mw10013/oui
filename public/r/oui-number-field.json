@@ -12,7 +12,7 @@
   "files": [
     {
       "path": "registry/components/ui/oui-number-field.tsx",
-      "content": "import { composeTailwindRenderProps } from \"@/registry/components/ui/oui-base\";\nimport * as Rac from \"react-aria-components\";\n\nexport function NumberField({ className, ...props }: Rac.NumberFieldProps) {\n  return (\n    <Rac.NumberField\n      className={composeTailwindRenderProps(className, \"group grid gap-2\")}\n      {...props}\n    />\n  );\n}\n",
+      "content": "\"use client\";\n\nimport { composeTailwindRenderProps } from \"@/registry/components/ui/oui-base\";\nimport * as Rac from \"react-aria-components\";\n\nexport function NumberField({ className, ...props }: Rac.NumberFieldProps) {\n  return (\n    <Rac.NumberField\n      className={composeTailwindRenderProps(className, \"group grid gap-2\")}\n      {...props}\n    />\n  );\n}\n",
       "type": "registry:ui"
     }
   ]

@@ -1,9 +1,11 @@
+"use client";
+
 import type { VariantProps } from "class-variance-authority";
 import { cva } from "class-variance-authority";
 import * as Rac from "react-aria-components";
 import { twMerge } from "tailwind-merge";
 
-export const separatorVariants = cva("bg-border shrink-0", {
+export const separatorVariants = cva("shrink-0 bg-border", {
   variants: {
     variant: {
       default: "w-full",

@@ -1,3 +1,5 @@
+"use client";
+
 import * as Rac from "react-aria-components";
 import { twMerge } from "tailwind-merge";
 

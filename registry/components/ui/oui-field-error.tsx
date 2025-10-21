@@ -1,3 +1,5 @@
+"use client";
+
 import * as Rac from "react-aria-components";
 import { composeTailwindRenderProps } from "@/registry/components/ui/oui-base";
 

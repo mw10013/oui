@@ -1,3 +1,5 @@
+"use client";
+
 import type { VariantProps } from "class-variance-authority";
 import { focusVisibleStyles } from "@/registry/components/ui/oui-base";
 import { cva } from "class-variance-authority";

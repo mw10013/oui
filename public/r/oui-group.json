@@ -11,7 +11,7 @@
   "files": [
     {
       "path": "registry/components/ui/oui-group.tsx",
-      "content": "import * as Rac from \"react-aria-components\";\nimport { composeTailwindRenderProps, focusVisibleStyles } from \"@/registry/components/ui/oui-base\";\n\n/**\n * Derived from shadcn Input\n */\nexport function Group({ className, ...props }: Rac.GroupProps) {\n  return (\n    <Rac.Group\n      className={composeTailwindRenderProps(className, [\n        focusVisibleStyles,\n        \"border-input inline-flex h-9 w-full items-center overflow-hidden whitespace-nowrap rounded-md border\",\n        \"data-[invalid]:ring-destructive/20 dark:data-[invalid]:ring-destructive/40 data-[invalid]:border-destructive\",\n      ])}\n      {...props}\n    />\n  );\n}\n",
+      "content": "\"use client\";\n\nimport {\n  composeTailwindRenderProps,\n  focusVisibleStyles,\n} from \"@/registry/components/ui/oui-base\";\nimport * as Rac from \"react-aria-components\";\n\n/**\n * Derived from shadcn Input\n */\nexport function Group({ className, ...props }: Rac.GroupProps) {\n  return (\n    <Rac.Group\n      className={composeTailwindRenderProps(className, [\n        focusVisibleStyles,\n        \"inline-flex h-9 w-full items-center overflow-hidden rounded-md border border-input whitespace-nowrap\",\n        \"data-invalid:border-destructive data-invalid:ring-destructive/20 dark:data-invalid:ring-destructive/40\",\n      ])}\n      {...props}\n    />\n  );\n}\n",
       "type": "registry:ui"
     }
   ]

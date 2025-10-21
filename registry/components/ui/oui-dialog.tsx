@@ -1,3 +1,5 @@
+"use client";
+
 import { XIcon } from "lucide-react";
 import * as Rac from "react-aria-components";
 import { twJoin, twMerge } from "tailwind-merge";

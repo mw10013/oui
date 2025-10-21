@@ -1,3 +1,5 @@
+"use client";
+
 import { cva } from "class-variance-authority";
 import * as Rac from "react-aria-components";
 import { twMerge } from "tailwind-merge";

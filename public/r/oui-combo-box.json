@@ -11,7 +11,7 @@
   "files": [
     {
       "path": "registry/components/ui/oui-combo-box.tsx",
-      "content": "import { composeTailwindRenderProps } from \"@/registry/components/ui/oui-base\";\nimport * as Rac from \"react-aria-components\";\n\nexport function ComboBox<T extends object>({\n  className,\n  ...props\n}: Rac.ComboBoxProps<T>) {\n  return (\n    <Rac.ComboBox\n      className={composeTailwindRenderProps(\n        className,\n        \"group flex flex-col gap-2\",\n      )}\n      {...props}\n    />\n  );\n}\n",
+      "content": "\"use client\";\n\nimport { composeTailwindRenderProps } from \"@/registry/components/ui/oui-base\";\nimport * as Rac from \"react-aria-components\";\n\nexport function ComboBox<T extends object>({\n  className,\n  ...props\n}: Rac.ComboBoxProps<T>) {\n  return (\n    <Rac.ComboBox\n      className={composeTailwindRenderProps(\n        className,\n        \"group flex flex-col gap-2\",\n      )}\n      {...props}\n    />\n  );\n}\n",
       "type": "registry:ui"
     }
   ]

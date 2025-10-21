@@ -11,7 +11,7 @@
   "files": [
     {
       "path": "registry/components/ui/oui-checkbox-group.tsx",
-      "content": "import { composeTailwindRenderProps } from \"@/registry/components/ui/oui-base\";\nimport * as Rac from \"react-aria-components\";\n\nexport function CheckboxGroup({\n  className,\n  children,\n  ...props\n}: Rac.CheckboxGroupProps) {\n  return (\n    <Rac.CheckboxGroup\n      {...props}\n      className={composeTailwindRenderProps(className, \"flex flex-col gap-4\")}\n    >\n      {(renderProps) =>\n        typeof children === \"function\" ? children(renderProps) : children\n      }\n    </Rac.CheckboxGroup>\n  );\n}\n",
+      "content": "\"use client\";\n\nimport { composeTailwindRenderProps } from \"@/registry/components/ui/oui-base\";\nimport * as Rac from \"react-aria-components\";\n\nexport function CheckboxGroup({\n  className,\n  children,\n  ...props\n}: Rac.CheckboxGroupProps) {\n  return (\n    <Rac.CheckboxGroup\n      {...props}\n      className={composeTailwindRenderProps(className, \"flex flex-col gap-4\")}\n    >\n      {(renderProps) =>\n        typeof children === \"function\" ? children(renderProps) : children\n      }\n    </Rac.CheckboxGroup>\n  );\n}\n",
       "type": "registry:ui"
     }
   ]

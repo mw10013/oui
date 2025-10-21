@@ -1,10 +1,12 @@
+"use client";
+
 import React from "react";
-import * as Rac from "react-aria-components";
 import {
   composeTailwindRenderProps,
   disabledStyles,
   focusVisibleStyles,
 } from "@/registry/components/ui/oui-base";
+import * as Rac from "react-aria-components";
 
 // TODO: Slider: vertical, multiple
 export function Slider({ className, ...props }: Rac.SliderProps) {
@@ -49,9 +51,9 @@ export function SliderTrack({
     >
       {({ state }) => (
         <>
-          <div className="bg-primary/20 absolute top-[50%] h-1.5 w-full translate-y-[-50%] rounded-full" />
+          <div className="absolute top-[50%] h-1.5 w-full translate-y-[-50%] rounded-full bg-primary/20" />
           <div
-            className="bg-primary absolute top-[50%] h-1.5 translate-y-[-50%] rounded-full"
+            className="absolute top-[50%] h-1.5 translate-y-[-50%] rounded-full bg-primary"
             style={{
               width: `${String(state.getThumbPercent(0) * 100)}%`,
             }}
@@ -69,7 +71,7 @@ export function SliderThumb({ className, ...props }: Rac.SliderThumbProps) {
       {...props}
       className={composeTailwindRenderProps(className, [
         focusVisibleStyles,
-        "border-primary/50 bg-background top-[50%] size-4 rounded-full border shadow transition-colors data-disabled:opacity-100",
+        "top-[50%] size-4 rounded-full border border-primary/50 bg-background shadow transition-colors data-disabled:opacity-100",
       ])}
     ></Rac.SliderThumb>
   );

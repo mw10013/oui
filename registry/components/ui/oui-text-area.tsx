@@ -1,10 +1,12 @@
+"use client";
+
 import type { ComponentProps } from "react";
-import * as Rac from "react-aria-components";
 import {
   composeTailwindRenderProps,
   disabledStyles,
   focusVisibleStyles,
 } from "@/registry/components/ui/oui-base";
+import * as Rac from "react-aria-components";
 
 /**
  * TextArea component for multi-line text input.
@@ -35,8 +37,8 @@ export function TextArea({
       className={composeTailwindRenderProps(className, [
         focusVisibleStyles,
         disabledStyles,
-        "border-input placeholder:text-muted-foreground dark:bg-input/30 field-sizing-content shadow-xs flex min-h-16 w-full rounded-md border bg-transparent px-3 py-2 text-base transition-[color,box-shadow] md:text-sm",
-        "data-invalid:ring-destructive/20 dark:data-invalid:ring-destructive/40 data-invalid:border-destructive",
+        "flex field-sizing-content min-h-16 w-full rounded-md border border-input bg-transparent px-3 py-2 text-base shadow-xs transition-[color,box-shadow] placeholder:text-muted-foreground md:text-sm dark:bg-input/30",
+        "data-invalid:border-destructive data-invalid:ring-destructive/20 dark:data-invalid:ring-destructive/40",
         "data-disabled:cursor-not-allowed",
       ])}
     />

@@ -1,3 +1,5 @@
+"use client";
+
 /**
  * @fileoverview ListBox components for the Oui UI library.
  *
@@ -13,9 +15,8 @@
  *    (keyboard navigation, selection, accessibility) rather than visual presentation.
  *    Visual styling is typically applied to the items themselves or the parent container.
  *
- * 3. **React Aria Design**: Following React Aria Components' philosophy, ListBox
- *    provides unstyled behavior primitives that can be composed with any styling
- *    system. This allows maximum flexibility for different design systems.
+ * 3. **Flexibility**: By not providing a styled wrapper, users can apply their own
+ *    container styles or use the ListBox in unstyled contexts.
  *
  * 4. **Common Usage Patterns**: In most cases, ListBox is used within other
  *    components like Select, ComboBox, or Popover, where the container styling
