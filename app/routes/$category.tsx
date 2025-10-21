@@ -20,8 +20,19 @@ export function loader({ params }: Route.LoaderArgs) {
 export default function RouteComponent({
   loaderData: { categoryName, components },
 }: Route.ComponentProps) {
+  console.log({ categoryName });
   return (
     <>
+      <title>{`${categoryName} - Oui`}</title>
+      <meta
+        name="description"
+        content={`${categoryName} components - Copy-and-paste react aria components that run side-by-side with shadcn components.`}
+      />
+      <meta property="og:title" content={`${categoryName} - Oui`} />
+      <meta
+        property="og:description"
+        content={`${categoryName} components - Copy-and-paste react aria components that run side-by-side with shadcn components.`}
+      />
       <PageHeader title={categoryName} className="mb-10" />
       <PageGrid>
         {components.map((component) => (

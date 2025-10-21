@@ -33,6 +33,16 @@ export default function RouteComponent({
   const [_, setSearchParams] = useSearchParams();
   return (
     <>
+      <title>Filter Components - Oui</title>
+      <meta
+        name="description"
+        content="Filter and find react aria components that run side-by-side with shadcn components."
+      />
+      <meta property="og:title" content="Filter Components - Oui" />
+      <meta
+        property="og:description"
+        content="Filter and find react aria components that run side-by-side with shadcn components."
+      />
       <PageHeader title="Filter" className="mb-10" />
       <div className="mb-4 flex justify-center">
         <SelectEx

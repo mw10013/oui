@@ -6,7 +6,6 @@ import * as Rac from "react-aria-components";
 import {
   isRouteErrorResponse,
   Links,
-  Meta,
   Outlet,
   Scripts,
   ScrollRestoration,
@@ -60,7 +59,14 @@ function Html({
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <Meta />
+        <title>Oui - React Aria Components</title>
+        <meta
+          name="description"
+          content="Copy-and-paste react aria components that run side-by-side with shadcn components."
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://oui.mw10013.workers.dev" />
+        <meta name="twitter:card" content="summary_large_image" />
         <PreventFlashOnWrongTheme ssrTheme={ssrTheme} />
         <Links />
       </head>

@@ -4,39 +4,70 @@ import { Funnel } from "lucide-react";
 
 export default function RouteComponent() {
   return (
-    <div data-home>
-      <div className="max-w-3xl max-sm:text-center">
-        <h1 className="mb-4 text-4xl/[1.1] font-bold tracking-tight text-foreground md:text-5xl/[1.1]">
-          React Aria Components with Shadcn characteristics.
-        </h1>
-        <p className="mb-8 text-lg text-muted-foreground">
-          {/* An open-source collection of copy-and-paste components for UIs. */}
-          Copy-and-paste react aria components that run side-by-side with shadcn
-          components.
-        </p>
-        <Link
-          href="/filter"
-          className="mr-4 inline-flex items-center text-sm"
-          underline="hover"
-        >
-          <Funnel className="me-2" size={14} />
-          Filter by Tags
-        </Link>
-      </div>
+    <>
+      <title>Oui - React Aria Components with Shadcn characteristics</title>
+      <meta
+        name="description"
+        content="Copy-and-paste react aria components that run side-by-side with shadcn components."
+      />
+      <meta
+        property="og:title"
+        content="Oui - React Aria Components with Shadcn characteristics"
+      />
+      <meta
+        property="og:description"
+        content="Copy-and-paste react aria components that run side-by-side with shadcn components."
+      />
+      <meta property="og:type" content="website" />
+      <meta property="og:url" content="https://oui.mw10013.workers.dev" />
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta
+        name="twitter:title"
+        content="Oui - React Aria Components with Shadcn characteristics"
+      />
+      <meta
+        name="twitter:description"
+        content="Copy-and-paste react aria components that run side-by-side with shadcn components."
+      />
+      <meta
+        name="keywords"
+        content="react, aria, components, shadcn, ui, library, copy-paste"
+      />
+      <meta name="author" content="mw10013" />
+      <div data-home>
+        <div className="max-w-3xl max-sm:text-center">
+          <h1 className="mb-4 text-4xl/[1.1] font-bold tracking-tight text-foreground md:text-5xl/[1.1]">
+            React Aria Components with Shadcn characteristics.
+          </h1>
+          <p className="mb-8 text-lg text-muted-foreground">
+            {/* An open-source collection of copy-and-paste components for UIs. */}
+            Copy-and-paste react aria components that run side-by-side with
+            shadcn components.
+          </p>
+          <Link
+            href="/filter"
+            className="mr-4 inline-flex items-center text-sm"
+            underline="hover"
+          >
+            <Funnel className="me-2" size={14} />
+            Filter by Tags
+          </Link>
+        </div>
 
-      <div className="relative my-16">
-        <div className="grid gap-x-6 gap-y-12 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-          {categories.map((category) => (
-            <CategoryCard
-              key={category.slug}
-              slug={category.slug}
-              name={category.name}
-              componentCount={category.components.length}
-            />
-          ))}
+        <div className="relative my-16">
+          <div className="grid gap-x-6 gap-y-12 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+            {categories.map((category) => (
+              <CategoryCard
+                key={category.slug}
+                slug={category.slug}
+                name={category.name}
+                componentCount={category.components.length}
+              />
+            ))}
+          </div>
         </div>
       </div>
-    </div>
+    </>
   );
 }
 
