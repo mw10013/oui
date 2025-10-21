@@ -19,7 +19,7 @@ Check that the component file exists at `registry/components/${filename}`. If it
 
 Use grep to search for the item in `registry.json` by the component name (e.g., grep for `"name": "${componentName}"`). If not found, respond with an error message. Note that items are unique by name.
 
-To efficiently locate the item, use grep to find the line number where the item starts, then read only the relevant lines from that point to extract the `registryDependencies` array and ensure `type` is `registry:component`.
+To efficiently locate the item, use grep to find the line number where the item starts, then read only the relevant lines from that point to extract the `registryDependencies` array and ensure `type` is `registry:component`. If the type is not `registry:component`, respond with an error message and skip processing this component.
 
 Analyze the imports in this file. Look for imports from `@/registry/components/*` (e.g., `import { Checkbox } from "@/registry/components/ui/oui-checkbox";` or `import { Avatar } from "@/registry/components/ui/avatar";` or `import { SearchFieldEx } from "@/registry/components/oui-search-field-ex";`).
 
@@ -31,6 +31,8 @@ For each unique component name:
 - Otherwise, derive the dependency as `"https://ui.shadcn.com/r/styles/new-york/${name}.json"`
 
 Derive the required `registryDependencies` as a set of these strings.
+
+Exclude the component name itself from the derived dependencies to avoid self-dependencies.
 
 Compare the derived required dependencies with the existing `registryDependencies` array in `registry.json` for the item.
 

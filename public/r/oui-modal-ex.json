@@ -3,7 +3,10 @@
   "name": "oui-modal-ex",
   "type": "registry:component",
   "registryDependencies": [
-    "https://oui.mw10013.workers.dev/r/oui-modal.json"
+    "https://oui.mw10013.workers.dev/r/oui-modal.json",
+    "https://oui.mw10013.workers.dev/r/oui-label.json",
+    "https://oui.mw10013.workers.dev/r/oui-link.json",
+    "https://oui.mw10013.workers.dev/r/oui-text.json"
   ],
   "files": [
     {

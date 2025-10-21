@@ -32,7 +32,10 @@
         }
       ],
       "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/oui-search-field-ex.json"
+        "https://oui.mw10013.workers.dev/r/oui-search-field-ex.json",
+        "https://oui.mw10013.workers.dev/r/oui-label.json",
+        "https://oui.mw10013.workers.dev/r/oui-link.json",
+        "https://oui.mw10013.workers.dev/r/oui-text.json"
       ],
       "meta": {
         "tags": ["autocomplete", "autocomplete-ex"]
@@ -670,7 +673,6 @@
         "alignment": "flex-center"
       }
     },
-
     {
       "name": "oui-dialog-ex",
       "type": "registry:component",
@@ -683,7 +685,10 @@
       "registryDependencies": [
         "https://oui.mw10013.workers.dev/r/oui-dialog.json",
         "https://oui.mw10013.workers.dev/r/oui-button.json",
-        "https://oui.mw10013.workers.dev/r/oui-modal-ex.json"
+        "https://oui.mw10013.workers.dev/r/oui-modal-ex.json",
+        "https://oui.mw10013.workers.dev/r/oui-label.json",
+        "https://oui.mw10013.workers.dev/r/oui-link.json",
+        "https://oui.mw10013.workers.dev/r/oui-text.json"
       ],
       "meta": {
         "tags": ["dialog", "dialog-ex", "modal-ex", "modal-ex"]
@@ -956,7 +961,10 @@
       ],
       "registryDependencies": [
         "https://oui.mw10013.workers.dev/r/oui-disclosure.json",
-        "https://oui.mw10013.workers.dev/r/oui-heading.json"
+        "https://oui.mw10013.workers.dev/r/oui-heading.json",
+        "https://oui.mw10013.workers.dev/r/oui-label.json",
+        "https://oui.mw10013.workers.dev/r/oui-link.json",
+        "https://oui.mw10013.workers.dev/r/oui-text.json"
       ],
       "meta": {
         "tags": ["disclosure", "disclosure-ex", "heading"]
@@ -1745,7 +1753,10 @@
       "registryDependencies": [
         "https://oui.mw10013.workers.dev/r/oui-button.json",
         "https://oui.mw10013.workers.dev/r/oui-menu.json",
-        "https://oui.mw10013.workers.dev/r/oui-popover.json"
+        "https://oui.mw10013.workers.dev/r/oui-popover.json",
+        "https://oui.mw10013.workers.dev/r/oui-label.json",
+        "https://oui.mw10013.workers.dev/r/oui-link.json",
+        "https://oui.mw10013.workers.dev/r/oui-text.json"
       ],
       "meta": {
         "tags": ["menu", "menu-ex", "popover", "button"]
@@ -1909,7 +1920,10 @@
         }
       ],
       "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/oui-modal.json"
+        "https://oui.mw10013.workers.dev/r/oui-modal.json",
+        "https://oui.mw10013.workers.dev/r/oui-label.json",
+        "https://oui.mw10013.workers.dev/r/oui-link.json",
+        "https://oui.mw10013.workers.dev/r/oui-text.json"
       ],
       "meta": {
         "tags": ["modal", "modal-ex"]
@@ -1941,12 +1955,7 @@
         }
       ],
       "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/oui-base.json",
-        "https://oui.mw10013.workers.dev/r/oui-field-error.json",
-        "https://oui.mw10013.workers.dev/r/oui-group.json",
-        "https://oui.mw10013.workers.dev/r/oui-input.json",
-        "https://oui.mw10013.workers.dev/r/oui-label.json",
-        "https://oui.mw10013.workers.dev/r/oui-text.json"
+        "https://oui.mw10013.workers.dev/r/oui-base.json"
       ],
       "dependencies": ["react-aria-components", "lucide-react"]
     },
@@ -1964,6 +1973,7 @@
         "https://oui.mw10013.workers.dev/r/oui-group.json",
         "https://oui.mw10013.workers.dev/r/oui-input.json",
         "https://oui.mw10013.workers.dev/r/oui-label.json",
+        "https://oui.mw10013.workers.dev/r/oui-link.json",
         "https://oui.mw10013.workers.dev/r/oui-number-field.json",
         "https://oui.mw10013.workers.dev/r/oui-text.json"
       ],
@@ -2028,7 +2038,10 @@
       "registryDependencies": [
         "https://oui.mw10013.workers.dev/r/oui-button.json",
         "https://oui.mw10013.workers.dev/r/oui-dialog.json",
-        "https://oui.mw10013.workers.dev/r/oui-popover.json"
+        "https://oui.mw10013.workers.dev/r/oui-popover.json",
+        "https://oui.mw10013.workers.dev/r/oui-label.json",
+        "https://oui.mw10013.workers.dev/r/oui-link.json",
+        "https://oui.mw10013.workers.dev/r/oui-text.json"
       ],
       "meta": {
         "tags": ["popover", "popover-ex", "dialog"]
@@ -2173,7 +2186,8 @@
         "https://oui.mw10013.workers.dev/r/oui-label.json",
         "https://oui.mw10013.workers.dev/r/oui-input.json",
         "https://oui.mw10013.workers.dev/r/oui-search-field.json",
-        "https://oui.mw10013.workers.dev/r/oui-text.json"
+        "https://oui.mw10013.workers.dev/r/oui-text.json",
+        "https://oui.mw10013.workers.dev/r/oui-link.json"
       ],
       "meta": {
         "tags": [
@@ -2440,7 +2454,9 @@
       ],
       "registryDependencies": [
         "https://oui.mw10013.workers.dev/r/oui-label.json",
-        "https://oui.mw10013.workers.dev/r/oui-slider.json"
+        "https://oui.mw10013.workers.dev/r/oui-slider.json",
+        "https://oui.mw10013.workers.dev/r/oui-link.json",
+        "https://oui.mw10013.workers.dev/r/oui-text.json"
       ],
       "meta": {
         "tags": ["slider", "slider-ex", "label"]
@@ -2929,7 +2945,10 @@
       ],
       "registryDependencies": [
         "https://oui.mw10013.workers.dev/r/oui-button.json",
-        "https://oui.mw10013.workers.dev/r/oui-tooltip.json"
+        "https://oui.mw10013.workers.dev/r/oui-tooltip.json",
+        "https://oui.mw10013.workers.dev/r/oui-label.json",
+        "https://oui.mw10013.workers.dev/r/oui-link.json",
+        "https://oui.mw10013.workers.dev/r/oui-text.json"
       ],
       "meta": {
         "tags": ["tooltip", "tooltip-ex", "button"]
