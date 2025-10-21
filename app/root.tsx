@@ -20,6 +20,7 @@ import {
 import "@/app/app.css";
 import Footer from "@/components/footer";
 import Header from "@/components/header";
+import { env } from "cloudflare:workers";
 
 declare module "react-aria-components" {
   interface RouterConfig {
@@ -40,15 +41,17 @@ export function links() {
 
 export async function loader({ request }: Route.LoaderArgs) {
   const { getTheme } = await themeSessionResolver(request);
-  return { theme: getTheme() };
+  return { theme: getTheme(), environment: env.ENVIRONMENT };
 }
 
 function Html({
   children,
   ssrTheme,
+  environment,
 }: {
   children: React.ReactNode;
   ssrTheme: boolean;
+  environment: string;
 }) {
   const [theme] = useTheme();
   const { navigate, useHref } = useReactRouterRouting();
@@ -73,6 +76,17 @@ function Html({
         </Rac.RouterProvider>
         <ScrollRestoration />
         <Scripts />
+        {environment === "production" && (
+          <>
+            {/* Cloudflare Web Analytics */}
+            <script
+              defer
+              src="https://static.cloudflareinsights.com/beacon.min.js"
+              data-cf-beacon='{"token": "509aca9b19d943b7b89f127c71a4fa2c"}'
+            ></script>
+            {/* End Cloudflare Web Analytics */}
+          </>
+        )}
       </body>
     </html>
   );
@@ -86,7 +100,12 @@ export function Layout({ children }: { children: React.ReactNode }) {
       themeAction="/action/set-theme"
       disableTransitionOnThemeChange
     >
-      <Html ssrTheme={Boolean(data.loaderData?.theme)}>{children}</Html>
+      <Html
+        ssrTheme={Boolean(data.loaderData?.theme)}
+        environment={data.loaderData?.environment ?? "local"}
+      >
+        {children}
+      </Html>
     </ThemeProvider>
   );
 }
