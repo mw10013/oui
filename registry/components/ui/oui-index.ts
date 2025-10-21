@@ -50,7 +50,6 @@ export * from "@/registry/components/oui-radio-group-ex";
 export * from "@/registry/components/oui-search-field-ex";
 export * from "@/registry/components/oui-select-ex-popover";
 export * from "@/registry/components/oui-select-ex";
-export * from "@/registry/components/oui-sidebar-ex";
 export * from "@/registry/components/oui-slider-ex";
 export * from "@/registry/components/oui-switch-ex";
 export * from "@/registry/components/oui-text-field-ex";
