@@ -14,7 +14,7 @@ const OpenInV0 = ({ componentSource }: { componentSource: string }) => {
             className:
               "text-muted-foreground/80 transition-none data-[hovered]:bg-transparent data-[hovered]:text-foreground lg:opacity-0 lg:group-focus-within/item:opacity-100 lg:group-hover/item:opacity-100",
           })}
-          href={`https://v0.app/chat/api/open?url=${encodeURIComponent(componentSource)}`}
+          href={`https://v0.dev/chat/api/open?url=${encodeURIComponent(componentSource)}`}
           target="_blank"
           aria-label="Open in v0"
         >
