@@ -2,6 +2,8 @@ import { TooltipEx } from "@/registry/components/oui-tooltip-ex";
 import { buttonClassName } from "@/registry/components/ui/oui-button";
 import { Link } from "@/registry/components/ui/oui-link";
 
+// https://ui.shadcn.com/docs/registry/open-in-v0
+
 const OpenInV0 = ({ componentSource }: { componentSource: string }) => {
   return (
     <TooltipEx
@@ -14,7 +16,8 @@ const OpenInV0 = ({ componentSource }: { componentSource: string }) => {
             className:
               "text-muted-foreground/80 transition-none data-[hovered]:bg-transparent data-[hovered]:text-foreground lg:opacity-0 lg:group-focus-within/item:opacity-100 lg:group-hover/item:opacity-100",
           })}
-          href={`https://v0.dev/chat/api/open?url=${encodeURIComponent(componentSource)}`}
+          // href={`https://v0.dev/chat/api/open?url=${encodeURIComponent(componentSource)}`}
+          href={`https://v0.dev/chat/api/open?url=${componentSource}`}
           target="_blank"
           aria-label="Open in v0"
         >
