@@ -1918,7 +1918,10 @@
         }
       ],
       "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/oui-modal.json"
+        "https://oui.mw10013.workers.dev/r/oui-modal.json",
+        "https://oui.mw10013.workers.dev/r/oui-label.json",
+        "https://oui.mw10013.workers.dev/r/oui-link.json",
+        "https://oui.mw10013.workers.dev/r/oui-text.json"
       ],
       "meta": {
         "tags": ["modal", "modal-ex"]
@@ -2939,7 +2942,10 @@
       ],
       "registryDependencies": [
         "https://oui.mw10013.workers.dev/r/oui-button.json",
-        "https://oui.mw10013.workers.dev/r/oui-tooltip.json"
+        "https://oui.mw10013.workers.dev/r/oui-tooltip.json",
+        "https://oui.mw10013.workers.dev/r/oui-label.json",
+        "https://oui.mw10013.workers.dev/r/oui-link.json",
+        "https://oui.mw10013.workers.dev/r/oui-text.json"
       ],
       "meta": {
         "tags": ["tooltip", "tooltip-ex", "button"]
