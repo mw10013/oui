@@ -33,7 +33,7 @@ export default function RouteComponent({
   const [_, setSearchParams] = useSearchParams();
   return (
     <>
-      <title>Filter Components - Oui</title>
+      <title>Oui - Filter by Tags</title>
       <meta
         name="description"
         content="Filter and find react aria components that run side-by-side with shadcn components."

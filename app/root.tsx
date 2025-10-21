@@ -59,7 +59,7 @@ function Html({
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>Oui - React Aria Components</title>
+        <title>Oui - UI Comonents</title>
         <meta
           name="description"
           content="Copy-and-paste react aria components that run side-by-side with shadcn components."

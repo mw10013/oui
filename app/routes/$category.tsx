@@ -20,10 +20,9 @@ export function loader({ params }: Route.LoaderArgs) {
 export default function RouteComponent({
   loaderData: { categoryName, components },
 }: Route.ComponentProps) {
-  console.log({ categoryName });
   return (
     <>
-      <title>{`${categoryName} - Oui`}</title>
+      <title>{`Oui - ${categoryName} Category`}</title>
       <meta
         name="description"
         content={`${categoryName} components - Copy-and-paste react aria components that run side-by-side with shadcn components.`}
