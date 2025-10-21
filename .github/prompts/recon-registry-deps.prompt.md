@@ -21,7 +21,7 @@ Use grep to search for the item in `registry.json` by the component name (e.g., 
 
 To efficiently locate the item, use grep to find the line number where the item starts, then read only the relevant lines from that point to extract the `registryDependencies` array and ensure `type` is `registry:component`.
 
-Analyze the imports in this file. Look for imports from `@/registry/components/ui/*` (e.g., `import { Checkbox } from "@/registry/components/ui/oui-checkbox";` or `import { Avatar } from "@/registry/components/ui/avatar";`).
+Analyze the imports in this file. Look for imports from `@/registry/components/*` (e.g., `import { Checkbox } from "@/registry/components/ui/oui-checkbox";` or `import { Avatar } from "@/registry/components/ui/avatar";` or `import { SearchFieldEx } from "@/registry/components/oui-search-field-ex";`).
 
 For each import path, extract the component name after the last `/` (e.g., `oui-checkbox` or `avatar`).
 

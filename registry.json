@@ -32,7 +32,10 @@
         }
       ],
       "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/oui-search-field-ex.json"
+        "https://oui.mw10013.workers.dev/r/oui-search-field-ex.json",
+        "https://oui.mw10013.workers.dev/r/oui-label.json",
+        "https://oui.mw10013.workers.dev/r/oui-link.json",
+        "https://oui.mw10013.workers.dev/r/oui-text.json"
       ],
       "meta": {
         "tags": ["autocomplete", "autocomplete-ex"]
@@ -956,7 +959,10 @@
       ],
       "registryDependencies": [
         "https://oui.mw10013.workers.dev/r/oui-disclosure.json",
-        "https://oui.mw10013.workers.dev/r/oui-heading.json"
+        "https://oui.mw10013.workers.dev/r/oui-heading.json",
+        "https://oui.mw10013.workers.dev/r/oui-label.json",
+        "https://oui.mw10013.workers.dev/r/oui-link.json",
+        "https://oui.mw10013.workers.dev/r/oui-text.json"
       ],
       "meta": {
         "tags": ["disclosure", "disclosure-ex", "heading"]
