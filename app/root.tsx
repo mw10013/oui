@@ -66,7 +66,28 @@ function Html({
         />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://oui.mw10013.workers.dev" />
+        <meta
+          property="og:title"
+          content="Oui - React Aria Components with Shadcn characteristics"
+        />
+        <meta
+          property="og:description"
+          content="Copy-and-paste react aria components that run side-by-side with shadcn components."
+        />
         <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content="Oui - React Aria Components with Shadcn characteristics"
+        />
+        <meta
+          name="twitter:description"
+          content="Copy-and-paste react aria components that run side-by-side with shadcn components."
+        />
+        <meta
+          name="keywords"
+          content="react, aria, components, shadcn, ui, library, copy-paste"
+        />
+        <meta name="author" content="mw10013" />
         <PreventFlashOnWrongTheme ssrTheme={ssrTheme} />
         <Links />
       </head>
