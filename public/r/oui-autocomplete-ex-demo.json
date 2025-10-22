@@ -3,7 +3,7 @@
   "name": "oui-autocomplete-ex-demo",
   "type": "registry:component",
   "registryDependencies": [
-    "https://ui.shadcn.com/r/styles/new-york/avatar.json",
+    "avatar",
     "https://oui.mw10013.workers.dev/r/oui-autocomplete-ex.json",
     "https://oui.mw10013.workers.dev/r/oui-list-box.json",
     "https://oui.mw10013.workers.dev/r/oui-select-ex-popover.json"

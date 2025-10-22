@@ -3,7 +3,7 @@
   "name": "oui-combo-box-ex-demo-avatar",
   "type": "registry:component",
   "registryDependencies": [
-    "https://ui.shadcn.com/r/styles/new-york/avatar.json",
+    "avatar",
     "https://oui.mw10013.workers.dev/r/oui-combo-box-ex.json",
     "https://oui.mw10013.workers.dev/r/oui-list-box.json"
   ],

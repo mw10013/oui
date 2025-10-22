@@ -4,7 +4,7 @@
   "type": "registry:component",
   "registryDependencies": [
     "https://oui.mw10013.workers.dev/r/oui-list-box.json",
-    "https://ui.shadcn.com/r/styles/new-york/r/item.json"
+    "item"
   ],
   "files": [
     {

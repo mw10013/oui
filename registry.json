@@ -51,7 +51,7 @@
         }
       ],
       "registryDependencies": [
-        "https://ui.shadcn.com/r/styles/new-york/avatar.json",
+        "avatar",
         "https://oui.mw10013.workers.dev/r/oui-autocomplete-ex.json",
         "https://oui.mw10013.workers.dev/r/oui-list-box.json",
         "https://oui.mw10013.workers.dev/r/oui-select-ex-popover.json"
@@ -600,7 +600,7 @@
         }
       ],
       "registryDependencies": [
-        "https://ui.shadcn.com/r/styles/new-york/avatar.json",
+        "avatar",
         "https://oui.mw10013.workers.dev/r/oui-combo-box-ex.json",
         "https://oui.mw10013.workers.dev/r/oui-list-box.json"
       ],
@@ -1630,7 +1630,7 @@
         }
       ],
       "registryDependencies": [
-        "https://ui.shadcn.com/r/styles/new-york/card.json",
+        "card",
         "https://oui.mw10013.workers.dev/r/oui-button.json",
         "https://oui.mw10013.workers.dev/r/oui-label.json",
         "https://oui.mw10013.workers.dev/r/oui-link.json",
@@ -1669,7 +1669,7 @@
       ],
       "registryDependencies": [
         "https://oui.mw10013.workers.dev/r/oui-list-box.json",
-        "https://ui.shadcn.com/r/styles/new-york/r/item.json"
+        "item"
       ],
       "meta": {
         "tags": ["list-box"]
@@ -1686,7 +1686,7 @@
       ],
       "registryDependencies": [
         "https://oui.mw10013.workers.dev/r/oui-list-box.json",
-        "https://ui.shadcn.com/r/styles/new-york/r/item.json"
+        "item"
       ],
       "meta": {
         "tags": ["list-box", "multiple"]
@@ -1843,7 +1843,7 @@
         }
       ],
       "registryDependencies": [
-        "https://ui.shadcn.com/r/styles/new-york/avatar.json",
+        "avatar",
         "https://oui.mw10013.workers.dev/r/oui-button.json",
         "https://oui.mw10013.workers.dev/r/oui-menu.json",
         "https://oui.mw10013.workers.dev/r/oui-menu-ex.json",
@@ -1864,7 +1864,7 @@
         }
       ],
       "registryDependencies": [
-        "https://ui.shadcn.com/r/styles/new-york/avatar.json",
+        "avatar",
         "https://oui.mw10013.workers.dev/r/oui-button.json",
         "https://oui.mw10013.workers.dev/r/oui-menu.json",
         "https://oui.mw10013.workers.dev/r/oui-menu-ex.json",

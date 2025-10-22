@@ -6,7 +6,7 @@
     "lucide-react"
   ],
   "registryDependencies": [
-    "https://ui.shadcn.com/r/styles/new-york/avatar.json",
+    "avatar",
     "https://oui.mw10013.workers.dev/r/oui-button.json",
     "https://oui.mw10013.workers.dev/r/oui-menu.json",
     "https://oui.mw10013.workers.dev/r/oui-menu-ex.json",

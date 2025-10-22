@@ -3,7 +3,7 @@
   "name": "oui-link-demo-login",
   "type": "registry:component",
   "registryDependencies": [
-    "https://ui.shadcn.com/r/styles/new-york/card.json",
+    "card",
     "https://oui.mw10013.workers.dev/r/oui-button.json",
     "https://oui.mw10013.workers.dev/r/oui-label.json",
     "https://oui.mw10013.workers.dev/r/oui-link.json",
