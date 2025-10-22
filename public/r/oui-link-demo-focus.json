@@ -8,7 +8,7 @@
   "files": [
     {
       "path": "registry/components/oui-link-demo-focus.tsx",
-      "content": "import { Link } from \"@/registry/components/ui/oui-link\";\n\nexport default function Component() {\n  return (\n    <Link href=\"#\" underline=\"focus\">\n      Focus Link\n    </Link>\n  );\n}\n",
+      "content": "\"use client\";\nimport { Link } from \"@/registry/components/ui/oui-link\";\n\nexport default function Component() {\n  return (\n    <Link href=\"#\" underline=\"focus\">\n      Focus Link\n    </Link>\n  );\n}\n",
       "type": "registry:component"
     }
   ],

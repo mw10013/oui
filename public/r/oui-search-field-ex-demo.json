@@ -8,7 +8,7 @@
   "files": [
     {
       "path": "registry/components/oui-search-field-ex-demo.tsx",
-      "content": "import { SearchFieldEx } from \"@/registry/components/oui-search-field-ex\";\n\nexport default function Component() {\n  return (\n    <SearchFieldEx\n      label=\"SearchFieldEx\"\n      description=\"Enter a search term\"\n      errorMessage=\"Search term is required\"\n      placeholder=\"Search...\"\n    />\n  );\n}\n",
+      "content": "\"use client\";\nimport { SearchFieldEx } from \"@/registry/components/oui-search-field-ex\";\n\nexport default function Component() {\n  return (\n    <SearchFieldEx\n      label=\"SearchFieldEx\"\n      description=\"Enter a search term\"\n      errorMessage=\"Search term is required\"\n      placeholder=\"Search...\"\n    />\n  );\n}\n",
       "type": "registry:component"
     }
   ],

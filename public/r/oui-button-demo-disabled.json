@@ -8,7 +8,7 @@
   "files": [
     {
       "path": "registry/components/oui-button-demo-disabled.tsx",
-      "content": "import { Button } from \"@/registry/components/ui/oui-button\"\n\nexport default function Component() {\n  return <Button isDisabled>Disabled</Button>\n}\n",
+      "content": "\"use client\";\nimport { Button } from \"@/registry/components/ui/oui-button\"\n\nexport default function Component() {\n  return <Button isDisabled>Disabled</Button>\n}\n",
       "type": "registry:component"
     }
   ],

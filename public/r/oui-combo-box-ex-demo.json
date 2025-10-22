@@ -9,7 +9,7 @@
   "files": [
     {
       "path": "registry/components/oui-combo-box-ex-demo.tsx",
-      "content": "import { ComboBoxEx } from \"@/registry/components/oui-combo-box-ex\";\nimport { ListBoxItem } from \"@/registry/components/ui/oui-list-box\";\n\nconst frameworks = [\n  {\n    value: \"next.js\",\n    label: \"Next.js\",\n  },\n  {\n    value: \"sveltekit\",\n    label: \"SvelteKit\",\n  },\n  {\n    value: \"nuxt.js\",\n    label: \"Nuxt.js\",\n  },\n  {\n    value: \"remix\",\n    label: \"Remix\",\n  },\n  {\n    value: \"astro\",\n    label: \"Astro\",\n  },\n];\n\nexport default function Component() {\n  return (\n    <ComboBoxEx\n      label=\"ComboBoxEx\"\n      placeholder=\"Select framework...\"\n      items={frameworks}\n      className=\"md:max-w-[200px]\"\n    >\n      {(item) => <ListBoxItem id={item.value}>{item.label}</ListBoxItem>}\n    </ComboBoxEx>\n  );\n}\n",
+      "content": "\"use client\";\nimport { ComboBoxEx } from \"@/registry/components/oui-combo-box-ex\";\nimport { ListBoxItem } from \"@/registry/components/ui/oui-list-box\";\n\nconst frameworks = [\n  {\n    value: \"next.js\",\n    label: \"Next.js\",\n  },\n  {\n    value: \"sveltekit\",\n    label: \"SvelteKit\",\n  },\n  {\n    value: \"nuxt.js\",\n    label: \"Nuxt.js\",\n  },\n  {\n    value: \"remix\",\n    label: \"Remix\",\n  },\n  {\n    value: \"astro\",\n    label: \"Astro\",\n  },\n];\n\nexport default function Component() {\n  return (\n    <ComboBoxEx\n      label=\"ComboBoxEx\"\n      placeholder=\"Select framework...\"\n      items={frameworks}\n      className=\"md:max-w-[200px]\"\n    >\n      {(item) => <ListBoxItem id={item.value}>{item.label}</ListBoxItem>}\n    </ComboBoxEx>\n  );\n}\n",
       "type": "registry:component"
     }
   ],

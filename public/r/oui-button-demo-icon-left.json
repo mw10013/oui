@@ -11,7 +11,7 @@
   "files": [
     {
       "path": "registry/components/oui-button-demo-icon-left.tsx",
-      "content": "import { Button } from \"@/registry/components/ui/oui-button\";\nimport { Send } from \"lucide-react\";\n\nexport default function Component() {\n  return (\n    <Button variant=\"outline\">\n      <Send /> Send\n    </Button>\n  );\n}\n",
+      "content": "\"use client\";\nimport { Button } from \"@/registry/components/ui/oui-button\";\nimport { Send } from \"lucide-react\";\n\nexport default function Component() {\n  return (\n    <Button variant=\"outline\">\n      <Send /> Send\n    </Button>\n  );\n}\n",
       "type": "registry:component"
     }
   ],

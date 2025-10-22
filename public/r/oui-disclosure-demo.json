@@ -9,7 +9,7 @@
   "files": [
     {
       "path": "registry/components/oui-disclosure-demo.tsx",
-      "content": "import {\n  Disclosure,\n  DisclosureButton,\n  DisclosurePanel,\n} from \"@/registry/components/ui/oui-disclosure\";\nimport { Heading } from \"@/registry/components/ui/oui-heading\";\n\nexport default function Component() {\n  return (\n    <Disclosure>\n      <Heading variant=\"disclosure\">\n        <DisclosureButton>System Requirements</DisclosureButton>\n      </Heading>\n      <DisclosurePanel>Details about system requirements here.</DisclosurePanel>\n    </Disclosure>\n  );\n}\n",
+      "content": "\"use client\";\nimport {\n  Disclosure,\n  DisclosureButton,\n  DisclosurePanel,\n} from \"@/registry/components/ui/oui-disclosure\";\nimport { Heading } from \"@/registry/components/ui/oui-heading\";\n\nexport default function Component() {\n  return (\n    <Disclosure>\n      <Heading variant=\"disclosure\">\n        <DisclosureButton>System Requirements</DisclosureButton>\n      </Heading>\n      <DisclosurePanel>Details about system requirements here.</DisclosurePanel>\n    </Disclosure>\n  );\n}\n",
       "type": "registry:component"
     }
   ],

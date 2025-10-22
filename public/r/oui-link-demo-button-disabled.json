@@ -9,7 +9,7 @@
   "files": [
     {
       "path": "registry/components/oui-link-demo-button-disabled.tsx",
-      "content": "import { buttonClassName } from \"@/registry/components/ui/oui-button\";\nimport { Link } from \"@/registry/components/ui/oui-link\";\n\nexport default function Component() {\n  return (\n    <Link isDisabled href=\"#\" className={buttonClassName({})}>\n      Button Link\n    </Link>\n  );\n}\n",
+      "content": "\"use client\";\nimport { buttonClassName } from \"@/registry/components/ui/oui-button\";\nimport { Link } from \"@/registry/components/ui/oui-link\";\n\nexport default function Component() {\n  return (\n    <Link isDisabled href=\"#\" className={buttonClassName({})}>\n      Button Link\n    </Link>\n  );\n}\n",
       "type": "registry:component"
     }
   ],

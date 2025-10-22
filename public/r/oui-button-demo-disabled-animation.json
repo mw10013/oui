@@ -8,7 +8,7 @@
   "files": [
     {
       "path": "registry/components/oui-button-demo-disabled-animation.tsx",
-      "content": "import { Button } from \"@/registry/components/ui/oui-button\";\nimport { Loader2 } from \"lucide-react\";\n\nexport default function Component() {\n  return (\n    <Button isDisabled variant=\"outline\">\n      <Loader2 className=\"animate-spin\" />\n      Please wait\n    </Button>\n  );\n}\n",
+      "content": "\"use client\";\nimport { Button } from \"@/registry/components/ui/oui-button\";\nimport { Loader2 } from \"lucide-react\";\n\nexport default function Component() {\n  return (\n    <Button isDisabled variant=\"outline\">\n      <Loader2 className=\"animate-spin\" />\n      Please wait\n    </Button>\n  );\n}\n",
       "type": "registry:component"
     }
   ],

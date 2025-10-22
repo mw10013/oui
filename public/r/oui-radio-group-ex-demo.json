@@ -9,7 +9,7 @@
   "files": [
     {
       "path": "registry/components/oui-radio-group-ex-demo.tsx",
-      "content": "import { RadioGroupEx } from \"@/registry/components/oui-radio-group-ex\";\nimport { Radio } from \"@/registry/components/ui/oui-radio-group\";\n\nexport default function Component() {\n  return (\n    <RadioGroupEx defaultValue=\"comfortable\" aria-label=\"RadioGroupEx\">\n      <Radio value=\"default\" className=\"gap-3\">\n        Default\n      </Radio>\n      <Radio value=\"comfortable\" className=\"gap-3\">\n        Comfortable\n      </Radio>\n      <Radio value=\"compact\" className=\"gap-3\">\n        Compact\n      </Radio>\n    </RadioGroupEx>\n  );\n}\n",
+      "content": "\"use client\";\nimport { RadioGroupEx } from \"@/registry/components/oui-radio-group-ex\";\nimport { Radio } from \"@/registry/components/ui/oui-radio-group\";\n\nexport default function Component() {\n  return (\n    <RadioGroupEx defaultValue=\"comfortable\" aria-label=\"RadioGroupEx\">\n      <Radio value=\"default\" className=\"gap-3\">\n        Default\n      </Radio>\n      <Radio value=\"comfortable\" className=\"gap-3\">\n        Comfortable\n      </Radio>\n      <Radio value=\"compact\" className=\"gap-3\">\n        Compact\n      </Radio>\n    </RadioGroupEx>\n  );\n}\n",
       "type": "registry:component"
     }
   ],

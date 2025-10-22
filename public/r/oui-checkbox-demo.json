@@ -8,7 +8,7 @@
   "files": [
     {
       "path": "registry/components/oui-checkbox-demo.tsx",
-      "content": "import { Checkbox } from \"@/registry/components/ui/oui-checkbox\";\n\nexport default function Component() {\n  return <Checkbox name=\"terms\">Accept terms and conditions</Checkbox>;\n}\n",
+      "content": "\"use client\";\nimport { Checkbox } from \"@/registry/components/ui/oui-checkbox\";\n\nexport default function Component() {\n  return <Checkbox name=\"terms\">Accept terms and conditions</Checkbox>;\n}\n",
       "type": "registry:component"
     }
   ],

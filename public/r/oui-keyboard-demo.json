@@ -11,7 +11,7 @@
   "files": [
     {
       "path": "registry/components/oui-keyboard-demo.tsx",
-      "content": "import { MenuEx } from \"@/registry/components/oui-menu-ex\";\nimport { Button } from \"@/registry/components/ui/oui-button\";\nimport { Keyboard } from \"@/registry/components/ui/oui-keyboard\";\nimport { MenuItem } from \"@/registry/components/ui/oui-menu\";\n\nexport default function Component() {\n  return (\n    <MenuEx\n      triggerElement={<Button variant=\"outline\">Keyboard</Button>}\n      className=\"w-56\"\n    >\n      <MenuItem id=\"keyboard\">\n        Keyboard\n        <Keyboard>⌘K</Keyboard>\n      </MenuItem>\n    </MenuEx>\n  );\n}\n",
+      "content": "\"use client\";\nimport { MenuEx } from \"@/registry/components/oui-menu-ex\";\nimport { Button } from \"@/registry/components/ui/oui-button\";\nimport { Keyboard } from \"@/registry/components/ui/oui-keyboard\";\nimport { MenuItem } from \"@/registry/components/ui/oui-menu\";\n\nexport default function Component() {\n  return (\n    <MenuEx\n      triggerElement={<Button variant=\"outline\">Keyboard</Button>}\n      className=\"w-56\"\n    >\n      <MenuItem id=\"keyboard\">\n        Keyboard\n        <Keyboard>⌘K</Keyboard>\n      </MenuItem>\n    </MenuEx>\n  );\n}\n",
       "type": "registry:component"
     }
   ],

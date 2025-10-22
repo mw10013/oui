@@ -8,7 +8,7 @@
   "files": [
     {
       "path": "registry/components/oui-switch-ex-demo.tsx",
-      "content": "import { SwitchEx } from \"@/registry/components/oui-switch-ex\";\n\nexport default function Component() {\n  return <SwitchEx>Airplane Mode</SwitchEx>;\n}\n",
+      "content": "\"use client\";\nimport { SwitchEx } from \"@/registry/components/oui-switch-ex\";\n\nexport default function Component() {\n  return <SwitchEx>Airplane Mode</SwitchEx>;\n}\n",
       "type": "registry:component"
     }
   ],
