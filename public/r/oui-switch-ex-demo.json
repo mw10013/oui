@@ -7,8 +7,8 @@
   ],
   "files": [
     {
-      "path": "registry/components/oui-switch-ex-demo.tsx",
-      "content": "\"use client\";\nimport { SwitchEx } from \"@/registry/components/oui-switch-ex\";\n\nexport default function Component() {\n  return <SwitchEx>Airplane Mode</SwitchEx>;\n}\n",
+      "path": "registry/default/components/oui-switch-ex-demo.tsx",
+      "content": "\"use client\";\n\nimport { SwitchEx } from \"@/registry/default/components/oui-switch-ex\";\n\nexport default function Component() {\n  return <SwitchEx>Airplane Mode</SwitchEx>;\n}\n",
       "type": "registry:component"
     }
   ],

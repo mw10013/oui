@@ -8,8 +8,8 @@
   ],
   "files": [
     {
-      "path": "registry/components/oui-number-field-ex-demo.tsx",
-      "content": "\"use client\";\n\nimport { NumberFieldEx } from \"@/registry/components/oui-number-field-ex\";\nimport { Button } from \"@/registry/components/ui/oui-button\";\nimport * as Rac from \"react-aria-components\";\n\nexport default function Component() {\n  return (\n    <Rac.Form\n      method=\"post\"\n      validationBehavior=\"aria\"\n      onSubmit={(e) => {\n        e.preventDefault();\n      }}\n      className=\"grid w-full max-w-sm gap-6\"\n    >\n      <NumberFieldEx\n        name=\"age\"\n        placeholder=\"age\"\n        label=\"Age\"\n        description=\"This is your age.\"\n      />\n      <NumberFieldEx\n        name=\"quantity\"\n        label=\"Quantity\"\n        description=\"Your best quantity.\"\n      />\n      <Button type=\"submit\">Submit</Button>\n    </Rac.Form>\n  );\n}\n",
+      "path": "registry/default/components/oui-number-field-ex-demo.tsx",
+      "content": "\"use client\";\n\nimport { NumberFieldEx } from \"@/registry/default/components/oui-number-field-ex\";\nimport { Button } from \"@/registry/default/ui/oui-button\";\nimport * as Rac from \"react-aria-components\";\n\nexport default function Component() {\n  return (\n    <Rac.Form\n      method=\"post\"\n      validationBehavior=\"aria\"\n      onSubmit={(e) => {\n        e.preventDefault();\n      }}\n      className=\"grid w-full max-w-sm gap-6\"\n    >\n      <NumberFieldEx\n        name=\"age\"\n        placeholder=\"age\"\n        label=\"Age\"\n        description=\"This is your age.\"\n      />\n      <NumberFieldEx\n        name=\"quantity\"\n        label=\"Quantity\"\n        description=\"Your best quantity.\"\n      />\n      <Button type=\"submit\">Submit</Button>\n    </Rac.Form>\n  );\n}\n",
       "type": "registry:component"
     }
   ],

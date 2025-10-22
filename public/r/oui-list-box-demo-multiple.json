@@ -8,8 +8,8 @@
   ],
   "files": [
     {
-      "path": "registry/components/oui-list-box-demo-multiple.tsx",
-      "content": "\"use client\";\n\nimport { Item, ItemContent, ItemTitle } from \"@/registry/components/ui/item\";\nimport { ListBoxItem } from \"@/registry/components/ui/oui-list-box\";\nimport * as Rac from \"react-aria-components\";\n\nexport default function Component() {\n  return (\n    <Item>\n      <ItemContent>\n        <ItemTitle>ListBox (multiple selection)</ItemTitle>\n        <Rac.ListBox aria-label=\"Favorite animal\" selectionMode=\"multiple\">\n          <ListBoxItem>Aardvark</ListBoxItem>\n          <ListBoxItem>Cat</ListBoxItem>\n          <ListBoxItem>Dog</ListBoxItem>\n          <ListBoxItem>Kangaroo</ListBoxItem>\n          <ListBoxItem>Panda</ListBoxItem>\n          <ListBoxItem>Snake</ListBoxItem>\n        </Rac.ListBox>\n      </ItemContent>\n    </Item>\n  );\n}\n",
+      "path": "registry/default/components/oui-list-box-demo-multiple.tsx",
+      "content": "\"use client\";\n\nimport { Item, ItemContent, ItemTitle } from \"@/registry/default/ui/item\";\nimport { ListBoxItem } from \"@/registry/default/ui/oui-list-box\";\nimport * as Rac from \"react-aria-components\";\n\nexport default function Component() {\n  return (\n    <Item>\n      <ItemContent>\n        <ItemTitle>ListBox (multiple selection)</ItemTitle>\n        <Rac.ListBox aria-label=\"Favorite animal\" selectionMode=\"multiple\">\n          <ListBoxItem>Aardvark</ListBoxItem>\n          <ListBoxItem>Cat</ListBoxItem>\n          <ListBoxItem>Dog</ListBoxItem>\n          <ListBoxItem>Kangaroo</ListBoxItem>\n          <ListBoxItem>Panda</ListBoxItem>\n          <ListBoxItem>Snake</ListBoxItem>\n        </Rac.ListBox>\n      </ItemContent>\n    </Item>\n  );\n}\n",
       "type": "registry:component"
     }
   ],

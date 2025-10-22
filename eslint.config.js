@@ -6,12 +6,11 @@ import tseslint from "typescript-eslint";
 
 export default defineConfig(
   globalIgnores([
-    "functions/ui/",
-    "**/.wrangler/",
-    "**/worker-configuration.d.ts",
-    "**/.react-router/",
-    "registry/components/ui/sidebar.tsx",
-    "registry/hooks/use-mobile.ts",
+    ".wrangler/",
+    "worker-configuration.d.ts",
+    ".react-router/",
+    "registry/default/ui/sidebar.tsx",
+    "registry/default/hooks/use-mobile.ts",
   ]),
 
   eslint.configs.recommended,

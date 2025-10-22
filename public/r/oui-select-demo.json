@@ -9,8 +9,8 @@
   ],
   "files": [
     {
-      "path": "registry/components/oui-select-demo.tsx",
-      "content": "\"use client\";\n\nimport { ListBoxItem } from \"@/registry/components/ui/oui-list-box\";\nimport { Popover } from \"@/registry/components/ui/oui-popover\";\nimport {\n  Select,\n  SelectButton,\n  SelectValue,\n} from \"@/registry/components/ui/oui-select\";\nimport * as Rac from \"react-aria-components\";\n\nexport default function Component() {\n  return (\n    <Select aria-label=\"Select\" placeholder=\"Select\">\n      <SelectButton>\n        <SelectValue />\n      </SelectButton>\n      <Popover>\n        <Rac.ListBox>\n          <ListBoxItem>Aardvark</ListBoxItem>\n          <ListBoxItem>Cat</ListBoxItem>\n          <ListBoxItem>Dog</ListBoxItem>\n          <ListBoxItem>Kangaroo</ListBoxItem>\n          <ListBoxItem>Panda</ListBoxItem>\n          <ListBoxItem>Snake</ListBoxItem>\n        </Rac.ListBox>\n      </Popover>\n    </Select>\n  );\n}\n",
+      "path": "registry/default/components/oui-select-demo.tsx",
+      "content": "\"use client\";\n\nimport { ListBoxItem } from \"@/registry/default/ui/oui-list-box\";\nimport { Popover } from \"@/registry/default/ui/oui-popover\";\nimport {\n  Select,\n  SelectButton,\n  SelectValue,\n} from \"@/registry/default/ui/oui-select\";\nimport * as Rac from \"react-aria-components\";\n\nexport default function Component() {\n  return (\n    <Select aria-label=\"Select\" placeholder=\"Select\">\n      <SelectButton>\n        <SelectValue />\n      </SelectButton>\n      <Popover>\n        <Rac.ListBox>\n          <ListBoxItem>Aardvark</ListBoxItem>\n          <ListBoxItem>Cat</ListBoxItem>\n          <ListBoxItem>Dog</ListBoxItem>\n          <ListBoxItem>Kangaroo</ListBoxItem>\n          <ListBoxItem>Panda</ListBoxItem>\n          <ListBoxItem>Snake</ListBoxItem>\n        </Rac.ListBox>\n      </Popover>\n    </Select>\n  );\n}\n",
       "type": "registry:component"
     }
   ],

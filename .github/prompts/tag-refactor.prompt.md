@@ -81,7 +81,7 @@ You are an expert TypeScript functional programmer tasked with refactoring the t
 - `registry.json` - Component metadata
 - `.github/prompts/tag-component.prompt.md` - Derivation rules
 - `app/routes/filter.tsx` - URL handling
-- `registry/components/oui-*.tsx` - Hardcoded URLs (multiple files)
+- `registry/default/components/oui-*.tsx` - Hardcoded URLs (multiple files)
 
 ## Validation Checklist
 

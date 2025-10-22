@@ -1,5 +1,5 @@
 import { categories } from "@/config/categories";
-import { Link } from "@/registry/components/ui/oui-link";
+import { Link } from "@/registry/default/ui/oui-link";
 import { Funnel } from "lucide-react";
 
 export default function RouteComponent() {

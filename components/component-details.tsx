@@ -6,14 +6,14 @@ import CodeBlock, { highlight } from "@/components/code-block";
 import CopyButton from "@/components/copy-button";
 import CopyRegistry from "@/components/copy-registry";
 import OpenInV0 from "@/components/open-in-v0";
-import { DialogEx } from "@/registry/components/oui-dialog-ex";
-import { TooltipEx } from "@/registry/components/oui-tooltip-ex";
-import { Button } from "@/registry/components/ui/oui-button";
+import { DialogEx } from "@/registry/default/components/oui-dialog-ex";
+import { TooltipEx } from "@/registry/default/components/oui-tooltip-ex";
+import { Button } from "@/registry/default/ui/oui-button";
 import {
   DialogDescription,
   DialogHeader,
-} from "@/registry/components/ui/oui-dialog";
-import { Heading } from "@/registry/components/ui/oui-heading";
+} from "@/registry/default/ui/oui-dialog";
+import { Heading } from "@/registry/default/ui/oui-heading";
 import { CodeIcon } from "lucide-react";
 
 export default function ComponentDetails({
@@ -137,6 +137,17 @@ export default function ComponentDetails({
   );
 }
 
-const convertRegistryPaths = (content: string): string => {
-  return content.replace(/@\/registry\//g, "@/");
-};
+// const convertRegistryPaths = (content: string): string => {
+//   return content.replace(/@\/registry\//g, "@/");
+// };
+
+export const convertRegistryPaths = (content: string): string => {
+  return content
+    .replace(/@\/registry\/default\/ui/g, "@/components/ui")
+    .replace(/@\/registry\/default\/components/g, "@/components")
+    .replace(/@\/registry\/default\/hooks/g, "@/hooks")
+    .replace(/@\/registry\/default\/lib/g, "@/lib")
+}
+
+
+

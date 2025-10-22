@@ -10,8 +10,8 @@
   ],
   "files": [
     {
-      "path": "registry/components/oui-header-demo.tsx",
-      "content": "\"use client\";\n\nimport { MenuEx } from \"@/registry/components/oui-menu-ex\";\nimport { Button } from \"@/registry/components/ui/oui-button\";\nimport { Header } from \"@/registry/components/ui/oui-header\";\nimport { MenuItem } from \"@/registry/components/ui/oui-menu\";\nimport * as Rac from \"react-aria-components\";\n\nexport default function Component() {\n  return (\n    <MenuEx\n      triggerElement={<Button variant=\"outline\">Header</Button>}\n      className=\"w-56\"\n    >\n      <Rac.MenuSection>\n        <Header variant=\"menu\">Header</Header>\n        <MenuItem id=\"profile\">Profile</MenuItem>\n        <MenuItem id=\"settings\">Settings</MenuItem>\n      </Rac.MenuSection>\n    </MenuEx>\n  );\n}\n",
+      "path": "registry/default/components/oui-header-demo.tsx",
+      "content": "\"use client\";\n\nimport { MenuEx } from \"@/registry/default/components/oui-menu-ex\";\nimport { Button } from \"@/registry/default/ui/oui-button\";\nimport { Header } from \"@/registry/default/ui/oui-header\";\nimport { MenuItem } from \"@/registry/default/ui/oui-menu\";\nimport * as Rac from \"react-aria-components\";\n\nexport default function Component() {\n  return (\n    <MenuEx\n      triggerElement={<Button variant=\"outline\">Header</Button>}\n      className=\"w-56\"\n    >\n      <Rac.MenuSection>\n        <Header variant=\"menu\">Header</Header>\n        <MenuItem id=\"profile\">Profile</MenuItem>\n        <MenuItem id=\"settings\">Settings</MenuItem>\n      </Rac.MenuSection>\n    </MenuEx>\n  );\n}\n",
       "type": "registry:component"
     }
   ],

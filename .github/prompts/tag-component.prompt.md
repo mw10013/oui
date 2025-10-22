@@ -84,7 +84,7 @@ Full registry item:
   "type": "registry:component",
   "files": [
     {
-      "path": "registry/components/oui-button-demo.tsx",
+      "path": "registry/default/components/oui-button-demo.tsx",
       "type": "registry:component"
     }
   ],

@@ -7,8 +7,8 @@
   ],
   "files": [
     {
-      "path": "registry/components/oui-text-area-demo.tsx",
-      "content": "\"use client\";\nimport { TextArea } from \"@/registry/components/ui/oui-text-area\";\n\nexport default function Component() {\n  return <TextArea placeholder=\"Type your message here.\" />;\n}\n",
+      "path": "registry/default/components/oui-text-area-demo.tsx",
+      "content": "\"use client\";\n\nimport { TextArea } from \"@/registry/default/ui/oui-text-area\";\n\nexport default function Component() {\n  return <TextArea placeholder=\"Type your message here.\" />;\n}\n",
       "type": "registry:component"
     }
   ],

@@ -9,8 +9,8 @@
   ],
   "files": [
     {
-      "path": "registry/components/oui-checkbox-group-demo.tsx",
-      "content": "\"use client\";\nimport { Checkbox } from \"@/registry/components/ui/oui-checkbox\";\nimport { CheckboxGroup } from \"@/registry/components/ui/oui-checkbox-group\";\nimport { Label } from \"@/registry/components/ui/oui-label\";\n\nexport default function Component() {\n  return (\n    <CheckboxGroup>\n      <Label>Favorite sports</Label>\n      <Checkbox value=\"soccer\">Soccer</Checkbox>\n      <Checkbox value=\"baseball\">Baseball</Checkbox>\n      <Checkbox value=\"basketball\">Basketball</Checkbox>\n    </CheckboxGroup>\n  );\n}\n",
+      "path": "registry/default/components/oui-checkbox-group-demo.tsx",
+      "content": "\"use client\";\n\nimport { Checkbox } from \"@/registry/default/ui/oui-checkbox\";\nimport { CheckboxGroup } from \"@/registry/default/ui/oui-checkbox-group\";\nimport { Label } from \"@/registry/default/ui/oui-label\";\n\nexport default function Component() {\n  return (\n    <CheckboxGroup>\n      <Label>Favorite sports</Label>\n      <Checkbox value=\"soccer\">Soccer</Checkbox>\n      <Checkbox value=\"baseball\">Baseball</Checkbox>\n      <Checkbox value=\"basketball\">Basketball</Checkbox>\n    </CheckboxGroup>\n  );\n}\n",
       "type": "registry:component"
     }
   ],

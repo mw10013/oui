@@ -7,8 +7,8 @@ import ComponentLoader from "@/components/component-loader";
 import PageGrid from "@/components/page-grid";
 import PageHeader from "@/components/page-header";
 import { getAvailableTags, getComponents, getDisabledTags } from "@/lib/utils";
-import { SelectEx } from "@/registry/components/oui-select-ex";
-import { ListBoxItem } from "@/registry/components/ui/oui-list-box";
+import { SelectEx } from "@/registry/default/components/oui-select-ex";
+import { ListBoxItem } from "@/registry/default/ui/oui-list-box";
 import { useSearchParams } from "react-router";
 
 export function loader({ request }: LoaderFunctionArgs) {

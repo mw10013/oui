@@ -1,7 +1,7 @@
 import type { NavigateOptions } from "react-router";
 import type { Route } from "./+types/root";
 import { themeSessionResolver } from "@/lib/theme.server";
-import { useReactRouterRouting } from "@/registry/hooks/oui-use-react-router-routing";
+import { useReactRouterRouting } from "@/registry/default/hooks/oui-use-react-router-routing";
 import * as Rac from "react-aria-components";
 import {
   isRouteErrorResponse,

@@ -7,8 +7,8 @@
   ],
   "files": [
     {
-      "path": "registry/components/oui-list-box-ex-pagination-demo.tsx",
-      "content": "\"use client\";\nimport {\n  ListBoxExPagination,\n  ListBoxItemExPagination,\n} from \"@/registry/components/oui-list-box-ex-pagination\";\n\nexport default function Component() {\n  return (\n    <div className=\"flex flex-col gap-6\">\n      <ListBoxExPagination defaultSelectedKeys={[\"2\"]}>\n        <ListBoxItemExPagination id=\"prev\">Previous</ListBoxItemExPagination>\n        <ListBoxItemExPagination id=\"1\">1</ListBoxItemExPagination>\n        <ListBoxItemExPagination id=\"2\">2</ListBoxItemExPagination>\n        <ListBoxItemExPagination id=\"3\">3</ListBoxItemExPagination>\n        <ListBoxItemExPagination id=\"next\">Next</ListBoxItemExPagination>\n      </ListBoxExPagination>\n    </div>\n  );\n}\n",
+      "path": "registry/default/components/oui-list-box-ex-pagination-demo.tsx",
+      "content": "\"use client\";\n\nimport {\n  ListBoxExPagination,\n  ListBoxItemExPagination,\n} from \"@/registry/default/components/oui-list-box-ex-pagination\";\n\nexport default function Component() {\n  return (\n    <div className=\"flex flex-col gap-6\">\n      <ListBoxExPagination defaultSelectedKeys={[\"2\"]}>\n        <ListBoxItemExPagination id=\"prev\">Previous</ListBoxItemExPagination>\n        <ListBoxItemExPagination id=\"1\">1</ListBoxItemExPagination>\n        <ListBoxItemExPagination id=\"2\">2</ListBoxItemExPagination>\n        <ListBoxItemExPagination id=\"3\">3</ListBoxItemExPagination>\n        <ListBoxItemExPagination id=\"next\">Next</ListBoxItemExPagination>\n      </ListBoxExPagination>\n    </div>\n  );\n}\n",
       "type": "registry:component"
     }
   ],

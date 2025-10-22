@@ -1,11 +1,6 @@
 import CopyButton from "@/components/copy-button";
 import { useConfig } from "@/hooks/use-config";
-import {
-  Tab,
-  TabList,
-  TabPanel,
-  Tabs,
-} from "@/registry/components/ui/oui-tabs";
+import { Tab, TabList, TabPanel, Tabs } from "@/registry/default/ui/oui-tabs";
 
 export default function CliCommands({ name }: { name: string }) {
   const [config, setConfig] = useConfig();

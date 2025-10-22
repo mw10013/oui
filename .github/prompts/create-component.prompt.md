@@ -10,4 +10,4 @@ Documentation to the React Aria Component to base the component on will be provi
 
 The filename of the shadcn ui component on which to base the styles on will be provided. Ask for it if not given.
 
-React Aria Components are headless and unstyled. You will need to combine the React Aria component with the shadcn ui component to create a styled and accessible component. Anaylze the existing oui components in `registry/components/ui/oui-*.tsx` to understand the patterns, conventions, and best practices for creating oui ui components.
+React Aria Components are headless and unstyled. You will need to combine the React Aria component with the shadcn ui component to create a styled and accessible component. Anaylze the existing oui components in `registry/default/ui/oui-*.tsx` to understand the patterns, conventions, and best practices for creating oui ui components.

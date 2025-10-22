@@ -8,8 +8,8 @@
   ],
   "files": [
     {
-      "path": "registry/components/oui-text-area-demo-disabled.tsx",
-      "content": "\"use client\";\nimport { TextFieldEx } from \"@/registry/components/oui-text-field-ex\";\nimport { TextArea } from \"@/registry/components/ui/oui-text-area\";\n\nexport default function Component() {\n  return (\n    <TextFieldEx name=\"textarea-demo-disabled\" label=\"Text Area Disabled\" isDisabled>\n      <TextArea placeholder=\"Type your message here.\" />\n    </TextFieldEx>\n  );\n}\n",
+      "path": "registry/default/components/oui-text-area-demo-disabled.tsx",
+      "content": "\"use client\";\n\nimport { TextFieldEx } from \"@/registry/default/components/oui-text-field-ex\";\nimport { TextArea } from \"@/registry/default/ui/oui-text-area\";\n\nexport default function Component() {\n  return (\n    <TextFieldEx\n      name=\"textarea-demo-disabled\"\n      label=\"Text Area Disabled\"\n      isDisabled\n    >\n      <TextArea placeholder=\"Type your message here.\" />\n    </TextFieldEx>\n  );\n}\n",
       "type": "registry:component"
     }
   ],

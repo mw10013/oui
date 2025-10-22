@@ -1,6 +1,6 @@
 import { useCopy } from "@/hooks/use-copy";
-import { TooltipEx } from "@/registry/components/oui-tooltip-ex";
-import { Button } from "@/registry/components/ui/oui-button";
+import { TooltipEx } from "@/registry/default/components/oui-tooltip-ex";
+import { Button } from "@/registry/default/ui/oui-button";
 import { twJoin } from "tailwind-merge";
 
 const CopyButton = ({ url }: { url: string | null }) => {

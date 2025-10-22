@@ -7,8 +7,8 @@
   ],
   "files": [
     {
-      "path": "registry/components/oui-button-demo-sm.tsx",
-      "content": "\"use client\";\nimport { Button } from \"@/registry/components/ui/oui-button\";\n\nexport default function Component() {\n  return <Button size=\"sm\">Small</Button>;\n}\n",
+      "path": "registry/default/components/oui-button-demo-sm.tsx",
+      "content": "\"use client\";\n\nimport { Button } from \"@/registry/default/ui/oui-button\";\n\nexport default function Component() {\n  return <Button size=\"sm\">Small</Button>;\n}\n",
       "type": "registry:component"
     }
   ],

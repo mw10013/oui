@@ -7,8 +7,8 @@
   ],
   "files": [
     {
-      "path": "registry/components/oui-checkbox-demo-disabled.tsx",
-      "content": "\"use client\";\nimport { Checkbox } from \"@/registry/components/ui/oui-checkbox\";\n\nexport default function Component() {\n  return (\n    <Checkbox name=\"toggle\" isDisabled>\n      Enable notifications\n    </Checkbox>\n  );\n}\n",
+      "path": "registry/default/components/oui-checkbox-demo-disabled.tsx",
+      "content": "\"use client\";\n\nimport { Checkbox } from \"@/registry/default/ui/oui-checkbox\";\n\nexport default function Component() {\n  return (\n    <Checkbox name=\"toggle\" isDisabled>\n      Enable notifications\n    </Checkbox>\n  );\n}\n",
       "type": "registry:component"
     }
   ],

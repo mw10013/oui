@@ -10,8 +10,8 @@
   ],
   "files": [
     {
-      "path": "registry/components/oui-keyboard-demo.tsx",
-      "content": "\"use client\";\nimport { MenuEx } from \"@/registry/components/oui-menu-ex\";\nimport { Button } from \"@/registry/components/ui/oui-button\";\nimport { Keyboard } from \"@/registry/components/ui/oui-keyboard\";\nimport { MenuItem } from \"@/registry/components/ui/oui-menu\";\n\nexport default function Component() {\n  return (\n    <MenuEx\n      triggerElement={<Button variant=\"outline\">Keyboard</Button>}\n      className=\"w-56\"\n    >\n      <MenuItem id=\"keyboard\">\n        Keyboard\n        <Keyboard>⌘K</Keyboard>\n      </MenuItem>\n    </MenuEx>\n  );\n}\n",
+      "path": "registry/default/components/oui-keyboard-demo.tsx",
+      "content": "\"use client\";\n\nimport { MenuEx } from \"@/registry/default/components/oui-menu-ex\";\nimport { Button } from \"@/registry/default/ui/oui-button\";\nimport { Keyboard } from \"@/registry/default/ui/oui-keyboard\";\nimport { MenuItem } from \"@/registry/default/ui/oui-menu\";\n\nexport default function Component() {\n  return (\n    <MenuEx\n      triggerElement={<Button variant=\"outline\">Keyboard</Button>}\n      className=\"w-56\"\n    >\n      <MenuItem id=\"keyboard\">\n        Keyboard\n        <Keyboard>⌘K</Keyboard>\n      </MenuItem>\n    </MenuEx>\n  );\n}\n",
       "type": "registry:component"
     }
   ],

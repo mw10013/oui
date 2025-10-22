@@ -15,13 +15,13 @@ You are given either a component name in the format `oui-*` or a filename in the
 If given a component name, derive the filename as `${componentName}.tsx`.
 If given a filename, derive the component name by removing the `.tsx` extension.
 
-Check that the component file exists at `registry/components/${filename}`. If it does not exist, respond with an error message.
+Check that the component file exists at `registry/default/components/${filename}`. If it does not exist, respond with an error message.
 
 Use grep to search for the item in `registry.json` by the component name (e.g., grep for `"name": "${componentName}"`). If not found, respond with an error message. Note that items are unique by name.
 
 To efficiently locate the item, use grep to find the line number where the item starts, then read only the relevant lines from that point to extract the `registryDependencies` array and ensure `type` is `registry:component`. If the type is not `registry:component`, respond with an error message and skip processing this component.
 
-Analyze the imports in this file. Look for imports from `@/registry/components/*` (e.g., `import { Checkbox } from "@/registry/components/ui/oui-checkbox";` or `import { Avatar } from "@/registry/components/ui/avatar";` or `import { SearchFieldEx } from "@/registry/components/oui-search-field-ex";`).
+Analyze the imports in this file. Look for imports from `@/registry/default/components/*` (e.g., `import { Checkbox } from "@/registry/default/ui/oui-checkbox";` or `import { Avatar } from "@/registry/default/ui/avatar";` or `import { SearchFieldEx } from "@/registry/default/components/oui-search-field-ex";`).
 
 For each import path, extract the component name after the last `/` (e.g., `oui-checkbox` or `avatar`).
 

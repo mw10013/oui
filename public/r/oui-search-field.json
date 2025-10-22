@@ -10,8 +10,8 @@
   ],
   "files": [
     {
-      "path": "registry/components/ui/oui-search-field.tsx",
-      "content": "\"use client\";\n\nimport { composeTailwindRenderProps } from \"@/registry/components/ui/oui-base\";\nimport * as Rac from \"react-aria-components\";\n\n/**\n * Derived styles from shadcn FormItem\n */\nexport function SearchField({ className, ...props }: Rac.SearchFieldProps) {\n  return (\n    <Rac.SearchField\n      className={composeTailwindRenderProps(className, \"group grid gap-2\")}\n      {...props}\n    />\n  );\n}\n",
+      "path": "registry/default/ui/oui-search-field.tsx",
+      "content": "\"use client\";\n\nimport { composeTailwindRenderProps } from \"@/registry/default/ui/oui-base\";\nimport * as Rac from \"react-aria-components\";\n\n/**\n * Derived styles from shadcn FormItem\n */\nexport function SearchField({ className, ...props }: Rac.SearchFieldProps) {\n  return (\n    <Rac.SearchField\n      className={composeTailwindRenderProps(className, \"group grid gap-2\")}\n      {...props}\n    />\n  );\n}\n",
       "type": "registry:ui"
     }
   ]

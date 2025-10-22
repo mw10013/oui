@@ -1,6 +1,6 @@
-import { TooltipEx } from "@/registry/components/oui-tooltip-ex";
-import { buttonClassName } from "@/registry/components/ui/oui-button";
-import { Link } from "@/registry/components/ui/oui-link";
+import { TooltipEx } from "@/registry/default/components/oui-tooltip-ex";
+import { buttonClassName } from "@/registry/default/ui/oui-button";
+import { Link } from "@/registry/default/ui/oui-link";
 
 // https://ui.shadcn.com/docs/registry/open-in-v0
 

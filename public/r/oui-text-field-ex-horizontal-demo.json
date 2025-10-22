@@ -7,8 +7,8 @@
   ],
   "files": [
     {
-      "path": "registry/components/oui-text-field-ex-horizontal-demo.tsx",
-      "content": "\"use client\";\nimport { TextFieldExHorizontal } from \"@/registry/components/oui-text-field-ex-horizontal\";\n\nexport default function Component() {\n  return (\n    <TextFieldExHorizontal\n      label=\"Label\"\n      placeholder=\"Placeholder\"\n      description=\"This is TextFieldExHorizontal.\"\n    />\n  );\n}\n",
+      "path": "registry/default/components/oui-text-field-ex-horizontal-demo.tsx",
+      "content": "\"use client\";\n\nimport { TextFieldExHorizontal } from \"@/registry/default/components/oui-text-field-ex-horizontal\";\n\nexport default function Component() {\n  return (\n    <TextFieldExHorizontal\n      label=\"Label\"\n      placeholder=\"Placeholder\"\n      description=\"This is TextFieldExHorizontal.\"\n    />\n  );\n}\n",
       "type": "registry:component"
     }
   ],

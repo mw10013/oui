@@ -6,7 +6,7 @@ export default function ComponentLoader({ name }: { name: string }) {
   const Component = useMemo(
     () =>
       lazy(() =>
-        import(`../registry/components/${name}.tsx`).catch(() => ({
+        import(`../registry/default/components/${name}.tsx`).catch(() => ({
           default: () => null,
         })),
       ),

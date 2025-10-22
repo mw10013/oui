@@ -2,7 +2,7 @@ import {
   Avatar,
   AvatarFallback,
   AvatarImage,
-} from "@/registry/components/ui/avatar";
+} from "@/registry/default/ui/avatar";
 import {
   Item,
   ItemActions,
@@ -13,15 +13,15 @@ import {
   ItemMedia,
   ItemSeparator,
   ItemTitle,
-} from "@/registry/components/ui/item";
-import { Button } from "@/registry/components/ui/oui-button";
-import { ListBoxItem } from "@/registry/components/ui/oui-list-box";
-import { Popover } from "@/registry/components/ui/oui-popover";
+} from "@/registry/default/ui/item";
+import { Button } from "@/registry/default/ui/oui-button";
+import { ListBoxItem } from "@/registry/default/ui/oui-list-box";
+import { Popover } from "@/registry/default/ui/oui-popover";
 import {
   Select,
   SelectButton,
   SelectValue,
-} from "@/registry/components/ui/oui-select";
+} from "@/registry/default/ui/oui-select";
 import { ExternalLink, Home, Shield } from "lucide-react";
 import * as Rac from "react-aria-components";
 

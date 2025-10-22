@@ -15,7 +15,7 @@ type Spec = {
   componentName: string; // Filename without `.tsx` suffix.
   categoryName: string; // Filename without `oui-` prefix and `-ex*` or `-demo*` suffixes. Capitalized and replace hyphens (`-`) with spaces.
   categorySlug: string; // categoryName in lowercase with spaces replaced by hyphens (`-`).
-  path: string; // `registry/components/${filename}`
+  path: string; // `registry/default/components/${filename}`
   tag: string; // categoryName in lowercase.
 };
 ```
@@ -27,7 +27,7 @@ const spec: Spec = {
   componentName: "oui-dialog-ex-demo-form",
   categoryName: "Dialog",
   categorySlug: "dialog",
-  path: "registry/components/oui-dialog-ex-demo-form.tsx",
+  path: "registry/default/components/oui-dialog-ex-demo-form.tsx",
   tag: "dialog",
 };
 ```
@@ -39,7 +39,7 @@ const spec: Spec = {
   componentName: "oui-select-ex-demo-icon",
   categoryName: "Select",
   categorySlug: "select",
-  path: "registry/components/oui-select-ex-demo-icon.tsx",
+  path: "registry/default/components/oui-select-ex-demo-icon.tsx",
   tag: "select",
 };
 ```
@@ -64,12 +64,12 @@ The reconciled or new item should have the following shape:
   ],
   "registryDependencies": [
     // List of registry dependencies derived from the imports in the component file.
-    // For each import from "@/registry/components/ui/oui-<UI-COMPONENT-NAME>", add
+    // For each import from "@/registry/default/ui/oui-<UI-COMPONENT-NAME>", add
     // "https://oui.mw10013.workers.dev/r/oui-<UI-COMPONENT-NAME>.json" to this array.
-    // For each import from "@/registry/components/ui/<UI-COMPONENT-NAME-WITHOUT-OUI-PREFIX>"
+    // For each import from "@/registry/default/ui/<UI-COMPONENT-NAME-WITHOUT-OUI-PREFIX>"
     // that does not have `oui-*` prefix, add
     // "https://ui.shadcn.com/r/styles/new-york/r/<UI-COMPONENT-NAME-WITHOUT-OUI-PREFIX>.json" to this array.
-    // For each import from "@/registry/components/oui-<COMPONENT-NAME>", add
+    // For each import from "@/registry/default/components/oui-<COMPONENT-NAME>", add
     // "https://oui.mw10013.workers.dev/r/oui-<COMPONENT-NAME>.json" to this array.
     // Ensure no duplicates and sort alphabetically.
   ],
@@ -95,7 +95,7 @@ With example filename of `oui-dialog-ex-demo-form.tsx`, the reconciled or new it
   "type": "registry:component",
   "files": [
     {
-      "path": "registry/components/oui-dialog-ex-demo-form.tsx",
+      "path": "registry/default/components/oui-dialog-ex-demo-form.tsx",
       "type": "registry:component"
     }
   ],
@@ -119,7 +119,7 @@ With example filename of `oui-select-ex-demo-icon.tsx`, the reconciled or new it
   "type": "registry:component",
   "files": [
     {
-      "path": "registry/components/oui-select-ex-demo-icon.tsx",
+      "path": "registry/default/components/oui-select-ex-demo-icon.tsx",
       "type": "registry:component"
     }
   ],

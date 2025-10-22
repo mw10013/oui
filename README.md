@@ -78,21 +78,6 @@ Licensed under the [MIT License](https://github.com/mw10013/oui/blob/main/LICENS
 ```
 https://v0.dev/chat/api/open?url=https://oui.mw10013.workers.dev/r/oui-button-demo.json
 
-{
-  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
-  "name": "oui-button-demo",
-  "type": "registry:component",
-  "registryDependencies": [
-    "https://oui.mw10013.workers.dev/r/oui-button.json"
-  ],
-  "files": [
-    {
-      "path": "registry/components/oui-button-demo.tsx",
-      "content": "\"use client\";\nimport { Button } from \"@/registry/components/ui/oui-button\"\n\nexport default function Component() {\n  return <Button>Button</Button>\n}\n",
-      "type": "registry:component"
-    }
-  ],
-}
 
 https://v0.dev/chat/api/open?url=https%3A%2F%2Fcoss.com%2Forigin%2Fr%2Fcomp-78.json
 

@@ -7,8 +7,8 @@
   ],
   "files": [
     {
-      "path": "registry/components/oui-link-demo-always.tsx",
-      "content": "\"use client\";\nimport { Link } from \"@/registry/components/ui/oui-link\";\n\nexport default function Component() {\n  return (\n    <Link href=\"#\" underline=\"always\">\n      Always Link\n    </Link>\n  );\n}\n",
+      "path": "registry/default/components/oui-link-demo-always.tsx",
+      "content": "\"use client\";\n\nimport { Link } from \"@/registry/default/ui/oui-link\";\n\nexport default function Component() {\n  return (\n    <Link href=\"#\" underline=\"always\">\n      Always Link\n    </Link>\n  );\n}\n",
       "type": "registry:component"
     }
   ],
