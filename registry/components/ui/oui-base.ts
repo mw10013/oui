@@ -1,3 +1,5 @@
+"use client";
+
 import { composeRenderProps } from "react-aria-components";
 import { twMerge } from "tailwind-merge";
 
@@ -12,31 +14,31 @@ export const tw = (strings: TemplateStringsArray, ...values: string[]) =>
 
 /**
  * Base focus visible styles.
- * 
+ *
  * Shadcn UI generally uses a custom ring (`ring-ring/50 ring-[3px]`) with `outline-none` for `focus-visible`.
- * 
+ *
  * Deviations occur for specific components:
  * - Sliders/Resizables: Adjusted ring thickness/offset for small interactive parts.
  * - Menubar items: Use background changes for focus.
  * - Tabs content: May omit explicit focus rings.
  * - Input OTP: Uses `data-[active=true]` for slot highlighting.
- * 
+ *
  * This approach balances a consistent baseline with flexibility for component-specific needs.
- * 
+ *
  * 'outline-none' resets user agent styles especially on Chrome
  */
-export const focusVisibleStyles = tw`data-focus-visible:border-ring data-focus-visible:ring-ring/50 outline-none data-focus-visible:ring-[3px]`;
+export const focusVisibleStyles = tw`outline-none data-focus-visible:border-ring data-focus-visible:ring-[3px] data-focus-visible:ring-ring/50`;
 
 /**
  * Base group focus visible styles.
- * 
+ *
  * Intended for child elements within a RAC component that structures with a label (eg. checkbox, radio).
  */
-export const groupFocusVisibleStyles = tw`group-data-focus-visible:border-ring group-data-focus-visible:ring-ring/50 outline-none group-data-focus-visible:ring-[3px]`;
+export const groupFocusVisibleStyles = tw`outline-none group-data-focus-visible:border-ring group-data-focus-visible:ring-[3px] group-data-focus-visible:ring-ring/50`;
 
 /**
  * Base disabled styles.
- * 
+ *
  * `cursor-not-allowed` is omitted as it is mainly for form controls in shadcn; visual/interaction cues are sufficient.
  *
  * Note that it includes `pointer-events-none` which prevents any cursor style (including `cursor-not-allowed`).

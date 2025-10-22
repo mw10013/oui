@@ -72,6 +72,7 @@ Licensed under the [MIT License](https://github.com/mw10013/oui/blob/main/LICENS
 
 ## TODO
 
+- meta: dupes?
 - v0: use client?
 
 ```
@@ -79,14 +80,14 @@ https://v0.dev/chat/api/open?url=https%3A%2F%2Foui.mw10013.workers.dev%2Fr%2Foui
 https://v0.dev/chat/api/open?url=https://oui.mw10013.workers.dev/r/oui-button-demo.json
 ```
 
+- PR to add to shadcn: registries.json: "@oui": "https://oui.mw10013.workers.dev/r/{name}.json",
+  - https://github.com/shadcn-ui/ui/pull/8490/files
 - group: with ghost button icon
 - autocomplete: button x
 - checkbox: layout
 - disclosure: animation
-- seo, meta
+- seo
 - readme
-- PR to add to shadcn: registries.json: "@oui": "https://oui.mw10013.workers.dev/r/{name}.json",
-  - https://github.com/shadcn-ui/ui/pull/8490/files
 - theme toggle: use oui checkbox/focus ring? oui-toggle?
 - jsdocs
 
