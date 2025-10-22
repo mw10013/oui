@@ -3,7 +3,7 @@
 import type { DialogProps } from "@/registry/components/ui/oui-dialog";
 import type { ReactElement } from "react";
 import { ModalEx } from "@/registry/components/oui-modal-ex";
-import { Button } from "@/registry/components/ui/button";
+import { Button } from "@/registry/components/ui/oui-button";
 import { Dialog } from "@/registry/components/ui/oui-dialog";
 import { Label } from "@/registry/components/ui/oui-label";
 import { Link } from "@/registry/components/ui/oui-link";
