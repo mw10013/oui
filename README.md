@@ -76,8 +76,83 @@ Licensed under the [MIT License](https://github.com/mw10013/oui/blob/main/LICENS
 - v0: use client?
 
 ```
-https://v0.dev/chat/api/open?url=https%3A%2F%2Foui.mw10013.workers.dev%2Fr%2Foui-button-demo.json
 https://v0.dev/chat/api/open?url=https://oui.mw10013.workers.dev/r/oui-button-demo.json
+
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "oui-button-demo",
+  "type": "registry:component",
+  "registryDependencies": [
+    "https://oui.mw10013.workers.dev/r/oui-button.json"
+  ],
+  "files": [
+    {
+      "path": "registry/components/oui-button-demo.tsx",
+      "content": "\"use client\";\nimport { Button } from \"@/registry/components/ui/oui-button\"\n\nexport default function Component() {\n  return <Button>Button</Button>\n}\n",
+      "type": "registry:component"
+    }
+  ],
+}
+
+https://v0.dev/chat/api/open?url=https%3A%2F%2Fcoss.com%2Forigin%2Fr%2Fcomp-78.json
+
+    {
+      "name": "comp-78",
+      "type": "registry:component",
+      "registryDependencies": ["https://coss.com/origin/r/button.json"],
+      "files": [
+        {
+          "path": "registry/default/components/comp-78.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "meta": {
+        "tags": ["button"],
+        "style": 2
+      }
+    },
+
+    {
+      "name": "button",
+      "type": "registry:ui",
+      "dependencies": ["radix-ui"],
+      "files": [
+        {
+          "path": "registry/default/ui/button.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "comp-78",
+  "type": "registry:component",
+  "registryDependencies": [
+    "https://coss.com/origin/r/button.json"
+  ],
+  "files": [
+    {
+      "path": "registry/default/components/comp-78.tsx",
+      "content": "import { Button } from \"@/registry/default/ui/button\"\n\nexport default function Component() {\n  return <Button>Button</Button>\n}\n",
+      "type": "registry:component"
+    }
+  ],
+}
+
+import { Button } from "@/registry/default/ui/button"
+
+  "aliases": {
+    "components": "@/registry/default/components",
+    "utils": "@/registry/default/lib/utils",
+    "ui": "@/registry/default",
+    "lib": "@/lib",
+    "hooks": "@/registry/default/hooks"
+  },
+
+
+
+npx shadcn@latest add "https://v0.app/chat/b/b_tw3Ba8CCZ01?token=eyJhbGciOiJkaXIiLCJlbmMiOiJBMjU2R0NNIn0..Uul65L0abij3owQe.8WYuXcjzm4diFcJEbW7SkVdruSGW9sgKarmmCr3D1lCeHxVVTUQNpFD-PCg.ZTiibzI-WRQVGxCLDA8QYA"
 ```
 
 - PR to add to shadcn: registries.json: "@oui": "https://oui.mw10013.workers.dev/r/{name}.json",
