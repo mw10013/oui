@@ -1,3 +1,4 @@
+"use client";
 import { CheckboxGroupEx } from "@/registry/components/oui-checkbox-group-ex";
 import { Checkbox } from "@/registry/components/ui/oui-checkbox";
 

@@ -1,3 +1,4 @@
+"use client";
 import { Button } from "@/registry/components/ui/oui-button";
 import { Group } from "@/registry/components/ui/oui-group";
 import { Input } from "@/registry/components/ui/oui-input";

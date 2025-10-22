@@ -1,3 +1,4 @@
+"use client";
 import { Separator } from "@/registry/components/ui/oui-separator";
 
 export default function Component() {

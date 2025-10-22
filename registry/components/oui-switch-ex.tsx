@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import { composeTailwindRenderProps } from "@/registry/components/ui/oui-base";
 import { Label } from "@/registry/components/ui/oui-label";

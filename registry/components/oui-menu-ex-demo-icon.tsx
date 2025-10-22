@@ -1,3 +1,4 @@
+"use client";
 import { MenuEx } from "@/registry/components/oui-menu-ex";
 import { Button } from "@/registry/components/ui/oui-button";
 import { MenuItem } from "@/registry/components/ui/oui-menu";

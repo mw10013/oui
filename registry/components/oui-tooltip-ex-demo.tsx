@@ -1,3 +1,4 @@
+"use client";
 import { TooltipEx } from "@/registry/components/oui-tooltip-ex";
 import { Button } from "@/registry/components/ui/oui-button";
 

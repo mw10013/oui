@@ -1,3 +1,4 @@
+"use client";
 import { PopoverEx } from "@/registry/components/oui-popover-ex";
 import { TextFieldExHorizontal } from "@/registry/components/oui-text-field-ex-horizontal";
 import { Button } from "@/registry/components/ui/oui-button";

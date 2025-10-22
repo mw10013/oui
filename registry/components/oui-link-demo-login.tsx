@@ -1,3 +1,4 @@
+"use client";
 import { TextFieldEx } from "@/registry/components/oui-text-field-ex";
 import {
   Card,

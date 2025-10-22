@@ -1,3 +1,4 @@
+"use client";
 import { Button } from "@/registry/components/ui/oui-button";
 import { Loader2 } from "lucide-react";
 

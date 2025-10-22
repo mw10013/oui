@@ -1,3 +1,5 @@
+"use client";
+
 import { CheckboxEx } from "@/registry/components/oui-checkbox-ex";
 import { CheckboxGroupEx } from "@/registry/components/oui-checkbox-group-ex";
 import { RadioGroupEx } from "@/registry/components/oui-radio-group-ex";

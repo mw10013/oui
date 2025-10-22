@@ -1,3 +1,4 @@
+"use client";
 import type { VariantProps } from "class-variance-authority";
 import { Label } from "@/registry/components/ui/oui-label";
 import { Link } from "@/registry/components/ui/oui-link";

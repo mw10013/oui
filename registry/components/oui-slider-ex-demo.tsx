@@ -1,3 +1,4 @@
+"use client";
 import { SliderEx } from "@/registry/components/oui-slider-ex";
 
 export default function Component() {

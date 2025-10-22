@@ -1,3 +1,4 @@
+"use client";
 import { DialogExSheet } from "@/registry/components/oui-dialog-ex-sheet";
 import { Button } from "@/registry/components/ui/oui-button";
 import {

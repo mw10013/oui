@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import { Checkbox } from "@/registry/components/ui/oui-checkbox";
 import { Label } from "@/registry/components/ui/oui-label";

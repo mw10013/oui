@@ -1,3 +1,4 @@
+"use client";
 import { SearchFieldEx } from "@/registry/components/oui-search-field-ex";
 
 export default function Component() {

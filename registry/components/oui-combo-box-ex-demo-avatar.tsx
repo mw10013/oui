@@ -1,3 +1,4 @@
+"use client";
 import { ComboBoxEx } from "@/registry/components/oui-combo-box-ex";
 import {
   Avatar,

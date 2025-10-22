@@ -1,3 +1,4 @@
+"use client";
 import { RadioGroupEx } from "@/registry/components/oui-radio-group-ex";
 import { Radio } from "@/registry/components/ui/oui-radio-group";
 

@@ -1,3 +1,4 @@
+"use client";
 import { TextFieldExHorizontal } from "@/registry/components/oui-text-field-ex-horizontal";
 
 export default function Component() {

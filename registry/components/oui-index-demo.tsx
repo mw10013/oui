@@ -1,3 +1,4 @@
+"use client";
 import * as Oui from "@/registry/components/ui/oui-index";
 
 export default function Component() {

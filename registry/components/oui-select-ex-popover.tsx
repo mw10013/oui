@@ -1,3 +1,4 @@
+"use client";
 import { FieldError } from "@/registry/components/ui/oui-field-error";
 import { Label } from "@/registry/components/ui/oui-label";
 import { Link } from "@/registry/components/ui/oui-link";

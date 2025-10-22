@@ -1,3 +1,4 @@
+"use client";
 import { SelectEx } from "@/registry/components/oui-select-ex";
 import { ListBoxItem } from "@/registry/components/ui/oui-list-box";
 import {

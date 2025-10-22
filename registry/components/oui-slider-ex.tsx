@@ -1,3 +1,4 @@
+"use client";
 import { Label } from "@/registry/components/ui/oui-label";
 import { Link } from "@/registry/components/ui/oui-link";
 import {

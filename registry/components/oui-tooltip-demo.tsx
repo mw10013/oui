@@ -1,3 +1,4 @@
+"use client";
 import { Button } from "@/registry/components/ui/oui-button";
 import { OverlayArrow, Tooltip } from "@/registry/components/ui/oui-tooltip";
 import { TooltipTrigger } from "react-aria-components";

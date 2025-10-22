@@ -1,3 +1,4 @@
+"use client";
 import { Link } from "@/registry/components/ui/oui-link";
 
 export default function Component() {

@@ -1,3 +1,4 @@
+"use client";
 import { CheckboxEx } from "@/registry/components/oui-checkbox-ex";
 
 export default function Component() {

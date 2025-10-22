@@ -1,3 +1,4 @@
+"use client";
 import { CheckboxGroup } from "@/registry/components/ui/oui-checkbox-group";
 import { FieldError } from "@/registry/components/ui/oui-field-error";
 import { Label } from "@/registry/components/ui/oui-label";
