@@ -40,7 +40,7 @@ export default defineConfig(
     },
   },
   {
-    files: ["functions/o/**/*.tsx", "functions/s/**/*.tsx"],
+    files: ["app/**/*.tsx", "components/**/*.tsx", "registry/**/*.tsx"],
     ...reactPlugin.configs.flat.recommended,
     ...reactPlugin.configs.flat["jsx-runtime"],
     languageOptions: {
