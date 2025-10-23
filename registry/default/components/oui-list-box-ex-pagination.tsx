@@ -8,7 +8,9 @@ import { Text } from "@/registry/default/ui/oui-text";
 import * as Rac from "react-aria-components";
 import { twMerge } from "tailwind-merge";
 
-// Experimental ListBox reusable wrapper for pagination controls
+/**
+ * Experimental ListBox reusable wrapper for pagination controls
+ */
 
 export function ListBoxExPagination<T extends object>({
   className,

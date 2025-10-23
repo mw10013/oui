@@ -1225,6 +1225,7 @@
         "https://oui.mw10013.workers.dev/r/oui-search-field-ex.json",
         "https://oui.mw10013.workers.dev/r/oui-select-ex-popover.json",
         "https://oui.mw10013.workers.dev/r/oui-select-ex.json",
+        "https://oui.mw10013.workers.dev/r/oui-sidebar-ex.json",
         "https://oui.mw10013.workers.dev/r/oui-slider-ex.json",
         "https://oui.mw10013.workers.dev/r/oui-switch-ex.json",
         "https://oui.mw10013.workers.dev/r/oui-text-field-ex.json",
@@ -1703,11 +1704,13 @@
         }
       ],
       "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/oui-base.json",
-        "https://oui.mw10013.workers.dev/r/oui-button.json"
+        "https://oui.mw10013.workers.dev/r/oui-button.json",
+        "https://oui.mw10013.workers.dev/r/oui-label.json",
+        "https://oui.mw10013.workers.dev/r/oui-link.json",
+        "https://oui.mw10013.workers.dev/r/oui-text.json"
       ],
       "meta": {
-        "tags": ["list-box", "button"]
+        "tags-": ["list-box", "list-box-ex-pagination"]
       }
     },
     {
@@ -2423,6 +2426,26 @@
       ],
       "meta": {
         "tags": ["separator"]
+      }
+    },
+    {
+      "name": "oui-sidebar-ex",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/default/components/oui-sidebar-ex.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "sidebar",
+        "https://oui.mw10013.workers.dev/r/oui-button.json",
+        "https://oui.mw10013.workers.dev/r/oui-label.json",
+        "https://oui.mw10013.workers.dev/r/oui-link.json",
+        "https://oui.mw10013.workers.dev/r/oui-text.json"
+      ],
+      "meta": {
+        "tags-": ["sidebar", "sidebar-ex"]
       }
     },
     {
