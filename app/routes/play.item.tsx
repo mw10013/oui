@@ -28,16 +28,6 @@ import * as Rac from "react-aria-components";
 export default function RouteComponent() {
   return (
     <>
-      <title>Playground - Oui</title>
-      <meta
-        name="description"
-        content="Interactive playground for testing Oui components - react aria components that run side-by-side with shadcn components."
-      />
-      <meta property="og:title" content="Playground - Oui" />
-      <meta
-        property="og:description"
-        content="Interactive playground for testing Oui components - react aria components that run side-by-side with shadcn components."
-      />
       <div className="mx-auto flex max-w-md flex-col gap-6 p-6">
         {/* Variants */}
         <section>
