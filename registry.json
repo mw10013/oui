@@ -2161,6 +2161,19 @@
       }
     },
     {
+      "name": "oui-react-router-provider",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/default/components/oui-react-router-provider.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "meta-": {
+        "tags": ["react-router", "react-router-provider"]
+      }
+    },
+    {
       "name": "oui-search-field",
       "type": "registry:ui",
       "files": [

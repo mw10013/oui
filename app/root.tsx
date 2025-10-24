@@ -1,8 +1,6 @@
-import type { NavigateOptions } from "react-router";
 import type { Route } from "./+types/root";
 import { themeSessionResolver } from "@/lib/theme.server";
-import { useReactRouterRouting } from "@/registry/default/hooks/oui-use-react-router-routing";
-import * as Rac from "react-aria-components";
+import { ReactRouterProvider } from "@/registry/default/components/oui-react-router-provider";
 import {
   isRouteErrorResponse,
   Links,
@@ -20,12 +18,6 @@ import "@/app/app.css";
 import Footer from "@/components/footer";
 import Header from "@/components/header";
 import { env } from "cloudflare:workers";
-
-declare module "react-aria-components" {
-  interface RouterConfig {
-    routerOptions: NavigateOptions;
-  }
-}
 
 /** Sets a minimal transparent favicon to avoid 404 errors. */
 export function links() {
@@ -53,7 +45,6 @@ function Html({
   environment: string;
 }) {
   const [theme] = useTheme();
-  const { navigate, useHref } = useReactRouterRouting();
   return (
     <html lang="en" className={theme ?? ""}>
       <head>
@@ -92,7 +83,7 @@ function Html({
         <Links />
       </head>
       <body>
-        <Rac.RouterProvider navigate={navigate} useHref={useHref}>
+        <ReactRouterProvider>
           <div className="overflow-hidden px-4 supports-[overflow:clip]:overflow-clip sm:px-6">
             <div className="relative mx-auto flex min-h-screen w-full max-w-6xl flex-col">
               <Header />
@@ -100,7 +91,7 @@ function Html({
               <Footer />
             </div>
           </div>
-        </Rac.RouterProvider>
+        </ReactRouterProvider>
         <ScrollRestoration />
         <Scripts />
         {environment === "production" && (
