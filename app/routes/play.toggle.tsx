@@ -1,3 +1,4 @@
+import { ToggleButton } from "@/registry/default/ui/oui-toggle-button";
 import { Toggle } from "@/registry/default/ui/toggle";
 import {
   ToggleGroup,
@@ -12,7 +13,7 @@ import {
   Underline,
 } from "lucide-react";
 
-export default function Component() {
+export default function RouteComponent() {
   return (
     <div className="mx-auto flex max-w-2xl flex-col gap-8 p-6">
       <div className="flex flex-col gap-4">
@@ -112,6 +113,36 @@ export default function Component() {
             <Underline className="h-4 w-4" />
           </ToggleGroupItem>
         </ToggleGroup>
+      </div>
+
+      <div className="flex flex-col gap-4">
+        <h2 className="text-lg font-semibold">Oui Toggle Button</h2>
+        <div className="flex flex-wrap gap-4">
+          <ToggleButton
+            aria-label="Toggle bookmark"
+            size="sm"
+            variant="outline"
+          >
+            <BookmarkIcon />
+            Bookmark
+          </ToggleButton>
+          <ToggleButton aria-label="Toggle italic" variant="outline">
+            <Italic />
+          </ToggleButton>
+          <ToggleButton aria-label="Toggle bold" size="sm">
+            <Bold />
+          </ToggleButton>
+          <ToggleButton aria-label="Toggle underline" size="lg">
+            <Underline />
+          </ToggleButton>
+          <ToggleButton aria-label="Toggle disabled" isDisabled>
+            <BookmarkIcon className="h-4 w-4" />
+          </ToggleButton>
+          <ToggleButton aria-label="Toggle selected" isSelected>
+            <StarIcon />
+            Selected
+          </ToggleButton>
+        </div>
       </div>
     </div>
   );
