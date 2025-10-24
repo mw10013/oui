@@ -24,7 +24,7 @@ export const toggleButtonVariants = cva(
       variant: {
         default: "bg-transparent",
         outline:
-          "border bg-background shadow-xs data-hovered:bg-accent data-hovered:text-accent-foreground dark:border-input dark:bg-input/30 dark:data-hovered:bg-input/50",
+          "border border-input bg-transparent shadow-xs data-hovered:bg-accent data-hovered:text-accent-foreground",
       },
       size: {
         default: "h-9 min-w-9 px-2",
