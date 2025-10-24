@@ -9,7 +9,9 @@ import {
   BookmarkIcon,
   HeartIcon,
   Italic,
+  Moon,
   StarIcon,
+  Sun,
   Underline,
 } from "lucide-react";
 
@@ -141,6 +143,14 @@ export default function RouteComponent() {
           <ToggleButton aria-label="Toggle selected" isSelected>
             <StarIcon />
             Selected
+          </ToggleButton>
+          <ToggleButton
+            aria-label="Theme toggle"
+            variant="ghost"
+            // className="size-9 rounded text-muted-foreground transition-[color,box-shadow] outline-none data-hovered:bg-transparent data-hovered:text-foreground/80 data-selected:bg-transparent"
+          >
+            <Sun className="dark:hidden" />
+            <Moon className="hidden dark:block" />
           </ToggleButton>
         </div>
       </div>

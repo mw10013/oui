@@ -16,7 +16,7 @@ export const toggleButtonVariants = cva(
   [
     focusVisibleStyles,
     disabledStyles,
-    "inline-flex items-center justify-center gap-2 rounded-md text-sm font-medium whitespace-nowrap transition-[color,box-shadow] data-hovered:bg-muted data-hovered:text-muted-foreground data-selected:bg-accent data-selected:text-accent-foreground [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4",
+    "group inline-flex items-center justify-center gap-2 rounded-md text-sm font-medium whitespace-nowrap transition-[color,box-shadow] data-hovered:bg-muted data-hovered:text-muted-foreground data-selected:bg-accent data-selected:text-accent-foreground [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4",
   ],
   {
     variants: {
@@ -24,6 +24,8 @@ export const toggleButtonVariants = cva(
         default: "bg-transparent",
         outline:
           "border border-input bg-transparent shadow-xs data-hovered:bg-accent data-hovered:text-accent-foreground",
+        ghost:
+          "data-hovered:bg-accent data-hovered:text-accent-foreground data-selected:bg-transparent data-selected:text-inherit dark:data-hovered:bg-accent/50",
       },
       size: {
         default: "h-9 min-w-9 px-2",
