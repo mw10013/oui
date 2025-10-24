@@ -2,6 +2,7 @@ import ThemeToggle from "@/components/theme-toggle";
 import { buttonClassName } from "@/registry/default/ui/oui-button";
 import { Link } from "@/registry/default/ui/oui-link";
 import { siGithub } from "simple-icons";
+import ThemeToggle1 from "./theme-toggle1";
 
 export default function Header() {
   return (
@@ -27,6 +28,7 @@ export default function Header() {
             </svg>
           </Link>
           <ThemeToggle />
+          <ThemeToggle1 />
         </div>
       </div>
     </header>
