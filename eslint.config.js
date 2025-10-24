@@ -10,6 +10,7 @@ export default defineConfig(
     "worker-configuration.d.ts",
     ".react-router/",
     "registry/default/ui/sidebar.tsx",
+    "registry/default/ui/toggle-group.tsx",
     "registry/default/hooks/use-mobile.ts",
   ]),
 
