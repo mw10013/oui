@@ -27,6 +27,7 @@
     {
       "name": "autocomplete-ex",
       "type": "registry:component",
+      "title": "Autocomplete Ex",
       "description": "A reusable wrapper for Autocomplete.",
       "files": [
         {
@@ -96,6 +97,7 @@
     {
       "name": "base",
       "type": "registry:ui",
+      "title": "Base",
       "description": "Base styles for Oui.",
       "files": [
         {
@@ -109,6 +111,7 @@
     {
       "name": "button",
       "type": "registry:ui",
+      "title": "Button",
       "description": "React aria components Button with shadcn characteristics.",
       "files": [
         {

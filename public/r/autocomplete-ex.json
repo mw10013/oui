@@ -2,6 +2,7 @@
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "autocomplete-ex",
   "type": "registry:component",
+  "title": "Autocomplete Ex",
   "description": "A reusable wrapper for Autocomplete.",
   "registryDependencies": [
     "https://oui.mw10013.workers.dev/r/oui-search-field-ex.json"

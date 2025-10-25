@@ -1,5 +1,11 @@
 import type { RegistryItem } from "shadcn/schema";
 import { lazy, Suspense, useMemo } from "react";
+import {
+  Item,
+  ItemContent,
+  ItemDescription,
+  ItemTitle,
+} from "@/registry/default/ui/item";
 import { LoaderCircleIcon } from "lucide-react";
 
 export default function ComponentLoader({
@@ -11,11 +17,11 @@ export default function ComponentLoader({
   const Component = useMemo(
     () =>
       lazy(() =>
-        import(`../registry/default/components/oui-${component.name}.tsx`).catch(
-          () => ({
-            default: () => null,
-          }),
-        ),
+        import(
+          `../registry/default/components/oui-${component.name}.tsx`
+        ).catch(() => ({
+          default: () => null,
+        })),
       ),
     [component],
   );
@@ -42,8 +48,11 @@ export default function ComponentLoader({
       <Component />
     </Suspense>
   ) : (
-    <div>
-      {component.name}: {component.description}
-    </div>
+    <Item className="p-0">
+      <ItemContent>
+        <ItemTitle>{component.title}</ItemTitle>
+        <ItemDescription>{component.description}</ItemDescription>
+      </ItemContent>
+    </Item>
   );
 }
