@@ -1,6 +1,6 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
-  "name": "oui-checkbox-ex-demo",
+  "name": "checkbox-ex-demo",
   "type": "registry:component",
   "registryDependencies": [
     "https://oui.mw10013.workers.dev/r/oui-checkbox-ex.json"
@@ -16,6 +16,8 @@
     "tags": [
       "checkbox",
       "checkbox-ex"
-    ]
+    ],
+    "canPreview": true,
+    "canOpenInV0": true
   }
 }

@@ -362,8 +362,10 @@
       }
     },
     {
-      "name": "oui-checkbox",
+      "name": "checkbox",
       "type": "registry:ui",
+      "title": "Checkbox",
+      "description": "React aria components Checkbox with shadcn characteristics.",
       "files": [
         {
           "path": "registry/default/ui/oui-checkbox.tsx",
@@ -377,10 +379,13 @@
         "react-aria-components",
         "lucide-react",
         "tailwind-merge"
-      ]
+      ],
+      "meta": {
+        "tags": ["checkbox"]
+      }
     },
     {
-      "name": "oui-checkbox-demo",
+      "name": "checkbox-demo",
       "type": "registry:component",
       "files": [
         {
@@ -392,11 +397,13 @@
         "https://oui.mw10013.workers.dev/r/oui-checkbox.json"
       ],
       "meta": {
-        "tags": ["checkbox"]
+        "tags": ["checkbox"],
+        "canPreview": true,
+        "canOpenInV0": true
       }
     },
     {
-      "name": "oui-checkbox-demo-border",
+      "name": "checkbox-demo-border",
       "type": "registry:component",
       "files": [
         {
@@ -408,11 +415,13 @@
         "https://oui.mw10013.workers.dev/r/oui-checkbox.json"
       ],
       "meta": {
-        "tags": ["checkbox"]
+        "tags": ["checkbox"],
+        "canPreview": true,
+        "canOpenInV0": true
       }
     },
     {
-      "name": "oui-checkbox-demo-disabled",
+      "name": "checkbox-demo-disabled",
       "type": "registry:component",
       "files": [
         {
@@ -424,12 +433,16 @@
         "https://oui.mw10013.workers.dev/r/oui-checkbox.json"
       ],
       "meta": {
-        "tags": ["checkbox", "disabled"]
+        "tags": ["checkbox", "disabled"],
+        "canPreview": true,
+        "canOpenInV0": true
       }
     },
     {
-      "name": "oui-checkbox-ex",
+      "name": "checkbox-ex",
       "type": "registry:component",
+      "title": "Checkbox Ex",
+      "description": "A reusable wrapper for Checkbox.",
       "files": [
         {
           "path": "registry/default/components/oui-checkbox-ex.tsx",
@@ -438,8 +451,6 @@
       ],
       "registryDependencies": [
         "https://oui.mw10013.workers.dev/r/oui-checkbox.json",
-        "https://oui.mw10013.workers.dev/r/oui-label.json",
-        "https://oui.mw10013.workers.dev/r/oui-link.json",
         "https://oui.mw10013.workers.dev/r/oui-text.json"
       ],
       "meta": {
@@ -447,7 +458,7 @@
       }
     },
     {
-      "name": "oui-checkbox-ex-demo",
+      "name": "checkbox-ex-demo",
       "type": "registry:component",
       "files": [
         {
@@ -459,7 +470,9 @@
         "https://oui.mw10013.workers.dev/r/oui-checkbox-ex.json"
       ],
       "meta": {
-        "tags": ["checkbox", "checkbox-ex"]
+        "tags": ["checkbox", "checkbox-ex"],
+        "canPreview": true,
+        "canOpenInV0": true
       }
     },
     {

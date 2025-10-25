@@ -1,6 +1,6 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
-  "name": "oui-checkbox-demo-disabled",
+  "name": "checkbox-demo-disabled",
   "type": "registry:component",
   "registryDependencies": [
     "https://oui.mw10013.workers.dev/r/oui-checkbox.json"
@@ -16,6 +16,8 @@
     "tags": [
       "checkbox",
       "disabled"
-    ]
+    ],
+    "canPreview": true,
+    "canOpenInV0": true
   }
 }

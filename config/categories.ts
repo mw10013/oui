@@ -39,17 +39,18 @@ export const categories: Category[] = [
       { name: "button-demo-lg" },
     ],
   },
-  // {
-  //   name: "Checkbox",
-  //   slug: "checkbox",
-  //   components: [
-  //     { name: "oui-checkbox-demo" },
-  //     { name: "oui-checkbox-demo-border" },
-  //     { name: "oui-checkbox-demo-disabled" },
-  //     { name: "oui-checkbox-ex" },
-  //     { name: "oui-checkbox-ex-demo" },
-  //   ],
-  // },
+  {
+    name: "Checkbox",
+    slug: "checkbox",
+    components: [
+      { name: "checkbox" },
+      { name: "checkbox-demo" },
+      { name: "checkbox-demo-border" },
+      { name: "checkbox-demo-disabled" },
+      { name: "checkbox-ex" },
+      { name: "checkbox-ex-demo" },
+    ],
+  },
   // {
   //   name: "Checkbox Group",
   //   slug: "checkbox-group",
