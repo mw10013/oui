@@ -1,18 +1,29 @@
+import type { RegistryItem } from "shadcn/schema";
 import { lazy, Suspense, useMemo } from "react";
 import { LoaderCircleIcon } from "lucide-react";
 
-export default function ComponentLoader({ name }: { name: string }) {
+export default function ComponentLoader({
+  component,
+}: {
+  component: RegistryItem;
+}) {
   // https://github.com/rollup/plugins/tree/master/packages/dynamic-import-vars#limitations
   const Component = useMemo(
     () =>
       lazy(() =>
-        import(`../registry/default/components/${name}.tsx`).catch(() => ({
-          default: () => null,
-        })),
+        import(`../registry/default/components/oui-${component.name}.tsx`).catch(
+          () => ({
+            default: () => null,
+          }),
+        ),
       ),
-    [name],
+    [component],
   );
-  return (
+  console.log(
+    // eslint-disable-next-line @typescript-eslint/restrict-template-expressions
+    `ComponentLoader: ${component.name}: ${component.type}: canPreview: ${component.meta?.canPreview}`,
+  );
+  return component.meta?.canPreview ? (
     <Suspense
       fallback={
         <div
@@ -30,5 +41,9 @@ export default function ComponentLoader({ name }: { name: string }) {
     >
       <Component />
     </Suspense>
+  ) : (
+    <div>
+      {component.name}: {component.description}
+    </div>
   );
 }

@@ -1,6 +1,6 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
-  "name": "oui-button-demo-disabled-animation",
+  "name": "button-demo-disabled-animation",
   "type": "registry:component",
   "registryDependencies": [
     "https://oui.mw10013.workers.dev/r/oui-button.json"
@@ -17,6 +17,8 @@
       "button",
       "disabled"
     ],
-    "alignment": "text-center"
+    "canPreview": true,
+    "alignment": "text-center",
+    "canOpenInV0": true
   }
 }

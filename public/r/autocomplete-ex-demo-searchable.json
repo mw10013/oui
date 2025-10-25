@@ -1,6 +1,6 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
-  "name": "oui-autocomplete-ex-demo-searchable",
+  "name": "autocomplete-ex-demo-searchable",
   "type": "registry:component",
   "registryDependencies": [
     "https://oui.mw10013.workers.dev/r/oui-autocomplete-ex.json",
@@ -20,6 +20,8 @@
       "autocomplete-ex",
       "list-box",
       "select-ex-popover"
-    ]
+    ],
+    "canPreview": true,
+    "canOpenInV0": true
   }
 }

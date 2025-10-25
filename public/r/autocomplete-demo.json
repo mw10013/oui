@@ -1,6 +1,6 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
-  "name": "oui-autocomplete-demo",
+  "name": "autocomplete-demo",
   "type": "registry:component",
   "registryDependencies": [
     "https://oui.mw10013.workers.dev/r/oui-input.json",
@@ -18,10 +18,10 @@
   "meta": {
     "tags": [
       "autocomplete",
-      "input",
-      "label",
       "list-box",
       "search-field"
-    ]
+    ],
+    "canPreview": true,
+    "canOpenInV0": true
   }
 }

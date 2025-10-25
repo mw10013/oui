@@ -4,7 +4,7 @@
   "homepage": "https://oui.mw10013.workers.dev",
   "items": [
     {
-      "name": "oui-autocomplete-demo",
+      "name": "autocomplete-demo",
       "type": "registry:component",
       "files": [
         {
@@ -19,12 +19,15 @@
         "https://oui.mw10013.workers.dev/r/oui-search-field.json"
       ],
       "meta": {
-        "tags": ["autocomplete", "input", "label", "list-box", "search-field"]
+        "tags": ["autocomplete", "list-box", "search-field"],
+        "canPreview": true,
+        "canOpenInV0": true
       }
     },
     {
-      "name": "oui-autocomplete-ex",
+      "name": "autocomplete-ex",
       "type": "registry:component",
+      "description": "A reusable wrapper for Autocomplete.",
       "files": [
         {
           "path": "registry/default/components/oui-autocomplete-ex.tsx",
@@ -32,17 +35,14 @@
         }
       ],
       "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/oui-search-field-ex.json",
-        "https://oui.mw10013.workers.dev/r/oui-label.json",
-        "https://oui.mw10013.workers.dev/r/oui-link.json",
-        "https://oui.mw10013.workers.dev/r/oui-text.json"
+        "https://oui.mw10013.workers.dev/r/oui-search-field-ex.json"
       ],
       "meta": {
-        "tags": ["autocomplete", "autocomplete-ex"]
+        "tags": ["autocomplete", "autocomplete-ex", "search-field-ex"]
       }
     },
     {
-      "name": "oui-autocomplete-ex-demo",
+      "name": "autocomplete-ex-demo",
       "type": "registry:component",
       "files": [
         {
@@ -63,11 +63,13 @@
           "avatar",
           "list-box",
           "select-ex-popover"
-        ]
+        ],
+        "canPreview": true,
+        "canOpenInV0": true
       }
     },
     {
-      "name": "oui-autocomplete-ex-demo-searchable",
+      "name": "autocomplete-ex-demo-searchable",
       "type": "registry:component",
       "files": [
         {
@@ -86,12 +88,15 @@
           "autocomplete-ex",
           "list-box",
           "select-ex-popover"
-        ]
+        ],
+        "canPreview": true,
+        "canOpenInV0": true
       }
     },
     {
-      "name": "oui-base",
+      "name": "base",
       "type": "registry:ui",
+      "description": "Base styles for Oui.",
       "files": [
         {
           "path": "registry/default/ui/oui-base.ts",
@@ -102,8 +107,9 @@
       "dependencies": ["react-aria-components", "tailwind-merge"]
     },
     {
-      "name": "oui-button",
+      "name": "button",
       "type": "registry:ui",
+      "description": "React aria components Button with shadcn characteristics.",
       "files": [
         {
           "path": "registry/default/ui/oui-button.tsx",
@@ -117,10 +123,13 @@
         "react-aria-components",
         "class-variance-authority",
         "tailwind-merge"
-      ]
+      ],
+      "meta": {
+        "tags": ["button"]
+      }
     },
     {
-      "name": "oui-button-demo",
+      "name": "button-demo",
       "type": "registry:component",
       "files": [
         {
@@ -133,11 +142,13 @@
       ],
       "meta": {
         "tags": ["button"],
-        "alignment": "text-center"
+        "canPreview": true,
+        "alignment": "text-center",
+        "canOpenInV0": true
       }
     },
     {
-      "name": "oui-button-demo-outline",
+      "name": "button-demo-outline",
       "type": "registry:component",
       "files": [
         {
@@ -150,11 +161,13 @@
       ],
       "meta": {
         "tags": ["button"],
-        "alignment": "text-center"
+        "canPreview": true,
+        "alignment": "text-center",
+        "canOpenInV0": true
       }
     },
     {
-      "name": "oui-button-demo-destructive",
+      "name": "button-demo-destructive",
       "type": "registry:component",
       "files": [
         {
@@ -167,11 +180,13 @@
       ],
       "meta": {
         "tags": ["button"],
-        "alignment": "text-center"
+        "canPreview": true,
+        "alignment": "text-center",
+        "canOpenInV0": true
       }
     },
     {
-      "name": "oui-button-demo-disabled",
+      "name": "button-demo-disabled",
       "type": "registry:component",
       "files": [
         {
@@ -184,11 +199,13 @@
       ],
       "meta": {
         "tags": ["button", "disabled"],
-        "alignment": "text-center"
+        "canPreview": true,
+        "alignment": "text-center",
+        "canOpenInV0": true
       }
     },
     {
-      "name": "oui-button-demo-disabled-animation",
+      "name": "button-demo-disabled-animation",
       "type": "registry:component",
       "files": [
         {
@@ -201,11 +218,13 @@
       ],
       "meta": {
         "tags": ["button", "disabled"],
-        "alignment": "text-center"
+        "canPreview": true,
+        "alignment": "text-center",
+        "canOpenInV0": true
       }
     },
     {
-      "name": "oui-button-demo-ghost",
+      "name": "button-demo-ghost",
       "type": "registry:component",
       "files": [
         {
@@ -218,11 +237,13 @@
       ],
       "meta": {
         "tags": ["button"],
-        "alignment": "text-center"
+        "canPreview": true,
+        "alignment": "text-center",
+        "canOpenInV0": true
       }
     },
     {
-      "name": "oui-button-demo-icon-left",
+      "name": "button-demo-icon-left",
       "type": "registry:component",
       "files": [
         {
@@ -236,11 +257,13 @@
       "dependencies": ["lucide-react"],
       "meta": {
         "tags": ["button"],
-        "alignment": "text-center"
+        "canPreview": true,
+        "alignment": "text-center",
+        "canOpenInV0": true
       }
     },
     {
-      "name": "oui-button-demo-icon-right",
+      "name": "button-demo-icon-right",
       "type": "registry:component",
       "files": [
         {
@@ -254,11 +277,13 @@
       "dependencies": ["lucide-react"],
       "meta": {
         "tags": ["button"],
-        "alignment": "text-center"
+        "canPreview": true,
+        "alignment": "text-center",
+        "canOpenInV0": true
       }
     },
     {
-      "name": "oui-button-demo-lg",
+      "name": "button-demo-lg",
       "type": "registry:component",
       "files": [
         {
@@ -271,11 +296,13 @@
       ],
       "meta": {
         "tags": ["button"],
-        "alignment": "text-center"
+        "canPreview": true,
+        "alignment": "text-center",
+        "canOpenInV0": true
       }
     },
     {
-      "name": "oui-button-demo-link",
+      "name": "button-demo-link",
       "type": "registry:component",
       "files": [
         {
@@ -288,11 +315,13 @@
       ],
       "meta": {
         "tags": ["button"],
-        "alignment": "text-center"
+        "canPreview": true,
+        "alignment": "text-center",
+        "canOpenInV0": true
       }
     },
     {
-      "name": "oui-button-demo-secondary",
+      "name": "button-demo-secondary",
       "type": "registry:component",
       "files": [
         {
@@ -305,11 +334,13 @@
       ],
       "meta": {
         "tags": ["button"],
-        "alignment": "text-center"
+        "canPreview": true,
+        "alignment": "text-center",
+        "canOpenInV0": true
       }
     },
     {
-      "name": "oui-button-demo-sm",
+      "name": "button-demo-sm",
       "type": "registry:component",
       "files": [
         {
@@ -322,7 +353,9 @@
       ],
       "meta": {
         "tags": ["button"],
-        "alignment": "text-center"
+        "canPreview": true,
+        "alignment": "text-center",
+        "canOpenInV0": true
       }
     },
     {

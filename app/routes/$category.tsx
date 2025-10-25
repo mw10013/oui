@@ -36,8 +36,8 @@ export default function RouteComponent({
       <PageGrid>
         {components.map((component) => (
           <ComponentCard key={component.name} component={component}>
-            <ComponentLoader name={component.name} />
-            <ComponentDetails component={component} />
+            <ComponentLoader name={component.name} component={component}/>
+            {/* <ComponentDetails component={component} /> */}
           </ComponentCard>
         ))}
       </PageGrid>
