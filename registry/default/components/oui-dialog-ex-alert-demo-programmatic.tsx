@@ -35,7 +35,7 @@ function ProgrammaticAlert() {
   };
   return (
     <Button variant="outline" onPress={handleConfirm}>
-      DialogExAlert Programmatic
+      Dialog Ex Alert Programmatic
     </Button>
   );
 }

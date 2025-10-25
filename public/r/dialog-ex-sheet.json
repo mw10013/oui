@@ -1,7 +1,9 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
-  "name": "oui-dialog-ex-sheet",
+  "name": "dialog-ex-sheet",
   "type": "registry:component",
+  "title": "Dialog Ex Sheet",
+  "description": "A reusable wrapper for a sheet Dialog.",
   "registryDependencies": [
     "https://oui.mw10013.workers.dev/r/oui-button.json",
     "https://oui.mw10013.workers.dev/r/oui-dialog.json",

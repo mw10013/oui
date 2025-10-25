@@ -15,7 +15,7 @@ export default function Component() {
           setOpen(true);
         }}
       >
-        DialogExAlert Ack
+        Dialog Ex Alert Ack
       </Button>
       <DialogExAlert
         isOpen={isOpen}

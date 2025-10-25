@@ -12,7 +12,7 @@ export default function Component() {
   return (
     <DialogEx
       triggerElement={
-        <Button variant="outline">DialogEx Scrollable Content</Button>
+        <Button variant="outline">Dialog Ex Scrollable Content</Button>
       }
       modalClassName="sm:max-w-[425px]"
     >

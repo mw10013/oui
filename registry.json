@@ -698,8 +698,10 @@
       }
     },
     {
-      "name": "oui-dialog",
+      "name": "dialog",
       "type": "registry:ui",
+      "title": "Dialog",
+      "description": "React aria components Dialog with shadcn characteristics.",
       "files": [
         {
           "path": "registry/default/ui/oui-dialog.tsx",
@@ -716,11 +718,13 @@
         "lucide-react",
         "class-variance-authority",
         "tailwind-merge"
-      ]
+      ],
+      "meta": {
+        "tags": ["dialog", "modal", "heading"]
+      }
     },
-
     {
-      "name": "oui-dialog-demo",
+      "name": "dialog-demo",
       "type": "registry:component",
       "files": [
         {
@@ -740,12 +744,16 @@
       ],
       "meta": {
         "tags": ["dialog", "form", "heading", "input", "modal", "text-field"],
-        "alignment": "flex-center"
+        "canPreview": true,
+        "alignment": "flex-center",
+        "canOpenInV0": true
       }
     },
     {
-      "name": "oui-dialog-ex",
+      "name": "dialog-ex",
       "type": "registry:component",
+      "title": "Dialog Ex",
+      "description": "A reusable wrapper for Dialog.",
       "files": [
         {
           "path": "registry/default/components/oui-dialog-ex.tsx",
@@ -755,18 +763,14 @@
       "registryDependencies": [
         "https://oui.mw10013.workers.dev/r/oui-dialog.json",
         "https://oui.mw10013.workers.dev/r/oui-button.json",
-        "https://oui.mw10013.workers.dev/r/oui-modal-ex.json",
-        "https://oui.mw10013.workers.dev/r/oui-button.json",
-        "https://oui.mw10013.workers.dev/r/oui-label.json",
-        "https://oui.mw10013.workers.dev/r/oui-link.json",
-        "https://oui.mw10013.workers.dev/r/oui-text.json"
+        "https://oui.mw10013.workers.dev/r/oui-modal-ex.json"
       ],
       "meta": {
-        "tags": ["dialog", "dialog-ex", "modal-ex", "modal-ex"]
+        "tags": ["dialog", "dialog-ex", "modal-ex"]
       }
     },
     {
-      "name": "oui-dialog-ex-demo",
+      "name": "dialog-ex-demo",
       "type": "registry:component",
       "files": [
         {
@@ -783,11 +787,13 @@
       ],
       "meta": {
         "tags": ["dialog", "dialog-ex", "modal-ex", "text-field-ex", "heading"],
-        "alignment": "flex-center"
+        "canPreview": true,
+        "alignment": "flex-center",
+        "canOpenInV0": true
       }
     },
     {
-      "name": "oui-dialog-ex-demo-alert",
+      "name": "dialog-ex-demo-alert",
       "type": "registry:component",
       "files": [
         {
@@ -803,11 +809,13 @@
       ],
       "meta": {
         "tags": ["dialog", "dialog-ex", "modal-ex", "heading"],
-        "alignment": "flex-center"
+        "canPreview": true,
+        "alignment": "flex-center",
+        "canOpenInV0": true
       }
     },
     {
-      "name": "oui-dialog-ex-demo-scrollable-content",
+      "name": "dialog-ex-demo-scrollable-content",
       "type": "registry:component",
       "files": [
         {
@@ -823,11 +831,13 @@
       ],
       "meta": {
         "tags": ["dialog", "dialog-ex", "modal-ex", "heading"],
-        "alignment": "flex-center"
+        "canPreview": true,
+        "alignment": "flex-center",
+        "canOpenInV0": true
       }
     },
     {
-      "name": "oui-dialog-ex-demo-sticky-footer",
+      "name": "dialog-ex-demo-sticky-footer",
       "type": "registry:component",
       "files": [
         {
@@ -843,12 +853,16 @@
       ],
       "meta": {
         "tags": ["dialog", "dialog-ex", "modal-ex", "heading"],
-        "alignment": "flex-center"
+        "canPreview": true,
+        "alignment": "flex-center",
+        "canOpenInV0": true
       }
     },
     {
-      "name": "oui-dialog-ex-alert",
+      "name": "dialog-ex-alert",
       "type": "registry:component",
+      "title": "Dialog Ex Alert",
+      "description": "A reusable wrapper for an alert Dialog.",
       "files": [
         {
           "path": "registry/default/components/oui-dialog-ex-alert.tsx",
@@ -859,17 +873,14 @@
         "https://oui.mw10013.workers.dev/r/oui-button.json",
         "https://oui.mw10013.workers.dev/r/oui-dialog.json",
         "https://oui.mw10013.workers.dev/r/oui-heading.json",
-        "https://oui.mw10013.workers.dev/r/oui-modal-ex.json",
-        "https://oui.mw10013.workers.dev/r/oui-label.json",
-        "https://oui.mw10013.workers.dev/r/oui-link.json",
-        "https://oui.mw10013.workers.dev/r/oui-text.json"
+        "https://oui.mw10013.workers.dev/r/oui-modal-ex.json"
       ],
       "meta": {
         "tags": ["dialog", "dialog-ex-alert", "heading", "modal-ex"]
       }
     },
     {
-      "name": "oui-dialog-ex-alert-demo-confirm",
+      "name": "dialog-ex-alert-demo-confirm",
       "type": "registry:component",
       "files": [
         {
@@ -883,11 +894,13 @@
       ],
       "meta": {
         "tags": ["dialog", "dialog-ex-alert"],
-        "alignment": "flex-center"
+        "canPreview": true,
+        "alignment": "flex-center",
+        "canOpenInV0": true
       }
     },
     {
-      "name": "oui-dialog-ex-alert-demo-ack",
+      "name": "dialog-ex-alert-demo-ack",
       "type": "registry:component",
       "files": [
         {
@@ -901,11 +914,13 @@
       ],
       "meta": {
         "tags": ["dialog", "dialog-ex-alert"],
-        "alignment": "flex-center"
+        "canPreview": true,
+        "alignment": "flex-center",
+        "canOpenInV0": true
       }
     },
     {
-      "name": "oui-dialog-ex-alert-demo-programmatic",
+      "name": "dialog-ex-alert-demo-programmatic",
       "type": "registry:component",
       "files": [
         {
@@ -919,12 +934,16 @@
       ],
       "meta": {
         "tags": ["dialog", "dialog-ex-alert"],
-        "alignment": "flex-center"
+        "canPreview": true,
+        "alignment": "flex-center",
+        "canOpenInV0": true
       }
     },
     {
-      "name": "oui-dialog-ex-sheet",
+      "name": "dialog-ex-sheet",
       "type": "registry:component",
+      "title": "Dialog Ex Sheet",
+      "description": "A reusable wrapper for a sheet Dialog.",
       "files": [
         {
           "path": "registry/default/components/oui-dialog-ex-sheet.tsx",
@@ -944,7 +963,7 @@
       }
     },
     {
-      "name": "oui-dialog-ex-sheet-demo",
+      "name": "dialog-ex-sheet-demo",
       "type": "registry:component",
       "files": [
         {
@@ -968,11 +987,13 @@
           "text-field-ex",
           "sheet"
         ],
-        "alignment": "flex-center"
+        "canPreview": true,
+        "alignment": "flex-center",
+        "canOpenInV0": true
       }
     },
     {
-      "name": "oui-dialog-ex-sheet-demo-sides",
+      "name": "dialog-ex-sheet-demo-sides",
       "type": "registry:component",
       "files": [
         {
@@ -993,7 +1014,9 @@
           "modal-ex-sheet",
           "heading",
           "sheet"
-        ]
+        ],
+        "canPreview": true,
+        "canOpenInV0": true
       }
     },
     {

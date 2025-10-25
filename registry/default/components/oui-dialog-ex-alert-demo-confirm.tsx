@@ -15,7 +15,7 @@ export default function Component() {
           setOpen(true);
         }}
       >
-        DialogExAlert Confirm
+        Dialog Ex Alert Confirm
       </Button>
       <DialogExAlert
         isOpen={isOpen}

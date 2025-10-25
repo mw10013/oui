@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "dialog-ex-alert-demo-confirm",
+  "type": "registry:component",
+  "registryDependencies": [
+    "https://oui.mw10013.workers.dev/r/oui-button.json",
+    "https://oui.mw10013.workers.dev/r/oui-dialog-ex-alert.json"
+  ],
+  "files": [
+    {
+      "path": "registry/default/components/oui-dialog-ex-alert-demo-confirm.tsx",
+      "content": "\"use client\";\n\nimport { useState } from \"react\";\nimport { DialogExAlert } from \"@/registry/default/components/oui-dialog-ex-alert\";\nimport { Button } from \"@/registry/default/ui/oui-button\";\n\nexport default function Component() {\n  const [isOpen, setOpen] = useState(false);\n\n  return (\n    <>\n      <Button\n        variant=\"outline\"\n        onPress={() => {\n          setOpen(true);\n        }}\n      >\n        Dialog Ex Alert Confirm\n      </Button>\n      <DialogExAlert\n        isOpen={isOpen}\n        onOpenChange={setOpen}\n        title=\"Are you absolutely sure?\"\n      >\n        This action cannot be undone. This will permanently delete your account\n        and remove your data from our servers.\n      </DialogExAlert>\n    </>\n  );\n}\n",
+      "type": "registry:component"
+    }
+  ],
+  "meta": {
+    "tags": [
+      "dialog",
+      "dialog-ex-alert"
+    ],
+    "canPreview": true,
+    "alignment": "flex-center",
+    "canOpenInV0": true
+  }
+}

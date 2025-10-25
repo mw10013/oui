@@ -14,7 +14,7 @@ import * as Rac from "react-aria-components";
 export default function Component() {
   return (
     <DialogEx
-      triggerElement={<Button variant="outline">DialogEx</Button>}
+      triggerElement={<Button variant="outline">Dialog Ex</Button>}
       modalClassName="sm:max-w-[425px]"
     >
       <Rac.Form>
