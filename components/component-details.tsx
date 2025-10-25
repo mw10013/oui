@@ -69,9 +69,11 @@ export default function ComponentDetails({
       <CopyRegistry
         url={`https://oui.mw10013.workers.dev/r/${component.name}.json`}
       />
-      <OpenInV0
-        componentSource={`https://oui.mw10013.workers.dev/r/${component.name}.json`}
-      />
+      {component.meta?.canOpenInV0 && (
+        <OpenInV0
+          componentSource={`https://oui.mw10013.workers.dev/r/${component.name}.json`}
+        />
+      )}
       <DialogEx
         className="sm:max-w-[600px]"
         triggerElement={
@@ -82,7 +84,7 @@ export default function ComponentDetails({
                 <Button
                   variant="ghost"
                   size="icon"
-                  className="text-muted-foreground/80 transition-none data-[hovered]:bg-transparent data-[hovered]:text-foreground lg:opacity-0 lg:group-focus-within/item:opacity-100 lg:group-hover/item:opacity-100"
+                  className="text-muted-foreground/80 transition-none data-hovered:bg-transparent data-hovered:text-foreground lg:opacity-0 lg:group-focus-within/item:opacity-100 lg:group-hover/item:opacity-100"
                 >
                   <CodeIcon size={16} aria-hidden={true} />
                 </Button>
@@ -146,8 +148,5 @@ export const convertRegistryPaths = (content: string): string => {
     .replace(/@\/registry\/default\/ui/g, "@/components/ui")
     .replace(/@\/registry\/default\/components/g, "@/components")
     .replace(/@\/registry\/default\/hooks/g, "@/hooks")
-    .replace(/@\/registry\/default\/lib/g, "@/lib")
-}
-
-
-
+    .replace(/@\/registry\/default\/lib/g, "@/lib");
+};

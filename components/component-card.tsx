@@ -2,7 +2,7 @@ import type { RegistryItem } from "shadcn/schema";
 import { cva } from "class-variance-authority";
 
 const container = cva(
-  "group/item relative border-b has-[[data-comp-loading=true]]:border-none",
+  "group/item relative border-b has-data-[comp-loading=true]:border-none",
   {
     variants: {
       layoutMode: {

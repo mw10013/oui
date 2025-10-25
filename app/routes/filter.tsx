@@ -62,7 +62,7 @@ export default function RouteComponent({
             component={component}
             layoutMode="subgrid"
           >
-            <ComponentLoader name={component.name} />
+            <ComponentLoader component={component} />
             <ComponentDetails component={component} />
           </ComponentCard>
         ))}

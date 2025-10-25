@@ -21,6 +21,7 @@ Use the shadcn [cli](https://ui.shadcn.com/docs/cli) to add oui components.
 ```
 pnpm dlx shadcn@latest add https://oui.mw10013.workers.dev/r/[COMPONENT].json
 npx shadcn@latest add https://oui.mw10013.workers.dev/r/[COMPONENT].json
+yarn shadcn@latest add https://oui.mw10013.workers.dev/r/[COMPONENT].json
 bunx --bun shadcn@latest add https://oui.mw10013.workers.dev/r/[COMPONENT].json
 ```
 

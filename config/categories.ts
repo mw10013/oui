@@ -24,6 +24,7 @@ export const categories: Category[] = [
     name: "Button",
     slug: "button",
     components: [
+      { name: "button" },
       { name: "button-demo" },
       { name: "button-demo-outline" },
       { name: "button-demo-ghost" },

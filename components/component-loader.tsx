@@ -23,7 +23,7 @@ export default function ComponentLoader({
           default: () => null,
         })),
       ),
-    [component],
+    [component.name],
   );
   console.log(
     // eslint-disable-next-line @typescript-eslint/restrict-template-expressions
