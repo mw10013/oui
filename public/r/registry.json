@@ -2966,6 +2966,24 @@
       "dependencies": ["react-aria-components", "class-variance-authority"]
     },
     {
+      "name": "oui-toggle-button-demo",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/default/components/oui-toggle-button-demo.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "https://oui.mw10013.workers.dev/r/oui-toggle-button.json",
+        "https://oui.mw10013.workers.dev/r/oui-tooltip.json"
+      ],
+      "dependencies": ["lucide-react"],
+      "meta": {
+        "tags": ["toggle-button", "disabled"]
+      }
+    },
+    {
       "name": "oui-tooltip",
       "type": "registry:ui",
       "files": [

@@ -55,6 +55,7 @@ export const registryTags = [
   "text-field-ex",
   "text-field-ex-horizontal",
   "text",
+  "toggle-button",
   "tooltip",
   "tooltip-ex",
 
