@@ -63,7 +63,9 @@ export const registryTags = [
   "avatar",
   "disabled",
   "multiple",
+  "react-router",
   "sheet",
+  "theme",
 
   // Component tags
   // "accordion",

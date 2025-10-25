@@ -2174,24 +2174,6 @@
       }
     },
     {
-      "name": "oui-react-router-theme-toggle-button",
-      "type": "registry:component",
-      "files": [
-        {
-          "path": "registry/default/components/oui-react-router-theme-toggle-button.tsx",
-          "type": "registry:component"
-        }
-      ],
-      "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/oui-toggle-button.json"
-      ],
-
-      "dependencies": ["remix-themes"],
-      "meta-": {
-        "tags": ["react-router", "toggle-button", "theme"]
-      }
-    },
-    {
       "name": "oui-search-field",
       "type": "registry:ui",
       "files": [
@@ -2981,6 +2963,25 @@
       "dependencies": ["lucide-react"],
       "meta": {
         "tags": ["toggle-button", "disabled"]
+      }
+    },
+    {
+      "name": "oui-react-router-theme-toggle-button",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/default/components/oui-react-router-theme-toggle-button.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "https://oui.mw10013.workers.dev/r/oui-toggle-button.json"
+      ],
+
+      "dependencies": ["remix-themes"],
+      "meta": {
+        "tags": ["toggle-button", "react-router", "theme"],
+        "alignment": "flex-center"
       }
     },
     {

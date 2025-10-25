@@ -14,5 +14,13 @@
       "content": "import { ToggleButton } from \"@/registry/default/ui/oui-toggle-button\";\nimport { Moon, Sun } from \"lucide-react\";\nimport { Theme, useTheme } from \"remix-themes\";\n\nexport default function ReactRouterThemeToggleButton() {\n  const [theme, setTheme, metadata] = useTheme();\n\n  const smartToggle = () => {\n    /* The smart toggle by @nrjdalal */\n    const prefersDarkScheme = window.matchMedia(\n      \"(prefers-color-scheme: dark)\",\n    ).matches;\n    if (metadata.definedBy === \"SYSTEM\") {\n      setTheme(prefersDarkScheme ? Theme.LIGHT : Theme.DARK);\n    } else if (\n      (theme === Theme.LIGHT && !prefersDarkScheme) ||\n      (theme === Theme.DARK && prefersDarkScheme)\n    ) {\n      setTheme(theme === Theme.LIGHT ? Theme.DARK : Theme.LIGHT);\n    } else {\n      setTheme(null);\n    }\n  };\n\n  return (\n    <ToggleButton\n      isSelected={metadata.definedBy === \"SYSTEM\"}\n      onChange={() => {\n        smartToggle();\n      }}\n      aria-label=\"Toggle dark mode\"\n      variant=\"ghost\"\n    >\n      <Sun className=\"dark:hidden\" size={20} aria-hidden=\"true\" />\n      <Moon className=\"hidden dark:block\" size={20} aria-hidden=\"true\" />\n      <span className=\"sr-only\">Switch to system/light/dark version</span>\n    </ToggleButton>\n  );\n}\n",
       "type": "registry:component"
     }
-  ]
+  ],
+  "meta": {
+    "tags": [
+      "toggle-button",
+      "react-router",
+      "theme"
+    ],
+    "alignment": "flex-center"
+  }
 }

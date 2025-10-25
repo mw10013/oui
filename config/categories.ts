@@ -305,7 +305,10 @@ export const categories: Category[] = [
   {
     name: "Toggle Button",
     slug: "toggle-button",
-    components: [{ name: "oui-toggle-button-demo" }],
+    components: [
+      { name: "oui-toggle-button-demo" },
+      { name: "oui-react-router-theme-toggle-button" },
+    ],
   },
   {
     name: "Tooltip",
