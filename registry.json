@@ -2182,6 +2182,11 @@
           "type": "registry:component"
         }
       ],
+      "registryDependencies": [
+        "https://oui.mw10013.workers.dev/r/oui-toggle-button.json"
+      ],
+
+      "dependencies": ["rremix-themes"],
       "meta-": {
         "tags": ["react-router", "toggle-button", "theme"]
       }
@@ -2945,6 +2950,20 @@
       "meta": {
         "tags": ["text-field", "text-field-ex-horizontal"]
       }
+    },
+    {
+      "name": "oui-toggle-button",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "registry/default/ui/oui-toggle-button.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "registryDependencies": [
+        "https://oui.mw10013.workers.dev/r/oui-base.json"
+      ],
+      "dependencies": ["react-aria-components", "class-variance-authority"]
     },
     {
       "name": "oui-tooltip",

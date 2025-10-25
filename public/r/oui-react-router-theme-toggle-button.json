@@ -2,6 +2,12 @@
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "oui-react-router-theme-toggle-button",
   "type": "registry:component",
+  "dependencies": [
+    "rremix-themes"
+  ],
+  "registryDependencies": [
+    "https://oui.mw10013.workers.dev/r/oui-toggle-button.json"
+  ],
   "files": [
     {
       "path": "registry/default/components/oui-react-router-theme-toggle-button.tsx",
