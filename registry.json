@@ -2174,6 +2174,19 @@
       }
     },
     {
+      "name": "oui-react-router-theme-toggle-button",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/default/components/oui-react-router-theme-toggle-button.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "meta-": {
+        "tags": ["react-router", "toggle-button", "theme"]
+      }
+    },
+    {
       "name": "oui-search-field",
       "type": "registry:ui",
       "files": [

@@ -2,7 +2,7 @@ import { ToggleButton } from "@/registry/default/ui/oui-toggle-button";
 import { Moon, Sun } from "lucide-react";
 import { Theme, useTheme } from "remix-themes";
 
-export default function ThemeToggle1() {
+export default function ReactRouterThemeToggleButton() {
   const [theme, setTheme, metadata] = useTheme();
 
   const smartToggle = () => {

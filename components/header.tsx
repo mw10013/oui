@@ -1,8 +1,7 @@
-import ThemeToggle from "@/components/theme-toggle";
+import ReactRouterThemeToggleButton from "@/registry/default/components/oui-react-router-theme-toggle-button";
 import { buttonClassName } from "@/registry/default/ui/oui-button";
 import { Link } from "@/registry/default/ui/oui-link";
 import { siGithub } from "simple-icons";
-import ThemeToggle1 from "./theme-toggle1";
 
 export default function Header() {
   return (
@@ -27,8 +26,7 @@ export default function Header() {
               <path d={siGithub.path} />
             </svg>
           </Link>
-          <ThemeToggle />
-          <ThemeToggle1 />
+          <ReactRouterThemeToggleButton />
         </div>
       </div>
     </header>
