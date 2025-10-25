@@ -1,7 +1,9 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
-  "name": "oui-checkbox-group",
+  "name": "checkbox-group",
   "type": "registry:ui",
+  "title": "Checkbox Group",
+  "description": "React aria components Checkbox Group with shadcn characteristics.",
   "dependencies": [
     "react-aria-components"
   ],

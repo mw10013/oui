@@ -476,8 +476,10 @@
       }
     },
     {
-      "name": "oui-checkbox-group",
+      "name": "checkbox-group",
       "type": "registry:ui",
+      "title": "Checkbox Group",
+      "description": "React aria components Checkbox Group with shadcn characteristics.",
       "files": [
         {
           "path": "registry/default/ui/oui-checkbox-group.tsx",
@@ -504,12 +506,16 @@
         "https://oui.mw10013.workers.dev/r/oui-label.json"
       ],
       "meta": {
-        "tags": ["checkbox-group"]
+        "tags": ["checkbox-group"],
+        "canPreview": true,
+        "canOpenInV0": true
       }
     },
     {
-      "name": "oui-checkbox-group-ex",
+      "name": "checkbox-group-ex",
       "type": "registry:component",
+      "title": "Checkbox Group Ex",
+      "description": "Reusable wrapper for Checkbox Group.",
       "files": [
         {
           "path": "registry/default/components/oui-checkbox-group-ex.tsx",
@@ -520,7 +526,6 @@
         "https://oui.mw10013.workers.dev/r/oui-checkbox-group.json",
         "https://oui.mw10013.workers.dev/r/oui-field-error.json",
         "https://oui.mw10013.workers.dev/r/oui-label.json",
-        "https://oui.mw10013.workers.dev/r/oui-link.json",
         "https://oui.mw10013.workers.dev/r/oui-text.json"
       ],
       "meta": {
@@ -534,7 +539,7 @@
       }
     },
     {
-      "name": "oui-checkbox-group-ex-demo",
+      "name": "checkbox-group-ex-demo",
       "type": "registry:component",
       "files": [
         {
@@ -547,7 +552,9 @@
         "https://oui.mw10013.workers.dev/r/oui-checkbox.json"
       ],
       "meta": {
-        "tags": ["checkbox-group", "checkbox-group-ex", "checkbox"]
+        "tags": ["checkbox-group", "checkbox-group-ex", "checkbox"],
+        "canPreview": true,
+        "canOpenInV0": true
       }
     },
     {

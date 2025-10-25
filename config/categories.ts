@@ -51,15 +51,16 @@ export const categories: Category[] = [
       { name: "checkbox-ex-demo" },
     ],
   },
-  // {
-  //   name: "Checkbox Group",
-  //   slug: "checkbox-group",
-  //   components: [
-  //     { name: "oui-checkbox-group-demo" },
-  //     { name: "oui-checkbox-group-ex" },
-  //     { name: "oui-checkbox-group-ex-demo" },
-  //   ],
-  // },
+  {
+    name: "Checkbox Group",
+    slug: "checkbox-group",
+    components: [
+      { name: "checkbox-group" },
+      { name: "checkbox-group-demo" },
+      { name: "checkbox-group-ex" },
+      { name: "checkbox-group-ex-demo" },
+    ],
+  },
   // {
   //   name: "Combo Box",
   //   slug: "combo-box",

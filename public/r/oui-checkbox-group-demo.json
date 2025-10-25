@@ -17,6 +17,8 @@
   "meta": {
     "tags": [
       "checkbox-group"
-    ]
+    ],
+    "canPreview": true,
+    "canOpenInV0": true
   }
 }
