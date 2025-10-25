@@ -29,7 +29,7 @@ const frameworks = [
 export default function Component() {
   return (
     <ComboBoxEx
-      label="ComboBoxEx"
+      label="Combo Box Ex"
       placeholder="Select framework..."
       items={frameworks}
       className="md:max-w-[200px]"

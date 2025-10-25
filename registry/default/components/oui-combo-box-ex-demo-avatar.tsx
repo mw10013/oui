@@ -26,7 +26,7 @@ const users = [
 export default function Component() {
   return (
     <ComboBoxEx
-      label="ComboBoxEx with Avatar"
+      label="Combo Box Ex with Avatar"
       placeholder="Select user..."
       defaultSelectedKey={users[0].id}
       items={users}

@@ -1,6 +1,6 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
-  "name": "oui-checkbox-group-demo",
+  "name": "checkbox-group-demo",
   "type": "registry:component",
   "registryDependencies": [
     "https://oui.mw10013.workers.dev/r/oui-checkbox-group.json",
@@ -16,7 +16,8 @@
   ],
   "meta": {
     "tags": [
-      "checkbox-group"
+      "checkbox-group",
+      "checkbox"
     ],
     "canPreview": true,
     "canOpenInV0": true

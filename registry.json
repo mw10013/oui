@@ -489,10 +489,13 @@
       "registryDependencies": [
         "https://oui.mw10013.workers.dev/r/oui-base.json"
       ],
-      "dependencies": ["react-aria-components"]
+      "dependencies": ["react-aria-components"],
+      "meta": {
+        "tags": ["checkbox-group"]
+      }
     },
     {
-      "name": "oui-checkbox-group-demo",
+      "name": "checkbox-group-demo",
       "type": "registry:component",
       "files": [
         {
@@ -506,7 +509,7 @@
         "https://oui.mw10013.workers.dev/r/oui-label.json"
       ],
       "meta": {
-        "tags": ["checkbox-group"],
+        "tags": ["checkbox-group", "checkbox"],
         "canPreview": true,
         "canOpenInV0": true
       }
@@ -558,8 +561,10 @@
       }
     },
     {
-      "name": "oui-combo-box",
+      "name": "combo-box",
       "type": "registry:ui",
+      "title": "Combo Box",
+      "description": "React aria components ComboBox with shadcn characteristics.",
       "files": [
         {
           "path": "registry/default/ui/oui-combo-box.tsx",
@@ -569,10 +574,13 @@
       "registryDependencies": [
         "https://oui.mw10013.workers.dev/r/oui-base.json"
       ],
-      "dependencies": ["react-aria-components"]
+      "dependencies": ["react-aria-components"],
+      "meta": {
+        "tags": ["combo-box"]
+      }
     },
     {
-      "name": "oui-combo-box-demo",
+      "name": "combo-box-demo",
       "type": "registry:component",
       "files": [
         {
@@ -591,12 +599,16 @@
       ],
       "dependencies": ["lucide-react"],
       "meta": {
-        "tags": ["combo-box", "input", "list-box", "popover"]
+        "tags": ["combo-box", "input", "list-box", "popover"],
+        "canPreview": true,
+        "canOpenInV0": true
       }
     },
     {
-      "name": "oui-combo-box-ex",
+      "name": "combo-box-ex",
       "type": "registry:component",
+      "title": "Combo Box Ex",
+      "description": "A reusable wrapper for Combo Box.",
       "files": [
         {
           "path": "registry/default/components/oui-combo-box-ex.tsx",
@@ -610,7 +622,6 @@
         "https://oui.mw10013.workers.dev/r/oui-group.json",
         "https://oui.mw10013.workers.dev/r/oui-input.json",
         "https://oui.mw10013.workers.dev/r/oui-label.json",
-        "https://oui.mw10013.workers.dev/r/oui-link.json",
         "https://oui.mw10013.workers.dev/r/oui-popover.json",
         "https://oui.mw10013.workers.dev/r/oui-text.json"
       ],
@@ -620,9 +631,7 @@
           "combo-box",
           "combo-box-ex",
           "input",
-          "label",
           "popover",
-          "button",
           "field-error",
           "group",
           "text"
@@ -630,7 +639,7 @@
       }
     },
     {
-      "name": "oui-combo-box-ex-demo",
+      "name": "combo-box-ex-demo",
       "type": "registry:component",
       "files": [
         {
@@ -643,11 +652,13 @@
         "https://oui.mw10013.workers.dev/r/oui-list-box.json"
       ],
       "meta": {
-        "tags": ["combo-box", "combo-box-ex", "list-box"]
+        "tags": ["combo-box", "combo-box-ex", "list-box"],
+        "canPreview": true,
+        "canOpenInV0": true
       }
     },
     {
-      "name": "oui-combo-box-ex-demo-avatar",
+      "name": "combo-box-ex-demo-avatar",
       "type": "registry:component",
       "files": [
         {
@@ -661,11 +672,13 @@
         "https://oui.mw10013.workers.dev/r/oui-list-box.json"
       ],
       "meta": {
-        "tags": ["combo-box", "combo-box-ex", "avatar", "list-box"]
+        "tags": ["combo-box", "combo-box-ex", "avatar", "list-box"],
+        "canPreview": true,
+        "canOpenInV0": true
       }
     },
     {
-      "name": "oui-combo-box-ex-demo-header",
+      "name": "combo-box-ex-demo-header",
       "type": "registry:component",
       "files": [
         {
@@ -679,7 +692,9 @@
         "https://oui.mw10013.workers.dev/r/oui-list-box.json"
       ],
       "meta": {
-        "tags": ["combo-box", "combo-box-ex", "header", "list-box"]
+        "tags": ["combo-box", "combo-box-ex", "header", "list-box"],
+        "canPreview": true,
+        "canOpenInV0": true
       }
     },
     {

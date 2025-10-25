@@ -13,7 +13,7 @@ import * as Rac from "react-aria-components";
 export default function Component() {
   return (
     <ComboBox>
-      <Label>ComboBox</Label>
+      <Label>Combo Box</Label>
       <Group>
         <Input variant="ghost" />
         <Button variant="ghost" size="icon">

@@ -44,7 +44,7 @@ const timezones = [
 export default function Component() {
   return (
     <ComboBoxEx
-      label="ComboBoxEx with Headers"
+      label="Combo Box Ex with Headers"
       defaultSelectedKey={timezones[0].timezones[0].value}
       className="md:max-w-[200px]"
     >

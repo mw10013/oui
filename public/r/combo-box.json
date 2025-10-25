@@ -1,7 +1,9 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
-  "name": "oui-combo-box",
+  "name": "combo-box",
   "type": "registry:ui",
+  "title": "Combo Box",
+  "description": "React aria components ComboBox with shadcn characteristics.",
   "dependencies": [
     "react-aria-components"
   ],
@@ -14,5 +16,10 @@
       "content": "\"use client\";\n\nimport { composeTailwindRenderProps } from \"@/registry/default/ui/oui-base\";\nimport * as Rac from \"react-aria-components\";\n\nexport function ComboBox<T extends object>({\n  className,\n  ...props\n}: Rac.ComboBoxProps<T>) {\n  return (\n    <Rac.ComboBox\n      className={composeTailwindRenderProps(\n        className,\n        \"group flex flex-col gap-2\",\n      )}\n      {...props}\n    />\n  );\n}\n",
       "type": "registry:ui"
     }
-  ]
+  ],
+  "meta": {
+    "tags": [
+      "combo-box"
+    ]
+  }
 }

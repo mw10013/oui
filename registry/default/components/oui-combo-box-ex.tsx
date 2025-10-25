@@ -6,7 +6,6 @@ import { FieldError } from "@/registry/default/ui/oui-field-error";
 import { Group } from "@/registry/default/ui/oui-group";
 import { Input } from "@/registry/default/ui/oui-input";
 import { Label } from "@/registry/default/ui/oui-label";
-import { Link } from "@/registry/default/ui/oui-link";
 import { Popover } from "@/registry/default/ui/oui-popover";
 import { Text } from "@/registry/default/ui/oui-text";
 import { ChevronsUpDown } from "lucide-react";
@@ -46,30 +45,5 @@ export function ComboBoxEx<T extends object>({
         <Rac.ListBox items={items}>{children}</Rac.ListBox>
       </Popover>
     </ComboBox>
-  );
-}
-
-export default function Component() {
-  return (
-    <div className="grid gap-2">
-      <Label>ComboBoxEx</Label>
-      <Text slot="description">
-        A reusable wrapper for{" "}
-        <Link
-          href="https://react-spectrum.adobe.com/react-aria/ComboBox.html"
-          underline="always"
-        >
-          ComboBox
-        </Link>{" "}
-        — see{" "}
-        <Link
-          href="https://oui.mw10013.workers.dev/filter?tags=combo-box-ex"
-          underline="always"
-        >
-          Uses
-        </Link>
-        .
-      </Text>
-    </div>
   );
 }

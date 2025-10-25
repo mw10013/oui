@@ -61,17 +61,18 @@ export const categories: Category[] = [
       { name: "checkbox-group-ex-demo" },
     ],
   },
-  // {
-  //   name: "Combo Box",
-  //   slug: "combo-box",
-  //   components: [
-  //     { name: "oui-combo-box-demo" },
-  //     { name: "oui-combo-box-ex" },
-  //     { name: "oui-combo-box-ex-demo" },
-  //     { name: "oui-combo-box-ex-demo-avatar" },
-  //     { name: "oui-combo-box-ex-demo-header" },
-  //   ],
-  // },
+  {
+    name: "Combo Box",
+    slug: "combo-box",
+    components: [
+      { name: "combo-box" },
+      { name: "combo-box-demo" },
+      { name: "combo-box-ex" },
+      { name: "combo-box-ex-demo" },
+      { name: "combo-box-ex-demo-avatar" },
+      { name: "combo-box-ex-demo-header" },
+    ],
+  },
   // {
   //   name: "Dialog",
   //   slug: "dialog",
