@@ -3,7 +3,7 @@
   "name": "oui-react-router-theme-toggle-button",
   "type": "registry:component",
   "dependencies": [
-    "rremix-themes"
+    "remix-themes"
   ],
   "registryDependencies": [
     "https://oui.mw10013.workers.dev/r/oui-toggle-button.json"

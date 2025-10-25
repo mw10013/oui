@@ -2186,7 +2186,7 @@
         "https://oui.mw10013.workers.dev/r/oui-toggle-button.json"
       ],
 
-      "dependencies": ["rremix-themes"],
+      "dependencies": ["remix-themes"],
       "meta-": {
         "tags": ["react-router", "toggle-button", "theme"]
       }
