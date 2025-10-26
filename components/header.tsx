@@ -1,6 +1,7 @@
-import OuiGithubIconLink from "@/registry/default/components/oui-link-icon-github";
 import ReactRouterThemeToggleButton from "@/registry/default/components/oui-react-router-theme-toggle-button";
+import * as Oui from "@/registry/default/ui/oui-index";
 import { Link } from "@/registry/default/ui/oui-link";
+import { siGithub } from "simple-icons";
 
 export default function Header() {
   return (
@@ -14,7 +15,17 @@ export default function Header() {
           Oui
         </Link>
         <div className="flex items-center gap-1">
-          <OuiGithubIconLink />
+          <Link
+            aria-label="GitHub repo"
+            href="https://github.com/mw10013/oui"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={Oui.buttonClassName({ variant: "ghost" })}
+          >
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d={siGithub.path} />
+            </svg>
+          </Link>
           <ReactRouterThemeToggleButton />
         </div>
       </div>
