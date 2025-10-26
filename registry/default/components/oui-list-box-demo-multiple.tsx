@@ -8,7 +8,7 @@ export default function Component() {
   return (
     <Item>
       <ItemContent>
-        <ItemTitle>ListBox (multiple selection)</ItemTitle>
+        <ItemTitle>List Box (multiple selection)</ItemTitle>
         <Rac.ListBox aria-label="Favorite animal" selectionMode="multiple">
           <ListBoxItem>Aardvark</ListBoxItem>
           <ListBoxItem>Cat</ListBoxItem>

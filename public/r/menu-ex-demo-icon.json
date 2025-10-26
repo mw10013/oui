@@ -1,6 +1,6 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
-  "name": "oui-menu-ex-demo-icon",
+  "name": "menu-ex-demo-icon",
   "type": "registry:component",
   "dependencies": [
     "lucide-react"
@@ -23,6 +23,8 @@
       "menu",
       "menu-ex",
       "separator"
-    ]
+    ],
+    "canPreview": true,
+    "canOpenInV0": true
   }
 }

@@ -1,0 +1,27 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "menu-ex-demo-radio-group",
+  "type": "registry:component",
+  "registryDependencies": [
+    "https://oui.mw10013.workers.dev/r/oui-button.json",
+    "https://oui.mw10013.workers.dev/r/oui-header.json",
+    "https://oui.mw10013.workers.dev/r/oui-menu.json",
+    "https://oui.mw10013.workers.dev/r/oui-menu-ex.json"
+  ],
+  "files": [
+    {
+      "path": "registry/default/components/oui-menu-ex-demo-radio-group.tsx",
+      "content": "\"use client\";\n\nimport type { Selection } from \"react-aria-components\";\nimport * as React from \"react\";\nimport { MenuEx } from \"@/registry/default/components/oui-menu-ex\";\nimport { Button } from \"@/registry/default/ui/oui-button\";\nimport { Header } from \"@/registry/default/ui/oui-header\";\nimport { MenuItem } from \"@/registry/default/ui/oui-menu\";\nimport * as Rac from \"react-aria-components\";\n\nexport default function Component() {\n  const [panelPositionKey, setPanelPositionKey] = React.useState<Selection>(\n    new Set([\"bottom\"]),\n  );\n\n  return (\n    <MenuEx\n      triggerElement={<Button variant=\"outline\">Menu Ex Radio Group</Button>}\n      className=\"w-56\"\n    >\n      <Rac.MenuSection\n        selectionMode=\"single\"\n        selectedKeys={panelPositionKey}\n        onSelectionChange={setPanelPositionKey}\n      >\n        <Header variant=\"menu\" inset>\n          Panel Position\n        </Header>\n        <MenuItem id=\"top\">Top</MenuItem>\n        <MenuItem id=\"bottom\">Bottom</MenuItem>\n        <MenuItem id=\"right\" isDisabled>\n          Right\n        </MenuItem>\n      </Rac.MenuSection>\n    </MenuEx>\n  );\n}\n",
+      "type": "registry:component"
+    }
+  ],
+  "meta": {
+    "tags": [
+      "menu",
+      "menu-ex",
+      "header"
+    ],
+    "canPreview": true,
+    "canOpenInV0": true
+  }
+}

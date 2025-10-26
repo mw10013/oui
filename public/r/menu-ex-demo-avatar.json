@@ -1,6 +1,6 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
-  "name": "oui-menu-ex-demo-avatar",
+  "name": "menu-ex-demo-avatar",
   "type": "registry:component",
   "dependencies": [
     "lucide-react"
@@ -25,6 +25,8 @@
       "menu-ex",
       "avatar",
       "separator"
-    ]
+    ],
+    "canPreview": true,
+    "canOpenInV0": true
   }
 }

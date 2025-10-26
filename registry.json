@@ -1818,8 +1818,10 @@
       }
     },
     {
-      "name": "oui-list-box",
+      "name": "list-box",
       "type": "registry:ui",
+      "title": "List Box",
+      "description": "React aria components List Box with shadcn characteristics.",
       "files": [
         {
           "path": "registry/default/ui/oui-list-box.tsx",
@@ -1833,10 +1835,13 @@
         "react-aria-components",
         "lucide-react",
         "tailwind-merge"
-      ]
+      ],
+      "meta": {
+        "tags": ["list-box"]
+      }
     },
     {
-      "name": "oui-list-box-demo",
+      "name": "list-box-demo",
       "type": "registry:component",
       "files": [
         {
@@ -1849,11 +1854,13 @@
         "item"
       ],
       "meta": {
-        "tags": ["list-box"]
+        "tags": ["list-box"],
+        "canPreview": true,
+        "canOpenInV0": true
       }
     },
     {
-      "name": "oui-list-box-demo-multiple",
+      "name": "list-box-demo-multiple",
       "type": "registry:component",
       "files": [
         {
@@ -1866,11 +1873,13 @@
         "item"
       ],
       "meta": {
-        "tags": ["list-box", "multiple"]
+        "tags": ["list-box", "multiple"],
+        "canPreview": true,
+        "canOpenInV0": true
       }
     },
     {
-      "name": "oui-list-box-ex-pagination",
+      "name": "list-box-ex-pagination",
       "type": "registry:component",
       "files": [
         {
@@ -1885,11 +1894,13 @@
         "https://oui.mw10013.workers.dev/r/oui-text.json"
       ],
       "meta": {
-        "tags-": ["list-box", "list-box-ex-pagination"]
+        "tags-": ["list-box", "list-box-ex-pagination"],
+        "canPreview": true,
+        "canOpenInV0": true
       }
     },
     {
-      "name": "oui-list-box-ex-pagination-demo",
+      "name": "list-box-ex-pagination-demo",
       "type": "registry:component",
       "files": [
         {
@@ -1901,12 +1912,16 @@
         "https://oui.mw10013.workers.dev/r/oui-list-box-ex-pagination.json"
       ],
       "meta": {
-        "tags": ["list-box"]
+        "tags": ["list-box"],
+        "canPreview": true,
+        "canOpenInV0": true
       }
     },
     {
-      "name": "oui-menu",
+      "name": "menu",
       "type": "registry:ui",
+      "title": "Menu",
+      "description": "React aria components Menu with shadcn characteristics.",
       "files": [
         {
           "path": "registry/default/ui/oui-menu.tsx",
@@ -1921,11 +1936,16 @@
         "class-variance-authority",
         "lucide-react",
         "tailwind-merge"
-      ]
+      ],
+      "meta": {
+        "tags": ["menu"]
+      }
     },
     {
-      "name": "oui-menu-ex",
+      "name": "menu-ex",
       "type": "registry:component",
+      "title": "Menu Ex",
+      "description": "Reusable wrapper for Menu.",
       "files": [
         {
           "path": "registry/default/components/oui-menu-ex.tsx",
@@ -1935,17 +1955,14 @@
       "registryDependencies": [
         "https://oui.mw10013.workers.dev/r/oui-button.json",
         "https://oui.mw10013.workers.dev/r/oui-menu.json",
-        "https://oui.mw10013.workers.dev/r/oui-popover.json",
-        "https://oui.mw10013.workers.dev/r/oui-label.json",
-        "https://oui.mw10013.workers.dev/r/oui-link.json",
-        "https://oui.mw10013.workers.dev/r/oui-text.json"
+        "https://oui.mw10013.workers.dev/r/oui-popover.json"
       ],
       "meta": {
         "tags": ["menu", "menu-ex", "popover", "button"]
       }
     },
     {
-      "name": "oui-menu-ex-demo",
+      "name": "menu-ex-demo",
       "type": "registry:component",
       "files": [
         {
@@ -1970,11 +1987,13 @@
           "popover",
           "header",
           "separator"
-        ]
+        ],
+        "canPreview": true,
+        "canOpenInV0": true
       }
     },
     {
-      "name": "oui-menu-ex-demo-checkboxes",
+      "name": "menu-ex-demo-checkboxes",
       "type": "registry:component",
       "files": [
         {
@@ -1990,11 +2009,13 @@
         "https://oui.mw10013.workers.dev/r/oui-separator.json"
       ],
       "meta": {
-        "tags": ["menu", "menu-ex", "header", "separator"]
+        "tags": ["menu", "menu-ex", "header", "separator"],
+        "canPreview": true,
+        "canOpenInV0": true
       }
     },
     {
-      "name": "oui-menu-ex-demo-radio-group",
+      "name": "menu-ex-demo-radio-group",
       "type": "registry:component",
       "files": [
         {
@@ -2009,11 +2030,13 @@
         "https://oui.mw10013.workers.dev/r/oui-menu-ex.json"
       ],
       "meta": {
-        "tags": ["menu", "menu-ex", "header"]
+        "tags": ["menu", "menu-ex", "header"],
+        "canPreview": true,
+        "canOpenInV0": true
       }
     },
     {
-      "name": "oui-menu-ex-demo-avatar",
+      "name": "menu-ex-demo-avatar",
       "type": "registry:component",
       "files": [
         {
@@ -2030,11 +2053,13 @@
       ],
       "dependencies": ["lucide-react"],
       "meta": {
-        "tags": ["menu", "menu-ex", "avatar", "separator"]
+        "tags": ["menu", "menu-ex", "avatar", "separator"],
+        "canPreview": true,
+        "canOpenInV0": true
       }
     },
     {
-      "name": "oui-menu-ex-demo-avatar-only",
+      "name": "menu-ex-demo-avatar-only",
       "type": "registry:component",
       "files": [
         {
@@ -2051,11 +2076,13 @@
       ],
       "dependencies": ["lucide-react"],
       "meta": {
-        "tags": ["menu", "menu-ex", "separator", "avatar"]
+        "tags": ["menu", "menu-ex", "separator", "avatar"],
+        "canPreview": true,
+        "canOpenInV0": true
       }
     },
     {
-      "name": "oui-menu-ex-demo-icon",
+      "name": "menu-ex-demo-icon",
       "type": "registry:component",
       "files": [
         {
@@ -2071,7 +2098,9 @@
       ],
       "dependencies": ["lucide-react"],
       "meta": {
-        "tags": ["menu", "menu-ex", "separator"]
+        "tags": ["menu", "menu-ex", "separator"],
+        "canPreview": true,
+        "canOpenInV0": true
       }
     },
     {

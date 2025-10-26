@@ -1,6 +1,6 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
-  "name": "oui-list-box-ex-pagination",
+  "name": "list-box-ex-pagination",
   "type": "registry:component",
   "registryDependencies": [
     "https://oui.mw10013.workers.dev/r/oui-button.json",
@@ -19,6 +19,8 @@
     "tags-": [
       "list-box",
       "list-box-ex-pagination"
-    ]
+    ],
+    "canPreview": true,
+    "canOpenInV0": true
   }
 }
