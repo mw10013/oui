@@ -1020,8 +1020,10 @@
       }
     },
     {
-      "name": "oui-disclosure",
+      "name": "disclosure",
       "type": "registry:ui",
+      "title": "Disclosure",
+      "description": "React aria components Disclosure with shadcn characteristics.",
       "files": [
         {
           "path": "registry/default/ui/oui-disclosure.tsx",
@@ -1031,10 +1033,13 @@
       "registryDependencies": [
         "https://oui.mw10013.workers.dev/r/oui-heading.json"
       ],
-      "dependencies": ["react-aria-components", "lucide-react"]
+      "dependencies": ["react-aria-components", "lucide-react"],
+      "meta": {
+        "tags": ["disclosure", "heading"]
+      }
     },
     {
-      "name": "oui-disclosure-demo",
+      "name": "disclosure-demo",
       "type": "registry:component",
       "files": [
         {
@@ -1047,12 +1052,16 @@
         "https://oui.mw10013.workers.dev/r/oui-heading.json"
       ],
       "meta": {
-        "tags": ["disclosure", "heading"]
+        "tags": ["disclosure", "heading"],
+        "canPreview": true,
+        "canOpenInV0": true
       }
     },
     {
-      "name": "oui-disclosure-ex",
+      "name": "disclosure-ex",
       "type": "registry:component",
+      "title": "Disclosure Ex",
+      "description": "A reusable wrapper for Disclosure.",
       "files": [
         {
           "path": "registry/default/components/oui-disclosure-ex.tsx",
@@ -1061,17 +1070,14 @@
       ],
       "registryDependencies": [
         "https://oui.mw10013.workers.dev/r/oui-disclosure.json",
-        "https://oui.mw10013.workers.dev/r/oui-heading.json",
-        "https://oui.mw10013.workers.dev/r/oui-label.json",
-        "https://oui.mw10013.workers.dev/r/oui-link.json",
-        "https://oui.mw10013.workers.dev/r/oui-text.json"
+        "https://oui.mw10013.workers.dev/r/oui-heading.json"
       ],
       "meta": {
         "tags": ["disclosure", "disclosure-ex", "heading"]
       }
     },
     {
-      "name": "oui-disclosure-ex-demo",
+      "name": "disclosure-ex-demo",
       "type": "registry:component",
       "files": [
         {
@@ -1083,11 +1089,13 @@
         "https://oui.mw10013.workers.dev/r/oui-disclosure-ex.json"
       ],
       "meta": {
-        "tags": ["disclosure", "disclosure-ex"]
+        "tags": ["disclosure", "disclosure-ex"],
+        "canPreview": true,
+        "canOpenInV0": true
       }
     },
     {
-      "name": "oui-disclosure-ex-demo-text",
+      "name": "disclosure-ex-demo-text",
       "type": "registry:component",
       "files": [
         {
@@ -1100,7 +1108,9 @@
       ],
       "meta": {
         "tags": ["disclosure", "disclosure-ex"],
-        "width": "wide"
+        "canPreview": true,
+        "width": "wide",
+        "canOpenInV0": true
       }
     },
     {

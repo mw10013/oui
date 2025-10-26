@@ -93,16 +93,17 @@ export const categories: Category[] = [
       { name: "dialog-ex-sheet-demo-sides" },
     ],
   },
-  // {
-  //   name: "Disclosure",
-  //   slug: "disclosure",
-  //   components: [
-  //     { name: "oui-disclosure-demo" },
-  //     { name: "oui-disclosure-ex" },
-  //     { name: "oui-disclosure-ex-demo" },
-  //     { name: "oui-disclosure-ex-demo-text" },
-  //   ],
-  // },
+  {
+    name: "Disclosure",
+    slug: "disclosure",
+    components: [
+      { name: "disclosure" },
+      { name: "disclosure-demo" },
+      { name: "disclosure-ex" },
+      { name: "disclosure-ex-demo" },
+      { name: "disclosure-ex-demo-text" },
+    ],
+  },
   // {
   //   name: "Field Error",
   //   slug: "field-error",

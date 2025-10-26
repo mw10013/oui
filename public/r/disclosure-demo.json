@@ -1,6 +1,6 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
-  "name": "oui-disclosure-demo",
+  "name": "disclosure-demo",
   "type": "registry:component",
   "registryDependencies": [
     "https://oui.mw10013.workers.dev/r/oui-disclosure.json",
@@ -17,6 +17,8 @@
     "tags": [
       "disclosure",
       "heading"
-    ]
+    ],
+    "canPreview": true,
+    "canOpenInV0": true
   }
 }
