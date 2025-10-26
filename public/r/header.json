@@ -1,7 +1,9 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
-  "name": "oui-header",
+  "name": "header",
   "type": "registry:ui",
+  "title": "Header",
+  "description": "React aria components Header with shadcn characteristics.",
   "dependencies": [
     "react-aria-components",
     "class-variance-authority",
@@ -14,5 +16,10 @@
       "content": "\"use client\";\n\nimport type { VariantProps } from \"class-variance-authority\";\nimport { cva } from \"class-variance-authority\";\nimport * as Rac from \"react-aria-components\";\nimport { twMerge } from \"tailwind-merge\";\n\nexport const headerVariants = cva(\"px-2 py-1.5\", {\n  variants: {\n    variant: {\n      menu: \"text-sm font-medium\", // Derived from shadcn DropdownMenuLabel\n      select: \"text-muted-foreground text-xs\", // Derived from shadcn SelectLabel\n    },\n    inset: {\n      true: \"pl-8\",\n    },\n  },\n  defaultVariants: {\n    variant: \"menu\",\n    inset: false,\n  },\n});\n\nexport interface HeaderProps\n  extends React.ComponentProps<typeof Rac.Header>,\n    VariantProps<typeof headerVariants> {}\n\nexport function Header({ variant, inset, className, ...rest }: HeaderProps) {\n  return (\n    <Rac.Header\n      className={twMerge(headerVariants({ variant, inset, className }))}\n      {...rest}\n    />\n  );\n}\n",
       "type": "registry:ui"
     }
-  ]
+  ],
+  "meta": {
+    "tags": [
+      "header"
+    ]
+  }
 }

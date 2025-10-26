@@ -1,7 +1,9 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
-  "name": "oui-heading",
+  "name": "heading",
   "type": "registry:ui",
+  "title": "Heading",
+  "description": "React aria components Heading with shadcn characteristics.",
   "dependencies": [
     "react-aria-components",
     "class-variance-authority",
@@ -14,5 +16,10 @@
       "content": "\"use client\";\n\nimport type { VariantProps } from \"class-variance-authority\";\nimport { cva } from \"class-variance-authority\";\nimport * as Rac from \"react-aria-components\";\nimport { twMerge } from \"tailwind-merge\";\n\n/**\n * Derived from shadcn DialogTitle, AlertDialogTitle, PopoverDemo, AccordionHeader\n */\nexport const headingVariants = cva(undefined, {\n  variants: {\n    variant: {\n      default: \"text-lg leading-none font-semibold\",\n      alert: \"text-lg font-semibold\",\n      popover: \"text-base leading-none font-medium\",\n      disclosure: \"flex\",\n    },\n  },\n  defaultVariants: {\n    variant: \"default\",\n  },\n});\n\nexport interface HeadingProps\n  extends Rac.HeadingProps,\n    VariantProps<typeof headingVariants> {}\n\nexport function Heading({ className, variant, ...rest }: HeadingProps) {\n  return (\n    <Rac.Heading\n      className={twMerge(headingVariants({ className, variant }))}\n      {...rest}\n    />\n  );\n}\n",
       "type": "registry:ui"
     }
-  ]
+  ],
+  "meta": {
+    "tags": [
+      "heading"
+    ]
+  }
 }

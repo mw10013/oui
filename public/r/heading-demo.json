@@ -1,6 +1,6 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
-  "name": "oui-heading-demo",
+  "name": "heading-demo",
   "type": "registry:component",
   "registryDependencies": [
     "https://oui.mw10013.workers.dev/r/oui-button.json",
@@ -21,6 +21,8 @@
       "dialog",
       "modal"
     ],
-    "alignment": "flex-center"
+    "canPreview": true,
+    "alignment": "flex-center",
+    "canOpenInV0": true
   }
 }

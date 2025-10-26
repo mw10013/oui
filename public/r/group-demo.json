@@ -1,6 +1,6 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
-  "name": "oui-group-demo",
+  "name": "group-demo",
   "type": "registry:component",
   "dependencies": [
     "lucide-react"
@@ -24,6 +24,8 @@
       "button",
       "input",
       "label"
-    ]
+    ],
+    "canPreview": true,
+    "canOpenInV0": true
   }
 }

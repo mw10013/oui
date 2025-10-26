@@ -1206,13 +1206,15 @@
           "text-field-ex"
         ],
         "canPreview": true,
-        "canOpenInV0": true 
+        "canOpenInV0": true
       }
     },
 
     {
-      "name": "oui-group",
+      "name": "group",
       "type": "registry:ui",
+      "title": "Group",
+      "description": "React aria components Group with shadcn characteristics.",
       "files": [
         {
           "path": "registry/default/ui/oui-group.tsx",
@@ -1222,10 +1224,13 @@
       "registryDependencies": [
         "https://oui.mw10013.workers.dev/r/oui-base.json"
       ],
-      "dependencies": ["react-aria-components"]
+      "dependencies": ["react-aria-components"],
+      "meta": {
+        "tags": ["group"]
+      }
     },
     {
-      "name": "oui-group-demo",
+      "name": "group-demo",
       "type": "registry:component",
       "files": [
         {
@@ -1241,12 +1246,16 @@
       ],
       "dependencies": ["lucide-react"],
       "meta": {
-        "tags": ["group", "button", "input", "label"]
+        "tags": ["group", "button", "input", "label"],
+        "canPreview": true,
+        "canOpenInV0": true
       }
     },
     {
-      "name": "oui-header",
+      "name": "header",
       "type": "registry:ui",
+      "title": "Header",
+      "description": "React aria components Header with shadcn characteristics.",
       "files": [
         {
           "path": "registry/default/ui/oui-header.tsx",
@@ -1258,10 +1267,13 @@
         "react-aria-components",
         "class-variance-authority",
         "tailwind-merge"
-      ]
+      ],
+      "meta": {
+        "tags": ["header"]
+      }
     },
     {
-      "name": "oui-header-demo",
+      "name": "header-demo",
       "type": "registry:component",
       "files": [
         {
@@ -1277,7 +1289,52 @@
       ],
       "meta": {
         "tags": ["header", "menu-ex", "menu"],
-        "alignment": "flex-center"
+        "canPreview": true,
+        "alignment": "flex-center",
+        "canOpenInV0": true
+      }
+    },
+        {
+      "name": "heading",
+      "type": "registry:ui",
+      "title": "Heading",
+      "description": "React aria components Heading with shadcn characteristics.",
+      "files": [
+        {
+          "path": "registry/default/ui/oui-heading.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "registryDependencies": [],
+      "dependencies": [
+        "react-aria-components",
+        "class-variance-authority",
+        "tailwind-merge"
+      ],
+      "meta": {
+        "tags": ["heading"]
+      }
+    },
+    {
+      "name": "heading-demo",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/default/components/oui-heading-demo.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "https://oui.mw10013.workers.dev/r/oui-button.json",
+        "https://oui.mw10013.workers.dev/r/oui-dialog.json",
+        "https://oui.mw10013.workers.dev/r/oui-heading.json",
+        "https://oui.mw10013.workers.dev/r/oui-modal.json"
+      ],
+      "meta": {
+        "tags": ["heading", "dialog", "modal"],
+        "canPreview": true,
+        "alignment": "flex-center",
+        "canOpenInV0": true
       }
     },
     {
@@ -1362,42 +1419,6 @@
       "meta": {
         "tags": ["index"],
         "width": "wide"
-      }
-    },
-    {
-      "name": "oui-heading",
-      "type": "registry:ui",
-      "files": [
-        {
-          "path": "registry/default/ui/oui-heading.tsx",
-          "type": "registry:ui"
-        }
-      ],
-      "registryDependencies": [],
-      "dependencies": [
-        "react-aria-components",
-        "class-variance-authority",
-        "tailwind-merge"
-      ]
-    },
-    {
-      "name": "oui-heading-demo",
-      "type": "registry:component",
-      "files": [
-        {
-          "path": "registry/default/components/oui-heading-demo.tsx",
-          "type": "registry:component"
-        }
-      ],
-      "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/oui-button.json",
-        "https://oui.mw10013.workers.dev/r/oui-dialog.json",
-        "https://oui.mw10013.workers.dev/r/oui-heading.json",
-        "https://oui.mw10013.workers.dev/r/oui-modal.json"
-      ],
-      "meta": {
-        "tags": ["heading", "dialog", "modal"],
-        "alignment": "flex-center"
       }
     },
     {
