@@ -5,10 +5,10 @@
   "title": "Dialog Ex Alert",
   "description": "A reusable wrapper for an alert Dialog.",
   "registryDependencies": [
-    "https://oui.mw10013.workers.dev/r/oui-button.json",
-    "https://oui.mw10013.workers.dev/r/oui-dialog.json",
-    "https://oui.mw10013.workers.dev/r/oui-heading.json",
-    "https://oui.mw10013.workers.dev/r/oui-modal-ex.json"
+    "https://oui.mw10013.workers.dev/r/button.json",
+    "https://oui.mw10013.workers.dev/r/dialog.json",
+    "https://oui.mw10013.workers.dev/r/heading.json",
+    "https://oui.mw10013.workers.dev/r/modal-ex.json"
   ],
   "files": [
     {

@@ -3,14 +3,14 @@
   "name": "dialog-demo",
   "type": "registry:component",
   "registryDependencies": [
-    "https://oui.mw10013.workers.dev/r/oui-button.json",
-    "https://oui.mw10013.workers.dev/r/oui-dialog.json",
-    "https://oui.mw10013.workers.dev/r/oui-form.json",
-    "https://oui.mw10013.workers.dev/r/oui-heading.json",
-    "https://oui.mw10013.workers.dev/r/oui-input.json",
-    "https://oui.mw10013.workers.dev/r/oui-label.json",
-    "https://oui.mw10013.workers.dev/r/oui-modal.json",
-    "https://oui.mw10013.workers.dev/r/oui-text-field.json"
+    "https://oui.mw10013.workers.dev/r/button.json",
+    "https://oui.mw10013.workers.dev/r/dialog.json",
+    "https://oui.mw10013.workers.dev/r/form.json",
+    "https://oui.mw10013.workers.dev/r/heading.json",
+    "https://oui.mw10013.workers.dev/r/input.json",
+    "https://oui.mw10013.workers.dev/r/label.json",
+    "https://oui.mw10013.workers.dev/r/modal.json",
+    "https://oui.mw10013.workers.dev/r/text-field.json"
   ],
   "files": [
     {

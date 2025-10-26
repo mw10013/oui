@@ -3,9 +3,9 @@
   "name": "autocomplete-ex-demo-searchable",
   "type": "registry:component",
   "registryDependencies": [
-    "https://oui.mw10013.workers.dev/r/oui-autocomplete-ex.json",
-    "https://oui.mw10013.workers.dev/r/oui-list-box.json",
-    "https://oui.mw10013.workers.dev/r/oui-select-ex-popover.json"
+    "https://oui.mw10013.workers.dev/r/autocomplete-ex.json",
+    "https://oui.mw10013.workers.dev/r/list-box.json",
+    "https://oui.mw10013.workers.dev/r/select-ex-popover.json"
   ],
   "files": [
     {

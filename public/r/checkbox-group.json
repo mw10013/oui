@@ -8,7 +8,7 @@
     "react-aria-components"
   ],
   "registryDependencies": [
-    "https://oui.mw10013.workers.dev/r/oui-base.json"
+    "https://oui.mw10013.workers.dev/r/base.json"
   ],
   "files": [
     {

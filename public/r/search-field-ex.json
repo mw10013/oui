@@ -5,11 +5,11 @@
   "title": "Search Field Ex",
   "description": "Reusable wrapper for Search Field.",
   "registryDependencies": [
-    "https://oui.mw10013.workers.dev/r/oui-field-error.json",
-    "https://oui.mw10013.workers.dev/r/oui-label.json",
-    "https://oui.mw10013.workers.dev/r/oui-input.json",
-    "https://oui.mw10013.workers.dev/r/oui-search-field.json",
-    "https://oui.mw10013.workers.dev/r/oui-text.json"
+    "https://oui.mw10013.workers.dev/r/field-error.json",
+    "https://oui.mw10013.workers.dev/r/label.json",
+    "https://oui.mw10013.workers.dev/r/input.json",
+    "https://oui.mw10013.workers.dev/r/search-field.json",
+    "https://oui.mw10013.workers.dev/r/text.json"
   ],
   "files": [
     {

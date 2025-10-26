@@ -3,8 +3,8 @@
   "name": "select-ex-demo-large-list",
   "type": "registry:component",
   "registryDependencies": [
-    "https://oui.mw10013.workers.dev/r/oui-list-box.json",
-    "https://oui.mw10013.workers.dev/r/oui-select-ex.json"
+    "https://oui.mw10013.workers.dev/r/list-box.json",
+    "https://oui.mw10013.workers.dev/r/select-ex.json"
   ],
   "files": [
     {

@@ -6,7 +6,7 @@
     "remix-themes"
   ],
   "registryDependencies": [
-    "https://oui.mw10013.workers.dev/r/oui-toggle-button.json"
+    "https://oui.mw10013.workers.dev/r/toggle-button.json"
   ],
   "files": [
     {

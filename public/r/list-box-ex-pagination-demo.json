@@ -3,7 +3,7 @@
   "name": "list-box-ex-pagination-demo",
   "type": "registry:component",
   "registryDependencies": [
-    "https://oui.mw10013.workers.dev/r/oui-list-box-ex-pagination.json"
+    "https://oui.mw10013.workers.dev/r/list-box-ex-pagination.json"
   ],
   "files": [
     {

@@ -8,14 +8,14 @@
     "lucide-react"
   ],
   "registryDependencies": [
-    "https://oui.mw10013.workers.dev/r/oui-combo-box.json",
-    "https://oui.mw10013.workers.dev/r/oui-button.json",
-    "https://oui.mw10013.workers.dev/r/oui-field-error.json",
-    "https://oui.mw10013.workers.dev/r/oui-group.json",
-    "https://oui.mw10013.workers.dev/r/oui-input.json",
-    "https://oui.mw10013.workers.dev/r/oui-label.json",
-    "https://oui.mw10013.workers.dev/r/oui-popover.json",
-    "https://oui.mw10013.workers.dev/r/oui-text.json"
+    "https://oui.mw10013.workers.dev/r/combo-box.json",
+    "https://oui.mw10013.workers.dev/r/button.json",
+    "https://oui.mw10013.workers.dev/r/field-error.json",
+    "https://oui.mw10013.workers.dev/r/group.json",
+    "https://oui.mw10013.workers.dev/r/input.json",
+    "https://oui.mw10013.workers.dev/r/label.json",
+    "https://oui.mw10013.workers.dev/r/popover.json",
+    "https://oui.mw10013.workers.dev/r/text.json"
   ],
   "files": [
     {

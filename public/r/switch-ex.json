@@ -5,9 +5,9 @@
   "title": "Switch Ex",
   "description": "Reusable wrapper for Switch.",
   "registryDependencies": [
-    "https://oui.mw10013.workers.dev/r/oui-base.json",
-    "https://oui.mw10013.workers.dev/r/oui-switch.json",
-    "https://oui.mw10013.workers.dev/r/oui-text.json"
+    "https://oui.mw10013.workers.dev/r/base.json",
+    "https://oui.mw10013.workers.dev/r/switch.json",
+    "https://oui.mw10013.workers.dev/r/text.json"
   ],
   "files": [
     {

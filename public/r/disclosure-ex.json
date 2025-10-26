@@ -5,8 +5,8 @@
   "title": "Disclosure Ex",
   "description": "A reusable wrapper for Disclosure.",
   "registryDependencies": [
-    "https://oui.mw10013.workers.dev/r/oui-disclosure.json",
-    "https://oui.mw10013.workers.dev/r/oui-heading.json"
+    "https://oui.mw10013.workers.dev/r/disclosure.json",
+    "https://oui.mw10013.workers.dev/r/heading.json"
   ],
   "files": [
     {

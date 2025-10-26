@@ -3,7 +3,7 @@
   "name": "switch-ex-demo-description",
   "type": "registry:component",
   "registryDependencies": [
-    "https://oui.mw10013.workers.dev/r/oui-switch-ex.json"
+    "https://oui.mw10013.workers.dev/r/switch-ex.json"
   ],
   "files": [
     {

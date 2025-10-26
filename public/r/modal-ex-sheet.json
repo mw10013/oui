@@ -5,7 +5,7 @@
   "title": "Modal Ex Sheet",
   "description": "Reusable wrapper for a sheet Modal.",
   "registryDependencies": [
-    "https://oui.mw10013.workers.dev/r/oui-modal.json"
+    "https://oui.mw10013.workers.dev/r/modal.json"
   ],
   "files": [
     {

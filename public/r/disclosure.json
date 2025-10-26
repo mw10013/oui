@@ -9,7 +9,7 @@
     "lucide-react"
   ],
   "registryDependencies": [
-    "https://oui.mw10013.workers.dev/r/oui-heading.json"
+    "https://oui.mw10013.workers.dev/r/heading.json"
   ],
   "files": [
     {

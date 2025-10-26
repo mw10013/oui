@@ -3,9 +3,9 @@
   "name": "select-ex-demo",
   "type": "registry:component",
   "registryDependencies": [
-    "https://oui.mw10013.workers.dev/r/oui-header.json",
-    "https://oui.mw10013.workers.dev/r/oui-list-box.json",
-    "https://oui.mw10013.workers.dev/r/oui-select-ex.json"
+    "https://oui.mw10013.workers.dev/r/header.json",
+    "https://oui.mw10013.workers.dev/r/list-box.json",
+    "https://oui.mw10013.workers.dev/r/select-ex.json"
   ],
   "files": [
     {

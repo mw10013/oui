@@ -5,8 +5,8 @@
   "title": "Slider Ex",
   "description": "Reusable wrapper for Slider.",
   "registryDependencies": [
-    "https://oui.mw10013.workers.dev/r/oui-label.json",
-    "https://oui.mw10013.workers.dev/r/oui-slider.json"
+    "https://oui.mw10013.workers.dev/r/label.json",
+    "https://oui.mw10013.workers.dev/r/slider.json"
   ],
   "files": [
     {

@@ -5,10 +5,10 @@
   "title": "Radio Group Ex",
   "description": "Reusable wrapper for Radio Group.",
   "registryDependencies": [
-    "https://oui.mw10013.workers.dev/r/oui-field-error.json",
-    "https://oui.mw10013.workers.dev/r/oui-label.json",
-    "https://oui.mw10013.workers.dev/r/oui-radio-group.json",
-    "https://oui.mw10013.workers.dev/r/oui-text.json"
+    "https://oui.mw10013.workers.dev/r/field-error.json",
+    "https://oui.mw10013.workers.dev/r/label.json",
+    "https://oui.mw10013.workers.dev/r/radio-group.json",
+    "https://oui.mw10013.workers.dev/r/text.json"
   ],
   "files": [
     {
