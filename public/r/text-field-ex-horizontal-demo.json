@@ -1,0 +1,23 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "text-field-ex-horizontal-demo",
+  "type": "registry:component",
+  "registryDependencies": [
+    "https://oui.mw10013.workers.dev/r/oui-text-field-ex-horizontal.json"
+  ],
+  "files": [
+    {
+      "path": "registry/default/components/oui-text-field-ex-horizontal-demo.tsx",
+      "content": "\"use client\";\n\nimport { TextFieldExHorizontal } from \"@/registry/default/components/oui-text-field-ex-horizontal\";\n\nexport default function Component() {\n  return (\n    <TextFieldExHorizontal\n      label=\"Label\"\n      placeholder=\"Placeholder\"\n      description=\"This is Text Field Ex Horizontal.\"\n    />\n  );\n}\n",
+      "type": "registry:component"
+    }
+  ],
+  "meta": {
+    "tags": [
+      "text-field",
+      "text-field-ex-horizontal"
+    ],
+    "canPreview": true,
+    "canOpenInV0": true
+  }
+}

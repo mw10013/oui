@@ -2674,8 +2674,10 @@
       }
     },
     {
-      "name": "oui-separator",
+      "name": "separator",
       "type": "registry:ui",
+      "title": "Separator",
+      "description": "React aria components Separator with shadcn characteristics.",
       "files": [
         {
           "path": "registry/default/ui/oui-separator.tsx",
@@ -2687,10 +2689,13 @@
         "react-aria-components",
         "class-variance-authority",
         "tailwind-merge"
-      ]
+      ],
+      "meta": {
+        "tags": ["separator"]
+      }
     },
     {
-      "name": "oui-separator-demo",
+      "name": "separator-demo",
       "type": "registry:component",
       "files": [
         {
@@ -2702,12 +2707,16 @@
         "https://oui.mw10013.workers.dev/r/oui-separator.json"
       ],
       "meta": {
-        "tags": ["separator"]
+        "tags": ["separator"],
+        "canPreview": true,
+        "canOpenInV0": true
       }
     },
     {
-      "name": "oui-sidebar-ex",
+      "name": "sidebar-ex",
       "type": "registry:component",
+      "title": "Sidebar Ex",
+      "description": "Reusable wrapper for Sidebar.",
       "files": [
         {
           "path": "registry/default/components/oui-sidebar-ex.tsx",
@@ -2726,8 +2735,10 @@
       }
     },
     {
-      "name": "oui-slider",
+      "name": "slider",
       "type": "registry:ui",
+      "title": "Slider",
+      "description": "React aria components Slider with shadcn characteristics.",
       "files": [
         {
           "path": "registry/default/ui/oui-slider.tsx",
@@ -2737,11 +2748,16 @@
       "registryDependencies": [
         "https://oui.mw10013.workers.dev/r/oui-base.json"
       ],
-      "dependencies": ["react-aria-components"]
+      "dependencies": ["react-aria-components"],
+      "meta": {
+        "tags": ["slider"]
+      }
     },
     {
-      "name": "oui-slider-ex",
+      "name": "slider-ex",
       "type": "registry:component",
+      "title": "Slider Ex",
+      "description": "Reusable wrapper for Slider.",
       "files": [
         {
           "path": "registry/default/components/oui-slider-ex.tsx",
@@ -2750,16 +2766,14 @@
       ],
       "registryDependencies": [
         "https://oui.mw10013.workers.dev/r/oui-label.json",
-        "https://oui.mw10013.workers.dev/r/oui-slider.json",
-        "https://oui.mw10013.workers.dev/r/oui-link.json",
-        "https://oui.mw10013.workers.dev/r/oui-text.json"
+        "https://oui.mw10013.workers.dev/r/oui-slider.json"
       ],
       "meta": {
         "tags": ["slider", "slider-ex", "label"]
       }
     },
     {
-      "name": "oui-slider-ex-demo",
+      "name": "slider-ex-demo",
       "type": "registry:component",
       "files": [
         {
@@ -2771,11 +2785,13 @@
         "https://oui.mw10013.workers.dev/r/oui-slider-ex.json"
       ],
       "meta": {
-        "tags": ["slider", "slider-ex"]
+        "tags": ["slider", "slider-ex"],
+        "canPreview": true,
+        "canOpenInV0": true
       }
     },
     {
-      "name": "oui-slider-ex-demo-disabled",
+      "name": "slider-ex-demo-disabled",
       "type": "registry:component",
       "files": [
         {
@@ -2787,12 +2803,16 @@
         "https://oui.mw10013.workers.dev/r/oui-slider-ex.json"
       ],
       "meta": {
-        "tags": ["slider", "slider-ex", "disabled"]
+        "tags": ["slider", "slider-ex", "disabled"],
+        "canPreview": true,
+        "canOpenInV0": true
       }
     },
     {
-      "name": "oui-switch",
+      "name": "switch",
       "type": "registry:ui",
+      "title": "Switch",
+      "description": "React aria components Switch with shadcn characteristics.",
       "files": [
         {
           "path": "registry/default/ui/oui-switch.tsx",
@@ -2803,11 +2823,16 @@
         "https://oui.mw10013.workers.dev/r/oui-label.json",
         "https://oui.mw10013.workers.dev/r/oui-base.json"
       ],
-      "dependencies": ["react-aria-components", "tailwind-merge"]
+      "dependencies": ["react-aria-components", "tailwind-merge"],
+      "meta": {
+        "tags": ["switch"]
+      }
     },
     {
-      "name": "oui-switch-ex",
+      "name": "switch-ex",
       "type": "registry:component",
+      "title": "Switch Ex",
+      "description": "Reusable wrapper for Switch.",
       "files": [
         {
           "path": "registry/default/components/oui-switch-ex.tsx",
@@ -2816,8 +2841,6 @@
       ],
       "registryDependencies": [
         "https://oui.mw10013.workers.dev/r/oui-base.json",
-        "https://oui.mw10013.workers.dev/r/oui-label.json",
-        "https://oui.mw10013.workers.dev/r/oui-link.json",
         "https://oui.mw10013.workers.dev/r/oui-switch.json",
         "https://oui.mw10013.workers.dev/r/oui-text.json"
       ],
@@ -2826,7 +2849,7 @@
       }
     },
     {
-      "name": "oui-switch-ex-demo",
+      "name": "switch-ex-demo",
       "type": "registry:component",
       "files": [
         {
@@ -2838,11 +2861,13 @@
         "https://oui.mw10013.workers.dev/r/oui-switch-ex.json"
       ],
       "meta": {
-        "tags": ["switch", "switch-ex"]
+        "tags": ["switch", "switch-ex"],
+        "canPreview": true,
+        "canOpenInV0": true
       }
     },
     {
-      "name": "oui-switch-ex-demo-blue",
+      "name": "switch-ex-demo-blue",
       "type": "registry:component",
       "files": [
         {
@@ -2854,11 +2879,13 @@
         "https://oui.mw10013.workers.dev/r/oui-switch-ex.json"
       ],
       "meta": {
-        "tags": ["switch", "switch-ex"]
+        "tags": ["switch", "switch-ex"],
+        "canPreview": true,
+        "canOpenInV0": true
       }
     },
     {
-      "name": "oui-switch-ex-demo-description",
+      "name": "switch-ex-demo-description",
       "type": "registry:component",
       "files": [
         {
@@ -2870,11 +2897,13 @@
         "https://oui.mw10013.workers.dev/r/oui-switch-ex.json"
       ],
       "meta": {
-        "tags": ["switch", "switch-ex"]
+        "tags": ["switch", "switch-ex"],
+        "canPreview": true,
+        "canOpenInV0": true
       }
     },
     {
-      "name": "oui-switch-ex-demo-disabled",
+      "name": "switch-ex-demo-disabled",
       "type": "registry:component",
       "files": [
         {
@@ -2886,12 +2915,16 @@
         "https://oui.mw10013.workers.dev/r/oui-switch-ex.json"
       ],
       "meta": {
-        "tags": ["switch", "switch-ex", "disabled"]
+        "tags": ["switch", "switch-ex", "disabled"],
+        "canPreview": true,
+        "canOpenInV0": true
       }
     },
     {
-      "name": "oui-table",
+      "name": "table",
       "type": "registry:ui",
+      "title": "Table",
+      "description": "React aria components Table with shadcn characteristics.",
       "files": [
         {
           "path": "registry/default/ui/oui-table.tsx",
@@ -2905,10 +2938,13 @@
         "react-aria-components",
         "lucide-react",
         "tailwind-merge"
-      ]
+      ],
+      "meta": {
+        "tags": ["table"]
+      }
     },
     {
-      "name": "oui-table-demo",
+      "name": "table-demo",
       "type": "registry:component",
       "files": [
         {
@@ -2921,11 +2957,13 @@
       ],
       "meta": {
         "tags": ["table"],
-        "width": "wide"
+        "canPreview": true,
+        "width": "wide",
+        "canOpenInV0": true
       }
     },
     {
-      "name": "oui-table-demo-action-menu",
+      "name": "table-demo-action-menu",
       "type": "registry:component",
       "files": [
         {
@@ -2944,12 +2982,16 @@
       "dependencies": ["lucide-react"],
       "meta": {
         "tags": ["table", "menu", "menu-ex", "separator", "checkbox"],
-        "width": "wide"
+        "canPreview": true,
+        "width": "wide",
+        "canOpenInV0": true
       }
     },
     {
-      "name": "oui-tabs",
+      "name": "tabs",
       "type": "registry:ui",
+      "title": "Tabs",
+      "description": "React aria components Tabs with shadcn characteristics.",
       "files": [
         {
           "path": "registry/default/ui/oui-tabs.tsx",
@@ -2959,10 +3001,13 @@
       "registryDependencies": [
         "https://oui.mw10013.workers.dev/r/oui-base.json"
       ],
-      "dependencies": ["react-aria-components"]
+      "dependencies": ["react-aria-components"],
+      "meta": {
+        "tags": ["tabs"]
+      }
     },
     {
-      "name": "oui-tabs-demo",
+      "name": "tabs-demo",
       "type": "registry:component",
       "files": [
         {
@@ -2975,12 +3020,16 @@
       ],
       "meta": {
         "tags": ["tabs"],
-        "width": "wide"
+        "canPreview": true,
+        "width": "wide",
+        "canOpenInV0": true
       }
     },
     {
-      "name": "oui-text",
+      "name": "text",
       "type": "registry:ui",
+      "title": "Text",
+      "description": "React aria components Text with shadcn characteristics.",
       "files": [
         {
           "path": "registry/default/ui/oui-text.tsx",
@@ -2992,10 +3041,13 @@
         "react-aria-components",
         "class-variance-authority",
         "tailwind-merge"
-      ]
+      ],
+      "meta": {
+        "tags": ["text"]
+      }
     },
     {
-      "name": "oui-text-demo",
+      "name": "text-demo",
       "type": "registry:component",
       "files": [
         {
@@ -3010,12 +3062,16 @@
         "https://oui.mw10013.workers.dev/r/oui-text.json"
       ],
       "meta": {
-        "tags": ["text", "input", "label", "text-field"]
+        "tags": ["text", "input", "label", "text-field"],
+        "canPreview": true,
+        "canOpenInV0": true
       }
     },
     {
-      "name": "oui-text-area",
+      "name": "text-area",
       "type": "registry:ui",
+      "title": "Text Area",
+      "description": "React aria components Text Area with shadcn characteristics.",
       "files": [
         {
           "path": "registry/default/ui/oui-text-area.tsx",
@@ -3023,10 +3079,13 @@
         }
       ],
       "registryDependencies": [],
-      "dependencies": ["react-aria-components"]
+      "dependencies": ["react-aria-components"],
+      "meta": {
+        "tags": ["text-area"]
+      }
     },
     {
-      "name": "oui-text-area-demo",
+      "name": "text-area-demo",
       "type": "registry:component",
       "files": [
         {
@@ -3038,11 +3097,13 @@
         "https://oui.mw10013.workers.dev/r/oui-text-area.json"
       ],
       "meta": {
-        "tags": ["text-area"]
+        "tags": ["text-area"],
+        "canPreview": true,
+        "canOpenInV0": true
       }
     },
     {
-      "name": "oui-text-area-demo-text-field",
+      "name": "text-area-demo-text-field",
       "type": "registry:component",
       "files": [
         {
@@ -3055,11 +3116,13 @@
         "https://oui.mw10013.workers.dev/r/oui-text-field-ex.json"
       ],
       "meta": {
-        "tags": ["text-area", "text-field-ex"]
+        "tags": ["text-area", "text-field-ex"],
+        "canPreview": true,
+        "canOpenInV0": true
       }
     },
     {
-      "name": "oui-text-area-demo-disabled",
+      "name": "text-area-demo-disabled",
       "type": "registry:component",
       "files": [
         {
@@ -3072,12 +3135,16 @@
         "https://oui.mw10013.workers.dev/r/oui-text-field-ex.json"
       ],
       "meta": {
-        "tags": ["text-area", "text-field-ex", "disabled"]
+        "tags": ["text-area", "text-field-ex", "disabled"],
+        "canPreview": true,
+        "canOpenInV0": true
       }
     },
     {
-      "name": "oui-text-field",
+      "name": "text-field",
       "type": "registry:ui",
+      "title": "Text Field",
+      "description": "React aria components Text Field with shadcn characteristics.",
       "files": [
         {
           "path": "registry/default/ui/oui-text-field.tsx",
@@ -3087,10 +3154,13 @@
       "registryDependencies": [
         "https://oui.mw10013.workers.dev/r/oui-base.json"
       ],
-      "dependencies": ["react-aria-components"]
+      "dependencies": ["react-aria-components"],
+      "meta": {
+        "tags": ["text-field"]
+      }
     },
     {
-      "name": "oui-text-field-demo",
+      "name": "text-field-demo",
       "type": "registry:component",
       "files": [
         {
@@ -3106,12 +3176,16 @@
         "https://oui.mw10013.workers.dev/r/oui-text-field.json"
       ],
       "meta": {
-        "tags": ["text-field", "field-error", "input", "label", "text"]
+        "tags": ["text-field", "field-error", "input", "label", "text"],
+        "canPreview": true,
+        "canOpenInV0": true
       }
     },
     {
-      "name": "oui-text-field-ex",
+      "name": "text-field-ex",
       "type": "registry:component",
+      "title": "Text Field Ex",
+      "description": "Reusable wrapper for Text Field.",
       "files": [
         {
           "path": "registry/default/components/oui-text-field-ex.tsx",
@@ -3122,7 +3196,6 @@
         "https://oui.mw10013.workers.dev/r/oui-text-field.json",
         "https://oui.mw10013.workers.dev/r/oui-input.json",
         "https://oui.mw10013.workers.dev/r/oui-label.json",
-        "https://oui.mw10013.workers.dev/r/oui-link.json",
         "https://oui.mw10013.workers.dev/r/oui-field-error.json",
         "https://oui.mw10013.workers.dev/r/oui-text.json"
       ],
@@ -3138,7 +3211,7 @@
       }
     },
     {
-      "name": "oui-text-field-ex-demo",
+      "name": "text-field-ex-demo",
       "type": "registry:component",
       "files": [
         {
@@ -3150,12 +3223,16 @@
         "https://oui.mw10013.workers.dev/r/oui-text-field-ex.json"
       ],
       "meta": {
-        "tags": ["text-field", "text-field-ex"]
+        "tags": ["text-field", "text-field-ex"],
+        "canPreview": true,
+        "canOpenInV0": true
       }
     },
     {
-      "name": "oui-text-field-ex-horizontal",
+      "name": "text-field-ex-horizontal",
       "type": "registry:component",
+      "title": "Text Field Ex Horizontal",
+      "description": "Reusable wrapper for Text Field with horizontal layout.",
       "files": [
         {
           "path": "registry/default/components/oui-text-field-ex-horizontal.tsx",
@@ -3167,7 +3244,6 @@
         "https://oui.mw10013.workers.dev/r/oui-input.json",
         "https://oui.mw10013.workers.dev/r/oui-label.json",
         "https://oui.mw10013.workers.dev/r/oui-field-error.json",
-        "https://oui.mw10013.workers.dev/r/oui-link.json",
         "https://oui.mw10013.workers.dev/r/oui-text.json"
       ],
       "meta": {
@@ -3182,7 +3258,7 @@
       }
     },
     {
-      "name": "oui-text-field-ex-horizontal-demo",
+      "name": "text-field-ex-horizontal-demo",
       "type": "registry:component",
       "files": [
         {
@@ -3194,12 +3270,16 @@
         "https://oui.mw10013.workers.dev/r/oui-text-field-ex-horizontal.json"
       ],
       "meta": {
-        "tags": ["text-field", "text-field-ex-horizontal"]
+        "tags": ["text-field", "text-field-ex-horizontal"],
+        "canPreview": true,
+        "canOpenInV0": true
       }
     },
     {
-      "name": "oui-toggle-button",
+      "name": "toggle-button",
       "type": "registry:ui",
+      "title": "Toggle Button",
+      "description": "React aria components Toggle Button with shadcn characteristics.",
       "files": [
         {
           "path": "registry/default/ui/oui-toggle-button.tsx",
@@ -3209,10 +3289,13 @@
       "registryDependencies": [
         "https://oui.mw10013.workers.dev/r/oui-base.json"
       ],
-      "dependencies": ["react-aria-components", "class-variance-authority"]
+      "dependencies": ["react-aria-components", "class-variance-authority"],
+      "meta": {
+        "tags": ["toggle-button"]
+      }
     },
     {
-      "name": "oui-toggle-button-demo",
+      "name": "toggle-button-demo",
       "type": "registry:component",
       "files": [
         {
@@ -3226,11 +3309,13 @@
       ],
       "dependencies": ["lucide-react"],
       "meta": {
-        "tags": ["toggle-button", "disabled"]
+        "tags": ["toggle-button", "disabled"],
+        "canPreview": true,
+        "canOpenInV0": true
       }
     },
     {
-      "name": "oui-react-router-theme-toggle-button",
+      "name": "react-router-theme-toggle-button",
       "type": "registry:component",
       "files": [
         {
@@ -3241,16 +3326,18 @@
       "registryDependencies": [
         "https://oui.mw10013.workers.dev/r/oui-toggle-button.json"
       ],
-
       "dependencies": ["remix-themes"],
       "meta": {
         "tags": ["toggle-button", "react-router", "theme"],
+        "canPreview": true,
         "alignment": "flex-center"
       }
     },
     {
-      "name": "oui-tooltip",
+      "name": "tooltip",
       "type": "registry:ui",
+      "title": "Tooltip",
+      "description": "React aria components Tooltip with shadcn characteristics.",
       "files": [
         {
           "path": "registry/default/ui/oui-tooltip.tsx",
@@ -3258,10 +3345,13 @@
         }
       ],
       "registryDependencies": [],
-      "dependencies": ["react-aria-components", "tailwind-merge"]
+      "dependencies": ["react-aria-components", "tailwind-merge"],
+      "meta": {
+        "tags": ["tooltip"]
+      }
     },
     {
-      "name": "oui-tooltip-demo",
+      "name": "tooltip-demo",
       "type": "registry:component",
       "files": [
         {
@@ -3275,12 +3365,16 @@
       ],
       "meta": {
         "tags": ["tooltip"],
-        "alignment": "flex-center"
+        "canPreview": true,
+        "alignment": "flex-center",
+        "canOpenInV0": true
       }
     },
     {
-      "name": "oui-tooltip-ex",
+      "name": "tooltip-ex",
       "type": "registry:component",
+      "title": "Tooltip Ex",
+      "description": "Reusable wrapper for Tooltip.",
       "files": [
         {
           "path": "registry/default/components/oui-tooltip-ex.tsx",
@@ -3289,17 +3383,14 @@
       ],
       "registryDependencies": [
         "https://oui.mw10013.workers.dev/r/oui-button.json",
-        "https://oui.mw10013.workers.dev/r/oui-tooltip.json",
-        "https://oui.mw10013.workers.dev/r/oui-label.json",
-        "https://oui.mw10013.workers.dev/r/oui-link.json",
-        "https://oui.mw10013.workers.dev/r/oui-text.json"
+        "https://oui.mw10013.workers.dev/r/oui-tooltip.json"
       ],
       "meta": {
         "tags": ["tooltip", "tooltip-ex", "button"]
       }
     },
     {
-      "name": "oui-tooltip-ex-demo",
+      "name": "tooltip-ex-demo",
       "type": "registry:component",
       "files": [
         {
@@ -3313,7 +3404,9 @@
       ],
       "meta": {
         "tags": ["tooltip", "tooltip-ex"],
-        "alignment": "flex-center"
+        "canPreview": true,
+        "alignment": "flex-center",
+        "canOpenInV0": true
       }
     }
   ]

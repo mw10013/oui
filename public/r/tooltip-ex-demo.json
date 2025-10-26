@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "tooltip-ex-demo",
+  "type": "registry:component",
+  "registryDependencies": [
+    "https://oui.mw10013.workers.dev/r/oui-button.json",
+    "https://oui.mw10013.workers.dev/r/oui-tooltip-ex.json"
+  ],
+  "files": [
+    {
+      "path": "registry/default/components/oui-tooltip-ex-demo.tsx",
+      "content": "\"use client\";\n\nimport { TooltipEx } from \"@/registry/default/components/oui-tooltip-ex\";\nimport { Button } from \"@/registry/default/ui/oui-button\";\n\nexport default function Component() {\n  return (\n    <TooltipEx triggerElement={<Button variant=\"outline\">Tooltip Ex</Button>}>\n      This is a tooltip\n    </TooltipEx>\n  );\n}\n",
+      "type": "registry:component"
+    }
+  ],
+  "meta": {
+    "tags": [
+      "tooltip",
+      "tooltip-ex"
+    ],
+    "canPreview": true,
+    "alignment": "flex-center",
+    "canOpenInV0": true
+  }
+}

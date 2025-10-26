@@ -5,7 +5,7 @@ import { SliderEx } from "@/registry/default/components/oui-slider-ex";
 export default function Component() {
   return (
     <SliderEx
-      aria-label="SliderEx"
+      aria-label="Slider Ex"
       defaultValue={[50]}
       maxValue={100}
       step={1}

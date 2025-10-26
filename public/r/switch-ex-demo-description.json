@@ -1,0 +1,23 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "switch-ex-demo-description",
+  "type": "registry:component",
+  "registryDependencies": [
+    "https://oui.mw10013.workers.dev/r/oui-switch-ex.json"
+  ],
+  "files": [
+    {
+      "path": "registry/default/components/oui-switch-ex-demo-description.tsx",
+      "content": "\"use client\";\n\nimport { SwitchEx } from \"@/registry/default/components/oui-switch-ex\";\n\nexport default function Component() {\n  return (\n    <SwitchEx\n      id=\"switch-demo-focus-mode\"\n      indicatorPosition=\"end\"\n      indicatorClassName=\"group-data-selected:bg-blue-500 dark:group-data-selected:bg-blue-600\"\n      containerClassName=\"shadow-xs rounded-lg border p-4 has-data-selected:border-blue-600\"\n      className=\"leading-snug\"\n      description=\"Focus is shared across devices, and turns off when you leave the app.\"\n    >\n      <div className=\"font-medium\">Share across devices</div>\n    </SwitchEx>\n  );\n}\n",
+      "type": "registry:component"
+    }
+  ],
+  "meta": {
+    "tags": [
+      "switch",
+      "switch-ex"
+    ],
+    "canPreview": true,
+    "canOpenInV0": true
+  }
+}

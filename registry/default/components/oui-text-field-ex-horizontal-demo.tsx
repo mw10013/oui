@@ -7,7 +7,7 @@ export default function Component() {
     <TextFieldExHorizontal
       label="Label"
       placeholder="Placeholder"
-      description="This is TextFieldExHorizontal."
+      description="This is Text Field Ex Horizontal."
     />
   );
 }

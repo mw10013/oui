@@ -254,91 +254,98 @@ export const categories: Category[] = [
       { name: "select-ex-popover" },
     ],
   },
-  // {
-  //   name: "Separator",
-  //   slug: "separator",
-  //   components: [{ name: "separator-demo" }],
-  // },
+  {
+    name: "Separator",
+    slug: "separator",
+    components: [{ name: "separator-demo" }],
+  },
   // {
   //   name: "Sidebar",
   //   slug: "sidebar",
   //   components: [],
   // },
-  // {
-  //   name: "Slider",
-  //   slug: "slider",
-  //   components: [
-  //     { name: "slider-ex" },
-  //     { name: "slider-ex-demo" },
-  //     { name: "slider-ex-demo-disabled" },
-  //   ],
-  // },
-  // {
-  //   name: "Switch",
-  //   slug: "switch",
-  //   components: [
-  //     { name: "switch-ex" },
-  //     { name: "switch-ex-demo" },
-  //     { name: "switch-ex-demo-blue" },
-  //     { name: "switch-ex-demo-description" },
-  //     { name: "switch-ex-demo-disabled" },
-  //   ],
-  // },
-  // {
-  //   name: "Table",
-  //   slug: "table",
-  //   components: [
-  //     { name: "table-demo" },
-  //     { name: "table-demo-action-menu" },
-  //   ],
-  // },
-  // {
-  //   name: "Tabs",
-  //   slug: "tabs",
-  //   components: [{ name: "tabs-demo" }],
-  // },
-  // {
-  //   name: "Text",
-  //   slug: "text",
-  //   components: [{ name: "text-demo" }],
-  // },
-  // {
-  //   name: "Text Area",
-  //   slug: "text-area",
-  //   components: [
-  //     { name: "text-area-demo" },
-  //     { name: "text-area-demo-text-field" },
-  //     { name: "text-area-demo-disabled" },
-  //   ],
-  // },
-  // {
-  //   name: "Text Field",
-  //   slug: "text-field",
-  //   components: [
-  //     { name: "text-field-demo" },
-  //     { name: "text-field-ex" },
-  //     { name: "text-field-ex-demo" },
-  //     { name: "text-field-ex-horizontal" },
-  //     { name: "text-field-ex-horizontal-demo" },
-  //   ],
-  // },
-  // {
-  //   name: "Toggle Button",
-  //   slug: "toggle-button",
-  //   components: [
-  //     { name: "toggle-button-demo" },
-  //     { name: "react-router-theme-toggle-button" },
-  //   ],
-  // },
-  // {
-  //   name: "Tooltip",
-  //   slug: "tooltip",
-  //   components: [
-  //     { name: "tooltip-demo" },
-  //     { name: "tooltip-ex" },
-  //     { name: "tooltip-ex-demo" },
-  //   ],
-  // },
+  {
+    name: "Slider",
+    slug: "slider",
+    components: [
+      { name: "slider" },
+      { name: "slider-ex" },
+      { name: "slider-ex-demo" },
+      { name: "slider-ex-demo-disabled" },
+    ],
+  },
+  {
+    name: "Switch",
+    slug: "switch",
+    components: [
+      { name: "switch" },
+      { name: "switch-ex" },
+      { name: "switch-ex-demo" },
+      { name: "switch-ex-demo-blue" },
+      { name: "switch-ex-demo-description" },
+      { name: "switch-ex-demo-disabled" },
+    ],
+  },
+  {
+    name: "Table",
+    slug: "table",
+    components: [
+      { name: "table" },
+      { name: "table-demo" },
+      { name: "table-demo-action-menu" },
+    ],
+  },
+  {
+    name: "Tabs",
+    slug: "tabs",
+    components: [{ name: "tabs" },{ name: "tabs-demo" }],
+  },
+  {
+    name: "Text",
+    slug: "text",
+    components: [{ name: "text" }, { name: "text-demo" }],
+  },
+  {
+    name: "Text Area",
+    slug: "text-area",
+    components: [
+      { name: "text-area" },
+      { name: "text-area-demo" },
+      { name: "text-area-demo-text-field" },
+      { name: "text-area-demo-disabled" },
+    ],
+  },
+  {
+    name: "Text Field",
+    slug: "text-field",
+    components: [
+      { name: "text-field" },
+      { name: "text-field-demo" },
+      { name: "text-field-ex" },
+      { name: "text-field-ex-demo" },
+      { name: "text-field-ex-horizontal" },
+      { name: "text-field-ex-horizontal-demo" },
+    ],
+  },
+  {
+    name: "Toggle Button",
+    slug: "toggle-button",
+    components: [
+      { name: "toggle-button" },
+      { name: "toggle-button-demo" },
+      { name: "react-router-theme-toggle-button" },
+    ],
+  },
+  {
+    name: "Tooltip",
+    slug: "tooltip",
+    components: [
+      { name: "tooltip" },
+      { name: "tooltip-demo" },
+      { name: "tooltip-ex" },
+      { name: "tooltip-ex-demo" },
+    ],
+  },
 ];
 
 export function getCategory(slug: string): Category | undefined {
