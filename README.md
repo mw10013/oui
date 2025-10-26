@@ -31,12 +31,13 @@ Note: Oui does not overwrite any shadcn files so you can run oui and shadcn comp
 
 **3. Add all oui components (optional)**
 
-You can add all oui components with a single command by adding `oui-index`. Only the core ui and ex (extension or reusable wrapper) components are added, not the demos.
+You can add all oui components with a single command by adding `index`. Only the core ui and ex (extension or reusable wrapper) components are added, not the demos.
 
 ```
-pnpm dlx shadcn@latest add https://oui.mw10013.workers.dev/r/oui-index.json
-npx shadcn@latest add https://oui.mw10013.workers.dev/r/oui-index.json
-bunx --bun shadcn@latest add https://oui.mw10013.workers.dev/r/oui-index.json
+pnpm dlx shadcn@latest add https://oui.mw10013.workers.dev/r/index.json
+npx shadcn@latest add https://oui.mw10013.workers.dev/r/index.json
+yarn shadcn@latest add https://oui.mw10013.workers.dev/r/index.json
+bunx --bun shadcn@latest add https://oui.mw10013.workers.dev/r/index.json
 ```
 
 ```ts

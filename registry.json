@@ -1294,7 +1294,7 @@
         "canOpenInV0": true
       }
     },
-        {
+    {
       "name": "heading",
       "type": "registry:ui",
       "title": "Heading",
@@ -1338,8 +1338,10 @@
       }
     },
     {
-      "name": "oui-index",
+      "name": "index",
       "type": "registry:ui",
+      "title": "Oui Index",
+      "description": "All ui and ex (extension or reusable wrapper) components. No demos.",
       "files": [
         {
           "path": "registry/default/ui/oui-index.ts",
@@ -1403,23 +1405,6 @@
         "https://oui.mw10013.workers.dev/r/oui-text-field-ex.json",
         "https://oui.mw10013.workers.dev/r/oui-tooltip-ex.json"
       ]
-    },
-    {
-      "name": "oui-index-demo",
-      "type": "registry:component",
-      "files": [
-        {
-          "path": "registry/default/components/oui-index-demo.tsx",
-          "type": "registry:component"
-        }
-      ],
-      "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/oui-index.json"
-      ],
-      "meta": {
-        "tags": ["index"],
-        "width": "wide"
-      }
     },
     {
       "name": "oui-input",

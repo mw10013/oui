@@ -120,6 +120,11 @@ export const categories: Category[] = [
     components: [{ name: "group" }, { name: "group-demo" }],
   },
   {
+    name: "Goodies",
+    slug: "goodies",
+    components: [{ name: "index" }],
+  },
+  {
     name: "Header",
     slug: "header",
     components: [{ name: "header" }, { name: "header-demo" }],
@@ -129,11 +134,6 @@ export const categories: Category[] = [
     slug: "heading",
     components: [{ name: "heading" }, { name: "heading-demo" }],
   },
-  // {
-  //   name: "Index",
-  //   slug: "index",
-  //   components: [{ name: "index-demo" }],
-  // },
   // {
   //   name: "Input",
   //   slug: "input",

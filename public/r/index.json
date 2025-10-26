@@ -1,7 +1,9 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
-  "name": "oui-index",
+  "name": "index",
   "type": "registry:ui",
+  "title": "Oui Index",
+  "description": "All ui and ex (extension or reusable wrapper) components. No demos.",
   "registryDependencies": [
     "https://oui.mw10013.workers.dev/r/oui-base.json",
     "https://oui.mw10013.workers.dev/r/oui-button.json",
