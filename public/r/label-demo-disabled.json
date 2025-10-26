@@ -1,6 +1,6 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
-  "name": "oui-label-demo-disabled",
+  "name": "label-demo-disabled",
   "type": "registry:component",
   "registryDependencies": [
     "https://oui.mw10013.workers.dev/r/oui-input.json",
@@ -17,6 +17,8 @@
     "tags": [
       "label",
       "disabled"
-    ]
+    ],
+    "canPreview": true,
+    "canOpenInV0": true
   }
 }

@@ -1407,8 +1407,10 @@
       ]
     },
     {
-      "name": "oui-input",
+      "name": "input",
       "type": "registry:ui",
+      "title": "Input",
+      "description": "React aria components Input with shadcn characteristics.",
       "files": [
         {
           "path": "registry/default/ui/oui-input.tsx",
@@ -1422,10 +1424,13 @@
         "react-aria-components",
         "class-variance-authority",
         "tailwind-merge"
-      ]
+      ],
+      "meta": {
+        "tags": ["input"]
+      }
     },
     {
-      "name": "oui-input-demo",
+      "name": "input-demo",
       "type": "registry:component",
       "files": [
         {
@@ -1437,11 +1442,13 @@
         "https://oui.mw10013.workers.dev/r/oui-input.json"
       ],
       "meta": {
-        "tags": ["input"]
+        "tags": ["input"],
+        "canPreview": true,
+        "canOpenInV0": true
       }
     },
     {
-      "name": "oui-input-demo-password",
+      "name": "input-demo-password",
       "type": "registry:component",
       "files": [
         {
@@ -1453,11 +1460,13 @@
         "https://oui.mw10013.workers.dev/r/oui-input.json"
       ],
       "meta": {
-        "tags": ["input"]
+        "tags": ["input"],
+        "canPreview": true,
+        "canOpenInV0": true
       }
     },
     {
-      "name": "oui-input-demo-disabled",
+      "name": "input-demo-disabled",
       "type": "registry:component",
       "files": [
         {
@@ -1469,12 +1478,16 @@
         "https://oui.mw10013.workers.dev/r/oui-input.json"
       ],
       "meta": {
-        "tags": ["input", "disabled"]
+        "tags": ["input", "disabled"],
+        "canPreview": true,
+        "canOpenInV0": true
       }
     },
     {
-      "name": "oui-keyboard",
+      "name": "keyboard",
       "type": "registry:ui",
+      "title": "Keyboard",
+      "description": "React aria components Keyboard with shadcn characteristics.",
       "files": [
         {
           "path": "registry/default/ui/oui-keyboard.tsx",
@@ -1482,10 +1495,13 @@
         }
       ],
       "registryDependencies": [],
-      "dependencies": ["react-aria-components", "tailwind-merge"]
+      "dependencies": ["react-aria-components", "tailwind-merge"],
+      "meta": {
+        "tags": ["keyboard"]
+      }
     },
     {
-      "name": "oui-keyboard-demo",
+      "name": "keyboard-demo",
       "type": "registry:component",
       "files": [
         {
@@ -1500,12 +1516,16 @@
         "https://oui.mw10013.workers.dev/r/oui-menu.json"
       ],
       "meta": {
-        "tags": ["keyboard", "menu-ex", "menu"]
+        "tags": ["keyboard", "menu-ex", "menu"],
+        "canPreview": true,
+        "canOpenInV0": true
       }
     },
     {
-      "name": "oui-label",
+      "name": "label",
       "type": "registry:ui",
+      "title": "Label",
+      "description": "React aria components Label with shadcn characteristics.",
       "files": [
         {
           "path": "registry/default/ui/oui-label.tsx",
@@ -1515,10 +1535,13 @@
       "registryDependencies": [
         "https://oui.mw10013.workers.dev/r/oui-base.json"
       ],
-      "dependencies": ["react-aria-components", "tailwind-merge"]
+      "dependencies": ["react-aria-components", "tailwind-merge"],
+      "meta": {
+        "tags": ["label"]
+      }
     },
     {
-      "name": "oui-label-demo",
+      "name": "label-demo",
       "type": "registry:component",
       "files": [
         {
@@ -1531,11 +1554,13 @@
         "https://oui.mw10013.workers.dev/r/oui-label.json"
       ],
       "meta": {
-        "tags": ["label"]
+        "tags": ["label"],
+        "canPreview": true,
+        "canOpenInV0": true
       }
     },
     {
-      "name": "oui-label-demo-disabled",
+      "name": "label-demo-disabled",
       "type": "registry:component",
       "files": [
         {
@@ -1548,12 +1573,16 @@
         "https://oui.mw10013.workers.dev/r/oui-label.json"
       ],
       "meta": {
-        "tags": ["label", "disabled"]
+        "tags": ["label", "disabled"],
+        "canPreview": true,
+        "canOpenInV0": true
       }
     },
     {
-      "name": "oui-link",
+      "name": "link",
       "type": "registry:ui",
+      "title": "Link",
+      "description": "React aria components Link with shadcn characteristics.",
       "files": [
         {
           "path": "registry/default/ui/oui-link.tsx",
@@ -1567,10 +1596,13 @@
         "react-aria-components",
         "class-variance-authority",
         "tailwind-merge"
-      ]
+      ],
+      "meta": {
+        "tags": ["link"]
+      }
     },
     {
-      "name": "oui-link-demo",
+      "name": "link-demo",
       "type": "registry:component",
       "files": [
         {
@@ -1583,11 +1615,13 @@
       ],
       "meta": {
         "tags": ["link"],
-        "alignment": "text-center"
+        "canPreview": true,
+        "alignment": "flex-center",
+        "canOpenInV0": true
       }
     },
     {
-      "name": "oui-link-demo-hover",
+      "name": "link-demo-hover",
       "type": "registry:component",
       "files": [
         {
@@ -1600,11 +1634,13 @@
       ],
       "meta": {
         "tags": ["link"],
-        "alignment": "text-center"
+        "canPreview": true,
+        "alignment": "flex-center",
+        "canOpenInV0": true
       }
     },
     {
-      "name": "oui-link-demo-always",
+      "name": "link-demo-always",
       "type": "registry:component",
       "files": [
         {
@@ -1617,11 +1653,13 @@
       ],
       "meta": {
         "tags": ["link"],
-        "alignment": "text-center"
+        "canPreview": true,
+        "alignment": "flex-center",
+        "canOpenInV0": true
       }
     },
     {
-      "name": "oui-link-demo-current",
+      "name": "link-demo-current",
       "type": "registry:component",
       "files": [
         {
@@ -1634,11 +1672,13 @@
       ],
       "meta": {
         "tags": ["link"],
-        "alignment": "text-center"
+        "canPreview": true,
+        "alignment": "flex-center",
+        "canOpenInV0": true
       }
     },
     {
-      "name": "oui-link-demo-focus",
+      "name": "link-demo-focus",
       "type": "registry:component",
       "files": [
         {
@@ -1651,11 +1691,13 @@
       ],
       "meta": {
         "tags": ["link"],
-        "alignment": "text-center"
+        "canPreview": true,
+        "alignment": "flex-center",
+        "canOpenInV0": true
       }
     },
     {
-      "name": "oui-link-demo-disabled",
+      "name": "link-demo-disabled",
       "type": "registry:component",
       "files": [
         {
@@ -1668,11 +1710,13 @@
       ],
       "meta": {
         "tags": ["link"],
-        "alignment": "text-center"
+        "canPreview": true,
+        "alignment": "flex-center",
+        "canOpenInV0": true
       }
     },
     {
-      "name": "oui-link-demo-button",
+      "name": "link-demo-button",
       "type": "registry:component",
       "files": [
         {
@@ -1686,11 +1730,13 @@
       ],
       "meta": {
         "tags": ["link"],
-        "alignment": "text-center"
+        "canPreview": true,
+        "alignment": "flex-center",
+        "canOpenInV0": true
       }
     },
     {
-      "name": "oui-link-demo-button-outline",
+      "name": "link-demo-button-outline",
       "type": "registry:component",
       "files": [
         {
@@ -1704,11 +1750,13 @@
       ],
       "meta": {
         "tags": ["link"],
-        "alignment": "text-center"
+        "canPreview": true,
+        "alignment": "flex-center",
+        "canOpenInV0": true
       }
     },
     {
-      "name": "oui-link-demo-button-destructive",
+      "name": "link-demo-button-destructive",
       "type": "registry:component",
       "files": [
         {
@@ -1722,7 +1770,9 @@
       ],
       "meta": {
         "tags": ["link"],
-        "alignment": "text-center"
+        "canPreview": true,
+        "alignment": "flex-center",
+        "canOpenInV0": true
       }
     },
     {
@@ -1740,11 +1790,13 @@
       ],
       "meta": {
         "tags": ["link"],
-        "alignment": "text-center"
+        "canPreview": true,
+        "alignment": "flex-center",
+        "canOpenInV0": true
       }
     },
     {
-      "name": "oui-link-demo-login",
+      "name": "link-demo-login",
       "type": "registry:component",
       "files": [
         {
@@ -1760,7 +1812,9 @@
         "https://oui.mw10013.workers.dev/r/oui-text-field-ex.json"
       ],
       "meta": {
-        "tags": ["link"]
+        "tags": ["link", "text-field-ex", "login"],
+        "canPreview": true,
+        "canOpenInV0": true
       }
     },
     {

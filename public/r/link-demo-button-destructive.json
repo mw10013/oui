@@ -1,6 +1,6 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
-  "name": "oui-link-demo-button-destructive",
+  "name": "link-demo-button-destructive",
   "type": "registry:component",
   "registryDependencies": [
     "https://oui.mw10013.workers.dev/r/oui-button.json",
@@ -17,6 +17,8 @@
     "tags": [
       "link"
     ],
-    "alignment": "text-center"
+    "canPreview": true,
+    "alignment": "flex-center",
+    "canOpenInV0": true
   }
 }

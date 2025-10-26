@@ -1,6 +1,6 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
-  "name": "oui-link-demo-always",
+  "name": "link-demo-always",
   "type": "registry:component",
   "registryDependencies": [
     "https://oui.mw10013.workers.dev/r/oui-link.json"
@@ -16,6 +16,8 @@
     "tags": [
       "link"
     ],
-    "alignment": "text-center"
+    "canPreview": true,
+    "alignment": "flex-center",
+    "canOpenInV0": true
   }
 }

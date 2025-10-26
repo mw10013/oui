@@ -1,7 +1,9 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
-  "name": "oui-input",
+  "name": "input",
   "type": "registry:ui",
+  "title": "Input",
+  "description": "React aria components Input with shadcn characteristics.",
   "dependencies": [
     "react-aria-components",
     "class-variance-authority",
@@ -16,5 +18,10 @@
       "content": "\"use client\";\n\nimport type { VariantProps } from \"class-variance-authority\";\nimport { focusVisibleStyles } from \"@/registry/default/ui/oui-base\";\nimport { cva } from \"class-variance-authority\";\nimport * as Rac from \"react-aria-components\";\nimport { twMerge } from \"tailwind-merge\";\n\n/** Derived from shadcn Input. */\nexport const inputVariants = cva(\n  [\n    \"flex h-9 w-full min-w-0 bg-transparent px-3 py-1 text-base transition-[color,box-shadow] outline-none placeholder:text-muted-foreground md:text-sm dark:bg-input/30\",\n    \"file:inline-flex file:h-7 file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground\",\n    \"selection:bg-primary selection:text-primary-foreground\",\n    \"data-disabled:pointer-events-none data-disabled:cursor-not-allowed data-disabled:opacity-50\",\n  ],\n  {\n    variants: {\n      variant: {\n        default: [\n          focusVisibleStyles,\n          \"rounded-md border border-input shadow-xs\",\n          \"data-invalid:border-destructive data-invalid:ring-destructive/20 dark:data-invalid:ring-destructive/40\",\n        ],\n        ghost: \"flex-1\",\n      },\n    },\n    defaultVariants: {\n      variant: \"default\",\n    },\n  },\n);\n\nexport interface InputProps\n  extends Rac.InputProps,\n    VariantProps<typeof inputVariants> {}\n\nexport function Input({ variant, className, ...props }: InputProps) {\n  return (\n    <Rac.Input\n      data-slot=\"input\"\n      className={Rac.composeRenderProps(className, (className, renderProps) =>\n        twMerge(\n          inputVariants({\n            variant,\n            ...renderProps,\n            className,\n          }),\n        ),\n      )}\n      {...props}\n    />\n  );\n}\n",
       "type": "registry:ui"
     }
-  ]
+  ],
+  "meta": {
+    "tags": [
+      "input"
+    ]
+  }
 }

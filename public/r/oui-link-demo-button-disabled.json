@@ -17,6 +17,8 @@
     "tags": [
       "link"
     ],
-    "alignment": "text-center"
+    "canPreview": true,
+    "alignment": "flex-center",
+    "canOpenInV0": true
   }
 }

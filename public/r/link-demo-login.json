@@ -1,6 +1,6 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
-  "name": "oui-link-demo-login",
+  "name": "link-demo-login",
   "type": "registry:component",
   "registryDependencies": [
     "card",
@@ -18,7 +18,11 @@
   ],
   "meta": {
     "tags": [
-      "link"
-    ]
+      "link",
+      "text-field-ex",
+      "login"
+    ],
+    "canPreview": true,
+    "canOpenInV0": true
   }
 }

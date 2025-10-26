@@ -1,6 +1,6 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
-  "name": "oui-label-demo",
+  "name": "label-demo",
   "type": "registry:component",
   "registryDependencies": [
     "https://oui.mw10013.workers.dev/r/oui-input.json",
@@ -16,6 +16,8 @@
   "meta": {
     "tags": [
       "label"
-    ]
+    ],
+    "canPreview": true,
+    "canOpenInV0": true
   }
 }
