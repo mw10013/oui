@@ -1,6 +1,6 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
-  "name": "oui-field-error-demo",
+  "name": "field-error-demo",
   "type": "registry:component",
   "registryDependencies": [
     "https://oui.mw10013.workers.dev/r/oui-field-error.json",
@@ -21,6 +21,8 @@
       "input",
       "label",
       "text-field"
-    ]
+    ],
+    "canPreview": true,
+    "canOpenInV0": true
   }
 }

@@ -104,11 +104,11 @@ export const categories: Category[] = [
       { name: "disclosure-ex-demo-text" },
     ],
   },
-  // {
-  //   name: "Field Error",
-  //   slug: "field-error",
-  //   components: [{ name: "oui-field-error-demo" }],
-  // },
+  {
+    name: "Field Error",
+    slug: "field-error",
+    components: [{ name: "field-error" }, { name: "field-error-demo" }],
+  },
   // {
   //   name: "Form",
   //   slug: "form",

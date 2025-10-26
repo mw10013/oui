@@ -1114,8 +1114,10 @@
       }
     },
     {
-      "name": "oui-field-error",
+      "name": "field-error",
       "type": "registry:ui",
+      "title": "Field Error",
+      "description": "React aria components Field Error with shadcn characteristics.",
       "files": [
         {
           "path": "registry/default/ui/oui-field-error.tsx",
@@ -1125,10 +1127,13 @@
       "registryDependencies": [
         "https://oui.mw10013.workers.dev/r/oui-base.json"
       ],
-      "dependencies": ["react-aria-components"]
+      "dependencies": ["react-aria-components"],
+      "meta": {
+        "tags": ["field-error"]
+      }
     },
     {
-      "name": "oui-field-error-demo",
+      "name": "field-error-demo",
       "type": "registry:component",
       "files": [
         {
@@ -1143,7 +1148,9 @@
         "https://oui.mw10013.workers.dev/r/oui-text-field.json"
       ],
       "meta": {
-        "tags": ["field-error", "input", "label", "text-field"]
+        "tags": ["field-error", "input", "label", "text-field"],
+        "canPreview": true,
+        "canOpenInV0": true
       }
     },
     {
