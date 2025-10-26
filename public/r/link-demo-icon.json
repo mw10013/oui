@@ -2,6 +2,9 @@
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "link-demo-icon",
   "type": "registry:component",
+  "dependencies": [
+    "simple-icons"
+  ],
   "registryDependencies": [
     "https://oui.mw10013.workers.dev/r/button.json",
     "https://oui.mw10013.workers.dev/r/link.json"

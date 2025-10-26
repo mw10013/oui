@@ -1748,6 +1748,7 @@
         "https://oui.mw10013.workers.dev/r/button.json",
         "https://oui.mw10013.workers.dev/r/link.json"
       ],
+      "dependencies": ["simple-icons"],
       "meta": {
         "tags": ["link", "icon"],
         "canPreview": true,
