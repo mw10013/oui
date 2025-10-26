@@ -22,7 +22,8 @@
     "tags": [
       "menu",
       "menu-ex",
-      "separator"
+      "separator",
+      "icon"
     ],
     "canPreview": true,
     "canOpenInV0": true

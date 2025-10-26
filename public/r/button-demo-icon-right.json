@@ -17,7 +17,8 @@
   ],
   "meta": {
     "tags": [
-      "button"
+      "button",
+      "icon"
     ],
     "canPreview": true,
     "alignment": "text-center",

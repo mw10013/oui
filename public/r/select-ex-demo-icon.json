@@ -20,7 +20,8 @@
     "tags": [
       "select",
       "select-ex",
-      "list-box"
+      "list-box",
+      "icon"
     ],
     "canPreview": true,
     "alignment": "flex-center",

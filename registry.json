@@ -243,7 +243,7 @@
       "registryDependencies": ["https://oui.mw10013.workers.dev/r/button.json"],
       "dependencies": ["lucide-react"],
       "meta": {
-        "tags": ["button"],
+        "tags": ["button", "icon"],
         "canPreview": true,
         "alignment": "text-center",
         "canOpenInV0": true
@@ -261,7 +261,7 @@
       "registryDependencies": ["https://oui.mw10013.workers.dev/r/button.json"],
       "dependencies": ["lucide-react"],
       "meta": {
-        "tags": ["button"],
+        "tags": ["button", "icon"],
         "canPreview": true,
         "alignment": "text-center",
         "canOpenInV0": true
@@ -2054,7 +2054,7 @@
       ],
       "dependencies": ["lucide-react"],
       "meta": {
-        "tags": ["menu", "menu-ex", "separator"],
+        "tags": ["menu", "menu-ex", "separator", "icon"],
         "canPreview": true,
         "canOpenInV0": true
       }
@@ -2564,7 +2564,7 @@
       ],
       "dependencies": ["lucide-react"],
       "meta": {
-        "tags": ["select", "select-ex", "list-box"],
+        "tags": ["select", "select-ex", "list-box", "icon"],
         "canPreview": true,
         "alignment": "flex-center",
         "canOpenInV0": true
