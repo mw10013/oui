@@ -122,7 +122,7 @@ export const categories: Category[] = [
   {
     name: "Goodies",
     slug: "goodies",
-    components: [{ name: "index" }],
+    components: [{ name: "index" }, { name: "react-router-provider" }],
   },
   {
     name: "Header",
@@ -204,7 +204,11 @@ export const categories: Category[] = [
   {
     name: "Modal",
     slug: "modal",
-    components: [{ name: "modal" }, { name: "modal-ex" }, { name: "modal-ex-sheet" }],
+    components: [
+      { name: "modal" },
+      { name: "modal-ex" },
+      { name: "modal-ex-sheet" },
+    ],
   },
   {
     name: "Number Field",
@@ -218,7 +222,11 @@ export const categories: Category[] = [
   {
     name: "Popover",
     slug: "popover",
-    components: [{ name: "popover" }, { name: "popover-ex" }, { name: "popover-ex-demo" }],
+    components: [
+      { name: "popover" },
+      { name: "popover-ex" },
+      { name: "popover-ex-demo" },
+    ],
   },
   {
     name: "Radio Group",
@@ -298,7 +306,7 @@ export const categories: Category[] = [
   {
     name: "Tabs",
     slug: "tabs",
-    components: [{ name: "tabs" },{ name: "tabs-demo" }],
+    components: [{ name: "tabs" }, { name: "tabs-demo" }],
   },
   {
     name: "Text",

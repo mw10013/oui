@@ -2405,8 +2405,8 @@
           "type": "registry:component"
         }
       ],
-      "meta-": {
-        "tags": ["react-router", "react-router-provider"]
+      "meta": {
+        "tags": ["react-router", "provider"]
       }
     },
     {

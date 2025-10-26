@@ -64,6 +64,7 @@ export const registryTags = [
   "disabled",
   "login",
   "multiple",
+  "provider",
   "react-router",
   "sheet",
   "theme",
