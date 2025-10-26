@@ -25,10 +25,6 @@ export default function ComponentLoader({
       ),
     [component.name],
   );
-  console.log(
-    // eslint-disable-next-line @typescript-eslint/restrict-template-expressions
-    `ComponentLoader: ${component.name}: ${component.type}: canPreview: ${component.meta?.canPreview}`,
-  );
   return component.meta?.canPreview ? (
     <Suspense
       fallback={
