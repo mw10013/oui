@@ -1,6 +1,6 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
-  "name": "oui-number-field-ex-demo",
+  "name": "number-field-ex-demo",
   "type": "registry:component",
   "registryDependencies": [
     "https://oui.mw10013.workers.dev/r/oui-button.json",
@@ -18,6 +18,8 @@
       "number-field",
       "number-field-ex",
       "button"
-    ]
+    ],
+    "canPreview": true,
+    "canOpenInV0": true
   }
 }

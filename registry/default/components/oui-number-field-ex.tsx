@@ -4,7 +4,6 @@ import { FieldError } from "@/registry/default/ui/oui-field-error";
 import { Group } from "@/registry/default/ui/oui-group";
 import { Input } from "@/registry/default/ui/oui-input";
 import { Label } from "@/registry/default/ui/oui-label";
-import { Link } from "@/registry/default/ui/oui-link";
 import { NumberField } from "@/registry/default/ui/oui-number-field";
 import { Text } from "@/registry/default/ui/oui-text";
 import { ChevronDown, ChevronUp } from "lucide-react";
@@ -55,30 +54,5 @@ export function NumberFieldEx({
       {description && <Text slot="description">{description}</Text>}
       <FieldError>{errorMessage}</FieldError>
     </NumberField>
-  );
-}
-
-export default function Component() {
-  return (
-    <div className="grid gap-2">
-      <Label>NumberFieldEx</Label>
-      <Text slot="description">
-        A reusable wrapper for{" "}
-        <Link
-          href="https://react-spectrum.adobe.com/react-aria/NumberField.html"
-          underline="always"
-        >
-          NumberField
-        </Link>{" "}
-        — see{" "}
-        <Link
-          href="https://oui.mw10013.workers.dev/filter?tags=number-field-ex"
-          underline="always"
-        >
-          Uses
-        </Link>
-        .
-      </Text>
-    </div>
   );
 }

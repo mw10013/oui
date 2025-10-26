@@ -2104,8 +2104,10 @@
       }
     },
     {
-      "name": "oui-modal",
+      "name": "modal",
       "type": "registry:ui",
+      "title": "Modal",
+      "description": "React aria components Modal with shadcn characteristics.",
       "files": [
         {
           "path": "registry/default/ui/oui-modal.tsx",
@@ -2119,11 +2121,16 @@
         "react-aria-components",
         "class-variance-authority",
         "tailwind-merge"
-      ]
+      ],
+      "meta": {
+        "tags": ["modal"]
+      }
     },
     {
-      "name": "oui-modal-ex",
+      "name": "modal-ex",
       "type": "registry:component",
+      "title": "Modal Ex",
+      "description": "Reusable wrapper for a Modal.",
       "files": [
         {
           "path": "registry/default/components/oui-modal-ex.tsx",
@@ -2141,8 +2148,10 @@
       }
     },
     {
-      "name": "oui-modal-ex-sheet",
+      "name": "modal-ex-sheet",
       "type": "registry:component",
+      "title": "Modal Ex Sheet",
+      "description": "Reusable wrapper for a sheet Modal.",
       "files": [
         {
           "path": "registry/default/components/oui-modal-ex-sheet.tsx",
@@ -2150,18 +2159,17 @@
         }
       ],
       "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/oui-modal.json",
-        "https://oui.mw10013.workers.dev/r/oui-label.json",
-        "https://oui.mw10013.workers.dev/r/oui-link.json",
-        "https://oui.mw10013.workers.dev/r/oui-text.json"
+        "https://oui.mw10013.workers.dev/r/oui-modal.json"
       ],
       "meta": {
         "tags": ["modal", "modal-ex-sheet", "sheet"]
       }
     },
     {
-      "name": "oui-number-field",
+      "name": "number-field",
       "type": "registry:ui",
+      "title": "Number Field",
+      "description": "React aria components Number Field with shadcn characteristics.",
       "files": [
         {
           "path": "registry/default/ui/oui-number-field.tsx",
@@ -2171,11 +2179,16 @@
       "registryDependencies": [
         "https://oui.mw10013.workers.dev/r/oui-base.json"
       ],
-      "dependencies": ["react-aria-components", "lucide-react"]
+      "dependencies": ["react-aria-components", "lucide-react"],
+      "meta": {
+        "tags": ["number-field"]
+      }
     },
     {
-      "name": "oui-number-field-ex",
+      "name": "number-field-ex",
       "type": "registry:component",
+      "title": "Number Field Ex",
+      "description": "Reusable wrapper for Number Field.",
       "files": [
         {
           "path": "registry/default/components/oui-number-field-ex.tsx",
@@ -2187,7 +2200,6 @@
         "https://oui.mw10013.workers.dev/r/oui-group.json",
         "https://oui.mw10013.workers.dev/r/oui-input.json",
         "https://oui.mw10013.workers.dev/r/oui-label.json",
-        "https://oui.mw10013.workers.dev/r/oui-link.json",
         "https://oui.mw10013.workers.dev/r/oui-number-field.json",
         "https://oui.mw10013.workers.dev/r/oui-text.json"
       ],
@@ -2205,7 +2217,7 @@
       }
     },
     {
-      "name": "oui-number-field-ex-demo",
+      "name": "number-field-ex-demo",
       "type": "registry:component",
       "files": [
         {
@@ -2218,12 +2230,16 @@
         "https://oui.mw10013.workers.dev/r/oui-number-field-ex.json"
       ],
       "meta": {
-        "tags": ["number-field", "number-field-ex", "button"]
+        "tags": ["number-field", "number-field-ex", "button"],
+        "canPreview": true,
+        "canOpenInV0": true
       }
     },
     {
-      "name": "oui-popover",
+      "name": "popover",
       "type": "registry:ui",
+      "title": "Popover",
+      "description": "React aria components Popover with shadcn characteristics.",
       "files": [
         {
           "path": "registry/default/ui/oui-popover.tsx",
@@ -2235,11 +2251,16 @@
         "react-aria-components",
         "class-variance-authority",
         "tailwind-merge"
-      ]
+      ],
+      "meta": {
+        "tags": ["popover"]
+      }
     },
     {
-      "name": "oui-popover-ex",
+      "name": "popover-ex",
       "type": "registry:component",
+      "title": "Popover Ex",
+      "description": "Reusable wrapper for a Popover.",
       "files": [
         {
           "path": "registry/default/components/oui-popover-ex.tsx",
@@ -2249,17 +2270,14 @@
       "registryDependencies": [
         "https://oui.mw10013.workers.dev/r/oui-button.json",
         "https://oui.mw10013.workers.dev/r/oui-dialog.json",
-        "https://oui.mw10013.workers.dev/r/oui-popover.json",
-        "https://oui.mw10013.workers.dev/r/oui-label.json",
-        "https://oui.mw10013.workers.dev/r/oui-link.json",
-        "https://oui.mw10013.workers.dev/r/oui-text.json"
+        "https://oui.mw10013.workers.dev/r/oui-popover.json"
       ],
       "meta": {
         "tags": ["popover", "popover-ex", "dialog"]
       }
     },
     {
-      "name": "oui-popover-ex-demo",
+      "name": "popover-ex-demo",
       "type": "registry:component",
       "files": [
         {
@@ -2282,7 +2300,9 @@
           "heading",
           "text-field-ex-horizontal"
         ],
-        "alignment": "flex-center"
+        "canPreview": true,
+        "alignment": "flex-center",
+        "canOpenInV0": true
       }
     },
     {

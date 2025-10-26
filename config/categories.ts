@@ -201,24 +201,25 @@ export const categories: Category[] = [
       { name: "menu-ex-demo-icon" },
     ],
   },
-  // {
-  //   name: "Modal",
-  //   slug: "modal",
-  //   components: [{ name: "modal-ex" }, { name: "modal-ex-sheet" }],
-  // },
-  // {
-  //   name: "Number Field",
-  //   slug: "number-field",
-  //   components: [
-  //     { name: "number-field-ex" },
-  //     { name: "number-field-ex-demo" },
-  //   ],
-  // },
-  // {
-  //   name: "Popover",
-  //   slug: "popover",
-  //   components: [{ name: "popover-ex" }, { name: "popover-ex-demo" }],
-  // },
+  {
+    name: "Modal",
+    slug: "modal",
+    components: [{ name: "modal" }, { name: "modal-ex" }, { name: "modal-ex-sheet" }],
+  },
+  {
+    name: "Number Field",
+    slug: "number-field",
+    components: [
+      { name: "number-field" },
+      { name: "number-field-ex" },
+      { name: "number-field-ex-demo" },
+    ],
+  },
+  {
+    name: "Popover",
+    slug: "popover",
+    components: [{ name: "popover" }, { name: "popover-ex" }, { name: "popover-ex-demo" }],
+  },
   // {
   //   name: "Radio Group",
   //   slug: "radio-group",

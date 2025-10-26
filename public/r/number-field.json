@@ -1,7 +1,9 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
-  "name": "oui-number-field",
+  "name": "number-field",
   "type": "registry:ui",
+  "title": "Number Field",
+  "description": "React aria components Number Field with shadcn characteristics.",
   "dependencies": [
     "react-aria-components",
     "lucide-react"
@@ -15,5 +17,10 @@
       "content": "\"use client\";\n\nimport { composeTailwindRenderProps } from \"@/registry/default/ui/oui-base\";\nimport * as Rac from \"react-aria-components\";\n\nexport function NumberField({ className, ...props }: Rac.NumberFieldProps) {\n  return (\n    <Rac.NumberField\n      className={composeTailwindRenderProps(className, \"group grid gap-2\")}\n      {...props}\n    />\n  );\n}\n",
       "type": "registry:ui"
     }
-  ]
+  ],
+  "meta": {
+    "tags": [
+      "number-field"
+    ]
+  }
 }
