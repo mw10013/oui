@@ -1154,8 +1154,10 @@
       }
     },
     {
-      "name": "oui-form",
+      "name": "form",
       "type": "registry:ui",
+      "title": "Form",
+      "description": "React aria components Form with shadcn characteristics.",
       "files": [
         {
           "path": "registry/default/ui/oui-form.tsx",
@@ -1166,7 +1168,7 @@
       "dependencies": ["react-aria-components", "tailwind-merge"]
     },
     {
-      "name": "oui-form-demo",
+      "name": "form-demo",
       "type": "registry:component",
       "files": [
         {
@@ -1202,7 +1204,9 @@
           "switch-ex",
           "text-area",
           "text-field-ex"
-        ]
+        ],
+        "canPreview": true,
+        "canOpenInV0": true 
       }
     },
 
