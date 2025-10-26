@@ -220,37 +220,40 @@ export const categories: Category[] = [
     slug: "popover",
     components: [{ name: "popover" }, { name: "popover-ex" }, { name: "popover-ex-demo" }],
   },
-  // {
-  //   name: "Radio Group",
-  //   slug: "radio-group",
-  //   components: [
-  //     { name: "radio-group-ex" },
-  //     { name: "radio-group-ex-demo" },
-  //     { name: "radio-group-ex-demo-description" },
-  //   ],
-  // },
-  // {
-  //   name: "Search Field",
-  //   slug: "search-field",
-  //   components: [
-  //     { name: "search-field-ex" },
-  //     { name: "search-field-ex-demo" },
-  //   ],
-  // },
-  // {
-  //   name: "Select",
-  //   slug: "select",
-  //   components: [
-  //     { name: "select-demo" },
-  //     { name: "select-demo-multiple" },
-  //     { name: "select-ex" },
-  //     { name: "select-ex-demo" },
-  //     { name: "select-ex-demo-large-list" },
-  //     { name: "select-ex-demo-icon" },
-  //     { name: "select-ex-demo-disabled" },
-  //     { name: "select-ex-popover" },
-  //   ],
-  // },
+  {
+    name: "Radio Group",
+    slug: "radio-group",
+    components: [
+      { name: "radio-group" },
+      { name: "radio-group-ex" },
+      { name: "radio-group-ex-demo" },
+      { name: "radio-group-ex-demo-description" },
+    ],
+  },
+  {
+    name: "Search Field",
+    slug: "search-field",
+    components: [
+      { name: "search-field" },
+      { name: "search-field-ex" },
+      { name: "search-field-ex-demo" },
+    ],
+  },
+  {
+    name: "Select",
+    slug: "select",
+    components: [
+      { name: "select" },
+      { name: "select-demo" },
+      { name: "select-demo-multiple" },
+      { name: "select-ex" },
+      { name: "select-ex-demo" },
+      { name: "select-ex-demo-large-list" },
+      { name: "select-ex-demo-icon" },
+      { name: "select-ex-demo-disabled" },
+      { name: "select-ex-popover" },
+    ],
+  },
   // {
   //   name: "Separator",
   //   slug: "separator",

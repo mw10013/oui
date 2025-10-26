@@ -1,6 +1,6 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
-  "name": "oui-select-demo-multiple",
+  "name": "select-demo-multiple",
   "type": "registry:component",
   "registryDependencies": [
     "https://oui.mw10013.workers.dev/r/oui-list-box.json",
@@ -21,6 +21,8 @@
       "popover",
       "multiple"
     ],
-    "alignment": "flex-center"
+    "canPreview": true,
+    "alignment": "flex-center",
+    "canOpenInV0": true
   }
 }

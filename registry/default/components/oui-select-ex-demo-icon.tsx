@@ -18,8 +18,8 @@ const iconItems = [
 export default function Component() {
   return (
     <SelectEx
-      aria-label="SelectEx icon"
-      placeholder="SelectEx icon"
+      aria-label="Select Ex Icon"
+      placeholder="Select Ex Icon"
       buttonClassName="w-[180px]"
       items={iconItems}
       renderSelectValue={({ isPlaceholder, defaultChildren }) =>

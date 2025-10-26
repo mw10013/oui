@@ -1,6 +1,6 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
-  "name": "oui-select-ex-demo",
+  "name": "select-ex-demo",
   "type": "registry:component",
   "registryDependencies": [
     "https://oui.mw10013.workers.dev/r/oui-header.json",
@@ -22,6 +22,8 @@
       "list-box",
       "disabled"
     ],
-    "alignment": "flex-center"
+    "canPreview": true,
+    "alignment": "flex-center",
+    "canOpenInV0": true
   }
 }

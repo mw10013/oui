@@ -11,8 +11,8 @@ const largeListItems = Array.from({ length: 100 }).map((_, i) => ({
 export default function Component() {
   return (
     <SelectEx
-      aria-label="SelectEx large list"
-      placeholder="SelectEx large list"
+      aria-label="Select Ex Large List"
+      placeholder="Select Ex Large List"
       buttonClassName="w-[180px]"
       items={largeListItems}
     >

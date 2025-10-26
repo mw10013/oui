@@ -2306,8 +2306,10 @@
       }
     },
     {
-      "name": "oui-radio-group",
+      "name": "radio-group",
       "type": "registry:ui",
+      "title": "Radio Group",
+      "description": "React aria components Radio Group with shadcn characteristics.",
       "files": [
         {
           "path": "registry/default/ui/oui-radio-group.tsx",
@@ -2322,11 +2324,16 @@
         "react-aria-components",
         "lucide-react",
         "tailwind-merge"
-      ]
+      ],
+      "meta": {
+        "tags": ["radio-group"]
+      }
     },
     {
-      "name": "oui-radio-group-ex",
+      "name": "radio-group-ex",
       "type": "registry:component",
+      "title": "Radio Group Ex",
+      "description": "Reusable wrapper for Radio Group.",
       "files": [
         {
           "path": "registry/default/components/oui-radio-group-ex.tsx",
@@ -2336,7 +2343,6 @@
       "registryDependencies": [
         "https://oui.mw10013.workers.dev/r/oui-field-error.json",
         "https://oui.mw10013.workers.dev/r/oui-label.json",
-        "https://oui.mw10013.workers.dev/r/oui-link.json",
         "https://oui.mw10013.workers.dev/r/oui-radio-group.json",
         "https://oui.mw10013.workers.dev/r/oui-text.json"
       ],
@@ -2351,7 +2357,7 @@
       }
     },
     {
-      "name": "oui-radio-group-ex-demo",
+      "name": "radio-group-ex-demo",
       "type": "registry:component",
       "files": [
         {
@@ -2364,11 +2370,13 @@
         "https://oui.mw10013.workers.dev/r/oui-radio-group.json"
       ],
       "meta": {
-        "tags": ["radio-group", "radio-group-ex"]
+        "tags": ["radio-group", "radio-group-ex"],
+        "canPreview": true,
+        "canOpenInV0": true
       }
     },
     {
-      "name": "oui-radio-group-ex-demo-description",
+      "name": "radio-group-ex-demo-description",
       "type": "registry:component",
       "files": [
         {
@@ -2381,12 +2389,16 @@
         "https://oui.mw10013.workers.dev/r/oui-radio-group.json"
       ],
       "meta": {
-        "tags": ["radio-group", "radio-group-ex"]
+        "tags": ["radio-group", "radio-group-ex"],
+        "canPreview": true,
+        "canOpenInV0": true
       }
     },
     {
-      "name": "oui-react-router-provider",
+      "name": "react-router-provider",
       "type": "registry:component",
+      "title": "React Router Provider",
+      "description": "React aria components Router Provider for react router.",
       "files": [
         {
           "path": "registry/default/components/oui-react-router-provider.tsx",
@@ -2398,8 +2410,10 @@
       }
     },
     {
-      "name": "oui-search-field",
+      "name": "search-field",
       "type": "registry:ui",
+      "title": "Search Field",
+      "description": "React aria components Search Field with shadcn characteristics.",
       "files": [
         {
           "path": "registry/default/ui/oui-search-field.tsx",
@@ -2409,11 +2423,16 @@
       "registryDependencies": [
         "https://oui.mw10013.workers.dev/r/oui-base.json"
       ],
-      "dependencies": ["react-aria-components"]
+      "dependencies": ["react-aria-components"],
+      "meta": {
+        "tags": ["search-field"]
+      }
     },
     {
-      "name": "oui-search-field-ex",
+      "name": "search-field-ex",
       "type": "registry:component",
+      "title": "Search Field Ex",
+      "description": "Reusable wrapper for Search Field.",
       "files": [
         {
           "path": "registry/default/components/oui-search-field-ex.tsx",
@@ -2425,8 +2444,7 @@
         "https://oui.mw10013.workers.dev/r/oui-label.json",
         "https://oui.mw10013.workers.dev/r/oui-input.json",
         "https://oui.mw10013.workers.dev/r/oui-search-field.json",
-        "https://oui.mw10013.workers.dev/r/oui-text.json",
-        "https://oui.mw10013.workers.dev/r/oui-link.json"
+        "https://oui.mw10013.workers.dev/r/oui-text.json"
       ],
       "meta": {
         "tags": [
@@ -2440,7 +2458,7 @@
       }
     },
     {
-      "name": "oui-search-field-ex-demo",
+      "name": "search-field-ex-demo",
       "type": "registry:component",
       "files": [
         {
@@ -2452,12 +2470,16 @@
         "https://oui.mw10013.workers.dev/r/oui-search-field-ex.json"
       ],
       "meta": {
-        "tags": ["search-field", "search-field-ex"]
+        "tags": ["search-field", "search-field-ex"],
+        "canPreview": true,
+        "canOpenInV0": true
       }
     },
     {
-      "name": "oui-select",
+      "name": "select",
       "type": "registry:ui",
+      "title": "Select",
+      "description": "React aria components Select with shadcn characteristics.",
       "files": [
         {
           "path": "registry/default/ui/oui-select.tsx",
@@ -2471,10 +2493,13 @@
         "react-aria-components",
         "lucide-react",
         "tailwind-merge"
-      ]
+      ],
+      "meta": {
+        "tags": ["select"]
+      }
     },
     {
-      "name": "oui-select-demo",
+      "name": "select-demo",
       "type": "registry:component",
       "files": [
         {
@@ -2489,11 +2514,13 @@
       ],
       "meta": {
         "tags": ["select", "list-box", "popover"],
-        "alignment": "flex-center"
+        "canPreview": true,
+        "alignment": "flex-center",
+        "canOpenInV0": true
       }
     },
     {
-      "name": "oui-select-demo-multiple",
+      "name": "select-demo-multiple",
       "type": "registry:component",
       "files": [
         {
@@ -2508,12 +2535,16 @@
       ],
       "meta": {
         "tags": ["select", "list-box", "popover", "multiple"],
-        "alignment": "flex-center"
+        "canPreview": true,
+        "alignment": "flex-center",
+        "canOpenInV0": true
       }
     },
     {
-      "name": "oui-select-ex",
+      "name": "select-ex",
       "type": "registry:component",
+      "title": "Select Ex",
+      "description": "Reusable wrapper for Select.",
       "files": [
         {
           "path": "registry/default/components/oui-select-ex.tsx",
@@ -2523,7 +2554,6 @@
       "registryDependencies": [
         "https://oui.mw10013.workers.dev/r/oui-field-error.json",
         "https://oui.mw10013.workers.dev/r/oui-label.json",
-        "https://oui.mw10013.workers.dev/r/oui-link.json",
         "https://oui.mw10013.workers.dev/r/oui-popover.json",
         "https://oui.mw10013.workers.dev/r/oui-select.json",
         "https://oui.mw10013.workers.dev/r/oui-text.json"
@@ -2533,7 +2563,7 @@
       }
     },
     {
-      "name": "oui-select-ex-demo",
+      "name": "select-ex-demo",
       "type": "registry:component",
       "files": [
         {
@@ -2548,11 +2578,13 @@
       ],
       "meta": {
         "tags": ["select", "select-ex", "header", "list-box", "disabled"],
-        "alignment": "flex-center"
+        "canPreview": true,
+        "alignment": "flex-center",
+        "canOpenInV0": true
       }
     },
     {
-      "name": "oui-select-ex-demo-large-list",
+      "name": "select-ex-demo-large-list",
       "type": "registry:component",
       "files": [
         {
@@ -2566,11 +2598,13 @@
       ],
       "meta": {
         "tags": ["select", "select-ex", "list-box"],
-        "alignment": "flex-center"
+        "canPreview": true,
+        "alignment": "flex-center",
+        "canOpenInV0": true
       }
     },
     {
-      "name": "oui-select-ex-demo-icon",
+      "name": "select-ex-demo-icon",
       "type": "registry:component",
       "files": [
         {
@@ -2585,11 +2619,13 @@
       "dependencies": ["lucide-react"],
       "meta": {
         "tags": ["select", "select-ex", "list-box"],
-        "alignment": "flex-center"
+        "canPreview": true,
+        "alignment": "flex-center",
+        "canOpenInV0": true
       }
     },
     {
-      "name": "oui-select-ex-demo-disabled",
+      "name": "select-ex-demo-disabled",
       "type": "registry:component",
       "files": [
         {
@@ -2603,12 +2639,16 @@
       ],
       "meta": {
         "tags": ["select", "select-ex", "disabled"],
-        "alignment": "flex-center"
+        "canPreview": true,
+        "alignment": "flex-center",
+        "canOpenInV0": true
       }
     },
     {
-      "name": "oui-select-ex-popover",
+      "name": "select-ex-popover",
       "type": "registry:component",
+      "title": "Select Ex Popover",
+      "description": "Reusable wrapper for Select with Popover.",
       "files": [
         {
           "path": "registry/default/components/oui-select-ex-popover.tsx",

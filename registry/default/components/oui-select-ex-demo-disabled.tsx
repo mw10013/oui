@@ -14,8 +14,8 @@ const simpleItems = [
 export default function Component() {
   return (
     <SelectEx
-      aria-label="SelectEx disabled"
-      placeholder="SelectEx disabled"
+      aria-label="Select Ex Disabled"
+      placeholder="Select Ex Disabled"
       buttonClassName="w-[180px]"
       items={simpleItems}
       isDisabled

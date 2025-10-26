@@ -1,6 +1,6 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
-  "name": "oui-radio-group-ex-demo-description",
+  "name": "radio-group-ex-demo-description",
   "type": "registry:component",
   "registryDependencies": [
     "https://oui.mw10013.workers.dev/r/oui-radio-group-ex.json",
@@ -17,6 +17,8 @@
     "tags": [
       "radio-group",
       "radio-group-ex"
-    ]
+    ],
+    "canPreview": true,
+    "canOpenInV0": true
   }
 }

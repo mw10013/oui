@@ -1,6 +1,6 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
-  "name": "oui-search-field-ex-demo",
+  "name": "search-field-ex-demo",
   "type": "registry:component",
   "registryDependencies": [
     "https://oui.mw10013.workers.dev/r/oui-search-field-ex.json"
@@ -16,6 +16,8 @@
     "tags": [
       "search-field",
       "search-field-ex"
-    ]
+    ],
+    "canPreview": true,
+    "canOpenInV0": true
   }
 }
