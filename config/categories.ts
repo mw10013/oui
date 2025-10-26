@@ -173,6 +173,7 @@ export const categories: Category[] = [
       { name: "link-demo-button-outline" },
       { name: "link-demo-button-destructive" },
       { name: "link-demo-button-disabled" },
+      { name: "link-demo-icon" },
       { name: "link-demo-login" },
     ],
   },

@@ -62,6 +62,7 @@ export const registryTags = [
   // generic tags
   "avatar",
   "disabled",
+  "icon",
   "login",
   "multiple",
   "provider",
