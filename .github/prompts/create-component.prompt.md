@@ -2,7 +2,7 @@
 mode: "agent"
 ---
 
-Your goal is to create a oui ui component in `registry/components/ui`.
+Your goal is to create a oui ui component in `registry/default/ui`.
 
 You will be given the filename of the component in the format `oui-*.tsx`. Ask for it if not given.
 
