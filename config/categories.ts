@@ -127,7 +127,7 @@ export const categories: Category[] = [
   {
     name: "Goodies",
     slug: "goodies",
-    components: [{ name: "index" }, { name: "react-router-provider" }],
+    components: [{ name: "index" }, { name: "react-router-provider" }, { name: "on-submit-react-router" }],
   },
   {
     name: "Header",
