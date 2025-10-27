@@ -1175,7 +1175,65 @@
         "canOpenInV0": true
       }
     },
-
+    {
+      "name": "form-alert",
+      "type": "registry:component",
+      "title": "Form Alert",
+      "description": "Displays an alert based on a form action result.",
+      "files": [
+        {
+          "path": "registry/default/components/oui-form-alert.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": ["alert"],
+      "dependencies": ["react-aria-components"],
+      "meta": {
+        "tags": ["form-alert"]
+      }
+    },
+    {
+      "name": "form-alert-demo",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/default/components/oui-form-alert-demo.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "https://oui.mw10013.workers.dev/r/button.json",
+        "https://oui.mw10013.workers.dev/r/checkbox-ex.json",
+        "https://oui.mw10013.workers.dev/r/checkbox-group-ex.json",
+        "https://oui.mw10013.workers.dev/r/checkbox.json",
+        "https://oui.mw10013.workers.dev/r/form.json",
+        "https://oui.mw10013.workers.dev/r/list-box.json",
+        "https://oui.mw10013.workers.dev/r/radio-group-ex.json",
+        "https://oui.mw10013.workers.dev/r/radio-group.json",
+        "https://oui.mw10013.workers.dev/r/select-ex.json",
+        "https://oui.mw10013.workers.dev/r/switch-ex.json",
+        "https://oui.mw10013.workers.dev/r/text-area.json",
+        "https://oui.mw10013.workers.dev/r/text-field-ex.json"
+      ],
+      "meta": {
+        "tags": [
+          "form",
+          "button",
+          "checkbox-ex",
+          "checkbox-group-ex",
+          "checkbox",
+          "list-box",
+          "radio-group-ex",
+          "radio-group",
+          "select-ex",
+          "switch-ex",
+          "text-area",
+          "text-field-ex"
+        ],
+        "canPreview": true,
+        "canOpenInV0": true
+      }
+    },
     {
       "name": "group",
       "type": "registry:ui",

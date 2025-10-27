@@ -18,6 +18,7 @@ export const registryTags = [
   "disclosure-ex",
   "field-error",
   "form",
+  "form-alert",
   "group",
   "header",
   "heading",

@@ -115,6 +115,11 @@ export const categories: Category[] = [
     components: [{ name: "form" }, { name: "form-demo" }],
   },
   {
+    name: "Form Alert",
+    slug: "form-alert",
+    components: [{ name: "form-alert" }, { name: "form-alert-demo" }],
+  },
+  {
     name: "Group",
     slug: "group",
     components: [{ name: "group" }, { name: "group-demo" }],
