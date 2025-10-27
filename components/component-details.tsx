@@ -75,7 +75,6 @@ export default function ComponentDetails({
         />
       )}
       <DialogEx
-        className="sm:max-w-[600px]"
         triggerElement={
           <TooltipEx
             delay={0}
@@ -94,6 +93,7 @@ export default function ComponentDetails({
             View code
           </TooltipEx>
         }
+        modalClassName="sm:max-w-[calc(100%-2rem)]"
       >
         <DialogHeader>
           <Heading slot="title" className="text-left">
