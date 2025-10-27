@@ -8,10 +8,10 @@ export default function CliCommands({ name }: { name: string }) {
   const packageManager = config.packageManager || "pnpm";
 
   const commands = {
-    pnpm: `pnpm dlx shadcn@latest add https://oui.mw10013.workers.dev/r/${name}.json`,
-    npm: `npx shadcn@latest add https://oui.mw10013.workers.dev/r/${name}.json`,
-    yarn: `yarn shadcn@latest add https://oui.mw10013.workers.dev/r/${name}.json`,
-    bun: `bunx --bun shadcn@latest add https://oui.mw10013.workers.dev/r/${name}.json`,
+    pnpm: `pnpm dlx shadcn@latest add @oui/${name}`,
+    npm: `npx shadcn@latest add @oui/${name}`,
+    yarn: `yarn shadcn@latest add @oui/${name}`,
+    bun: `bunx --bun shadcn@latest add @oui/${name}`,
   };
 
   return (
@@ -24,35 +24,12 @@ export default function CliCommands({ name }: { name: string }) {
             packageManager: key as "pnpm" | "npm" | "yarn" | "bun",
           });
         }}
-        // className="rounded-md bg-zinc-950 dark:bg-zinc-900"
       >
-        <TabList
-        // className="bg-zinc-950 dark:bg-zinc-900"
-        >
-          <Tab
-            id="pnpm"
-            // className="relative rounded-none py-3 after:absolute after:inset-x-0 after:bottom-0 after:h-0.5 data-[selected]:bg-transparent data-[selected]:shadow-none data-[selected]:after:bg-primary"
-          >
-            pnpm
-          </Tab>
-          <Tab
-            id="npm"
-            // className="relative rounded-none py-3 after:absolute after:inset-x-0 after:bottom-0 after:h-0.5 data-[selected]:bg-transparent data-[selected]:shadow-none data-[selected]:after:bg-primary"
-          >
-            npm
-          </Tab>
-          <Tab
-            id="yarn"
-            // className="relative rounded-none py-3 after:absolute after:inset-x-0 after:bottom-0 after:h-0.5 data-[selected]:bg-transparent data-[selected]:shadow-none data-[selected]:after:bg-primary"
-          >
-            yarn
-          </Tab>
-          <Tab
-            id="bun"
-            // className="relative rounded-none py-3 after:absolute after:inset-x-0 after:bottom-0 after:h-0.5 data-[selected]:bg-transparent data-[selected]:shadow-none data-[selected]:after:bg-primary"
-          >
-            bun
-          </Tab>
+        <TabList>
+          <Tab id="pnpm">pnpm</Tab>
+          <Tab id="npm">npm</Tab>
+          <Tab id="yarn">yarn</Tab>
+          <Tab id="bun">bun</Tab>
         </TabList>
         {Object.entries(commands).map(([pkg, command]) => (
           <TabPanel
