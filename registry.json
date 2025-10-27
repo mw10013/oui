@@ -1203,33 +1203,11 @@
       ],
       "registryDependencies": [
         "https://oui.mw10013.workers.dev/r/button.json",
-        "https://oui.mw10013.workers.dev/r/checkbox-ex.json",
-        "https://oui.mw10013.workers.dev/r/checkbox-group-ex.json",
-        "https://oui.mw10013.workers.dev/r/checkbox.json",
         "https://oui.mw10013.workers.dev/r/form.json",
-        "https://oui.mw10013.workers.dev/r/list-box.json",
-        "https://oui.mw10013.workers.dev/r/radio-group-ex.json",
-        "https://oui.mw10013.workers.dev/r/radio-group.json",
-        "https://oui.mw10013.workers.dev/r/select-ex.json",
-        "https://oui.mw10013.workers.dev/r/switch-ex.json",
-        "https://oui.mw10013.workers.dev/r/text-area.json",
         "https://oui.mw10013.workers.dev/r/text-field-ex.json"
       ],
       "meta": {
-        "tags": [
-          "form",
-          "button",
-          "checkbox-ex",
-          "checkbox-group-ex",
-          "checkbox",
-          "list-box",
-          "radio-group-ex",
-          "radio-group",
-          "select-ex",
-          "switch-ex",
-          "text-area",
-          "text-field-ex"
-        ],
+        "tags": ["form-alert", "form", "text-field-ex"],
         "canPreview": true,
         "canOpenInV0": true
       }
@@ -1411,6 +1389,7 @@
         "https://oui.mw10013.workers.dev/r/dialog-ex-sheet.json",
         "https://oui.mw10013.workers.dev/r/dialog-ex.json",
         "https://oui.mw10013.workers.dev/r/disclosure-ex.json",
+        "https://oui.mw10013.workers.dev/r/form-alert.json",
         "https://oui.mw10013.workers.dev/r/list-box-ex-pagination.json",
         "https://oui.mw10013.workers.dev/r/menu-ex.json",
         "https://oui.mw10013.workers.dev/r/modal-ex-sheet.json",
