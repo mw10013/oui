@@ -1,3 +1,15 @@
+/**
+ * This `oui-index` module exports all core ui and (extension and reusable wrapper) components from the Oui.
+ * Demos are excluded.
+ * 
+ * @example
+ * ```ts
+ * import * as Oui from "@/components/ui/oui-index";
+ * 
+ * <Oui.OuiButton>Click me</Oui.OuiButton>
+ * ```
+ */
+
 export * from "@/registry/default/ui/oui-base";
 export * from "@/registry/default/ui/oui-button";
 export * from "@/registry/default/ui/oui-checkbox-group";
