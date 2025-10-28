@@ -3,9 +3,9 @@
   "name": "combo-box-ex-demo-header",
   "type": "registry:component",
   "registryDependencies": [
-    "https://oui.mw10013.workers.dev/r/combo-box-ex.json",
-    "https://oui.mw10013.workers.dev/r/header.json",
-    "https://oui.mw10013.workers.dev/r/list-box.json"
+    "@oui/combo-box-ex",
+    "@oui/header",
+    "@oui/list-box"
   ],
   "files": [
     {

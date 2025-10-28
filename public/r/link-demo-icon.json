@@ -6,8 +6,8 @@
     "simple-icons"
   ],
   "registryDependencies": [
-    "https://oui.mw10013.workers.dev/r/button.json",
-    "https://oui.mw10013.workers.dev/r/link.json"
+    "@oui/button",
+    "@oui/link"
   ],
   "files": [
     {

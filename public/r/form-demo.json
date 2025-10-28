@@ -3,18 +3,18 @@
   "name": "form-demo",
   "type": "registry:component",
   "registryDependencies": [
-    "https://oui.mw10013.workers.dev/r/button.json",
-    "https://oui.mw10013.workers.dev/r/checkbox-ex.json",
-    "https://oui.mw10013.workers.dev/r/checkbox-group-ex.json",
-    "https://oui.mw10013.workers.dev/r/checkbox.json",
-    "https://oui.mw10013.workers.dev/r/form.json",
-    "https://oui.mw10013.workers.dev/r/list-box.json",
-    "https://oui.mw10013.workers.dev/r/radio-group-ex.json",
-    "https://oui.mw10013.workers.dev/r/radio-group.json",
-    "https://oui.mw10013.workers.dev/r/select-ex.json",
-    "https://oui.mw10013.workers.dev/r/switch-ex.json",
-    "https://oui.mw10013.workers.dev/r/text-area.json",
-    "https://oui.mw10013.workers.dev/r/text-field-ex.json"
+    "@oui/button",
+    "@oui/checkbox-ex",
+    "@oui/checkbox-group-ex",
+    "@oui/checkbox",
+    "@oui/form",
+    "@oui/list-box",
+    "@oui/radio-group-ex",
+    "@oui/radio-group",
+    "@oui/select-ex",
+    "@oui/switch-ex",
+    "@oui/text-area",
+    "@oui/text-field-ex"
   ],
   "files": [
     {

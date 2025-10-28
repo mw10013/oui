@@ -3,7 +3,7 @@
   "name": "button-demo-disabled-animation",
   "type": "registry:component",
   "registryDependencies": [
-    "https://oui.mw10013.workers.dev/r/button.json"
+    "@oui/button"
   ],
   "files": [
     {

@@ -5,9 +5,9 @@
   "title": "Popover Ex",
   "description": "Reusable wrapper for a Popover.",
   "registryDependencies": [
-    "https://oui.mw10013.workers.dev/r/button.json",
-    "https://oui.mw10013.workers.dev/r/dialog.json",
-    "https://oui.mw10013.workers.dev/r/popover.json"
+    "@oui/button",
+    "@oui/dialog",
+    "@oui/popover"
   ],
   "files": [
     {

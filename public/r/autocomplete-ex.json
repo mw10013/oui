@@ -5,7 +5,7 @@
   "title": "Autocomplete Ex",
   "description": "A reusable wrapper for Autocomplete.",
   "registryDependencies": [
-    "https://oui.mw10013.workers.dev/r/search-field-ex.json"
+    "@oui/search-field-ex"
   ],
   "files": [
     {

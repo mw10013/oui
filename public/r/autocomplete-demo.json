@@ -3,10 +3,10 @@
   "name": "autocomplete-demo",
   "type": "registry:component",
   "registryDependencies": [
-    "https://oui.mw10013.workers.dev/r/input.json",
-    "https://oui.mw10013.workers.dev/r/label.json",
-    "https://oui.mw10013.workers.dev/r/list-box.json",
-    "https://oui.mw10013.workers.dev/r/search-field.json"
+    "@oui/input",
+    "@oui/label",
+    "@oui/list-box",
+    "@oui/search-field"
   ],
   "files": [
     {

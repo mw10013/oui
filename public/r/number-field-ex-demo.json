@@ -3,8 +3,8 @@
   "name": "number-field-ex-demo",
   "type": "registry:component",
   "registryDependencies": [
-    "https://oui.mw10013.workers.dev/r/button.json",
-    "https://oui.mw10013.workers.dev/r/number-field-ex.json"
+    "@oui/button",
+    "@oui/number-field-ex"
   ],
   "files": [
     {

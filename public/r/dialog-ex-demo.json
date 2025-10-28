@@ -3,11 +3,11 @@
   "name": "dialog-ex-demo",
   "type": "registry:component",
   "registryDependencies": [
-    "https://oui.mw10013.workers.dev/r/button.json",
-    "https://oui.mw10013.workers.dev/r/dialog.json",
-    "https://oui.mw10013.workers.dev/r/dialog-ex.json",
-    "https://oui.mw10013.workers.dev/r/heading.json",
-    "https://oui.mw10013.workers.dev/r/text-field-ex.json"
+    "@oui/button",
+    "@oui/dialog",
+    "@oui/dialog-ex",
+    "@oui/heading",
+    "@oui/text-field-ex"
   ],
   "files": [
     {

@@ -7,10 +7,10 @@
   ],
   "registryDependencies": [
     "avatar",
-    "https://oui.mw10013.workers.dev/r/button.json",
-    "https://oui.mw10013.workers.dev/r/menu.json",
-    "https://oui.mw10013.workers.dev/r/menu-ex.json",
-    "https://oui.mw10013.workers.dev/r/separator.json"
+    "@oui/button",
+    "@oui/menu",
+    "@oui/menu-ex",
+    "@oui/separator"
   ],
   "files": [
     {

@@ -6,7 +6,7 @@
     "lucide-react"
   ],
   "registryDependencies": [
-    "https://oui.mw10013.workers.dev/r/button.json"
+    "@oui/button"
   ],
   "files": [
     {

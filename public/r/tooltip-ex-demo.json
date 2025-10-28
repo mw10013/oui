@@ -3,8 +3,8 @@
   "name": "tooltip-ex-demo",
   "type": "registry:component",
   "registryDependencies": [
-    "https://oui.mw10013.workers.dev/r/button.json",
-    "https://oui.mw10013.workers.dev/r/tooltip-ex.json"
+    "@oui/button",
+    "@oui/tooltip-ex"
   ],
   "files": [
     {

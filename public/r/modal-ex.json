@@ -5,10 +5,10 @@
   "title": "Modal Ex",
   "description": "Reusable wrapper for a Modal.",
   "registryDependencies": [
-    "https://oui.mw10013.workers.dev/r/modal.json",
-    "https://oui.mw10013.workers.dev/r/label.json",
-    "https://oui.mw10013.workers.dev/r/link.json",
-    "https://oui.mw10013.workers.dev/r/text.json"
+    "@oui/modal",
+    "@oui/label",
+    "@oui/link",
+    "@oui/text"
   ],
   "files": [
     {

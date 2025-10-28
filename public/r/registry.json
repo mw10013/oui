@@ -13,10 +13,10 @@
         }
       ],
       "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/input.json",
-        "https://oui.mw10013.workers.dev/r/label.json",
-        "https://oui.mw10013.workers.dev/r/list-box.json",
-        "https://oui.mw10013.workers.dev/r/search-field.json"
+        "@oui/input",
+        "@oui/label",
+        "@oui/list-box",
+        "@oui/search-field"
       ],
       "meta": {
         "tags": ["autocomplete", "list-box", "search-field"],
@@ -35,9 +35,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/search-field-ex.json"
-      ],
+      "registryDependencies": ["@oui/search-field-ex"],
       "meta": {
         "tags": ["autocomplete", "autocomplete-ex", "search-field-ex"]
       }
@@ -53,9 +51,9 @@
       ],
       "registryDependencies": [
         "avatar",
-        "https://oui.mw10013.workers.dev/r/autocomplete-ex.json",
-        "https://oui.mw10013.workers.dev/r/list-box.json",
-        "https://oui.mw10013.workers.dev/r/select-ex-popover.json"
+        "@oui/autocomplete-ex",
+        "@oui/list-box",
+        "@oui/select-ex-popover"
       ],
       "meta": {
         "tags": [
@@ -79,9 +77,9 @@
         }
       ],
       "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/autocomplete-ex.json",
-        "https://oui.mw10013.workers.dev/r/list-box.json",
-        "https://oui.mw10013.workers.dev/r/select-ex-popover.json"
+        "@oui/autocomplete-ex",
+        "@oui/list-box",
+        "@oui/select-ex-popover"
       ],
       "meta": {
         "tags": [
@@ -119,7 +117,7 @@
           "type": "registry:ui"
         }
       ],
-      "registryDependencies": ["https://oui.mw10013.workers.dev/r/base.json"],
+      "registryDependencies": ["@oui/base"],
       "dependencies": [
         "react-aria-components",
         "class-variance-authority",
@@ -138,7 +136,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["https://oui.mw10013.workers.dev/r/button.json"],
+      "registryDependencies": ["@oui/button"],
       "meta": {
         "tags": ["button"],
         "canPreview": true,
@@ -155,7 +153,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["https://oui.mw10013.workers.dev/r/button.json"],
+      "registryDependencies": ["@oui/button"],
       "meta": {
         "tags": ["button"],
         "canPreview": true,
@@ -172,7 +170,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["https://oui.mw10013.workers.dev/r/button.json"],
+      "registryDependencies": ["@oui/button"],
       "meta": {
         "tags": ["button"],
         "canPreview": true,
@@ -189,7 +187,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["https://oui.mw10013.workers.dev/r/button.json"],
+      "registryDependencies": ["@oui/button"],
       "meta": {
         "tags": ["button", "disabled"],
         "canPreview": true,
@@ -206,7 +204,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["https://oui.mw10013.workers.dev/r/button.json"],
+      "registryDependencies": ["@oui/button"],
       "meta": {
         "tags": ["button", "disabled"],
         "canPreview": true,
@@ -223,7 +221,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["https://oui.mw10013.workers.dev/r/button.json"],
+      "registryDependencies": ["@oui/button"],
       "meta": {
         "tags": ["button"],
         "canPreview": true,
@@ -240,7 +238,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["https://oui.mw10013.workers.dev/r/button.json"],
+      "registryDependencies": ["@oui/button"],
       "dependencies": ["lucide-react"],
       "meta": {
         "tags": ["button", "icon"],
@@ -258,7 +256,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["https://oui.mw10013.workers.dev/r/button.json"],
+      "registryDependencies": ["@oui/button"],
       "dependencies": ["lucide-react"],
       "meta": {
         "tags": ["button", "icon"],
@@ -276,7 +274,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["https://oui.mw10013.workers.dev/r/button.json"],
+      "registryDependencies": ["@oui/button"],
       "meta": {
         "tags": ["button"],
         "canPreview": true,
@@ -293,7 +291,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["https://oui.mw10013.workers.dev/r/button.json"],
+      "registryDependencies": ["@oui/button"],
       "meta": {
         "tags": ["button"],
         "canPreview": true,
@@ -310,7 +308,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["https://oui.mw10013.workers.dev/r/button.json"],
+      "registryDependencies": ["@oui/button"],
       "meta": {
         "tags": ["button"],
         "canPreview": true,
@@ -327,7 +325,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["https://oui.mw10013.workers.dev/r/button.json"],
+      "registryDependencies": ["@oui/button"],
       "meta": {
         "tags": ["button"],
         "canPreview": true,
@@ -346,7 +344,7 @@
           "type": "registry:ui"
         }
       ],
-      "registryDependencies": ["https://oui.mw10013.workers.dev/r/label.json"],
+      "registryDependencies": ["@oui/label"],
       "dependencies": [
         "react-aria-components",
         "lucide-react",
@@ -365,9 +363,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/checkbox.json"
-      ],
+      "registryDependencies": ["@oui/checkbox"],
       "meta": {
         "tags": ["checkbox"],
         "canPreview": true,
@@ -383,9 +379,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/checkbox.json"
-      ],
+      "registryDependencies": ["@oui/checkbox"],
       "meta": {
         "tags": ["checkbox"],
         "canPreview": true,
@@ -401,9 +395,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/checkbox.json"
-      ],
+      "registryDependencies": ["@oui/checkbox"],
       "meta": {
         "tags": ["checkbox", "disabled"],
         "canPreview": true,
@@ -421,10 +413,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/checkbox.json",
-        "https://oui.mw10013.workers.dev/r/text.json"
-      ],
+      "registryDependencies": ["@oui/checkbox", "@oui/text"],
       "meta": {
         "tags": ["checkbox", "checkbox-ex", "text"]
       }
@@ -438,9 +427,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/checkbox-ex.json"
-      ],
+      "registryDependencies": ["@oui/checkbox-ex"],
       "meta": {
         "tags": ["checkbox", "checkbox-ex"],
         "canPreview": true,
@@ -458,7 +445,7 @@
           "type": "registry:ui"
         }
       ],
-      "registryDependencies": ["https://oui.mw10013.workers.dev/r/base.json"],
+      "registryDependencies": ["@oui/base"],
       "dependencies": ["react-aria-components"],
       "meta": {
         "tags": ["checkbox-group"]
@@ -474,9 +461,9 @@
         }
       ],
       "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/checkbox-group.json",
-        "https://oui.mw10013.workers.dev/r/checkbox.json",
-        "https://oui.mw10013.workers.dev/r/label.json"
+        "@oui/checkbox-group",
+        "@oui/checkbox",
+        "@oui/label"
       ],
       "meta": {
         "tags": ["checkbox-group", "checkbox"],
@@ -496,10 +483,10 @@
         }
       ],
       "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/checkbox-group.json",
-        "https://oui.mw10013.workers.dev/r/field-error.json",
-        "https://oui.mw10013.workers.dev/r/label.json",
-        "https://oui.mw10013.workers.dev/r/text.json"
+        "@oui/checkbox-group",
+        "@oui/field-error",
+        "@oui/label",
+        "@oui/text"
       ],
       "meta": {
         "tags": [
@@ -521,8 +508,8 @@
         }
       ],
       "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/checkbox-group-ex.json",
-        "https://oui.mw10013.workers.dev/r/checkbox.json"
+        "@oui/checkbox-group-ex",
+        "@oui/checkbox"
       ],
       "meta": {
         "tags": ["checkbox-group", "checkbox-group-ex", "checkbox"],
@@ -541,7 +528,7 @@
           "type": "registry:ui"
         }
       ],
-      "registryDependencies": ["https://oui.mw10013.workers.dev/r/base.json"],
+      "registryDependencies": ["@oui/base"],
       "dependencies": ["react-aria-components"],
       "meta": {
         "tags": ["combo-box"]
@@ -557,13 +544,13 @@
         }
       ],
       "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/combo-box.json",
-        "https://oui.mw10013.workers.dev/r/button.json",
-        "https://oui.mw10013.workers.dev/r/group.json",
-        "https://oui.mw10013.workers.dev/r/input.json",
-        "https://oui.mw10013.workers.dev/r/label.json",
-        "https://oui.mw10013.workers.dev/r/list-box.json",
-        "https://oui.mw10013.workers.dev/r/popover.json"
+        "@oui/combo-box",
+        "@oui/button",
+        "@oui/group",
+        "@oui/input",
+        "@oui/label",
+        "@oui/list-box",
+        "@oui/popover"
       ],
       "dependencies": ["lucide-react"],
       "meta": {
@@ -584,14 +571,14 @@
         }
       ],
       "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/combo-box.json",
-        "https://oui.mw10013.workers.dev/r/button.json",
-        "https://oui.mw10013.workers.dev/r/field-error.json",
-        "https://oui.mw10013.workers.dev/r/group.json",
-        "https://oui.mw10013.workers.dev/r/input.json",
-        "https://oui.mw10013.workers.dev/r/label.json",
-        "https://oui.mw10013.workers.dev/r/popover.json",
-        "https://oui.mw10013.workers.dev/r/text.json"
+        "@oui/combo-box",
+        "@oui/button",
+        "@oui/field-error",
+        "@oui/group",
+        "@oui/input",
+        "@oui/label",
+        "@oui/popover",
+        "@oui/text"
       ],
       "dependencies": ["lucide-react"],
       "meta": {
@@ -615,10 +602,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/combo-box-ex.json",
-        "https://oui.mw10013.workers.dev/r/list-box.json"
-      ],
+      "registryDependencies": ["@oui/combo-box-ex", "@oui/list-box"],
       "meta": {
         "tags": ["combo-box", "combo-box-ex", "list-box"],
         "canPreview": true,
@@ -636,8 +620,8 @@
       ],
       "registryDependencies": [
         "avatar",
-        "https://oui.mw10013.workers.dev/r/combo-box-ex.json",
-        "https://oui.mw10013.workers.dev/r/list-box.json"
+        "@oui/combo-box-ex",
+        "@oui/list-box"
       ],
       "meta": {
         "tags": ["combo-box", "combo-box-ex", "avatar", "list-box"],
@@ -655,9 +639,9 @@
         }
       ],
       "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/combo-box-ex.json",
-        "https://oui.mw10013.workers.dev/r/header.json",
-        "https://oui.mw10013.workers.dev/r/list-box.json"
+        "@oui/combo-box-ex",
+        "@oui/header",
+        "@oui/list-box"
       ],
       "meta": {
         "tags": ["combo-box", "combo-box-ex", "header", "list-box"],
@@ -677,9 +661,9 @@
         }
       ],
       "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/button.json",
-        "https://oui.mw10013.workers.dev/r/heading.json",
-        "https://oui.mw10013.workers.dev/r/modal.json"
+        "@oui/button",
+        "@oui/heading",
+        "@oui/modal"
       ],
       "dependencies": [
         "react-aria-components",
@@ -701,14 +685,14 @@
         }
       ],
       "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/button.json",
-        "https://oui.mw10013.workers.dev/r/dialog.json",
-        "https://oui.mw10013.workers.dev/r/form.json",
-        "https://oui.mw10013.workers.dev/r/heading.json",
-        "https://oui.mw10013.workers.dev/r/input.json",
-        "https://oui.mw10013.workers.dev/r/label.json",
-        "https://oui.mw10013.workers.dev/r/modal.json",
-        "https://oui.mw10013.workers.dev/r/text-field.json"
+        "@oui/button",
+        "@oui/dialog",
+        "@oui/form",
+        "@oui/heading",
+        "@oui/input",
+        "@oui/label",
+        "@oui/modal",
+        "@oui/text-field"
       ],
       "meta": {
         "tags": ["dialog", "form", "heading", "input", "modal", "text-field"],
@@ -729,9 +713,9 @@
         }
       ],
       "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/dialog.json",
-        "https://oui.mw10013.workers.dev/r/button.json",
-        "https://oui.mw10013.workers.dev/r/modal-ex.json"
+        "@oui/dialog",
+        "@oui/button",
+        "@oui/modal-ex"
       ],
       "meta": {
         "tags": ["dialog", "dialog-ex", "modal-ex"]
@@ -747,11 +731,11 @@
         }
       ],
       "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/button.json",
-        "https://oui.mw10013.workers.dev/r/dialog.json",
-        "https://oui.mw10013.workers.dev/r/dialog-ex.json",
-        "https://oui.mw10013.workers.dev/r/heading.json",
-        "https://oui.mw10013.workers.dev/r/text-field-ex.json"
+        "@oui/button",
+        "@oui/dialog",
+        "@oui/dialog-ex",
+        "@oui/heading",
+        "@oui/text-field-ex"
       ],
       "meta": {
         "tags": ["dialog", "dialog-ex", "modal-ex", "text-field-ex", "heading"],
@@ -770,10 +754,10 @@
         }
       ],
       "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/button.json",
-        "https://oui.mw10013.workers.dev/r/dialog.json",
-        "https://oui.mw10013.workers.dev/r/dialog-ex.json",
-        "https://oui.mw10013.workers.dev/r/heading.json"
+        "@oui/button",
+        "@oui/dialog",
+        "@oui/dialog-ex",
+        "@oui/heading"
       ],
       "meta": {
         "tags": ["dialog", "dialog-ex", "modal-ex", "heading"],
@@ -792,10 +776,10 @@
         }
       ],
       "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/button.json",
-        "https://oui.mw10013.workers.dev/r/dialog.json",
-        "https://oui.mw10013.workers.dev/r/dialog-ex.json",
-        "https://oui.mw10013.workers.dev/r/heading.json"
+        "@oui/button",
+        "@oui/dialog",
+        "@oui/dialog-ex",
+        "@oui/heading"
       ],
       "meta": {
         "tags": ["dialog", "dialog-ex", "modal-ex", "heading"],
@@ -814,10 +798,10 @@
         }
       ],
       "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/button.json",
-        "https://oui.mw10013.workers.dev/r/dialog.json",
-        "https://oui.mw10013.workers.dev/r/dialog-ex.json",
-        "https://oui.mw10013.workers.dev/r/heading.json"
+        "@oui/button",
+        "@oui/dialog",
+        "@oui/dialog-ex",
+        "@oui/heading"
       ],
       "meta": {
         "tags": ["dialog", "dialog-ex", "modal-ex", "heading"],
@@ -838,10 +822,10 @@
         }
       ],
       "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/button.json",
-        "https://oui.mw10013.workers.dev/r/dialog.json",
-        "https://oui.mw10013.workers.dev/r/heading.json",
-        "https://oui.mw10013.workers.dev/r/modal-ex.json"
+        "@oui/button",
+        "@oui/dialog",
+        "@oui/heading",
+        "@oui/modal-ex"
       ],
       "meta": {
         "tags": ["dialog", "dialog-ex-alert", "heading", "modal-ex"]
@@ -856,10 +840,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/button.json",
-        "https://oui.mw10013.workers.dev/r/dialog-ex-alert.json"
-      ],
+      "registryDependencies": ["@oui/button", "@oui/dialog-ex-alert"],
       "meta": {
         "tags": ["dialog", "dialog-ex-alert"],
         "canPreview": true,
@@ -876,10 +857,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/button.json",
-        "https://oui.mw10013.workers.dev/r/dialog-ex-alert.json"
-      ],
+      "registryDependencies": ["@oui/button", "@oui/dialog-ex-alert"],
       "meta": {
         "tags": ["dialog", "dialog-ex-alert"],
         "canPreview": true,
@@ -896,10 +874,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/button.json",
-        "https://oui.mw10013.workers.dev/r/dialog-ex-alert.json"
-      ],
+      "registryDependencies": ["@oui/button", "@oui/dialog-ex-alert"],
       "meta": {
         "tags": ["dialog", "dialog-ex-alert"],
         "canPreview": true,
@@ -919,12 +894,12 @@
         }
       ],
       "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/button.json",
-        "https://oui.mw10013.workers.dev/r/dialog.json",
-        "https://oui.mw10013.workers.dev/r/modal-ex-sheet.json",
-        "https://oui.mw10013.workers.dev/r/label.json",
-        "https://oui.mw10013.workers.dev/r/link.json",
-        "https://oui.mw10013.workers.dev/r/text.json"
+        "@oui/button",
+        "@oui/dialog",
+        "@oui/modal-ex-sheet",
+        "@oui/label",
+        "@oui/link",
+        "@oui/text"
       ],
       "meta": {
         "tags": ["dialog", "dialog-ex-sheet", "modal-ex-sheet", "sheet"]
@@ -940,11 +915,11 @@
         }
       ],
       "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/button.json",
-        "https://oui.mw10013.workers.dev/r/dialog.json",
-        "https://oui.mw10013.workers.dev/r/dialog-ex-sheet.json",
-        "https://oui.mw10013.workers.dev/r/heading.json",
-        "https://oui.mw10013.workers.dev/r/text-field-ex.json"
+        "@oui/button",
+        "@oui/dialog",
+        "@oui/dialog-ex-sheet",
+        "@oui/heading",
+        "@oui/text-field-ex"
       ],
       "meta": {
         "tags": [
@@ -970,10 +945,10 @@
         }
       ],
       "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/button.json",
-        "https://oui.mw10013.workers.dev/r/dialog.json",
-        "https://oui.mw10013.workers.dev/r/dialog-ex-sheet.json",
-        "https://oui.mw10013.workers.dev/r/heading.json"
+        "@oui/button",
+        "@oui/dialog",
+        "@oui/dialog-ex-sheet",
+        "@oui/heading"
       ],
       "meta": {
         "tags": [
@@ -998,9 +973,7 @@
           "type": "registry:ui"
         }
       ],
-      "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/heading.json"
-      ],
+      "registryDependencies": ["@oui/heading"],
       "dependencies": ["react-aria-components", "lucide-react"],
       "meta": {
         "tags": ["disclosure", "heading"]
@@ -1015,10 +988,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/disclosure.json",
-        "https://oui.mw10013.workers.dev/r/heading.json"
-      ],
+      "registryDependencies": ["@oui/disclosure", "@oui/heading"],
       "meta": {
         "tags": ["disclosure", "heading"],
         "canPreview": true,
@@ -1036,10 +1006,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/disclosure.json",
-        "https://oui.mw10013.workers.dev/r/heading.json"
-      ],
+      "registryDependencies": ["@oui/disclosure", "@oui/heading"],
       "meta": {
         "tags": ["disclosure", "disclosure-ex", "heading"]
       }
@@ -1053,9 +1020,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/disclosure-ex.json"
-      ],
+      "registryDependencies": ["@oui/disclosure-ex"],
       "meta": {
         "tags": ["disclosure", "disclosure-ex"],
         "canPreview": true,
@@ -1071,9 +1036,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/disclosure-ex.json"
-      ],
+      "registryDependencies": ["@oui/disclosure-ex"],
       "meta": {
         "tags": ["disclosure", "disclosure-ex"],
         "canPreview": true,
@@ -1092,7 +1055,7 @@
           "type": "registry:ui"
         }
       ],
-      "registryDependencies": ["https://oui.mw10013.workers.dev/r/base.json"],
+      "registryDependencies": ["@oui/base"],
       "dependencies": ["react-aria-components"],
       "meta": {
         "tags": ["field-error"]
@@ -1108,10 +1071,10 @@
         }
       ],
       "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/field-error.json",
-        "https://oui.mw10013.workers.dev/r/input.json",
-        "https://oui.mw10013.workers.dev/r/label.json",
-        "https://oui.mw10013.workers.dev/r/text-field.json"
+        "@oui/field-error",
+        "@oui/input",
+        "@oui/label",
+        "@oui/text-field"
       ],
       "meta": {
         "tags": ["field-error", "input", "label", "text-field"],
@@ -1143,18 +1106,18 @@
         }
       ],
       "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/button.json",
-        "https://oui.mw10013.workers.dev/r/checkbox-ex.json",
-        "https://oui.mw10013.workers.dev/r/checkbox-group-ex.json",
-        "https://oui.mw10013.workers.dev/r/checkbox.json",
-        "https://oui.mw10013.workers.dev/r/form.json",
-        "https://oui.mw10013.workers.dev/r/list-box.json",
-        "https://oui.mw10013.workers.dev/r/radio-group-ex.json",
-        "https://oui.mw10013.workers.dev/r/radio-group.json",
-        "https://oui.mw10013.workers.dev/r/select-ex.json",
-        "https://oui.mw10013.workers.dev/r/switch-ex.json",
-        "https://oui.mw10013.workers.dev/r/text-area.json",
-        "https://oui.mw10013.workers.dev/r/text-field-ex.json"
+        "@oui/button",
+        "@oui/checkbox-ex",
+        "@oui/checkbox-group-ex",
+        "@oui/checkbox",
+        "@oui/form",
+        "@oui/list-box",
+        "@oui/radio-group-ex",
+        "@oui/radio-group",
+        "@oui/select-ex",
+        "@oui/switch-ex",
+        "@oui/text-area",
+        "@oui/text-field-ex"
       ],
       "meta": {
         "tags": [
@@ -1202,9 +1165,9 @@
         }
       ],
       "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/button.json",
-        "https://oui.mw10013.workers.dev/r/form.json",
-        "https://oui.mw10013.workers.dev/r/text-field-ex.json"
+        "@oui/button",
+        "@oui/form",
+        "@oui/text-field-ex"
       ],
       "meta": {
         "tags": ["form-alert", "form", "text-field-ex"],
@@ -1223,7 +1186,7 @@
           "type": "registry:ui"
         }
       ],
-      "registryDependencies": ["https://oui.mw10013.workers.dev/r/base.json"],
+      "registryDependencies": ["@oui/base"],
       "dependencies": ["react-aria-components"],
       "meta": {
         "tags": ["group"]
@@ -1239,10 +1202,10 @@
         }
       ],
       "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/button.json",
-        "https://oui.mw10013.workers.dev/r/group.json",
-        "https://oui.mw10013.workers.dev/r/input.json",
-        "https://oui.mw10013.workers.dev/r/label.json"
+        "@oui/button",
+        "@oui/group",
+        "@oui/input",
+        "@oui/label"
       ],
       "dependencies": ["lucide-react"],
       "meta": {
@@ -1282,10 +1245,10 @@
         }
       ],
       "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/button.json",
-        "https://oui.mw10013.workers.dev/r/header.json",
-        "https://oui.mw10013.workers.dev/r/menu-ex.json",
-        "https://oui.mw10013.workers.dev/r/menu.json"
+        "@oui/button",
+        "@oui/header",
+        "@oui/menu-ex",
+        "@oui/menu"
       ],
       "meta": {
         "tags": ["header", "menu-ex", "menu"],
@@ -1325,10 +1288,10 @@
         }
       ],
       "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/button.json",
-        "https://oui.mw10013.workers.dev/r/dialog.json",
-        "https://oui.mw10013.workers.dev/r/heading.json",
-        "https://oui.mw10013.workers.dev/r/modal.json"
+        "@oui/button",
+        "@oui/dialog",
+        "@oui/heading",
+        "@oui/modal"
       ],
       "meta": {
         "tags": ["heading", "dialog", "modal"],
@@ -1349,62 +1312,62 @@
         }
       ],
       "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/base.json",
-        "https://oui.mw10013.workers.dev/r/button.json",
-        "https://oui.mw10013.workers.dev/r/checkbox-group.json",
-        "https://oui.mw10013.workers.dev/r/checkbox.json",
-        "https://oui.mw10013.workers.dev/r/dialog.json",
-        "https://oui.mw10013.workers.dev/r/disclosure.json",
-        "https://oui.mw10013.workers.dev/r/field-error.json",
-        "https://oui.mw10013.workers.dev/r/form.json",
-        "https://oui.mw10013.workers.dev/r/group.json",
-        "https://oui.mw10013.workers.dev/r/header.json",
-        "https://oui.mw10013.workers.dev/r/heading.json",
-        "https://oui.mw10013.workers.dev/r/input.json",
-        "https://oui.mw10013.workers.dev/r/keyboard.json",
-        "https://oui.mw10013.workers.dev/r/label.json",
-        "https://oui.mw10013.workers.dev/r/link.json",
-        "https://oui.mw10013.workers.dev/r/list-box.json",
-        "https://oui.mw10013.workers.dev/r/menu.json",
-        "https://oui.mw10013.workers.dev/r/modal.json",
-        "https://oui.mw10013.workers.dev/r/number-field.json",
-        "https://oui.mw10013.workers.dev/r/popover.json",
-        "https://oui.mw10013.workers.dev/r/radio-group.json",
-        "https://oui.mw10013.workers.dev/r/search-field.json",
-        "https://oui.mw10013.workers.dev/r/select.json",
-        "https://oui.mw10013.workers.dev/r/separator.json",
-        "https://oui.mw10013.workers.dev/r/slider.json",
-        "https://oui.mw10013.workers.dev/r/switch.json",
-        "https://oui.mw10013.workers.dev/r/table.json",
-        "https://oui.mw10013.workers.dev/r/tabs.json",
-        "https://oui.mw10013.workers.dev/r/text-area.json",
-        "https://oui.mw10013.workers.dev/r/text-field.json",
-        "https://oui.mw10013.workers.dev/r/text.json",
-        "https://oui.mw10013.workers.dev/r/tooltip.json",
-        "https://oui.mw10013.workers.dev/r/autocomplete-ex.json",
-        "https://oui.mw10013.workers.dev/r/checkbox-ex.json",
-        "https://oui.mw10013.workers.dev/r/checkbox-group-ex.json",
-        "https://oui.mw10013.workers.dev/r/combo-box-ex.json",
-        "https://oui.mw10013.workers.dev/r/dialog-ex-alert.json",
-        "https://oui.mw10013.workers.dev/r/dialog-ex-sheet.json",
-        "https://oui.mw10013.workers.dev/r/dialog-ex.json",
-        "https://oui.mw10013.workers.dev/r/disclosure-ex.json",
-        "https://oui.mw10013.workers.dev/r/form-alert.json",
-        "https://oui.mw10013.workers.dev/r/list-box-ex-pagination.json",
-        "https://oui.mw10013.workers.dev/r/menu-ex.json",
-        "https://oui.mw10013.workers.dev/r/modal-ex-sheet.json",
-        "https://oui.mw10013.workers.dev/r/modal-ex.json",
-        "https://oui.mw10013.workers.dev/r/number-field-ex.json",
-        "https://oui.mw10013.workers.dev/r/popover-ex.json",
-        "https://oui.mw10013.workers.dev/r/radio-group-ex.json",
-        "https://oui.mw10013.workers.dev/r/search-field-ex.json",
-        "https://oui.mw10013.workers.dev/r/select-ex-popover.json",
-        "https://oui.mw10013.workers.dev/r/select-ex.json",
-        "https://oui.mw10013.workers.dev/r/sidebar-ex.json",
-        "https://oui.mw10013.workers.dev/r/slider-ex.json",
-        "https://oui.mw10013.workers.dev/r/switch-ex.json",
-        "https://oui.mw10013.workers.dev/r/text-field-ex.json",
-        "https://oui.mw10013.workers.dev/r/tooltip-ex.json"
+        "@oui/base",
+        "@oui/button",
+        "@oui/checkbox-group",
+        "@oui/checkbox",
+        "@oui/dialog",
+        "@oui/disclosure",
+        "@oui/field-error",
+        "@oui/form",
+        "@oui/group",
+        "@oui/header",
+        "@oui/heading",
+        "@oui/input",
+        "@oui/keyboard",
+        "@oui/label",
+        "@oui/link",
+        "@oui/list-box",
+        "@oui/menu",
+        "@oui/modal",
+        "@oui/number-field",
+        "@oui/popover",
+        "@oui/radio-group",
+        "@oui/search-field",
+        "@oui/select",
+        "@oui/separator",
+        "@oui/slider",
+        "@oui/switch",
+        "@oui/table",
+        "@oui/tabs",
+        "@oui/text-area",
+        "@oui/text-field",
+        "@oui/text",
+        "@oui/tooltip",
+        "@oui/autocomplete-ex",
+        "@oui/checkbox-ex",
+        "@oui/checkbox-group-ex",
+        "@oui/combo-box-ex",
+        "@oui/dialog-ex-alert",
+        "@oui/dialog-ex-sheet",
+        "@oui/dialog-ex",
+        "@oui/disclosure-ex",
+        "@oui/form-alert",
+        "@oui/list-box-ex-pagination",
+        "@oui/menu-ex",
+        "@oui/modal-ex-sheet",
+        "@oui/modal-ex",
+        "@oui/number-field-ex",
+        "@oui/popover-ex",
+        "@oui/radio-group-ex",
+        "@oui/search-field-ex",
+        "@oui/select-ex-popover",
+        "@oui/select-ex",
+        "@oui/sidebar-ex",
+        "@oui/slider-ex",
+        "@oui/switch-ex",
+        "@oui/text-field-ex",
+        "@oui/tooltip-ex"
       ]
     },
     {
@@ -1418,7 +1381,7 @@
           "type": "registry:ui"
         }
       ],
-      "registryDependencies": ["https://oui.mw10013.workers.dev/r/base.json"],
+      "registryDependencies": ["@oui/base"],
       "dependencies": [
         "react-aria-components",
         "class-variance-authority",
@@ -1437,7 +1400,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["https://oui.mw10013.workers.dev/r/input.json"],
+      "registryDependencies": ["@oui/input"],
       "meta": {
         "tags": ["input"],
         "canPreview": true,
@@ -1453,7 +1416,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["https://oui.mw10013.workers.dev/r/input.json"],
+      "registryDependencies": ["@oui/input"],
       "meta": {
         "tags": ["input"],
         "canPreview": true,
@@ -1469,7 +1432,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["https://oui.mw10013.workers.dev/r/input.json"],
+      "registryDependencies": ["@oui/input"],
       "meta": {
         "tags": ["input", "disabled"],
         "canPreview": true,
@@ -1503,10 +1466,10 @@
         }
       ],
       "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/button.json",
-        "https://oui.mw10013.workers.dev/r/keyboard.json",
-        "https://oui.mw10013.workers.dev/r/menu-ex.json",
-        "https://oui.mw10013.workers.dev/r/menu.json"
+        "@oui/button",
+        "@oui/keyboard",
+        "@oui/menu-ex",
+        "@oui/menu"
       ],
       "meta": {
         "tags": ["keyboard", "menu-ex", "menu"],
@@ -1525,7 +1488,7 @@
           "type": "registry:ui"
         }
       ],
-      "registryDependencies": ["https://oui.mw10013.workers.dev/r/base.json"],
+      "registryDependencies": ["@oui/base"],
       "dependencies": ["react-aria-components", "tailwind-merge"],
       "meta": {
         "tags": ["label"]
@@ -1541,8 +1504,8 @@
         }
       ],
       "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/input.json",
-        "https://oui.mw10013.workers.dev/r/label.json"
+        "@oui/input",
+        "@oui/label"
       ],
       "meta": {
         "tags": ["label"],
@@ -1560,8 +1523,8 @@
         }
       ],
       "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/input.json",
-        "https://oui.mw10013.workers.dev/r/label.json"
+        "@oui/input",
+        "@oui/label"
       ],
       "meta": {
         "tags": ["label", "disabled"],
@@ -1580,7 +1543,7 @@
           "type": "registry:ui"
         }
       ],
-      "registryDependencies": ["https://oui.mw10013.workers.dev/r/base.json"],
+      "registryDependencies": ["@oui/base"],
       "dependencies": [
         "react-aria-components",
         "class-variance-authority",
@@ -1599,7 +1562,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["https://oui.mw10013.workers.dev/r/link.json"],
+      "registryDependencies": ["@oui/link"],
       "meta": {
         "tags": ["link"],
         "canPreview": true,
@@ -1616,7 +1579,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["https://oui.mw10013.workers.dev/r/link.json"],
+      "registryDependencies": ["@oui/link"],
       "meta": {
         "tags": ["link"],
         "canPreview": true,
@@ -1633,7 +1596,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["https://oui.mw10013.workers.dev/r/link.json"],
+      "registryDependencies": ["@oui/link"],
       "meta": {
         "tags": ["link"],
         "canPreview": true,
@@ -1650,7 +1613,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["https://oui.mw10013.workers.dev/r/link.json"],
+      "registryDependencies": ["@oui/link"],
       "meta": {
         "tags": ["link"],
         "canPreview": true,
@@ -1667,7 +1630,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["https://oui.mw10013.workers.dev/r/link.json"],
+      "registryDependencies": ["@oui/link"],
       "meta": {
         "tags": ["link"],
         "canPreview": true,
@@ -1684,7 +1647,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["https://oui.mw10013.workers.dev/r/link.json"],
+      "registryDependencies": ["@oui/link"],
       "meta": {
         "tags": ["link"],
         "canPreview": true,
@@ -1702,8 +1665,8 @@
         }
       ],
       "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/button.json",
-        "https://oui.mw10013.workers.dev/r/link.json"
+        "@oui/button",
+        "@oui/link"
       ],
       "meta": {
         "tags": ["link"],
@@ -1722,8 +1685,8 @@
         }
       ],
       "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/button.json",
-        "https://oui.mw10013.workers.dev/r/link.json"
+        "@oui/button",
+        "@oui/link"
       ],
       "meta": {
         "tags": ["link"],
@@ -1742,8 +1705,8 @@
         }
       ],
       "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/button.json",
-        "https://oui.mw10013.workers.dev/r/link.json"
+        "@oui/button",
+        "@oui/link"
       ],
       "meta": {
         "tags": ["link"],
@@ -1762,8 +1725,8 @@
         }
       ],
       "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/button.json",
-        "https://oui.mw10013.workers.dev/r/link.json"
+        "@oui/button",
+        "@oui/link"
       ],
       "meta": {
         "tags": ["link"],
@@ -1782,8 +1745,8 @@
         }
       ],
       "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/button.json",
-        "https://oui.mw10013.workers.dev/r/link.json"
+        "@oui/button",
+        "@oui/link"
       ],
       "dependencies": ["simple-icons"],
       "meta": {
@@ -1804,10 +1767,10 @@
       ],
       "registryDependencies": [
         "card",
-        "https://oui.mw10013.workers.dev/r/button.json",
-        "https://oui.mw10013.workers.dev/r/label.json",
-        "https://oui.mw10013.workers.dev/r/link.json",
-        "https://oui.mw10013.workers.dev/r/text-field-ex.json"
+        "@oui/button",
+        "@oui/label",
+        "@oui/link",
+        "@oui/text-field-ex"
       ],
       "meta": {
         "tags": ["link", "text-field-ex", "login"],
@@ -1826,7 +1789,7 @@
           "type": "registry:ui"
         }
       ],
-      "registryDependencies": ["https://oui.mw10013.workers.dev/r/base.json"],
+      "registryDependencies": ["@oui/base"],
       "dependencies": [
         "react-aria-components",
         "lucide-react",
@@ -1846,7 +1809,7 @@
         }
       ],
       "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/list-box.json",
+        "@oui/list-box",
         "item"
       ],
       "meta": {
@@ -1865,7 +1828,7 @@
         }
       ],
       "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/list-box.json",
+        "@oui/list-box",
         "item"
       ],
       "meta": {
@@ -1884,10 +1847,10 @@
         }
       ],
       "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/button.json",
-        "https://oui.mw10013.workers.dev/r/label.json",
-        "https://oui.mw10013.workers.dev/r/link.json",
-        "https://oui.mw10013.workers.dev/r/text.json"
+        "@oui/button",
+        "@oui/label",
+        "@oui/link",
+        "@oui/text"
       ],
       "meta": {
         "tags-": ["list-box", "list-box-ex-pagination"],
@@ -1905,7 +1868,7 @@
         }
       ],
       "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/list-box-ex-pagination.json"
+        "@oui/list-box-ex-pagination"
       ],
       "meta": {
         "tags": ["list-box"],
@@ -1924,7 +1887,7 @@
           "type": "registry:ui"
         }
       ],
-      "registryDependencies": ["https://oui.mw10013.workers.dev/r/base.json"],
+      "registryDependencies": ["@oui/base"],
       "dependencies": [
         "react-aria-components",
         "class-variance-authority",
@@ -1947,9 +1910,9 @@
         }
       ],
       "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/button.json",
-        "https://oui.mw10013.workers.dev/r/menu.json",
-        "https://oui.mw10013.workers.dev/r/popover.json"
+        "@oui/button",
+        "@oui/menu",
+        "@oui/popover"
       ],
       "meta": {
         "tags": ["menu", "menu-ex", "popover", "button"]
@@ -1965,13 +1928,13 @@
         }
       ],
       "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/button.json",
-        "https://oui.mw10013.workers.dev/r/header.json",
-        "https://oui.mw10013.workers.dev/r/keyboard.json",
-        "https://oui.mw10013.workers.dev/r/menu.json",
-        "https://oui.mw10013.workers.dev/r/menu-ex.json",
-        "https://oui.mw10013.workers.dev/r/popover.json",
-        "https://oui.mw10013.workers.dev/r/separator.json"
+        "@oui/button",
+        "@oui/header",
+        "@oui/keyboard",
+        "@oui/menu",
+        "@oui/menu-ex",
+        "@oui/popover",
+        "@oui/separator"
       ],
       "meta": {
         "tags": [
@@ -1996,11 +1959,11 @@
         }
       ],
       "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/button.json",
-        "https://oui.mw10013.workers.dev/r/header.json",
-        "https://oui.mw10013.workers.dev/r/menu.json",
-        "https://oui.mw10013.workers.dev/r/menu-ex.json",
-        "https://oui.mw10013.workers.dev/r/separator.json"
+        "@oui/button",
+        "@oui/header",
+        "@oui/menu",
+        "@oui/menu-ex",
+        "@oui/separator"
       ],
       "meta": {
         "tags": ["menu", "menu-ex", "header", "separator"],
@@ -2018,10 +1981,10 @@
         }
       ],
       "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/button.json",
-        "https://oui.mw10013.workers.dev/r/header.json",
-        "https://oui.mw10013.workers.dev/r/menu.json",
-        "https://oui.mw10013.workers.dev/r/menu-ex.json"
+        "@oui/button",
+        "@oui/header",
+        "@oui/menu",
+        "@oui/menu-ex"
       ],
       "meta": {
         "tags": ["menu", "menu-ex", "header"],
@@ -2040,10 +2003,10 @@
       ],
       "registryDependencies": [
         "avatar",
-        "https://oui.mw10013.workers.dev/r/button.json",
-        "https://oui.mw10013.workers.dev/r/menu.json",
-        "https://oui.mw10013.workers.dev/r/menu-ex.json",
-        "https://oui.mw10013.workers.dev/r/separator.json"
+        "@oui/button",
+        "@oui/menu",
+        "@oui/menu-ex",
+        "@oui/separator"
       ],
       "dependencies": ["lucide-react"],
       "meta": {
@@ -2063,10 +2026,10 @@
       ],
       "registryDependencies": [
         "avatar",
-        "https://oui.mw10013.workers.dev/r/button.json",
-        "https://oui.mw10013.workers.dev/r/menu.json",
-        "https://oui.mw10013.workers.dev/r/menu-ex.json",
-        "https://oui.mw10013.workers.dev/r/separator.json"
+        "@oui/button",
+        "@oui/menu",
+        "@oui/menu-ex",
+        "@oui/separator"
       ],
       "dependencies": ["lucide-react"],
       "meta": {
@@ -2085,10 +2048,10 @@
         }
       ],
       "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/button.json",
-        "https://oui.mw10013.workers.dev/r/menu.json",
-        "https://oui.mw10013.workers.dev/r/menu-ex.json",
-        "https://oui.mw10013.workers.dev/r/separator.json"
+        "@oui/button",
+        "@oui/menu",
+        "@oui/menu-ex",
+        "@oui/separator"
       ],
       "dependencies": ["lucide-react"],
       "meta": {
@@ -2108,7 +2071,7 @@
           "type": "registry:ui"
         }
       ],
-      "registryDependencies": ["https://oui.mw10013.workers.dev/r/base.json"],
+      "registryDependencies": ["@oui/base"],
       "dependencies": [
         "react-aria-components",
         "class-variance-authority",
@@ -2130,10 +2093,10 @@
         }
       ],
       "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/modal.json",
-        "https://oui.mw10013.workers.dev/r/label.json",
-        "https://oui.mw10013.workers.dev/r/link.json",
-        "https://oui.mw10013.workers.dev/r/text.json"
+        "@oui/modal",
+        "@oui/label",
+        "@oui/link",
+        "@oui/text"
       ],
       "meta": {
         "tags": ["modal", "modal-ex"]
@@ -2150,7 +2113,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["https://oui.mw10013.workers.dev/r/modal.json"],
+      "registryDependencies": ["@oui/modal"],
       "meta": {
         "tags": ["modal", "modal-ex-sheet", "sheet"]
       }
@@ -2166,7 +2129,7 @@
           "type": "registry:ui"
         }
       ],
-      "registryDependencies": ["https://oui.mw10013.workers.dev/r/base.json"],
+      "registryDependencies": ["@oui/base"],
       "dependencies": ["react-aria-components", "lucide-react"],
       "meta": {
         "tags": ["number-field"]
@@ -2184,12 +2147,12 @@
         }
       ],
       "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/field-error.json",
-        "https://oui.mw10013.workers.dev/r/group.json",
-        "https://oui.mw10013.workers.dev/r/input.json",
-        "https://oui.mw10013.workers.dev/r/label.json",
-        "https://oui.mw10013.workers.dev/r/number-field.json",
-        "https://oui.mw10013.workers.dev/r/text.json"
+        "@oui/field-error",
+        "@oui/group",
+        "@oui/input",
+        "@oui/label",
+        "@oui/number-field",
+        "@oui/text"
       ],
       "dependencies": ["lucide-react"],
       "meta": {
@@ -2214,8 +2177,8 @@
         }
       ],
       "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/button.json",
-        "https://oui.mw10013.workers.dev/r/number-field-ex.json"
+        "@oui/button",
+        "@oui/number-field-ex"
       ],
       "meta": {
         "tags": ["number-field", "number-field-ex", "button"],
@@ -2256,9 +2219,9 @@
         }
       ],
       "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/button.json",
-        "https://oui.mw10013.workers.dev/r/dialog.json",
-        "https://oui.mw10013.workers.dev/r/popover.json"
+        "@oui/button",
+        "@oui/dialog",
+        "@oui/popover"
       ],
       "meta": {
         "tags": ["popover", "popover-ex", "dialog"]
@@ -2274,11 +2237,11 @@
         }
       ],
       "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/button.json",
-        "https://oui.mw10013.workers.dev/r/dialog.json",
-        "https://oui.mw10013.workers.dev/r/heading.json",
-        "https://oui.mw10013.workers.dev/r/popover-ex.json",
-        "https://oui.mw10013.workers.dev/r/text-field-ex-horizontal.json"
+        "@oui/button",
+        "@oui/dialog",
+        "@oui/heading",
+        "@oui/popover-ex",
+        "@oui/text-field-ex-horizontal"
       ],
       "meta": {
         "tags": [
@@ -2305,8 +2268,8 @@
         }
       ],
       "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/base.json",
-        "https://oui.mw10013.workers.dev/r/label.json"
+        "@oui/base",
+        "@oui/label"
       ],
       "dependencies": [
         "react-aria-components",
@@ -2329,10 +2292,10 @@
         }
       ],
       "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/field-error.json",
-        "https://oui.mw10013.workers.dev/r/label.json",
-        "https://oui.mw10013.workers.dev/r/radio-group.json",
-        "https://oui.mw10013.workers.dev/r/text.json"
+        "@oui/field-error",
+        "@oui/label",
+        "@oui/radio-group",
+        "@oui/text"
       ],
       "meta": {
         "tags": [
@@ -2354,8 +2317,8 @@
         }
       ],
       "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/radio-group-ex.json",
-        "https://oui.mw10013.workers.dev/r/radio-group.json"
+        "@oui/radio-group-ex",
+        "@oui/radio-group"
       ],
       "meta": {
         "tags": ["radio-group", "radio-group-ex"],
@@ -2373,8 +2336,8 @@
         }
       ],
       "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/radio-group-ex.json",
-        "https://oui.mw10013.workers.dev/r/radio-group.json"
+        "@oui/radio-group-ex",
+        "@oui/radio-group"
       ],
       "meta": {
         "tags": ["radio-group", "radio-group-ex"],
@@ -2408,7 +2371,7 @@
           "type": "registry:ui"
         }
       ],
-      "registryDependencies": ["https://oui.mw10013.workers.dev/r/base.json"],
+      "registryDependencies": ["@oui/base"],
       "dependencies": ["react-aria-components"],
       "meta": {
         "tags": ["search-field"]
@@ -2426,11 +2389,11 @@
         }
       ],
       "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/field-error.json",
-        "https://oui.mw10013.workers.dev/r/label.json",
-        "https://oui.mw10013.workers.dev/r/input.json",
-        "https://oui.mw10013.workers.dev/r/search-field.json",
-        "https://oui.mw10013.workers.dev/r/text.json"
+        "@oui/field-error",
+        "@oui/label",
+        "@oui/input",
+        "@oui/search-field",
+        "@oui/text"
       ],
       "meta": {
         "tags": [
@@ -2453,7 +2416,7 @@
         }
       ],
       "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/search-field-ex.json"
+        "@oui/search-field-ex"
       ],
       "meta": {
         "tags": ["search-field", "search-field-ex"],
@@ -2472,7 +2435,7 @@
           "type": "registry:ui"
         }
       ],
-      "registryDependencies": ["https://oui.mw10013.workers.dev/r/base.json"],
+      "registryDependencies": ["@oui/base"],
       "dependencies": [
         "react-aria-components",
         "lucide-react",
@@ -2492,9 +2455,9 @@
         }
       ],
       "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/list-box.json",
-        "https://oui.mw10013.workers.dev/r/popover.json",
-        "https://oui.mw10013.workers.dev/r/select.json"
+        "@oui/list-box",
+        "@oui/popover",
+        "@oui/select"
       ],
       "meta": {
         "tags": ["select", "list-box", "popover"],
@@ -2513,9 +2476,9 @@
         }
       ],
       "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/list-box.json",
-        "https://oui.mw10013.workers.dev/r/popover.json",
-        "https://oui.mw10013.workers.dev/r/select.json"
+        "@oui/list-box",
+        "@oui/popover",
+        "@oui/select"
       ],
       "meta": {
         "tags": ["select", "list-box", "popover", "multiple"],
@@ -2536,11 +2499,11 @@
         }
       ],
       "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/field-error.json",
-        "https://oui.mw10013.workers.dev/r/label.json",
-        "https://oui.mw10013.workers.dev/r/popover.json",
-        "https://oui.mw10013.workers.dev/r/select.json",
-        "https://oui.mw10013.workers.dev/r/text.json"
+        "@oui/field-error",
+        "@oui/label",
+        "@oui/popover",
+        "@oui/select",
+        "@oui/text"
       ],
       "meta": {
         "tags": ["select", "select-ex", "field-error", "popover", "text"]
@@ -2556,9 +2519,9 @@
         }
       ],
       "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/header.json",
-        "https://oui.mw10013.workers.dev/r/list-box.json",
-        "https://oui.mw10013.workers.dev/r/select-ex.json"
+        "@oui/header",
+        "@oui/list-box",
+        "@oui/select-ex"
       ],
       "meta": {
         "tags": ["select", "select-ex", "header", "list-box", "disabled"],
@@ -2577,8 +2540,8 @@
         }
       ],
       "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/list-box.json",
-        "https://oui.mw10013.workers.dev/r/select-ex.json"
+        "@oui/list-box",
+        "@oui/select-ex"
       ],
       "meta": {
         "tags": ["select", "select-ex", "list-box"],
@@ -2597,8 +2560,8 @@
         }
       ],
       "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/list-box.json",
-        "https://oui.mw10013.workers.dev/r/select-ex.json"
+        "@oui/list-box",
+        "@oui/select-ex"
       ],
       "dependencies": ["lucide-react"],
       "meta": {
@@ -2618,8 +2581,8 @@
         }
       ],
       "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/list-box.json",
-        "https://oui.mw10013.workers.dev/r/select-ex.json"
+        "@oui/list-box",
+        "@oui/select-ex"
       ],
       "meta": {
         "tags": ["select", "select-ex", "disabled"],
@@ -2640,11 +2603,11 @@
         }
       ],
       "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/field-error.json",
-        "https://oui.mw10013.workers.dev/r/label.json",
-        "https://oui.mw10013.workers.dev/r/popover.json",
-        "https://oui.mw10013.workers.dev/r/select.json",
-        "https://oui.mw10013.workers.dev/r/text.json"
+        "@oui/field-error",
+        "@oui/label",
+        "@oui/popover",
+        "@oui/select",
+        "@oui/text"
       ],
       "meta": {
         "tags": [
@@ -2688,7 +2651,7 @@
         }
       ],
       "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/separator.json"
+        "@oui/separator"
       ],
       "meta": {
         "tags": ["separator"],
@@ -2709,10 +2672,10 @@
       ],
       "registryDependencies": [
         "sidebar",
-        "https://oui.mw10013.workers.dev/r/button.json",
-        "https://oui.mw10013.workers.dev/r/label.json",
-        "https://oui.mw10013.workers.dev/r/link.json",
-        "https://oui.mw10013.workers.dev/r/text.json"
+        "@oui/button",
+        "@oui/label",
+        "@oui/link",
+        "@oui/text"
       ],
       "meta": {
         "tags-": ["sidebar", "sidebar-ex"]
@@ -2729,7 +2692,7 @@
           "type": "registry:ui"
         }
       ],
-      "registryDependencies": ["https://oui.mw10013.workers.dev/r/base.json"],
+      "registryDependencies": ["@oui/base"],
       "dependencies": ["react-aria-components"],
       "meta": {
         "tags": ["slider"]
@@ -2747,8 +2710,8 @@
         }
       ],
       "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/label.json",
-        "https://oui.mw10013.workers.dev/r/slider.json"
+        "@oui/label",
+        "@oui/slider"
       ],
       "meta": {
         "tags": ["slider", "slider-ex", "label"]
@@ -2764,7 +2727,7 @@
         }
       ],
       "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/slider-ex.json"
+        "@oui/slider-ex"
       ],
       "meta": {
         "tags": ["slider", "slider-ex"],
@@ -2782,7 +2745,7 @@
         }
       ],
       "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/slider-ex.json"
+        "@oui/slider-ex"
       ],
       "meta": {
         "tags": ["slider", "slider-ex", "disabled"],
@@ -2802,8 +2765,8 @@
         }
       ],
       "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/label.json",
-        "https://oui.mw10013.workers.dev/r/base.json"
+        "@oui/label",
+        "@oui/base"
       ],
       "dependencies": ["react-aria-components", "tailwind-merge"],
       "meta": {
@@ -2822,9 +2785,9 @@
         }
       ],
       "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/base.json",
-        "https://oui.mw10013.workers.dev/r/switch.json",
-        "https://oui.mw10013.workers.dev/r/text.json"
+        "@oui/base",
+        "@oui/switch",
+        "@oui/text"
       ],
       "meta": {
         "tags": ["switch", "switch-ex", "text"]
@@ -2840,7 +2803,7 @@
         }
       ],
       "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/switch-ex.json"
+        "@oui/switch-ex"
       ],
       "meta": {
         "tags": ["switch", "switch-ex"],
@@ -2858,7 +2821,7 @@
         }
       ],
       "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/switch-ex.json"
+        "@oui/switch-ex"
       ],
       "meta": {
         "tags": ["switch", "switch-ex"],
@@ -2876,7 +2839,7 @@
         }
       ],
       "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/switch-ex.json"
+        "@oui/switch-ex"
       ],
       "meta": {
         "tags": ["switch", "switch-ex"],
@@ -2894,7 +2857,7 @@
         }
       ],
       "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/switch-ex.json"
+        "@oui/switch-ex"
       ],
       "meta": {
         "tags": ["switch", "switch-ex", "disabled"],
@@ -2913,7 +2876,7 @@
           "type": "registry:ui"
         }
       ],
-      "registryDependencies": ["https://oui.mw10013.workers.dev/r/base.json"],
+      "registryDependencies": ["@oui/base"],
       "dependencies": [
         "react-aria-components",
         "lucide-react",
@@ -2932,7 +2895,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["https://oui.mw10013.workers.dev/r/table.json"],
+      "registryDependencies": ["@oui/table"],
       "meta": {
         "tags": ["table"],
         "canPreview": true,
@@ -2950,12 +2913,12 @@
         }
       ],
       "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/button.json",
-        "https://oui.mw10013.workers.dev/r/checkbox.json",
-        "https://oui.mw10013.workers.dev/r/menu-ex.json",
-        "https://oui.mw10013.workers.dev/r/menu.json",
-        "https://oui.mw10013.workers.dev/r/separator.json",
-        "https://oui.mw10013.workers.dev/r/table.json"
+        "@oui/button",
+        "@oui/checkbox",
+        "@oui/menu-ex",
+        "@oui/menu",
+        "@oui/separator",
+        "@oui/table"
       ],
       "dependencies": ["lucide-react"],
       "meta": {
@@ -2976,7 +2939,7 @@
           "type": "registry:ui"
         }
       ],
-      "registryDependencies": ["https://oui.mw10013.workers.dev/r/base.json"],
+      "registryDependencies": ["@oui/base"],
       "dependencies": ["react-aria-components"],
       "meta": {
         "tags": ["tabs"]
@@ -2991,7 +2954,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["https://oui.mw10013.workers.dev/r/tabs.json"],
+      "registryDependencies": ["@oui/tabs"],
       "meta": {
         "tags": ["tabs"],
         "canPreview": true,
@@ -3030,10 +2993,10 @@
         }
       ],
       "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/input.json",
-        "https://oui.mw10013.workers.dev/r/label.json",
-        "https://oui.mw10013.workers.dev/r/text-field.json",
-        "https://oui.mw10013.workers.dev/r/text.json"
+        "@oui/input",
+        "@oui/label",
+        "@oui/text-field",
+        "@oui/text"
       ],
       "meta": {
         "tags": ["text", "input", "label", "text-field"],
@@ -3068,7 +3031,7 @@
         }
       ],
       "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/text-area.json"
+        "@oui/text-area"
       ],
       "meta": {
         "tags": ["text-area"],
@@ -3086,8 +3049,8 @@
         }
       ],
       "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/text-area.json",
-        "https://oui.mw10013.workers.dev/r/text-field-ex.json"
+        "@oui/text-area",
+        "@oui/text-field-ex"
       ],
       "meta": {
         "tags": ["text-area", "text-field-ex"],
@@ -3105,8 +3068,8 @@
         }
       ],
       "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/text-area.json",
-        "https://oui.mw10013.workers.dev/r/text-field-ex.json"
+        "@oui/text-area",
+        "@oui/text-field-ex"
       ],
       "meta": {
         "tags": ["text-area", "text-field-ex", "disabled"],
@@ -3125,7 +3088,7 @@
           "type": "registry:ui"
         }
       ],
-      "registryDependencies": ["https://oui.mw10013.workers.dev/r/base.json"],
+      "registryDependencies": ["@oui/base"],
       "dependencies": ["react-aria-components"],
       "meta": {
         "tags": ["text-field"]
@@ -3141,11 +3104,11 @@
         }
       ],
       "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/field-error.json",
-        "https://oui.mw10013.workers.dev/r/input.json",
-        "https://oui.mw10013.workers.dev/r/label.json",
-        "https://oui.mw10013.workers.dev/r/text.json",
-        "https://oui.mw10013.workers.dev/r/text-field.json"
+        "@oui/field-error",
+        "@oui/input",
+        "@oui/label",
+        "@oui/text",
+        "@oui/text-field"
       ],
       "meta": {
         "tags": ["text-field", "field-error", "input", "label", "text"],
@@ -3165,11 +3128,11 @@
         }
       ],
       "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/text-field.json",
-        "https://oui.mw10013.workers.dev/r/input.json",
-        "https://oui.mw10013.workers.dev/r/label.json",
-        "https://oui.mw10013.workers.dev/r/field-error.json",
-        "https://oui.mw10013.workers.dev/r/text.json"
+        "@oui/text-field",
+        "@oui/input",
+        "@oui/label",
+        "@oui/field-error",
+        "@oui/text"
       ],
       "meta": {
         "tags": [
@@ -3192,7 +3155,7 @@
         }
       ],
       "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/text-field-ex.json"
+        "@oui/text-field-ex"
       ],
       "meta": {
         "tags": ["text-field", "text-field-ex"],
@@ -3212,11 +3175,11 @@
         }
       ],
       "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/text-field.json",
-        "https://oui.mw10013.workers.dev/r/input.json",
-        "https://oui.mw10013.workers.dev/r/label.json",
-        "https://oui.mw10013.workers.dev/r/field-error.json",
-        "https://oui.mw10013.workers.dev/r/text.json"
+        "@oui/text-field",
+        "@oui/input",
+        "@oui/label",
+        "@oui/field-error",
+        "@oui/text"
       ],
       "meta": {
         "tags": [
@@ -3239,7 +3202,7 @@
         }
       ],
       "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/text-field-ex-horizontal.json"
+        "@oui/text-field-ex-horizontal"
       ],
       "meta": {
         "tags": ["text-field", "text-field-ex-horizontal"],
@@ -3258,7 +3221,7 @@
           "type": "registry:ui"
         }
       ],
-      "registryDependencies": ["https://oui.mw10013.workers.dev/r/base.json"],
+      "registryDependencies": ["@oui/base"],
       "dependencies": ["react-aria-components", "class-variance-authority"],
       "meta": {
         "tags": ["toggle-button"]
@@ -3274,8 +3237,8 @@
         }
       ],
       "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/toggle-button.json",
-        "https://oui.mw10013.workers.dev/r/tooltip.json"
+        "@oui/toggle-button",
+        "@oui/tooltip"
       ],
       "dependencies": ["lucide-react"],
       "meta": {
@@ -3294,7 +3257,7 @@
         }
       ],
       "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/toggle-button.json"
+        "@oui/toggle-button"
       ],
       "dependencies": ["remix-themes"],
       "meta": {
@@ -3330,8 +3293,8 @@
         }
       ],
       "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/button.json",
-        "https://oui.mw10013.workers.dev/r/tooltip.json"
+        "@oui/button",
+        "@oui/tooltip"
       ],
       "meta": {
         "tags": ["tooltip"],
@@ -3352,8 +3315,8 @@
         }
       ],
       "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/button.json",
-        "https://oui.mw10013.workers.dev/r/tooltip.json"
+        "@oui/button",
+        "@oui/tooltip"
       ],
       "meta": {
         "tags": ["tooltip", "tooltip-ex", "button"]
@@ -3369,8 +3332,8 @@
         }
       ],
       "registryDependencies": [
-        "https://oui.mw10013.workers.dev/r/button.json",
-        "https://oui.mw10013.workers.dev/r/tooltip-ex.json"
+        "@oui/button",
+        "@oui/tooltip-ex"
       ],
       "meta": {
         "tags": ["tooltip", "tooltip-ex"],
@@ -3383,7 +3346,7 @@
       "name": "on-submit-react-router",
       "type": "registry:lib",
       "title": "On Submit React Router",
-      "description": "Helper function to handle form submissions with React Router.", 
+      "description": "Helper function to handle form submissions with React Router.",
       "files": [
         {
           "path": "registry/default/lib/oui-on-submit-react-router.ts",

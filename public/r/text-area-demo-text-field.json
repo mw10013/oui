@@ -3,8 +3,8 @@
   "name": "text-area-demo-text-field",
   "type": "registry:component",
   "registryDependencies": [
-    "https://oui.mw10013.workers.dev/r/text-area.json",
-    "https://oui.mw10013.workers.dev/r/text-field-ex.json"
+    "@oui/text-area",
+    "@oui/text-field-ex"
   ],
   "files": [
     {

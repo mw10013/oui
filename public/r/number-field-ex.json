@@ -8,12 +8,12 @@
     "lucide-react"
   ],
   "registryDependencies": [
-    "https://oui.mw10013.workers.dev/r/field-error.json",
-    "https://oui.mw10013.workers.dev/r/group.json",
-    "https://oui.mw10013.workers.dev/r/input.json",
-    "https://oui.mw10013.workers.dev/r/label.json",
-    "https://oui.mw10013.workers.dev/r/number-field.json",
-    "https://oui.mw10013.workers.dev/r/text.json"
+    "@oui/field-error",
+    "@oui/group",
+    "@oui/input",
+    "@oui/label",
+    "@oui/number-field",
+    "@oui/text"
   ],
   "files": [
     {

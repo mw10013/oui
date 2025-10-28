@@ -5,10 +5,10 @@
   "title": "Checkbox Group Ex",
   "description": "Reusable wrapper for Checkbox Group.",
   "registryDependencies": [
-    "https://oui.mw10013.workers.dev/r/checkbox-group.json",
-    "https://oui.mw10013.workers.dev/r/field-error.json",
-    "https://oui.mw10013.workers.dev/r/label.json",
-    "https://oui.mw10013.workers.dev/r/text.json"
+    "@oui/checkbox-group",
+    "@oui/field-error",
+    "@oui/label",
+    "@oui/text"
   ],
   "files": [
     {

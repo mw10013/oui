@@ -3,8 +3,8 @@
   "name": "select-ex-demo-disabled",
   "type": "registry:component",
   "registryDependencies": [
-    "https://oui.mw10013.workers.dev/r/list-box.json",
-    "https://oui.mw10013.workers.dev/r/select-ex.json"
+    "@oui/list-box",
+    "@oui/select-ex"
   ],
   "files": [
     {

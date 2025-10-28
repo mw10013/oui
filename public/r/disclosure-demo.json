@@ -3,8 +3,8 @@
   "name": "disclosure-demo",
   "type": "registry:component",
   "registryDependencies": [
-    "https://oui.mw10013.workers.dev/r/disclosure.json",
-    "https://oui.mw10013.workers.dev/r/heading.json"
+    "@oui/disclosure",
+    "@oui/heading"
   ],
   "files": [
     {

@@ -3,10 +3,10 @@
   "name": "dialog-ex-demo-alert",
   "type": "registry:component",
   "registryDependencies": [
-    "https://oui.mw10013.workers.dev/r/button.json",
-    "https://oui.mw10013.workers.dev/r/dialog.json",
-    "https://oui.mw10013.workers.dev/r/dialog-ex.json",
-    "https://oui.mw10013.workers.dev/r/heading.json"
+    "@oui/button",
+    "@oui/dialog",
+    "@oui/dialog-ex",
+    "@oui/heading"
   ],
   "files": [
     {

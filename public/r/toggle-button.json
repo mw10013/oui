@@ -9,7 +9,7 @@
     "class-variance-authority"
   ],
   "registryDependencies": [
-    "https://oui.mw10013.workers.dev/r/base.json"
+    "@oui/base"
   ],
   "files": [
     {

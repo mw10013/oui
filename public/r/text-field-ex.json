@@ -5,11 +5,11 @@
   "title": "Text Field Ex",
   "description": "Reusable wrapper for Text Field.",
   "registryDependencies": [
-    "https://oui.mw10013.workers.dev/r/text-field.json",
-    "https://oui.mw10013.workers.dev/r/input.json",
-    "https://oui.mw10013.workers.dev/r/label.json",
-    "https://oui.mw10013.workers.dev/r/field-error.json",
-    "https://oui.mw10013.workers.dev/r/text.json"
+    "@oui/text-field",
+    "@oui/input",
+    "@oui/label",
+    "@oui/field-error",
+    "@oui/text"
   ],
   "files": [
     {

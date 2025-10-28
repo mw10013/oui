@@ -3,9 +3,9 @@
   "name": "select-demo-multiple",
   "type": "registry:component",
   "registryDependencies": [
-    "https://oui.mw10013.workers.dev/r/list-box.json",
-    "https://oui.mw10013.workers.dev/r/popover.json",
-    "https://oui.mw10013.workers.dev/r/select.json"
+    "@oui/list-box",
+    "@oui/popover",
+    "@oui/select"
   ],
   "files": [
     {

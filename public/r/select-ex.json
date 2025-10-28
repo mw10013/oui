@@ -5,11 +5,11 @@
   "title": "Select Ex",
   "description": "Reusable wrapper for Select.",
   "registryDependencies": [
-    "https://oui.mw10013.workers.dev/r/field-error.json",
-    "https://oui.mw10013.workers.dev/r/label.json",
-    "https://oui.mw10013.workers.dev/r/popover.json",
-    "https://oui.mw10013.workers.dev/r/select.json",
-    "https://oui.mw10013.workers.dev/r/text.json"
+    "@oui/field-error",
+    "@oui/label",
+    "@oui/popover",
+    "@oui/select",
+    "@oui/text"
   ],
   "files": [
     {

@@ -5,9 +5,9 @@
   "title": "Menu Ex",
   "description": "Reusable wrapper for Menu.",
   "registryDependencies": [
-    "https://oui.mw10013.workers.dev/r/button.json",
-    "https://oui.mw10013.workers.dev/r/menu.json",
-    "https://oui.mw10013.workers.dev/r/popover.json"
+    "@oui/button",
+    "@oui/menu",
+    "@oui/popover"
   ],
   "files": [
     {

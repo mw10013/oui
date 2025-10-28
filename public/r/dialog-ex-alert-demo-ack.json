@@ -3,8 +3,8 @@
   "name": "dialog-ex-alert-demo-ack",
   "type": "registry:component",
   "registryDependencies": [
-    "https://oui.mw10013.workers.dev/r/button.json",
-    "https://oui.mw10013.workers.dev/r/dialog-ex-alert.json"
+    "@oui/button",
+    "@oui/dialog-ex-alert"
   ],
   "files": [
     {

@@ -3,7 +3,7 @@
   "name": "slider-ex-demo",
   "type": "registry:component",
   "registryDependencies": [
-    "https://oui.mw10013.workers.dev/r/slider-ex.json"
+    "@oui/slider-ex"
   ],
   "files": [
     {

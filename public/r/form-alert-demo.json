@@ -3,9 +3,9 @@
   "name": "form-alert-demo",
   "type": "registry:component",
   "registryDependencies": [
-    "https://oui.mw10013.workers.dev/r/button.json",
-    "https://oui.mw10013.workers.dev/r/form.json",
-    "https://oui.mw10013.workers.dev/r/text-field-ex.json"
+    "@oui/button",
+    "@oui/form",
+    "@oui/text-field-ex"
   ],
   "files": [
     {

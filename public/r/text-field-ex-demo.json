@@ -3,7 +3,7 @@
   "name": "text-field-ex-demo",
   "type": "registry:component",
   "registryDependencies": [
-    "https://oui.mw10013.workers.dev/r/text-field-ex.json"
+    "@oui/text-field-ex"
   ],
   "files": [
     {

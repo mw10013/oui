@@ -6,10 +6,10 @@
     "lucide-react"
   ],
   "registryDependencies": [
-    "https://oui.mw10013.workers.dev/r/button.json",
-    "https://oui.mw10013.workers.dev/r/group.json",
-    "https://oui.mw10013.workers.dev/r/input.json",
-    "https://oui.mw10013.workers.dev/r/label.json"
+    "@oui/button",
+    "@oui/group",
+    "@oui/input",
+    "@oui/label"
   ],
   "files": [
     {

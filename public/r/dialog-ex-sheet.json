@@ -5,12 +5,12 @@
   "title": "Dialog Ex Sheet",
   "description": "A reusable wrapper for a sheet Dialog.",
   "registryDependencies": [
-    "https://oui.mw10013.workers.dev/r/button.json",
-    "https://oui.mw10013.workers.dev/r/dialog.json",
-    "https://oui.mw10013.workers.dev/r/modal-ex-sheet.json",
-    "https://oui.mw10013.workers.dev/r/label.json",
-    "https://oui.mw10013.workers.dev/r/link.json",
-    "https://oui.mw10013.workers.dev/r/text.json"
+    "@oui/button",
+    "@oui/dialog",
+    "@oui/modal-ex-sheet",
+    "@oui/label",
+    "@oui/link",
+    "@oui/text"
   ],
   "files": [
     {

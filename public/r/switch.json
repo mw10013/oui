@@ -9,8 +9,8 @@
     "tailwind-merge"
   ],
   "registryDependencies": [
-    "https://oui.mw10013.workers.dev/r/label.json",
-    "https://oui.mw10013.workers.dev/r/base.json"
+    "@oui/label",
+    "@oui/base"
   ],
   "files": [
     {

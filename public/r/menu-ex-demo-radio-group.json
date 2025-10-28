@@ -3,10 +3,10 @@
   "name": "menu-ex-demo-radio-group",
   "type": "registry:component",
   "registryDependencies": [
-    "https://oui.mw10013.workers.dev/r/button.json",
-    "https://oui.mw10013.workers.dev/r/header.json",
-    "https://oui.mw10013.workers.dev/r/menu.json",
-    "https://oui.mw10013.workers.dev/r/menu-ex.json"
+    "@oui/button",
+    "@oui/header",
+    "@oui/menu",
+    "@oui/menu-ex"
   ],
   "files": [
     {

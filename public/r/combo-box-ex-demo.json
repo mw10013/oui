@@ -3,8 +3,8 @@
   "name": "combo-box-ex-demo",
   "type": "registry:component",
   "registryDependencies": [
-    "https://oui.mw10013.workers.dev/r/combo-box-ex.json",
-    "https://oui.mw10013.workers.dev/r/list-box.json"
+    "@oui/combo-box-ex",
+    "@oui/list-box"
   ],
   "files": [
     {

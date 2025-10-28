@@ -11,9 +11,9 @@
     "tailwind-merge"
   ],
   "registryDependencies": [
-    "https://oui.mw10013.workers.dev/r/button.json",
-    "https://oui.mw10013.workers.dev/r/heading.json",
-    "https://oui.mw10013.workers.dev/r/modal.json"
+    "@oui/button",
+    "@oui/heading",
+    "@oui/modal"
   ],
   "files": [
     {

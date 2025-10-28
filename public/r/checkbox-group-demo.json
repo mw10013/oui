@@ -3,9 +3,9 @@
   "name": "checkbox-group-demo",
   "type": "registry:component",
   "registryDependencies": [
-    "https://oui.mw10013.workers.dev/r/checkbox-group.json",
-    "https://oui.mw10013.workers.dev/r/checkbox.json",
-    "https://oui.mw10013.workers.dev/r/label.json"
+    "@oui/checkbox-group",
+    "@oui/checkbox",
+    "@oui/label"
   ],
   "files": [
     {

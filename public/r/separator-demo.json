@@ -3,7 +3,7 @@
   "name": "separator-demo",
   "type": "registry:component",
   "registryDependencies": [
-    "https://oui.mw10013.workers.dev/r/separator.json"
+    "@oui/separator"
   ],
   "files": [
     {

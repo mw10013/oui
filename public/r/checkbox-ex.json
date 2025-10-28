@@ -5,8 +5,8 @@
   "title": "Checkbox Ex",
   "description": "A reusable wrapper for Checkbox.",
   "registryDependencies": [
-    "https://oui.mw10013.workers.dev/r/checkbox.json",
-    "https://oui.mw10013.workers.dev/r/text.json"
+    "@oui/checkbox",
+    "@oui/text"
   ],
   "files": [
     {

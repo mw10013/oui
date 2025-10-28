@@ -6,8 +6,8 @@
     "lucide-react"
   ],
   "registryDependencies": [
-    "https://oui.mw10013.workers.dev/r/toggle-button.json",
-    "https://oui.mw10013.workers.dev/r/tooltip.json"
+    "@oui/toggle-button",
+    "@oui/tooltip"
   ],
   "files": [
     {

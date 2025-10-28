@@ -4,10 +4,10 @@
   "type": "registry:component",
   "registryDependencies": [
     "card",
-    "https://oui.mw10013.workers.dev/r/button.json",
-    "https://oui.mw10013.workers.dev/r/label.json",
-    "https://oui.mw10013.workers.dev/r/link.json",
-    "https://oui.mw10013.workers.dev/r/text-field-ex.json"
+    "@oui/button",
+    "@oui/label",
+    "@oui/link",
+    "@oui/text-field-ex"
   ],
   "files": [
     {

@@ -3,11 +3,11 @@
   "name": "text-field-demo",
   "type": "registry:component",
   "registryDependencies": [
-    "https://oui.mw10013.workers.dev/r/field-error.json",
-    "https://oui.mw10013.workers.dev/r/input.json",
-    "https://oui.mw10013.workers.dev/r/label.json",
-    "https://oui.mw10013.workers.dev/r/text.json",
-    "https://oui.mw10013.workers.dev/r/text-field.json"
+    "@oui/field-error",
+    "@oui/input",
+    "@oui/label",
+    "@oui/text",
+    "@oui/text-field"
   ],
   "files": [
     {

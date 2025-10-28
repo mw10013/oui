@@ -6,10 +6,10 @@
   "description": "Reusable wrapper for Sidebar.",
   "registryDependencies": [
     "sidebar",
-    "https://oui.mw10013.workers.dev/r/button.json",
-    "https://oui.mw10013.workers.dev/r/label.json",
-    "https://oui.mw10013.workers.dev/r/link.json",
-    "https://oui.mw10013.workers.dev/r/text.json"
+    "@oui/button",
+    "@oui/label",
+    "@oui/link",
+    "@oui/text"
   ],
   "files": [
     {

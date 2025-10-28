@@ -5,9 +5,9 @@
   "title": "Dialog Ex",
   "description": "A reusable wrapper for Dialog.",
   "registryDependencies": [
-    "https://oui.mw10013.workers.dev/r/dialog.json",
-    "https://oui.mw10013.workers.dev/r/button.json",
-    "https://oui.mw10013.workers.dev/r/modal-ex.json"
+    "@oui/dialog",
+    "@oui/button",
+    "@oui/modal-ex"
   ],
   "files": [
     {

@@ -3,7 +3,7 @@
   "name": "list-box-demo",
   "type": "registry:component",
   "registryDependencies": [
-    "https://oui.mw10013.workers.dev/r/list-box.json",
+    "@oui/list-box",
     "item"
   ],
   "files": [

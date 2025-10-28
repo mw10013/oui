@@ -6,13 +6,13 @@
     "lucide-react"
   ],
   "registryDependencies": [
-    "https://oui.mw10013.workers.dev/r/combo-box.json",
-    "https://oui.mw10013.workers.dev/r/button.json",
-    "https://oui.mw10013.workers.dev/r/group.json",
-    "https://oui.mw10013.workers.dev/r/input.json",
-    "https://oui.mw10013.workers.dev/r/label.json",
-    "https://oui.mw10013.workers.dev/r/list-box.json",
-    "https://oui.mw10013.workers.dev/r/popover.json"
+    "@oui/combo-box",
+    "@oui/button",
+    "@oui/group",
+    "@oui/input",
+    "@oui/label",
+    "@oui/list-box",
+    "@oui/popover"
   ],
   "files": [
     {
