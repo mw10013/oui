@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "oui-checkbox-group-ex-demo",
+  "type": "registry:component",
+  "registryDependencies": [
+    "@oui/oui-checkbox-group-ex",
+    "@oui/oui-checkbox"
+  ],
+  "files": [
+    {
+      "path": "registry/default/components/oui-checkbox-group-ex-demo.tsx",
+      "content": "\"use client\";\n\nimport { CheckboxGroupEx } from \"@/registry/default/components/oui-checkbox-group-ex\";\nimport { Checkbox } from \"@/registry/default/ui/oui-checkbox\";\n\nconst items = [\n  {\n    id: \"recents\",\n    label: \"Recents\",\n  },\n  {\n    id: \"home\",\n    label: \"Home\",\n  },\n  {\n    id: \"applications\",\n    label: \"Applications\",\n  },\n  {\n    id: \"desktop\",\n    label: \"Desktop\",\n  },\n  {\n    id: \"downloads\",\n    label: \"Downloads\",\n  },\n  {\n    id: \"documents\",\n    label: \"Documents\",\n  },\n] as const;\n\nexport default function Component() {\n  return (\n    <CheckboxGroupEx\n      name=\"items\"\n      labelClassName=\"text-base\"\n      label=\"Sidebar\"\n      description=\"Select the items you want to display in the sidebar.\"\n      defaultValue={[\"recents\", \"home\"]}\n    >\n      {items.map((item) => (\n        <Checkbox\n          key={item.id}\n          value={item.id}\n          className=\"text-sm leading-tight font-normal\"\n        >\n          {item.label}\n        </Checkbox>\n      ))}\n    </CheckboxGroupEx>\n  );\n}\n",
+      "type": "registry:component"
+    }
+  ],
+  "meta": {
+    "tags": [
+      "checkbox-group",
+      "checkbox-group-ex",
+      "checkbox"
+    ],
+    "canPreview": true,
+    "canOpenInV0": true
+  }
+}

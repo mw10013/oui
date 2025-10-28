@@ -1,0 +1,23 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "oui-button-demo-destructive",
+  "type": "registry:component",
+  "registryDependencies": [
+    "@oui/oui-button"
+  ],
+  "files": [
+    {
+      "path": "registry/default/components/oui-button-demo-destructive.tsx",
+      "content": "\"use client\";\n\nimport { Button } from \"@/registry/default/ui/oui-button\";\n\nexport default function Component() {\n  return <Button variant=\"destructive\">Destructive</Button>;\n}\n",
+      "type": "registry:component"
+    }
+  ],
+  "meta": {
+    "tags": [
+      "button"
+    ],
+    "canPreview": true,
+    "alignment": "text-center",
+    "canOpenInV0": true
+  }
+}

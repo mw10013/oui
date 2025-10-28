@@ -4,7 +4,7 @@
   "homepage": "https://oui.mw10013.workers.dev",
   "items": [
     {
-      "name": "autocomplete-demo",
+      "name": "oui-autocomplete-demo",
       "type": "registry:component",
       "files": [
         {
@@ -13,10 +13,10 @@
         }
       ],
       "registryDependencies": [
-        "@oui/input",
-        "@oui/label",
-        "@oui/list-box",
-        "@oui/search-field"
+        "@oui/oui-input",
+        "@oui/oui-label",
+        "@oui/oui-list-box",
+        "@oui/oui-search-field"
       ],
       "meta": {
         "tags": ["autocomplete", "list-box", "search-field"],
@@ -25,7 +25,7 @@
       }
     },
     {
-      "name": "autocomplete-ex",
+      "name": "oui-autocomplete-ex",
       "type": "registry:component",
       "title": "Autocomplete Ex",
       "description": "A reusable wrapper for Autocomplete.",
@@ -35,13 +35,13 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["@oui/search-field-ex"],
+      "registryDependencies": ["@oui/oui-search-field-ex"],
       "meta": {
         "tags": ["autocomplete", "autocomplete-ex", "search-field-ex"]
       }
     },
     {
-      "name": "autocomplete-ex-demo",
+      "name": "oui-autocomplete-ex-demo",
       "type": "registry:component",
       "files": [
         {
@@ -51,9 +51,9 @@
       ],
       "registryDependencies": [
         "avatar",
-        "@oui/autocomplete-ex",
-        "@oui/list-box",
-        "@oui/select-ex-popover"
+        "@oui/oui-autocomplete-ex",
+        "@oui/oui-list-box",
+        "@oui/oui-select-ex-popover"
       ],
       "meta": {
         "tags": [
@@ -68,7 +68,7 @@
       }
     },
     {
-      "name": "autocomplete-ex-demo-searchable",
+      "name": "oui-autocomplete-ex-demo-searchable",
       "type": "registry:component",
       "files": [
         {
@@ -77,9 +77,9 @@
         }
       ],
       "registryDependencies": [
-        "@oui/autocomplete-ex",
-        "@oui/list-box",
-        "@oui/select-ex-popover"
+        "@oui/oui-autocomplete-ex",
+        "@oui/oui-list-box",
+        "@oui/oui-select-ex-popover"
       ],
       "meta": {
         "tags": [
@@ -93,7 +93,7 @@
       }
     },
     {
-      "name": "base",
+      "name": "oui-base",
       "type": "registry:ui",
       "title": "Base",
       "description": "Base styles and utilities for Oui.",
@@ -107,7 +107,7 @@
       "dependencies": ["react-aria-components", "tailwind-merge"]
     },
     {
-      "name": "button",
+      "name": "oui-button",
       "type": "registry:ui",
       "title": "Button",
       "description": "React aria components Button with shadcn characteristics.",
@@ -117,7 +117,7 @@
           "type": "registry:ui"
         }
       ],
-      "registryDependencies": ["@oui/base"],
+      "registryDependencies": ["@oui/oui-base"],
       "dependencies": [
         "react-aria-components",
         "class-variance-authority",
@@ -128,7 +128,7 @@
       }
     },
     {
-      "name": "button-demo",
+      "name": "oui-button-demo",
       "type": "registry:component",
       "files": [
         {
@@ -136,7 +136,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["@oui/button"],
+      "registryDependencies": ["@oui/oui-button"],
       "meta": {
         "tags": ["button"],
         "canPreview": true,
@@ -145,7 +145,7 @@
       }
     },
     {
-      "name": "button-demo-outline",
+      "name": "oui-button-demo-outline",
       "type": "registry:component",
       "files": [
         {
@@ -153,7 +153,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["@oui/button"],
+      "registryDependencies": ["@oui/oui-button"],
       "meta": {
         "tags": ["button"],
         "canPreview": true,
@@ -162,7 +162,7 @@
       }
     },
     {
-      "name": "button-demo-destructive",
+      "name": "oui-button-demo-destructive",
       "type": "registry:component",
       "files": [
         {
@@ -170,7 +170,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["@oui/button"],
+      "registryDependencies": ["@oui/oui-button"],
       "meta": {
         "tags": ["button"],
         "canPreview": true,
@@ -179,7 +179,7 @@
       }
     },
     {
-      "name": "button-demo-disabled",
+      "name": "oui-button-demo-disabled",
       "type": "registry:component",
       "files": [
         {
@@ -187,7 +187,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["@oui/button"],
+      "registryDependencies": ["@oui/oui-button"],
       "meta": {
         "tags": ["button", "disabled"],
         "canPreview": true,
@@ -196,7 +196,7 @@
       }
     },
     {
-      "name": "button-demo-disabled-animation",
+      "name": "oui-button-demo-disabled-animation",
       "type": "registry:component",
       "files": [
         {
@@ -204,7 +204,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["@oui/button"],
+      "registryDependencies": ["@oui/oui-button"],
       "meta": {
         "tags": ["button", "disabled"],
         "canPreview": true,
@@ -213,7 +213,7 @@
       }
     },
     {
-      "name": "button-demo-ghost",
+      "name": "oui-button-demo-ghost",
       "type": "registry:component",
       "files": [
         {
@@ -221,7 +221,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["@oui/button"],
+      "registryDependencies": ["@oui/oui-button"],
       "meta": {
         "tags": ["button"],
         "canPreview": true,
@@ -230,7 +230,7 @@
       }
     },
     {
-      "name": "button-demo-icon-left",
+      "name": "oui-button-demo-icon-left",
       "type": "registry:component",
       "files": [
         {
@@ -238,7 +238,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["@oui/button"],
+      "registryDependencies": ["@oui/oui-button"],
       "dependencies": ["lucide-react"],
       "meta": {
         "tags": ["button", "icon"],
@@ -248,7 +248,7 @@
       }
     },
     {
-      "name": "button-demo-icon-right",
+      "name": "oui-button-demo-icon-right",
       "type": "registry:component",
       "files": [
         {
@@ -256,7 +256,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["@oui/button"],
+      "registryDependencies": ["@oui/oui-button"],
       "dependencies": ["lucide-react"],
       "meta": {
         "tags": ["button", "icon"],
@@ -266,7 +266,7 @@
       }
     },
     {
-      "name": "button-demo-lg",
+      "name": "oui-button-demo-lg",
       "type": "registry:component",
       "files": [
         {
@@ -274,7 +274,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["@oui/button"],
+      "registryDependencies": ["@oui/oui-button"],
       "meta": {
         "tags": ["button"],
         "canPreview": true,
@@ -283,7 +283,7 @@
       }
     },
     {
-      "name": "button-demo-link",
+      "name": "oui-button-demo-link",
       "type": "registry:component",
       "files": [
         {
@@ -291,7 +291,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["@oui/button"],
+      "registryDependencies": ["@oui/oui-button"],
       "meta": {
         "tags": ["button"],
         "canPreview": true,
@@ -300,7 +300,7 @@
       }
     },
     {
-      "name": "button-demo-secondary",
+      "name": "oui-button-demo-secondary",
       "type": "registry:component",
       "files": [
         {
@@ -308,7 +308,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["@oui/button"],
+      "registryDependencies": ["@oui/oui-button"],
       "meta": {
         "tags": ["button"],
         "canPreview": true,
@@ -317,7 +317,7 @@
       }
     },
     {
-      "name": "button-demo-sm",
+      "name": "oui-button-demo-sm",
       "type": "registry:component",
       "files": [
         {
@@ -325,7 +325,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["@oui/button"],
+      "registryDependencies": ["@oui/oui-button"],
       "meta": {
         "tags": ["button"],
         "canPreview": true,
@@ -334,7 +334,7 @@
       }
     },
     {
-      "name": "checkbox",
+      "name": "oui-checkbox",
       "type": "registry:ui",
       "title": "Checkbox",
       "description": "React aria components Checkbox with shadcn characteristics.",
@@ -344,7 +344,7 @@
           "type": "registry:ui"
         }
       ],
-      "registryDependencies": ["@oui/label"],
+      "registryDependencies": ["@oui/oui-label"],
       "dependencies": [
         "react-aria-components",
         "lucide-react",
@@ -355,7 +355,7 @@
       }
     },
     {
-      "name": "checkbox-demo",
+      "name": "oui-checkbox-demo",
       "type": "registry:component",
       "files": [
         {
@@ -363,7 +363,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["@oui/checkbox"],
+      "registryDependencies": ["@oui/oui-checkbox"],
       "meta": {
         "tags": ["checkbox"],
         "canPreview": true,
@@ -371,7 +371,7 @@
       }
     },
     {
-      "name": "checkbox-demo-border",
+      "name": "oui-checkbox-demo-border",
       "type": "registry:component",
       "files": [
         {
@@ -379,7 +379,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["@oui/checkbox"],
+      "registryDependencies": ["@oui/oui-checkbox"],
       "meta": {
         "tags": ["checkbox"],
         "canPreview": true,
@@ -387,7 +387,7 @@
       }
     },
     {
-      "name": "checkbox-demo-disabled",
+      "name": "oui-checkbox-demo-disabled",
       "type": "registry:component",
       "files": [
         {
@@ -395,7 +395,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["@oui/checkbox"],
+      "registryDependencies": ["@oui/oui-checkbox"],
       "meta": {
         "tags": ["checkbox", "disabled"],
         "canPreview": true,
@@ -403,7 +403,7 @@
       }
     },
     {
-      "name": "checkbox-ex",
+      "name": "oui-checkbox-ex",
       "type": "registry:component",
       "title": "Checkbox Ex",
       "description": "A reusable wrapper for Checkbox.",
@@ -413,13 +413,13 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["@oui/checkbox", "@oui/text"],
+      "registryDependencies": ["@oui/oui-checkbox", "@oui/oui-text"],
       "meta": {
         "tags": ["checkbox", "checkbox-ex", "text"]
       }
     },
     {
-      "name": "checkbox-ex-demo",
+      "name": "oui-checkbox-ex-demo",
       "type": "registry:component",
       "files": [
         {
@@ -427,7 +427,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["@oui/checkbox-ex"],
+      "registryDependencies": ["@oui/oui-checkbox-ex"],
       "meta": {
         "tags": ["checkbox", "checkbox-ex"],
         "canPreview": true,
@@ -435,7 +435,7 @@
       }
     },
     {
-      "name": "checkbox-group",
+      "name": "oui-checkbox-group",
       "type": "registry:ui",
       "title": "Checkbox Group",
       "description": "React aria components Checkbox Group with shadcn characteristics.",
@@ -445,14 +445,14 @@
           "type": "registry:ui"
         }
       ],
-      "registryDependencies": ["@oui/base"],
+      "registryDependencies": ["@oui/oui-base"],
       "dependencies": ["react-aria-components"],
       "meta": {
         "tags": ["checkbox-group"]
       }
     },
     {
-      "name": "checkbox-group-demo",
+      "name": "oui-checkbox-group-demo",
       "type": "registry:component",
       "files": [
         {
@@ -461,9 +461,9 @@
         }
       ],
       "registryDependencies": [
-        "@oui/checkbox-group",
-        "@oui/checkbox",
-        "@oui/label"
+        "@oui/oui-checkbox-group",
+        "@oui/oui-checkbox",
+        "@oui/oui-label"
       ],
       "meta": {
         "tags": ["checkbox-group", "checkbox"],
@@ -472,7 +472,7 @@
       }
     },
     {
-      "name": "checkbox-group-ex",
+      "name": "oui-checkbox-group-ex",
       "type": "registry:component",
       "title": "Checkbox Group Ex",
       "description": "Reusable wrapper for Checkbox Group.",
@@ -483,10 +483,10 @@
         }
       ],
       "registryDependencies": [
-        "@oui/checkbox-group",
-        "@oui/field-error",
-        "@oui/label",
-        "@oui/text"
+        "@oui/oui-checkbox-group",
+        "@oui/oui-field-error",
+        "@oui/oui-label",
+        "@oui/oui-text"
       ],
       "meta": {
         "tags": [
@@ -499,7 +499,7 @@
       }
     },
     {
-      "name": "checkbox-group-ex-demo",
+      "name": "oui-checkbox-group-ex-demo",
       "type": "registry:component",
       "files": [
         {
@@ -507,7 +507,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["@oui/checkbox-group-ex", "@oui/checkbox"],
+      "registryDependencies": ["@oui/oui-checkbox-group-ex", "@oui/oui-checkbox"],
       "meta": {
         "tags": ["checkbox-group", "checkbox-group-ex", "checkbox"],
         "canPreview": true,
@@ -515,7 +515,7 @@
       }
     },
     {
-      "name": "combo-box",
+      "name": "oui-combo-box",
       "type": "registry:ui",
       "title": "Combo Box",
       "description": "React aria components Combo Box with shadcn characteristics.",
@@ -525,14 +525,14 @@
           "type": "registry:ui"
         }
       ],
-      "registryDependencies": ["@oui/base"],
+      "registryDependencies": ["@oui/oui-base"],
       "dependencies": ["react-aria-components"],
       "meta": {
         "tags": ["combo-box"]
       }
     },
     {
-      "name": "combo-box-demo",
+      "name": "oui-combo-box-demo",
       "type": "registry:component",
       "files": [
         {
@@ -541,13 +541,13 @@
         }
       ],
       "registryDependencies": [
-        "@oui/combo-box",
-        "@oui/button",
-        "@oui/group",
-        "@oui/input",
-        "@oui/label",
-        "@oui/list-box",
-        "@oui/popover"
+        "@oui/oui-combo-box",
+        "@oui/oui-button",
+        "@oui/oui-group",
+        "@oui/oui-input",
+        "@oui/oui-label",
+        "@oui/oui-list-box",
+        "@oui/oui-popover"
       ],
       "dependencies": ["lucide-react"],
       "meta": {
@@ -557,7 +557,7 @@
       }
     },
     {
-      "name": "combo-box-ex",
+      "name": "oui-combo-box-ex",
       "type": "registry:component",
       "title": "Combo Box Ex",
       "description": "A reusable wrapper for Combo Box.",
@@ -568,14 +568,14 @@
         }
       ],
       "registryDependencies": [
-        "@oui/combo-box",
-        "@oui/button",
-        "@oui/field-error",
-        "@oui/group",
-        "@oui/input",
-        "@oui/label",
-        "@oui/popover",
-        "@oui/text"
+        "@oui/oui-combo-box",
+        "@oui/oui-button",
+        "@oui/oui-field-error",
+        "@oui/oui-group",
+        "@oui/oui-input",
+        "@oui/oui-label",
+        "@oui/oui-popover",
+        "@oui/oui-text"
       ],
       "dependencies": ["lucide-react"],
       "meta": {
@@ -591,7 +591,7 @@
       }
     },
     {
-      "name": "combo-box-ex-demo",
+      "name": "oui-combo-box-ex-demo",
       "type": "registry:component",
       "files": [
         {
@@ -599,7 +599,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["@oui/combo-box-ex", "@oui/list-box"],
+      "registryDependencies": ["@oui/oui-combo-box-ex", "@oui/oui-list-box"],
       "meta": {
         "tags": ["combo-box", "combo-box-ex", "list-box"],
         "canPreview": true,
@@ -607,7 +607,7 @@
       }
     },
     {
-      "name": "combo-box-ex-demo-avatar",
+      "name": "oui-combo-box-ex-demo-avatar",
       "type": "registry:component",
       "files": [
         {
@@ -615,7 +615,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["avatar", "@oui/combo-box-ex", "@oui/list-box"],
+      "registryDependencies": ["avatar", "@oui/oui-combo-box-ex", "@oui/oui-list-box"],
       "meta": {
         "tags": ["combo-box", "combo-box-ex", "avatar", "list-box"],
         "canPreview": true,
@@ -623,7 +623,7 @@
       }
     },
     {
-      "name": "combo-box-ex-demo-header",
+      "name": "oui-combo-box-ex-demo-header",
       "type": "registry:component",
       "files": [
         {
@@ -632,9 +632,9 @@
         }
       ],
       "registryDependencies": [
-        "@oui/combo-box-ex",
-        "@oui/header",
-        "@oui/list-box"
+        "@oui/oui-combo-box-ex",
+        "@oui/oui-header",
+        "@oui/oui-list-box"
       ],
       "meta": {
         "tags": ["combo-box", "combo-box-ex", "header", "list-box"],
@@ -643,7 +643,7 @@
       }
     },
     {
-      "name": "dialog",
+      "name": "oui-dialog",
       "type": "registry:ui",
       "title": "Dialog",
       "description": "React aria components Dialog with shadcn characteristics.",
@@ -653,7 +653,7 @@
           "type": "registry:ui"
         }
       ],
-      "registryDependencies": ["@oui/button", "@oui/heading", "@oui/modal"],
+      "registryDependencies": ["@oui/oui-button", "@oui/oui-heading", "@oui/oui-modal"],
       "dependencies": [
         "react-aria-components",
         "lucide-react",
@@ -665,7 +665,7 @@
       }
     },
     {
-      "name": "dialog-demo",
+      "name": "oui-dialog-demo",
       "type": "registry:component",
       "files": [
         {
@@ -674,14 +674,14 @@
         }
       ],
       "registryDependencies": [
-        "@oui/button",
-        "@oui/dialog",
-        "@oui/form",
-        "@oui/heading",
-        "@oui/input",
-        "@oui/label",
-        "@oui/modal",
-        "@oui/text-field"
+        "@oui/oui-button",
+        "@oui/oui-dialog",
+        "@oui/oui-form",
+        "@oui/oui-heading",
+        "@oui/oui-input",
+        "@oui/oui-label",
+        "@oui/oui-modal",
+        "@oui/oui-text-field"
       ],
       "meta": {
         "tags": ["dialog", "form", "heading", "input", "modal", "text-field"],
@@ -691,7 +691,7 @@
       }
     },
     {
-      "name": "dialog-ex",
+      "name": "oui-dialog-ex",
       "type": "registry:component",
       "title": "Dialog Ex",
       "description": "A reusable wrapper for Dialog.",
@@ -701,13 +701,13 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["@oui/dialog", "@oui/button", "@oui/modal-ex"],
+      "registryDependencies": ["@oui/oui-dialog", "@oui/oui-button", "@oui/oui-modal-ex"],
       "meta": {
         "tags": ["dialog", "dialog-ex", "modal-ex"]
       }
     },
     {
-      "name": "dialog-ex-demo",
+      "name": "oui-dialog-ex-demo",
       "type": "registry:component",
       "files": [
         {
@@ -716,11 +716,11 @@
         }
       ],
       "registryDependencies": [
-        "@oui/button",
-        "@oui/dialog",
-        "@oui/dialog-ex",
-        "@oui/heading",
-        "@oui/text-field-ex"
+        "@oui/oui-button",
+        "@oui/oui-dialog",
+        "@oui/oui-dialog-ex",
+        "@oui/oui-heading",
+        "@oui/oui-text-field-ex"
       ],
       "meta": {
         "tags": ["dialog", "dialog-ex", "modal-ex", "text-field-ex", "heading"],
@@ -730,7 +730,7 @@
       }
     },
     {
-      "name": "dialog-ex-demo-alert",
+      "name": "oui-dialog-ex-demo-alert",
       "type": "registry:component",
       "files": [
         {
@@ -739,10 +739,10 @@
         }
       ],
       "registryDependencies": [
-        "@oui/button",
-        "@oui/dialog",
-        "@oui/dialog-ex",
-        "@oui/heading"
+        "@oui/oui-button",
+        "@oui/oui-dialog",
+        "@oui/oui-dialog-ex",
+        "@oui/oui-heading"
       ],
       "meta": {
         "tags": ["dialog", "dialog-ex", "modal-ex", "heading"],
@@ -752,7 +752,7 @@
       }
     },
     {
-      "name": "dialog-ex-demo-scrollable-content",
+      "name": "oui-dialog-ex-demo-scrollable-content",
       "type": "registry:component",
       "files": [
         {
@@ -761,10 +761,10 @@
         }
       ],
       "registryDependencies": [
-        "@oui/button",
-        "@oui/dialog",
-        "@oui/dialog-ex",
-        "@oui/heading"
+        "@oui/oui-button",
+        "@oui/oui-dialog",
+        "@oui/oui-dialog-ex",
+        "@oui/oui-heading"
       ],
       "meta": {
         "tags": ["dialog", "dialog-ex", "modal-ex", "heading"],
@@ -774,7 +774,7 @@
       }
     },
     {
-      "name": "dialog-ex-demo-sticky-footer",
+      "name": "oui-dialog-ex-demo-sticky-footer",
       "type": "registry:component",
       "files": [
         {
@@ -783,10 +783,10 @@
         }
       ],
       "registryDependencies": [
-        "@oui/button",
-        "@oui/dialog",
-        "@oui/dialog-ex",
-        "@oui/heading"
+        "@oui/oui-button",
+        "@oui/oui-dialog",
+        "@oui/oui-dialog-ex",
+        "@oui/oui-heading"
       ],
       "meta": {
         "tags": ["dialog", "dialog-ex", "modal-ex", "heading"],
@@ -796,7 +796,7 @@
       }
     },
     {
-      "name": "dialog-ex-alert",
+      "name": "oui-dialog-ex-alert",
       "type": "registry:component",
       "title": "Dialog Ex Alert",
       "description": "A reusable wrapper for an alert Dialog.",
@@ -807,17 +807,17 @@
         }
       ],
       "registryDependencies": [
-        "@oui/button",
-        "@oui/dialog",
-        "@oui/heading",
-        "@oui/modal-ex"
+        "@oui/oui-button",
+        "@oui/oui-dialog",
+        "@oui/oui-heading",
+        "@oui/oui-modal-ex"
       ],
       "meta": {
         "tags": ["dialog", "dialog-ex-alert", "heading", "modal-ex"]
       }
     },
     {
-      "name": "dialog-ex-alert-demo-confirm",
+      "name": "oui-dialog-ex-alert-demo-confirm",
       "type": "registry:component",
       "files": [
         {
@@ -825,7 +825,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["@oui/button", "@oui/dialog-ex-alert"],
+      "registryDependencies": ["@oui/oui-button", "@oui/oui-dialog-ex-alert"],
       "meta": {
         "tags": ["dialog", "dialog-ex-alert"],
         "canPreview": true,
@@ -834,7 +834,7 @@
       }
     },
     {
-      "name": "dialog-ex-alert-demo-ack",
+      "name": "oui-dialog-ex-alert-demo-ack",
       "type": "registry:component",
       "files": [
         {
@@ -842,7 +842,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["@oui/button", "@oui/dialog-ex-alert"],
+      "registryDependencies": ["@oui/oui-button", "@oui/oui-dialog-ex-alert"],
       "meta": {
         "tags": ["dialog", "dialog-ex-alert"],
         "canPreview": true,
@@ -851,7 +851,7 @@
       }
     },
     {
-      "name": "dialog-ex-alert-demo-programmatic",
+      "name": "oui-dialog-ex-alert-demo-programmatic",
       "type": "registry:component",
       "files": [
         {
@@ -859,7 +859,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["@oui/button", "@oui/dialog-ex-alert"],
+      "registryDependencies": ["@oui/oui-button", "@oui/oui-dialog-ex-alert"],
       "meta": {
         "tags": ["dialog", "dialog-ex-alert"],
         "canPreview": true,
@@ -868,7 +868,7 @@
       }
     },
     {
-      "name": "dialog-ex-sheet",
+      "name": "oui-dialog-ex-sheet",
       "type": "registry:component",
       "title": "Dialog Ex Sheet",
       "description": "A reusable wrapper for a sheet Dialog.",
@@ -879,19 +879,19 @@
         }
       ],
       "registryDependencies": [
-        "@oui/button",
-        "@oui/dialog",
-        "@oui/modal-ex-sheet",
-        "@oui/label",
-        "@oui/link",
-        "@oui/text"
+        "@oui/oui-button",
+        "@oui/oui-dialog",
+        "@oui/oui-modal-ex-sheet",
+        "@oui/oui-label",
+        "@oui/oui-link",
+        "@oui/oui-text"
       ],
       "meta": {
         "tags": ["dialog", "dialog-ex-sheet", "modal-ex-sheet", "sheet"]
       }
     },
     {
-      "name": "dialog-ex-sheet-demo",
+      "name": "oui-dialog-ex-sheet-demo",
       "type": "registry:component",
       "files": [
         {
@@ -900,11 +900,11 @@
         }
       ],
       "registryDependencies": [
-        "@oui/button",
-        "@oui/dialog",
-        "@oui/dialog-ex-sheet",
-        "@oui/heading",
-        "@oui/text-field-ex"
+        "@oui/oui-button",
+        "@oui/oui-dialog",
+        "@oui/oui-dialog-ex-sheet",
+        "@oui/oui-heading",
+        "@oui/oui-text-field-ex"
       ],
       "meta": {
         "tags": [
@@ -921,7 +921,7 @@
       }
     },
     {
-      "name": "dialog-ex-sheet-demo-sides",
+      "name": "oui-dialog-ex-sheet-demo-sides",
       "type": "registry:component",
       "files": [
         {
@@ -930,10 +930,10 @@
         }
       ],
       "registryDependencies": [
-        "@oui/button",
-        "@oui/dialog",
-        "@oui/dialog-ex-sheet",
-        "@oui/heading"
+        "@oui/oui-button",
+        "@oui/oui-dialog",
+        "@oui/oui-dialog-ex-sheet",
+        "@oui/oui-heading"
       ],
       "meta": {
         "tags": [
@@ -948,7 +948,7 @@
       }
     },
     {
-      "name": "disclosure",
+      "name": "oui-disclosure",
       "type": "registry:ui",
       "title": "Disclosure",
       "description": "React aria components Disclosure with shadcn characteristics.",
@@ -958,14 +958,14 @@
           "type": "registry:ui"
         }
       ],
-      "registryDependencies": ["@oui/heading"],
+      "registryDependencies": ["@oui/oui-heading"],
       "dependencies": ["react-aria-components", "lucide-react"],
       "meta": {
         "tags": ["disclosure", "heading"]
       }
     },
     {
-      "name": "disclosure-demo",
+      "name": "oui-disclosure-demo",
       "type": "registry:component",
       "files": [
         {
@@ -973,7 +973,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["@oui/disclosure", "@oui/heading"],
+      "registryDependencies": ["@oui/oui-disclosure", "@oui/oui-heading"],
       "meta": {
         "tags": ["disclosure", "heading"],
         "canPreview": true,
@@ -981,7 +981,7 @@
       }
     },
     {
-      "name": "disclosure-ex",
+      "name": "oui-disclosure-ex",
       "type": "registry:component",
       "title": "Disclosure Ex",
       "description": "A reusable wrapper for Disclosure.",
@@ -991,13 +991,13 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["@oui/disclosure", "@oui/heading"],
+      "registryDependencies": ["@oui/oui-disclosure", "@oui/oui-heading"],
       "meta": {
         "tags": ["disclosure", "disclosure-ex", "heading"]
       }
     },
     {
-      "name": "disclosure-ex-demo",
+      "name": "oui-disclosure-ex-demo",
       "type": "registry:component",
       "files": [
         {
@@ -1005,7 +1005,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["@oui/disclosure-ex"],
+      "registryDependencies": ["@oui/oui-disclosure-ex"],
       "meta": {
         "tags": ["disclosure", "disclosure-ex"],
         "canPreview": true,
@@ -1013,7 +1013,7 @@
       }
     },
     {
-      "name": "disclosure-ex-demo-text",
+      "name": "oui-disclosure-ex-demo-text",
       "type": "registry:component",
       "files": [
         {
@@ -1021,7 +1021,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["@oui/disclosure-ex"],
+      "registryDependencies": ["@oui/oui-disclosure-ex"],
       "meta": {
         "tags": ["disclosure", "disclosure-ex"],
         "canPreview": true,
@@ -1030,7 +1030,7 @@
       }
     },
     {
-      "name": "field-error",
+      "name": "oui-field-error",
       "type": "registry:ui",
       "title": "Field Error",
       "description": "React aria components Field Error with shadcn characteristics.",
@@ -1040,14 +1040,14 @@
           "type": "registry:ui"
         }
       ],
-      "registryDependencies": ["@oui/base"],
+      "registryDependencies": ["@oui/oui-base"],
       "dependencies": ["react-aria-components"],
       "meta": {
         "tags": ["field-error"]
       }
     },
     {
-      "name": "field-error-demo",
+      "name": "oui-field-error-demo",
       "type": "registry:component",
       "files": [
         {
@@ -1056,10 +1056,10 @@
         }
       ],
       "registryDependencies": [
-        "@oui/field-error",
-        "@oui/input",
-        "@oui/label",
-        "@oui/text-field"
+        "@oui/oui-field-error",
+        "@oui/oui-input",
+        "@oui/oui-label",
+        "@oui/oui-text-field"
       ],
       "meta": {
         "tags": ["field-error", "input", "label", "text-field"],
@@ -1068,7 +1068,7 @@
       }
     },
     {
-      "name": "form",
+      "name": "oui-form",
       "type": "registry:ui",
       "title": "Form",
       "description": "React aria components Form with shadcn characteristics.",
@@ -1082,7 +1082,7 @@
       "dependencies": ["react-aria-components", "tailwind-merge"]
     },
     {
-      "name": "form-demo",
+      "name": "oui-form-demo",
       "type": "registry:component",
       "files": [
         {
@@ -1091,18 +1091,18 @@
         }
       ],
       "registryDependencies": [
-        "@oui/button",
-        "@oui/checkbox-ex",
-        "@oui/checkbox-group-ex",
-        "@oui/checkbox",
-        "@oui/form",
-        "@oui/list-box",
-        "@oui/radio-group-ex",
-        "@oui/radio-group",
-        "@oui/select-ex",
-        "@oui/switch-ex",
-        "@oui/text-area",
-        "@oui/text-field-ex"
+        "@oui/oui-button",
+        "@oui/oui-checkbox-ex",
+        "@oui/oui-checkbox-group-ex",
+        "@oui/oui-checkbox",
+        "@oui/oui-form",
+        "@oui/oui-list-box",
+        "@oui/oui-radio-group-ex",
+        "@oui/oui-radio-group",
+        "@oui/oui-select-ex",
+        "@oui/oui-switch-ex",
+        "@oui/oui-text-area",
+        "@oui/oui-text-field-ex"
       ],
       "meta": {
         "tags": [
@@ -1124,7 +1124,7 @@
       }
     },
     {
-      "name": "form-alert",
+      "name": "oui-form-alert",
       "type": "registry:component",
       "title": "Form Alert",
       "description": "Displays an alert based on a form action result.",
@@ -1141,7 +1141,7 @@
       }
     },
     {
-      "name": "form-alert-demo",
+      "name": "oui-form-alert-demo",
       "type": "registry:component",
       "files": [
         {
@@ -1150,9 +1150,9 @@
         }
       ],
       "registryDependencies": [
-        "@oui/button",
-        "@oui/form",
-        "@oui/text-field-ex"
+        "@oui/oui-button",
+        "@oui/oui-form",
+        "@oui/oui-text-field-ex"
       ],
       "meta": {
         "tags": ["form-alert", "form", "text-field-ex"],
@@ -1161,7 +1161,7 @@
       }
     },
     {
-      "name": "group",
+      "name": "oui-group",
       "type": "registry:ui",
       "title": "Group",
       "description": "React aria components Group with shadcn characteristics.",
@@ -1171,14 +1171,14 @@
           "type": "registry:ui"
         }
       ],
-      "registryDependencies": ["@oui/base"],
+      "registryDependencies": ["@oui/oui-base"],
       "dependencies": ["react-aria-components"],
       "meta": {
         "tags": ["group"]
       }
     },
     {
-      "name": "group-demo",
+      "name": "oui-group-demo",
       "type": "registry:component",
       "files": [
         {
@@ -1187,10 +1187,10 @@
         }
       ],
       "registryDependencies": [
-        "@oui/button",
-        "@oui/group",
-        "@oui/input",
-        "@oui/label"
+        "@oui/oui-button",
+        "@oui/oui-group",
+        "@oui/oui-input",
+        "@oui/oui-label"
       ],
       "dependencies": ["lucide-react"],
       "meta": {
@@ -1200,7 +1200,7 @@
       }
     },
     {
-      "name": "header",
+      "name": "oui-header",
       "type": "registry:ui",
       "title": "Header",
       "description": "React aria components Header with shadcn characteristics.",
@@ -1221,7 +1221,7 @@
       }
     },
     {
-      "name": "header-demo",
+      "name": "oui-header-demo",
       "type": "registry:component",
       "files": [
         {
@@ -1230,10 +1230,10 @@
         }
       ],
       "registryDependencies": [
-        "@oui/button",
-        "@oui/header",
-        "@oui/menu-ex",
-        "@oui/menu"
+        "@oui/oui-button",
+        "@oui/oui-header",
+        "@oui/oui-menu-ex",
+        "@oui/oui-menu"
       ],
       "meta": {
         "tags": ["header", "menu-ex", "menu"],
@@ -1243,7 +1243,7 @@
       }
     },
     {
-      "name": "heading",
+      "name": "oui-heading",
       "type": "registry:ui",
       "title": "Heading",
       "description": "React aria components Heading with shadcn characteristics.",
@@ -1264,7 +1264,7 @@
       }
     },
     {
-      "name": "heading-demo",
+      "name": "oui-heading-demo",
       "type": "registry:component",
       "files": [
         {
@@ -1273,10 +1273,10 @@
         }
       ],
       "registryDependencies": [
-        "@oui/button",
-        "@oui/dialog",
-        "@oui/heading",
-        "@oui/modal"
+        "@oui/oui-button",
+        "@oui/oui-dialog",
+        "@oui/oui-heading",
+        "@oui/oui-modal"
       ],
       "meta": {
         "tags": ["heading", "dialog", "modal"],
@@ -1286,7 +1286,7 @@
       }
     },
     {
-      "name": "index",
+      "name": "oui-index",
       "type": "registry:ui",
       "title": "Oui Index",
       "description": "All ui and ex (extension or reusable wrapper) components. No demos.",
@@ -1297,69 +1297,69 @@
         }
       ],
       "registryDependencies": [
-        "@oui/base",
-        "@oui/button",
-        "@oui/checkbox-group",
-        "@oui/checkbox",
-        "@oui/dialog",
-        "@oui/disclosure",
-        "@oui/field-error",
-        "@oui/form",
-        "@oui/group",
-        "@oui/header",
-        "@oui/heading",
-        "@oui/input",
-        "@oui/keyboard",
-        "@oui/label",
-        "@oui/link",
-        "@oui/list-box",
-        "@oui/menu",
-        "@oui/modal",
-        "@oui/number-field",
-        "@oui/popover",
-        "@oui/radio-group",
-        "@oui/search-field",
-        "@oui/select",
-        "@oui/separator",
-        "@oui/slider",
-        "@oui/switch",
-        "@oui/table",
-        "@oui/tabs",
-        "@oui/text-area",
-        "@oui/text-field",
-        "@oui/text",
-        "@oui/tooltip",
-        "@oui/autocomplete-ex",
-        "@oui/checkbox-ex",
-        "@oui/checkbox-group-ex",
-        "@oui/combo-box-ex",
-        "@oui/dialog-ex-alert",
-        "@oui/dialog-ex-sheet",
-        "@oui/dialog-ex",
-        "@oui/disclosure-ex",
-        "@oui/form-alert",
-        "@oui/list-box-ex-pagination",
-        "@oui/menu-ex",
-        "@oui/modal-ex-sheet",
-        "@oui/modal-ex",
-        "@oui/number-field-ex",
-        "@oui/popover-ex",
-        "@oui/radio-group-ex",
-        "@oui/search-field-ex",
-        "@oui/select-ex-popover",
-        "@oui/select-ex",
-        "@oui/sidebar-ex",
-        "@oui/slider-ex",
-        "@oui/switch-ex",
-        "@oui/text-field-ex",
-        "@oui/tooltip-ex"
+        "@oui/oui-base",
+        "@oui/oui-button",
+        "@oui/oui-checkbox-group",
+        "@oui/oui-checkbox",
+        "@oui/oui-dialog",
+        "@oui/oui-disclosure",
+        "@oui/oui-field-error",
+        "@oui/oui-form",
+        "@oui/oui-group",
+        "@oui/oui-header",
+        "@oui/oui-heading",
+        "@oui/oui-input",
+        "@oui/oui-keyboard",
+        "@oui/oui-label",
+        "@oui/oui-link",
+        "@oui/oui-list-box",
+        "@oui/oui-menu",
+        "@oui/oui-modal",
+        "@oui/oui-number-field",
+        "@oui/oui-popover",
+        "@oui/oui-radio-group",
+        "@oui/oui-search-field",
+        "@oui/oui-select",
+        "@oui/oui-separator",
+        "@oui/oui-slider",
+        "@oui/oui-switch",
+        "@oui/oui-table",
+        "@oui/oui-tabs",
+        "@oui/oui-text-area",
+        "@oui/oui-text-field",
+        "@oui/oui-text",
+        "@oui/oui-tooltip",
+        "@oui/oui-autocomplete-ex",
+        "@oui/oui-checkbox-ex",
+        "@oui/oui-checkbox-group-ex",
+        "@oui/oui-combo-box-ex",
+        "@oui/oui-dialog-ex-alert",
+        "@oui/oui-dialog-ex-sheet",
+        "@oui/oui-dialog-ex",
+        "@oui/oui-disclosure-ex",
+        "@oui/oui-form-alert",
+        "@oui/oui-list-box-ex-pagination",
+        "@oui/oui-menu-ex",
+        "@oui/oui-modal-ex-sheet",
+        "@oui/oui-modal-ex",
+        "@oui/oui-number-field-ex",
+        "@oui/oui-popover-ex",
+        "@oui/oui-radio-group-ex",
+        "@oui/oui-search-field-ex",
+        "@oui/oui-select-ex-popover",
+        "@oui/oui-select-ex",
+        "@oui/oui-sidebar-ex",
+        "@oui/oui-slider-ex",
+        "@oui/oui-switch-ex",
+        "@oui/oui-text-field-ex",
+        "@oui/oui-tooltip-ex"
       ],
       "meta": {
         "tags": ["index"]
       }
     },
     {
-      "name": "input",
+      "name": "oui-input",
       "type": "registry:ui",
       "title": "Input",
       "description": "React aria components Input with shadcn characteristics.",
@@ -1369,7 +1369,7 @@
           "type": "registry:ui"
         }
       ],
-      "registryDependencies": ["@oui/base"],
+      "registryDependencies": ["@oui/oui-base"],
       "dependencies": [
         "react-aria-components",
         "class-variance-authority",
@@ -1380,7 +1380,7 @@
       }
     },
     {
-      "name": "input-demo",
+      "name": "oui-input-demo",
       "type": "registry:component",
       "files": [
         {
@@ -1388,7 +1388,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["@oui/input"],
+      "registryDependencies": ["@oui/oui-input"],
       "meta": {
         "tags": ["input"],
         "canPreview": true,
@@ -1396,7 +1396,7 @@
       }
     },
     {
-      "name": "input-demo-password",
+      "name": "oui-input-demo-password",
       "type": "registry:component",
       "files": [
         {
@@ -1404,7 +1404,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["@oui/input"],
+      "registryDependencies": ["@oui/oui-input"],
       "meta": {
         "tags": ["input"],
         "canPreview": true,
@@ -1412,7 +1412,7 @@
       }
     },
     {
-      "name": "input-demo-disabled",
+      "name": "oui-input-demo-disabled",
       "type": "registry:component",
       "files": [
         {
@@ -1420,7 +1420,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["@oui/input"],
+      "registryDependencies": ["@oui/oui-input"],
       "meta": {
         "tags": ["input", "disabled"],
         "canPreview": true,
@@ -1428,7 +1428,7 @@
       }
     },
     {
-      "name": "keyboard",
+      "name": "oui-keyboard",
       "type": "registry:ui",
       "title": "Keyboard",
       "description": "React aria components Keyboard with shadcn characteristics.",
@@ -1445,7 +1445,7 @@
       }
     },
     {
-      "name": "keyboard-demo",
+      "name": "oui-keyboard-demo",
       "type": "registry:component",
       "files": [
         {
@@ -1454,10 +1454,10 @@
         }
       ],
       "registryDependencies": [
-        "@oui/button",
-        "@oui/keyboard",
-        "@oui/menu-ex",
-        "@oui/menu"
+        "@oui/oui-button",
+        "@oui/oui-keyboard",
+        "@oui/oui-menu-ex",
+        "@oui/oui-menu"
       ],
       "meta": {
         "tags": ["keyboard", "menu-ex", "menu"],
@@ -1466,7 +1466,7 @@
       }
     },
     {
-      "name": "label",
+      "name": "oui-label",
       "type": "registry:ui",
       "title": "Label",
       "description": "React aria components Label with shadcn characteristics.",
@@ -1476,14 +1476,14 @@
           "type": "registry:ui"
         }
       ],
-      "registryDependencies": ["@oui/base"],
+      "registryDependencies": ["@oui/oui-base"],
       "dependencies": ["react-aria-components", "tailwind-merge"],
       "meta": {
         "tags": ["label"]
       }
     },
     {
-      "name": "label-demo",
+      "name": "oui-label-demo",
       "type": "registry:component",
       "files": [
         {
@@ -1491,7 +1491,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["@oui/input", "@oui/label"],
+      "registryDependencies": ["@oui/oui-input", "@oui/oui-label"],
       "meta": {
         "tags": ["label"],
         "canPreview": true,
@@ -1499,7 +1499,7 @@
       }
     },
     {
-      "name": "label-demo-disabled",
+      "name": "oui-label-demo-disabled",
       "type": "registry:component",
       "files": [
         {
@@ -1507,7 +1507,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["@oui/input", "@oui/label"],
+      "registryDependencies": ["@oui/oui-input", "@oui/oui-label"],
       "meta": {
         "tags": ["label", "disabled"],
         "canPreview": true,
@@ -1515,7 +1515,7 @@
       }
     },
     {
-      "name": "link",
+      "name": "oui-link",
       "type": "registry:ui",
       "title": "Link",
       "description": "React aria components Link with shadcn characteristics.",
@@ -1525,7 +1525,7 @@
           "type": "registry:ui"
         }
       ],
-      "registryDependencies": ["@oui/base"],
+      "registryDependencies": ["@oui/oui-base"],
       "dependencies": [
         "react-aria-components",
         "class-variance-authority",
@@ -1536,7 +1536,7 @@
       }
     },
     {
-      "name": "link-demo",
+      "name": "oui-link-demo",
       "type": "registry:component",
       "files": [
         {
@@ -1544,7 +1544,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["@oui/link"],
+      "registryDependencies": ["@oui/oui-link"],
       "meta": {
         "tags": ["link"],
         "canPreview": true,
@@ -1553,7 +1553,7 @@
       }
     },
     {
-      "name": "link-demo-hover",
+      "name": "oui-link-demo-hover",
       "type": "registry:component",
       "files": [
         {
@@ -1561,7 +1561,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["@oui/link"],
+      "registryDependencies": ["@oui/oui-link"],
       "meta": {
         "tags": ["link"],
         "canPreview": true,
@@ -1570,7 +1570,7 @@
       }
     },
     {
-      "name": "link-demo-always",
+      "name": "oui-link-demo-always",
       "type": "registry:component",
       "files": [
         {
@@ -1578,7 +1578,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["@oui/link"],
+      "registryDependencies": ["@oui/oui-link"],
       "meta": {
         "tags": ["link"],
         "canPreview": true,
@@ -1587,7 +1587,7 @@
       }
     },
     {
-      "name": "link-demo-current",
+      "name": "oui-link-demo-current",
       "type": "registry:component",
       "files": [
         {
@@ -1595,7 +1595,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["@oui/link"],
+      "registryDependencies": ["@oui/oui-link"],
       "meta": {
         "tags": ["link"],
         "canPreview": true,
@@ -1604,7 +1604,7 @@
       }
     },
     {
-      "name": "link-demo-focus",
+      "name": "oui-link-demo-focus",
       "type": "registry:component",
       "files": [
         {
@@ -1612,7 +1612,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["@oui/link"],
+      "registryDependencies": ["@oui/oui-link"],
       "meta": {
         "tags": ["link"],
         "canPreview": true,
@@ -1621,7 +1621,7 @@
       }
     },
     {
-      "name": "link-demo-disabled",
+      "name": "oui-link-demo-disabled",
       "type": "registry:component",
       "files": [
         {
@@ -1629,7 +1629,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["@oui/link"],
+      "registryDependencies": ["@oui/oui-link"],
       "meta": {
         "tags": ["link"],
         "canPreview": true,
@@ -1638,7 +1638,7 @@
       }
     },
     {
-      "name": "link-demo-button",
+      "name": "oui-link-demo-button",
       "type": "registry:component",
       "files": [
         {
@@ -1646,7 +1646,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["@oui/button", "@oui/link"],
+      "registryDependencies": ["@oui/oui-button", "@oui/oui-link"],
       "meta": {
         "tags": ["link"],
         "canPreview": true,
@@ -1655,7 +1655,7 @@
       }
     },
     {
-      "name": "link-demo-button-outline",
+      "name": "oui-link-demo-button-outline",
       "type": "registry:component",
       "files": [
         {
@@ -1663,7 +1663,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["@oui/button", "@oui/link"],
+      "registryDependencies": ["@oui/oui-button", "@oui/oui-link"],
       "meta": {
         "tags": ["link"],
         "canPreview": true,
@@ -1672,7 +1672,7 @@
       }
     },
     {
-      "name": "link-demo-button-destructive",
+      "name": "oui-link-demo-button-destructive",
       "type": "registry:component",
       "files": [
         {
@@ -1680,7 +1680,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["@oui/button", "@oui/link"],
+      "registryDependencies": ["@oui/oui-button", "@oui/oui-link"],
       "meta": {
         "tags": ["link"],
         "canPreview": true,
@@ -1689,7 +1689,7 @@
       }
     },
     {
-      "name": "oui-link-demo-button-disabled",
+      "name": "oui-oui-link-demo-button-disabled",
       "type": "registry:component",
       "files": [
         {
@@ -1697,7 +1697,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["@oui/button", "@oui/link"],
+      "registryDependencies": ["@oui/oui-button", "@oui/oui-link"],
       "meta": {
         "tags": ["link"],
         "canPreview": true,
@@ -1706,7 +1706,7 @@
       }
     },
     {
-      "name": "link-demo-icon",
+      "name": "oui-link-demo-icon",
       "type": "registry:component",
       "files": [
         {
@@ -1714,7 +1714,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["@oui/button", "@oui/link"],
+      "registryDependencies": ["@oui/oui-button", "@oui/oui-link"],
       "dependencies": ["simple-icons"],
       "meta": {
         "tags": ["link", "icon"],
@@ -1724,7 +1724,7 @@
       }
     },
     {
-      "name": "link-demo-login",
+      "name": "oui-link-demo-login",
       "type": "registry:component",
       "files": [
         {
@@ -1734,10 +1734,10 @@
       ],
       "registryDependencies": [
         "card",
-        "@oui/button",
-        "@oui/label",
-        "@oui/link",
-        "@oui/text-field-ex"
+        "@oui/oui-button",
+        "@oui/oui-label",
+        "@oui/oui-link",
+        "@oui/oui-text-field-ex"
       ],
       "meta": {
         "tags": ["link", "text-field-ex", "login"],
@@ -1746,7 +1746,7 @@
       }
     },
     {
-      "name": "list-box",
+      "name": "oui-list-box",
       "type": "registry:ui",
       "title": "List Box",
       "description": "React aria components List Box with shadcn characteristics.",
@@ -1756,7 +1756,7 @@
           "type": "registry:ui"
         }
       ],
-      "registryDependencies": ["@oui/base"],
+      "registryDependencies": ["@oui/oui-base"],
       "dependencies": [
         "react-aria-components",
         "lucide-react",
@@ -1767,7 +1767,7 @@
       }
     },
     {
-      "name": "list-box-demo",
+      "name": "oui-list-box-demo",
       "type": "registry:component",
       "files": [
         {
@@ -1775,7 +1775,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["@oui/list-box", "item"],
+      "registryDependencies": ["@oui/oui-list-box", "item"],
       "meta": {
         "tags": ["list-box"],
         "canPreview": true,
@@ -1783,7 +1783,7 @@
       }
     },
     {
-      "name": "list-box-demo-multiple",
+      "name": "oui-list-box-demo-multiple",
       "type": "registry:component",
       "files": [
         {
@@ -1791,7 +1791,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["@oui/list-box", "item"],
+      "registryDependencies": ["@oui/oui-list-box", "item"],
       "meta": {
         "tags": ["list-box", "multiple"],
         "canPreview": true,
@@ -1799,7 +1799,7 @@
       }
     },
     {
-      "name": "list-box-ex-pagination",
+      "name": "oui-list-box-ex-pagination",
       "type": "registry:component",
       "files": [
         {
@@ -1808,10 +1808,10 @@
         }
       ],
       "registryDependencies": [
-        "@oui/button",
-        "@oui/label",
-        "@oui/link",
-        "@oui/text"
+        "@oui/oui-button",
+        "@oui/oui-label",
+        "@oui/oui-link",
+        "@oui/oui-text"
       ],
       "meta": {
         "tags-": ["list-box", "list-box-ex-pagination"],
@@ -1820,7 +1820,7 @@
       }
     },
     {
-      "name": "list-box-ex-pagination-demo",
+      "name": "oui-list-box-ex-pagination-demo",
       "type": "registry:component",
       "files": [
         {
@@ -1828,7 +1828,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["@oui/list-box-ex-pagination"],
+      "registryDependencies": ["@oui/oui-list-box-ex-pagination"],
       "meta": {
         "tags": ["list-box"],
         "canPreview": true,
@@ -1836,7 +1836,7 @@
       }
     },
     {
-      "name": "menu",
+      "name": "oui-menu",
       "type": "registry:ui",
       "title": "Menu",
       "description": "React aria components Menu with shadcn characteristics.",
@@ -1846,7 +1846,7 @@
           "type": "registry:ui"
         }
       ],
-      "registryDependencies": ["@oui/base"],
+      "registryDependencies": ["@oui/oui-base"],
       "dependencies": [
         "react-aria-components",
         "class-variance-authority",
@@ -1858,7 +1858,7 @@
       }
     },
     {
-      "name": "menu-ex",
+      "name": "oui-menu-ex",
       "type": "registry:component",
       "title": "Menu Ex",
       "description": "Reusable wrapper for Menu.",
@@ -1868,13 +1868,13 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["@oui/button", "@oui/menu", "@oui/popover"],
+      "registryDependencies": ["@oui/oui-button", "@oui/oui-menu", "@oui/oui-popover"],
       "meta": {
         "tags": ["menu", "menu-ex", "popover", "button"]
       }
     },
     {
-      "name": "menu-ex-demo",
+      "name": "oui-menu-ex-demo",
       "type": "registry:component",
       "files": [
         {
@@ -1883,13 +1883,13 @@
         }
       ],
       "registryDependencies": [
-        "@oui/button",
-        "@oui/header",
-        "@oui/keyboard",
-        "@oui/menu",
-        "@oui/menu-ex",
-        "@oui/popover",
-        "@oui/separator"
+        "@oui/oui-button",
+        "@oui/oui-header",
+        "@oui/oui-keyboard",
+        "@oui/oui-menu",
+        "@oui/oui-menu-ex",
+        "@oui/oui-popover",
+        "@oui/oui-separator"
       ],
       "meta": {
         "tags": [
@@ -1905,7 +1905,7 @@
       }
     },
     {
-      "name": "menu-ex-demo-checkboxes",
+      "name": "oui-menu-ex-demo-checkboxes",
       "type": "registry:component",
       "files": [
         {
@@ -1914,11 +1914,11 @@
         }
       ],
       "registryDependencies": [
-        "@oui/button",
-        "@oui/header",
-        "@oui/menu",
-        "@oui/menu-ex",
-        "@oui/separator"
+        "@oui/oui-button",
+        "@oui/oui-header",
+        "@oui/oui-menu",
+        "@oui/oui-menu-ex",
+        "@oui/oui-separator"
       ],
       "meta": {
         "tags": ["menu", "menu-ex", "header", "separator"],
@@ -1927,7 +1927,7 @@
       }
     },
     {
-      "name": "menu-ex-demo-radio-group",
+      "name": "oui-menu-ex-demo-radio-group",
       "type": "registry:component",
       "files": [
         {
@@ -1936,10 +1936,10 @@
         }
       ],
       "registryDependencies": [
-        "@oui/button",
-        "@oui/header",
-        "@oui/menu",
-        "@oui/menu-ex"
+        "@oui/oui-button",
+        "@oui/oui-header",
+        "@oui/oui-menu",
+        "@oui/oui-menu-ex"
       ],
       "meta": {
         "tags": ["menu", "menu-ex", "header"],
@@ -1948,7 +1948,7 @@
       }
     },
     {
-      "name": "menu-ex-demo-avatar",
+      "name": "oui-menu-ex-demo-avatar",
       "type": "registry:component",
       "files": [
         {
@@ -1958,10 +1958,10 @@
       ],
       "registryDependencies": [
         "avatar",
-        "@oui/button",
-        "@oui/menu",
-        "@oui/menu-ex",
-        "@oui/separator"
+        "@oui/oui-button",
+        "@oui/oui-menu",
+        "@oui/oui-menu-ex",
+        "@oui/oui-separator"
       ],
       "dependencies": ["lucide-react"],
       "meta": {
@@ -1971,7 +1971,7 @@
       }
     },
     {
-      "name": "menu-ex-demo-avatar-only",
+      "name": "oui-menu-ex-demo-avatar-only",
       "type": "registry:component",
       "files": [
         {
@@ -1981,10 +1981,10 @@
       ],
       "registryDependencies": [
         "avatar",
-        "@oui/button",
-        "@oui/menu",
-        "@oui/menu-ex",
-        "@oui/separator"
+        "@oui/oui-button",
+        "@oui/oui-menu",
+        "@oui/oui-menu-ex",
+        "@oui/oui-separator"
       ],
       "dependencies": ["lucide-react"],
       "meta": {
@@ -1994,7 +1994,7 @@
       }
     },
     {
-      "name": "menu-ex-demo-icon",
+      "name": "oui-menu-ex-demo-icon",
       "type": "registry:component",
       "files": [
         {
@@ -2003,10 +2003,10 @@
         }
       ],
       "registryDependencies": [
-        "@oui/button",
-        "@oui/menu",
-        "@oui/menu-ex",
-        "@oui/separator"
+        "@oui/oui-button",
+        "@oui/oui-menu",
+        "@oui/oui-menu-ex",
+        "@oui/oui-separator"
       ],
       "dependencies": ["lucide-react"],
       "meta": {
@@ -2016,7 +2016,7 @@
       }
     },
     {
-      "name": "modal",
+      "name": "oui-modal",
       "type": "registry:ui",
       "title": "Modal",
       "description": "React aria components Modal with shadcn characteristics.",
@@ -2026,7 +2026,7 @@
           "type": "registry:ui"
         }
       ],
-      "registryDependencies": ["@oui/base"],
+      "registryDependencies": ["@oui/oui-base"],
       "dependencies": [
         "react-aria-components",
         "class-variance-authority",
@@ -2037,7 +2037,7 @@
       }
     },
     {
-      "name": "modal-ex",
+      "name": "oui-modal-ex",
       "type": "registry:component",
       "title": "Modal Ex",
       "description": "Reusable wrapper for a Modal.",
@@ -2048,17 +2048,17 @@
         }
       ],
       "registryDependencies": [
-        "@oui/modal",
-        "@oui/label",
-        "@oui/link",
-        "@oui/text"
+        "@oui/oui-modal",
+        "@oui/oui-label",
+        "@oui/oui-link",
+        "@oui/oui-text"
       ],
       "meta": {
         "tags": ["modal", "modal-ex"]
       }
     },
     {
-      "name": "modal-ex-sheet",
+      "name": "oui-modal-ex-sheet",
       "type": "registry:component",
       "title": "Modal Ex Sheet",
       "description": "Reusable wrapper for a sheet Modal.",
@@ -2068,13 +2068,13 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["@oui/modal"],
+      "registryDependencies": ["@oui/oui-modal"],
       "meta": {
         "tags": ["modal", "modal-ex-sheet", "sheet"]
       }
     },
     {
-      "name": "number-field",
+      "name": "oui-number-field",
       "type": "registry:ui",
       "title": "Number Field",
       "description": "React aria components Number Field with shadcn characteristics.",
@@ -2084,14 +2084,14 @@
           "type": "registry:ui"
         }
       ],
-      "registryDependencies": ["@oui/base"],
+      "registryDependencies": ["@oui/oui-base"],
       "dependencies": ["react-aria-components", "lucide-react"],
       "meta": {
         "tags": ["number-field"]
       }
     },
     {
-      "name": "number-field-ex",
+      "name": "oui-number-field-ex",
       "type": "registry:component",
       "title": "Number Field Ex",
       "description": "Reusable wrapper for Number Field.",
@@ -2102,12 +2102,12 @@
         }
       ],
       "registryDependencies": [
-        "@oui/field-error",
-        "@oui/group",
-        "@oui/input",
-        "@oui/label",
-        "@oui/number-field",
-        "@oui/text"
+        "@oui/oui-field-error",
+        "@oui/oui-group",
+        "@oui/oui-input",
+        "@oui/oui-label",
+        "@oui/oui-number-field",
+        "@oui/oui-text"
       ],
       "dependencies": ["lucide-react"],
       "meta": {
@@ -2123,7 +2123,7 @@
       }
     },
     {
-      "name": "number-field-ex-demo",
+      "name": "oui-number-field-ex-demo",
       "type": "registry:component",
       "files": [
         {
@@ -2131,7 +2131,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["@oui/button", "@oui/number-field-ex"],
+      "registryDependencies": ["@oui/oui-button", "@oui/oui-number-field-ex"],
       "meta": {
         "tags": ["number-field", "number-field-ex", "button"],
         "canPreview": true,
@@ -2139,7 +2139,7 @@
       }
     },
     {
-      "name": "popover",
+      "name": "oui-popover",
       "type": "registry:ui",
       "title": "Popover",
       "description": "React aria components Popover with shadcn characteristics.",
@@ -2160,7 +2160,7 @@
       }
     },
     {
-      "name": "popover-ex",
+      "name": "oui-popover-ex",
       "type": "registry:component",
       "title": "Popover Ex",
       "description": "Reusable wrapper for a Popover.",
@@ -2170,13 +2170,13 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["@oui/button", "@oui/dialog", "@oui/popover"],
+      "registryDependencies": ["@oui/oui-button", "@oui/oui-dialog", "@oui/oui-popover"],
       "meta": {
         "tags": ["popover", "popover-ex", "dialog"]
       }
     },
     {
-      "name": "popover-ex-demo",
+      "name": "oui-popover-ex-demo",
       "type": "registry:component",
       "files": [
         {
@@ -2185,11 +2185,11 @@
         }
       ],
       "registryDependencies": [
-        "@oui/button",
-        "@oui/dialog",
-        "@oui/heading",
-        "@oui/popover-ex",
-        "@oui/text-field-ex-horizontal"
+        "@oui/oui-button",
+        "@oui/oui-dialog",
+        "@oui/oui-heading",
+        "@oui/oui-popover-ex",
+        "@oui/oui-text-field-ex-horizontal"
       ],
       "meta": {
         "tags": [
@@ -2205,7 +2205,7 @@
       }
     },
     {
-      "name": "radio-group",
+      "name": "oui-radio-group",
       "type": "registry:ui",
       "title": "Radio Group",
       "description": "React aria components Radio Group with shadcn characteristics.",
@@ -2215,7 +2215,7 @@
           "type": "registry:ui"
         }
       ],
-      "registryDependencies": ["@oui/base", "@oui/label"],
+      "registryDependencies": ["@oui/oui-base", "@oui/oui-label"],
       "dependencies": [
         "react-aria-components",
         "lucide-react",
@@ -2226,7 +2226,7 @@
       }
     },
     {
-      "name": "radio-group-ex",
+      "name": "oui-radio-group-ex",
       "type": "registry:component",
       "title": "Radio Group Ex",
       "description": "Reusable wrapper for Radio Group.",
@@ -2237,10 +2237,10 @@
         }
       ],
       "registryDependencies": [
-        "@oui/field-error",
-        "@oui/label",
-        "@oui/radio-group",
-        "@oui/text"
+        "@oui/oui-field-error",
+        "@oui/oui-label",
+        "@oui/oui-radio-group",
+        "@oui/oui-text"
       ],
       "meta": {
         "tags": [
@@ -2253,7 +2253,7 @@
       }
     },
     {
-      "name": "radio-group-ex-demo",
+      "name": "oui-radio-group-ex-demo",
       "type": "registry:component",
       "files": [
         {
@@ -2261,7 +2261,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["@oui/radio-group-ex", "@oui/radio-group"],
+      "registryDependencies": ["@oui/oui-radio-group-ex", "@oui/oui-radio-group"],
       "meta": {
         "tags": ["radio-group", "radio-group-ex"],
         "canPreview": true,
@@ -2269,7 +2269,7 @@
       }
     },
     {
-      "name": "radio-group-ex-demo-description",
+      "name": "oui-radio-group-ex-demo-description",
       "type": "registry:component",
       "files": [
         {
@@ -2277,7 +2277,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["@oui/radio-group-ex", "@oui/radio-group"],
+      "registryDependencies": ["@oui/oui-radio-group-ex", "@oui/oui-radio-group"],
       "meta": {
         "tags": ["radio-group", "radio-group-ex"],
         "canPreview": true,
@@ -2285,7 +2285,7 @@
       }
     },
     {
-      "name": "react-router-provider",
+      "name": "oui-react-router-provider",
       "type": "registry:component",
       "title": "React Router Provider",
       "description": "React aria components Router Provider for react router.",
@@ -2300,7 +2300,7 @@
       }
     },
     {
-      "name": "search-field",
+      "name": "oui-search-field",
       "type": "registry:ui",
       "title": "Search Field",
       "description": "React aria components Search Field with shadcn characteristics.",
@@ -2310,14 +2310,14 @@
           "type": "registry:ui"
         }
       ],
-      "registryDependencies": ["@oui/base"],
+      "registryDependencies": ["@oui/oui-base"],
       "dependencies": ["react-aria-components"],
       "meta": {
         "tags": ["search-field"]
       }
     },
     {
-      "name": "search-field-ex",
+      "name": "oui-search-field-ex",
       "type": "registry:component",
       "title": "Search Field Ex",
       "description": "Reusable wrapper for Search Field.",
@@ -2328,11 +2328,11 @@
         }
       ],
       "registryDependencies": [
-        "@oui/field-error",
-        "@oui/label",
-        "@oui/input",
-        "@oui/search-field",
-        "@oui/text"
+        "@oui/oui-field-error",
+        "@oui/oui-label",
+        "@oui/oui-input",
+        "@oui/oui-search-field",
+        "@oui/oui-text"
       ],
       "meta": {
         "tags": [
@@ -2346,7 +2346,7 @@
       }
     },
     {
-      "name": "search-field-ex-demo",
+      "name": "oui-search-field-ex-demo",
       "type": "registry:component",
       "files": [
         {
@@ -2354,7 +2354,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["@oui/search-field-ex"],
+      "registryDependencies": ["@oui/oui-search-field-ex"],
       "meta": {
         "tags": ["search-field", "search-field-ex"],
         "canPreview": true,
@@ -2362,7 +2362,7 @@
       }
     },
     {
-      "name": "select",
+      "name": "oui-select",
       "type": "registry:ui",
       "title": "Select",
       "description": "React aria components Select with shadcn characteristics.",
@@ -2372,7 +2372,7 @@
           "type": "registry:ui"
         }
       ],
-      "registryDependencies": ["@oui/base"],
+      "registryDependencies": ["@oui/oui-base"],
       "dependencies": [
         "react-aria-components",
         "lucide-react",
@@ -2383,7 +2383,7 @@
       }
     },
     {
-      "name": "select-demo",
+      "name": "oui-select-demo",
       "type": "registry:component",
       "files": [
         {
@@ -2391,7 +2391,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["@oui/list-box", "@oui/popover", "@oui/select"],
+      "registryDependencies": ["@oui/oui-list-box", "@oui/oui-popover", "@oui/oui-select"],
       "meta": {
         "tags": ["select", "list-box", "popover"],
         "canPreview": true,
@@ -2400,7 +2400,7 @@
       }
     },
     {
-      "name": "select-demo-multiple",
+      "name": "oui-select-demo-multiple",
       "type": "registry:component",
       "files": [
         {
@@ -2408,7 +2408,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["@oui/list-box", "@oui/popover", "@oui/select"],
+      "registryDependencies": ["@oui/oui-list-box", "@oui/oui-popover", "@oui/oui-select"],
       "meta": {
         "tags": ["select", "list-box", "popover", "multiple"],
         "canPreview": true,
@@ -2417,7 +2417,7 @@
       }
     },
     {
-      "name": "select-ex",
+      "name": "oui-select-ex",
       "type": "registry:component",
       "title": "Select Ex",
       "description": "Reusable wrapper for Select.",
@@ -2428,18 +2428,18 @@
         }
       ],
       "registryDependencies": [
-        "@oui/field-error",
-        "@oui/label",
-        "@oui/popover",
-        "@oui/select",
-        "@oui/text"
+        "@oui/oui-field-error",
+        "@oui/oui-label",
+        "@oui/oui-popover",
+        "@oui/oui-select",
+        "@oui/oui-text"
       ],
       "meta": {
         "tags": ["select", "select-ex", "field-error", "popover", "text"]
       }
     },
     {
-      "name": "select-ex-demo",
+      "name": "oui-select-ex-demo",
       "type": "registry:component",
       "files": [
         {
@@ -2448,9 +2448,9 @@
         }
       ],
       "registryDependencies": [
-        "@oui/header",
-        "@oui/list-box",
-        "@oui/select-ex"
+        "@oui/oui-header",
+        "@oui/oui-list-box",
+        "@oui/oui-select-ex"
       ],
       "meta": {
         "tags": ["select", "select-ex", "header", "list-box", "disabled"],
@@ -2460,7 +2460,7 @@
       }
     },
     {
-      "name": "select-ex-demo-large-list",
+      "name": "oui-select-ex-demo-large-list",
       "type": "registry:component",
       "files": [
         {
@@ -2468,7 +2468,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["@oui/list-box", "@oui/select-ex"],
+      "registryDependencies": ["@oui/oui-list-box", "@oui/oui-select-ex"],
       "meta": {
         "tags": ["select", "select-ex", "list-box"],
         "canPreview": true,
@@ -2477,7 +2477,7 @@
       }
     },
     {
-      "name": "select-ex-demo-icon",
+      "name": "oui-select-ex-demo-icon",
       "type": "registry:component",
       "files": [
         {
@@ -2485,7 +2485,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["@oui/list-box", "@oui/select-ex"],
+      "registryDependencies": ["@oui/oui-list-box", "@oui/oui-select-ex"],
       "dependencies": ["lucide-react"],
       "meta": {
         "tags": ["select", "select-ex", "list-box", "icon"],
@@ -2495,7 +2495,7 @@
       }
     },
     {
-      "name": "select-ex-demo-disabled",
+      "name": "oui-select-ex-demo-disabled",
       "type": "registry:component",
       "files": [
         {
@@ -2503,7 +2503,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["@oui/list-box", "@oui/select-ex"],
+      "registryDependencies": ["@oui/oui-list-box", "@oui/oui-select-ex"],
       "meta": {
         "tags": ["select", "select-ex", "disabled"],
         "canPreview": true,
@@ -2512,7 +2512,7 @@
       }
     },
     {
-      "name": "select-ex-popover",
+      "name": "oui-select-ex-popover",
       "type": "registry:component",
       "title": "Select Ex Popover",
       "description": "Reusable wrapper for Select with Popover.",
@@ -2523,11 +2523,11 @@
         }
       ],
       "registryDependencies": [
-        "@oui/field-error",
-        "@oui/label",
-        "@oui/popover",
-        "@oui/select",
-        "@oui/text"
+        "@oui/oui-field-error",
+        "@oui/oui-label",
+        "@oui/oui-popover",
+        "@oui/oui-select",
+        "@oui/oui-text"
       ],
       "meta": {
         "tags": [
@@ -2541,7 +2541,7 @@
       }
     },
     {
-      "name": "separator",
+      "name": "oui-separator",
       "type": "registry:ui",
       "title": "Separator",
       "description": "React aria components Separator with shadcn characteristics.",
@@ -2562,7 +2562,7 @@
       }
     },
     {
-      "name": "separator-demo",
+      "name": "oui-separator-demo",
       "type": "registry:component",
       "files": [
         {
@@ -2570,7 +2570,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["@oui/separator"],
+      "registryDependencies": ["@oui/oui-separator"],
       "meta": {
         "tags": ["separator"],
         "canPreview": true,
@@ -2578,7 +2578,7 @@
       }
     },
     {
-      "name": "sidebar-ex",
+      "name": "oui-sidebar-ex",
       "type": "registry:component",
       "title": "Sidebar Ex",
       "description": "Reusable wrapper for Sidebar.",
@@ -2590,17 +2590,17 @@
       ],
       "registryDependencies": [
         "sidebar",
-        "@oui/button",
-        "@oui/label",
-        "@oui/link",
-        "@oui/text"
+        "@oui/oui-button",
+        "@oui/oui-label",
+        "@oui/oui-link",
+        "@oui/oui-text"
       ],
       "meta": {
         "tags-": ["sidebar", "sidebar-ex"]
       }
     },
     {
-      "name": "slider",
+      "name": "oui-slider",
       "type": "registry:ui",
       "title": "Slider",
       "description": "React aria components Slider with shadcn characteristics.",
@@ -2610,14 +2610,14 @@
           "type": "registry:ui"
         }
       ],
-      "registryDependencies": ["@oui/base"],
+      "registryDependencies": ["@oui/oui-base"],
       "dependencies": ["react-aria-components"],
       "meta": {
         "tags": ["slider"]
       }
     },
     {
-      "name": "slider-ex",
+      "name": "oui-slider-ex",
       "type": "registry:component",
       "title": "Slider Ex",
       "description": "Reusable wrapper for Slider.",
@@ -2627,13 +2627,13 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["@oui/label", "@oui/slider"],
+      "registryDependencies": ["@oui/oui-label", "@oui/oui-slider"],
       "meta": {
         "tags": ["slider", "slider-ex", "label"]
       }
     },
     {
-      "name": "slider-ex-demo",
+      "name": "oui-slider-ex-demo",
       "type": "registry:component",
       "files": [
         {
@@ -2641,7 +2641,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["@oui/slider-ex"],
+      "registryDependencies": ["@oui/oui-slider-ex"],
       "meta": {
         "tags": ["slider", "slider-ex"],
         "canPreview": true,
@@ -2649,7 +2649,7 @@
       }
     },
     {
-      "name": "slider-ex-demo-disabled",
+      "name": "oui-slider-ex-demo-disabled",
       "type": "registry:component",
       "files": [
         {
@@ -2657,7 +2657,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["@oui/slider-ex"],
+      "registryDependencies": ["@oui/oui-slider-ex"],
       "meta": {
         "tags": ["slider", "slider-ex", "disabled"],
         "canPreview": true,
@@ -2665,7 +2665,7 @@
       }
     },
     {
-      "name": "switch",
+      "name": "oui-switch",
       "type": "registry:ui",
       "title": "Switch",
       "description": "React aria components Switch with shadcn characteristics.",
@@ -2675,14 +2675,14 @@
           "type": "registry:ui"
         }
       ],
-      "registryDependencies": ["@oui/label", "@oui/base"],
+      "registryDependencies": ["@oui/oui-label", "@oui/oui-base"],
       "dependencies": ["react-aria-components", "tailwind-merge"],
       "meta": {
         "tags": ["switch"]
       }
     },
     {
-      "name": "switch-ex",
+      "name": "oui-switch-ex",
       "type": "registry:component",
       "title": "Switch Ex",
       "description": "Reusable wrapper for Switch.",
@@ -2692,13 +2692,13 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["@oui/base", "@oui/switch", "@oui/text"],
+      "registryDependencies": ["@oui/oui-base", "@oui/oui-switch", "@oui/oui-text"],
       "meta": {
         "tags": ["switch", "switch-ex", "text"]
       }
     },
     {
-      "name": "switch-ex-demo",
+      "name": "oui-switch-ex-demo",
       "type": "registry:component",
       "files": [
         {
@@ -2706,7 +2706,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["@oui/switch-ex"],
+      "registryDependencies": ["@oui/oui-switch-ex"],
       "meta": {
         "tags": ["switch", "switch-ex"],
         "canPreview": true,
@@ -2714,7 +2714,7 @@
       }
     },
     {
-      "name": "switch-ex-demo-blue",
+      "name": "oui-switch-ex-demo-blue",
       "type": "registry:component",
       "files": [
         {
@@ -2722,7 +2722,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["@oui/switch-ex"],
+      "registryDependencies": ["@oui/oui-switch-ex"],
       "meta": {
         "tags": ["switch", "switch-ex"],
         "canPreview": true,
@@ -2730,7 +2730,7 @@
       }
     },
     {
-      "name": "switch-ex-demo-description",
+      "name": "oui-switch-ex-demo-description",
       "type": "registry:component",
       "files": [
         {
@@ -2738,7 +2738,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["@oui/switch-ex"],
+      "registryDependencies": ["@oui/oui-switch-ex"],
       "meta": {
         "tags": ["switch", "switch-ex"],
         "canPreview": true,
@@ -2746,7 +2746,7 @@
       }
     },
     {
-      "name": "switch-ex-demo-disabled",
+      "name": "oui-switch-ex-demo-disabled",
       "type": "registry:component",
       "files": [
         {
@@ -2754,7 +2754,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["@oui/switch-ex"],
+      "registryDependencies": ["@oui/oui-switch-ex"],
       "meta": {
         "tags": ["switch", "switch-ex", "disabled"],
         "canPreview": true,
@@ -2762,7 +2762,7 @@
       }
     },
     {
-      "name": "table",
+      "name": "oui-table",
       "type": "registry:ui",
       "title": "Table",
       "description": "React aria components Table with shadcn characteristics.",
@@ -2772,7 +2772,7 @@
           "type": "registry:ui"
         }
       ],
-      "registryDependencies": ["@oui/base"],
+      "registryDependencies": ["@oui/oui-base"],
       "dependencies": [
         "react-aria-components",
         "lucide-react",
@@ -2783,7 +2783,7 @@
       }
     },
     {
-      "name": "table-demo",
+      "name": "oui-table-demo",
       "type": "registry:component",
       "files": [
         {
@@ -2791,7 +2791,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["@oui/table"],
+      "registryDependencies": ["@oui/oui-table"],
       "meta": {
         "tags": ["table"],
         "canPreview": true,
@@ -2800,7 +2800,7 @@
       }
     },
     {
-      "name": "table-demo-action-menu",
+      "name": "oui-table-demo-action-menu",
       "type": "registry:component",
       "files": [
         {
@@ -2809,12 +2809,12 @@
         }
       ],
       "registryDependencies": [
-        "@oui/button",
-        "@oui/checkbox",
-        "@oui/menu-ex",
-        "@oui/menu",
-        "@oui/separator",
-        "@oui/table"
+        "@oui/oui-button",
+        "@oui/oui-checkbox",
+        "@oui/oui-menu-ex",
+        "@oui/oui-menu",
+        "@oui/oui-separator",
+        "@oui/oui-table"
       ],
       "dependencies": ["lucide-react"],
       "meta": {
@@ -2825,7 +2825,7 @@
       }
     },
     {
-      "name": "tabs",
+      "name": "oui-tabs",
       "type": "registry:ui",
       "title": "Tabs",
       "description": "React aria components Tabs with shadcn characteristics.",
@@ -2835,14 +2835,14 @@
           "type": "registry:ui"
         }
       ],
-      "registryDependencies": ["@oui/base"],
+      "registryDependencies": ["@oui/oui-base"],
       "dependencies": ["react-aria-components"],
       "meta": {
         "tags": ["tabs"]
       }
     },
     {
-      "name": "tabs-demo",
+      "name": "oui-tabs-demo",
       "type": "registry:component",
       "files": [
         {
@@ -2850,7 +2850,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["@oui/tabs"],
+      "registryDependencies": ["@oui/oui-tabs"],
       "meta": {
         "tags": ["tabs"],
         "canPreview": true,
@@ -2859,7 +2859,7 @@
       }
     },
     {
-      "name": "text",
+      "name": "oui-text",
       "type": "registry:ui",
       "title": "Text",
       "description": "React aria components Text with shadcn characteristics.",
@@ -2880,7 +2880,7 @@
       }
     },
     {
-      "name": "text-demo",
+      "name": "oui-text-demo",
       "type": "registry:component",
       "files": [
         {
@@ -2889,10 +2889,10 @@
         }
       ],
       "registryDependencies": [
-        "@oui/input",
-        "@oui/label",
-        "@oui/text-field",
-        "@oui/text"
+        "@oui/oui-input",
+        "@oui/oui-label",
+        "@oui/oui-text-field",
+        "@oui/oui-text"
       ],
       "meta": {
         "tags": ["text", "input", "label", "text-field"],
@@ -2901,7 +2901,7 @@
       }
     },
     {
-      "name": "text-area",
+      "name": "oui-text-area",
       "type": "registry:ui",
       "title": "Text Area",
       "description": "React aria components Text Area with shadcn characteristics.",
@@ -2918,7 +2918,7 @@
       }
     },
     {
-      "name": "text-area-demo",
+      "name": "oui-text-area-demo",
       "type": "registry:component",
       "files": [
         {
@@ -2926,7 +2926,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["@oui/text-area"],
+      "registryDependencies": ["@oui/oui-text-area"],
       "meta": {
         "tags": ["text-area"],
         "canPreview": true,
@@ -2934,7 +2934,7 @@
       }
     },
     {
-      "name": "text-area-demo-text-field",
+      "name": "oui-text-area-demo-text-field",
       "type": "registry:component",
       "files": [
         {
@@ -2942,7 +2942,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["@oui/text-area", "@oui/text-field-ex"],
+      "registryDependencies": ["@oui/oui-text-area", "@oui/oui-text-field-ex"],
       "meta": {
         "tags": ["text-area", "text-field-ex"],
         "canPreview": true,
@@ -2950,7 +2950,7 @@
       }
     },
     {
-      "name": "text-area-demo-disabled",
+      "name": "oui-text-area-demo-disabled",
       "type": "registry:component",
       "files": [
         {
@@ -2958,7 +2958,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["@oui/text-area", "@oui/text-field-ex"],
+      "registryDependencies": ["@oui/oui-text-area", "@oui/oui-text-field-ex"],
       "meta": {
         "tags": ["text-area", "text-field-ex", "disabled"],
         "canPreview": true,
@@ -2966,7 +2966,7 @@
       }
     },
     {
-      "name": "text-field",
+      "name": "oui-text-field",
       "type": "registry:ui",
       "title": "Text Field",
       "description": "React aria components Text Field with shadcn characteristics.",
@@ -2976,14 +2976,14 @@
           "type": "registry:ui"
         }
       ],
-      "registryDependencies": ["@oui/base"],
+      "registryDependencies": ["@oui/oui-base"],
       "dependencies": ["react-aria-components"],
       "meta": {
         "tags": ["text-field"]
       }
     },
     {
-      "name": "text-field-demo",
+      "name": "oui-text-field-demo",
       "type": "registry:component",
       "files": [
         {
@@ -2992,11 +2992,11 @@
         }
       ],
       "registryDependencies": [
-        "@oui/field-error",
-        "@oui/input",
-        "@oui/label",
-        "@oui/text",
-        "@oui/text-field"
+        "@oui/oui-field-error",
+        "@oui/oui-input",
+        "@oui/oui-label",
+        "@oui/oui-text",
+        "@oui/oui-text-field"
       ],
       "meta": {
         "tags": ["text-field", "field-error", "input", "label", "text"],
@@ -3005,7 +3005,7 @@
       }
     },
     {
-      "name": "text-field-ex",
+      "name": "oui-text-field-ex",
       "type": "registry:component",
       "title": "Text Field Ex",
       "description": "Reusable wrapper for Text Field.",
@@ -3016,11 +3016,11 @@
         }
       ],
       "registryDependencies": [
-        "@oui/text-field",
-        "@oui/input",
-        "@oui/label",
-        "@oui/field-error",
-        "@oui/text"
+        "@oui/oui-text-field",
+        "@oui/oui-input",
+        "@oui/oui-label",
+        "@oui/oui-field-error",
+        "@oui/oui-text"
       ],
       "meta": {
         "tags": [
@@ -3034,7 +3034,7 @@
       }
     },
     {
-      "name": "text-field-ex-demo",
+      "name": "oui-text-field-ex-demo",
       "type": "registry:component",
       "files": [
         {
@@ -3042,7 +3042,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["@oui/text-field-ex"],
+      "registryDependencies": ["@oui/oui-text-field-ex"],
       "meta": {
         "tags": ["text-field", "text-field-ex"],
         "canPreview": true,
@@ -3050,7 +3050,7 @@
       }
     },
     {
-      "name": "text-field-ex-horizontal",
+      "name": "oui-text-field-ex-horizontal",
       "type": "registry:component",
       "title": "Text Field Ex Horizontal",
       "description": "Reusable wrapper for Text Field with horizontal layout.",
@@ -3061,11 +3061,11 @@
         }
       ],
       "registryDependencies": [
-        "@oui/text-field",
-        "@oui/input",
-        "@oui/label",
-        "@oui/field-error",
-        "@oui/text"
+        "@oui/oui-text-field",
+        "@oui/oui-input",
+        "@oui/oui-label",
+        "@oui/oui-field-error",
+        "@oui/oui-text"
       ],
       "meta": {
         "tags": [
@@ -3079,7 +3079,7 @@
       }
     },
     {
-      "name": "text-field-ex-horizontal-demo",
+      "name": "oui-text-field-ex-horizontal-demo",
       "type": "registry:component",
       "files": [
         {
@@ -3087,7 +3087,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["@oui/text-field-ex-horizontal"],
+      "registryDependencies": ["@oui/oui-text-field-ex-horizontal"],
       "meta": {
         "tags": ["text-field", "text-field-ex-horizontal"],
         "canPreview": true,
@@ -3095,7 +3095,7 @@
       }
     },
     {
-      "name": "toggle-button",
+      "name": "oui-toggle-button",
       "type": "registry:ui",
       "title": "Toggle Button",
       "description": "React aria components Toggle Button with shadcn characteristics.",
@@ -3105,14 +3105,14 @@
           "type": "registry:ui"
         }
       ],
-      "registryDependencies": ["@oui/base"],
+      "registryDependencies": ["@oui/oui-base"],
       "dependencies": ["react-aria-components", "class-variance-authority"],
       "meta": {
         "tags": ["toggle-button"]
       }
     },
     {
-      "name": "toggle-button-demo",
+      "name": "oui-toggle-button-demo",
       "type": "registry:component",
       "files": [
         {
@@ -3120,7 +3120,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["@oui/toggle-button", "@oui/tooltip"],
+      "registryDependencies": ["@oui/oui-toggle-button", "@oui/oui-tooltip"],
       "dependencies": ["lucide-react"],
       "meta": {
         "tags": ["toggle-button", "disabled"],
@@ -3129,7 +3129,7 @@
       }
     },
     {
-      "name": "react-router-theme-toggle-button",
+      "name": "oui-react-router-theme-toggle-button",
       "type": "registry:component",
       "files": [
         {
@@ -3137,7 +3137,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["@oui/toggle-button"],
+      "registryDependencies": ["@oui/oui-toggle-button"],
       "dependencies": ["remix-themes"],
       "meta": {
         "tags": ["toggle-button", "react-router", "theme"],
@@ -3146,7 +3146,7 @@
       }
     },
     {
-      "name": "tooltip",
+      "name": "oui-tooltip",
       "type": "registry:ui",
       "title": "Tooltip",
       "description": "React aria components Tooltip with shadcn characteristics.",
@@ -3163,7 +3163,7 @@
       }
     },
     {
-      "name": "tooltip-demo",
+      "name": "oui-tooltip-demo",
       "type": "registry:component",
       "files": [
         {
@@ -3171,7 +3171,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["@oui/button", "@oui/tooltip"],
+      "registryDependencies": ["@oui/oui-button", "@oui/oui-tooltip"],
       "meta": {
         "tags": ["tooltip"],
         "canPreview": true,
@@ -3180,7 +3180,7 @@
       }
     },
     {
-      "name": "tooltip-ex",
+      "name": "oui-tooltip-ex",
       "type": "registry:component",
       "title": "Tooltip Ex",
       "description": "Reusable wrapper for Tooltip.",
@@ -3190,13 +3190,13 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["@oui/button", "@oui/tooltip"],
+      "registryDependencies": ["@oui/oui-button", "@oui/oui-tooltip"],
       "meta": {
         "tags": ["tooltip", "tooltip-ex", "button"]
       }
     },
     {
-      "name": "tooltip-ex-demo",
+      "name": "oui-tooltip-ex-demo",
       "type": "registry:component",
       "files": [
         {
@@ -3204,7 +3204,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["@oui/button", "@oui/tooltip-ex"],
+      "registryDependencies": ["@oui/oui-button", "@oui/oui-tooltip-ex"],
       "meta": {
         "tags": ["tooltip", "tooltip-ex"],
         "canPreview": true,
@@ -3213,7 +3213,7 @@
       }
     },
     {
-      "name": "on-submit-react-router",
+      "name": "oui-on-submit-react-router",
       "type": "registry:lib",
       "title": "On Submit React Router",
       "description": "Helper function to handle form submissions with React Router.",

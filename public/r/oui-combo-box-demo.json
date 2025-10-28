@@ -1,0 +1,34 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "oui-combo-box-demo",
+  "type": "registry:component",
+  "dependencies": [
+    "lucide-react"
+  ],
+  "registryDependencies": [
+    "@oui/oui-combo-box",
+    "@oui/oui-button",
+    "@oui/oui-group",
+    "@oui/oui-input",
+    "@oui/oui-label",
+    "@oui/oui-list-box",
+    "@oui/oui-popover"
+  ],
+  "files": [
+    {
+      "path": "registry/default/components/oui-combo-box-demo.tsx",
+      "content": "\"use client\";\n\nimport { Button } from \"@/registry/default/ui/oui-button\";\nimport { ComboBox } from \"@/registry/default/ui/oui-combo-box\";\nimport { Group } from \"@/registry/default/ui/oui-group\";\nimport { Input } from \"@/registry/default/ui/oui-input\";\nimport { Label } from \"@/registry/default/ui/oui-label\";\nimport { ListBoxItem } from \"@/registry/default/ui/oui-list-box\";\nimport { Popover } from \"@/registry/default/ui/oui-popover\";\nimport { ChevronDown } from \"lucide-react\";\nimport * as Rac from \"react-aria-components\";\n\nexport default function Component() {\n  return (\n    <ComboBox>\n      <Label>Combo Box</Label>\n      <Group>\n        <Input variant=\"ghost\" />\n        <Button variant=\"ghost\" size=\"icon\">\n          <ChevronDown className=\"size-4 shrink-0 opacity-50\" />\n        </Button>\n      </Group>\n      <Popover>\n        <Rac.ListBox>\n          <ListBoxItem>Aardvark</ListBoxItem>\n          <ListBoxItem>Cat</ListBoxItem>\n          <ListBoxItem>Dog</ListBoxItem>\n          <ListBoxItem>Kangaroo</ListBoxItem>\n          <ListBoxItem>Panda</ListBoxItem>\n          <ListBoxItem>Snake</ListBoxItem>\n        </Rac.ListBox>\n      </Popover>\n    </ComboBox>\n  );\n}\n",
+      "type": "registry:component"
+    }
+  ],
+  "meta": {
+    "tags": [
+      "combo-box",
+      "input",
+      "list-box",
+      "popover"
+    ],
+    "canPreview": true,
+    "canOpenInV0": true
+  }
+}

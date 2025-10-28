@@ -1,0 +1,28 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "oui-field-error-demo",
+  "type": "registry:component",
+  "registryDependencies": [
+    "@oui/oui-field-error",
+    "@oui/oui-input",
+    "@oui/oui-label",
+    "@oui/oui-text-field"
+  ],
+  "files": [
+    {
+      "path": "registry/default/components/oui-field-error-demo.tsx",
+      "content": "\"use client\";\n\nimport { FieldError } from \"@/registry/default/ui/oui-field-error\";\nimport { Input } from \"@/registry/default/ui/oui-input\";\nimport { Label } from \"@/registry/default/ui/oui-label\";\nimport { TextField } from \"@/registry/default/ui/oui-text-field\";\n\nexport default function Component() {\n  return (\n    <TextField isInvalid>\n      <Label>Field Error</Label>\n      <Input placeholder=\"Placeholder\" />\n      <FieldError>This field is FieldError.</FieldError>\n    </TextField>\n  );\n}\n",
+      "type": "registry:component"
+    }
+  ],
+  "meta": {
+    "tags": [
+      "field-error",
+      "input",
+      "label",
+      "text-field"
+    ],
+    "canPreview": true,
+    "canOpenInV0": true
+  }
+}

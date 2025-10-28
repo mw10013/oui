@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "oui-field-error",
+  "type": "registry:ui",
+  "title": "Field Error",
+  "description": "React aria components Field Error with shadcn characteristics.",
+  "dependencies": [
+    "react-aria-components"
+  ],
+  "registryDependencies": [
+    "@oui/oui-base"
+  ],
+  "files": [
+    {
+      "path": "registry/default/ui/oui-field-error.tsx",
+      "content": "\"use client\";\n\nimport { composeTailwindRenderProps } from \"@/registry/default/ui/oui-base\";\nimport * as Rac from \"react-aria-components\";\n\n/**\n * Derived from shadcn FormMessage\n * https://github.com/adobe/react-spectrum/issues/7525\n */\nexport function FieldError({ className, ...props }: Rac.FieldErrorProps) {\n  // https://github.com/adobe/react-spectrum/issues/7525\n  return (\n    <Rac.TextContext.Provider value={{ elementType: \"p\" }}>\n      <Rac.FieldError\n        data-slot=\"form-message\"\n        className={composeTailwindRenderProps(\n          className,\n          \"text-sm text-destructive\",\n        )}\n        {...props}\n      />\n    </Rac.TextContext.Provider>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "tags": [
+      "field-error"
+    ]
+  }
+}

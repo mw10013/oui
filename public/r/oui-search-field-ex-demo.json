@@ -1,0 +1,23 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "oui-search-field-ex-demo",
+  "type": "registry:component",
+  "registryDependencies": [
+    "@oui/oui-search-field-ex"
+  ],
+  "files": [
+    {
+      "path": "registry/default/components/oui-search-field-ex-demo.tsx",
+      "content": "\"use client\";\n\nimport { SearchFieldEx } from \"@/registry/default/components/oui-search-field-ex\";\n\nexport default function Component() {\n  return (\n    <SearchFieldEx\n      label=\"Search Field Ex\"\n      description=\"Enter a search term\"\n      errorMessage=\"Search term is required\"\n      placeholder=\"Search...\"\n    />\n  );\n}\n",
+      "type": "registry:component"
+    }
+  ],
+  "meta": {
+    "tags": [
+      "search-field",
+      "search-field-ex"
+    ],
+    "canPreview": true,
+    "canOpenInV0": true
+  }
+}

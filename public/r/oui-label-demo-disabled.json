@@ -1,0 +1,24 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "oui-label-demo-disabled",
+  "type": "registry:component",
+  "registryDependencies": [
+    "@oui/oui-input",
+    "@oui/oui-label"
+  ],
+  "files": [
+    {
+      "path": "registry/default/components/oui-label-demo-disabled.tsx",
+      "content": "\"use client\";\n\nimport { Input } from \"@/registry/default/ui/oui-input\";\nimport { Label } from \"@/registry/default/ui/oui-label\";\nimport * as Rac from \"react-aria-components\";\n\nexport default function Component() {\n  return (\n    <Rac.TextField className=\"group grid gap-2\" isDisabled>\n      <Label>Label Disabled</Label>\n      <Input placeholder=\"Placeholder\" />\n    </Rac.TextField>\n  );\n}\n",
+      "type": "registry:component"
+    }
+  ],
+  "meta": {
+    "tags": [
+      "label",
+      "disabled"
+    ],
+    "canPreview": true,
+    "canOpenInV0": true
+  }
+}

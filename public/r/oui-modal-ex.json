@@ -1,0 +1,26 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "oui-modal-ex",
+  "type": "registry:component",
+  "title": "Modal Ex",
+  "description": "Reusable wrapper for a Modal.",
+  "registryDependencies": [
+    "@oui/oui-modal",
+    "@oui/oui-label",
+    "@oui/oui-link",
+    "@oui/oui-text"
+  ],
+  "files": [
+    {
+      "path": "registry/default/components/oui-modal-ex.tsx",
+      "content": "\"use client\";\n\nimport { Modal, ModalOverlay } from \"@/registry/default/ui/oui-modal\";\nimport * as Rac from \"react-aria-components\";\n\nexport interface ModalExProps extends Rac.ModalOverlayProps {\n  overlayClassName?: Rac.ModalOverlayProps[\"className\"];\n}\n\n/**\n * Reusable wrapper that composes ModalOverlay and Modal with children.\n * `className` is applied to Modal. `overlayClassName` and other props are applied to ModalOverlay.\n * `children` are nested within Modal.\n * \n * @example\n * ```tsx\n * #import * as Oui from \"@/components/ui/oui-index\";\n * #import * as Rac from \"react-aria-components\";\n * \n * <Rac.DialogTrigger>\n *   <Oui.Button>Open Modal</Oui.Button>\n *   <Oui.ModalEx>\n *     <Oui.Dialog>Hello, ModalEx</Oui.Dialog>\n *   </Oui.ModalEx>\n * </Rac.DialogTrigger>\n * ```\n */\nexport function ModalEx({\n  className,\n  overlayClassName,\n  children,\n  ...props\n}: ModalExProps) {\n  return (\n    <ModalOverlay className={overlayClassName} {...props}>\n      <Modal className={className}>{children}</Modal>\n    </ModalOverlay>\n  );\n}\n",
+      "type": "registry:component"
+    }
+  ],
+  "meta": {
+    "tags": [
+      "modal",
+      "modal-ex"
+    ]
+  }
+}

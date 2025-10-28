@@ -1,0 +1,24 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "oui-tooltip",
+  "type": "registry:ui",
+  "title": "Tooltip",
+  "description": "React aria components Tooltip with shadcn characteristics.",
+  "dependencies": [
+    "react-aria-components",
+    "tailwind-merge"
+  ],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/default/ui/oui-tooltip.tsx",
+      "content": "\"use client\";\n\nimport * as React from \"react\";\nimport * as Rac from \"react-aria-components\";\nimport { composeTailwindRenderProps } from \"./oui-base\";\n\nexport function Tooltip({\n  className,\n  offset = 7,\n  ...props\n}: React.ComponentProps<typeof Rac.Tooltip>) {\n  return (\n    <Rac.Tooltip\n      offset={offset}\n      className={composeTailwindRenderProps(className, [\n        \"z-50 w-fit rounded-md bg-foreground px-3 py-1.5 text-xs text-balance text-background\",\n        \"data-entering:animate-in data-entering:fade-in-0 data-entering:zoom-in-95\",\n        \"data-exiting:animate-out data-exiting:fade-out-0 data-exiting:zoom-out-95\",\n        \"data-[placement=bottom]:slide-in-from-top-2\",\n        \"data-[placement=left]:slide-in-from-right-2\",\n        \"data-[placement=right]:slide-in-from-left-2\",\n        \"data-[placement=top]:slide-in-from-bottom-2\",\n        \"transform-origin-[var(--trigger-anchor-point)]\",\n      ])}\n      {...props}\n    />\n  );\n}\n\nexport function OverlayArrow(\n  props: React.ComponentProps<typeof Rac.OverlayArrow>,\n) {\n  return (\n    <Rac.OverlayArrow\n      className={composeTailwindRenderProps(\n        props.className,\n        \"fill-foreground stroke-foreground\",\n      )}\n      {...props}\n    >\n      <svg width={8} height={8} viewBox=\"0 0 8 8\" className=\"size-2\">\n        <path d=\"m0 0 4 4 4-4\" />\n      </svg>\n    </Rac.OverlayArrow>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "tags": [
+      "tooltip"
+    ]
+  }
+}

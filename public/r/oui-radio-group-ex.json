@@ -1,0 +1,29 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "oui-radio-group-ex",
+  "type": "registry:component",
+  "title": "Radio Group Ex",
+  "description": "Reusable wrapper for Radio Group.",
+  "registryDependencies": [
+    "@oui/oui-field-error",
+    "@oui/oui-label",
+    "@oui/oui-radio-group",
+    "@oui/oui-text"
+  ],
+  "files": [
+    {
+      "path": "registry/default/components/oui-radio-group-ex.tsx",
+      "content": "\"use client\";\n\nimport React from \"react\";\nimport { FieldError } from \"@/registry/default/ui/oui-field-error\";\nimport { Label } from \"@/registry/default/ui/oui-label\";\nimport { RadioGroup } from \"@/registry/default/ui/oui-radio-group\";\nimport { Text } from \"@/registry/default/ui/oui-text\";\nimport * as Rac from \"react-aria-components\";\n\nexport interface RadioGroupExProps extends Rac.RadioGroupProps {\n  label?: React.ReactNode;\n  description?: React.ReactNode;\n  errorMessage?: string | ((validation: Rac.ValidationResult) => string);\n}\n\nexport function RadioGroupEx({\n  label,\n  description,\n  errorMessage,\n  children,\n  ...props\n}: RadioGroupExProps) {\n  return (\n    <RadioGroup {...props}>\n      {(renderProps) => (\n        <>\n          {label && <Label className=\"\">{label}</Label>}\n          {description && <Text slot=\"description\">{description}</Text>}\n          {typeof children === \"function\" ? children(renderProps) : children}\n          <FieldError>{errorMessage}</FieldError>\n        </>\n      )}\n    </RadioGroup>\n  );\n}\n",
+      "type": "registry:component"
+    }
+  ],
+  "meta": {
+    "tags": [
+      "radio-group",
+      "radio-group-ex",
+      "field-error",
+      "label",
+      "text"
+    ]
+  }
+}

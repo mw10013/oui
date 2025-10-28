@@ -1,0 +1,28 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "oui-heading-demo",
+  "type": "registry:component",
+  "registryDependencies": [
+    "@oui/oui-button",
+    "@oui/oui-dialog",
+    "@oui/oui-heading",
+    "@oui/oui-modal"
+  ],
+  "files": [
+    {
+      "path": "registry/default/components/oui-heading-demo.tsx",
+      "content": "\"use client\";\n\nimport { Button } from \"@/registry/default/ui/oui-button\";\nimport { Dialog } from \"@/registry/default/ui/oui-dialog\";\nimport { Heading } from \"@/registry/default/ui/oui-heading\";\nimport { Modal, ModalOverlay } from \"@/registry/default/ui/oui-modal\";\nimport * as Rac from \"react-aria-components\";\n\nexport default function Component() {\n  return (\n    <Rac.DialogTrigger>\n      <Button variant=\"outline\">Heading</Button>\n      <ModalOverlay>\n        <Modal>\n          <Dialog>\n            <Heading slot=\"title\">Heading</Heading>\n            <p>This dialog demonstrates the Heading component.</p>\n            <Button slot=\"close\">Close</Button>\n          </Dialog>\n        </Modal>\n      </ModalOverlay>\n    </Rac.DialogTrigger>\n  );\n}\n",
+      "type": "registry:component"
+    }
+  ],
+  "meta": {
+    "tags": [
+      "heading",
+      "dialog",
+      "modal"
+    ],
+    "canPreview": true,
+    "alignment": "flex-center",
+    "canOpenInV0": true
+  }
+}

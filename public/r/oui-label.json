@@ -1,0 +1,26 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "oui-label",
+  "type": "registry:ui",
+  "title": "Label",
+  "description": "React aria components Label with shadcn characteristics.",
+  "dependencies": [
+    "react-aria-components",
+    "tailwind-merge"
+  ],
+  "registryDependencies": [
+    "@oui/oui-base"
+  ],
+  "files": [
+    {
+      "path": "registry/default/ui/oui-label.tsx",
+      "content": "\"use client\";\n\nimport { tw } from \"@/registry/default/ui/oui-base\";\nimport * as Rac from \"react-aria-components\";\nimport { twJoin, twMerge } from \"tailwind-merge\";\n\n/**\n * Derived from shadcn Label and FormLabel\n *\n * For RAC components that structure with a 'label' prefer 'labelComponentStyles' instead.\n */\nexport const baseLabelStyles = tw`flex items-center gap-2 text-sm leading-none font-medium select-none`;\n\n/**\n * Label styles for RAC components that structure with a 'label' and have render props (eg. radio, checkbox and switch).\n * It styles disabled. It does not style focus-visible.\n * Derived from shadcn Label and FormLabel\n */\nexport const labelComponentStyles = twJoin(\n  baseLabelStyles,\n  // Cannot use 'disabledStyles' from oui-base since it includes pointer-events-none preventing cursor style.\n  \"data-disabled:cursor-not-allowed data-disabled:opacity-50\",\n);\n\nexport function Label({ className, ...props }: Rac.LabelProps) {\n  return (\n    <Rac.Label\n      data-slot=\"label\"\n      className={twMerge(\n        baseLabelStyles,\n        \"group-data-disabled:pointer-events-none group-data-disabled:opacity-50 group-data-invalid:text-destructive\",\n        className,\n      )}\n      {...props}\n    />\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "tags": [
+      "label"
+    ]
+  }
+}

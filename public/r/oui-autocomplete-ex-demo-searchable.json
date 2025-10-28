@@ -1,0 +1,27 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "oui-autocomplete-ex-demo-searchable",
+  "type": "registry:component",
+  "registryDependencies": [
+    "@oui/oui-autocomplete-ex",
+    "@oui/oui-list-box",
+    "@oui/oui-select-ex-popover"
+  ],
+  "files": [
+    {
+      "path": "registry/default/components/oui-autocomplete-ex-demo-searchable.tsx",
+      "content": "\"use client\";\n\nimport { AutocompleteEx } from \"@/registry/default/components/oui-autocomplete-ex\";\nimport { SelectExPopover } from \"@/registry/default/components/oui-select-ex-popover\";\nimport { ListBoxItem } from \"@/registry/default/ui/oui-list-box\";\nimport * as Rac from \"react-aria-components\";\n\n/**\n * https://react-spectrum.adobe.com/react-aria/examples/status-select.html\n */\nexport default function Component() {\n  const languages = [\n    { id: \"1\", name: \"English\" },\n    { id: \"2\", name: \"Spanish\" },\n    { id: \"3\", name: \"French\" },\n    { id: \"4\", name: \"German\" },\n    { id: \"5\", name: \"Japanese\" },\n    { id: \"6\", name: \"Chinese\" },\n    { id: \"7\", name: \"Korean\" },\n    { id: \"8\", name: \"Italian\" },\n    { id: \"9\", name: \"Portuguese\" },\n    { id: \"10\", name: \"Russian\" },\n    { id: \"11\", name: \"Arabic\" },\n    { id: \"12\", name: \"Hindi\" },\n  ];\n\n  return (\n    <SelectExPopover\n      label=\"Autocomplete Ex Language\"\n      description=\"Select your preferred language\"\n    >\n      <AutocompleteEx\n        placeholder=\"Search languages\"\n        searchFieldProps={{ \"aria-label\": \"Languages\", autoFocus: true }}\n      >\n        <Rac.ListBox items={languages}>\n          {(item) => <ListBoxItem>{item.name}</ListBoxItem>}\n        </Rac.ListBox>\n      </AutocompleteEx>\n    </SelectExPopover>\n  );\n}\n",
+      "type": "registry:component"
+    }
+  ],
+  "meta": {
+    "tags": [
+      "autocomplete",
+      "autocomplete-ex",
+      "list-box",
+      "select-ex-popover"
+    ],
+    "canPreview": true,
+    "canOpenInV0": true
+  }
+}

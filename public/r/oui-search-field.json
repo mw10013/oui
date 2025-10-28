@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "oui-search-field",
+  "type": "registry:ui",
+  "title": "Search Field",
+  "description": "React aria components Search Field with shadcn characteristics.",
+  "dependencies": [
+    "react-aria-components"
+  ],
+  "registryDependencies": [
+    "@oui/oui-base"
+  ],
+  "files": [
+    {
+      "path": "registry/default/ui/oui-search-field.tsx",
+      "content": "\"use client\";\n\nimport { composeTailwindRenderProps } from \"@/registry/default/ui/oui-base\";\nimport * as Rac from \"react-aria-components\";\n\n/**\n * Derived styles from shadcn FormItem\n */\nexport function SearchField({ className, ...props }: Rac.SearchFieldProps) {\n  return (\n    <Rac.SearchField\n      className={composeTailwindRenderProps(className, \"group grid gap-2\")}\n      {...props}\n    />\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "tags": [
+      "search-field"
+    ]
+  }
+}

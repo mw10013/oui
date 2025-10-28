@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "oui-text-field",
+  "type": "registry:ui",
+  "title": "Text Field",
+  "description": "React aria components Text Field with shadcn characteristics.",
+  "dependencies": [
+    "react-aria-components"
+  ],
+  "registryDependencies": [
+    "@oui/oui-base"
+  ],
+  "files": [
+    {
+      "path": "registry/default/ui/oui-text-field.tsx",
+      "content": "\"use client\";\n\nimport { composeTailwindRenderProps } from \"@/registry/default/ui/oui-base\";\nimport * as Rac from \"react-aria-components\";\n\n/**\n * Derived styles from shadcn FormItem\n */\nexport function TextField({ className, ...props }: Rac.TextFieldProps) {\n  return (\n    <Rac.TextField\n      className={composeTailwindRenderProps(\n        className,\n        \"group flex flex-col gap-2\",\n      )}\n      {...props}\n    />\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "tags": [
+      "text-field"
+    ]
+  }
+}

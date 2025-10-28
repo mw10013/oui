@@ -1,0 +1,23 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "oui-link-demo-current",
+  "type": "registry:component",
+  "registryDependencies": [
+    "@oui/oui-link"
+  ],
+  "files": [
+    {
+      "path": "registry/default/components/oui-link-demo-current.tsx",
+      "content": "\"use client\";\n\nimport { Link } from \"@/registry/default/ui/oui-link\";\n\nexport default function Component() {\n  return (\n    <Link href=\"#\" underline=\"current\">\n      Current Link\n    </Link>\n  );\n}\n",
+      "type": "registry:component"
+    }
+  ],
+  "meta": {
+    "tags": [
+      "link"
+    ],
+    "canPreview": true,
+    "alignment": "flex-center",
+    "canOpenInV0": true
+  }
+}

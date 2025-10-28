@@ -18,7 +18,7 @@ export default function ComponentLoader({
     () =>
       lazy(() =>
         import(
-          `../registry/default/components/oui-${component.name}.tsx`
+          `../registry/default/components/${component.name}.tsx`
         ).catch(() => ({
           default: () => null,
         })),

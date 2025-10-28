@@ -1,0 +1,23 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "oui-switch-ex-demo",
+  "type": "registry:component",
+  "registryDependencies": [
+    "@oui/oui-switch-ex"
+  ],
+  "files": [
+    {
+      "path": "registry/default/components/oui-switch-ex-demo.tsx",
+      "content": "\"use client\";\n\nimport { SwitchEx } from \"@/registry/default/components/oui-switch-ex\";\n\nexport default function Component() {\n  return <SwitchEx>Airplane Mode</SwitchEx>;\n}\n",
+      "type": "registry:component"
+    }
+  ],
+  "meta": {
+    "tags": [
+      "switch",
+      "switch-ex"
+    ],
+    "canPreview": true,
+    "canOpenInV0": true
+  }
+}

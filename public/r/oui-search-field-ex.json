@@ -1,0 +1,31 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "oui-search-field-ex",
+  "type": "registry:component",
+  "title": "Search Field Ex",
+  "description": "Reusable wrapper for Search Field.",
+  "registryDependencies": [
+    "@oui/oui-field-error",
+    "@oui/oui-label",
+    "@oui/oui-input",
+    "@oui/oui-search-field",
+    "@oui/oui-text"
+  ],
+  "files": [
+    {
+      "path": "registry/default/components/oui-search-field-ex.tsx",
+      "content": "\"use client\";\n\nimport React from \"react\";\nimport { FieldError } from \"@/registry/default/ui/oui-field-error\";\nimport { Input } from \"@/registry/default/ui/oui-input\";\nimport { Label } from \"@/registry/default/ui/oui-label\";\nimport { SearchField } from \"@/registry/default/ui/oui-search-field\";\nimport { Text } from \"@/registry/default/ui/oui-text\";\nimport * as Rac from \"react-aria-components\";\n\nexport interface SearchFieldExProps extends Rac.SearchFieldProps {\n  label?: React.ReactNode;\n  description?: React.ReactNode;\n  errorMessage?: string | ((validation: Rac.ValidationResult) => string);\n  placeholder?: string;\n}\n\nexport function SearchFieldEx({\n  label,\n  description,\n  errorMessage,\n  placeholder,\n  ...rest\n}: SearchFieldExProps) {\n  return (\n    <SearchField {...rest}>\n      {label && <Label>{label}</Label>}\n      <Input\n        placeholder={placeholder}\n        className=\"[&::-webkit-search-cancel-button]:hidden\"\n      />\n      {description && <Text slot=\"description\">{description}</Text>}\n      <FieldError>{errorMessage}</FieldError>\n    </SearchField>\n  );\n}\n",
+      "type": "registry:component"
+    }
+  ],
+  "meta": {
+    "tags": [
+      "search-field",
+      "search-field-ex",
+      "field-error",
+      "label",
+      "input",
+      "text"
+    ]
+  }
+}

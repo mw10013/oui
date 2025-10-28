@@ -1,0 +1,27 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "oui-autocomplete-demo",
+  "type": "registry:component",
+  "registryDependencies": [
+    "@oui/oui-input",
+    "@oui/oui-label",
+    "@oui/oui-list-box",
+    "@oui/oui-search-field"
+  ],
+  "files": [
+    {
+      "path": "registry/default/components/oui-autocomplete-demo.tsx",
+      "content": "\"use client\";\n\nimport { Input } from \"@/registry/default/ui/oui-input\";\nimport { Label } from \"@/registry/default/ui/oui-label\";\nimport { ListBoxItem } from \"@/registry/default/ui/oui-list-box\";\nimport { SearchField } from \"@/registry/default/ui/oui-search-field\";\nimport * as Rac from \"react-aria-components\";\n\nexport default function Component() {\n  /* eslint-disable-next-line @typescript-eslint/unbound-method --\n   * React Aria uses functional patterns, so destructured functions don't use 'this'\n   */\n  const { contains } = Rac.useFilter({ sensitivity: \"base\" });\n  return (\n    <Rac.Autocomplete filter={contains}>\n      <SearchField>\n        <Label>Autocomplete Commands</Label>\n        <Input placeholder=\"Search commands....\" />\n      </SearchField>\n      <Rac.ListBox className=\"w-full min-w-32 overflow-x-hidden overflow-y-auto p-1\">\n        <ListBoxItem id=\"1\" textValue=\"Create new file...\">\n          Create new file...\n        </ListBoxItem>\n        <ListBoxItem id=\"2\" textValue=\"Create new folder...\">\n          Create new folder...\n        </ListBoxItem>\n        <ListBoxItem id=\"3\" textValue=\"Assign to...\">\n          Assign to...\n        </ListBoxItem>\n        <ListBoxItem id=\"4\" textValue=\"Assign to me\">\n          Assign to me\n        </ListBoxItem>\n        <ListBoxItem id=\"5\" textValue=\"Change status...\">\n          Change status...\n        </ListBoxItem>\n        <ListBoxItem id=\"6\" textValue=\"Change priority...\">\n          Change priority...\n        </ListBoxItem>\n        <ListBoxItem id=\"7\" textValue=\"Add label...\">\n          Add label...\n        </ListBoxItem>\n        <ListBoxItem id=\"8\" textValue=\"Remove label...\">\n          Remove label...\n        </ListBoxItem>\n      </Rac.ListBox>\n    </Rac.Autocomplete>\n  );\n}\n",
+      "type": "registry:component"
+    }
+  ],
+  "meta": {
+    "tags": [
+      "autocomplete",
+      "list-box",
+      "search-field"
+    ],
+    "canPreview": true,
+    "canOpenInV0": true
+  }
+}

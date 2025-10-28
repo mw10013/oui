@@ -1,0 +1,32 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "oui-menu-ex-demo-avatar-only",
+  "type": "registry:component",
+  "dependencies": [
+    "lucide-react"
+  ],
+  "registryDependencies": [
+    "avatar",
+    "@oui/oui-button",
+    "@oui/oui-menu",
+    "@oui/oui-menu-ex",
+    "@oui/oui-separator"
+  ],
+  "files": [
+    {
+      "path": "registry/default/components/oui-menu-ex-demo-avatar-only.tsx",
+      "content": "\"use client\";\n\nimport { MenuEx } from \"@/registry/default/components/oui-menu-ex\";\nimport {\n  Avatar,\n  AvatarFallback,\n  AvatarImage,\n} from \"@/registry/default/ui/avatar\";\nimport { Button } from \"@/registry/default/ui/oui-button\";\nimport { MenuItem } from \"@/registry/default/ui/oui-menu\";\nimport { Separator } from \"@/registry/default/ui/oui-separator\";\nimport {\n  BadgeCheckIcon,\n  BellIcon,\n  CreditCardIcon,\n  LogOut,\n  SparklesIcon,\n} from \"lucide-react\";\nimport * as Rac from \"react-aria-components\";\n\nexport default function Component() {\n  return (\n    <MenuEx\n      triggerElement={\n        <Button\n          variant=\"outline\"\n          className=\"size-8 rounded-full border-none p-0\"\n        >\n          <Avatar>\n            <AvatarImage src=\"https://github.com/leerob.png\" alt=\"leerob\" />\n            <AvatarFallback className=\"rounded-lg\">LR</AvatarFallback>\n          </Avatar>\n        </Button>\n      }\n    >\n      <Rac.MenuSection>\n        <Rac.Header>\n          <div className=\"flex items-center gap-2 px-1 py-1.5 text-left text-sm\">\n            <Avatar>\n              <AvatarImage src=\"https://github.com/leerob.png\" alt=\"leerob\" />\n              <AvatarFallback className=\"rounded-lg\">LR</AvatarFallback>\n            </Avatar>\n            <div className=\"grid flex-1 text-left text-sm leading-tight\">\n              <span className=\"truncate font-semibold\">leerob</span>\n              <span className=\"truncate text-xs text-muted-foreground\">\n                leerob@example.com\n              </span>\n            </div>\n          </div>\n        </Rac.Header>\n      </Rac.MenuSection>\n      <Separator variant=\"menu\" />\n      <Rac.MenuSection>\n        <MenuItem id=\"upgradeAvatarOnly\" textValue=\"Upgrade to Pro\">\n          <SparklesIcon className=\"mr-2 size-4\" />\n          Upgrade to Pro\n        </MenuItem>\n      </Rac.MenuSection>\n      <Separator variant=\"menu\" />\n      <Rac.MenuSection>\n        <MenuItem id=\"accountAvatarOnly\" textValue=\"Account\">\n          <BadgeCheckIcon className=\"mr-2 size-4\" />\n          Account\n        </MenuItem>\n        <MenuItem id=\"billingAvatarOnly\" textValue=\"Billing\">\n          <CreditCardIcon className=\"mr-2 size-4\" />\n          Billing\n        </MenuItem>\n        <MenuItem id=\"notificationsAvatarOnly\" textValue=\"Notifications\">\n          <BellIcon className=\"mr-2 size-4\" />\n          Notifications\n        </MenuItem>\n      </Rac.MenuSection>\n      <Separator variant=\"menu\" />\n      <MenuItem id=\"signOutAvatarOnly\" textValue=\"Sign Out\">\n        <LogOut className=\"mr-2 size-4\" />\n        Sign Out\n      </MenuItem>\n    </MenuEx>\n  );\n}\n",
+      "type": "registry:component"
+    }
+  ],
+  "meta": {
+    "tags": [
+      "menu",
+      "menu-ex",
+      "separator",
+      "avatar"
+    ],
+    "canPreview": true,
+    "canOpenInV0": true
+  }
+}

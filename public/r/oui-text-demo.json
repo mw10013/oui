@@ -1,0 +1,28 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "oui-text-demo",
+  "type": "registry:component",
+  "registryDependencies": [
+    "@oui/oui-input",
+    "@oui/oui-label",
+    "@oui/oui-text-field",
+    "@oui/oui-text"
+  ],
+  "files": [
+    {
+      "path": "registry/default/components/oui-text-demo.tsx",
+      "content": "\"use client\";\n\nimport { Input } from \"@/registry/default/ui/oui-input\";\nimport { Label } from \"@/registry/default/ui/oui-label\";\nimport { Text } from \"@/registry/default/ui/oui-text\";\nimport { TextField } from \"@/registry/default/ui/oui-text-field\";\n\nexport default function Component() {\n  return (\n    <TextField>\n      <Label>Text</Label>\n      <Input placeholder=\"Placeholder\" />\n      <Text slot=\"description\">Text</Text>\n    </TextField>\n  );\n}\n",
+      "type": "registry:component"
+    }
+  ],
+  "meta": {
+    "tags": [
+      "text",
+      "input",
+      "label",
+      "text-field"
+    ],
+    "canPreview": true,
+    "canOpenInV0": true
+  }
+}

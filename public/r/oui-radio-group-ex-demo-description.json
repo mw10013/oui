@@ -1,0 +1,24 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "oui-radio-group-ex-demo-description",
+  "type": "registry:component",
+  "registryDependencies": [
+    "@oui/oui-radio-group-ex",
+    "@oui/oui-radio-group"
+  ],
+  "files": [
+    {
+      "path": "registry/default/components/oui-radio-group-ex-demo-description.tsx",
+      "content": "\"use client\";\n\nimport { RadioGroupEx } from \"@/registry/default/components/oui-radio-group-ex\";\nimport { Radio } from \"@/registry/default/ui/oui-radio-group\";\n\nconst plans = [\n  {\n    id: \"starter\",\n    name: \"Starter Plan\",\n    description:\n      \"Perfect for small businesses getting started with our platform\",\n    price: \"$10\",\n  },\n  {\n    id: \"pro\",\n    name: \"Pro Plan\",\n    description: \"Advanced features for growing businesses with higher demands\",\n    price: \"$20\",\n  },\n] as const;\n\nexport default function Component() {\n  return (\n    <RadioGroupEx\n      defaultValue=\"starter\"\n      className=\"max-w-sm\"\n      aria-label=\"RadioGroupEx\"\n    >\n      {plans.map((plan) => (\n        <Radio\n          value={plan.id}\n          key={plan.id}\n          className=\"flex items-start gap-3 rounded-lg border p-4 data-hovered:bg-accent/50 data-selected:border-green-600 data-selected:bg-green-50 dark:data-selected:border-green-900 dark:data-selected:bg-green-950\"\n          radioGroupItemClassName=\"shadow-none group-data-selected:border-green-600  group-data-selected:bg-green-600 [&_svg]:fill-white [&_svg]:stroke-white\"\n        >\n          <div className=\"grid gap-1 font-normal\">\n            <div className=\"font-medium\">{plan.name}</div>\n            <div className=\"leading-snug text-muted-foreground\">\n              {plan.description}\n            </div>\n          </div>\n        </Radio>\n      ))}\n    </RadioGroupEx>\n  );\n}\n",
+      "type": "registry:component"
+    }
+  ],
+  "meta": {
+    "tags": [
+      "radio-group",
+      "radio-group-ex"
+    ],
+    "canPreview": true,
+    "canOpenInV0": true
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "oui-table-demo",
+  "type": "registry:component",
+  "registryDependencies": [
+    "@oui/oui-table"
+  ],
+  "files": [
+    {
+      "path": "registry/default/components/oui-table-demo.tsx",
+      "content": "\"use client\";\n\nimport {\n  Cell,\n  Column,\n  Row,\n  Table,\n  TableBody,\n  TableHeader,\n} from \"@/registry/default/ui/oui-table\";\n\nconst invoices = [\n  {\n    invoice: \"INV001\",\n    paymentStatus: \"Paid\",\n    totalAmount: \"$250.00\",\n    paymentMethod: \"Credit Card\",\n  },\n  {\n    invoice: \"INV002\",\n    paymentStatus: \"Pending\",\n    totalAmount: \"$150.00\",\n    paymentMethod: \"PayPal\",\n  },\n  {\n    invoice: \"INV003\",\n    paymentStatus: \"Unpaid\",\n    totalAmount: \"$350.00\",\n    paymentMethod: \"Bank Transfer\",\n  },\n  {\n    invoice: \"INV004\",\n    paymentStatus: \"Paid\",\n    totalAmount: \"$450.00\",\n    paymentMethod: \"Credit Card\",\n  },\n  {\n    invoice: \"INV005\",\n    paymentStatus: \"Paid\",\n    totalAmount: \"$550.00\",\n    paymentMethod: \"PayPal\",\n  },\n  {\n    invoice: \"INV006\",\n    paymentStatus: \"Pending\",\n    totalAmount: \"$200.00\",\n    paymentMethod: \"Bank Transfer\",\n  },\n  {\n    invoice: \"INV007\",\n    paymentStatus: \"Unpaid\",\n    totalAmount: \"$300.00\",\n    paymentMethod: \"Credit Card\",\n  },\n];\n\nexport default function Component() {\n  return (\n    <Table aria-label=\"Invoices\">\n      {/* <TableCaption>A list of your recent invoices.</TableCaption> */}\n      <TableHeader>\n        <Column isRowHeader className=\"w-[100px]\">\n          Invoice\n        </Column>\n        <Column>Status</Column>\n        <Column>Method</Column>\n        <Column className=\"text-right\">Amount</Column>\n      </TableHeader>\n      <TableBody items={invoices}>\n        {(invoice) => (\n          <Row id={invoice.invoice}>\n            <Cell className=\"font-medium\">{invoice.invoice}</Cell>\n            <Cell>{invoice.paymentStatus}</Cell>\n            <Cell>{invoice.paymentMethod}</Cell>\n            <Cell className=\"text-right\">{invoice.totalAmount}</Cell>\n          </Row>\n        )}\n      </TableBody>\n      {/* <TableFooter>\n        <TableRow id=\"footer-total-row\">\n          <TableCell colSpan={3}>Total</TableCell>\n          <TableCell className=\"text-right\">$2,500.00</TableCell>\n        </TableRow>\n      </TableFooter> */}\n    </Table>\n  );\n}\n",
+      "type": "registry:component"
+    }
+  ],
+  "meta": {
+    "tags": [
+      "table"
+    ],
+    "canPreview": true,
+    "width": "wide",
+    "canOpenInV0": true
+  }
+}

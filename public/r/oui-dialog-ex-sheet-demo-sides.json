@@ -1,0 +1,29 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "oui-dialog-ex-sheet-demo-sides",
+  "type": "registry:component",
+  "registryDependencies": [
+    "@oui/oui-button",
+    "@oui/oui-dialog",
+    "@oui/oui-dialog-ex-sheet",
+    "@oui/oui-heading"
+  ],
+  "files": [
+    {
+      "path": "registry/default/components/oui-dialog-ex-sheet-demo-sides.tsx",
+      "content": "\"use client\";\n\nimport { DialogExSheet } from \"@/registry/default/components/oui-dialog-ex-sheet\";\nimport { Button } from \"@/registry/default/ui/oui-button\";\nimport {\n  DialogDescription,\n  DialogFooter,\n  DialogHeader,\n} from \"@/registry/default/ui/oui-dialog\";\nimport { Heading } from \"@/registry/default/ui/oui-heading\";\nimport { Label } from \"@/registry/default/ui/oui-label\";\n\nconst SHEET_SIDES = [\"top\", \"right\", \"bottom\", \"left\"] as const;\n\nexport default function Component() {\n  return (\n    <div className=\"grid gap-2\">\n      <Label>Dialog Ex Sheet</Label>\n      <div className=\"flex flex-wrap gap-2\">\n        {SHEET_SIDES.map((side) => (\n          <DialogExSheet\n            key={side}\n            triggerElement={\n              <Button variant=\"outline\" className=\"capitalize\">\n                {side}\n              </Button>\n            }\n            side={side}\n          >\n            <DialogHeader>\n              <Heading slot=\"title\">Edit profile</Heading>\n              <DialogDescription>\n                Make changes to your profile here. Click save when you&apos;re\n                done.\n              </DialogDescription>\n            </DialogHeader>\n            <div className=\"-mx-6 max-h-[calc(100vh-16rem)] overflow-y-auto px-6 py-4 text-sm\">\n              <h4 className=\"mb-4 text-lg leading-none font-medium\">\n                Lorem Ipsum\n              </h4>\n              {Array.from({ length: 10 }).map((_, index) => (\n                <p key={index} className=\"mb-4 leading-normal\">\n                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed\n                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.\n                  Ut enim ad minim veniam, quis nostrud exercitation ullamco\n                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute\n                  irure dolor in reprehenderit in voluptate velit esse cillum\n                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat\n                  cupidatat non proident, sunt in culpa qui officia deserunt\n                  mollit anim id est laborum.\n                </p>\n              ))}\n            </div>\n            <DialogFooter>\n              <Button type=\"submit\" slot=\"close\">\n                Save changes\n              </Button>\n              <Button variant=\"outline\" slot=\"close\">\n                Cancel\n              </Button>\n            </DialogFooter>\n          </DialogExSheet>\n        ))}\n      </div>\n    </div>\n  );\n}\n",
+      "type": "registry:component"
+    }
+  ],
+  "meta": {
+    "tags": [
+      "dialog",
+      "dialog-ex-sheet",
+      "modal-ex-sheet",
+      "heading",
+      "sheet"
+    ],
+    "canPreview": true,
+    "canOpenInV0": true
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "oui-disclosure-demo",
+  "type": "registry:component",
+  "registryDependencies": [
+    "@oui/oui-disclosure",
+    "@oui/oui-heading"
+  ],
+  "files": [
+    {
+      "path": "registry/default/components/oui-disclosure-demo.tsx",
+      "content": "\"use client\";\n\nimport {\n  Disclosure,\n  DisclosureButton,\n  DisclosurePanel,\n} from \"@/registry/default/ui/oui-disclosure\";\nimport { Heading } from \"@/registry/default/ui/oui-heading\";\n\nexport default function Component() {\n  return (\n    <Disclosure>\n      <Heading variant=\"disclosure\">\n        <DisclosureButton>System Requirements</DisclosureButton>\n      </Heading>\n      <DisclosurePanel>Details about system requirements here.</DisclosurePanel>\n    </Disclosure>\n  );\n}\n",
+      "type": "registry:component"
+    }
+  ],
+  "meta": {
+    "tags": [
+      "disclosure",
+      "heading"
+    ],
+    "canPreview": true,
+    "canOpenInV0": true
+  }
+}

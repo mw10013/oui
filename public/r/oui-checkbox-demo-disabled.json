@@ -1,0 +1,23 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "oui-checkbox-demo-disabled",
+  "type": "registry:component",
+  "registryDependencies": [
+    "@oui/oui-checkbox"
+  ],
+  "files": [
+    {
+      "path": "registry/default/components/oui-checkbox-demo-disabled.tsx",
+      "content": "\"use client\";\n\nimport { Checkbox } from \"@/registry/default/ui/oui-checkbox\";\n\nexport default function Component() {\n  return (\n    <Checkbox name=\"toggle\" isDisabled>\n      Enable notifications\n    </Checkbox>\n  );\n}\n",
+      "type": "registry:component"
+    }
+  ],
+  "meta": {
+    "tags": [
+      "checkbox",
+      "disabled"
+    ],
+    "canPreview": true,
+    "canOpenInV0": true
+  }
+}

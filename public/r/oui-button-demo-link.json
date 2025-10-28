@@ -1,0 +1,23 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "oui-button-demo-link",
+  "type": "registry:component",
+  "registryDependencies": [
+    "@oui/oui-button"
+  ],
+  "files": [
+    {
+      "path": "registry/default/components/oui-button-demo-link.tsx",
+      "content": "\"use client\";\n\nimport { Button } from \"@/registry/default/ui/oui-button\";\n\nexport default function Component() {\n  return <Button variant=\"link\">Link</Button>;\n}\n",
+      "type": "registry:component"
+    }
+  ],
+  "meta": {
+    "tags": [
+      "button"
+    ],
+    "canPreview": true,
+    "alignment": "text-center",
+    "canOpenInV0": true
+  }
+}
