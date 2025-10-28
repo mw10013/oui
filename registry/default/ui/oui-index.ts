@@ -1,12 +1,12 @@
 /**
- * The `oui-index` module exports all core ui and (extension and reusable wrapper) components from the Oui.
- * Demos are excluded.
+ * The `oui-index` module exports all ui and ex (extension and reusable wrapper) components.
+ * No demos.
  * 
  * @example
  * ```ts
  * import * as Oui from "@/components/ui/oui-index";
  * 
- * <Oui.OuiButton>Click me</Oui.OuiButton>
+ * <Oui.OuiButton>Hello, Oui</Oui.OuiButton>
  * ```
  */
 
