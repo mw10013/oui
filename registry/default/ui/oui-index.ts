@@ -1,5 +1,5 @@
 /**
- * This `oui-index` module exports all core ui and (extension and reusable wrapper) components from the Oui.
+ * The `oui-index` module exports all core ui and (extension and reusable wrapper) components from the Oui.
  * Demos are excluded.
  * 
  * @example
