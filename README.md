@@ -19,10 +19,10 @@ Install [shadcn](https://ui.shadcn.com/) using the official [instructions](https
 Use the shadcn [cli](https://ui.shadcn.com/docs/cli) to add oui components.
 
 ```
-pnpm dlx shadcn@latest add https://oui.mw10013.workers.dev/r/[COMPONENT].json
-npx shadcn@latest add https://oui.mw10013.workers.dev/r/[COMPONENT].json
-yarn shadcn@latest add https://oui.mw10013.workers.dev/r/[COMPONENT].json
-bunx --bun shadcn@latest add https://oui.mw10013.workers.dev/r/[COMPONENT].json
+pnpm dlx shadcn@latest add @oui/[COMPONENT]
+npx shadcn@latest add @oui/[COMPONENT]
+yarn shadcn@latest add @oui/[COMPONENT]
+bunx --bun shadcn@latest add @oui/[COMPONENT]
 ```
 
 You can use the [demo](https://oui.mw10013.workers.dev) to find components. View code for a component contains the cli to add.
@@ -34,10 +34,10 @@ Note: Oui does not overwrite any shadcn files so you can run oui and shadcn comp
 You can add all oui components with a single command by adding `index`. Only the core ui and ex (extension or reusable wrapper) components are added, not the demos.
 
 ```
-pnpm dlx shadcn@latest add https://oui.mw10013.workers.dev/r/index.json
-npx shadcn@latest add https://oui.mw10013.workers.dev/r/index.json
-yarn shadcn@latest add https://oui.mw10013.workers.dev/r/index.json
-bunx --bun shadcn@latest add https://oui.mw10013.workers.dev/r/index.json
+pnpm dlx shadcn@latest add @oui/index
+npx shadcn@latest add @oui/index
+yarn shadcn@latest add @oui/index
+bunx --bun shadcn@latest add @oui/index
 ```
 
 ```ts
