@@ -1,5 +1,3 @@
-"use client";
-
 import type { JSX } from "react";
 import type { BundledLanguage } from "shiki/bundle/web";
 import { useLayoutEffect, useState } from "react";

@@ -1,4 +1,4 @@
-"user client";
+"use client";
 
 import { ToggleButton } from "@/registry/default/ui/oui-toggle-button";
 import { Bold, BookmarkIcon, Italic, StarIcon, Underline } from "lucide-react";
