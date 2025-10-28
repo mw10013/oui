@@ -96,7 +96,7 @@
       "name": "base",
       "type": "registry:ui",
       "title": "Base",
-      "description": "Base styles for Oui.",
+      "description": "Base styles and utilities for Oui.",
       "files": [
         {
           "path": "registry/default/ui/oui-base.ts",
@@ -521,7 +521,7 @@
       "name": "combo-box",
       "type": "registry:ui",
       "title": "Combo Box",
-      "description": "React aria components ComboBox with shadcn characteristics.",
+      "description": "React aria components Combo Box with shadcn characteristics.",
       "files": [
         {
           "path": "registry/default/ui/oui-combo-box.tsx",

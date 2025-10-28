@@ -3,7 +3,7 @@
   "name": "base",
   "type": "registry:ui",
   "title": "Base",
-  "description": "Base styles for Oui.",
+  "description": "Base styles and utilities for Oui.",
   "dependencies": [
     "react-aria-components",
     "tailwind-merge"

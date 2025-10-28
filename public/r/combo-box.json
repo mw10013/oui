@@ -3,7 +3,7 @@
   "name": "combo-box",
   "type": "registry:ui",
   "title": "Combo Box",
-  "description": "React aria components ComboBox with shadcn characteristics.",
+  "description": "React aria components Combo Box with shadcn characteristics.",
   "dependencies": [
     "react-aria-components"
   ],
