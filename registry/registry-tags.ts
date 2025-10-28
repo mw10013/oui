@@ -64,7 +64,6 @@ export const registryTags = [
   "avatar",
   "disabled",
   "icon",
-  "index",
   "login",
   "multiple",
   "provider",
