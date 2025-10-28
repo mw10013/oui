@@ -507,10 +507,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": [
-        "@oui/checkbox-group-ex",
-        "@oui/checkbox"
-      ],
+      "registryDependencies": ["@oui/checkbox-group-ex", "@oui/checkbox"],
       "meta": {
         "tags": ["checkbox-group", "checkbox-group-ex", "checkbox"],
         "canPreview": true,
@@ -618,11 +615,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": [
-        "avatar",
-        "@oui/combo-box-ex",
-        "@oui/list-box"
-      ],
+      "registryDependencies": ["avatar", "@oui/combo-box-ex", "@oui/list-box"],
       "meta": {
         "tags": ["combo-box", "combo-box-ex", "avatar", "list-box"],
         "canPreview": true,
@@ -660,11 +653,7 @@
           "type": "registry:ui"
         }
       ],
-      "registryDependencies": [
-        "@oui/button",
-        "@oui/heading",
-        "@oui/modal"
-      ],
+      "registryDependencies": ["@oui/button", "@oui/heading", "@oui/modal"],
       "dependencies": [
         "react-aria-components",
         "lucide-react",
@@ -712,11 +701,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": [
-        "@oui/dialog",
-        "@oui/button",
-        "@oui/modal-ex"
-      ],
+      "registryDependencies": ["@oui/dialog", "@oui/button", "@oui/modal-ex"],
       "meta": {
         "tags": ["dialog", "dialog-ex", "modal-ex"]
       }
@@ -1368,7 +1353,10 @@
         "@oui/switch-ex",
         "@oui/text-field-ex",
         "@oui/tooltip-ex"
-      ]
+      ],
+      "meta": {
+        "tags": ["index"]
+      }
     },
     {
       "name": "input",
@@ -1503,10 +1491,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": [
-        "@oui/input",
-        "@oui/label"
-      ],
+      "registryDependencies": ["@oui/input", "@oui/label"],
       "meta": {
         "tags": ["label"],
         "canPreview": true,
@@ -1522,10 +1507,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": [
-        "@oui/input",
-        "@oui/label"
-      ],
+      "registryDependencies": ["@oui/input", "@oui/label"],
       "meta": {
         "tags": ["label", "disabled"],
         "canPreview": true,
@@ -1664,10 +1646,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": [
-        "@oui/button",
-        "@oui/link"
-      ],
+      "registryDependencies": ["@oui/button", "@oui/link"],
       "meta": {
         "tags": ["link"],
         "canPreview": true,
@@ -1684,10 +1663,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": [
-        "@oui/button",
-        "@oui/link"
-      ],
+      "registryDependencies": ["@oui/button", "@oui/link"],
       "meta": {
         "tags": ["link"],
         "canPreview": true,
@@ -1704,10 +1680,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": [
-        "@oui/button",
-        "@oui/link"
-      ],
+      "registryDependencies": ["@oui/button", "@oui/link"],
       "meta": {
         "tags": ["link"],
         "canPreview": true,
@@ -1724,10 +1697,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": [
-        "@oui/button",
-        "@oui/link"
-      ],
+      "registryDependencies": ["@oui/button", "@oui/link"],
       "meta": {
         "tags": ["link"],
         "canPreview": true,
@@ -1744,10 +1714,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": [
-        "@oui/button",
-        "@oui/link"
-      ],
+      "registryDependencies": ["@oui/button", "@oui/link"],
       "dependencies": ["simple-icons"],
       "meta": {
         "tags": ["link", "icon"],
@@ -1808,10 +1775,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": [
-        "@oui/list-box",
-        "item"
-      ],
+      "registryDependencies": ["@oui/list-box", "item"],
       "meta": {
         "tags": ["list-box"],
         "canPreview": true,
@@ -1827,10 +1791,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": [
-        "@oui/list-box",
-        "item"
-      ],
+      "registryDependencies": ["@oui/list-box", "item"],
       "meta": {
         "tags": ["list-box", "multiple"],
         "canPreview": true,
@@ -1867,9 +1828,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": [
-        "@oui/list-box-ex-pagination"
-      ],
+      "registryDependencies": ["@oui/list-box-ex-pagination"],
       "meta": {
         "tags": ["list-box"],
         "canPreview": true,
@@ -1909,11 +1868,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": [
-        "@oui/button",
-        "@oui/menu",
-        "@oui/popover"
-      ],
+      "registryDependencies": ["@oui/button", "@oui/menu", "@oui/popover"],
       "meta": {
         "tags": ["menu", "menu-ex", "popover", "button"]
       }
@@ -2176,10 +2131,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": [
-        "@oui/button",
-        "@oui/number-field-ex"
-      ],
+      "registryDependencies": ["@oui/button", "@oui/number-field-ex"],
       "meta": {
         "tags": ["number-field", "number-field-ex", "button"],
         "canPreview": true,
@@ -2218,11 +2170,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": [
-        "@oui/button",
-        "@oui/dialog",
-        "@oui/popover"
-      ],
+      "registryDependencies": ["@oui/button", "@oui/dialog", "@oui/popover"],
       "meta": {
         "tags": ["popover", "popover-ex", "dialog"]
       }
@@ -2267,10 +2215,7 @@
           "type": "registry:ui"
         }
       ],
-      "registryDependencies": [
-        "@oui/base",
-        "@oui/label"
-      ],
+      "registryDependencies": ["@oui/base", "@oui/label"],
       "dependencies": [
         "react-aria-components",
         "lucide-react",
@@ -2316,10 +2261,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": [
-        "@oui/radio-group-ex",
-        "@oui/radio-group"
-      ],
+      "registryDependencies": ["@oui/radio-group-ex", "@oui/radio-group"],
       "meta": {
         "tags": ["radio-group", "radio-group-ex"],
         "canPreview": true,
@@ -2335,10 +2277,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": [
-        "@oui/radio-group-ex",
-        "@oui/radio-group"
-      ],
+      "registryDependencies": ["@oui/radio-group-ex", "@oui/radio-group"],
       "meta": {
         "tags": ["radio-group", "radio-group-ex"],
         "canPreview": true,
@@ -2415,9 +2354,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": [
-        "@oui/search-field-ex"
-      ],
+      "registryDependencies": ["@oui/search-field-ex"],
       "meta": {
         "tags": ["search-field", "search-field-ex"],
         "canPreview": true,
@@ -2454,11 +2391,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": [
-        "@oui/list-box",
-        "@oui/popover",
-        "@oui/select"
-      ],
+      "registryDependencies": ["@oui/list-box", "@oui/popover", "@oui/select"],
       "meta": {
         "tags": ["select", "list-box", "popover"],
         "canPreview": true,
@@ -2475,11 +2408,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": [
-        "@oui/list-box",
-        "@oui/popover",
-        "@oui/select"
-      ],
+      "registryDependencies": ["@oui/list-box", "@oui/popover", "@oui/select"],
       "meta": {
         "tags": ["select", "list-box", "popover", "multiple"],
         "canPreview": true,
@@ -2539,10 +2468,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": [
-        "@oui/list-box",
-        "@oui/select-ex"
-      ],
+      "registryDependencies": ["@oui/list-box", "@oui/select-ex"],
       "meta": {
         "tags": ["select", "select-ex", "list-box"],
         "canPreview": true,
@@ -2559,10 +2485,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": [
-        "@oui/list-box",
-        "@oui/select-ex"
-      ],
+      "registryDependencies": ["@oui/list-box", "@oui/select-ex"],
       "dependencies": ["lucide-react"],
       "meta": {
         "tags": ["select", "select-ex", "list-box", "icon"],
@@ -2580,10 +2503,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": [
-        "@oui/list-box",
-        "@oui/select-ex"
-      ],
+      "registryDependencies": ["@oui/list-box", "@oui/select-ex"],
       "meta": {
         "tags": ["select", "select-ex", "disabled"],
         "canPreview": true,
@@ -2650,9 +2570,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": [
-        "@oui/separator"
-      ],
+      "registryDependencies": ["@oui/separator"],
       "meta": {
         "tags": ["separator"],
         "canPreview": true,
@@ -2709,10 +2627,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": [
-        "@oui/label",
-        "@oui/slider"
-      ],
+      "registryDependencies": ["@oui/label", "@oui/slider"],
       "meta": {
         "tags": ["slider", "slider-ex", "label"]
       }
@@ -2726,9 +2641,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": [
-        "@oui/slider-ex"
-      ],
+      "registryDependencies": ["@oui/slider-ex"],
       "meta": {
         "tags": ["slider", "slider-ex"],
         "canPreview": true,
@@ -2744,9 +2657,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": [
-        "@oui/slider-ex"
-      ],
+      "registryDependencies": ["@oui/slider-ex"],
       "meta": {
         "tags": ["slider", "slider-ex", "disabled"],
         "canPreview": true,
@@ -2764,10 +2675,7 @@
           "type": "registry:ui"
         }
       ],
-      "registryDependencies": [
-        "@oui/label",
-        "@oui/base"
-      ],
+      "registryDependencies": ["@oui/label", "@oui/base"],
       "dependencies": ["react-aria-components", "tailwind-merge"],
       "meta": {
         "tags": ["switch"]
@@ -2784,11 +2692,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": [
-        "@oui/base",
-        "@oui/switch",
-        "@oui/text"
-      ],
+      "registryDependencies": ["@oui/base", "@oui/switch", "@oui/text"],
       "meta": {
         "tags": ["switch", "switch-ex", "text"]
       }
@@ -2802,9 +2706,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": [
-        "@oui/switch-ex"
-      ],
+      "registryDependencies": ["@oui/switch-ex"],
       "meta": {
         "tags": ["switch", "switch-ex"],
         "canPreview": true,
@@ -2820,9 +2722,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": [
-        "@oui/switch-ex"
-      ],
+      "registryDependencies": ["@oui/switch-ex"],
       "meta": {
         "tags": ["switch", "switch-ex"],
         "canPreview": true,
@@ -2838,9 +2738,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": [
-        "@oui/switch-ex"
-      ],
+      "registryDependencies": ["@oui/switch-ex"],
       "meta": {
         "tags": ["switch", "switch-ex"],
         "canPreview": true,
@@ -2856,9 +2754,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": [
-        "@oui/switch-ex"
-      ],
+      "registryDependencies": ["@oui/switch-ex"],
       "meta": {
         "tags": ["switch", "switch-ex", "disabled"],
         "canPreview": true,
@@ -3030,9 +2926,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": [
-        "@oui/text-area"
-      ],
+      "registryDependencies": ["@oui/text-area"],
       "meta": {
         "tags": ["text-area"],
         "canPreview": true,
@@ -3048,10 +2942,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": [
-        "@oui/text-area",
-        "@oui/text-field-ex"
-      ],
+      "registryDependencies": ["@oui/text-area", "@oui/text-field-ex"],
       "meta": {
         "tags": ["text-area", "text-field-ex"],
         "canPreview": true,
@@ -3067,10 +2958,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": [
-        "@oui/text-area",
-        "@oui/text-field-ex"
-      ],
+      "registryDependencies": ["@oui/text-area", "@oui/text-field-ex"],
       "meta": {
         "tags": ["text-area", "text-field-ex", "disabled"],
         "canPreview": true,
@@ -3154,9 +3042,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": [
-        "@oui/text-field-ex"
-      ],
+      "registryDependencies": ["@oui/text-field-ex"],
       "meta": {
         "tags": ["text-field", "text-field-ex"],
         "canPreview": true,
@@ -3201,9 +3087,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": [
-        "@oui/text-field-ex-horizontal"
-      ],
+      "registryDependencies": ["@oui/text-field-ex-horizontal"],
       "meta": {
         "tags": ["text-field", "text-field-ex-horizontal"],
         "canPreview": true,
@@ -3236,10 +3120,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": [
-        "@oui/toggle-button",
-        "@oui/tooltip"
-      ],
+      "registryDependencies": ["@oui/toggle-button", "@oui/tooltip"],
       "dependencies": ["lucide-react"],
       "meta": {
         "tags": ["toggle-button", "disabled"],
@@ -3256,9 +3137,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": [
-        "@oui/toggle-button"
-      ],
+      "registryDependencies": ["@oui/toggle-button"],
       "dependencies": ["remix-themes"],
       "meta": {
         "tags": ["toggle-button", "react-router", "theme"],
@@ -3292,10 +3171,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": [
-        "@oui/button",
-        "@oui/tooltip"
-      ],
+      "registryDependencies": ["@oui/button", "@oui/tooltip"],
       "meta": {
         "tags": ["tooltip"],
         "canPreview": true,
@@ -3314,10 +3190,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": [
-        "@oui/button",
-        "@oui/tooltip"
-      ],
+      "registryDependencies": ["@oui/button", "@oui/tooltip"],
       "meta": {
         "tags": ["tooltip", "tooltip-ex", "button"]
       }
@@ -3331,10 +3204,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": [
-        "@oui/button",
-        "@oui/tooltip-ex"
-      ],
+      "registryDependencies": ["@oui/button", "@oui/tooltip-ex"],
       "meta": {
         "tags": ["tooltip", "tooltip-ex"],
         "canPreview": true,
