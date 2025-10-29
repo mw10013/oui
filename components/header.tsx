@@ -1,6 +1,7 @@
 import ReactRouterThemeToggleButton from "@/registry/default/components/oui-react-router-theme-toggle-button";
 import * as Oui from "@/registry/default/ui/oui-index";
 import { Link } from "@/registry/default/ui/oui-link";
+import { Circle } from "lucide-react";
 import { siGithub } from "simple-icons";
 
 export default function Header() {
@@ -10,9 +11,10 @@ export default function Header() {
         <Link
           href="/"
           aria-label="Home"
-          className="text-2xl/[1.1] font-bold tracking-tight text-foreground md:text-3xl/[1.1]"
+          className="flex items-center gap-px text-2xl/[1.1] font-bold tracking-tight text-foreground md:text-3xl/[1.1]"
         >
-          Oui
+          <Circle />
+          ui
         </Link>
         <div className="flex items-center gap-1">
           <Link
