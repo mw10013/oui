@@ -507,7 +507,10 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["@oui/oui-checkbox-group-ex", "@oui/oui-checkbox"],
+      "registryDependencies": [
+        "@oui/oui-checkbox-group-ex",
+        "@oui/oui-checkbox"
+      ],
       "meta": {
         "tags": ["checkbox-group", "checkbox-group-ex", "checkbox"],
         "canPreview": true,
@@ -615,7 +618,11 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["avatar", "@oui/oui-combo-box-ex", "@oui/oui-list-box"],
+      "registryDependencies": [
+        "avatar",
+        "@oui/oui-combo-box-ex",
+        "@oui/oui-list-box"
+      ],
       "meta": {
         "tags": ["combo-box", "combo-box-ex", "avatar", "list-box"],
         "canPreview": true,
@@ -653,7 +660,11 @@
           "type": "registry:ui"
         }
       ],
-      "registryDependencies": ["@oui/oui-button", "@oui/oui-heading", "@oui/oui-modal"],
+      "registryDependencies": [
+        "@oui/oui-button",
+        "@oui/oui-heading",
+        "@oui/oui-modal"
+      ],
       "dependencies": [
         "react-aria-components",
         "lucide-react",
@@ -701,7 +712,11 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["@oui/oui-dialog", "@oui/oui-button", "@oui/oui-modal-ex"],
+      "registryDependencies": [
+        "@oui/oui-dialog",
+        "@oui/oui-button",
+        "@oui/oui-modal-ex"
+      ],
       "meta": {
         "tags": ["dialog", "dialog-ex", "modal-ex"]
       }
@@ -881,10 +896,7 @@
       "registryDependencies": [
         "@oui/oui-button",
         "@oui/oui-dialog",
-        "@oui/oui-modal-ex-sheet",
-        "@oui/oui-label",
-        "@oui/oui-link",
-        "@oui/oui-text"
+        "@oui/oui-modal-ex-sheet"
       ],
       "meta": {
         "tags": ["dialog", "dialog-ex-sheet", "modal-ex-sheet", "sheet"]
@@ -1868,7 +1880,11 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["@oui/oui-button", "@oui/oui-menu", "@oui/oui-popover"],
+      "registryDependencies": [
+        "@oui/oui-button",
+        "@oui/oui-menu",
+        "@oui/oui-popover"
+      ],
       "meta": {
         "tags": ["menu", "menu-ex", "popover", "button"]
       }
@@ -2170,7 +2186,11 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["@oui/oui-button", "@oui/oui-dialog", "@oui/oui-popover"],
+      "registryDependencies": [
+        "@oui/oui-button",
+        "@oui/oui-dialog",
+        "@oui/oui-popover"
+      ],
       "meta": {
         "tags": ["popover", "popover-ex", "dialog"]
       }
@@ -2261,7 +2281,10 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["@oui/oui-radio-group-ex", "@oui/oui-radio-group"],
+      "registryDependencies": [
+        "@oui/oui-radio-group-ex",
+        "@oui/oui-radio-group"
+      ],
       "meta": {
         "tags": ["radio-group", "radio-group-ex"],
         "canPreview": true,
@@ -2277,7 +2300,10 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["@oui/oui-radio-group-ex", "@oui/oui-radio-group"],
+      "registryDependencies": [
+        "@oui/oui-radio-group-ex",
+        "@oui/oui-radio-group"
+      ],
       "meta": {
         "tags": ["radio-group", "radio-group-ex"],
         "canPreview": true,
@@ -2391,7 +2417,11 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["@oui/oui-list-box", "@oui/oui-popover", "@oui/oui-select"],
+      "registryDependencies": [
+        "@oui/oui-list-box",
+        "@oui/oui-popover",
+        "@oui/oui-select"
+      ],
       "meta": {
         "tags": ["select", "list-box", "popover"],
         "canPreview": true,
@@ -2408,7 +2438,11 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["@oui/oui-list-box", "@oui/oui-popover", "@oui/oui-select"],
+      "registryDependencies": [
+        "@oui/oui-list-box",
+        "@oui/oui-popover",
+        "@oui/oui-select"
+      ],
       "meta": {
         "tags": ["select", "list-box", "popover", "multiple"],
         "canPreview": true,
@@ -2588,13 +2622,8 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": [
-        "sidebar",
-        "@oui/oui-button",
-        "@oui/oui-label",
-        "@oui/oui-link",
-        "@oui/oui-text"
-      ],
+      "registryDependencies": ["sidebar", "@oui/oui-base", "@oui/oui-button"],
+      "dependencies": ["lucide-react"],
       "meta": {
         "tags-": ["sidebar", "sidebar-ex"]
       }
@@ -2692,7 +2721,11 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["@oui/oui-base", "@oui/oui-switch", "@oui/oui-text"],
+      "registryDependencies": [
+        "@oui/oui-base",
+        "@oui/oui-switch",
+        "@oui/oui-text"
+      ],
       "meta": {
         "tags": ["switch", "switch-ex", "text"]
       }

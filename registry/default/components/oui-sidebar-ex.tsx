@@ -3,9 +3,6 @@
 import * as React from "react";
 import { composeTailwindRenderProps } from "@/registry/default/ui/oui-base";
 import { Button } from "@/registry/default/ui/oui-button";
-import { Label } from "@/registry/default/ui/oui-label";
-import { Link } from "@/registry/default/ui/oui-link";
-import { Text } from "@/registry/default/ui/oui-text";
 import { useSidebar } from "@/registry/default/ui/sidebar";
 import { ChevronRight, PanelLeftIcon } from "lucide-react";
 import * as Rac from "react-aria-components";
@@ -153,30 +150,5 @@ export function SidebarExTree(props: Rac.TreeProps<SidebarExTreeNode>) {
         );
       }}
     </Rac.Tree>
-  );
-}
-
-export default function Component() {
-  return (
-    <div className="grid gap-2">
-      <Label>ListBoxExPagination</Label>
-      <Text slot="description">
-        A reusable wrapper that extends{" "}
-        <Link
-          href="https://react-spectrum.adobe.com/react-aria/ListBox.html"
-          underline="always"
-        >
-          ListBox
-        </Link>{" "}
-        for pagination controls — see{" "}
-        <Link
-          href="https://oui.mw10013.workers.dev/filter?tags=list-box-ex-pagination"
-          underline="always"
-        >
-          Uses
-        </Link>
-        .
-      </Text>
-    </div>
   );
 }
