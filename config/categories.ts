@@ -6,6 +6,14 @@ export interface Category {
 
 export const categories: Category[] = [
   {
+    name: "Alert",
+    slug: "alert",
+    components: [
+      { name: "oui-alert-ex-form" },
+      { name: "oui-alert-ex-form-demo" },
+    ],
+  },
+  {
     name: "Autocomplete",
     slug: "autocomplete",
     components: [
@@ -115,11 +123,6 @@ export const categories: Category[] = [
     components: [{ name: "oui-form" }, { name: "oui-form-demo" }],
   },
   {
-    name: "Form Alert",
-    slug: "form-alert",
-    components: [{ name: "oui-form-alert" }, { name: "oui-form-alert-demo" }],
-  },
-  {
     name: "Group",
     slug: "group",
     components: [{ name: "oui-group" }, { name: "oui-group-demo" }],
@@ -127,7 +130,11 @@ export const categories: Category[] = [
   {
     name: "Goodies",
     slug: "goodies",
-    components: [{ name: "oui-index" }, { name: "oui-react-router-provider" }, { name: "oui-on-submit-react-router" }],
+    components: [
+      { name: "oui-index" },
+      { name: "oui-react-router-provider" },
+      { name: "oui-on-submit-react-router" },
+    ],
   },
   {
     name: "Header",

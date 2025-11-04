@@ -3,7 +3,7 @@
   "name": "oui-disclosure-ex",
   "type": "registry:component",
   "title": "Disclosure Ex",
-  "description": "A reusable wrapper for Disclosure.",
+  "description": "Reusable wrapper for Disclosure.",
   "registryDependencies": [
     "@oui/oui-disclosure",
     "@oui/oui-heading"

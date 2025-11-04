@@ -3,7 +3,7 @@
   "name": "oui-autocomplete-ex",
   "type": "registry:component",
   "title": "Autocomplete Ex",
-  "description": "A reusable wrapper for Autocomplete.",
+  "description": "Reusable wrapper for Autocomplete.",
   "registryDependencies": [
     "@oui/oui-search-field-ex"
   ],

@@ -3,7 +3,7 @@
   "name": "oui-combo-box-ex",
   "type": "registry:component",
   "title": "Combo Box Ex",
-  "description": "A reusable wrapper for Combo Box.",
+  "description": "Reusable wrapper for Combo Box.",
   "dependencies": [
     "lucide-react"
   ],

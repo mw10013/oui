@@ -3,7 +3,7 @@
   "name": "oui-dialog-ex-sheet",
   "type": "registry:component",
   "title": "Dialog Ex Sheet",
-  "description": "A reusable wrapper for a sheet Dialog.",
+  "description": "Reusable wrapper for a sheet Dialog.",
   "registryDependencies": [
     "@oui/oui-button",
     "@oui/oui-dialog",

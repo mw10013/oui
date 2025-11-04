@@ -3,7 +3,7 @@
   "name": "oui-dialog-ex-alert",
   "type": "registry:component",
   "title": "Dialog Ex Alert",
-  "description": "A reusable wrapper for an alert Dialog.",
+  "description": "Reusable wrapper for an alert Dialog.",
   "registryDependencies": [
     "@oui/oui-button",
     "@oui/oui-dialog",

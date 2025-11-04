@@ -3,7 +3,7 @@
   "name": "oui-dialog-ex",
   "type": "registry:component",
   "title": "Dialog Ex",
-  "description": "A reusable wrapper for Dialog.",
+  "description": "Reusable wrapper for Dialog.",
   "registryDependencies": [
     "@oui/oui-dialog",
     "@oui/oui-button",

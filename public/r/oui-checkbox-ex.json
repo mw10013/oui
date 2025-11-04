@@ -3,7 +3,7 @@
   "name": "oui-checkbox-ex",
   "type": "registry:component",
   "title": "Checkbox Ex",
-  "description": "A reusable wrapper for Checkbox.",
+  "description": "Reusable wrapper for Checkbox.",
   "registryDependencies": [
     "@oui/oui-checkbox",
     "@oui/oui-text"

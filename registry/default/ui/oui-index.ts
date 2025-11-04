@@ -44,6 +44,7 @@ export * from "@/registry/default/ui/oui-text-field";
 export * from "@/registry/default/ui/oui-text";
 export * from "@/registry/default/ui/oui-tooltip";
 
+export * from "@/registry/default/components/oui-alert-ex-form";
 export * from "@/registry/default/components/oui-autocomplete-ex";
 export * from "@/registry/default/components/oui-checkbox-ex";
 export * from "@/registry/default/components/oui-checkbox-group-ex";
@@ -52,7 +53,6 @@ export * from "@/registry/default/components/oui-dialog-ex-alert";
 export * from "@/registry/default/components/oui-dialog-ex-sheet";
 export * from "@/registry/default/components/oui-dialog-ex";
 export * from "@/registry/default/components/oui-disclosure-ex";
-export * from "@/registry/default/components/oui-form-alert";
 export * from "@/registry/default/components/oui-list-box-ex-pagination"; // experimental
 export * from "@/registry/default/components/oui-menu-ex";
 export * from "@/registry/default/components/oui-modal-ex-sheet";

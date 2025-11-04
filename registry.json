@@ -4,6 +4,43 @@
   "homepage": "https://oui.mw10013.workers.dev",
   "items": [
     {
+      "name": "oui-alert-ex-form",
+      "type": "registry:component",
+      "title": "Alert Ex Form",
+      "description": "Reusable wrapper for shadcn Alert that displays an alert for form action result.",
+      "files": [
+        {
+          "path": "registry/default/components/oui-alert-ex-form.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": ["alert"],
+      "dependencies": ["react-aria-components"],
+      "meta": {
+        "tags": ["alert", "alert-ex-form"]
+      }
+    },
+    {
+      "name": "oui-alert-ex-form-demo",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/default/components/oui-alert-ex-form-demo.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "@oui/oui-button",
+        "@oui/oui-form",
+        "@oui/oui-text-field-ex"
+      ],
+      "meta": {
+        "tags": ["alert", "alert-ex-form", "form", "text-field-ex"],
+        "canPreview": true,
+        "canOpenInV0": true
+      }
+    },
+    {
       "name": "oui-autocomplete-demo",
       "type": "registry:component",
       "files": [
@@ -28,7 +65,7 @@
       "name": "oui-autocomplete-ex",
       "type": "registry:component",
       "title": "Autocomplete Ex",
-      "description": "A reusable wrapper for Autocomplete.",
+      "description": "Reusable wrapper for Autocomplete.",
       "files": [
         {
           "path": "registry/default/components/oui-autocomplete-ex.tsx",
@@ -406,7 +443,7 @@
       "name": "oui-checkbox-ex",
       "type": "registry:component",
       "title": "Checkbox Ex",
-      "description": "A reusable wrapper for Checkbox.",
+      "description": "Reusable wrapper for Checkbox.",
       "files": [
         {
           "path": "registry/default/components/oui-checkbox-ex.tsx",
@@ -563,7 +600,7 @@
       "name": "oui-combo-box-ex",
       "type": "registry:component",
       "title": "Combo Box Ex",
-      "description": "A reusable wrapper for Combo Box.",
+      "description": "Reusable wrapper for Combo Box.",
       "files": [
         {
           "path": "registry/default/components/oui-combo-box-ex.tsx",
@@ -705,7 +742,7 @@
       "name": "oui-dialog-ex",
       "type": "registry:component",
       "title": "Dialog Ex",
-      "description": "A reusable wrapper for Dialog.",
+      "description": "Reusable wrapper for Dialog.",
       "files": [
         {
           "path": "registry/default/components/oui-dialog-ex.tsx",
@@ -814,7 +851,7 @@
       "name": "oui-dialog-ex-alert",
       "type": "registry:component",
       "title": "Dialog Ex Alert",
-      "description": "A reusable wrapper for an alert Dialog.",
+      "description": "Reusable wrapper for an alert Dialog.",
       "files": [
         {
           "path": "registry/default/components/oui-dialog-ex-alert.tsx",
@@ -886,7 +923,7 @@
       "name": "oui-dialog-ex-sheet",
       "type": "registry:component",
       "title": "Dialog Ex Sheet",
-      "description": "A reusable wrapper for a sheet Dialog.",
+      "description": "Reusable wrapper for a sheet Dialog.",
       "files": [
         {
           "path": "registry/default/components/oui-dialog-ex-sheet.tsx",
@@ -996,7 +1033,7 @@
       "name": "oui-disclosure-ex",
       "type": "registry:component",
       "title": "Disclosure Ex",
-      "description": "A reusable wrapper for Disclosure.",
+      "description": "Reusable wrapper for Disclosure.",
       "files": [
         {
           "path": "registry/default/components/oui-disclosure-ex.tsx",
@@ -1131,43 +1168,6 @@
           "text-area",
           "text-field-ex"
         ],
-        "canPreview": true,
-        "canOpenInV0": true
-      }
-    },
-    {
-      "name": "oui-form-alert",
-      "type": "registry:component",
-      "title": "Form Alert",
-      "description": "Displays an alert based on a form action result.",
-      "files": [
-        {
-          "path": "registry/default/components/oui-form-alert.tsx",
-          "type": "registry:component"
-        }
-      ],
-      "registryDependencies": ["alert"],
-      "dependencies": ["react-aria-components"],
-      "meta": {
-        "tags": ["form-alert"]
-      }
-    },
-    {
-      "name": "oui-form-alert-demo",
-      "type": "registry:component",
-      "files": [
-        {
-          "path": "registry/default/components/oui-form-alert-demo.tsx",
-          "type": "registry:component"
-        }
-      ],
-      "registryDependencies": [
-        "@oui/oui-button",
-        "@oui/oui-form",
-        "@oui/oui-text-field-ex"
-      ],
-      "meta": {
-        "tags": ["form-alert", "form", "text-field-ex"],
         "canPreview": true,
         "canOpenInV0": true
       }
