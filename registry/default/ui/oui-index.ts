@@ -1,11 +1,11 @@
 /**
  * The `oui-index` module exports all ui and ex (extension and reusable wrapper) components.
  * No demos.
- * 
+ *
  * @example
  * ```ts
  * import * as Oui from "@/components/ui/oui-index";
- * 
+ *
  * <Oui.OuiButton>Hello, Oui</Oui.OuiButton>
  * ```
  */
@@ -53,7 +53,7 @@ export * from "@/registry/default/components/oui-dialog-ex-alert";
 export * from "@/registry/default/components/oui-dialog-ex-sheet";
 export * from "@/registry/default/components/oui-dialog-ex";
 export * from "@/registry/default/components/oui-disclosure-ex";
-export * from "@/registry/default/components/oui-list-box-ex-pagination"; // experimental
+export * from "@/registry/default/components/oui-list-box-ex-pagination";
 export * from "@/registry/default/components/oui-menu-ex";
 export * from "@/registry/default/components/oui-modal-ex-sheet";
 export * from "@/registry/default/components/oui-modal-ex";
@@ -63,8 +63,7 @@ export * from "@/registry/default/components/oui-radio-group-ex";
 export * from "@/registry/default/components/oui-search-field-ex";
 export * from "@/registry/default/components/oui-select-ex-popover";
 export * from "@/registry/default/components/oui-select-ex";
-// Depends on shadcn sidebar.tsx which may need to be patched to import VariantProps as type.
-// export * from "@/registry/default/components/oui-sidebar-ex"; // experimental
+export * from "@/registry/default/components/oui-sidebar-ex";
 export * from "@/registry/default/components/oui-slider-ex";
 export * from "@/registry/default/components/oui-switch-ex";
 export * from "@/registry/default/components/oui-text-field-ex";

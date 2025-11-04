@@ -280,11 +280,11 @@ export const categories: Category[] = [
     slug: "separator",
     components: [{ name: "oui-separator-demo" }],
   },
-  // {
-  //   name: "Sidebar",
-  //   slug: "sidebar",
-  //   components: [],
-  // },
+  {
+    name: "Sidebar",
+    slug: "sidebar",
+    components: [{ name: "oui-sidebar-ex" }],
+  },
   {
     name: "Slider",
     slug: "slider",

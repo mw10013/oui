@@ -46,6 +46,8 @@ export const registryTags = [
   "select-ex",
   "select-ex-popover",
   "separator",
+  "sidebar",
+  "sidebar-ex",
   "slider",
   "slider-ex",
   "switch",

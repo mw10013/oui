@@ -2615,7 +2615,7 @@
       "name": "oui-sidebar-ex",
       "type": "registry:component",
       "title": "Sidebar Ex",
-      "description": "Reusable wrapper for Sidebar.",
+      "description": "Extension providing SidebarExTrigger and SidebarExTree for shadcn Sidebar.",
       "files": [
         {
           "path": "registry/default/components/oui-sidebar-ex.tsx",
@@ -2625,7 +2625,7 @@
       "registryDependencies": ["sidebar", "@oui/oui-base", "@oui/oui-button"],
       "dependencies": ["lucide-react"],
       "meta": {
-        "tags-": ["sidebar", "sidebar-ex"]
+        "tags": ["sidebar", "sidebar-ex"]
       }
     },
     {

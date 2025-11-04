@@ -1,16 +1,27 @@
 "use client";
 
+/**
+ * The `oui-sidebar-ex` module provides SidebarExTrigger and SidebarExTree to use with shadcn Sidebar.
+ * 
+ * @example
+ * ```tsx
+ * <SidebarProvider>
+ *   <SidebarExTrigger />
+ *   <Sidebar>
+ *     <SidebarContent>
+ *       <SidebarExTree aria-label="App Navigation" items={items} />
+ *     </SidebarContent>
+ *   </Sidebar>
+ * </SidebarProvider>
+ * ```
+ */
 import * as React from "react";
 import { composeTailwindRenderProps } from "@/registry/default/ui/oui-base";
 import { Button } from "@/registry/default/ui/oui-button";
 import { useSidebar } from "@/registry/default/ui/sidebar";
 import { ChevronRight, PanelLeftIcon } from "lucide-react";
 import * as Rac from "react-aria-components";
-import { twMerge } from "tailwind-merge"; 
-
-/**
- * Experimental sidebar extension for replacing parts of the shadcn sidebar with react aria components.
- */
+import { twMerge } from "tailwind-merge";
 
 export function SidebarExTrigger({
   "aria-label": ariaLabel,
