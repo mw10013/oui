@@ -1813,6 +1813,8 @@
     {
       "name": "oui-list-box-ex-pagination",
       "type": "registry:component",
+      "title": "List Box Ex Pagination",
+      "description": "Reusable wrapper for List Box with pagination.",
       "files": [
         {
           "path": "registry/default/components/oui-list-box-ex-pagination.tsx",
@@ -1826,9 +1828,7 @@
         "@oui/oui-text"
       ],
       "meta": {
-        "tags-": ["list-box", "list-box-ex-pagination"],
-        "canPreview": true,
-        "canOpenInV0": true
+        "tags": ["list-box", "list-box-ex-pagination"]
       }
     },
     {

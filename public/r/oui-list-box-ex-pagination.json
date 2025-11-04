@@ -2,6 +2,8 @@
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "oui-list-box-ex-pagination",
   "type": "registry:component",
+  "title": "List Box Ex Pagination",
+  "description": "Reusable wrapper for List Box with pagination.",
   "registryDependencies": [
     "@oui/oui-button",
     "@oui/oui-label",
@@ -16,11 +18,9 @@
     }
   ],
   "meta": {
-    "tags-": [
+    "tags": [
       "list-box",
       "list-box-ex-pagination"
-    ],
-    "canPreview": true,
-    "canOpenInV0": true
+    ]
   }
 }

@@ -29,6 +29,7 @@ export const registryTags = [
   "label",
   "link",
   "list-box",
+  "list-box-ex-pagination",
   "menu",
   "menu-ex",
   "modal",

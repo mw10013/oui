@@ -196,8 +196,8 @@ export const categories: Category[] = [
       { name: "oui-list-box" },
       { name: "oui-list-box-demo" },
       { name: "oui-list-box-demo-multiple" },
-      // { name: "oui-list-box-ex-pagination" },
-      // { name: "oui-list-box-ex-pagination-demo" },
+      { name: "oui-list-box-ex-pagination" },
+      { name: "oui-list-box-ex-pagination-demo" },
     ],
   },
   {
