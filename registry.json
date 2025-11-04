@@ -2179,7 +2179,7 @@
       "name": "oui-popover-ex",
       "type": "registry:component",
       "title": "Popover Ex",
-      "description": "Reusable wrapper for a Popover.",
+      "description": "Reusable wrapper for a Popover that displays a popover dialog.",
       "files": [
         {
           "path": "registry/default/components/oui-popover-ex.tsx",
