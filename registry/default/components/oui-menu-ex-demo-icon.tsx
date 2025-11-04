@@ -15,9 +15,8 @@ export default function Component() {
   return (
     <MenuEx
       triggerElement={
-        <Button variant="ghost" size="icon">
+        <Button aria-label="Icon menu" variant="ghost" size="icon">
           <MoreHorizontalIcon />
-          <span className="sr-only">Toggle menu</span>
         </Button>
       }
     >
