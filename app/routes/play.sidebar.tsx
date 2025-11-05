@@ -66,7 +66,7 @@ export default function RouteComponent() {
     <SidebarProvider>
       <AppSidebar />
       <main>
-        <SidebarExTrigger className="m-2" />
+        <SidebarExTrigger />
         <div className="flex flex-col gap-2 px-4">Sidebar Playground</div>
       </main>
     </SidebarProvider>

@@ -6,7 +6,7 @@
  * @example
  * ```tsx
  * import * as Oui from "@/components/ui/oui-index";
- * 
+ *
  * <SidebarProvider>
  *   <Oui.SidebarExTrigger />
  *   <Sidebar>
@@ -45,7 +45,7 @@ export function SidebarExTrigger({
       data-slot="sidebar-trigger"
       variant="ghost"
       size="icon"
-      className={composeTailwindRenderProps(className, "size-7")}
+      className={composeTailwindRenderProps(className, "m-2 size-7")}
       onPress={(e) => {
         onPress?.(e);
         toggleSidebar();
