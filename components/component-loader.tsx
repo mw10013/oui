@@ -17,11 +17,11 @@ export default function ComponentLoader({
   const Component = useMemo(
     () =>
       lazy(() =>
-        import(
-          `../registry/default/components/${component.name}.tsx`
-        ).catch(() => ({
-          default: () => null,
-        })),
+        import(`../registry/default/components/${component.name}.tsx`).catch(
+          () => ({
+            default: () => null,
+          }),
+        ),
       ),
     [component.name],
   );
@@ -47,7 +47,9 @@ export default function ComponentLoader({
     <Item className="p-0">
       <ItemContent>
         <ItemTitle>{component.title}</ItemTitle>
-        <ItemDescription>{component.description}</ItemDescription>
+        <ItemDescription className="line-clamp-4">
+          {component.description}
+        </ItemDescription>
       </ItemContent>
     </Item>
   );

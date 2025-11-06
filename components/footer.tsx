@@ -5,18 +5,6 @@ export default function Footer() {
         <p className="text-sm text-muted-foreground">
           &copy; {new Date().getFullYear()} Oui
         </p>
-        {/* <p className="text-sm text-muted-foreground">
-          A project by{" "}
-          <a
-            className="font-medium text-foreground underline decoration-border underline-offset-4 hover:no-underline"
-            href="https://github.com/mw10013"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            mw10013
-          </a>
-          .
-        </p> */}
       </div>
     </footer>
   );
