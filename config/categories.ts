@@ -128,15 +128,6 @@ export const categories: Category[] = [
     components: [{ name: "oui-group" }, { name: "oui-group-demo" }],
   },
   {
-    name: "Goodies",
-    slug: "goodies",
-    components: [
-      { name: "oui-index" },
-      { name: "oui-react-router-provider" },
-      { name: "oui-on-submit-react-router" },
-    ],
-  },
-  {
     name: "Header",
     slug: "header",
     components: [{ name: "oui-header" }, { name: "oui-header-demo" }],
@@ -145,6 +136,11 @@ export const categories: Category[] = [
     name: "Heading",
     slug: "heading",
     components: [{ name: "oui-heading" }, { name: "oui-heading-demo" }],
+  },
+  {
+    name: "Index",
+    slug: "index",
+    components: [{ name: "oui-index" }],
   },
   {
     name: "Input",
@@ -252,6 +248,15 @@ export const categories: Category[] = [
     ],
   },
   {
+    name: "React Router",
+    slug: "react-router",
+    components: [
+      { name: "oui-react-router-provider" },
+      { name: "oui-react-router-theme-toggle-button" },
+      { name: "oui-on-submit-react-router" },
+    ],
+  },
+  {
     name: "Search Field",
     slug: "search-field",
     components: [
@@ -354,7 +359,6 @@ export const categories: Category[] = [
     components: [
       { name: "oui-toggle-button" },
       { name: "oui-toggle-button-demo" },
-      { name: "oui-react-router-theme-toggle-button" },
     ],
   },
   {
