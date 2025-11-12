@@ -48,6 +48,11 @@ export const categories: Category[] = [
     ],
   },
   {
+    name: "Card",
+    slug: "card",
+    components: [{ name: "oui-card-ex" }],
+  },
+  {
     name: "Checkbox",
     slug: "checkbox",
     components: [

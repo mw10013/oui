@@ -370,6 +370,22 @@
         "canOpenInV0": true
       }
     },
+        {
+      "name": "oui-card-ex",
+      "type": "registry:component",
+      "title": "Card Ex",
+      "description": "Extension providing CardExGridListItem for shadcn Card.",
+      "files": [
+        {
+          "path": "registry/default/components/oui-card-ex.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": ["@oui/oui-base"],
+      "meta": {
+        "tags": ["card", "card-ex", "grid-list"]
+      }
+    },
     {
       "name": "oui-checkbox",
       "type": "registry:ui",
@@ -1343,6 +1359,7 @@
         "@oui/oui-tooltip",
         "@oui/oui-alert-ex-form",
         "@oui/oui-autocomplete-ex",
+        "@oui/oui-card-ex",
         "@oui/oui-checkbox-ex",
         "@oui/oui-checkbox-group-ex",
         "@oui/oui-combo-box-ex",
