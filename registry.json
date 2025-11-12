@@ -370,7 +370,7 @@
         "canOpenInV0": true
       }
     },
-        {
+    {
       "name": "oui-card-ex",
       "type": "registry:component",
       "title": "Card Ex",
@@ -2328,6 +2328,22 @@
       }
     },
     {
+      "name": "oui-react-router-error-boundary",
+      "type": "registry:component",
+      "title": "React Router Error Boundary",
+      "description": "Error Boundary for react router.",
+      "files": [
+        {
+          "path": "registry/default/components/oui-react-router-error-boundary.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": ["card", "@oui/oui-button", "@oui/oui-link"],
+      "meta": {
+        "tags": ["react-router", "error-boundary"]
+      }
+    },
+    {
       "name": "oui-react-router-provider",
       "type": "registry:component",
       "title": "React Router Provider",
@@ -3266,7 +3282,7 @@
       "name": "oui-on-submit-react-router",
       "type": "registry:lib",
       "title": "On Submit React Router",
-      "description": "Helper function to handle form submissions with React Router.",
+      "description": "Helper function to handle form submissions with react router.",
       "files": [
         {
           "path": "registry/default/lib/oui-on-submit-react-router.ts",

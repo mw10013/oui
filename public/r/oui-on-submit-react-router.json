@@ -3,7 +3,7 @@
   "name": "oui-on-submit-react-router",
   "type": "registry:lib",
   "title": "On Submit React Router",
-  "description": "Helper function to handle form submissions with React Router.",
+  "description": "Helper function to handle form submissions with react router.",
   "files": [
     {
       "path": "registry/default/lib/oui-on-submit-react-router.ts",

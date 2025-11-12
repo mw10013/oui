@@ -256,6 +256,7 @@ export const categories: Category[] = [
     name: "React Router",
     slug: "react-router",
     components: [
+      { name: "oui-react-router-error-boundary" },
       { name: "oui-react-router-provider" },
       { name: "oui-react-router-theme-toggle-button" },
       { name: "oui-on-submit-react-router" },
