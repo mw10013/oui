@@ -1388,6 +1388,26 @@
       }
     },
     {
+      "name": "oui-react-router-index",
+      "type": "registry:component",
+      "title": "Oui React Router Index",
+      "description": "All react router related components and extensions.",
+      "files": [
+        {
+          "path": "registry/default/components/oui-react-router-index.ts",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "@oui/oui-react-router-error-boundary",
+        "@oui/oui-react-router-provider",
+        "@oui/oui-react-router-theme-toggle-button"
+      ],
+      "meta": {
+        "tags": ["index", "react-router"]
+      }
+    },
+    {
       "name": "oui-input",
       "type": "registry:ui",
       "title": "Input",

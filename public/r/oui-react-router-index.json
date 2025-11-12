@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "oui-react-router-index",
+  "type": "registry:component",
+  "title": "Oui React Router Index",
+  "description": "All react router related components and extensions.",
+  "registryDependencies": [
+    "@oui/oui-react-router-error-boundary",
+    "@oui/oui-react-router-provider",
+    "@oui/oui-react-router-theme-toggle-button"
+  ],
+  "files": [
+    {
+      "path": "registry/default/components/oui-react-router-index.ts",
+      "content": "/**\n * The `oui-react-router-index` module exports all ui and ex (extension and reusable wrapper) components specific to React Router.\n * No demos.\n *\n * @example\n * ```ts\n * import * as OuiReactRouter from \"@/components/ui/oui-react-router-index\";\n *\n * <OuiReactRouter.ReactRouterThemeToggleButton />\n * ```\n */\n\nexport * from \"@/registry/default/components/oui-react-router-error-boundary\";\nexport * from \"@/registry/default/components/oui-react-router-provider\";\nexport * from \"@/registry/default/components/oui-react-router-theme-toggle-button\";\n",
+      "type": "registry:component"
+    }
+  ],
+  "meta": {
+    "tags": [
+      "index",
+      "react-router"
+    ]
+  }
+}

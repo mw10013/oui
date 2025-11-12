@@ -145,7 +145,7 @@ export const categories: Category[] = [
   {
     name: "Index",
     slug: "index",
-    components: [{ name: "oui-index" }],
+    components: [{ name: "oui-index" }, { name: "oui-react-router-index" }],
   },
   {
     name: "Input",

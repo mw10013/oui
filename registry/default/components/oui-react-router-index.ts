@@ -11,5 +11,5 @@
  */
 
 export * from "@/registry/default/components/oui-react-router-error-boundary";
-export * from "@/registry/default/components/oui-react-router-theme-toggle-button";
 export * from "@/registry/default/components/oui-react-router-provider";
+export * from "@/registry/default/components/oui-react-router-theme-toggle-button";
