@@ -1,12 +1,11 @@
 import type { Route } from "./+types/root";
 import { themeSessionResolver } from "@/lib/theme.server";
-import { ReactRouterProvider } from "@/registry/default/components/oui-react-router-provider";
+import * as OuiReactRouter from "@/registry/default/components/oui-react-router-index";
 import * as ReactRouter from "react-router";
 import * as RemixThemes from "remix-themes";
 import "@/app/app.css";
 import Footer from "@/components/footer";
 import Header from "@/components/header";
-import { ReactRouterErrorBoundary } from "@/registry/default/components/oui-react-router-error-boundary";
 import { env } from "cloudflare:workers";
 
 /** Sets a minimal transparent favicon to avoid 404 errors. */
@@ -76,7 +75,7 @@ function Html({
         <ReactRouter.Links />
       </head>
       <body>
-        <ReactRouterProvider>
+        <OuiReactRouter.ReactRouterProvider>
           <div className="overflow-hidden px-4 supports-[overflow:clip]:overflow-clip sm:px-6">
             <div className="relative mx-auto flex min-h-screen w-full max-w-6xl flex-col">
               <Header />
@@ -93,7 +92,7 @@ function Html({
               data-cf-beacon='{"token": "509aca9b19d943b7b89f127c71a4fa2c"}'
             ></script>
           )}
-        </ReactRouterProvider>
+        </OuiReactRouter.ReactRouterProvider>
       </body>
     </html>
   );
@@ -127,4 +126,4 @@ export default function App() {
   return <ReactRouter.Outlet />;
 }
 
-export const ErrorBoundary = ReactRouterErrorBoundary;
+export const ErrorBoundary = OuiReactRouter.ReactRouterErrorBoundary;

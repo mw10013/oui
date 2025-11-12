@@ -1,4 +1,4 @@
-import ReactRouterThemeToggleButton from "@/registry/default/components/oui-react-router-theme-toggle-button";
+import * as OuiReactRouter from "@/registry/default/components/oui-react-router-index";
 import * as Oui from "@/registry/default/ui/oui-index";
 import { Link } from "@/registry/default/ui/oui-link";
 import { Circle } from "lucide-react";
@@ -28,7 +28,7 @@ export default function Header() {
               <path d={siGithub.path} />
             </svg>
           </Link>
-          <ReactRouterThemeToggleButton />
+          <OuiReactRouter.ReactRouterThemeToggleButton />
         </div>
       </div>
     </header>
