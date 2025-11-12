@@ -1,18 +1,8 @@
 import type { Route } from "./+types/root";
 import { themeSessionResolver } from "@/lib/theme.server";
 import { ReactRouterProvider } from "@/registry/default/components/oui-react-router-provider";
-import {
-  Links,
-  Outlet,
-  Scripts,
-  ScrollRestoration,
-  unstable_useRoute,
-} from "react-router";
-import {
-  PreventFlashOnWrongTheme,
-  ThemeProvider,
-  useTheme,
-} from "remix-themes";
+import * as ReactRouter from "react-router";
+import * as RemixThemes from "remix-themes";
 import "@/app/app.css";
 import Footer from "@/components/footer";
 import Header from "@/components/header";
@@ -44,7 +34,7 @@ function Html({
   ssrTheme: boolean;
   environment: string;
 }) {
-  const [theme] = useTheme();
+  const [theme] = RemixThemes.useTheme();
   return (
     <html lang="en" className={theme ?? ""}>
       <head>
@@ -79,8 +69,8 @@ function Html({
           content="react, aria, components, shadcn, ui, library, copy-paste"
         />
         <meta name="author" content="mw10013" />
-        <PreventFlashOnWrongTheme ssrTheme={ssrTheme} />
-        <Links />
+        <RemixThemes.PreventFlashOnWrongTheme ssrTheme={ssrTheme} />
+        <ReactRouter.Links />
       </head>
       <body>
         <ReactRouterProvider>
@@ -92,8 +82,8 @@ function Html({
             </div>
           </div>
         </ReactRouterProvider>
-        <ScrollRestoration />
-        <Scripts />
+        <ReactRouter.ScrollRestoration />
+        <ReactRouter.Scripts />
         {environment === "production" && (
           <>
             {/* Cloudflare Web Analytics */}
@@ -111,9 +101,9 @@ function Html({
 }
 
 export function Layout({ children }: { children: React.ReactNode }) {
-  const data = unstable_useRoute("root");
+  const data = ReactRouter.unstable_useRoute("root");
   return (
-    <ThemeProvider
+    <RemixThemes.ThemeProvider
       specifiedTheme={data.loaderData?.theme ?? null}
       themeAction="/action/set-theme"
       disableTransitionOnThemeChange
@@ -124,12 +114,12 @@ export function Layout({ children }: { children: React.ReactNode }) {
       >
         {children}
       </Html>
-    </ThemeProvider>
+    </RemixThemes.ThemeProvider>
   );
 }
 
 export default function App() {
-  return <Outlet />;
+  return <ReactRouter.Outlet />;
 }
 
 export { ReactRouterErrorBoundary as ErrorBoundary };

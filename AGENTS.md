@@ -22,3 +22,13 @@
 - **Do not add any comments to generated code.** Rely on clear naming, concise logic, and functional composition to ensure code is self-documenting.
 - Employ a concise and dense coding style. Prefer inlining expressions, function composition (e.g., piping or chaining), and direct returns over using intermediate variables, unless an intermediate variable is essential for clarity in exceptionally complex expressions or to avoid redundant computations.
 - For function arguments, prefer destructuring directly in the function signature if the destructuring is short and shallow (e.g., `({ data: { value }, otherArg })`). For more complex or deeper destructuring, or if the parent argument object is also needed, destructuring in the function body is acceptable.
+- Prefer namespace imports for large libraries except in `registry/default/**.tsx`, import oui components directly.
+
+```ts
+import * as React from "react";
+import * as OuiReactRouter from "@/registry/default/components/oui-react-router-index";
+import * as Oui from "@/registry/default/ui/oui-index";
+import * as Rac from "react-aria-components";
+import * as ReactRouter from "react-router";
+import * as z from "zod";
+```
