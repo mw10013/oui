@@ -22,17 +22,20 @@ export function links() {
 
 export async function loader({ request }: Route.LoaderArgs) {
   const { getTheme } = await themeSessionResolver(request);
-  return { theme: getTheme(), environment: env.ENVIRONMENT };
+  return {
+    theme: getTheme(),
+    isAnalyticsEnabled: env.ENVIRONMENT === "production",
+  };
 }
 
 function Html({
   children,
   ssrTheme,
-  environment,
+  isAnalyticsEnabled,
 }: {
   children: React.ReactNode;
   ssrTheme: boolean;
-  environment: string;
+  isAnalyticsEnabled: boolean;
 }) {
   const [theme] = RemixThemes.useTheme();
   return (
@@ -81,36 +84,38 @@ function Html({
               <Footer />
             </div>
           </div>
-        </ReactRouterProvider>
-        <ReactRouter.ScrollRestoration />
-        <ReactRouter.Scripts />
-        {environment === "production" && (
-          <>
-            {/* Cloudflare Web Analytics */}
+          <ReactRouter.ScrollRestoration />
+          <ReactRouter.Scripts />
+          {isAnalyticsEnabled && (
             <script
               defer
               src="https://static.cloudflareinsights.com/beacon.min.js"
               data-cf-beacon='{"token": "509aca9b19d943b7b89f127c71a4fa2c"}'
             ></script>
-            {/* End Cloudflare Web Analytics */}
-          </>
-        )}
+          )}
+        </ReactRouterProvider>
       </body>
     </html>
   );
 }
 
 export function Layout({ children }: { children: React.ReactNode }) {
-  const data = ReactRouter.unstable_useRoute("root");
+  // Layout is used by ErrorBoundary where there may be no loader data so cannot use unstable_useRoute
+  // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
+  const data = ReactRouter.useRouteLoaderData("root");
   return (
     <RemixThemes.ThemeProvider
-      specifiedTheme={data.loaderData?.theme ?? null}
+      // ?? ensures undefined (from missing loader data) becomes null for ThemeProvider type
+      // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment, @typescript-eslint/no-unsafe-member-access
+      specifiedTheme={data?.loaderData?.theme ?? null}
       themeAction="/action/set-theme"
       disableTransitionOnThemeChange
     >
       <Html
-        ssrTheme={Boolean(data.loaderData?.theme)}
-        environment={data.loaderData?.environment ?? "local"}
+        // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
+        ssrTheme={Boolean(data?.loaderData?.theme)}
+        // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
+        isAnalyticsEnabled={Boolean(data?.loaderData?.isAnalyticsEnabled)}
       >
         {children}
       </Html>
@@ -122,4 +127,4 @@ export default function App() {
   return <ReactRouter.Outlet />;
 }
 
-export { ReactRouterErrorBoundary as ErrorBoundary };
+export const ErrorBoundary = ReactRouterErrorBoundary;
