@@ -98,6 +98,10 @@ function Html({
   );
 }
 
+/**
+ * Uses root loader data, if available, for theme and analytics settings.
+ * A catch-all route (e.g., $.tsx) may be needed to ensure root loader runs on 404 pages.
+ */
 export function Layout({ children }: { children: React.ReactNode }) {
   const data = ReactRouter.unstable_useRoute("root");
   return (
