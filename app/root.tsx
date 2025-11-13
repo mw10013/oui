@@ -99,22 +99,16 @@ function Html({
 }
 
 export function Layout({ children }: { children: React.ReactNode }) {
-  // Layout is used by ErrorBoundary where there may be no loader data so cannot use unstable_useRoute
-  // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
-  const data = ReactRouter.useRouteLoaderData("root");
+  const data = ReactRouter.unstable_useRoute("root");
   return (
     <RemixThemes.ThemeProvider
-      // ?? ensures undefined (from missing loader data) becomes null for ThemeProvider type
-      // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment, @typescript-eslint/no-unsafe-member-access
-      specifiedTheme={data?.loaderData?.theme ?? null}
+      specifiedTheme={data.loaderData?.theme ?? null}
       themeAction="/action/set-theme"
       disableTransitionOnThemeChange
     >
       <Html
-        // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
-        ssrTheme={Boolean(data?.loaderData?.theme)}
-        // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
-        isAnalyticsEnabled={Boolean(data?.loaderData?.isAnalyticsEnabled)}
+        ssrTheme={Boolean(data.loaderData?.theme)}
+        isAnalyticsEnabled={Boolean(data.loaderData?.isAnalyticsEnabled)}
       >
         {children}
       </Html>
