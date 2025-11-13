@@ -11,6 +11,18 @@
  */
 
 export * from "@/registry/default/ui/oui-base";
+
+/**
+ * The `oui-index` module exports all ui and ex (extension and reusable wrapper) components.
+ * No demos.
+ *
+ * @example
+ * ```ts
+ * import * as Oui from "@/components/ui/oui-index";
+ *
+ * <Oui.OuiButton>Hello, Oui</Oui.OuiButton>
+ * ```
+ */
 export * from "@/registry/default/ui/oui-button";
 export * from "@/registry/default/ui/oui-checkbox-group";
 export * from "@/registry/default/ui/oui-checkbox";
@@ -69,3 +81,16 @@ export * from "@/registry/default/components/oui-slider-ex";
 export * from "@/registry/default/components/oui-switch-ex";
 export * from "@/registry/default/components/oui-text-field-ex";
 export * from "@/registry/default/components/oui-tooltip-ex";
+
+/**
+ * The `oui-index` module exports all ui and ex (extension and reusable wrapper) components.
+ * No demos.
+ *
+ * @example
+ * ```ts
+ * import * as Oui from "@/components/ui/oui-index";
+ *
+ * <Oui.OuiButton>Hello, Oui</Oui.OuiButton>
+ * ```
+ */
+
