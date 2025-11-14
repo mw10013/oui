@@ -1,12 +1,12 @@
 "use client";
 
 import { buttonClassName } from "@/registry/default/ui/oui-button";
-import { Link } from "@/registry/default/ui/oui-link";
+import * as Rac from "react-aria-components";
 import { siGithub } from "simple-icons";
 
 export default function Component() {
   return (
-    <Link
+    <Rac.Link
       aria-label="GitHub repo"
       href="https://github.com/mw10013/oui"
       target="_blank"
@@ -16,6 +16,6 @@ export default function Component() {
       <svg viewBox="0 0 24 24" fill="currentColor">
         <path d={siGithub.path} />
       </svg>
-    </Link>
+    </Rac.Link>
   );
 }

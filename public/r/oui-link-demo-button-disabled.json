@@ -1,0 +1,24 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "oui-link-demo-button-disabled",
+  "type": "registry:component",
+  "registryDependencies": [
+    "@oui/oui-button"
+  ],
+  "files": [
+    {
+      "path": "registry/default/components/oui-link-demo-button-disabled.tsx",
+      "content": "\"use client\";\n\nimport { buttonClassName } from \"@/registry/default/ui/oui-button\";\nimport * as Rac from \"react-aria-components\";\n\nexport default function Component() {\n  return (\n    <Rac.Link isDisabled href=\"#\" className={buttonClassName({})}>\n      Button Link\n    </Rac.Link>\n  );\n}\n",
+      "type": "registry:component"
+    }
+  ],
+  "meta": {
+    "tags": [
+      "link",
+      "disabled"
+    ],
+    "canPreview": true,
+    "alignment": "flex-center",
+    "canOpenInV0": true
+  }
+}

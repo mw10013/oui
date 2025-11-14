@@ -6,13 +6,12 @@
     "simple-icons"
   ],
   "registryDependencies": [
-    "@oui/oui-button",
-    "@oui/oui-link"
+    "@oui/oui-button"
   ],
   "files": [
     {
       "path": "registry/default/components/oui-link-demo-icon.tsx",
-      "content": "\"use client\";\n\nimport { buttonClassName } from \"@/registry/default/ui/oui-button\";\nimport { Link } from \"@/registry/default/ui/oui-link\";\nimport { siGithub } from \"simple-icons\";\n\nexport default function Component() {\n  return (\n    <Link\n      aria-label=\"GitHub repo\"\n      href=\"https://github.com/mw10013/oui\"\n      target=\"_blank\"\n      rel=\"noopener noreferrer\"\n      className={buttonClassName({ variant: \"ghost\" })}\n    >\n      <svg viewBox=\"0 0 24 24\" fill=\"currentColor\">\n        <path d={siGithub.path} />\n      </svg>\n    </Link>\n  );\n}\n",
+      "content": "\"use client\";\n\nimport { buttonClassName } from \"@/registry/default/ui/oui-button\";\nimport * as Rac from \"react-aria-components\";\nimport { siGithub } from \"simple-icons\";\n\nexport default function Component() {\n  return (\n    <Rac.Link\n      aria-label=\"GitHub repo\"\n      href=\"https://github.com/mw10013/oui\"\n      target=\"_blank\"\n      rel=\"noopener noreferrer\"\n      className={buttonClassName({ variant: \"ghost\" })}\n    >\n      <svg viewBox=\"0 0 24 24\" fill=\"currentColor\">\n        <path d={siGithub.path} />\n      </svg>\n    </Rac.Link>\n  );\n}\n",
       "type": "registry:component"
     }
   ],

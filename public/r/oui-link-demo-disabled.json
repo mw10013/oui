@@ -14,7 +14,8 @@
   ],
   "meta": {
     "tags": [
-      "link"
+      "link",
+      "disabled"
     ],
     "canPreview": true,
     "alignment": "flex-center",

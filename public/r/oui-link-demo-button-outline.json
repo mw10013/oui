@@ -3,13 +3,12 @@
   "name": "oui-link-demo-button-outline",
   "type": "registry:component",
   "registryDependencies": [
-    "@oui/oui-button",
-    "@oui/oui-link"
+    "@oui/oui-button"
   ],
   "files": [
     {
       "path": "registry/default/components/oui-link-demo-button-outline.tsx",
-      "content": "\"use client\";\n\nimport { buttonClassName } from \"@/registry/default/ui/oui-button\";\nimport { Link } from \"@/registry/default/ui/oui-link\";\n\nexport default function Component() {\n  return (\n    <Link href=\"#\" className={buttonClassName({ variant: \"outline\" })}>\n      Button Link\n    </Link>\n  );\n}\n",
+      "content": "\"use client\";\n\nimport { buttonClassName } from \"@/registry/default/ui/oui-button\";\nimport * as Rac from \"react-aria-components\";\n\nexport default function Component() {\n  return (\n    <Rac.Link href=\"#\" className={buttonClassName({ variant: \"outline\" })}>\n      Button Link\n    </Rac.Link>\n  );\n}\n",
       "type": "registry:component"
     }
   ],

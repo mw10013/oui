@@ -1680,7 +1680,7 @@
       ],
       "registryDependencies": ["@oui/oui-link"],
       "meta": {
-        "tags": ["link"],
+        "tags": ["link", "disabled"],
         "canPreview": true,
         "alignment": "flex-center",
         "canOpenInV0": true
@@ -1695,7 +1695,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["@oui/oui-button", "@oui/oui-link"],
+      "registryDependencies": ["@oui/oui-button"],
       "meta": {
         "tags": ["link"],
         "canPreview": true,
@@ -1712,7 +1712,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["@oui/oui-button", "@oui/oui-link"],
+      "registryDependencies": ["@oui/oui-button"],
       "meta": {
         "tags": ["link"],
         "canPreview": true,
@@ -1729,7 +1729,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["@oui/oui-button", "@oui/oui-link"],
+      "registryDependencies": ["@oui/oui-button"],
       "meta": {
         "tags": ["link"],
         "canPreview": true,
@@ -1738,7 +1738,7 @@
       }
     },
     {
-      "name": "oui-oui-link-demo-button-disabled",
+      "name": "oui-link-demo-button-disabled",
       "type": "registry:component",
       "files": [
         {
@@ -1746,9 +1746,9 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["@oui/oui-button", "@oui/oui-link"],
+      "registryDependencies": ["@oui/oui-button"],
       "meta": {
-        "tags": ["link"],
+        "tags": ["link", "disabled"],
         "canPreview": true,
         "alignment": "flex-center",
         "canOpenInV0": true
@@ -1763,7 +1763,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["@oui/oui-button", "@oui/oui-link"],
+      "registryDependencies": ["@oui/oui-button"],
       "dependencies": ["simple-icons"],
       "meta": {
         "tags": ["link", "icon"],
