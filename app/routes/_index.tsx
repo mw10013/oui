@@ -1,3 +1,4 @@
+import { Announcement } from "@/components/announcement";
 import { categories } from "@/config/categories";
 import { Link } from "@/registry/default/ui/oui-link";
 import { Funnel } from "lucide-react";
@@ -6,6 +7,9 @@ export default function RouteComponent() {
   return (
     <>
       <div data-home>
+        <div className="mb-6">
+          <Announcement />
+        </div>
         <div className="max-w-3xl max-sm:text-center">
           <h1 className="mb-4 text-4xl/[1.1] font-bold tracking-tight text-foreground md:text-5xl/[1.1]">
             React Aria Components with Shadcn characteristics.

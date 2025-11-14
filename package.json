@@ -25,6 +25,7 @@
   },
   "dependencies": {
     "@epic-web/invariant": "1.0.0",
+    "@radix-ui/react-slot": "^1.2.4",
     "class-variance-authority": "0.7.1",
     "clsx": "2.1.1",
     "hast-util-to-jsx-runtime": "2.3.6",
