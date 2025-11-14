@@ -1392,6 +1392,7 @@
         "@oui/oui-tooltip",
         "@oui/oui-alert-ex-form",
         "@oui/oui-autocomplete-ex",
+        "@oui/oui-badge-ex",
         "@oui/oui-card-ex",
         "@oui/oui-checkbox-ex",
         "@oui/oui-checkbox-group-ex",
