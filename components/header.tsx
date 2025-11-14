@@ -4,7 +4,7 @@ import { Link } from "@/registry/default/ui/oui-link";
 import { Circle } from "lucide-react";
 import { siGithub } from "simple-icons";
 
-export default function Header() {
+export function Header() {
   return (
     <header className="relative mb-14">
       <div className="flex h-[72px] w-full items-center justify-between gap-3">

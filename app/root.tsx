@@ -4,8 +4,8 @@ import * as OuiReactRouter from "@/registry/default/components/oui-react-router-
 import * as ReactRouter from "react-router";
 import * as RemixThemes from "remix-themes";
 import "@/app/app.css";
-import Footer from "@/components/footer";
-import Header from "@/components/header";
+import { Footer } from "@/components/footer";
+import { Header } from "@/components/header";
 import { env } from "cloudflare:workers";
 
 /** Sets a minimal transparent favicon to avoid 404 errors. */

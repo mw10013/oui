@@ -1,21 +1,15 @@
-import { env } from "cloudflare:workers";
-import { createCookieSessionStorage } from "react-router";
-import { createThemeSessionResolver } from "remix-themes";
+import * as ReactRouter from "react-router";
+import * as RemixThemes from "remix-themes";
 
-const sessionStorage = createCookieSessionStorage({
+const sessionStorage = ReactRouter.createCookieSessionStorage({
   cookie: {
     name: "__remix-themes",
     path: "/",
     httpOnly: true,
     sameSite: "lax",
     secrets: ["r3m1x-th3m3s"],
-    ...(env.ENVIRONMENT === "production"
-      ? {
-          domain: "oui.mw10013.workers.dev",
-          secure: true,
-        }
-      : {}),
   },
 });
 
-export const themeSessionResolver = createThemeSessionResolver(sessionStorage);
+export const themeSessionResolver =
+  RemixThemes.createThemeSessionResolver(sessionStorage);
