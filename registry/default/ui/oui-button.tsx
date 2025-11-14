@@ -72,7 +72,7 @@ export const buttonClassName =
       keyof VariantProps<typeof buttonVariants>
     >,
   ) =>
-    buttonVariants({ ...renderProps, ...props, className });
+    twMerge(buttonVariants({ ...renderProps, ...props, className }));
 
 export interface ButtonProps
   extends Rac.ButtonProps,
