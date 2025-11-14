@@ -58,6 +58,7 @@ export * from "@/registry/default/ui/oui-tooltip";
 
 export * from "@/registry/default/components/oui-alert-ex-form";
 export * from "@/registry/default/components/oui-autocomplete-ex";
+export * from "@/registry/default/components/oui-badge-ex";
 export * from "@/registry/default/components/oui-card-ex";
 export * from "@/registry/default/components/oui-checkbox-ex";
 export * from "@/registry/default/components/oui-checkbox-group-ex";
