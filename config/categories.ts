@@ -24,6 +24,11 @@ export const categories: Category[] = [
     ],
   },
   {
+    name: "Badge",
+    slug: "badge",
+    components: [{ name: "oui-badge-ex" }, { name: "oui-badge-ex-demo" }],
+  },
+  {
     name: "Base",
     slug: "base",
     components: [{ name: "oui-base" }],

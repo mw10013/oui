@@ -130,6 +130,39 @@
       }
     },
     {
+      "name": "oui-badge-ex",
+      "type": "registry:component",
+      "title": "Badge Ex",
+      "description": "Badge extension that provides a className function to style a react aria component as a shadcn Badge",
+      "files": [
+        {
+          "path": "registry/default/components/oui-badge-ex.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": ["@oui/oui-base"],
+      "meta": {
+        "tags": ["badge", "badge-ex"]
+      }
+    },
+    {
+      "name": "oui-badge-ex-demo",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/default/components/oui-badge-ex-demo.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": ["@oui/oui-badge-ex"],
+      "dependencies": ["lucide-react"],
+      "meta": {
+        "tags": ["badge", "badge-ex"],
+        "canPreview": true,
+        "canOpenInV0": true
+      }
+    },
+    {
       "name": "oui-base",
       "type": "registry:ui",
       "title": "Base",
