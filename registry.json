@@ -2392,7 +2392,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["card", "@oui/oui-button", "@oui/oui-link"],
+      "registryDependencies": ["card", "@oui/oui-button"],
       "meta": {
         "tags": ["react-router", "error-boundary"]
       }
