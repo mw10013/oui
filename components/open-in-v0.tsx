@@ -1,6 +1,6 @@
 import { TooltipEx } from "@/registry/default/components/oui-tooltip-ex";
 import { buttonClassName } from "@/registry/default/ui/oui-button";
-import { Link } from "@/registry/default/ui/oui-link";
+import * as Rac from "react-aria-components";
 
 // https://ui.shadcn.com/docs/registry/open-in-v0
 
@@ -9,7 +9,7 @@ const OpenInV0 = ({ componentSource }: { componentSource: string }) => {
     <TooltipEx
       delay={0}
       triggerElement={
-        <Link
+        <Rac.Link
           className={buttonClassName({
             variant: "ghost",
             size: "icon",
@@ -35,7 +35,7 @@ const OpenInV0 = ({ componentSource }: { componentSource: string }) => {
               fillRule="evenodd"
             ></path>
           </svg>
-        </Link>
+        </Rac.Link>
       }
     >
       Open in v0
