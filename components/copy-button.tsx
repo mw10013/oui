@@ -3,13 +3,13 @@ import { TooltipEx } from "@/registry/default/components/oui-tooltip-ex";
 import { Button } from "@/registry/default/ui/oui-button";
 import { twJoin, twMerge } from "tailwind-merge";
 
-const CopyButton = ({
+export function CopyButton({
   componentSource,
   className,
 }: {
   componentSource: string | null;
   className?: string;
-}) => {
+}) {
   const { copied, copy } = useCopy();
 
   return (
@@ -69,6 +69,4 @@ const CopyButton = ({
       </TooltipEx>
     </div>
   );
-};
-
-export default CopyButton;
+}

@@ -4,7 +4,7 @@ import * as Rac from "react-aria-components";
 
 // https://ui.shadcn.com/docs/registry/open-in-v0
 
-const OpenInV0 = ({ componentSource }: { componentSource: string }) => {
+export function OpenInV0({ componentSource }: { componentSource: string }) {
   return (
     <TooltipEx
       delay={0}
@@ -41,6 +41,4 @@ const OpenInV0 = ({ componentSource }: { componentSource: string }) => {
       Open in v0
     </TooltipEx>
   );
-};
-
-export default OpenInV0;
+}

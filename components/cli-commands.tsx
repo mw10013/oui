@@ -1,8 +1,8 @@
-import CopyButton from "@/components/copy-button";
+import { CopyButton } from "@/components/copy-button";
 import { useConfig } from "@/hooks/use-config";
 import { Tab, TabList, TabPanel, Tabs } from "@/registry/default/ui/oui-tabs";
 
-export default function CliCommands({ name }: { name: string }) {
+export function CliCommands({ name }: { name: string }) {
   const [config, setConfig] = useConfig();
   // eslint-disable-next-line @typescript-eslint/no-unnecessary-condition
   const packageManager = config.packageManager || "pnpm";

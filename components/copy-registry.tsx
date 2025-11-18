@@ -3,7 +3,7 @@ import { TooltipEx } from "@/registry/default/components/oui-tooltip-ex";
 import { Button } from "@/registry/default/ui/oui-button";
 import { twJoin } from "tailwind-merge";
 
-const CopyButton = ({ url }: { url: string | null }) => {
+export function CopyRegistry({ url }: { url: string | null }) {
   // @typescript-eslint/no-unsafe-call
   const { copied, copy } = useCopy();
 
@@ -62,6 +62,4 @@ const CopyButton = ({ url }: { url: string | null }) => {
       Copy Registry URL
     </TooltipEx>
   );
-};
-
-export default CopyButton;
+}

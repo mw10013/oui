@@ -1,11 +1,10 @@
-import type { JSX } from "react";
 import type { RegistryItem } from "shadcn/schema";
-import { useEffect, useState } from "react";
-import ComponentCli from "@/components/cli-commands";
+import * as React from "react";
+import { CliCommands } from "@/components/cli-commands";
 import CodeBlock, { highlight } from "@/components/code-block";
-import CopyButton from "@/components/copy-button";
-import CopyRegistry from "@/components/copy-registry";
-import OpenInV0 from "@/components/open-in-v0";
+import { CopyButton } from "@/components/copy-button";
+import { CopyRegistry } from "@/components/copy-registry";
+import { OpenInV0 } from "@/components/open-in-v0";
 import { DialogEx } from "@/registry/default/components/oui-dialog-ex";
 import { TooltipEx } from "@/registry/default/components/oui-tooltip-ex";
 import { Button } from "@/registry/default/ui/oui-button";
@@ -16,17 +15,12 @@ import {
 import { Heading } from "@/registry/default/ui/oui-heading";
 import { CodeIcon } from "lucide-react";
 
-export function ComponentDetails({
-  component,
-}: {
-  component: RegistryItem;
-}) {
-  const [code, setCode] = useState<string | null>(null);
-  const [highlightedCode, setHighlightedCode] = useState<JSX.Element | null>(
-    null,
-  );
+export function ComponentDetails({ component }: { component: RegistryItem }) {
+  const [code, setCode] = React.useState<string | null>(null);
+  const [highlightedCode, setHighlightedCode] =
+    React.useState<React.JSX.Element | null>(null);
 
-  useEffect(() => {
+  React.useEffect(() => {
     const handleEmptyCode = () => {
       setCode("");
       setHighlightedCode(null);
@@ -104,7 +98,7 @@ export function ComponentDetails({
           </DialogDescription>
         </DialogHeader>
         <div className="min-w-0 space-y-5">
-          <ComponentCli name={component.name} />
+          <CliCommands name={component.name} />
           <div className="space-y-4">
             <p className="text-lg font-semibold tracking-tight">Code</p>
             <div className="relative">
