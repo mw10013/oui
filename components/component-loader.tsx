@@ -1,5 +1,5 @@
 import type { RegistryItem } from "shadcn/schema";
-import { lazy, Suspense, useMemo } from "react";
+import * as React from "react";
 import {
   Item,
   ItemContent,
@@ -8,15 +8,11 @@ import {
 } from "@/registry/default/ui/item";
 import { LoaderCircleIcon } from "lucide-react";
 
-export default function ComponentLoader({
-  component,
-}: {
-  component: RegistryItem;
-}) {
+export function ComponentLoader({ component }: { component: RegistryItem }) {
   // https://github.com/rollup/plugins/tree/master/packages/dynamic-import-vars#limitations
-  const Component = useMemo(
+  const Component = React.useMemo(
     () =>
-      lazy(() =>
+      React.lazy(() =>
         import(`../registry/default/components/${component.name}.tsx`).catch(
           () => ({
             default: () => null,
@@ -26,7 +22,7 @@ export default function ComponentLoader({
     [component.name],
   );
   return component.meta?.canPreview ? (
-    <Suspense
+    <React.Suspense
       fallback={
         <div
           data-comp-loading="true"
@@ -42,7 +38,7 @@ export default function ComponentLoader({
       }
     >
       <Component />
-    </Suspense>
+    </React.Suspense>
   ) : (
     <Item className="p-0">
       <ItemContent>

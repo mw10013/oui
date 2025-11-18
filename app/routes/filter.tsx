@@ -3,7 +3,7 @@ import type { LoaderFunctionArgs } from "react-router";
 import type { Route } from "./+types/filter";
 import { ComponentCard } from "@/components/component-card";
 import { ComponentDetails } from "@/components/component-details";
-import ComponentLoader from "@/components/component-loader";
+import { ComponentLoader } from "@/components/component-loader";
 import { PageGrid } from "@/components/page-grid";
 import { PageHeader } from "@/components/page-header";
 import { getAvailableTags, getComponents, getDisabledTags } from "@/lib/utils";
