@@ -14,7 +14,7 @@ export function OpenInV0({ componentSource }: { componentSource: string }) {
             variant: "ghost",
             size: "icon",
             className:
-              "text-muted-foreground/80 transition-none data-[hovered]:bg-transparent data-[hovered]:text-foreground lg:opacity-0 lg:group-focus-within/item:opacity-100 lg:group-hover/item:opacity-100",
+              "text-muted-foreground/80 transition-none data-hovered:bg-transparent data-hovered:text-foreground lg:opacity-0 lg:group-focus-within/item:opacity-100 lg:group-hover/item:opacity-100",
           })}
           // href={`https://v0.dev/chat/api/open?url=${encodeURIComponent(componentSource)}`}
           href={`https://v0.dev/chat/api/open?url=${componentSource}`}

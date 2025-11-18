@@ -14,7 +14,7 @@ export function CopyRegistry({ url }: { url: string | null }) {
         <Button
           variant="ghost"
           size="icon"
-          className="text-muted-foreground/80 transition-none data-[hovered]:bg-transparent data-[hovered]:text-foreground lg:opacity-0 lg:group-focus-within/item:opacity-100 lg:group-hover/item:opacity-100"
+          className="text-muted-foreground/80 transition-none data-hovered:bg-transparent data-hovered:text-foreground lg:opacity-0 lg:group-focus-within/item:opacity-100 lg:group-hover/item:opacity-100"
           onPress={() => void copy(url ?? "")}
           aria-label={copied ? "Copied" : "Copy component source"}
           isDisabled={copied}
