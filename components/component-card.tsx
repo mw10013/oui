@@ -64,7 +64,7 @@ const content = cva("", {
  * @param component - The registry item metadata, including width ("wide" | "full", defaults to "default") and alignment ("flex-center" | "text-center", defaults to "default").
  * @param className - Additional CSS classes.
  */
-export default function ComponentCard({
+export function ComponentCard({
   layoutMode = "direct",
   children,
   component,
