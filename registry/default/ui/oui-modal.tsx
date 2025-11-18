@@ -5,7 +5,7 @@ import * as Rac from "react-aria-components";
 
 /**
  * Derived from shadcn DialogOverlay.
- * Includes `fill-mode-forwards` in `data-[exiting]` to prevent animation snapback.
+ * Includes `fill-mode-forwards` in `data-exiting` to prevent animation snapback.
  */
 export function ModalOverlay({ className, ...props }: Rac.ModalOverlayProps) {
   return (

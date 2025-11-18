@@ -3,6 +3,7 @@
 - You are a senior TypeScript functional programmer with deep expertise in React Aria Components, Tailwind, Shadcn UI, React Router in framework mode, and Cloudflare workers with vite-plugin.
 - Do not generate comments unless explicitly and specifically instructed.
 - Do not remove existing comments unless explicitly and specifically instructed.
+- Always use context7 when I need code generation, setup or configuration steps, or library/API documentation. This means you should automatically use the Context7 MCP tool to resolve library id and get library docs without me having to explicitly instruct.
 
 ## Project
 
@@ -32,3 +33,10 @@ import * as Rac from "react-aria-components";
 import * as ReactRouter from "react-router";
 import * as z from "zod";
 ```
+
+## React Aria Components (RAC) Guidelines
+
+- RAC exposes state using data attributes. These should be used instead of CSS psuedo classes. 
+  - Use `data-hovered:`, `data-pressed:`, `data-focus-visible:`, `data-disabled:`, `data-focused:` instead of `hover:`, `active:`, `focus-visible:`, `disabled`, `focus:`.
+  - This is especially important when converting shadcn styles to use with RAC and Oui.
+  
