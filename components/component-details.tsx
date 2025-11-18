@@ -1,7 +1,7 @@
 import type { RegistryItem } from "shadcn/schema";
 import * as React from "react";
-import { CliCommands } from "@/components/cli-commands";
 import CodeBlock, { highlight } from "@/components/code-block";
+import { ComponentInstall } from "@/components/component-install";
 import { CopyButton } from "@/components/copy-button";
 import { CopyRegistry } from "@/components/copy-registry";
 import { OpenInV0 } from "@/components/open-in-v0";
@@ -98,7 +98,7 @@ export function ComponentDetails({ component }: { component: RegistryItem }) {
           </DialogDescription>
         </DialogHeader>
         <div className="min-w-0 space-y-5">
-          <CliCommands name={component.name} />
+          <ComponentInstall name={component.name} />
           <div className="space-y-4">
             <p className="text-lg font-semibold tracking-tight">Code</p>
             <div className="relative">
