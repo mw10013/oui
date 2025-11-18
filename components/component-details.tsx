@@ -3,8 +3,6 @@ import * as React from "react";
 import { CodeBlock, highlight } from "@/components/code-block";
 import { ComponentInstall } from "@/components/component-install";
 import { CopyButton } from "@/components/copy-button";
-import { CopyRegistry } from "@/components/copy-registry";
-import { OpenInV0 } from "@/components/open-in-v0";
 import { DialogEx } from "@/registry/default/components/oui-dialog-ex";
 import { TooltipEx } from "@/registry/default/components/oui-tooltip-ex";
 import { Button } from "@/registry/default/ui/oui-button";
@@ -60,14 +58,14 @@ export function ComponentDetails({ component }: { component: RegistryItem }) {
 
   return (
     <div className="absolute top-2 right-2 flex gap-1 peer-data-comp-loading:hidden">
-      <CopyRegistry
+      {/* <CopyRegistry
         url={`https://oui.mw10013.workers.dev/r/${component.name}.json`}
       />
       {component.meta?.canOpenInV0 && (
         <OpenInV0
           componentSource={`https://oui.mw10013.workers.dev/r/${component.name}.json`}
         />
-      )}
+      )} */}
       <DialogEx
         triggerElement={
           <TooltipEx
