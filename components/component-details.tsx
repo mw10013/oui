@@ -1,6 +1,6 @@
 import type { RegistryItem } from "shadcn/schema";
 import * as React from "react";
-import CodeBlock, { highlight } from "@/components/code-block";
+import { CodeBlock, highlight } from "@/components/code-block";
 import { ComponentInstall } from "@/components/component-install";
 import { CopyButton } from "@/components/copy-button";
 import { CopyRegistry } from "@/components/copy-registry";

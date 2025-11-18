@@ -1,6 +1,5 @@
-import type { JSX } from "react";
 import type { BundledLanguage } from "shiki/bundle/web";
-import { useLayoutEffect, useState } from "react";
+import * as React from "react";
 import { Fragment, jsx, jsxs } from "react/jsx-runtime";
 import { toJsxRuntime } from "hast-util-to-jsx-runtime";
 import { codeToHast } from "shiki/bundle/web";
@@ -15,27 +14,27 @@ export async function highlight(code: string, lang: BundledLanguage) {
     Fragment,
     jsx,
     jsxs,
-  }) as JSX.Element;
+  }) as React.JSX.Element;
 }
 
 interface Props {
   code: string | null;
   lang: BundledLanguage;
-  initial?: JSX.Element;
-  preHighlighted?: JSX.Element | null;
+  initial?: React.JSX.Element;
+  preHighlighted?: React.JSX.Element | null;
 }
 
-export default function CodeBlock({
+export function CodeBlock({
   code,
   lang,
   initial,
   preHighlighted,
 }: Props) {
-  const [content, setContent] = useState<JSX.Element | null>(
+  const [content, setContent] = React.useState<React.JSX.Element | null>(
     preHighlighted ?? initial ?? null,
   );
 
-  useLayoutEffect(() => {
+  React.useLayoutEffect(() => {
     // If we have pre-highlighted content, use that
     if (preHighlighted) {
       setContent(preHighlighted);
