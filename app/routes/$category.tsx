@@ -1,6 +1,6 @@
 import type { Route } from "./+types/$category";
 import { ComponentCard } from "@/components/component-card";
-import ComponentDetails from "@/components/component-details";
+import { ComponentDetails } from "@/components/component-details";
 import ComponentLoader from "@/components/component-loader";
 import { PageGrid } from "@/components/page-grid";
 import { PageHeader } from "@/components/page-header";

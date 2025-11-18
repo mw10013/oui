@@ -16,7 +16,7 @@ import {
 import { Heading } from "@/registry/default/ui/oui-heading";
 import { CodeIcon } from "lucide-react";
 
-export default function ComponentDetails({
+export function ComponentDetails({
   component,
 }: {
   component: RegistryItem;
