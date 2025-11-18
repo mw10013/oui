@@ -3,7 +3,7 @@ import ComponentCard from "@/components/component-card";
 import ComponentDetails from "@/components/component-details";
 import ComponentLoader from "@/components/component-loader";
 import PageGrid from "@/components/page-grid";
-import PageHeader from "@/components/page-header";
+import { PageHeader } from "@/components/page-header";
 import { getCategory } from "@/config/categories";
 import { getComponentsByNames } from "@/lib/utils";
 import { invariant } from "@epic-web/invariant";
@@ -36,7 +36,7 @@ export default function RouteComponent({
       <PageGrid>
         {components.map((component) => (
           <ComponentCard key={component.name} component={component}>
-            <ComponentLoader component={component}/>
+            <ComponentLoader component={component} />
             <ComponentDetails component={component} />
           </ComponentCard>
         ))}
