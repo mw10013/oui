@@ -1,0 +1,274 @@
+import { Button } from "@/registry/default/ui/button";
+import { Checkbox } from "@/registry/default/ui/checkbox";
+import {
+  Field,
+  FieldDescription,
+  FieldGroup,
+  FieldLabel,
+  FieldLegend,
+  FieldSeparator,
+  FieldSet,
+} from "@/registry/default/ui/field";
+import { Input } from "@/registry/default/ui/input";
+import * as Oui from "@/registry/default/ui/oui-index";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/registry/default/ui/select";
+import { Textarea } from "@/registry/default/ui/textarea";
+
+export function FieldDemo() {
+  return (
+    <div className="w-full max-w-md">
+      <form>
+        <FieldGroup>
+          <FieldSet>
+            <FieldLegend>Payment Method</FieldLegend>
+            <FieldDescription>
+              All transactions are secure and encrypted
+            </FieldDescription>
+            <FieldGroup>
+              <Field>
+                <FieldLabel htmlFor="checkout-7j9-card-name-43j">
+                  Name on Card
+                </FieldLabel>
+                <Input
+                  id="checkout-7j9-card-name-43j"
+                  placeholder="Evil Rabbit"
+                  required
+                />
+              </Field>
+              <Field>
+                <FieldLabel htmlFor="checkout-7j9-card-number-uw1">
+                  Card Number
+                </FieldLabel>
+                <Input
+                  id="checkout-7j9-card-number-uw1"
+                  placeholder="1234 5678 9012 3456"
+                  required
+                />
+                <FieldDescription>
+                  Enter your 16-digit card number
+                </FieldDescription>
+              </Field>
+              <div className="grid grid-cols-3 gap-4">
+                <Field>
+                  <FieldLabel htmlFor="checkout-exp-month-ts6">
+                    Month
+                  </FieldLabel>
+                  <Select defaultValue="">
+                    <SelectTrigger id="checkout-exp-month-ts6">
+                      <SelectValue placeholder="MM" />
+                    </SelectTrigger>
+                    <SelectContent>
+                      <SelectItem value="01">01</SelectItem>
+                      <SelectItem value="02">02</SelectItem>
+                      <SelectItem value="03">03</SelectItem>
+                      <SelectItem value="04">04</SelectItem>
+                      <SelectItem value="05">05</SelectItem>
+                      <SelectItem value="06">06</SelectItem>
+                      <SelectItem value="07">07</SelectItem>
+                      <SelectItem value="08">08</SelectItem>
+                      <SelectItem value="09">09</SelectItem>
+                      <SelectItem value="10">10</SelectItem>
+                      <SelectItem value="11">11</SelectItem>
+                      <SelectItem value="12">12</SelectItem>
+                    </SelectContent>
+                  </Select>
+                </Field>
+                <Field>
+                  <FieldLabel htmlFor="checkout-7j9-exp-year-f59">
+                    Year
+                  </FieldLabel>
+                  <Select defaultValue="">
+                    <SelectTrigger id="checkout-7j9-exp-year-f59">
+                      <SelectValue placeholder="YYYY" />
+                    </SelectTrigger>
+                    <SelectContent>
+                      <SelectItem value="2024">2024</SelectItem>
+                      <SelectItem value="2025">2025</SelectItem>
+                      <SelectItem value="2026">2026</SelectItem>
+                      <SelectItem value="2027">2027</SelectItem>
+                      <SelectItem value="2028">2028</SelectItem>
+                      <SelectItem value="2029">2029</SelectItem>
+                    </SelectContent>
+                  </Select>
+                </Field>
+                <Field>
+                  <FieldLabel htmlFor="checkout-7j9-cvv">CVV</FieldLabel>
+                  <Input id="checkout-7j9-cvv" placeholder="123" required />
+                </Field>
+              </div>
+            </FieldGroup>
+          </FieldSet>
+          <FieldSeparator />
+          <FieldSet>
+            <FieldLegend>Billing Address</FieldLegend>
+            <FieldDescription>
+              The billing address associated with your payment method
+            </FieldDescription>
+            <FieldGroup>
+              <Field orientation="horizontal">
+                <Checkbox
+                  id="checkout-7j9-same-as-shipping-wgm"
+                  defaultChecked
+                />
+                <FieldLabel
+                  htmlFor="checkout-7j9-same-as-shipping-wgm"
+                  className="font-normal"
+                >
+                  Same as shipping address
+                </FieldLabel>
+              </Field>
+            </FieldGroup>
+          </FieldSet>
+          <FieldSet>
+            <FieldGroup>
+              <Field>
+                <FieldLabel htmlFor="checkout-7j9-optional-comments">
+                  Comments
+                </FieldLabel>
+                <Textarea
+                  id="checkout-7j9-optional-comments"
+                  placeholder="Add any additional comments"
+                  className="resize-none"
+                />
+              </Field>
+            </FieldGroup>
+          </FieldSet>
+          <Field orientation="horizontal">
+            <Button type="submit">Submit</Button>
+            <Button variant="outline" type="button">
+              Cancel
+            </Button>
+          </Field>
+        </FieldGroup>
+      </form>
+    </div>
+  );
+}
+
+export function OuiFieldDemo() {
+  const monthItems = [
+    { id: "01", name: "01" },
+    { id: "02", name: "02" },
+    { id: "03", name: "03" },
+    { id: "04", name: "04" },
+    { id: "05", name: "05" },
+    { id: "06", name: "06" },
+    { id: "07", name: "07" },
+    { id: "08", name: "08" },
+    { id: "09", name: "09" },
+    { id: "10", name: "10" },
+    { id: "11", name: "11" },
+    { id: "12", name: "12" },
+  ];
+
+  const yearItems = [
+    { id: "2024", name: "2024" },
+    { id: "2025", name: "2025" },
+    { id: "2026", name: "2026" },
+    { id: "2027", name: "2027" },
+    { id: "2028", name: "2028" },
+    { id: "2029", name: "2029" },
+  ];
+
+  return (
+    <div className="w-full max-w-md">
+      <form>
+        <div className="flex flex-col gap-6">
+          <fieldset className="flex flex-col gap-6">
+            <legend className="mb-3 text-base font-medium">
+              Payment Method
+            </legend>
+            <p className="text-sm leading-normal font-normal text-muted-foreground">
+              All transactions are secure and encrypted
+            </p>
+            <div className="flex flex-col gap-7">
+              <Oui.TextFieldEx
+                label="Name on Card"
+                placeholder="Evil Rabbit"
+                isRequired
+              />
+              <Oui.TextFieldEx
+                label="Card Number"
+                description="Enter your 16-digit card number"
+                placeholder="1234 5678 9012 3456"
+                isRequired
+              />
+              <div className="grid grid-cols-3 gap-4">
+                <Oui.SelectEx label="Month" items={monthItems}>
+                  {(item) => (
+                    <Oui.ListBoxItem key={item.id} value={item}>
+                      {item.name}
+                    </Oui.ListBoxItem>
+                  )}
+                </Oui.SelectEx>
+                <Oui.SelectEx label="Year" items={yearItems}>
+                  {(item) => (
+                    <Oui.ListBoxItem key={item.id} value={item}>
+                      {item.name}
+                    </Oui.ListBoxItem>
+                  )}
+                </Oui.SelectEx>
+                <Oui.TextFieldEx label="CVV" placeholder="123" isRequired />
+              </div>
+            </div>
+          </fieldset>
+          <div className="relative -my-2 h-5 text-sm">
+            <div className="absolute inset-0 top-1/2 border-t" />
+          </div>
+          <fieldset className="flex flex-col gap-6">
+            <legend className="mb-3 text-base font-medium">
+              Billing Address
+            </legend>
+            <p className="text-sm leading-normal font-normal text-muted-foreground">
+              The billing address associated with your payment method
+            </p>
+            <div className="flex flex-col gap-7">
+              <Oui.Checkbox className="flex-row items-center" defaultSelected>
+                Same as shipping address
+              </Oui.Checkbox>
+            </div>
+          </fieldset>
+          <fieldset className="flex flex-col gap-6">
+            <div className="flex flex-col gap-7">
+              <Oui.TextFieldEx label="Comments">
+                <Oui.TextArea
+                  placeholder="Add any additional comments"
+                  className="resize-none"
+                />
+              </Oui.TextFieldEx>
+            </div>
+          </fieldset>
+          <div className="flex flex-row items-center gap-3">
+            <Oui.Button type="submit">Submit</Oui.Button>
+            <Oui.Button variant="outline" type="button">
+              Cancel
+            </Oui.Button>
+          </div>
+        </div>
+      </form>
+    </div>
+  );
+}
+
+export default function RouteComponent() {
+  return (
+    <div className="mx-auto flex max-w-7xl flex-col gap-8 p-6">
+      <div className="flex flex-row gap-8">
+        <div className="flex flex-1 flex-col gap-4">
+          <h2 className="text-lg font-semibold">Field Demo</h2>
+          <FieldDemo />
+        </div>
+        <div className="flex flex-1 flex-col gap-4">
+          <h2 className="text-lg font-semibold">Oui Field Demo</h2>
+          <OuiFieldDemo />
+        </div>
+      </div>
+    </div>
+  );
+}
