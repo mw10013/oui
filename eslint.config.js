@@ -9,6 +9,7 @@ export default defineConfig(
     ".wrangler/",
     "worker-configuration.d.ts",
     ".react-router/",
+    "registry/default/ui/field.tsx",
     "registry/default/ui/sidebar.tsx",
     "registry/default/ui/toggle-group.tsx",
     "registry/default/hooks/use-mobile.ts",

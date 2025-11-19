@@ -3,6 +3,8 @@
 /**
  * The `oui-base` module provides foundational Tailwind CSS styles and utilities.
  */
+import type { VariantProps } from "class-variance-authority";
+import { cva } from "class-variance-authority";
 import { composeRenderProps } from "react-aria-components";
 import { twMerge } from "tailwind-merge";
 
@@ -69,3 +71,32 @@ export function composeTailwindRenderProps<T>(
 ): string | ((v: T) => string) {
   return composeRenderProps(className, (className) => twMerge(tw, className));
 }
+
+/**
+ * Base field styles. Derived from shadcn Field.
+ */
+export const fieldStyles = cva(
+  "group/field flex w-full gap-3 data-invalid:text-destructive",
+  {
+    variants: {
+      orientation: {
+        vertical: ["flex-col *:w-full [&>.sr-only]:w-auto"],
+        horizontal: [
+          "flex-row items-center",
+          "*:data-[slot=field-label]:flex-auto",
+          "has-[>[data-slot=field-content]]:items-start has-[>[data-slot=field-content]]:[&>[role=checkbox],[role=radio]]:mt-px",
+        ],
+        responsive: [
+          "flex-col *:w-full @md/field-group:flex-row @md/field-group:items-center @md/field-group:*:w-auto [&>.sr-only]:w-auto",
+          "@md/field-group:*:data-[slot=field-label]:flex-auto",
+          "@md/field-group:has-[>[data-slot=field-content]]:items-start @md/field-group:has-[>[data-slot=field-content]]:[&>[role=checkbox],[role=radio]]:mt-px",
+        ],
+      },
+    },
+    defaultVariants: {
+      orientation: "vertical",
+    },
+  },
+);
+
+export type FieldStylesProps = VariantProps<typeof fieldStyles>;
