@@ -9,7 +9,8 @@ import { twJoin, twMerge } from "tailwind-merge";
  *
  * For RAC components that structure with a 'label' prefer 'labelComponentStyles' instead.
  */
-export const baseLabelStyles = tw`flex items-center gap-2 text-sm leading-none font-medium select-none`;
+export const baseLabelStyles = tw`flex w-fit items-center gap-2 text-sm leading-snug font-medium select-none`;
+// export const baseLabelStyles = tw`flex items-center gap-2 text-sm leading-none font-medium select-none`;
 
 /**
  * Label styles for RAC components that structure with a 'label' and have render props (eg. radio, checkbox and switch).
@@ -28,7 +29,10 @@ export function Label({ className, ...props }: Rac.LabelProps) {
       data-slot="label"
       className={twMerge(
         baseLabelStyles,
-        "group-data-disabled:pointer-events-none group-data-disabled:opacity-50 group-data-invalid:text-destructive peer-data-disabled:cursor-not-allowed peer-data-disabled:opacity-50",
+        // "group-data-disabled:pointer-events-none group-data-disabled:opacity-50 group-data-invalid:text-destructive peer-data-disabled:cursor-not-allowed peer-data-disabled:opacity-50",
+        "group/field-label peer/field-label group-data-disabled:pointer-events-none group-data-disabled:opacity-50 group-data-disabled/field:opacity-50 peer-data-disabled:cursor-not-allowed peer-data-disabled:opacity-50",
+        "has-[>[data-slot=field]]:w-full has-[>[data-slot=field]]:flex-col has-[>[data-slot=field]]:rounded-md has-[>[data-slot=field]]:border *:data-[slot=field]:p-4",
+        "has-data-[state=checked]:border-primary has-data-[state=checked]:bg-primary/5 dark:has-data-[state=checked]:bg-primary/10",
         className,
       )}
       {...props}
