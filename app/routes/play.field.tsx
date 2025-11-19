@@ -179,15 +179,13 @@ export function OuiFieldDemo() {
   return (
     <div className="w-full max-w-md">
       <form>
-        <div className="flex flex-col gap-6">
-          <fieldset className="flex flex-col gap-6">
-            <legend className="mb-3 text-base font-medium">
-              Payment Method
-            </legend>
-            <p className="text-sm leading-normal font-normal text-muted-foreground">
+        <FieldGroup>
+          <FieldSet>
+            <FieldLegend>Payment Method</FieldLegend>
+            <FieldDescription>
               All transactions are secure and encrypted
-            </p>
-            <div className="flex flex-col gap-7">
+            </FieldDescription>
+            <FieldGroup>
               <Oui.TextFieldEx
                 label="Name on Card"
                 placeholder="Evil Rabbit"
@@ -216,41 +214,43 @@ export function OuiFieldDemo() {
                 </Oui.SelectEx>
                 <Oui.TextFieldEx label="CVV" placeholder="123" isRequired />
               </div>
-            </div>
-          </fieldset>
-          <div className="relative -my-2 h-5 text-sm">
-            <div className="absolute inset-0 top-1/2 border-t" />
-          </div>
-          <fieldset className="flex flex-col gap-6">
-            <legend className="mb-3 text-base font-medium">
-              Billing Address
-            </legend>
-            <p className="text-sm leading-normal font-normal text-muted-foreground">
+            </FieldGroup>
+          </FieldSet>
+          <FieldSeparator />
+          <FieldSet>
+            <FieldLegend>Billing Address</FieldLegend>
+            <FieldDescription>
               The billing address associated with your payment method
-            </p>
-            <div className="flex flex-col gap-7">
-              <Oui.Checkbox className="flex-row items-center" defaultSelected>
-                Same as shipping address
-              </Oui.Checkbox>
-            </div>
-          </fieldset>
-          <fieldset className="flex flex-col gap-6">
-            <div className="flex flex-col gap-7">
+            </FieldDescription>
+            <FieldGroup>
+              <Field orientation="horizontal">
+                <Oui.Checkbox
+                  className="flex-row items-center"
+                  defaultSelected
+                />
+                <FieldLabel className="font-normal">
+                  Same as shipping address
+                </FieldLabel>
+              </Field>
+            </FieldGroup>
+          </FieldSet>
+          <FieldSet>
+            <FieldGroup>
               <Oui.TextFieldEx label="Comments">
                 <Oui.TextArea
                   placeholder="Add any additional comments"
                   className="resize-none"
                 />
               </Oui.TextFieldEx>
-            </div>
-          </fieldset>
-          <div className="flex flex-row items-center gap-3">
+            </FieldGroup>
+          </FieldSet>
+          <Field orientation="horizontal">
             <Oui.Button type="submit">Submit</Oui.Button>
             <Oui.Button variant="outline" type="button">
               Cancel
             </Oui.Button>
-          </div>
-        </div>
+          </Field>
+        </FieldGroup>
       </form>
     </div>
   );
@@ -260,12 +260,10 @@ export default function RouteComponent() {
   return (
     <div className="mx-auto flex max-w-7xl flex-col gap-8 p-6">
       <div className="flex flex-row gap-8">
-        <div className="flex flex-1 flex-col gap-4">
-          <h2 className="text-lg font-semibold">Field Demo</h2>
+        <div className="flex flex-1 flex-col gap-4 border border-foreground p-4">
           <FieldDemo />
         </div>
-        <div className="flex flex-1 flex-col gap-4">
-          <h2 className="text-lg font-semibold">Oui Field Demo</h2>
+        <div className="flex flex-1 flex-col gap-4 border border-foreground p-4">
           <OuiFieldDemo />
         </div>
       </div>
