@@ -198,14 +198,14 @@ export function OuiFieldDemo() {
                 isRequired
               />
               <div className="grid grid-cols-3 gap-4">
-                <Oui.SelectEx label="Month" items={monthItems}>
+                <Oui.SelectEx label="Month" placeholder="MM"items={monthItems}>
                   {(item) => (
                     <Oui.ListBoxItem key={item.id} value={item}>
                       {item.name}
                     </Oui.ListBoxItem>
                   )}
                 </Oui.SelectEx>
-                <Oui.SelectEx label="Year" items={yearItems}>
+                <Oui.SelectEx label="Year" placeholder="YYYY"items={yearItems}>
                   {(item) => (
                     <Oui.ListBoxItem key={item.id} value={item}>
                       {item.name}
