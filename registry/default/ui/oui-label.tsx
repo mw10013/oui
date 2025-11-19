@@ -28,7 +28,7 @@ export function Label({ className, ...props }: Rac.LabelProps) {
       data-slot="label"
       className={twMerge(
         baseLabelStyles,
-        "group-data-disabled:pointer-events-none group-data-disabled:opacity-50 group-data-invalid:text-destructive",
+        "group-data-disabled:pointer-events-none group-data-disabled:opacity-50 group-data-invalid:text-destructive peer-data-disabled:cursor-not-allowed peer-data-disabled:opacity-50",
         className,
       )}
       {...props}
