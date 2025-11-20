@@ -1,8 +1,10 @@
 "use client";
 
+import type { FieldStylesProps } from "@/registry/default/ui/oui-base";
 import {
   composeTailwindRenderProps,
   disabledStyles,
+  fieldStyles,
   focusVisibleStyles,
 } from "@/registry/default/ui/oui-base";
 import { ChevronDown } from "lucide-react";
@@ -14,12 +16,16 @@ export type SelectionMode = NonNullable<
 
 export function Select<T extends object, M extends SelectionMode = "single">({
   className,
+  orientation,
   ...props
-}: Rac.SelectProps<T, M>) {
+}: Rac.SelectProps<T, M> & FieldStylesProps) {
   return (
     <Rac.Select
       data-slot="select"
-      className={composeTailwindRenderProps(className, "grid gap-2")}
+      className={composeTailwindRenderProps(
+        className,
+        fieldStyles({ orientation }),
+      )}
       {...props}
     />
   );
