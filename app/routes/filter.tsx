@@ -51,6 +51,7 @@ export default function RouteComponent({
               setSearchParams({});
             }
           }}
+          className="w-fit"
         >
           {(item) => <ListBoxItem>{item.id}</ListBoxItem>}
         </SelectEx>

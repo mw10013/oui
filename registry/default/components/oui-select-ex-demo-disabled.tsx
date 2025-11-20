@@ -16,9 +16,9 @@ export default function Component() {
     <SelectEx
       aria-label="Select Ex Disabled"
       placeholder="Select Ex Disabled"
-      buttonClassName="w-[180px]"
       items={simpleItems}
       isDisabled
+      className="w-[180px]"
     >
       {(item) => (
         <ListBoxItem isDisabled={item.isDisabled}>{item.name}</ListBoxItem>

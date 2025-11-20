@@ -28,6 +28,7 @@ export default function Component() {
       selectionMode="multiple"
       value={animals}
       onChange={setAnimals}
+      className="w-fit"
     >
       <SelectButton>
         <SelectValue />

@@ -20,7 +20,6 @@ export default function Component() {
     <SelectEx
       aria-label="Select Ex Icon"
       placeholder="Select Ex Icon"
-      buttonClassName="w-[180px]"
       items={iconItems}
       renderSelectValue={({ isPlaceholder, defaultChildren }) =>
         isPlaceholder ? (
@@ -32,6 +31,7 @@ export default function Component() {
           defaultChildren
         )
       }
+      className="w-[180px]"
     >
       {(item) => {
         const IconComponent = item.icon;

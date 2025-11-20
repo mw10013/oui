@@ -11,7 +11,7 @@ import * as Rac from "react-aria-components";
 
 export default function Component() {
   return (
-    <Select aria-label="Select" placeholder="Select">
+    <Select aria-label="Select" placeholder="Select" className="w-[180px]">
       <SelectButton>
         <SelectValue />
       </SelectButton>

@@ -18,7 +18,7 @@ export default function Component() {
     <SelectEx
       aria-label="Select fruit"
       placeholder="Select Ex"
-      buttonClassName="w-[180px]"
+      className="w-[180px]"
     >
       <Rac.ListBoxSection id="fruits-section">
         <Header variant="select">Fruits</Header>

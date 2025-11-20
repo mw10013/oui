@@ -13,8 +13,8 @@ export default function Component() {
     <SelectEx
       aria-label="Select Ex Large List"
       placeholder="Select Ex Large List"
-      buttonClassName="w-[180px]"
       items={largeListItems}
+      className="w-[180px]"
     >
       {(item) => <ListBoxItem>{item.name}</ListBoxItem>}
     </SelectEx>
