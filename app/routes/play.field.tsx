@@ -19,6 +19,7 @@ import {
   SelectValue,
 } from "@/registry/default/ui/select";
 import { Textarea } from "@/registry/default/ui/textarea";
+import * as Rac from "react-aria-components";
 
 export function FieldDemo() {
   return (
@@ -178,7 +179,7 @@ export function OuiFieldDemo() {
 
   return (
     <div className="w-full max-w-md">
-      <form>
+      <Rac.Form>
         <FieldGroup>
           <FieldSet>
             <FieldLegend>Payment Method</FieldLegend>
@@ -245,7 +246,7 @@ export function OuiFieldDemo() {
             </Oui.Button>
           </Field>
         </FieldGroup>
-      </form>
+      </Rac.Form>
     </div>
   );
 }

@@ -53,26 +53,6 @@ export const groupFocusVisibleStyles = tw`outline-none group-data-focus-visible:
 export const disabledStyles = tw`data-disabled:pointer-events-none data-disabled:opacity-50`;
 
 /**
- * Composes Tailwind CSS classes with render props.
- * @param className - Static or function-based CSS classes.
- * @param tw - Tailwind classes to merge.
- * @returns Composed class string or function.
- * @example
- * ```tsx
- * const newClassName = composeTailwindRenderProps(className, [
- *   focusVisibleStyles,
- *   "data-hovered:bg-accent",
- * ]);
- * ```
- */
-export function composeTailwindRenderProps<T>(
-  className: string | ((v: T) => string) | undefined,
-  tw: Parameters<typeof twMerge>[0],
-): string | ((v: T) => string) {
-  return composeRenderProps(className, (className) => twMerge(tw, className));
-}
-
-/**
  * Base field styles. Derived from shadcn Field.
  */
 export const fieldStyles = cva(
@@ -100,3 +80,23 @@ export const fieldStyles = cva(
 );
 
 export type FieldStylesProps = VariantProps<typeof fieldStyles>;
+
+/**
+ * Composes Tailwind CSS classes with render props.
+ * @param className - Static or function-based CSS classes.
+ * @param tw - Tailwind classes to merge.
+ * @returns Composed class string or function.
+ * @example
+ * ```tsx
+ * const newClassName = composeTailwindRenderProps(className, [
+ *   focusVisibleStyles,
+ *   "data-hovered:bg-accent",
+ * ]);
+ * ```
+ */
+export function composeTailwindRenderProps<T>(
+  className: string | ((v: T) => string) | undefined,
+  tw: Parameters<typeof twMerge>[0],
+): string | ((v: T) => string) {
+  return composeRenderProps(className, (className) => twMerge(tw, className));
+}
