@@ -7,7 +7,6 @@ import {
 } from "@/registry/default/ui/oui-base";
 import { ChevronDown } from "lucide-react";
 import * as Rac from "react-aria-components";
-import { twMerge } from "tailwind-merge";
 
 export type SelectionMode = NonNullable<
   React.ComponentProps<typeof Rac.Select>["selectionMode"]
@@ -44,7 +43,7 @@ export function SelectButton({
       className={composeTailwindRenderProps(className, [
         focusVisibleStyles,
         disabledStyles,
-        "flex w-fit items-center justify-between gap-2 rounded-md border border-input bg-transparent px-3 py-2 text-sm whitespace-nowrap shadow-xs transition-[color,box-shadow] aria-invalid:border-destructive aria-invalid:ring-destructive/20 data-disabled:cursor-not-allowed data-placeholder:text-muted-foreground data-[size=default]:h-9 data-[size=sm]:h-8 *:data-[slot=select-value]:line-clamp-1 *:data-[slot=select-value]:flex *:data-[slot=select-value]:items-center *:data-[slot=select-value]:gap-2 dark:bg-input/30 dark:aria-invalid:ring-destructive/40 dark:data-hovered:bg-input/50 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4 [&_svg:not([class*='text-'])]:text-muted-foreground",
+        "flex w-fit items-center justify-between gap-2 rounded-md border border-input bg-transparent px-3 py-2 text-sm whitespace-nowrap shadow-xs transition-[color,box-shadow] aria-invalid:border-destructive aria-invalid:ring-destructive/20 data-disabled:cursor-not-allowed data-[size=default]:h-9 data-[size=sm]:h-8 *:data-[slot=select-value]:line-clamp-1 *:data-[slot=select-value]:flex *:data-[slot=select-value]:items-center *:data-[slot=select-value]:gap-2 dark:bg-input/30 dark:aria-invalid:ring-destructive/40 dark:data-hovered:bg-input/50 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4 [&_svg:not([class*='text-'])]:text-muted-foreground",
       ])}
       {...props}
     >
@@ -65,10 +64,9 @@ export function SelectValue<T extends object>({
   return (
     <Rac.SelectValue
       data-slot="select-value"
-      className={Rac.composeRenderProps(
+      className={composeTailwindRenderProps(
         className,
-        (className, { isPlaceholder }) =>
-          twMerge(isPlaceholder ? "text-muted-foreground" : "", className),
+        "data-placeholder:text-muted-foreground",
       )}
       {...props}
     />
