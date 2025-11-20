@@ -198,14 +198,14 @@ export function OuiFieldDemo() {
                 isRequired
               />
               <div className="grid grid-cols-3 gap-4">
-                <Oui.SelectEx label="Month" placeholder="MM"items={monthItems}>
+                <Oui.SelectEx label="Month" placeholder="MM" items={monthItems}>
                   {(item) => (
                     <Oui.ListBoxItem key={item.id} value={item}>
                       {item.name}
                     </Oui.ListBoxItem>
                   )}
                 </Oui.SelectEx>
-                <Oui.SelectEx label="Year" placeholder="YYYY"items={yearItems}>
+                <Oui.SelectEx label="Year" placeholder="YYYY" items={yearItems}>
                   {(item) => (
                     <Oui.ListBoxItem key={item.id} value={item}>
                       {item.name}
@@ -223,15 +223,9 @@ export function OuiFieldDemo() {
               The billing address associated with your payment method
             </FieldDescription>
             <FieldGroup>
-              <Field orientation="horizontal">
-                <Oui.Checkbox
-                  className="flex-row items-center"
-                  defaultSelected
-                />
-                <FieldLabel className="font-normal">
-                  Same as shipping address
-                </FieldLabel>
-              </Field>
+              <Oui.Checkbox defaultSelected>
+                Same as shipping address
+              </Oui.Checkbox>
             </FieldGroup>
           </FieldSet>
           <FieldSet>
