@@ -63,7 +63,7 @@ function OuiCheckboxDemo() {
         <Oui.Checkbox
           id="toggle-2"
           defaultSelected
-          className="data-selected:border-blue-600 data-selected:bg-blue-600 data-selected:text-white dark:data-selected:border-blue-700 dark:data-selected:bg-blue-700"
+          className="**:data-[slot=checkbox-indicator]:group-data-selected:border-blue-600 **:data-[slot=checkbox-indicator]:group-data-selected:bg-blue-600 **:data-[slot=checkbox-indicator]:group-data-selected:text-white dark:**:data-[slot=checkbox-indicator]:group-data-selected:border-blue-700 dark:**:data-[slot=checkbox-indicator]:group-data-selected:bg-blue-700"
         />
         <div className="grid gap-1.5 font-normal">
           <p className="text-sm leading-none font-medium">

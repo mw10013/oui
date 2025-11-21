@@ -18,11 +18,12 @@ import { twMerge } from "tailwind-merge";
 export function Checkbox({ className, children, ...props }: Rac.CheckboxProps) {
   return (
     <Rac.Checkbox
-      {...props}
+      data-slot="checkbox"
       className={composeTailwindRenderProps(className, [
         labelComponentStyles,
         "group items-start gap-3 leading-none",
       ])}
+      {...props}
     >
       {(renderProps) => (
         <>
