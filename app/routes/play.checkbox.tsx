@@ -59,7 +59,7 @@ function OuiCheckboxDemo() {
         </div>
       </div>
       <Oui.Checkbox isDisabled>Enable notifications</Oui.Checkbox>
-      <Oui.Label className="flex w-full items-start gap-3 rounded-lg border p-3 hover:bg-accent/50 has-aria-checked:border-blue-600 has-aria-checked:bg-blue-50 dark:has-aria-checked:border-blue-900 dark:has-aria-checked:bg-blue-950">
+      <Oui.Label className="flex w-full items-start gap-3 rounded-lg border p-3 hover:bg-accent/50 has-data-selected:border-blue-600 has-data-selected:bg-blue-50 dark:has-data-selected:border-blue-900 dark:has-data-selected:bg-blue-950">
         <Oui.Checkbox
           id="toggle-2"
           defaultSelected
