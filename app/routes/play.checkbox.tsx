@@ -3,8 +3,7 @@
 import { Checkbox } from "@/registry/default/ui/checkbox";
 import { Label } from "@/registry/default/ui/label";
 import * as Oui from "@/registry/default/ui/oui-index";
-import * as Rac from "react-aria-components";
-import { twJoin, twMerge } from "tailwind-merge";
+import { twJoin } from "tailwind-merge";
 
 function CheckboxDemo() {
   return (
@@ -78,27 +77,6 @@ function OuiCheckboxDemo() {
           </p>
         </div>
       </Oui.Checkbox>
-
-      <Rac.Label
-        className={twMerge(
-          Oui.labelComponentStyles,
-          "items-start gap-3 rounded-lg border p-3 hover:bg-accent/50 has-data-selected:border-blue-600 has-data-selected:bg-blue-50 dark:has-data-selected:border-blue-900 dark:has-data-selected:bg-blue-950",
-        )}
-      >
-        <Oui.Checkbox
-          id="toggle-2a"
-          defaultSelected
-          className="**:data-[slot=checkbox-indicator]:group-data-selected:border-blue-600 **:data-[slot=checkbox-indicator]:group-data-selected:bg-blue-600 **:data-[slot=checkbox-indicator]:group-data-selected:text-white dark:**:data-[slot=checkbox-indicator]:group-data-selected:border-blue-700 dark:**:data-[slot=checkbox-indicator]:group-data-selected:bg-blue-700"
-        />
-        <div className="grid gap-1.5 font-normal">
-          <p className="text-sm leading-none font-medium">
-            Enable notifications
-          </p>
-          <p className="text-sm text-muted-foreground">
-            You can enable or disable notifications at any time.
-          </p>
-        </div>
-      </Rac.Label>
     </div>
   );
 }
