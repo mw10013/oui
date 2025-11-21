@@ -4,7 +4,7 @@ import { Checkbox } from "@/registry/default/ui/checkbox";
 import { Label } from "@/registry/default/ui/label";
 import * as Oui from "@/registry/default/ui/oui-index";
 import * as Rac from "react-aria-components";
-import { twMerge } from "tailwind-merge";
+import { twJoin, twMerge } from "tailwind-merge";
 
 function CheckboxDemo() {
   return (
@@ -50,9 +50,9 @@ function OuiCheckboxDemo() {
     <div className="flex flex-col gap-6">
       <Oui.Checkbox>Accept terms and conditions</Oui.Checkbox>
       <div className="flex items-start gap-3">
-        <Oui.Checkbox id="oui-terms-3" defaultSelected />
+        <Oui.Checkbox id="oui-terms-2" defaultSelected />
         <div className="grid gap-2">
-          <Oui.Label htmlFor="oui-terms-3" className="leading-none">
+          <Oui.Label htmlFor="oui-terms-2" className="leading-none">
             Accept terms and conditions
           </Oui.Label>
           <p className="text-sm text-muted-foreground">
@@ -61,15 +61,32 @@ function OuiCheckboxDemo() {
         </div>
       </div>
       <Oui.Checkbox isDisabled>Enable notifications</Oui.Checkbox>
+      <Oui.Checkbox
+        id="toggle-2"
+        defaultSelected
+        className={twJoin(
+          "rounded-lg border p-3 data-hovered:bg-accent/50 data-selected:border-blue-600 data-selected:bg-blue-50 dark:data-selected:border-blue-900 dark:data-selected:bg-blue-950",
+          "**:data-[slot=checkbox-indicator]:group-data-selected:border-blue-600 **:data-[slot=checkbox-indicator]:group-data-selected:bg-blue-600 **:data-[slot=checkbox-indicator]:group-data-selected:text-white dark:**:data-[slot=checkbox-indicator]:group-data-selected:border-blue-700 dark:**:data-[slot=checkbox-indicator]:group-data-selected:bg-blue-700",
+        )}
+      >
+        <div className="grid gap-1.5 font-normal">
+          <p className="text-sm leading-none font-medium">
+            Enable notifications
+          </p>
+          <p className="text-sm text-muted-foreground">
+            You can enable or disable notifications at any time.
+          </p>
+        </div>
+      </Oui.Checkbox>
+
       <Rac.Label
         className={twMerge(
           Oui.labelComponentStyles,
           "items-start gap-3 rounded-lg border p-3 hover:bg-accent/50 has-data-selected:border-blue-600 has-data-selected:bg-blue-50 dark:has-data-selected:border-blue-900 dark:has-data-selected:bg-blue-950",
         )}
-        // className="flex items-start gap-3 rounded-lg border p-3 hover:bg-accent/50 has-data-selected:border-blue-600 has-data-selected:bg-blue-50 dark:has-data-selected:border-blue-900 dark:has-data-selected:bg-blue-950"
       >
         <Oui.Checkbox
-          id="toggle-2"
+          id="toggle-2a"
           defaultSelected
           className="**:data-[slot=checkbox-indicator]:group-data-selected:border-blue-600 **:data-[slot=checkbox-indicator]:group-data-selected:bg-blue-600 **:data-[slot=checkbox-indicator]:group-data-selected:text-white dark:**:data-[slot=checkbox-indicator]:group-data-selected:border-blue-700 dark:**:data-[slot=checkbox-indicator]:group-data-selected:bg-blue-700"
         />
