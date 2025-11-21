@@ -3,6 +3,8 @@
 import { Checkbox } from "@/registry/default/ui/checkbox";
 import { Label } from "@/registry/default/ui/label";
 import * as Oui from "@/registry/default/ui/oui-index";
+import * as Rac from "react-aria-components";
+import { twMerge } from "tailwind-merge";
 
 function CheckboxDemo() {
   return (
@@ -59,7 +61,13 @@ function OuiCheckboxDemo() {
         </div>
       </div>
       <Oui.Checkbox isDisabled>Enable notifications</Oui.Checkbox>
-      <Oui.Label className="flex w-full items-start gap-3 rounded-lg border p-3 hover:bg-accent/50 has-data-selected:border-blue-600 has-data-selected:bg-blue-50 dark:has-data-selected:border-blue-900 dark:has-data-selected:bg-blue-950">
+      <Rac.Label
+        className={twMerge(
+          Oui.labelComponentStyles,
+          "items-start gap-3 rounded-lg border p-3 hover:bg-accent/50 has-data-selected:border-blue-600 has-data-selected:bg-blue-50 dark:has-data-selected:border-blue-900 dark:has-data-selected:bg-blue-950",
+        )}
+        // className="flex items-start gap-3 rounded-lg border p-3 hover:bg-accent/50 has-data-selected:border-blue-600 has-data-selected:bg-blue-50 dark:has-data-selected:border-blue-900 dark:has-data-selected:bg-blue-950"
+      >
         <Oui.Checkbox
           id="toggle-2"
           defaultSelected
@@ -73,7 +81,7 @@ function OuiCheckboxDemo() {
             You can enable or disable notifications at any time.
           </p>
         </div>
-      </Oui.Label>
+      </Rac.Label>
     </div>
   );
 }
