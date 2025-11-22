@@ -1,12 +1,12 @@
 "use client";
 
-import type { FieldStylesProps } from "@/registry/default/ui/oui-base";
+import type { FieldStylesProps } from "@/registry/default/ui/oui-field";
 import {
   composeTailwindRenderProps,
   disabledStyles,
-  fieldStyles,
   focusVisibleStyles,
 } from "@/registry/default/ui/oui-base";
+import { fieldStyles } from "@/registry/default/ui/oui-field";
 import { ChevronDown } from "lucide-react";
 import * as Rac from "react-aria-components";
 

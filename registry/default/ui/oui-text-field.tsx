@@ -1,10 +1,8 @@
 "use client";
 
-import type { FieldStylesProps } from "@/registry/default/ui/oui-base";
-import {
-  composeTailwindRenderProps,
-  fieldStyles,
-} from "@/registry/default/ui/oui-base";
+import type { FieldStylesProps } from "@/registry/default/ui/oui-field";
+import { composeTailwindRenderProps } from "@/registry/default/ui/oui-base";
+import { fieldStyles } from "@/registry/default/ui/oui-field";
 import * as Rac from "react-aria-components";
 
 /**
