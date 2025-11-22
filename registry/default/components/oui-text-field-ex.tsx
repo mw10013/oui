@@ -1,9 +1,8 @@
 "use client";
 
-import { FieldLabel } from "@/registry/default/ui/oui-field";
+import { FieldDescription, FieldLabel } from "@/registry/default/ui/oui-field";
 import { FieldError } from "@/registry/default/ui/oui-field-error";
 import { Input } from "@/registry/default/ui/oui-input";
-import { Text } from "@/registry/default/ui/oui-text";
 import { TextField } from "@/registry/default/ui/oui-text-field";
 import * as Rac from "react-aria-components";
 
@@ -40,7 +39,7 @@ export function TextFieldEx({
           ) : (
             <Input placeholder={placeholder} />
           )}
-          {description && <Text slot="description">{description}</Text>}
+          {description && <FieldDescription>{description}</FieldDescription>}
           <FieldError>{errorMessage}</FieldError>
         </>
       )}
