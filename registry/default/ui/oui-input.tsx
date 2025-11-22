@@ -6,7 +6,10 @@ import { cva } from "class-variance-authority";
 import * as Rac from "react-aria-components";
 import { twMerge } from "tailwind-merge";
 
-/** Derived from shadcn Input. */
+/**
+ * Derived from shadcn Input.
+ * The 'flex' base class enables flex item behavior in RAC Group layouts.
+ */
 export const inputVariants = cva(
   [
     "flex h-9 w-full min-w-0 bg-transparent px-3 py-1 text-base transition-[color,box-shadow] outline-none placeholder:text-muted-foreground md:text-sm dark:bg-input/30",

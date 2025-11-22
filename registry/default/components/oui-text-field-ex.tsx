@@ -1,8 +1,8 @@
 "use client";
 
+import { FieldLabel } from "@/registry/default/ui/oui-field";
 import { FieldError } from "@/registry/default/ui/oui-field-error";
 import { Input } from "@/registry/default/ui/oui-input";
-import { Label } from "@/registry/default/ui/oui-label";
 import { Text } from "@/registry/default/ui/oui-text";
 import { TextField } from "@/registry/default/ui/oui-text-field";
 import * as Rac from "react-aria-components";
@@ -26,7 +26,11 @@ export function TextFieldEx({
     <TextField {...props}>
       {(renderProps) => (
         <>
-          {label && typeof label === "string" ? <Label>{label}</Label> : label}
+          {label && typeof label === "string" ? (
+            <FieldLabel>{label}</FieldLabel>
+          ) : (
+            label
+          )}
           {children ? (
             typeof children === "function" ? (
               children(renderProps)
