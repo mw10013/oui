@@ -305,9 +305,53 @@ export function OuiFieldInputDemo() {
   );
 }
 
+export function FieldTextareaDemo() {
+  return (
+    <div className="w-full max-w-md">
+      <FieldSet>
+        <FieldGroup>
+          <Field>
+            <FieldLabel htmlFor="feedback">Feedback</FieldLabel>
+            <Textarea
+              id="feedback"
+              placeholder="Your feedback helps us improve..."
+              rows={4}
+            />
+            <FieldDescription>
+              Share your thoughts about our service.
+            </FieldDescription>
+          </Field>
+        </FieldGroup>
+      </FieldSet>
+    </div>
+  );
+}
+
+export function OuiFieldTextAreaDemo() {
+  return (
+    <div className="w-full max-w-md">
+      <Rac.Form>
+        <FieldSet>
+          <FieldGroup>
+            <Oui.TextField>
+              <Oui.FieldLabel>Feedback</Oui.FieldLabel>
+              <Oui.TextArea placeholder="Your feedback helps us improve..." />
+              <Oui.FieldDescription>
+                Share your thoughts about our service.
+              </Oui.FieldDescription>
+            </Oui.TextField>
+          </FieldGroup>
+        </FieldSet>
+      </Rac.Form>
+    </div>
+  );
+}
+
 export default function RouteComponent() {
   return (
     <div className="mx-auto grid max-w-7xl grid-cols-2 gap-8 p-6 *:border *:border-foreground *:p-4">
+      <FieldTextareaDemo />
+      <OuiFieldTextAreaDemo />
       <FieldInputDemo />
       <OuiFieldInputDemo />
       <FieldDemo />

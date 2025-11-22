@@ -2,7 +2,6 @@
 
 import type { VariantProps } from "class-variance-authority";
 import * as React from "react";
-import { composeTailwindRenderProps } from "@/registry/default/ui/oui-base";
 import { Label } from "@/registry/default/ui/oui-label";
 import { cva } from "class-variance-authority";
 import * as Rac from "react-aria-components";
@@ -39,7 +38,7 @@ export type FieldStylesProps = VariantProps<typeof fieldStyles>;
 
 /**
  * FieldLabel
- * Derived from shadcn FieldLabel in field.tsx
+ * Derived from shadcn FieldLabel.
  */
 export function FieldLabel({
   className,
