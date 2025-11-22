@@ -253,15 +253,9 @@ export function OuiFieldDemo() {
 
 export default function RouteComponent() {
   return (
-    <div className="mx-auto flex max-w-7xl flex-col gap-8 p-6">
-      <div className="flex flex-row gap-8">
-        <div className="flex flex-1 flex-col gap-4 border border-foreground p-4">
-          <FieldDemo />
-        </div>
-        <div className="flex flex-1 flex-col gap-4 border border-foreground p-4">
-          <OuiFieldDemo />
-        </div>
-      </div>
+    <div className="mx-auto grid max-w-7xl grid-cols-2 gap-8 p-6 *:border *:border-foreground *:p-4">
+      <FieldDemo />
+      <OuiFieldDemo />
     </div>
   );
 }
