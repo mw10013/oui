@@ -8,13 +8,17 @@ import * as Rac from "react-aria-components";
 /**
  * Derived styles from shadcn Field
  */
+export type TextFieldProps = Rac.TextFieldProps & FieldStylesProps;
+
 export function TextField({
   className,
-  orientation,
+  orientation = "vertical",
   ...props
-}: Rac.TextFieldProps & FieldStylesProps) {
+}: TextFieldProps) {
   return (
     <Rac.TextField
+      data-slot="field"
+      data-orientation={orientation}
       className={composeTailwindRenderProps(
         className,
         fieldStyles({ orientation }),
