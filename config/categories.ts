@@ -123,6 +123,11 @@ export const categories: Category[] = [
     ],
   },
   {
+    name: "Field",
+    slug: "field",
+    components: [{ name: "oui-field" }],
+  },
+  {
     name: "Field Error",
     slug: "field-error",
     components: [{ name: "oui-field-error" }, { name: "oui-field-error-demo" }],

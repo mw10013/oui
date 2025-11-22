@@ -84,16 +84,16 @@ export function FieldDescription({ className, ...props }: Rac.TextProps) {
  * FieldError
  * Derived from shadcn FieldError in field.tsx
  */
-export function FieldError({ className, ...props }: Rac.FieldErrorProps) {
-  return (
-    <Rac.FieldError
-      className={composeTailwindRenderProps(className, [
-        "text-sm font-normal text-destructive",
-      ])}
-      {...props}
-    />
-  );
-}
+// export function FieldError({ className, ...props }: Rac.FieldErrorProps) {
+//   return (
+//     <Rac.FieldError
+//       className={composeTailwindRenderProps(className, [
+//         "text-sm font-normal text-destructive",
+//       ])}
+//       {...props}
+//     />
+//   );
+// }
 
 /*
 

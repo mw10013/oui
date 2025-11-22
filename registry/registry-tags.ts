@@ -23,6 +23,7 @@ export const registryTags = [
   "dialog-ex-sheet",
   "disclosure",
   "disclosure-ex",
+  "field",
   "field-error",
   "form",
   "grid-list",

@@ -29,6 +29,7 @@ export * from "@/registry/default/ui/oui-checkbox";
 export * from "@/registry/default/ui/oui-combo-box";
 export * from "@/registry/default/ui/oui-dialog";
 export * from "@/registry/default/ui/oui-disclosure";
+export * from "@/registry/default/ui/oui-field";
 export * from "@/registry/default/ui/oui-field-error";
 export * from "@/registry/default/ui/oui-form";
 export * from "@/registry/default/ui/oui-group";
@@ -82,4 +83,3 @@ export * from "@/registry/default/components/oui-slider-ex";
 export * from "@/registry/default/components/oui-switch-ex";
 export * from "@/registry/default/components/oui-text-field-ex";
 export * from "@/registry/default/components/oui-tooltip-ex";
-

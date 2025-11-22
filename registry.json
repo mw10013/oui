@@ -1128,6 +1128,23 @@
       }
     },
     {
+      "name": "oui-field",
+      "type": "registry:ui",
+      "title": "Field",
+      "description": "React aria components for fields with shadcn characteristics.",
+      "files": [
+        {
+          "path": "registry/default/ui/oui-field.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "registryDependencies": ["@oui/oui-label"],
+      "dependencies": ["react-aria-components"],
+      "meta": {
+        "tags": ["field"]
+      }
+    },
+    {
       "name": "oui-field-error",
       "type": "registry:ui",
       "title": "Field Error",
@@ -1364,6 +1381,7 @@
         "@oui/oui-checkbox",
         "@oui/oui-dialog",
         "@oui/oui-disclosure",
+        "@oui/oui-field",
         "@oui/oui-field-error",
         "@oui/oui-form",
         "@oui/oui-group",
