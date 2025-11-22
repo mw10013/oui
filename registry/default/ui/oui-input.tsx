@@ -1,10 +1,12 @@
 "use client";
 
 import type { VariantProps } from "class-variance-authority";
-import { focusVisibleStyles } from "@/registry/default/ui/oui-base";
+import {
+  composeTailwindRenderProps,
+  focusVisibleStyles,
+} from "@/registry/default/ui/oui-base";
 import { cva } from "class-variance-authority";
 import * as Rac from "react-aria-components";
-import { twMerge } from "tailwind-merge";
 
 /**
  * Derived from shadcn Input.
@@ -42,14 +44,9 @@ export function Input({ variant, className, ...props }: InputProps) {
   return (
     <Rac.Input
       data-slot="input"
-      className={Rac.composeRenderProps(className, (className, renderProps) =>
-        twMerge(
-          inputVariants({
-            variant,
-            ...renderProps,
-            className,
-          }),
-        ),
+      className={composeTailwindRenderProps(
+        className,
+        inputVariants({ variant }),
       )}
       {...props}
     />
