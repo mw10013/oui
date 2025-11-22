@@ -23,7 +23,7 @@ export const labelComponentStyles = twJoin(
 );
 
 /**
- * Derrived from shadcn Label and FormLabel.
+ * Derived from shadcn Label and FormLabel.
  */
 export function Label({ className, ...props }: Rac.LabelProps) {
   return (
@@ -31,7 +31,7 @@ export function Label({ className, ...props }: Rac.LabelProps) {
       data-slot="label"
       className={twMerge(
         baseLabelStyles,
-        "w-fit leading-snug", // shadcn FormLabel override. Should it check data-slot?
+        "group/field:w-fit group/field:leading-snug", // shadcn FormLabel override.
         "group/field-label peer/field-label group-data-disabled:pointer-events-none group-data-disabled:opacity-50 group-data-disabled/field:opacity-50 peer-data-disabled:cursor-not-allowed peer-data-disabled:opacity-50",
         "has-[>[data-slot=field]]:w-full has-[>[data-slot=field]]:flex-col has-[>[data-slot=field]]:rounded-md has-[>[data-slot=field]]:border *:data-[slot=field]:p-4",
         "has-data-[state=checked]:border-primary has-data-[state=checked]:bg-primary/5 dark:has-data-[state=checked]:bg-primary/10",
