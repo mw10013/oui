@@ -336,7 +336,16 @@ export function FieldInputErrorDemo() {
                 placeholder="••••••••"
                 aria-invalid
               />
-              <FieldError>Password must be at least 8 characters.</FieldError>
+              <FieldError
+                errors={[
+                  { message: "Password must be at least 8 characters." },
+                  { message: "Password must contain at least one number." },
+                  {
+                    message:
+                      "Password must contain at least one uppercase letter.",
+                  },
+                ]}
+              />
             </Field>
           </FieldGroup>
         </FieldSet>
@@ -348,26 +357,33 @@ export function FieldInputErrorDemo() {
 export function OuiFieldInputErrorDemo() {
   return (
     <div className="w-full max-w-md">
-      <Rac.Form>
+      <Rac.Form
+        validationErrors={{
+          username: "Username is required.",
+          password: [
+            "Password must be at least 8 characters.",
+            "Password must contain at least one number.",
+            "Password must contain at least one uppercase letter.",
+          ],
+        }}
+      >
         <FieldSet>
           <FieldGroup>
-            <Oui.TextField isInvalid>
+            <Oui.TextField name="username">
               <Oui.FieldLabel>Username</Oui.FieldLabel>
               <Oui.Input type="text" placeholder="Max Leiter" />
               <Oui.FieldDescription>
                 Choose a unique username for your account.
               </Oui.FieldDescription>
-              <Oui.FieldError>Username is required.</Oui.FieldError>
+              <Oui.FieldError />
             </Oui.TextField>
-            <Oui.TextField isInvalid>
+            <Oui.TextField name="password">
               <Oui.FieldLabel>Password</Oui.FieldLabel>
               <Oui.FieldDescription>
                 Must be at least 8 characters long.
               </Oui.FieldDescription>
               <Oui.Input type="password" placeholder="••••••••" />
-              <Oui.FieldError>
-                Password must be at least 8 characters.
-              </Oui.FieldError>
+              <Oui.FieldError />
             </Oui.TextField>
           </FieldGroup>
         </FieldSet>

@@ -6,6 +6,7 @@ import { Label } from "@/registry/default/ui/oui-label";
 import { cva } from "class-variance-authority";
 import * as Rac from "react-aria-components";
 import { twJoin, twMerge } from "tailwind-merge";
+import { composeTailwindRenderProps } from "./oui-base";
 
 /**
  * Derived from shadcn Field.
@@ -85,45 +86,47 @@ export function FieldDescription({ className, ...props }: Rac.TextProps) {
   );
 }
 
-/**
- * FieldError
- * Derived from shadcn FieldError in field.tsx
- */
-// export function FieldError({ className, ...props }: Rac.FieldErrorProps) {
-//   return (
-//     <Rac.FieldError
-//       className={composeTailwindRenderProps(className, [
-//         "text-sm font-normal text-destructive",
-//       ])}
-//       {...props}
-//     />
-//   );
-// }
-
-/*
-
-export function FieldError({ className, ...props }: Rac.FieldErrorProps) {
+export function FieldError({
+  className,
+  children,
+  ...props
+}: Rac.FieldErrorProps) {
   // https://github.com/adobe/react-spectrum/issues/7525
   return (
-    <Rac.TextContext.Provider value={{ elementType: "p" }}>
+    <Rac.TextContext.Provider value={{ elementType: "div" }}>
       <Rac.FieldError
-        data-slot="form-message"
+        data-slot="field-error"
         className={composeTailwindRenderProps(
           className,
-          "text-sm text-destructive",
+          "text-sm font-normal text-destructive",
         )}
         {...props}
-      />
+      >
+        {(renderProps) =>
+          children ? (
+            typeof children === "function" ? (
+              children(renderProps)
+            ) : (
+              children
+            )
+          ) : renderProps.isInvalid ? (
+            renderProps.validationErrors.length === 1 ? (
+              renderProps.validationErrors[0]
+            ) : (
+              <ul className="ml-4 flex list-disc flex-col gap-1">
+                {renderProps.validationErrors.map((error, index) => (
+                  <li key={index}>{error}</li>
+                ))}
+              </ul>
+            )
+          ) : null
+        }
+      </Rac.FieldError>
     </Rac.TextContext.Provider>
   );
 }
 
-*/
-
-/*
- * Derived from shadcn FormMessage
- * https://github.com/adobe/react-spectrum/issues/7525
- 
+/* shadcn FieldError
 
 function FieldError({
   className,
