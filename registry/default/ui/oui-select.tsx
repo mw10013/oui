@@ -14,11 +14,16 @@ export type SelectionMode = NonNullable<
   React.ComponentProps<typeof Rac.Select>["selectionMode"]
 >;
 
+export type SelectProps<
+  T extends object,
+  M extends SelectionMode = "single",
+> = Rac.SelectProps<T, M> & FieldStylesProps;
+
 export function Select<T extends object, M extends SelectionMode = "single">({
   className,
   orientation,
   ...props
-}: Rac.SelectProps<T, M> & FieldStylesProps) {
+}: SelectProps<T, M>) {
   return (
     <Rac.Select
       data-slot="select"
