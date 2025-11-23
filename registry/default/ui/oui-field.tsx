@@ -74,10 +74,10 @@ export function FieldDescription({ className, ...props }: Rac.TextProps) {
         // assuming it's followed by FieldError for tighter spacing. However, in RAC components, hidden elements
         // (e.g., aria-hidden divs) can make FieldDescription second-to-last even without FieldError, causing unwanted margin.
         //
-        // Instead, `&:has(+ :not([aria-hidden])):-mt-1` applies margin only when followed by a visible sibling (like FieldError),
+        // Instead, `&:has(+:not([aria-hidden])):-mt-1` applies margin only when followed by a visible sibling (like FieldError),
         // avoiding RAC hidden elements while preserving the spacing intent.
         "text-sm leading-normal font-normal text-muted-foreground group-has-data-[orientation=horizontal]/field:text-balance",
-        "[&:has(+ :not([aria-hidden]))]:-mt-1 last:mt-0 [[data-variant=legend]+&]:-mt-1.5",
+        "[&:has(+:not([aria-hidden]))]:-mt-1 last:mt-0 [[data-variant=legend]+&]:-mt-1.5",
         "[&>a]:underline [&>a]:underline-offset-4 [&>a:hover]:text-primary",
         className,
       )}
