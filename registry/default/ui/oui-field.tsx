@@ -70,14 +70,10 @@ export function FieldDescription({ className, ...props }: Rac.TextProps) {
       data-slot="field-description"
       elementType="p"
       className={twMerge(
-        // The original shadcn used `nth-last-2:-mt-1` to apply negative margin when FieldDescription is second-to-last,
-        // assuming it's followed by FieldError for tighter spacing. However, in RAC components, hidden elements
-        // (e.g., aria-hidden divs) can make FieldDescription second-to-last even without FieldError, causing unwanted margin.
-        //
-        // Instead, `&:has(+:not([aria-hidden])):-mt-1` applies margin only when followed by a visible sibling (like FieldError),
-        // avoiding RAC hidden elements while preserving the spacing intent.
         "text-sm leading-normal font-normal text-muted-foreground group-has-data-[orientation=horizontal]/field:text-balance",
-        "[&:has(+:not([aria-hidden]))]:-mt-1 last:mt-0 [[data-variant=legend]+&]:-mt-1.5",
+        // shadcn uses `last:mt-0` which misses with RAC `aria-hidden` so we add `[&:has(+[aria-hidden])]:mt-0` as well.
+        // shadcn uses `nth-last-2:-mt-1` which breaks with RAC `aria-hidden` so we use `[&:has(+:not([aria-hidden]))]:-mt-1` instead.
+        "last:mt-0 [&:has(+:not([aria-hidden]))]:-mt-1 [&:has(+[aria-hidden])]:mt-0 [[data-variant=legend]+&]:-mt-1.5",
         "[&>a]:underline [&>a]:underline-offset-4 [&>a:hover]:text-primary",
         className,
       )}
