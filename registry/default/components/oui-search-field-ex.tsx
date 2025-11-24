@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { FieldError } from "@/registry/default/ui/oui-field-error";
+import { FieldError } from "@/registry/default/ui/oui-field";
 import { Input } from "@/registry/default/ui/oui-input";
 import { Label } from "@/registry/default/ui/oui-label";
 import { SearchField } from "@/registry/default/ui/oui-search-field";

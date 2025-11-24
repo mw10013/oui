@@ -570,7 +570,7 @@
       ],
       "registryDependencies": [
         "@oui/oui-checkbox-group",
-        "@oui/oui-field-error",
+        "@oui/oui-field",
         "@oui/oui-label",
         "@oui/oui-text"
       ],
@@ -659,7 +659,7 @@
       "registryDependencies": [
         "@oui/oui-combo-box",
         "@oui/oui-button",
-        "@oui/oui-field-error",
+        "@oui/oui-field",
         "@oui/oui-group",
         "@oui/oui-input",
         "@oui/oui-label",
@@ -1141,45 +1141,7 @@
       "registryDependencies": ["@oui/oui-label"],
       "dependencies": ["react-aria-components"],
       "meta": {
-        "tags": ["field"]
-      }
-    },
-    {
-      "name": "oui-field-error",
-      "type": "registry:ui",
-      "title": "Field Error",
-      "description": "React aria components Field Error with shadcn characteristics.",
-      "files": [
-        {
-          "path": "registry/default/ui/oui-field-error.tsx",
-          "type": "registry:ui"
-        }
-      ],
-      "registryDependencies": ["@oui/oui-base"],
-      "dependencies": ["react-aria-components"],
-      "meta": {
-        "tags": ["field-error"]
-      }
-    },
-    {
-      "name": "oui-field-error-demo",
-      "type": "registry:component",
-      "files": [
-        {
-          "path": "registry/default/components/oui-field-error-demo.tsx",
-          "type": "registry:component"
-        }
-      ],
-      "registryDependencies": [
-        "@oui/oui-field-error",
-        "@oui/oui-input",
-        "@oui/oui-label",
-        "@oui/oui-text-field"
-      ],
-      "meta": {
-        "tags": ["field-error", "input", "label", "text-field"],
-        "canPreview": true,
-        "canOpenInV0": true
+        "tags": ["field", "field-error"]
       }
     },
     {
@@ -1382,7 +1344,6 @@
         "@oui/oui-dialog",
         "@oui/oui-disclosure",
         "@oui/oui-field",
-        "@oui/oui-field-error",
         "@oui/oui-form",
         "@oui/oui-group",
         "@oui/oui-header",
@@ -2207,7 +2168,7 @@
         }
       ],
       "registryDependencies": [
-        "@oui/oui-field-error",
+        "@oui/oui-field",
         "@oui/oui-group",
         "@oui/oui-input",
         "@oui/oui-label",
@@ -2346,7 +2307,7 @@
         }
       ],
       "registryDependencies": [
-        "@oui/oui-field-error",
+        "@oui/oui-field",
         "@oui/oui-label",
         "@oui/oui-radio-group",
         "@oui/oui-text"
@@ -2459,7 +2420,7 @@
         }
       ],
       "registryDependencies": [
-        "@oui/oui-field-error",
+        "@oui/oui-field",
         "@oui/oui-label",
         "@oui/oui-input",
         "@oui/oui-search-field",
@@ -2567,7 +2528,7 @@
         }
       ],
       "registryDependencies": [
-        "@oui/oui-field-error",
+        "@oui/oui-field",
         "@oui/oui-label",
         "@oui/oui-popover",
         "@oui/oui-select",
@@ -2662,7 +2623,7 @@
         }
       ],
       "registryDependencies": [
-        "@oui/oui-field-error",
+        "@oui/oui-field",
         "@oui/oui-label",
         "@oui/oui-popover",
         "@oui/oui-select",
@@ -3130,7 +3091,7 @@
         }
       ],
       "registryDependencies": [
-        "@oui/oui-field-error",
+        "@oui/oui-field",
         "@oui/oui-input",
         "@oui/oui-label",
         "@oui/oui-text",
@@ -3157,7 +3118,7 @@
         "@oui/oui-text-field",
         "@oui/oui-input",
         "@oui/oui-label",
-        "@oui/oui-field-error",
+        "@oui/oui-field",
         "@oui/oui-text"
       ],
       "meta": {
@@ -3202,7 +3163,7 @@
         "@oui/oui-text-field",
         "@oui/oui-input",
         "@oui/oui-label",
-        "@oui/oui-field-error",
+        "@oui/oui-field",
         "@oui/oui-text"
       ],
       "meta": {

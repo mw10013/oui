@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { FieldError } from "@/registry/default/ui/oui-field-error";
+import { FieldError } from "@/registry/default/ui/oui-field";
 import { Label } from "@/registry/default/ui/oui-label";
 import { RadioGroup } from "@/registry/default/ui/oui-radio-group";
 import { Text } from "@/registry/default/ui/oui-text";

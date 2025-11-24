@@ -12,7 +12,6 @@
     "@oui/oui-dialog",
     "@oui/oui-disclosure",
     "@oui/oui-field",
-    "@oui/oui-field-error",
     "@oui/oui-form",
     "@oui/oui-group",
     "@oui/oui-header",

@@ -19,7 +19,8 @@
   ],
   "meta": {
     "tags": [
-      "field"
+      "field",
+      "field-error"
     ]
   }
 }

@@ -3,7 +3,7 @@
   "name": "oui-text-field-demo",
   "type": "registry:component",
   "registryDependencies": [
-    "@oui/oui-field-error",
+    "@oui/oui-field",
     "@oui/oui-input",
     "@oui/oui-label",
     "@oui/oui-text",
@@ -12,7 +12,7 @@
   "files": [
     {
       "path": "registry/default/components/oui-text-field-demo.tsx",
-      "content": "\"use client\";\n\nimport { FieldError } from \"@/registry/default/ui/oui-field-error\";\nimport { Input } from \"@/registry/default/ui/oui-input\";\nimport { Label } from \"@/registry/default/ui/oui-label\";\nimport { Text } from \"@/registry/default/ui/oui-text\";\nimport { TextField } from \"@/registry/default/ui/oui-text-field\";\n\nexport default function Component() {\n  return (\n    <TextField>\n      <Label>Text Field</Label>\n      <Input placeholder=\"Placeholder\" />\n      <Text slot=\"description\">Description</Text>\n      <FieldError />\n    </TextField>\n  );\n}\n",
+      "content": "\"use client\";\n\nimport { FieldError } from \"@/registry/default/ui/oui-field\";\nimport { Input } from \"@/registry/default/ui/oui-input\";\nimport { Label } from \"@/registry/default/ui/oui-label\";\nimport { Text } from \"@/registry/default/ui/oui-text\";\nimport { TextField } from \"@/registry/default/ui/oui-text-field\";\n\nexport default function Component() {\n  return (\n    <TextField>\n      <Label>Text Field</Label>\n      <Input placeholder=\"Placeholder\" />\n      <Text slot=\"description\">Description</Text>\n      <FieldError />\n    </TextField>\n  );\n}\n",
       "type": "registry:component"
     }
   ],

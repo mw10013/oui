@@ -1,7 +1,10 @@
 "use client";
 
-import { FieldDescription, FieldLabel } from "@/registry/default/ui/oui-field";
-import { FieldError } from "@/registry/default/ui/oui-field-error";
+import {
+  FieldDescription,
+  FieldError,
+  FieldLabel,
+} from "@/registry/default/ui/oui-field";
 import { Input } from "@/registry/default/ui/oui-input";
 import { TextField } from "@/registry/default/ui/oui-text-field";
 import * as Rac from "react-aria-components";

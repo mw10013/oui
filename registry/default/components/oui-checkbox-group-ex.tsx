@@ -1,7 +1,7 @@
 "use client";
 
 import { CheckboxGroup } from "@/registry/default/ui/oui-checkbox-group";
-import { FieldError } from "@/registry/default/ui/oui-field-error";
+import { FieldError } from "@/registry/default/ui/oui-field";
 import { Label } from "@/registry/default/ui/oui-label";
 import { Text } from "@/registry/default/ui/oui-text";
 import * as Rac from "react-aria-components";

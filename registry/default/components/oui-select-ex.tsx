@@ -1,7 +1,7 @@
 "use client";
 
 import type { SelectionMode } from "@/registry/default/ui/oui-select";
-import { FieldError } from "@/registry/default/ui/oui-field-error";
+import { FieldError } from "@/registry/default/ui/oui-field";
 import { Label } from "@/registry/default/ui/oui-label";
 import { Popover } from "@/registry/default/ui/oui-popover";
 import {
