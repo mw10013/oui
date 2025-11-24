@@ -5,24 +5,20 @@
   "registryDependencies": [
     "@oui/oui-field",
     "@oui/oui-input",
-    "@oui/oui-label",
-    "@oui/oui-text",
     "@oui/oui-text-field"
   ],
   "files": [
     {
       "path": "registry/default/components/oui-text-field-demo.tsx",
-      "content": "\"use client\";\n\nimport { FieldError } from \"@/registry/default/ui/oui-field\";\nimport { Input } from \"@/registry/default/ui/oui-input\";\nimport { Label } from \"@/registry/default/ui/oui-label\";\nimport { Text } from \"@/registry/default/ui/oui-text\";\nimport { TextField } from \"@/registry/default/ui/oui-text-field\";\n\nexport default function Component() {\n  return (\n    <TextField>\n      <Label>Text Field</Label>\n      <Input placeholder=\"Placeholder\" />\n      <Text slot=\"description\">Description</Text>\n      <FieldError />\n    </TextField>\n  );\n}\n",
+      "content": "\"use client\";\n\nimport {\n  FieldDescription,\n  FieldGroup,\n  FieldLabel,\n  FieldSet,\n} from \"@/registry/default/ui/oui-field\";\nimport { Input } from \"@/registry/default/ui/oui-input\";\nimport { TextField } from \"@/registry/default/ui/oui-text-field\";\nimport * as Rac from \"react-aria-components\";\n\nexport default function Component() {\n  return (\n    <div className=\"w-full max-w-md\">\n      <Rac.Form>\n        <FieldSet>\n          <FieldGroup>\n            <TextField>\n              <FieldLabel>Username</FieldLabel>\n              <Input type=\"text\" placeholder=\"Max Leiter\" />\n              <FieldDescription>\n                Choose a unique username for your account.\n              </FieldDescription>\n            </TextField>\n            <TextField>\n              <FieldLabel>Password</FieldLabel>\n              <FieldDescription>\n                Must be at least 8 characters long.\n              </FieldDescription>\n              <Input type=\"password\" placeholder=\"••••••••\" />\n            </TextField>\n          </FieldGroup>\n        </FieldSet>\n      </Rac.Form>\n    </div>\n  );\n}\n",
       "type": "registry:component"
     }
   ],
   "meta": {
     "tags": [
       "text-field",
-      "field-error",
-      "input",
-      "label",
-      "text"
+      "field",
+      "input"
     ],
     "canPreview": true,
     "canOpenInV0": true

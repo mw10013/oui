@@ -3075,10 +3075,10 @@
           "type": "registry:ui"
         }
       ],
-      "registryDependencies": ["@oui/oui-base"],
+      "registryDependencies": ["@oui/oui-base", "@oui/oui-field"],
       "dependencies": ["react-aria-components"],
       "meta": {
-        "tags": ["text-field"]
+        "tags": ["text-field", "field"]
       }
     },
     {
@@ -3093,12 +3093,10 @@
       "registryDependencies": [
         "@oui/oui-field",
         "@oui/oui-input",
-        "@oui/oui-label",
-        "@oui/oui-text",
         "@oui/oui-text-field"
       ],
       "meta": {
-        "tags": ["text-field", "field-error", "input", "label", "text"],
+        "tags": ["text-field", "field", "input"],
         "canPreview": true,
         "canOpenInV0": true
       }

@@ -2,11 +2,28 @@
 
 import type { VariantProps } from "class-variance-authority";
 import * as React from "react";
+import {
+  FieldContent,
+  FieldGroup,
+  FieldLegend,
+  FieldSeparator,
+  FieldSet,
+  FieldTitle,
+} from "@/registry/default/ui/field";
 import { Label } from "@/registry/default/ui/oui-label";
 import { cva } from "class-variance-authority";
 import * as Rac from "react-aria-components";
 import { twJoin, twMerge } from "tailwind-merge";
 import { composeTailwindRenderProps } from "./oui-base";
+
+export {
+  FieldSet,
+  FieldGroup,
+  FieldLegend,
+  FieldSeparator,
+  FieldContent,
+  FieldTitle,
+};
 
 /**
  * Derived from shadcn Field.

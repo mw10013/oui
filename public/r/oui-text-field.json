@@ -8,7 +8,8 @@
     "react-aria-components"
   ],
   "registryDependencies": [
-    "@oui/oui-base"
+    "@oui/oui-base",
+    "@oui/oui-field"
   ],
   "files": [
     {
@@ -19,7 +20,8 @@
   ],
   "meta": {
     "tags": [
-      "text-field"
+      "text-field",
+      "field"
     ]
   }
 }

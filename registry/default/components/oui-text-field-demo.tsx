@@ -1,18 +1,38 @@
 "use client";
 
-import { FieldError } from "@/registry/default/ui/oui-field";
+import {
+  FieldDescription,
+  FieldGroup,
+  FieldLabel,
+  FieldSet,
+} from "@/registry/default/ui/oui-field";
 import { Input } from "@/registry/default/ui/oui-input";
-import { Label } from "@/registry/default/ui/oui-label";
-import { Text } from "@/registry/default/ui/oui-text";
 import { TextField } from "@/registry/default/ui/oui-text-field";
+import * as Rac from "react-aria-components";
 
 export default function Component() {
   return (
-    <TextField>
-      <Label>Text Field</Label>
-      <Input placeholder="Placeholder" />
-      <Text slot="description">Description</Text>
-      <FieldError />
-    </TextField>
+    <div className="w-full max-w-md">
+      <Rac.Form>
+        <FieldSet>
+          <FieldGroup>
+            <TextField>
+              <FieldLabel>Username</FieldLabel>
+              <Input type="text" placeholder="Max Leiter" />
+              <FieldDescription>
+                Choose a unique username for your account.
+              </FieldDescription>
+            </TextField>
+            <TextField>
+              <FieldLabel>Password</FieldLabel>
+              <FieldDescription>
+                Must be at least 8 characters long.
+              </FieldDescription>
+              <Input type="password" placeholder="••••••••" />
+            </TextField>
+          </FieldGroup>
+        </FieldSet>
+      </Rac.Form>
+    </div>
   );
 }
