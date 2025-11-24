@@ -1,6 +1,7 @@
 import OuiTextFieldDemo from "@/registry/default/components/oui-text-field-demo";
 import {
   Field,
+  FieldContent,
   FieldDescription,
   FieldGroup,
   FieldLabel,
@@ -8,7 +9,7 @@ import {
 } from "@/registry/default/ui/field";
 import { Input } from "@/registry/default/ui/input";
 
-export function TextFieldDemo() {
+function TextFieldDemo() {
   return (
     <div className="w-full max-w-md">
       <form>
@@ -35,11 +36,75 @@ export function TextFieldDemo() {
   );
 }
 
+function TextFieldDemoHorizontal() {
+  return (
+    <div className="w-full max-w-lg">
+      <form>
+        <FieldSet>
+          <FieldGroup className="gap-4">
+            <Field className="grid grid-cols-[5rem_1fr] items-start gap-x-4 gap-y-1">
+              <FieldLabel htmlFor="username" className="pt-2">
+                Username
+              </FieldLabel>
+              <Input id="username" type="text" placeholder="Max Leiter" />
+              <FieldDescription className="col-start-2">
+                Choose a unique username for your account.
+              </FieldDescription>
+            </Field>
+            <Field className="grid grid-cols-[5rem_1fr] items-start gap-x-4 gap-y-1">
+              <FieldLabel htmlFor="password" className="pt-2">
+                Password
+              </FieldLabel>
+              <Input id="password" type="password" placeholder="••••••••" />
+              <FieldDescription className="col-start-2">
+                Must be at least 8 characters long.
+              </FieldDescription>
+            </Field>
+          </FieldGroup>
+        </FieldSet>
+      </form>
+    </div>
+  );
+}
+
+function TextFieldDemoResponsive() {
+  return (
+    <div className="w-full max-w-lg">
+      <form>
+        <FieldSet>
+          <FieldGroup>
+            <Field orientation="responsive">
+              <FieldContent>
+                <FieldLabel htmlFor="username">Username</FieldLabel>
+                <FieldDescription>
+                  Choose a unique username for your account.
+                </FieldDescription>
+              </FieldContent>
+              <Input id="username" type="text" placeholder="Max Leiter" />
+            </Field>
+            <Field orientation="responsive">
+              <FieldContent>
+                <FieldLabel htmlFor="password">Password</FieldLabel>
+                <FieldDescription>
+                  Must be at least 8 characters long.
+                </FieldDescription>
+              </FieldContent>
+              <Input id="password" type="password" placeholder="••••••••" />
+            </Field>
+          </FieldGroup>
+        </FieldSet>
+      </form>
+    </div>
+  );
+}
+
 export default function RouteComponent() {
   return (
-    <div className="mx-auto grid max-w-7xl grid-cols-2 gap-8 p-6 *:border *:border-foreground *:p-4">
+    <div className="mx-auto grid max-w-7xl grid-cols-1 gap-8 p-6 *:border *:border-foreground *:p-4">
       <TextFieldDemo />
       <OuiTextFieldDemo />
+      <TextFieldDemoHorizontal />
+      <TextFieldDemoResponsive />
     </div>
   );
 }

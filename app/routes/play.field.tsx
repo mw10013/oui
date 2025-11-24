@@ -22,7 +22,7 @@ import {
 import { Textarea } from "@/registry/default/ui/textarea";
 import * as Rac from "react-aria-components";
 
-export function FieldDemo() {
+function FieldDemo() {
   return (
     <div className="w-full max-w-md">
       <form>
@@ -153,7 +153,7 @@ export function FieldDemo() {
   );
 }
 
-export function OuiFieldDemo() {
+function OuiFieldDemo() {
   return (
     <div className="w-full max-w-md">
       <Rac.Form>
@@ -265,7 +265,7 @@ export function OuiFieldDemo() {
   );
 }
 
-export function FieldInputDemo() {
+function FieldInputDemo() {
   return (
     <div className="w-full max-w-md">
       <form>
@@ -292,7 +292,7 @@ export function FieldInputDemo() {
   );
 }
 
-export function OuiFieldInputDemo() {
+function OuiFieldInputDemo() {
   return (
     <div className="w-full max-w-md">
       <Rac.Form>
@@ -319,7 +319,7 @@ export function OuiFieldInputDemo() {
   );
 }
 
-export function FieldInputErrorDemo() {
+function FieldInputErrorDemo() {
   return (
     <div className="w-full max-w-md">
       <form>
@@ -367,7 +367,7 @@ export function FieldInputErrorDemo() {
   );
 }
 
-export function OuiFieldInputErrorDemo() {
+function OuiFieldInputErrorDemo() {
   return (
     <div className="w-full max-w-md">
       <Rac.Form
@@ -405,7 +405,7 @@ export function OuiFieldInputErrorDemo() {
   );
 }
 
-export function FieldTextareaDemo() {
+function FieldTextareaDemo() {
   return (
     <div className="w-full max-w-md">
       <FieldSet>
@@ -427,7 +427,7 @@ export function FieldTextareaDemo() {
   );
 }
 
-export function OuiFieldTextAreaDemo() {
+function OuiFieldTextAreaDemo() {
   return (
     <div className="w-full max-w-md">
       <Rac.Form>
@@ -447,7 +447,7 @@ export function OuiFieldTextAreaDemo() {
   );
 }
 
-export function FieldSelectDemo() {
+function FieldSelectDemo() {
   return (
     <div className="w-full max-w-md">
       <Field>
@@ -475,7 +475,7 @@ export function FieldSelectDemo() {
   );
 }
 
-export function OuiFieldSelectDemo() {
+function OuiFieldSelectDemo() {
   return (
     <div className="w-full max-w-md">
       <Oui.Select placeholder="Choose department">
