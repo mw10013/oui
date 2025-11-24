@@ -48,9 +48,8 @@ export function Field({
       className={twMerge(fieldStyles({ orientation }), className)}
       {...props}
     />
-  )
+  );
 }
-
 
 export type FieldStylesProps = VariantProps<typeof fieldStyles>;
 
@@ -88,9 +87,23 @@ export function FieldDescription({ className, ...props }: Rac.TextProps) {
       elementType="p"
       className={twMerge(
         "text-sm leading-normal font-normal text-muted-foreground group-has-data-[orientation=horizontal]/field:text-balance",
-        // shadcn uses `last:mt-0` which misses with RAC `aria-hidden` so we add `[&:has(+[aria-hidden])]:mt-0` as well.
-        // shadcn uses `nth-last-2:-mt-1` which breaks with RAC `aria-hidden` so we use `[&:has(+[data-slot=field-error])]:-mt-1` instead.
-        "last:mt-0 [&:has(+[aria-hidden])]:mt-0 [&:has(+[data-slot=field-error])]:-mt-1 [[data-variant=legend]+&]:-mt-1.5",
+        // shadcn uses `last:mt-0` which breaks with RAC `aria-hidden`.
+        // `&:not(:has(~_:not([aria-hidden])))` selects the last visible FieldDescription (no subsequent visible siblings).
+        // - ~_ : any subsequent sibling (space from _)
+        // - :not([aria-hidden]) : not hidden (visible)
+        // - :has(...) : has a subsequent visible sibling
+        // - :not(...) : does NOT have subsequent visible siblings → last visible
+        "[&:not(:has(~_:not([aria-hidden])))]:mt-0",
+        // shadcn uses `nth-last-2:-mt-1` which breaks with RAC `aria-hidden`.
+        // `&:has(+_:not([aria-hidden])):not(:has(+_:not([aria-hidden])~_:not([aria-hidden])))` selects the second-to-last visible FieldDescription (exactly one subsequent visible sibling).
+        // - +_ : immediately following sibling (space from _)
+        // - :not([aria-hidden]) : not hidden (visible)
+        // - First :has(...) : has an adjacent visible sibling
+        // - Second :has(...) : that adjacent visible has another visible sibling after it
+        // - :not(second :has) : the adjacent visible does NOT have another after → adjacent is last visible
+        // - Combined: has adjacent visible (which is last) → this is second-to-last visible
+        "[&:has(+_:not([aria-hidden])):not(:has(+_:not([aria-hidden])~_:not([aria-hidden])))]:-mt-1",
+        "[[data-variant=legend]+&]:-mt-1.5",
         "[&>a]:underline [&>a]:underline-offset-4 [&>a:hover]:text-primary",
         className,
       )}
