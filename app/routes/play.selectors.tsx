@@ -42,6 +42,29 @@ export default function RouteComponent() {
         <FieldError />
         <RacHidden />
       </Field>
+      {/* Test cases for second to last visible */}
+      <Field>
+        <FieldDescription>Test: FD + Input</FieldDescription>
+        <Oui.Input />
+      </Field>
+      <Field>
+        <FieldDescription>Test: FD + Input + RacHidden</FieldDescription>
+        <Oui.Input />
+        <RacHidden />
+      </Field>
+      <Field>
+        <FieldDescription>Test: FD + Input + Error</FieldDescription>
+        <Oui.Input />
+        <FieldError />
+      </Field>
+      <Field>
+        <FieldDescription>
+          Test: FD + Input + Error + RacHidden
+        </FieldDescription>
+        <Oui.Input />
+        <FieldError />
+        <RacHidden />
+      </Field>
       <OuiFieldCheckboxDemo />
       <OuiFieldCheckboxDemo1 />
     </div>
@@ -69,7 +92,7 @@ function FieldDescription({ children, ...props }: React.ComponentProps<"p">) {
         "[&:has(+[aria-hidden])]:after:content-[':_last_visible']",
         // "[&:has(+:not([aria-hidden]))]:after:content-[':_second_last_visible']",
         "[&:has(+[data-slot=field-error])]:after:content-[':_followed_by_field_error']",
-        "[&:has(+_:not([aria-hidden]):not(:has(~_:not([aria-hidden]))))]:after:content-[':_second_last_visible']",
+        "[&:has(+_:not([aria-hidden])):not(:has(+_:not([aria-hidden])~_:not([aria-hidden])))]:after:content-[':_second_last_visible']",
       )}
       {...props}
     >
