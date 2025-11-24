@@ -228,9 +228,18 @@ export function OuiFieldDemo() {
               The billing address associated with your payment method
             </FieldDescription>
             <FieldGroup>
-              <Oui.Checkbox defaultSelected>
-                Same as shipping address
-              </Oui.Checkbox>
+              <Oui.Field orientation="horizontal">
+                <Oui.Checkbox
+                  id="oui-checkout-7j9-same-as-shipping-wgm"
+                  defaultSelected
+                />
+                <Oui.FieldLabel
+                  htmlFor="oui-checkout-7j9-same-as-shipping-wgm"
+                  className="font-normal"
+                >
+                  Same as shipping address
+                </Oui.FieldLabel>
+              </Oui.Field>
             </FieldGroup>
           </FieldSet>
           <FieldSet>
