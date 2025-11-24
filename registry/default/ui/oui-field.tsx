@@ -72,8 +72,8 @@ export function FieldDescription({ className, ...props }: Rac.TextProps) {
       className={twMerge(
         "text-sm leading-normal font-normal text-muted-foreground group-has-data-[orientation=horizontal]/field:text-balance",
         // shadcn uses `last:mt-0` which misses with RAC `aria-hidden` so we add `[&:has(+[aria-hidden])]:mt-0` as well.
-        // shadcn uses `nth-last-2:-mt-1` which breaks with RAC `aria-hidden` so we use `[&:has(+:not([aria-hidden]))]:-mt-1` instead.
-        "last:mt-0 [&:has(+:not([aria-hidden]))]:-mt-1 [&:has(+[aria-hidden])]:mt-0 [[data-variant=legend]+&]:-mt-1.5",
+        // shadcn uses `nth-last-2:-mt-1` which breaks with RAC `aria-hidden` so we use `[&:has(+[data-slot=field-error])]:-mt-1` instead.
+        "last:mt-0 [&:has(+[aria-hidden])]:mt-0 [&:has(+[data-slot=field-error])]:-mt-1 [[data-variant=legend]+&]:-mt-1.5",
         "[&>a]:underline [&>a]:underline-offset-4 [&>a:hover]:text-primary",
         className,
       )}

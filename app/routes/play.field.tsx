@@ -154,30 +154,6 @@ export function FieldDemo() {
 }
 
 export function OuiFieldDemo() {
-  const monthItems = [
-    { id: "01", name: "01" },
-    { id: "02", name: "02" },
-    { id: "03", name: "03" },
-    { id: "04", name: "04" },
-    { id: "05", name: "05" },
-    { id: "06", name: "06" },
-    { id: "07", name: "07" },
-    { id: "08", name: "08" },
-    { id: "09", name: "09" },
-    { id: "10", name: "10" },
-    { id: "11", name: "11" },
-    { id: "12", name: "12" },
-  ];
-
-  const yearItems = [
-    { id: "2024", name: "2024" },
-    { id: "2025", name: "2025" },
-    { id: "2026", name: "2026" },
-    { id: "2027", name: "2027" },
-    { id: "2028", name: "2028" },
-    { id: "2029", name: "2029" },
-  ];
-
   return (
     <div className="w-full max-w-md">
       <Rac.Form>
@@ -188,33 +164,60 @@ export function OuiFieldDemo() {
               All transactions are secure and encrypted
             </FieldDescription>
             <FieldGroup>
-              <Oui.TextFieldEx
-                label="Name on Card"
-                placeholder="Evil Rabbit"
-                isRequired
-              />
-              <Oui.TextFieldEx
-                label="Card Number"
-                description="Enter your 16-digit card number"
-                placeholder="1234 5678 9012 3456"
-                isRequired
-              />
+              <Oui.TextField isRequired>
+                <Oui.FieldLabel>Name on Card</Oui.FieldLabel>
+                <Oui.Input placeholder="Evil Rabbit" />
+              </Oui.TextField>
+              <Oui.TextField isRequired>
+                <Oui.FieldLabel>Card Number</Oui.FieldLabel>
+                <Oui.Input placeholder="1234 5678 9012 3456" />
+                <Oui.FieldDescription>
+                  Enter your 16-digit card number
+                </Oui.FieldDescription>
+              </Oui.TextField>
               <div className="grid grid-cols-3 gap-4">
-                <Oui.SelectEx label="Month" placeholder="MM" items={monthItems}>
-                  {(item) => (
-                    <Oui.ListBoxItem key={item.id} value={item}>
-                      {item.name}
-                    </Oui.ListBoxItem>
-                  )}
-                </Oui.SelectEx>
-                <Oui.SelectEx label="Year" placeholder="YYYY" items={yearItems}>
-                  {(item) => (
-                    <Oui.ListBoxItem key={item.id} value={item}>
-                      {item.name}
-                    </Oui.ListBoxItem>
-                  )}
-                </Oui.SelectEx>
-                <Oui.TextFieldEx label="CVV" placeholder="123" isRequired />
+                <Oui.Select placeholder="MM">
+                  <Oui.FieldLabel>Month</Oui.FieldLabel>
+                  <Oui.SelectButton>
+                    <Oui.SelectValue />
+                  </Oui.SelectButton>
+                  <Oui.Popover>
+                    <Rac.ListBox>
+                      <Oui.ListBoxItem>01</Oui.ListBoxItem>
+                      <Oui.ListBoxItem>02</Oui.ListBoxItem>
+                      <Oui.ListBoxItem>03</Oui.ListBoxItem>
+                      <Oui.ListBoxItem>04</Oui.ListBoxItem>
+                      <Oui.ListBoxItem>05</Oui.ListBoxItem>
+                      <Oui.ListBoxItem>06</Oui.ListBoxItem>
+                      <Oui.ListBoxItem>07</Oui.ListBoxItem>
+                      <Oui.ListBoxItem>08</Oui.ListBoxItem>
+                      <Oui.ListBoxItem>09</Oui.ListBoxItem>
+                      <Oui.ListBoxItem>10</Oui.ListBoxItem>
+                      <Oui.ListBoxItem>11</Oui.ListBoxItem>
+                      <Oui.ListBoxItem>12</Oui.ListBoxItem>
+                    </Rac.ListBox>
+                  </Oui.Popover>
+                </Oui.Select>
+                <Oui.Select placeholder="YYYY">
+                  <Oui.FieldLabel>Year</Oui.FieldLabel>
+                  <Oui.SelectButton>
+                    <Oui.SelectValue />
+                  </Oui.SelectButton>
+                  <Oui.Popover>
+                    <Rac.ListBox>
+                      <Oui.ListBoxItem>2024</Oui.ListBoxItem>
+                      <Oui.ListBoxItem>2025</Oui.ListBoxItem>
+                      <Oui.ListBoxItem>2026</Oui.ListBoxItem>
+                      <Oui.ListBoxItem>2027</Oui.ListBoxItem>
+                      <Oui.ListBoxItem>2028</Oui.ListBoxItem>
+                      <Oui.ListBoxItem>2029</Oui.ListBoxItem>
+                    </Rac.ListBox>
+                  </Oui.Popover>
+                </Oui.Select>
+                <Oui.TextField isRequired>
+                  <Oui.FieldLabel>CVV</Oui.FieldLabel>
+                  <Oui.Input placeholder="123" />
+                </Oui.TextField>
               </div>
             </FieldGroup>
           </FieldSet>
@@ -232,12 +235,13 @@ export function OuiFieldDemo() {
           </FieldSet>
           <FieldSet>
             <FieldGroup>
-              <Oui.TextFieldEx label="Comments">
+              <Oui.TextField>
+                <Oui.FieldLabel>Comments</Oui.FieldLabel>
                 <Oui.TextArea
                   placeholder="Add any additional comments"
                   className="resize-none"
                 />
-              </Oui.TextFieldEx>
+              </Oui.TextField>
             </FieldGroup>
           </FieldSet>
           <Field orientation="horizontal">

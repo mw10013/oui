@@ -1,21 +1,37 @@
+import * as Oui from "@/registry/default/ui/oui-index";
 import { twJoin } from "tailwind-merge";
 
 export default function RouteComponent() {
   return (
     <div className="mx-auto grid max-w-7xl grid-cols-2 gap-8 p-6 *:border *:border-foreground *:p-4">
       <Field>
+        <Oui.Input />
         <FieldDescription />
       </Field>
       <Field>
+        <Oui.Input />
         <FieldDescription />
         <FieldError />
       </Field>
       <Field>
+        <Oui.Input />
         <FieldDescription>Field description with RacHidden</FieldDescription>
         <RacHidden />
       </Field>
       <Field>
+        <Oui.Input />
         <FieldDescription>Field description with RacHidden</FieldDescription>
+        <FieldError />
+        <RacHidden />
+      </Field>
+      <Field>
+        <FieldDescription />
+        <Oui.Input />
+        <FieldError />
+      </Field>
+      <Field>
+        <FieldDescription>Field description with RacHidden</FieldDescription>
+        <Oui.Input />
         <FieldError />
         <RacHidden />
       </Field>
@@ -39,8 +55,11 @@ function FieldDescription({ children, ...props }: React.ComponentProps<"p">) {
       data-slot="field-description"
       className={twJoin(
         "last:before:content-['last:_'] nth-last-2:before:content-['nth-last-2:_']",
-        "after:content-[':_after'] last:after:content-[':_last']",
-        "[&:has(+:not([aria-hidden]))]:after:content-[':_second_last_visible'] [&:has(+[aria-hidden])]:after:content-[':_last_visible']",
+        // "after:content-[':_after']",
+        "last:after:content-[':_last']",
+        "[&:has(+[aria-hidden])]:after:content-[':_last_visible']",
+        // "[&:has(+:not([aria-hidden]))]:after:content-[':_second_last_visible']",
+        "[&:has(+[data-slot=field-error])]:after:content-[':_followed_by_field_error']",
       )}
       {...props}
     >
