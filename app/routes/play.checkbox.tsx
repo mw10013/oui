@@ -1,6 +1,16 @@
 "use client";
 
 import { Checkbox } from "@/registry/default/ui/checkbox";
+import {
+  Field,
+  FieldContent,
+  FieldDescription,
+  FieldGroup,
+  FieldLabel,
+  FieldLegend,
+  FieldSeparator,
+  FieldSet,
+} from "@/registry/default/ui/field";
 import { Label } from "@/registry/default/ui/label";
 import * as Oui from "@/registry/default/ui/oui-index";
 import { twJoin } from "tailwind-merge";
@@ -81,17 +91,155 @@ function OuiCheckboxDemo() {
   );
 }
 
+function FieldCheckboxDemo() {
+  return (
+    <div className="w-full max-w-md">
+      <FieldGroup>
+        <FieldSet>
+          <FieldLegend variant="label">
+            Show these items on the desktop
+          </FieldLegend>
+          <FieldDescription>
+            Select the items you want to show on the desktop.
+          </FieldDescription>
+          <FieldGroup className="gap-3">
+            <Field orientation="horizontal">
+              <Checkbox id="finder-pref-9k2-hard-disks-ljj" defaultChecked />
+              <FieldLabel
+                htmlFor="finder-pref-9k2-hard-disks-ljj"
+                className="font-normal"
+              >
+                Hard disks
+              </FieldLabel>
+            </Field>
+            <Field orientation="horizontal">
+              <Checkbox id="finder-pref-9k2-external-disks-1yg" />
+              <FieldLabel
+                htmlFor="finder-pref-9k2-external-disks-1yg"
+                className="font-normal"
+              >
+                External disks
+              </FieldLabel>
+            </Field>
+            <Field orientation="horizontal">
+              <Checkbox id="finder-pref-9k2-cds-dvds-fzt" />
+              <FieldLabel
+                htmlFor="finder-pref-9k2-cds-dvds-fzt"
+                className="font-normal"
+              >
+                CDs, DVDs, and iPods
+              </FieldLabel>
+            </Field>
+            <Field orientation="horizontal">
+              <Checkbox id="finder-pref-9k2-connected-servers-6l2" />
+              <FieldLabel
+                htmlFor="finder-pref-9k2-connected-servers-6l2"
+                className="font-normal"
+              >
+                Connected servers
+              </FieldLabel>
+            </Field>
+          </FieldGroup>
+        </FieldSet>
+        <FieldSeparator />
+        <Field orientation="horizontal">
+          <Checkbox id="finder-pref-9k2-sync-folders-nep" defaultChecked />
+          <FieldContent>
+            <FieldLabel htmlFor="finder-pref-9k2-sync-folders-nep">
+              Sync Desktop & Documents folders
+            </FieldLabel>
+            <FieldDescription>
+              Your Desktop & Documents folders are being synced with iCloud
+              Drive. You can access them from other devices.
+            </FieldDescription>
+          </FieldContent>
+        </Field>
+      </FieldGroup>
+    </div>
+  );
+}
+
+function OuiFieldCheckboxDemo() {
+  return (
+    <div className="w-full max-w-md">
+      <FieldGroup>
+        <FieldSet>
+          <FieldLegend variant="label">
+            Show these items on the desktop
+          </FieldLegend>
+          <Oui.FieldDescription>
+            Select the items you want to show on the desktop.
+          </Oui.FieldDescription>
+          <FieldGroup className="gap-3">
+            <Oui.Field orientation="horizontal">
+              <Oui.Checkbox
+                id="oui-finder-pref-9k2-hard-disks-ljj"
+                defaultSelected
+              />
+              <Oui.FieldLabel
+                htmlFor="oui-finder-pref-9k2-hard-disks-ljj"
+                className="font-normal"
+              >
+                Hard disks
+              </Oui.FieldLabel>
+            </Oui.Field>
+            <Oui.Field orientation="horizontal">
+              <Oui.Checkbox id="oui-finder-pref-9k2-external-disks-1yg" />
+              <Oui.FieldLabel
+                htmlFor="oui-finder-pref-9k2-external-disks-1yg"
+                className="font-normal"
+              >
+                External disks
+              </Oui.FieldLabel>
+            </Oui.Field>
+            <Oui.Field orientation="horizontal">
+              <Oui.Checkbox id="oui-finder-pref-9k2-cds-dvds-fzt" />
+              <Oui.FieldLabel
+                htmlFor="oui-finder-pref-9k2-cds-dvds-fzt"
+                className="font-normal"
+              >
+                CDs, DVDs, and iPods
+              </Oui.FieldLabel>
+            </Oui.Field>
+            <Oui.Field orientation="horizontal">
+              <Oui.Checkbox id="oui-finder-pref-9k2-connected-servers-6l2" />
+              <Oui.FieldLabel
+                htmlFor="oui-finder-pref-9k2-connected-servers-6l2"
+                className="font-normal"
+              >
+                Connected servers
+              </Oui.FieldLabel>
+            </Oui.Field>
+          </FieldGroup>
+        </FieldSet>
+        <FieldSeparator />
+        <Oui.Field orientation="horizontal">
+          <Oui.Checkbox
+            id="oui-finder-pref-9k2-sync-folders-nep"
+            defaultSelected
+          />
+          <FieldContent>
+            <Oui.FieldLabel htmlFor="oui-finder-pref-9k2-sync-folders-nep">
+              Sync Desktop & Documents folders
+            </Oui.FieldLabel>
+            <Oui.FieldDescription>
+              Your Desktop & Documents folders are being synced with iCloud
+              Drive. You can access them from other devices.
+            </Oui.FieldDescription>
+          </FieldContent>
+        </Oui.Field>
+      </FieldGroup>
+    </div>
+  );
+}
+
 export default function RouteComponent() {
   return (
-    <div className="mx-auto flex max-w-7xl flex-col gap-8 p-6">
-      <div className="flex flex-row gap-8">
-        <div className="flex flex-1 flex-col gap-4 border border-foreground p-4">
-          <CheckboxDemo />
-        </div>
-        <div className="flex flex-1 flex-col gap-4 border border-foreground p-4">
-          <OuiCheckboxDemo />
-        </div>
-      </div>
+    <div className="mx-auto grid max-w-7xl grid-cols-4 gap-8 p-6 *:border *:border-foreground *:p-4">
+      <CheckboxDemo />
+      <OuiCheckboxDemo />
+      <FieldCheckboxDemo />
+      <OuiFieldCheckboxDemo />
     </div>
   );
 }

@@ -35,6 +35,23 @@ export const fieldStyles = cva(
   },
 );
 
+export function Field({
+  className,
+  orientation = "vertical",
+  ...props
+}: React.ComponentProps<"div"> & VariantProps<typeof fieldStyles>) {
+  return (
+    <div
+      role="group"
+      data-slot="field"
+      data-orientation={orientation}
+      className={twMerge(fieldStyles({ orientation }), className)}
+      {...props}
+    />
+  )
+}
+
+
 export type FieldStylesProps = VariantProps<typeof fieldStyles>;
 
 /**
