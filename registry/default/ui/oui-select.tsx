@@ -49,7 +49,7 @@ export function SelectButton({
 }) {
   return (
     <Rac.Button
-      data-slot="select-trigger" // Use shadcn compatible slot name
+      data-slot="select-button"
       data-size={size}
       className={composeTailwindRenderProps(className, [
         focusVisibleStyles,
