@@ -1,3 +1,4 @@
+import OuiFieldSelectDemo from "@/registry/default/components/oui-select-demo";
 import OuiFieldTextAreaDemo from "@/registry/default/components/oui-text-area-demo";
 import { Button } from "@/registry/default/ui/button";
 import { Checkbox } from "@/registry/default/ui/checkbox";
@@ -452,34 +453,6 @@ function FieldSelectDemo() {
           Select your department or area of work.
         </FieldDescription>
       </Field>
-    </div>
-  );
-}
-
-function OuiFieldSelectDemo() {
-  return (
-    <div className="w-full max-w-md">
-      <Oui.Select placeholder="Choose department">
-        <Oui.FieldLabel>Department</Oui.FieldLabel>
-        <Oui.SelectButton>
-          <Oui.SelectValue />
-        </Oui.SelectButton>
-        <Oui.FieldDescription>
-          Select your department or area of work.
-        </Oui.FieldDescription>
-        <Oui.Popover>
-          <Rac.ListBox>
-            <Oui.ListBoxItem>Engineering</Oui.ListBoxItem>
-            <Oui.ListBoxItem>Design</Oui.ListBoxItem>
-            <Oui.ListBoxItem>Marketing</Oui.ListBoxItem>
-            <Oui.ListBoxItem>Sales</Oui.ListBoxItem>
-            <Oui.ListBoxItem>Customer Support</Oui.ListBoxItem>
-            <Oui.ListBoxItem>Human Resources</Oui.ListBoxItem>
-            <Oui.ListBoxItem>Finance</Oui.ListBoxItem>
-            <Oui.ListBoxItem>Operations</Oui.ListBoxItem>
-          </Rac.ListBox>
-        </Oui.Popover>
-      </Oui.Select>
     </div>
   );
 }

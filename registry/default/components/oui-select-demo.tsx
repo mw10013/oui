@@ -1,5 +1,6 @@
 "use client";
 
+import { FieldDescription, FieldLabel } from "@/registry/default/ui/oui-field";
 import { ListBoxItem } from "@/registry/default/ui/oui-list-box";
 import { Popover } from "@/registry/default/ui/oui-popover";
 import {
@@ -11,20 +12,28 @@ import * as Rac from "react-aria-components";
 
 export default function Component() {
   return (
-    <Select aria-label="Select" placeholder="Select" className="w-[180px]">
-      <SelectButton>
-        <SelectValue />
-      </SelectButton>
-      <Popover>
-        <Rac.ListBox>
-          <ListBoxItem>Aardvark</ListBoxItem>
-          <ListBoxItem>Cat</ListBoxItem>
-          <ListBoxItem>Dog</ListBoxItem>
-          <ListBoxItem>Kangaroo</ListBoxItem>
-          <ListBoxItem>Panda</ListBoxItem>
-          <ListBoxItem>Snake</ListBoxItem>
-        </Rac.ListBox>
-      </Popover>
-    </Select>
+    <div className="w-full max-w-xs">
+      <Select placeholder="Choose department" className="w-fit">
+        <FieldLabel>Department</FieldLabel>
+        <SelectButton>
+          <SelectValue />
+        </SelectButton>
+        <FieldDescription>
+          Select your department or area of work.
+        </FieldDescription>
+        <Popover>
+          <Rac.ListBox>
+            <ListBoxItem>Engineering</ListBoxItem>
+            <ListBoxItem>Design</ListBoxItem>
+            <ListBoxItem>Marketing</ListBoxItem>
+            <ListBoxItem>Sales</ListBoxItem>
+            <ListBoxItem>Customer Support</ListBoxItem>
+            <ListBoxItem>Human Resources</ListBoxItem>
+            <ListBoxItem>Finance</ListBoxItem>
+            <ListBoxItem>Operations</ListBoxItem>
+          </Rac.ListBox>
+        </Popover>
+      </Select>
+    </div>
   );
 }

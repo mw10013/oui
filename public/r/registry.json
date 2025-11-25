@@ -2438,14 +2438,14 @@
         }
       ],
       "registryDependencies": [
+        "@oui/oui-field",
         "@oui/oui-list-box",
         "@oui/oui-popover",
         "@oui/oui-select"
       ],
       "meta": {
-        "tags": ["select", "list-box", "popover"],
+        "tags": ["select", "field", "list-box", "popover"],
         "canPreview": true,
-        "alignment": "flex-center",
         "canOpenInV0": true
       }
     },
@@ -2459,14 +2459,14 @@
         }
       ],
       "registryDependencies": [
+        "@oui/oui-field",
         "@oui/oui-list-box",
         "@oui/oui-popover",
         "@oui/oui-select"
       ],
       "meta": {
-        "tags": ["select", "list-box", "popover", "multiple"],
+        "tags": ["select", "multiple"],
         "canPreview": true,
-        "alignment": "flex-center",
         "canOpenInV0": true
       }
     },
