@@ -3,18 +3,22 @@
   "name": "oui-text-area-demo",
   "type": "registry:component",
   "registryDependencies": [
-    "@oui/oui-text-area"
+    "@oui/oui-field",
+    "@oui/oui-text-area",
+    "@oui/oui-text-field"
   ],
   "files": [
     {
       "path": "registry/default/components/oui-text-area-demo.tsx",
-      "content": "\"use client\";\n\nimport { TextArea } from \"@/registry/default/ui/oui-text-area\";\n\nexport default function Component() {\n  return <TextArea placeholder=\"Type your message here.\" />;\n}\n",
+      "content": "\"use client\";\n\nimport {\n  FieldDescription,\n  FieldGroup,\n  FieldLabel,\n  FieldSet,\n} from \"@/registry/default/ui/oui-field\";\nimport { TextArea } from \"@/registry/default/ui/oui-text-area\";\nimport { TextField } from \"@/registry/default/ui/oui-text-field\";\nimport * as Rac from \"react-aria-components\";\n\nexport default function Component() {\n  return (\n    <div className=\"w-full max-w-md\">\n      <Rac.Form>\n        <FieldSet>\n          <FieldGroup>\n            <TextField>\n              <FieldLabel>Feedback</FieldLabel>\n              <TextArea placeholder=\"Your feedback helps us improve...\" />\n              <FieldDescription>\n                Share your thoughts about our service.\n              </FieldDescription>\n            </TextField>\n          </FieldGroup>\n        </FieldSet>\n      </Rac.Form>\n    </div>\n  );\n}\n",
       "type": "registry:component"
     }
   ],
   "meta": {
     "tags": [
-      "text-area"
+      "text-area",
+      "field",
+      "text-field"
     ],
     "canPreview": true,
     "canOpenInV0": true

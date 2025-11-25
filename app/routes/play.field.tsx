@@ -1,3 +1,4 @@
+import OuiFieldTextAreaDemo from "@/registry/default/components/oui-text-area-demo";
 import { Button } from "@/registry/default/ui/button";
 import { Checkbox } from "@/registry/default/ui/checkbox";
 import {
@@ -423,26 +424,6 @@ function FieldTextareaDemo() {
           </Field>
         </FieldGroup>
       </FieldSet>
-    </div>
-  );
-}
-
-function OuiFieldTextAreaDemo() {
-  return (
-    <div className="w-full max-w-md">
-      <Rac.Form>
-        <FieldSet>
-          <FieldGroup>
-            <Oui.TextField>
-              <Oui.FieldLabel>Feedback</Oui.FieldLabel>
-              <Oui.TextArea placeholder="Your feedback helps us improve..." />
-              <Oui.FieldDescription>
-                Share your thoughts about our service.
-              </Oui.FieldDescription>
-            </Oui.TextField>
-          </FieldGroup>
-        </FieldSet>
-      </Rac.Form>
     </div>
   );
 }

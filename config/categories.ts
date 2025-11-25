@@ -341,12 +341,7 @@ export const categories: Category[] = [
   {
     name: "Text Area",
     slug: "text-area",
-    components: [
-      { name: "oui-text-area" },
-      { name: "oui-text-area-demo" },
-      { name: "oui-text-area-demo-text-field" },
-      { name: "oui-text-area-demo-disabled" },
-    ],
+    components: [{ name: "oui-text-area" }, { name: "oui-text-area-demo" }],
   },
   {
     name: "Text Field",
