@@ -1,8 +1,11 @@
 "use client";
 
+import { DialogFooter, DialogHeader } from "@/registry/default/ui/dialog";
 import { XIcon } from "lucide-react";
 import * as Rac from "react-aria-components";
 import { twJoin, twMerge } from "tailwind-merge";
+
+export { DialogHeader, DialogFooter };
 
 export interface DialogProps extends Rac.DialogProps {
   /**
@@ -53,41 +56,42 @@ export function Dialog({
 /**
  * Derived from shadcn DialogHeader
  */
-export function DialogHeader({
-  className,
-  ...props
-}: React.HTMLAttributes<HTMLDivElement>) {
-  return (
-    <div
-      {...props}
-      className={twMerge(
-        "flex flex-col gap-2 text-center sm:text-left",
-        className,
-      )}
-    />
-  );
-}
+// export function DialogHeader({
+//   className,
+//   ...props
+// }: React.HTMLAttributes<HTMLDivElement>) {
+//   return (
+//     <div
+//       {...props}
+//       className={twMerge(
+//         "flex flex-col gap-2 text-center sm:text-left",
+//         className,
+//       )}
+//     />
+//   );
+// }
 
 /**
  * Derived from shadcn DialogFooter
  */
-export function DialogFooter({
-  className,
-  ...props
-}: React.HTMLAttributes<HTMLDivElement>) {
-  return (
-    <div
-      {...props}
-      className={twMerge(
-        "flex flex-col-reverse gap-2 sm:flex-row sm:justify-end",
-        className,
-      )}
-    />
-  );
-}
+// export function DialogFooter({
+//   className,
+//   ...props
+// }: React.HTMLAttributes<HTMLDivElement>) {
+//   return (
+//     <div
+//       {...props}
+//       className={twMerge(
+//         "flex flex-col-reverse gap-2 sm:flex-row sm:justify-end",
+//         className,
+//       )}
+//     />
+//   );
+// }
 
 /**
  * Derived from shadcn DialogDescription
+ * We can't use shadcn DialogDescription since it wraps radix primitive.
  */
 export function DialogDescription({
   className,
@@ -95,8 +99,9 @@ export function DialogDescription({
 }: React.HTMLAttributes<HTMLParagraphElement>) {
   return (
     <p
-      {...props}
+      data-slot="dialog-description"
       className={twMerge("text-sm text-muted-foreground", className)}
+      {...props}
     />
   );
 }

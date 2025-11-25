@@ -29,11 +29,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": [
-        "@oui/oui-button",
-        "@oui/oui-form",
-        "@oui/oui-text-field-ex"
-      ],
+      "registryDependencies": ["@oui/oui-button", "@oui/oui-text-field-ex"],
       "meta": {
         "tags": ["alert", "alert-ex-form", "form", "text-field-ex"],
         "canPreview": true,
@@ -773,7 +769,6 @@
       "registryDependencies": [
         "@oui/oui-button",
         "@oui/oui-dialog",
-        "@oui/oui-form",
         "@oui/oui-heading",
         "@oui/oui-input",
         "@oui/oui-label",
@@ -781,7 +776,7 @@
         "@oui/oui-text-field"
       ],
       "meta": {
-        "tags": ["dialog", "form", "heading", "input", "modal", "text-field"],
+        "tags": ["dialog", "heading", "modal", "text-field"],
         "canPreview": true,
         "alignment": "flex-center",
         "canOpenInV0": true
@@ -1145,20 +1140,6 @@
       }
     },
     {
-      "name": "oui-form",
-      "type": "registry:ui",
-      "title": "Form",
-      "description": "React aria components Form with shadcn characteristics.",
-      "files": [
-        {
-          "path": "registry/default/ui/oui-form.tsx",
-          "type": "registry:ui"
-        }
-      ],
-      "registryDependencies": [],
-      "dependencies": ["react-aria-components", "tailwind-merge"]
-    },
-    {
       "name": "oui-form-demo",
       "type": "registry:component",
       "files": [
@@ -1172,7 +1153,6 @@
         "@oui/oui-checkbox-ex",
         "@oui/oui-checkbox-group-ex",
         "@oui/oui-checkbox",
-        "@oui/oui-form",
         "@oui/oui-list-box",
         "@oui/oui-radio-group-ex",
         "@oui/oui-radio-group",
@@ -1344,7 +1324,6 @@
         "@oui/oui-dialog",
         "@oui/oui-disclosure",
         "@oui/oui-field",
-        "@oui/oui-form",
         "@oui/oui-group",
         "@oui/oui-header",
         "@oui/oui-heading",

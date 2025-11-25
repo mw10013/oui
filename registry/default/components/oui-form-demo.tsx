@@ -8,10 +8,10 @@ import { SwitchEx } from "@/registry/default/components/oui-switch-ex";
 import { TextFieldEx } from "@/registry/default/components/oui-text-field-ex";
 import { Button } from "@/registry/default/ui/oui-button";
 import { Checkbox } from "@/registry/default/ui/oui-checkbox";
-import { Form } from "@/registry/default/ui/oui-form";
 import { ListBoxItem } from "@/registry/default/ui/oui-list-box";
 import { Radio } from "@/registry/default/ui/oui-radio-group";
 import { TextArea } from "@/registry/default/ui/oui-text-area";
+import * as Rac from "react-aria-components";
 
 const items = [
   {
@@ -42,7 +42,7 @@ const items = [
 
 export default function Component() {
   return (
-    <Form className="max-w-sm">
+    <Rac.Form className="max-w-sm">
       <TextFieldEx
         name="username"
         placeholder="shadcn"
@@ -138,6 +138,6 @@ export default function Component() {
         </div>
       </div>
       <Button type="submit">Submit</Button>
-    </Form>
+    </Rac.Form>
   );
 }

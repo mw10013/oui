@@ -130,7 +130,7 @@ export const categories: Category[] = [
   {
     name: "Form",
     slug: "form",
-    components: [{ name: "oui-form" }, { name: "oui-form-demo" }],
+    components: [{ name: "oui-form-demo" }],
   },
   {
     name: "Group",

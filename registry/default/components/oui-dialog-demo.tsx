@@ -2,7 +2,6 @@
 
 import { Button } from "@/registry/default/ui/oui-button";
 import { Dialog } from "@/registry/default/ui/oui-dialog";
-import { Form } from "@/registry/default/ui/oui-form";
 import { Heading } from "@/registry/default/ui/oui-heading";
 import { Input } from "@/registry/default/ui/oui-input";
 import { Label } from "@/registry/default/ui/oui-label";
@@ -17,7 +16,7 @@ export default function Component() {
       <ModalOverlay>
         <Modal>
           <Dialog>
-            <Form>
+            <Rac.Form className="flex flex-col gap-6">
               <Heading slot="title">Sign up</Heading>
               <TextField autoFocus>
                 <Label>First Name</Label>
@@ -28,7 +27,7 @@ export default function Component() {
                 <Input />
               </TextField>
               <Button slot="close">Submit</Button>
-            </Form>
+            </Rac.Form>
           </Dialog>
         </Modal>
       </ModalOverlay>

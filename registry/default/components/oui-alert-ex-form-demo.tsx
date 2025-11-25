@@ -2,7 +2,7 @@ import type { AlertExFormActionResult } from "@/registry/default/components/oui-
 import { AlertExForm } from "@/registry/default/components/oui-alert-ex-form";
 import { TextFieldEx } from "@/registry/default/components/oui-text-field-ex";
 import { Button } from "@/registry/default/ui/oui-button";
-import { Form } from "@/registry/default/ui/oui-form";
+import * as Rac from "react-aria-components";
 
 export default function Component() {
   const actionData: AlertExFormActionResult = {
@@ -13,7 +13,10 @@ export default function Component() {
   };
 
   return (
-    <Form className="max-w-sm" validationErrors={actionData.validationErrors}>
+    <Rac.Form
+      className="flex max-w-sm flex-col gap-6"
+      validationErrors={actionData.validationErrors}
+    >
       <AlertExForm
         success={actionData.success}
         message={actionData.message}
@@ -29,6 +32,6 @@ export default function Component() {
       <Button type="submit" className="w-full">
         Send magic link
       </Button>
-    </Form>
+    </Rac.Form>
   );
 }

@@ -4,13 +4,12 @@
   "type": "registry:component",
   "registryDependencies": [
     "@oui/oui-button",
-    "@oui/oui-form",
     "@oui/oui-text-field-ex"
   ],
   "files": [
     {
       "path": "registry/default/components/oui-alert-ex-form-demo.tsx",
-      "content": "import type { AlertExFormActionResult } from \"@/registry/default/components/oui-alert-ex-form\";\nimport { AlertExForm } from \"@/registry/default/components/oui-alert-ex-form\";\nimport { TextFieldEx } from \"@/registry/default/components/oui-text-field-ex\";\nimport { Button } from \"@/registry/default/ui/oui-button\";\nimport { Form } from \"@/registry/default/ui/oui-form\";\n\nexport default function Component() {\n  const actionData: AlertExFormActionResult = {\n    success: false,\n    message: \"Failed to send magic link\",\n    details: \"Please check your email address and try again.\",\n    validationErrors: { email: \"Invalid email address\" },\n  };\n\n  return (\n    <Form className=\"max-w-sm\" validationErrors={actionData.validationErrors}>\n      <AlertExForm\n        success={actionData.success}\n        message={actionData.message}\n        details={actionData.details}\n      />\n      <TextFieldEx\n        name=\"email\"\n        type=\"email\"\n        label=\"Email\"\n        placeholder=\"m@example.com\"\n        isRequired\n      />\n      <Button type=\"submit\" className=\"w-full\">\n        Send magic link\n      </Button>\n    </Form>\n  );\n}\n",
+      "content": "import type { AlertExFormActionResult } from \"@/registry/default/components/oui-alert-ex-form\";\nimport { AlertExForm } from \"@/registry/default/components/oui-alert-ex-form\";\nimport { TextFieldEx } from \"@/registry/default/components/oui-text-field-ex\";\nimport { Button } from \"@/registry/default/ui/oui-button\";\nimport * as Rac from \"react-aria-components\";\n\nexport default function Component() {\n  const actionData: AlertExFormActionResult = {\n    success: false,\n    message: \"Failed to send magic link\",\n    details: \"Please check your email address and try again.\",\n    validationErrors: { email: \"Invalid email address\" },\n  };\n\n  return (\n    <Rac.Form\n      className=\"flex max-w-sm flex-col gap-6\"\n      validationErrors={actionData.validationErrors}\n    >\n      <AlertExForm\n        success={actionData.success}\n        message={actionData.message}\n        details={actionData.details}\n      />\n      <TextFieldEx\n        name=\"email\"\n        type=\"email\"\n        label=\"Email\"\n        placeholder=\"m@example.com\"\n        isRequired\n      />\n      <Button type=\"submit\" className=\"w-full\">\n        Send magic link\n      </Button>\n    </Rac.Form>\n  );\n}\n",
       "type": "registry:component"
     }
   ],
