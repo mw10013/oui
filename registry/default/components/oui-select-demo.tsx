@@ -12,7 +12,7 @@ import * as Rac from "react-aria-components";
 
 export default function Component() {
   return (
-    <div className="w-full max-w-xs">
+    <div className="w-full max-w-md">
       <Select placeholder="Choose department" className="w-fit">
         <FieldLabel>Department</FieldLabel>
         <SelectButton>

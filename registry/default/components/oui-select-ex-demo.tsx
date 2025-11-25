@@ -1,33 +1,42 @@
 "use client";
 
-import { SelectEx } from "@/registry/default/components/oui-select-ex";
+import { FieldDescription, FieldLabel } from "@/registry/default/ui/oui-field";
 import { Header } from "@/registry/default/ui/oui-header";
 import { ListBoxItem } from "@/registry/default/ui/oui-list-box";
+import { Popover } from "@/registry/default/ui/oui-popover";
+import {
+  Select,
+  SelectButton,
+  SelectValue,
+} from "@/registry/default/ui/oui-select";
 import * as Rac from "react-aria-components";
-
-const fruitItemsForSection = [
-  { id: "apple", name: "Apple" },
-  { id: "banana", name: "Banana" },
-  { id: "blueberry", name: "Blueberry" },
-  { id: "grapes", name: "Grapes", isDisabled: true },
-  { id: "pineapple", name: "Pineapple" },
-];
 
 export default function Component() {
   return (
-    <SelectEx
-      aria-label="Select fruit"
-      placeholder="Select Ex"
-      className="w-[180px]"
-    >
-      <Rac.ListBoxSection id="fruits-section">
-        <Header variant="select">Fruits</Header>
-        <Rac.Collection items={fruitItemsForSection}>
-          {(item) => (
-            <ListBoxItem isDisabled={item.isDisabled}>{item.name}</ListBoxItem>
-          )}
-        </Rac.Collection>
-      </Rac.ListBoxSection>
-    </SelectEx>
+    <div className="w-full max-w-md">
+      <Select placeholder="Select fruit" className="w-fit">
+        <FieldLabel>Fruit</FieldLabel>
+        <SelectButton>
+          <SelectValue />
+        </SelectButton>
+        <FieldDescription>Select your favorite fruit.</FieldDescription>
+        <Popover>
+          <Rac.ListBox>
+            <Rac.ListBoxSection id="fruits-section">
+              <Header variant="select">Fruits</Header>
+              <Rac.Collection>
+                <ListBoxItem id="apple">Apple</ListBoxItem>
+                <ListBoxItem id="banana">Banana</ListBoxItem>
+                <ListBoxItem id="blueberry">Blueberry</ListBoxItem>
+                <ListBoxItem id="grapes" isDisabled>
+                  Grapes
+                </ListBoxItem>
+                <ListBoxItem id="pineapple">Pineapple</ListBoxItem>
+              </Rac.Collection>
+            </Rac.ListBoxSection>
+          </Rac.ListBox>
+        </Popover>
+      </Select>
+    </div>
   );
 }

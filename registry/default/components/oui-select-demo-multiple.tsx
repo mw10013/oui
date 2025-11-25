@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { FieldDescription, FieldLabel } from "@/registry/default/ui/oui-field";
+import { Header } from "@/registry/default/ui/oui-header";
 import { ListBoxItem } from "@/registry/default/ui/oui-list-box";
 import { Popover } from "@/registry/default/ui/oui-popover";
 import {
@@ -25,17 +26,27 @@ export default function Component() {
       <SelectButton>
         <SelectValue />
       </SelectButton>
-      <FieldDescription>
-        Select multiple animals from the list.
-      </FieldDescription>
+      <FieldDescription>Select multiple animals.</FieldDescription>
       <Popover>
         <Rac.ListBox>
-          <ListBoxItem id="Koala">Koala</ListBoxItem>
-          <ListBoxItem id="Kangaroo">Kangaroo</ListBoxItem>
-          <ListBoxItem id="Platypus">Platypus</ListBoxItem>
-          <ListBoxItem id="Bald Eagle">Bald Eagle</ListBoxItem>
-          <ListBoxItem id="Bison">Bison</ListBoxItem>
-          <ListBoxItem id="Skunk">Skunk</ListBoxItem>
+          <Rac.ListBoxSection id="mammals">
+            <Header variant="select">Mammals</Header>
+            <Rac.Collection>
+              <ListBoxItem id="Koala">Koala</ListBoxItem>
+              <ListBoxItem id="Kangaroo">Kangaroo</ListBoxItem>
+              <ListBoxItem id="Platypus">Platypus</ListBoxItem>
+              <ListBoxItem id="Bison">Bison</ListBoxItem>
+              <ListBoxItem id="Skunk" isDisabled>
+                Skunk
+              </ListBoxItem>
+            </Rac.Collection>
+          </Rac.ListBoxSection>
+          <Rac.ListBoxSection id="birds">
+            <Header variant="select">Birds</Header>
+            <Rac.Collection>
+              <ListBoxItem id="Bald Eagle">Bald Eagle</ListBoxItem>
+            </Rac.Collection>
+          </Rac.ListBoxSection>
         </Rac.ListBox>
       </Popover>
     </Select>

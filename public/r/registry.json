@@ -2460,12 +2460,13 @@
       ],
       "registryDependencies": [
         "@oui/oui-field",
+        "@oui/oui-header",
         "@oui/oui-list-box",
         "@oui/oui-popover",
         "@oui/oui-select"
       ],
       "meta": {
-        "tags": ["select", "multiple"],
+        "tags": ["select", "multiple", "disabled", "header"],
         "canPreview": true,
         "canOpenInV0": true
       }
@@ -2490,27 +2491,6 @@
       ],
       "meta": {
         "tags": ["select", "select-ex", "field-error", "popover", "text"]
-      }
-    },
-    {
-      "name": "oui-select-ex-demo",
-      "type": "registry:component",
-      "files": [
-        {
-          "path": "registry/default/components/oui-select-ex-demo.tsx",
-          "type": "registry:component"
-        }
-      ],
-      "registryDependencies": [
-        "@oui/oui-header",
-        "@oui/oui-list-box",
-        "@oui/oui-select-ex"
-      ],
-      "meta": {
-        "tags": ["select", "select-ex", "header", "list-box", "disabled"],
-        "canPreview": true,
-        "alignment": "flex-center",
-        "canOpenInV0": true
       }
     },
     {
