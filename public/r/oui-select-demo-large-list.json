@@ -1,0 +1,26 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "oui-select-demo-large-list",
+  "type": "registry:component",
+  "registryDependencies": [
+    "@oui/oui-field",
+    "@oui/oui-list-box",
+    "@oui/oui-popover",
+    "@oui/oui-select"
+  ],
+  "files": [
+    {
+      "path": "registry/default/components/oui-select-demo-large-list.tsx",
+      "content": "\"use client\";\n\nimport { FieldLabel } from \"@/registry/default/ui/oui-field\";\nimport { ListBoxItem } from \"@/registry/default/ui/oui-list-box\";\nimport { Popover } from \"@/registry/default/ui/oui-popover\";\nimport {\n  Select,\n  SelectButton,\n  SelectValue,\n} from \"@/registry/default/ui/oui-select\";\nimport * as Rac from \"react-aria-components\";\n\nconst largeListItems = Array.from({ length: 100 }).map((_, i) => ({\n  id: `item-${String(i)}`,\n  name: `Item ${String(i)}`,\n}));\n\nexport default function Component() {\n  return (\n    <div className=\"w-full max-w-md\">\n      <Select placeholder=\"Choose item\" className=\"w-[180px]\">\n        <FieldLabel>Select Large List</FieldLabel>\n        <SelectButton>\n          <SelectValue />\n        </SelectButton>\n        <Popover>\n          <Rac.ListBox items={largeListItems}>\n            {(item) => <ListBoxItem>{item.name}</ListBoxItem>}\n          </Rac.ListBox>\n        </Popover>\n      </Select>\n    </div>\n  );\n}\n",
+      "type": "registry:component"
+    }
+  ],
+  "meta": {
+    "tags": [
+      "select"
+    ],
+    "canPreview": true,
+    "alignment": "flex-center",
+    "canOpenInV0": true
+  }
+}
