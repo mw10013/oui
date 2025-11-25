@@ -748,19 +748,9 @@
           "type": "registry:ui"
         }
       ],
-      "registryDependencies": [
-        "@oui/oui-button",
-        "@oui/oui-heading",
-        "@oui/oui-modal"
-      ],
-      "dependencies": [
-        "react-aria-components",
-        "lucide-react",
-        "class-variance-authority",
-        "tailwind-merge"
-      ],
+      "dependencies": ["react-aria-components", "lucide-react", "tailwind-merge"],
       "meta": {
-        "tags": ["dialog", "modal", "heading"]
+        "tags": ["dialog"]
       }
     },
     {
