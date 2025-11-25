@@ -8,6 +8,8 @@
     "react-aria-components"
   ],
   "registryDependencies": [
+    "field",
+    "@oui/oui-base",
     "@oui/oui-label"
   ],
   "files": [

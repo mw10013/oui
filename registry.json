@@ -1133,7 +1133,7 @@
           "type": "registry:ui"
         }
       ],
-      "registryDependencies": ["@oui/oui-label"],
+      "registryDependencies": ["field", "@oui/oui-base", "@oui/oui-label"],
       "dependencies": ["react-aria-components"],
       "meta": {
         "tags": ["field", "field-error"]
