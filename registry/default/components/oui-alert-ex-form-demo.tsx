@@ -1,7 +1,9 @@
 import type { AlertExFormActionResult } from "@/registry/default/components/oui-alert-ex-form";
 import { AlertExForm } from "@/registry/default/components/oui-alert-ex-form";
-import { TextFieldEx } from "@/registry/default/components/oui-text-field-ex";
 import { Button } from "@/registry/default/ui/oui-button";
+import { FieldError, FieldLabel } from "@/registry/default/ui/oui-field";
+import { Input } from "@/registry/default/ui/oui-input";
+import { TextField } from "@/registry/default/ui/oui-text-field";
 import * as Rac from "react-aria-components";
 
 export default function Component() {
@@ -22,13 +24,11 @@ export default function Component() {
         message={actionData.message}
         details={actionData.details}
       />
-      <TextFieldEx
-        name="email"
-        type="email"
-        label="Email"
-        placeholder="m@example.com"
-        isRequired
-      />
+      <TextField name="email" type="email" isRequired>
+        <FieldLabel>Email</FieldLabel>
+        <Input placeholder="m@example.com" />
+        <FieldError />
+      </TextField>
       <Button type="submit" className="w-full">
         Send magic link
       </Button>

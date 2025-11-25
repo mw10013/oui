@@ -29,9 +29,15 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["@oui/oui-button", "@oui/oui-text-field-ex"],
+      "registryDependencies": [
+        "@oui/oui-alert-ex-form",
+        "@oui/oui-button",
+        "@oui/oui-field",
+        "@oui/oui-input",
+        "@oui/oui-text-field"
+      ],
       "meta": {
-        "tags": ["alert", "alert-ex-form", "form", "text-field-ex"],
+        "tags": ["alert", "alert-ex-form", "form", "field"],
         "canPreview": true,
         "canOpenInV0": true
       }
