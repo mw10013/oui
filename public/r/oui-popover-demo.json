@@ -1,0 +1,33 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "oui-popover-demo",
+  "type": "registry:component",
+  "registryDependencies": [
+    "@oui/oui-button",
+    "@oui/oui-dialog",
+    "@oui/oui-field",
+    "@oui/oui-heading",
+    "@oui/oui-input",
+    "@oui/oui-popover",
+    "@oui/oui-text-field"
+  ],
+  "files": [
+    {
+      "path": "registry/default/components/oui-popover-demo.tsx",
+      "content": "\"use client\";\n\nimport { Button } from \"@/registry/default/ui/oui-button\";\nimport {\n  Dialog,\n  DialogDescription,\n  DialogHeader,\n} from \"@/registry/default/ui/oui-dialog\";\nimport { FieldGroup, FieldLabel } from \"@/registry/default/ui/oui-field\";\nimport { Heading } from \"@/registry/default/ui/oui-heading\";\nimport { Input } from \"@/registry/default/ui/oui-input\";\nimport { Popover } from \"@/registry/default/ui/oui-popover\";\nimport { TextField } from \"@/registry/default/ui/oui-text-field\";\nimport * as Rac from \"react-aria-components\";\n\nexport default function Component() {\n  return (\n    <Rac.DialogTrigger>\n      <Button variant=\"outline\">Popover</Button>\n      <Popover className=\"w-80\">\n        <Dialog hideCloseButtonForNonAlert>\n          <DialogHeader>\n            <Heading variant=\"popover\" slot=\"title\">\n              Dimensions\n            </Heading>\n            <DialogDescription>\n              Set the dimensions for the layer.\n            </DialogDescription>\n          </DialogHeader>\n          <FieldGroup className=\"grid grid-cols-[auto_1fr] gap-x-3 gap-y-2 *:col-span-full *:grid *:grid-cols-subgrid\">\n            <TextField name=\"width\" defaultValue=\"100%\" autoFocus>\n              <FieldLabel>Width</FieldLabel>\n              <Input />\n            </TextField>\n            <TextField name=\"maxWidth\" defaultValue=\"300px\">\n              <FieldLabel>Max. width</FieldLabel>\n              <Input />\n            </TextField>\n            <TextField name=\"height\" defaultValue=\"25px\">\n              <FieldLabel>Height</FieldLabel>\n              <Input />\n            </TextField>\n            <TextField name=\"maxHeight\" defaultValue=\"none\">\n              <FieldLabel>Max. height</FieldLabel>\n              <Input />\n            </TextField>\n          </FieldGroup>\n        </Dialog>\n      </Popover>\n    </Rac.DialogTrigger>\n  );\n}\n",
+      "type": "registry:component"
+    }
+  ],
+  "meta": {
+    "tags": [
+      "popover",
+      "dialog",
+      "heading",
+      "field",
+      "text-field"
+    ],
+    "canPreview": true,
+    "alignment": "flex-center",
+    "canOpenInV0": true
+  }
+}

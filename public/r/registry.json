@@ -2226,6 +2226,32 @@
       }
     },
     {
+      "name": "oui-popover-demo",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/default/components/oui-popover-demo.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "@oui/oui-button",
+        "@oui/oui-dialog",
+        "@oui/oui-field",
+        "@oui/oui-heading",
+        "@oui/oui-input",
+        "@oui/oui-popover",
+        "@oui/oui-text-field"
+      ],
+      "meta": {
+        "tags": ["popover", "dialog", "heading", "field", "text-field"],
+        "canPreview": true,
+        "alignment": "flex-center",
+        "canOpenInV0": true
+      }
+    },
+
+    {
       "name": "oui-popover-ex",
       "type": "registry:component",
       "title": "Popover Ex",
@@ -2243,35 +2269,6 @@
       ],
       "meta": {
         "tags": ["popover", "popover-ex", "dialog"]
-      }
-    },
-    {
-      "name": "oui-popover-ex-demo",
-      "type": "registry:component",
-      "files": [
-        {
-          "path": "registry/default/components/oui-popover-ex-demo.tsx",
-          "type": "registry:component"
-        }
-      ],
-      "registryDependencies": [
-        "@oui/oui-button",
-        "@oui/oui-dialog",
-        "@oui/oui-heading",
-        "@oui/oui-popover-ex",
-        "@oui/oui-text-field-ex-horizontal"
-      ],
-      "meta": {
-        "tags": [
-          "popover",
-          "popover-ex",
-          "dialog",
-          "heading",
-          "text-field-ex-horizontal"
-        ],
-        "canPreview": true,
-        "alignment": "flex-center",
-        "canOpenInV0": true
       }
     },
     {
@@ -3142,51 +3139,6 @@
       "registryDependencies": ["@oui/oui-text-field-ex"],
       "meta": {
         "tags": ["text-field", "text-field-ex"],
-        "canPreview": true,
-        "canOpenInV0": true
-      }
-    },
-    {
-      "name": "oui-text-field-ex-horizontal",
-      "type": "registry:component",
-      "title": "Text Field Ex Horizontal",
-      "description": "Reusable wrapper for Text Field with horizontal layout.",
-      "files": [
-        {
-          "path": "registry/default/components/oui-text-field-ex-horizontal.tsx",
-          "type": "registry:component"
-        }
-      ],
-      "registryDependencies": [
-        "@oui/oui-text-field",
-        "@oui/oui-input",
-        "@oui/oui-label",
-        "@oui/oui-field",
-        "@oui/oui-text"
-      ],
-      "meta": {
-        "tags": [
-          "text-field",
-          "text-field-ex-horizontal",
-          "field-error",
-          "input",
-          "label",
-          "text"
-        ]
-      }
-    },
-    {
-      "name": "oui-text-field-ex-horizontal-demo",
-      "type": "registry:component",
-      "files": [
-        {
-          "path": "registry/default/components/oui-text-field-ex-horizontal-demo.tsx",
-          "type": "registry:component"
-        }
-      ],
-      "registryDependencies": ["@oui/oui-text-field-ex-horizontal"],
-      "meta": {
-        "tags": ["text-field", "text-field-ex-horizontal"],
         "canPreview": true,
         "canOpenInV0": true
       }

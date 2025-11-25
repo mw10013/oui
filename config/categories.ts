@@ -243,8 +243,8 @@ export const categories: Category[] = [
     slug: "popover",
     components: [
       { name: "oui-popover" },
+      { name: "oui-popover-demo" },
       { name: "oui-popover-ex" },
-      { name: "oui-popover-ex-demo" },
     ],
   },
   {
@@ -360,8 +360,6 @@ export const categories: Category[] = [
       { name: "oui-text-field-demo" },
       { name: "oui-text-field-ex" },
       { name: "oui-text-field-ex-demo" },
-      { name: "oui-text-field-ex-horizontal" },
-      { name: "oui-text-field-ex-horizontal-demo" },
     ],
   },
   {
