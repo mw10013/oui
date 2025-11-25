@@ -45,7 +45,6 @@ export const registryTags = [
   "number-field",
   "number-field-ex",
   "popover",
-  "popover-ex",
   "radio-group",
   "radio-group-ex",
   "search-field",

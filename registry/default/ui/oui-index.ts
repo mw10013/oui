@@ -72,7 +72,6 @@ export * from "@/registry/default/components/oui-menu-ex";
 export * from "@/registry/default/components/oui-modal-ex-sheet";
 export * from "@/registry/default/components/oui-modal-ex";
 export * from "@/registry/default/components/oui-number-field-ex";
-export * from "@/registry/default/components/oui-popover-ex";
 export * from "@/registry/default/components/oui-radio-group-ex";
 export * from "@/registry/default/components/oui-search-field-ex";
 export * from "@/registry/default/components/oui-select-ex-popover";

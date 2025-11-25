@@ -1385,7 +1385,6 @@
         "@oui/oui-modal-ex-sheet",
         "@oui/oui-modal-ex",
         "@oui/oui-number-field-ex",
-        "@oui/oui-popover-ex",
         "@oui/oui-radio-group-ex",
         "@oui/oui-search-field-ex",
         "@oui/oui-select-ex-popover",
@@ -2248,27 +2247,6 @@
         "canPreview": true,
         "alignment": "flex-center",
         "canOpenInV0": true
-      }
-    },
-
-    {
-      "name": "oui-popover-ex",
-      "type": "registry:component",
-      "title": "Popover Ex",
-      "description": "Reusable wrapper for a Popover that displays a popover dialog.",
-      "files": [
-        {
-          "path": "registry/default/components/oui-popover-ex.tsx",
-          "type": "registry:component"
-        }
-      ],
-      "registryDependencies": [
-        "@oui/oui-button",
-        "@oui/oui-dialog",
-        "@oui/oui-popover"
-      ],
-      "meta": {
-        "tags": ["popover", "popover-ex", "dialog"]
       }
     },
     {
