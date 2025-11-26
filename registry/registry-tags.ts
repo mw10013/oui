@@ -50,8 +50,6 @@ export const registryTags = [
   "search-field",
   "search-field-ex",
   "select",
-  "select-ex",
-  "select-ex-popover",
   "separator",
   "sidebar",
   "sidebar-ex",

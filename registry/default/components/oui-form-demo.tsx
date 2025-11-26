@@ -3,13 +3,23 @@
 import { CheckboxEx } from "@/registry/default/components/oui-checkbox-ex";
 import { CheckboxGroupEx } from "@/registry/default/components/oui-checkbox-group-ex";
 import { RadioGroupEx } from "@/registry/default/components/oui-radio-group-ex";
-import { SelectEx } from "@/registry/default/components/oui-select-ex";
 import { SwitchEx } from "@/registry/default/components/oui-switch-ex";
 import { TextFieldEx } from "@/registry/default/components/oui-text-field-ex";
 import { Button } from "@/registry/default/ui/oui-button";
 import { Checkbox } from "@/registry/default/ui/oui-checkbox";
+import {
+  FieldDescription,
+  FieldError,
+  FieldLabel,
+} from "@/registry/default/ui/oui-field";
 import { ListBoxItem } from "@/registry/default/ui/oui-list-box";
+import { Popover } from "@/registry/default/ui/oui-popover";
 import { Radio } from "@/registry/default/ui/oui-radio-group";
+import {
+  Select,
+  SelectButton,
+  SelectValue,
+} from "@/registry/default/ui/oui-select";
 import { TextArea } from "@/registry/default/ui/oui-text-area";
 import * as Rac from "react-aria-components";
 
@@ -46,18 +56,26 @@ export default function Component() {
       <TextFieldEx
         name="username"
         placeholder="shadcn"
-        label="Username"
+          label="Username"
         description="This is your public display name."
       />
-      <SelectEx
-        placeholder="Select a verified email to display"
-        label="Email"
-        description="You can manage email addresses in your email settings."
-      >
-        <ListBoxItem>m@example.com</ListBoxItem>
-        <ListBoxItem>me@google.com</ListBoxItem>
-        <ListBoxItem>m@support.com</ListBoxItem>
-      </SelectEx>
+      <Select placeholder="Select a verified email to display">
+        <FieldLabel>Email</FieldLabel>
+        <SelectButton>
+          <SelectValue />
+        </SelectButton>
+        <FieldDescription>
+          You can manage email addresses in your email settings.
+        </FieldDescription>
+        <FieldError />
+        <Popover>
+          <Rac.ListBox>
+            <ListBoxItem>m@example.com</ListBoxItem>
+            <ListBoxItem>me@google.com</ListBoxItem>
+            <ListBoxItem>m@support.com</ListBoxItem>
+          </Rac.ListBox>
+        </Popover>
+      </Select>
       <TextFieldEx
         name="bio"
         label="Bio"

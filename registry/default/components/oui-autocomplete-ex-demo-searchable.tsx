@@ -1,8 +1,18 @@
 "use client";
 
 import { AutocompleteEx } from "@/registry/default/components/oui-autocomplete-ex";
-import { SelectExPopover } from "@/registry/default/components/oui-select-ex-popover";
+import {
+  FieldDescription,
+  FieldError,
+  FieldLabel,
+} from "@/registry/default/ui/oui-field";
 import { ListBoxItem } from "@/registry/default/ui/oui-list-box";
+import { Popover } from "@/registry/default/ui/oui-popover";
+import {
+  Select,
+  SelectButton,
+  SelectValue,
+} from "@/registry/default/ui/oui-select";
 import * as Rac from "react-aria-components";
 
 /**
@@ -25,18 +35,23 @@ export default function Component() {
   ];
 
   return (
-    <SelectExPopover
-      label="Autocomplete Ex Language"
-      description="Select your preferred language"
-    >
-      <AutocompleteEx
-        placeholder="Search languages"
-        searchFieldProps={{ "aria-label": "Languages", autoFocus: true }}
-      >
-        <Rac.ListBox items={languages}>
-          {(item) => <ListBoxItem>{item.name}</ListBoxItem>}
-        </Rac.ListBox>
-      </AutocompleteEx>
-    </SelectExPopover>
+    <Select>
+      <FieldLabel>Autocomplete Ex Language</FieldLabel>
+      <SelectButton>
+        <SelectValue />
+      </SelectButton>
+      <FieldDescription>Select your preferred language</FieldDescription>
+      <FieldError />
+      <Popover>
+        <AutocompleteEx
+          placeholder="Search languages"
+          searchFieldProps={{ "aria-label": "Languages", autoFocus: true }}
+        >
+          <Rac.ListBox items={languages}>
+            {(item) => <ListBoxItem>{item.name}</ListBoxItem>}
+          </Rac.ListBox>
+        </AutocompleteEx>
+      </Popover>
+    </Select>
   );
 }

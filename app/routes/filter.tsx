@@ -7,8 +7,14 @@ import { ComponentLoader } from "@/components/component-loader";
 import { PageGrid } from "@/components/page-grid";
 import { PageHeader } from "@/components/page-header";
 import { getAvailableTags, getComponents, getDisabledTags } from "@/lib/utils";
-import { SelectEx } from "@/registry/default/components/oui-select-ex";
 import { ListBoxItem } from "@/registry/default/ui/oui-list-box";
+import { Popover } from "@/registry/default/ui/oui-popover";
+import {
+  Select,
+  SelectButton,
+  SelectValue,
+} from "@/registry/default/ui/oui-select";
+import * as Rac from "react-aria-components";
 import { useSearchParams } from "react-router";
 
 export function loader({ request }: LoaderFunctionArgs) {
@@ -36,10 +42,9 @@ export default function RouteComponent({
       <title>Oui - Filter by Tags</title>
       <PageHeader title="Filter" className="mb-10" />
       <div className="mb-4 flex justify-center">
-        <SelectEx
+        <Select
           aria-label="Select tags"
           placeholder="Select tags"
-          items={items}
           selectionMode="multiple"
           disabledKeys={disabledTags}
           value={tags}
@@ -53,8 +58,15 @@ export default function RouteComponent({
           }}
           className="w-fit"
         >
-          {(item) => <ListBoxItem>{item.id}</ListBoxItem>}
-        </SelectEx>
+          <SelectButton>
+            <SelectValue />
+          </SelectButton>
+          <Popover>
+            <Rac.ListBox items={items}>
+              {(item) => <ListBoxItem>{item.id}</ListBoxItem>}
+            </Rac.ListBox>
+          </Popover>
+        </Select>
       </div>
       <PageGrid>
         {components.map((component) => (
