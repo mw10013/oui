@@ -3,7 +3,7 @@
   "name": "oui-field",
   "type": "registry:ui",
   "title": "Field",
-  "description": "React aria components for fields with shadcn characteristics.",
+  "description": "Shadcn Field with react aria components characteristics.",
   "dependencies": [
     "react-aria-components"
   ],

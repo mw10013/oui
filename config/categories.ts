@@ -125,7 +125,7 @@ export const categories: Category[] = [
   {
     name: "Field",
     slug: "field",
-    components: [{ name: "oui-field" }],
+    components: [{ name: "oui-field" }, { name: "oui-field-demo-fieldset" }],
   },
   {
     name: "Form",
@@ -342,7 +342,11 @@ export const categories: Category[] = [
   {
     name: "Text Field",
     slug: "text-field",
-    components: [{ name: "oui-text-field" }, { name: "oui-text-field-demo" }, { name: "oui-text-field-demo-invalid" }],
+    components: [
+      { name: "oui-text-field" },
+      { name: "oui-text-field-demo" },
+      { name: "oui-text-field-demo-invalid" },
+    ],
   },
   {
     name: "Toggle Button",

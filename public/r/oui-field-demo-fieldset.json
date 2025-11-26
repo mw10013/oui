@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "oui-field-demo-fieldset",
+  "type": "registry:component",
+  "registryDependencies": [
+    "@oui/oui-field",
+    "@oui/oui-input",
+    "@oui/oui-text-field"
+  ],
+  "files": [
+    {
+      "path": "registry/default/components/oui-field-demo-fieldset.tsx",
+      "content": "\"use client\";\n\nimport {\n  FieldDescription,\n  FieldGroup,\n  FieldLabel,\n  FieldLegend,\n  FieldSet,\n} from \"@/registry/default/ui/oui-field\";\nimport { Input } from \"@/registry/default/ui/oui-input\";\nimport { TextField } from \"@/registry/default/ui/oui-text-field\";\n\nexport default function Component() {\n  return (\n    <div className=\"w-full max-w-md\">\n      <FieldSet>\n        <FieldLegend>Address Information</FieldLegend>\n        <FieldDescription>\n          We need your address to deliver your order.\n        </FieldDescription>\n        <FieldGroup>\n          <TextField>\n            <FieldLabel>Street Address</FieldLabel>\n            <Input placeholder=\"123 Main St\" />\n          </TextField>\n          <div className=\"grid grid-cols-2 gap-4\">\n            <TextField>\n              <FieldLabel>City</FieldLabel>\n              <Input placeholder=\"New York\" />\n            </TextField>\n            <TextField>\n              <FieldLabel>Postal Code</FieldLabel>\n              <Input placeholder=\"90502\" />\n            </TextField>\n          </div>\n        </FieldGroup>\n      </FieldSet>\n    </div>\n  );\n}\n",
+      "type": "registry:component"
+    }
+  ],
+  "meta": {
+    "tags": [
+      "field",
+      "text-field"
+    ],
+    "canPreview": true,
+    "canOpenInV0": true
+  }
+}

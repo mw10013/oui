@@ -1120,7 +1120,7 @@
       "name": "oui-field",
       "type": "registry:ui",
       "title": "Field",
-      "description": "React aria components for fields with shadcn characteristics.",
+      "description": "Shadcn Field with react aria components characteristics.",
       "files": [
         {
           "path": "registry/default/ui/oui-field.tsx",
@@ -1131,6 +1131,26 @@
       "dependencies": ["react-aria-components"],
       "meta": {
         "tags": ["field", "field-error"]
+      }
+    },
+    {
+      "name": "oui-field-demo-fieldset",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/default/components/oui-field-demo-fieldset.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "@oui/oui-field",
+        "@oui/oui-input",
+        "@oui/oui-text-field"
+      ],
+      "meta": {
+        "tags": ["field", "text-field"],
+        "canPreview": true,
+        "canOpenInV0": true
       }
     },
     {
