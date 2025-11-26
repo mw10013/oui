@@ -1,14 +1,16 @@
 "use client";
 
 import { DialogExSheet } from "@/registry/default/components/oui-dialog-ex-sheet";
-import { TextFieldEx } from "@/registry/default/components/oui-text-field-ex";
 import { Button } from "@/registry/default/ui/oui-button";
 import {
   DialogDescription,
   DialogFooter,
   DialogHeader,
 } from "@/registry/default/ui/oui-dialog";
+import { FieldError, FieldLabel } from "@/registry/default/ui/oui-field";
 import { Heading } from "@/registry/default/ui/oui-heading";
+import { Input } from "@/registry/default/ui/oui-input";
+import { TextField } from "@/registry/default/ui/oui-text-field";
 import * as Rac from "react-aria-components";
 
 export default function Component() {
@@ -25,17 +27,16 @@ export default function Component() {
           </DialogDescription>
         </DialogHeader>
         <div className="grid gap-4 py-4">
-          <TextFieldEx
-            name="name"
-            label="Name"
-            defaultValue="Pedro Duarte"
-            autoFocus
-          />
-          <TextFieldEx
-            name="username"
-            label="Username"
-            defaultValue="@peduarte"
-          />
+          <TextField name="name" autoFocus>
+            <FieldLabel>Name</FieldLabel>
+            <Input defaultValue="Pedro Duarte" />
+            <FieldError />
+          </TextField>
+          <TextField name="username">
+            <FieldLabel>Username</FieldLabel>
+            <Input defaultValue="@peduarte" />
+            <FieldError />
+          </TextField>
         </div>
         <DialogFooter>
           <Button type="submit" slot="close">

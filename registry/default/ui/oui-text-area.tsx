@@ -10,20 +10,21 @@ import * as Rac from "react-aria-components";
 /**
  * TextArea component for multi-line text input.
  * Derived from shadcn Textarea.
- * Can be nested inside TextFieldEx for label and description.
+ * Can be nested inside TextField for label and description.
  *
  * @example
  * ```tsx
- * <Oui.TextFieldEx
+ * <Oui.TextField
  *   name="bio"
- *   label="Bio"
- *   description="You can mention other users and organizations."
  * >
+ *   <Oui.FieldLabel>Bio</Oui.FieldLabel>
  *   <Oui.TextArea
  *     className="resize-none"
  *     placeholder="Tell us a little bit about yourself"
  *   />
- * </Oui.TextFieldEx>
+ *   <Oui.FieldDescription>You can mention other users and organizations.</Oui.FieldDescription>
+ *   <Oui.FieldError />
+ * </Oui.TextField>
  * ```
  */
 export function TextArea({

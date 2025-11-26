@@ -812,11 +812,12 @@
         "@oui/oui-button",
         "@oui/oui-dialog",
         "@oui/oui-dialog-ex",
+        "@oui/oui-field",
         "@oui/oui-heading",
-        "@oui/oui-text-field-ex"
+        "@oui/oui-text-field"
       ],
       "meta": {
-        "tags": ["dialog", "dialog-ex", "modal-ex", "text-field-ex", "heading"],
+        "tags": ["dialog", "dialog-ex", "modal-ex", "heading"],
         "canPreview": true,
         "alignment": "flex-center",
         "canOpenInV0": true
@@ -993,8 +994,9 @@
         "@oui/oui-button",
         "@oui/oui-dialog",
         "@oui/oui-dialog-ex-sheet",
+        "@oui/oui-field",
         "@oui/oui-heading",
-        "@oui/oui-text-field-ex"
+        "@oui/oui-text-field"
       ],
       "meta": {
         "tags": [
@@ -1002,7 +1004,6 @@
           "dialog-ex-sheet",
           "modal-ex-sheet",
           "heading",
-          "text-field-ex",
           "sheet"
         ],
         "canPreview": true,
@@ -1158,7 +1159,7 @@
         "@oui/oui-select",
         "@oui/oui-switch-ex",
         "@oui/oui-text-area",
-        "@oui/oui-text-field-ex"
+        "@oui/oui-text-field"
       ],
       "meta": {
         "tags": [
@@ -1171,7 +1172,7 @@
           "radio-group",
           "switch-ex",
           "text-area",
-          "text-field-ex"
+          "text-field"
         ],
         "canPreview": true,
         "canOpenInV0": true
@@ -1366,7 +1367,7 @@
         "@oui/oui-sidebar-ex",
         "@oui/oui-slider-ex",
         "@oui/oui-switch-ex",
-        "@oui/oui-text-field-ex",
+        "@oui/oui-text-field",
         "@oui/oui-tooltip-ex"
       ],
       "meta": {
@@ -1770,12 +1771,13 @@
       "registryDependencies": [
         "card",
         "@oui/oui-button",
+        "@oui/oui-field",
         "@oui/oui-label",
         "@oui/oui-link",
-        "@oui/oui-text-field-ex"
+        "@oui/oui-text-field"
       ],
       "meta": {
-        "tags": ["link", "text-field-ex", "login"],
+        "tags": ["link", "text-field", "login"],
         "canPreview": true,
         "canOpenInV0": true
       }
@@ -2939,51 +2941,6 @@
       ],
       "meta": {
         "tags": ["text-field", "field", "input"],
-        "canPreview": true,
-        "canOpenInV0": true
-      }
-    },
-    {
-      "name": "oui-text-field-ex",
-      "type": "registry:component",
-      "title": "Text Field Ex",
-      "description": "Reusable wrapper for Text Field.",
-      "files": [
-        {
-          "path": "registry/default/components/oui-text-field-ex.tsx",
-          "type": "registry:component"
-        }
-      ],
-      "registryDependencies": [
-        "@oui/oui-text-field",
-        "@oui/oui-input",
-        "@oui/oui-label",
-        "@oui/oui-field",
-        "@oui/oui-text"
-      ],
-      "meta": {
-        "tags": [
-          "text-field",
-          "text-field-ex",
-          "field-error",
-          "input",
-          "label",
-          "text"
-        ]
-      }
-    },
-    {
-      "name": "oui-text-field-ex-demo",
-      "type": "registry:component",
-      "files": [
-        {
-          "path": "registry/default/components/oui-text-field-ex-demo.tsx",
-          "type": "registry:component"
-        }
-      ],
-      "registryDependencies": ["@oui/oui-text-field-ex"],
-      "meta": {
-        "tags": ["text-field", "text-field-ex"],
         "canPreview": true,
         "canOpenInV0": true
       }

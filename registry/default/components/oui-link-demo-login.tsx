@@ -1,6 +1,5 @@
 "use client";
 
-import { TextFieldEx } from "@/registry/default/components/oui-text-field-ex";
 import {
   Card,
   CardContent,
@@ -10,8 +9,11 @@ import {
   CardTitle,
 } from "@/registry/default/ui/card";
 import { Button } from "@/registry/default/ui/oui-button";
+import { FieldError, FieldLabel } from "@/registry/default/ui/oui-field";
+import { Input } from "@/registry/default/ui/oui-input";
 import { Label } from "@/registry/default/ui/oui-label";
 import { Link } from "@/registry/default/ui/oui-link";
+import { TextField } from "@/registry/default/ui/oui-text-field";
 
 export default function Component() {
   return (
@@ -25,24 +27,25 @@ export default function Component() {
       <CardContent>
         <form>
           <div className="flex flex-col gap-6">
-            <TextFieldEx label="Email" placeholder="m@example.com" isRequired />
-            <TextFieldEx
-              name="password"
-              type="password"
-              isRequired
-              label={
-                <div className="flex items-center">
-                  <Label>Password</Label>
-                  <Link
-                    href="#"
-                    className="ml-auto inline-block text-sm"
-                    underline="hover"
-                  >
-                    Forgot your password?
-                  </Link>
-                </div>
-              }
-            />
+            <TextField isRequired>
+              <FieldLabel>Email</FieldLabel>
+              <Input placeholder="m@example.com" />
+              <FieldError />
+            </TextField>
+            <TextField name="password" isRequired>
+              <div className="flex items-center">
+                <Label>Password</Label>
+                <Link
+                  href="#"
+                  className="ml-auto inline-block text-sm"
+                  underline="hover"
+                >
+                  Forgot your password?
+                </Link>
+              </div>
+              <Input type="password" />
+              <FieldError />
+            </TextField>
           </div>
         </form>
       </CardContent>

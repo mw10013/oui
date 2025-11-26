@@ -4,7 +4,6 @@ import { CheckboxEx } from "@/registry/default/components/oui-checkbox-ex";
 import { CheckboxGroupEx } from "@/registry/default/components/oui-checkbox-group-ex";
 import { RadioGroupEx } from "@/registry/default/components/oui-radio-group-ex";
 import { SwitchEx } from "@/registry/default/components/oui-switch-ex";
-import { TextFieldEx } from "@/registry/default/components/oui-text-field-ex";
 import { Button } from "@/registry/default/ui/oui-button";
 import { Checkbox } from "@/registry/default/ui/oui-checkbox";
 import {
@@ -12,6 +11,7 @@ import {
   FieldError,
   FieldLabel,
 } from "@/registry/default/ui/oui-field";
+import { Input } from "@/registry/default/ui/oui-input";
 import { ListBoxItem } from "@/registry/default/ui/oui-list-box";
 import { Popover } from "@/registry/default/ui/oui-popover";
 import { Radio } from "@/registry/default/ui/oui-radio-group";
@@ -21,6 +21,7 @@ import {
   SelectValue,
 } from "@/registry/default/ui/oui-select";
 import { TextArea } from "@/registry/default/ui/oui-text-area";
+import { TextField } from "@/registry/default/ui/oui-text-field";
 import * as Rac from "react-aria-components";
 
 const items = [
@@ -53,12 +54,12 @@ const items = [
 export default function Component() {
   return (
     <Rac.Form className="max-w-sm">
-      <TextFieldEx
-        name="username"
-        placeholder="shadcn"
-          label="Username"
-        description="This is your public display name."
-      />
+      <TextField name="username">
+        <FieldLabel>Username</FieldLabel>
+        <Input placeholder="shadcn" />
+        <FieldDescription>This is your public display name.</FieldDescription>
+        <FieldError />
+      </TextField>
       <Select placeholder="Select a verified email to display">
         <FieldLabel>Email</FieldLabel>
         <SelectButton>
@@ -76,16 +77,17 @@ export default function Component() {
           </Rac.ListBox>
         </Popover>
       </Select>
-      <TextFieldEx
-        name="bio"
-        label="Bio"
-        description="You can @mention other users and organizations."
-      >
+      <TextField name="bio">
+        <FieldLabel>Bio</FieldLabel>
         <TextArea
           className="resize-none"
           placeholder="Tell us a little bit about yourself"
         />
-      </TextFieldEx>
+        <FieldDescription>
+          You can @mention other users and organizations.
+        </FieldDescription>
+        <FieldError />
+      </TextField>
       <RadioGroupEx
         name="type"
         label="Notify me about..."
