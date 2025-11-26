@@ -1,8 +1,10 @@
 import OuiTextFieldDemo from "@/registry/default/components/oui-text-field-demo";
+import OuiTextFieldDemoInvalid from "@/registry/default/components/oui-text-field-demo-invalid";
 import {
   Field,
   FieldContent,
   FieldDescription,
+  FieldError,
   FieldGroup,
   FieldLabel,
   FieldSet,
@@ -98,11 +100,61 @@ function TextFieldDemoResponsive() {
   );
 }
 
+function TextFieldDemoInvalid() {
+  return (
+    <div className="w-full max-w-md">
+      <form>
+        <FieldSet>
+          <FieldGroup>
+            <Field data-invalid>
+              <FieldLabel htmlFor="username">Username</FieldLabel>
+              <Input
+                id="username"
+                type="text"
+                placeholder="Max Leiter"
+                aria-invalid
+              />
+              <FieldDescription>
+                Choose a unique username for your account.
+              </FieldDescription>
+              <FieldError>Username is required.</FieldError>
+            </Field>
+            <Field data-invalid>
+              <FieldLabel htmlFor="password">Password</FieldLabel>
+              <FieldDescription>
+                Must be at least 8 characters long.
+              </FieldDescription>
+              <Input
+                id="password"
+                type="password"
+                placeholder="••••••••"
+                aria-invalid
+              />
+              <FieldError
+                errors={[
+                  { message: "Password must be at least 8 characters." },
+                  { message: "Password must contain at least one number." },
+                  {
+                    message:
+                      "Password must contain at least one uppercase letter.",
+                  },
+                ]}
+              />
+            </Field>
+          </FieldGroup>
+        </FieldSet>
+      </form>
+    </div>
+  );
+}
+
 export default function RouteComponent() {
   return (
-    <div className="mx-auto grid max-w-7xl grid-cols-1 gap-8 p-6 *:border *:border-foreground *:p-4">
+    <div className="mx-auto grid max-w-7xl grid-cols-2 gap-8 p-6 *:border *:border-foreground *:p-4">
       <TextFieldDemo />
       <OuiTextFieldDemo />
+      <TextFieldDemoInvalid />
+      <OuiTextFieldDemoInvalid />
       <TextFieldDemoHorizontal />
       <TextFieldDemoResponsive />
     </div>

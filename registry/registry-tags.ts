@@ -72,6 +72,7 @@ export const registryTags = [
   "disabled",
   "error-boundary",
   "icon",
+  "invalid",
   "login",
   "multiple",
   "provider",

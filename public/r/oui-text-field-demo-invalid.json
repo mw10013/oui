@@ -1,0 +1,27 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "oui-text-field-demo-invalid",
+  "type": "registry:component",
+  "registryDependencies": [
+    "@oui/oui-field",
+    "@oui/oui-input",
+    "@oui/oui-text-field"
+  ],
+  "files": [
+    {
+      "path": "registry/default/components/oui-text-field-demo-invalid.tsx",
+      "content": "\"use client\";\n\nimport {\n  FieldDescription,\n  FieldError,\n  FieldGroup,\n  FieldLabel,\n  FieldSet,\n} from \"@/registry/default/ui/oui-field\";\nimport { Input } from \"@/registry/default/ui/oui-input\";\nimport { TextField } from \"@/registry/default/ui/oui-text-field\";\nimport * as Rac from \"react-aria-components\";\n\nexport default function Component() {\n  return (\n    <div className=\"w-full max-w-md\">\n      <Rac.Form\n        validationErrors={{\n          username: \"Username is required.\",\n          password: [\n            \"Password must be at least 8 characters.\",\n            \"Password must contain at least one number.\",\n            \"Password must contain at least one uppercase letter.\",\n          ],\n        }}\n      >\n        <FieldSet>\n          <FieldGroup>\n            <TextField name=\"username\">\n              <FieldLabel>Username</FieldLabel>\n              <Input type=\"text\" placeholder=\"Max Leiter\" />\n              <FieldDescription>\n                Choose a unique username for your account.\n              </FieldDescription>\n              <FieldError />\n            </TextField>\n            <TextField name=\"password\">\n              <FieldLabel>Password</FieldLabel>\n              <FieldDescription>\n                Must be at least 8 characters long.\n              </FieldDescription>\n              <Input type=\"password\" placeholder=\"••••••••\" />\n              <FieldError />\n            </TextField>\n          </FieldGroup>\n        </FieldSet>\n      </Rac.Form>\n    </div>\n  );\n}\n",
+      "type": "registry:component"
+    }
+  ],
+  "meta": {
+    "tags": [
+      "text-field",
+      "field",
+      "input",
+      "invalid"
+    ],
+    "canPreview": true,
+    "canOpenInV0": true
+  }
+}

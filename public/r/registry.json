@@ -119,11 +119,7 @@
         "@oui/oui-select"
       ],
       "meta": {
-        "tags": [
-          "autocomplete",
-          "autocomplete-ex",
-          "select"
-        ],
+        "tags": ["autocomplete", "autocomplete-ex", "select"],
         "canPreview": true,
         "canOpenInV0": true
       }
@@ -2941,6 +2937,26 @@
       ],
       "meta": {
         "tags": ["text-field", "field", "input"],
+        "canPreview": true,
+        "canOpenInV0": true
+      }
+    },
+    {
+      "name": "oui-text-field-demo-invalid",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/default/components/oui-text-field-demo-invalid.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "@oui/oui-field",
+        "@oui/oui-input",
+        "@oui/oui-text-field"
+      ],
+      "meta": {
+        "tags": ["text-field", "field", "input", "invalid"],
         "canPreview": true,
         "canOpenInV0": true
       }

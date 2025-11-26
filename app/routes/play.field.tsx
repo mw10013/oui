@@ -3,7 +3,6 @@ import { Checkbox } from "@/registry/default/ui/checkbox";
 import {
   Field,
   FieldDescription,
-  FieldError,
   FieldGroup,
   FieldLabel,
   FieldLegend,
@@ -265,153 +264,9 @@ function OuiFieldDemo() {
   );
 }
 
-function FieldInputDemo() {
-  return (
-    <div className="w-full max-w-md">
-      <form>
-        <FieldSet>
-          <FieldGroup>
-            <Field>
-              <FieldLabel htmlFor="username">Username</FieldLabel>
-              <Input id="username" type="text" placeholder="Max Leiter" />
-              <FieldDescription>
-                Choose a unique username for your account.
-              </FieldDescription>
-            </Field>
-            <Field>
-              <FieldLabel htmlFor="password">Password</FieldLabel>
-              <FieldDescription>
-                Must be at least 8 characters long.
-              </FieldDescription>
-              <Input id="password" type="password" placeholder="••••••••" />
-            </Field>
-          </FieldGroup>
-        </FieldSet>
-      </form>
-    </div>
-  );
-}
-
-function OuiFieldInputDemo() {
-  return (
-    <div className="w-full max-w-md">
-      <Rac.Form>
-        <FieldSet>
-          <FieldGroup>
-            <Oui.TextField>
-              <Oui.FieldLabel>Username</Oui.FieldLabel>
-              <Oui.Input type="text" placeholder="Max Leiter" />
-              <Oui.FieldDescription>
-                Choose a unique username for your account.
-              </Oui.FieldDescription>
-            </Oui.TextField>
-            <Oui.TextField>
-              <Oui.FieldLabel>Password</Oui.FieldLabel>
-              <Oui.FieldDescription>
-                Must be at least 8 characters long.
-              </Oui.FieldDescription>
-              <Oui.Input type="password" placeholder="••••••••" />
-            </Oui.TextField>
-          </FieldGroup>
-        </FieldSet>
-      </Rac.Form>
-    </div>
-  );
-}
-
-function FieldInputErrorDemo() {
-  return (
-    <div className="w-full max-w-md">
-      <form>
-        <FieldSet>
-          <FieldGroup>
-            <Field data-invalid>
-              <FieldLabel htmlFor="username">Username</FieldLabel>
-              <Input
-                id="username"
-                type="text"
-                placeholder="Max Leiter"
-                aria-invalid
-              />
-              <FieldDescription>
-                Choose a unique username for your account.
-              </FieldDescription>
-              <FieldError>Username is required.</FieldError>
-            </Field>
-            <Field data-invalid>
-              <FieldLabel htmlFor="password">Password</FieldLabel>
-              <FieldDescription>
-                Must be at least 8 characters long.
-              </FieldDescription>
-              <Input
-                id="password"
-                type="password"
-                placeholder="••••••••"
-                aria-invalid
-              />
-              <FieldError
-                errors={[
-                  { message: "Password must be at least 8 characters." },
-                  { message: "Password must contain at least one number." },
-                  {
-                    message:
-                      "Password must contain at least one uppercase letter.",
-                  },
-                ]}
-              />
-            </Field>
-          </FieldGroup>
-        </FieldSet>
-      </form>
-    </div>
-  );
-}
-
-function OuiFieldInputErrorDemo() {
-  return (
-    <div className="w-full max-w-md">
-      <Rac.Form
-        validationErrors={{
-          username: "Username is required.",
-          password: [
-            "Password must be at least 8 characters.",
-            "Password must contain at least one number.",
-            "Password must contain at least one uppercase letter.",
-          ],
-        }}
-      >
-        <FieldSet>
-          <FieldGroup>
-            <Oui.TextField name="username">
-              <Oui.FieldLabel>Username</Oui.FieldLabel>
-              <Oui.Input type="text" placeholder="Max Leiter" />
-              <Oui.FieldDescription>
-                Choose a unique username for your account.
-              </Oui.FieldDescription>
-              <Oui.FieldError />
-            </Oui.TextField>
-            <Oui.TextField name="password">
-              <Oui.FieldLabel>Password</Oui.FieldLabel>
-              <Oui.FieldDescription>
-                Must be at least 8 characters long.
-              </Oui.FieldDescription>
-              <Oui.Input type="password" placeholder="••••••••" />
-              <Oui.FieldError />
-            </Oui.TextField>
-          </FieldGroup>
-        </FieldSet>
-      </Rac.Form>
-    </div>
-  );
-}
-
 export default function RouteComponent() {
   return (
     <div className="mx-auto grid max-w-7xl grid-cols-2 gap-8 p-6 *:border *:border-foreground *:p-4">
-      <FieldInputErrorDemo />
-      <OuiFieldInputErrorDemo />
-      <FieldInputDemo />
-      <OuiFieldInputDemo />
       <FieldDemo />
       <OuiFieldDemo />
     </div>
