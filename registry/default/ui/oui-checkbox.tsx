@@ -10,10 +10,8 @@ import * as Rac from "react-aria-components";
 import { twMerge } from "tailwind-merge";
 
 /**
- * Derived from shadcn FormDemo FormItem and CheckboxPrimitive.Root
+ * Derived from shadcn Label, Field, and CheckboxPrimitive.Root
  * Radix has CheckboxPrimitive.Root which is separate from label while RAC structures with a label.
- *
- * @note Uses `leading-none` to override the `leading-snug` from `labelComponentStyles` for better alignment with the checkbox.
  */
 export function Checkbox({ className, children, ...props }: Rac.CheckboxProps) {
   return (

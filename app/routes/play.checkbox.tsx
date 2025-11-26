@@ -278,9 +278,63 @@ function OuiFieldCheckboxDemo1() {
   );
 }
 
+function FieldCheckboxDemoSingle() {
+  return (
+    <div className="w-full max-w-md">
+      <Field orientation="horizontal">
+        <Checkbox id="finder-pref-9k2-sync-folders-nep" defaultChecked />
+        <FieldContent>
+          <FieldLabel htmlFor="finder-pref-9k2-sync-folders-nep">
+            Sync Desktop & Documents folders
+          </FieldLabel>
+          <FieldDescription>
+            Your Desktop & Documents folders are being synced with iCloud Drive.
+            You can access them from other devices.
+          </FieldDescription>
+        </FieldContent>
+      </Field>
+    </div>
+  );
+}
+
+function OuiFieldCheckboxDemoSingle() {
+  return (
+    <div className="w-full max-w-md">
+      <Oui.CheckboxGroup defaultValue={["sync"]}>
+        {/* <Oui.FieldContent> */}
+        <Oui.Checkbox value="sync">
+          Sync Desktop & Documents folders
+        </Oui.Checkbox>
+        <Oui.FieldDescription>
+          Your Desktop & Documents folders are being synced with iCloud Drive.
+          You can access them from other devices.
+        </Oui.FieldDescription>
+        {/* </Oui.FieldContent> */}
+      </Oui.CheckboxGroup>
+      {/* <Oui.Field orientation="horizontal">
+        <Oui.Checkbox
+          id="oui-finder-pref-9k2-sync-folders-nep"
+          defaultSelected
+        />
+        <FieldContent>
+          <Oui.FieldLabel htmlFor="oui-finder-pref-9k2-sync-folders-nep">
+            Sync Desktop & Documents folders
+          </Oui.FieldLabel>
+          <Oui.FieldDescription>
+            Your Desktop & Documents folders are being synced with iCloud Drive.
+            You can access them from other devices.
+          </Oui.FieldDescription>
+        </FieldContent>
+      </Oui.Field> */}
+    </div>
+  );
+}
+
 export default function RouteComponent() {
   return (
     <div className="mx-auto grid max-w-7xl grid-cols-2 gap-8 p-6 *:border *:border-foreground *:p-4">
+      <FieldCheckboxDemoSingle />
+      <OuiFieldCheckboxDemoSingle />
       <CheckboxDemo />
       <OuiCheckboxDemo />
       <FieldCheckboxDemo />
