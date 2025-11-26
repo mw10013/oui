@@ -301,15 +301,21 @@ function OuiFieldCheckboxDemoSingle() {
   return (
     <div className="w-full max-w-md">
       <Oui.CheckboxGroup defaultValue={["sync"]}>
-        {/* <Oui.FieldContent> */}
-        <Oui.Checkbox value="sync">
-          Sync Desktop & Documents folders
-        </Oui.Checkbox>
-        <Oui.FieldDescription>
-          Your Desktop & Documents folders are being synced with iCloud Drive.
-          You can access them from other devices.
-        </Oui.FieldDescription>
-        {/* </Oui.FieldContent> */}
+        <div className="grid grid-cols-[auto_1fr] gap-x-3 gap-y-1.5">
+          <Oui.Checkbox
+            value="sync"
+            className="col-span-full grid grid-cols-subgrid"
+          >
+            Sync Desktop & Documents folders
+          </Oui.Checkbox>
+          <div className="col-span-full grid grid-cols-subgrid">
+            <span />
+            <Oui.FieldDescription>
+              Your Desktop & Documents folders are being synced with iCloud
+              Drive. You can access them from other devices.
+            </Oui.FieldDescription>
+          </div>
+        </div>
       </Oui.CheckboxGroup>
       {/* <Oui.Field orientation="horizontal">
         <Oui.Checkbox
