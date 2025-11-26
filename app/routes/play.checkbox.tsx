@@ -233,6 +233,51 @@ function OuiFieldCheckboxDemo() {
   );
 }
 
+function OuiFieldCheckboxDemo1() {
+  return (
+    <div className="w-full max-w-md">
+      <FieldGroup>
+        <Oui.CheckboxGroup defaultValue={["hard-disks"]}>
+          <Oui.FieldLabel>Show these items on the desktop</Oui.FieldLabel>
+          <Oui.FieldDescription>
+            Select the items you want to show on the desktop.
+          </Oui.FieldDescription>
+          <div className="flex flex-col gap-3">
+            <Oui.Checkbox value="hard-disks" className="font-normal">
+              Hard disks
+            </Oui.Checkbox>
+            <Oui.Checkbox value="external-disks" className="font-normal">
+              External disks
+            </Oui.Checkbox>
+            <Oui.Checkbox value="cds-dvds" className="font-normal">
+              CDs, DVDs, and iPods
+            </Oui.Checkbox>
+            <Oui.Checkbox value="connected-servers" className="font-normal">
+              Connected servers
+            </Oui.Checkbox>
+          </div>
+          <Oui.FieldError />
+        </Oui.CheckboxGroup>
+        <FieldSeparator />
+        <Oui.CheckboxGroup
+          orientation="horizontal"
+          defaultValue={["sync-folders"]}
+        >
+          <Oui.Checkbox value="sync-folders" />
+          <FieldContent>
+            <Oui.FieldLabel>Sync Desktop & Documents folders</Oui.FieldLabel>
+            <Oui.FieldDescription>
+              Your Desktop & Documents folders are being synced with iCloud
+              Drive. You can access them from other devices.
+            </Oui.FieldDescription>
+          </FieldContent>
+          <Oui.FieldError />
+        </Oui.CheckboxGroup>
+      </FieldGroup>
+    </div>
+  );
+}
+
 export default function RouteComponent() {
   return (
     <div className="mx-auto grid max-w-7xl grid-cols-2 gap-8 p-6 *:border *:border-foreground *:p-4">
@@ -240,6 +285,8 @@ export default function RouteComponent() {
       <OuiCheckboxDemo />
       <FieldCheckboxDemo />
       <OuiFieldCheckboxDemo />
+      <FieldCheckboxDemo />
+      <OuiFieldCheckboxDemo1 />
     </div>
   );
 }
