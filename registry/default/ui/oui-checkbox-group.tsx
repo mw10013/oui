@@ -1,17 +1,27 @@
 "use client";
 
+import type { FieldStylesProps } from "@/registry/default/ui/oui-field";
 import { composeTailwindRenderProps } from "@/registry/default/ui/oui-base";
+import { fieldStyles } from "@/registry/default/ui/oui-field";
 import * as Rac from "react-aria-components";
+
+export type CheckboxGroupProps = Rac.CheckboxGroupProps & FieldStylesProps;
 
 export function CheckboxGroup({
   className,
+  orientation = "vertical",
   children,
   ...props
-}: Rac.CheckboxGroupProps) {
+}: CheckboxGroupProps) {
   return (
     <Rac.CheckboxGroup
+      data-slot="field"
+      data-orientation={orientation}
+      className={composeTailwindRenderProps(
+        className,
+        fieldStyles({ orientation }),
+      )}
       {...props}
-      className={composeTailwindRenderProps(className, "flex flex-col gap-4")}
     >
       {(renderProps) =>
         typeof children === "function" ? children(renderProps) : children
