@@ -21,7 +21,8 @@
     "tail:int": "wrangler tail oui-int",
     "tail:PRODUCTION": "wrangler tail oui",
     "registry:build": "rm -rf public/r && shadcn build",
-    "migrate:radix": "shadcn migrate radix"
+    "migrate:radix": "shadcn migrate radix",
+    "refs:react-spectrum": "rm -rf refs/react-spectrum && mkdir -p refs/react-spectrum && curl -L https://github.com/adobe/react-spectrum/archive/refs/tags/react-aria-components@1.13.0.tar.gz | tar -xz -C refs/react-spectrum --strip-components=1"
   },
   "dependencies": {
     "@epic-web/invariant": "1.0.0",
