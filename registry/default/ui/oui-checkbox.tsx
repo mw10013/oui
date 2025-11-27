@@ -10,7 +10,7 @@ import * as Rac from "react-aria-components";
 import { twMerge } from "tailwind-merge";
 
 /**
- * Derived from shadcn Label, Field, and CheckboxPrimitive.Root
+ * Derived from shadcn Label, Field (gap-3 but not items-start), and CheckboxPrimitive.Root
  * Radix has CheckboxPrimitive.Root which is separate from label while RAC structures with a label.
  */
 export function Checkbox({ className, children, ...props }: Rac.CheckboxProps) {
@@ -19,7 +19,7 @@ export function Checkbox({ className, children, ...props }: Rac.CheckboxProps) {
       data-slot="checkbox"
       className={composeTailwindRenderProps(className, [
         labelComponentStyles,
-        "group items-start gap-3",
+        "group gap-3",
       ])}
       {...props}
     >
