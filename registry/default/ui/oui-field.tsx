@@ -187,38 +187,56 @@ export function useSlotId(deps: React.DependencyList = []): string | undefined {
   return resolvedId;
 }
 
+/**
+ * Field to compose a checkbox with a field description.
+ *
+ * @example
+ * ```tsx
+ * #import * as Oui from "@/components/ui/oui-index";
+ *
+ * <Oui.FieldCheckbox>
+ *   <Oui.Checkbox defaultSelected>Sync Desktop & Documents folders</Oui.Checkbox>
+ *   <Oui.FieldDescription>
+ *     Your Desktop & Documents folders are being synced with iCloud Drive.
+ *     You can access them from other devices.
+ *   </Oui.FieldDescription>
+ * </Oui.FieldCheckbox>
+ * ```
+ * 
+ * Not necessary if you have no description.
+ */
 export function FieldCheckbox({
   className,
   children,
   ...props
 }: React.ComponentProps<"div">) {
   const descriptionId = useSlotId();
-  const errorMessageId = useSlotId();
   return (
     <div
       data-slot="field"
       className={twMerge(
         "group/field grid grid-cols-[auto_1fr] gap-x-3 gap-y-1.5",
         "*:data-[slot=checkbox]:col-span-full *:data-[slot=checkbox]:grid *:data-[slot=checkbox]:grid-cols-subgrid",
-        "*:data-[slot=field-description]:col-start-2 *:data-[slot=field-error]:col-start-2",
+        "*:data-[slot=field-description]:col-start-2",
         className,
       )}
       {...props}
     >
-      <Rac.TextContext.Provider
-        value={{
-          slots: {
-            description: { id: descriptionId },
-            errorMessage: { id: errorMessageId },
-          },
-        }}
+      <Rac.Provider
+        values={[
+          [Rac.CheckboxContext, { "aria-describedby": descriptionId }],
+          [
+            Rac.TextContext,
+            {
+              slots: {
+                description: { id: descriptionId },
+              },
+            },
+          ],
+        ]}
       >
-        <Rac.CheckboxContext.Provider
-          value={{ "aria-describedby": descriptionId }}
-        >
-          {children}
-        </Rac.CheckboxContext.Provider>
-      </Rac.TextContext.Provider>
+        {children}
+      </Rac.Provider>
     </div>
   );
 }
