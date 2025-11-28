@@ -1,5 +1,6 @@
 "use client";
 
+import OuiFieldCheckboxDemo from "@/registry/default/components/oui-checkbox-demo";
 import { Checkbox } from "@/registry/default/ui/checkbox";
 import {
   Field,
@@ -154,49 +155,6 @@ function FieldCheckboxDemo() {
             </FieldDescription>
           </FieldContent>
         </Field>
-      </FieldGroup>
-    </div>
-  );
-}
-
-function OuiFieldCheckboxDemo() {
-  return (
-    <div className="w-full max-w-md">
-      <FieldGroup>
-        <Oui.CheckboxGroup defaultValue={["hard-disks"]}>
-          <Oui.FieldLabel className="text-sm">
-            Show these items on the desktop
-          </Oui.FieldLabel>
-          <Oui.FieldDescription className="mb-3">
-            Select the items you want to show on the desktop.
-          </Oui.FieldDescription>
-          <Oui.Checkbox value="hard-disks" className="font-normal">
-            Hard disks
-          </Oui.Checkbox>
-          <Oui.Checkbox value="external-disks" className="font-normal">
-            External disks
-          </Oui.Checkbox>
-          <Oui.Checkbox value="cds-dvds" className="font-normal">
-            CDs, DVDs, and iPods
-          </Oui.Checkbox>
-          <Oui.Checkbox value="connected-servers" className="font-normal">
-            Connected servers
-          </Oui.Checkbox>
-          <Oui.FieldError />
-        </Oui.CheckboxGroup>
-        <FieldSeparator />
-        <Oui.CheckboxGroup
-          defaultValue={["sync"]}
-          className="grid grid-cols-[auto_1fr] gap-x-3 gap-y-1.5 *:data-[slot=checkbox]:col-span-full *:data-[slot=checkbox]:grid *:data-[slot=checkbox]:grid-cols-subgrid"
-        >
-          <Oui.Checkbox value="sync">
-            Sync Desktop & Documents folders
-          </Oui.Checkbox>
-          <Oui.FieldDescription className="col-start-2">
-            Your Desktop & Documents folders are being synced with iCloud Drive.
-            You can access them from other devices.
-          </Oui.FieldDescription>
-        </Oui.CheckboxGroup>
       </FieldGroup>
     </div>
   );

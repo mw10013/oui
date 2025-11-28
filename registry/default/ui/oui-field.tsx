@@ -169,56 +169,59 @@ export function FieldError({
   );
 }
 
-/* shadcn FieldError
+/**
+ * Hook that generates an ID but only returns it if an element with that ID exists in the DOM.
+ * Prevents dangling aria-describedby references when slotted elements are not rendered.
+ *
+ * Simplified version of RAC's useSlotId. Edge case: if a slotted child suspends after the
+ * parent renders but before mounting, the ID may dangle until the next render. This doesn't
+ * apply when Suspense wraps the entire Field—only when a slot child itself suspends.
+ */
+export function useSlotId(deps: React.DependencyList = []): string | undefined {
+  const id = React.useId();
+  const [resolvedId, setResolvedId] = React.useState<string | undefined>(id);
+  React.useLayoutEffect(() => {
+    setResolvedId(document.getElementById(id) ? id : undefined);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [id, ...deps]);
+  return resolvedId;
+}
 
-function FieldError({
+export function FieldCheckbox({
   className,
   children,
-  errors,
   ...props
-}: React.ComponentProps<"div"> & {
-  errors?: Array<{ message?: string } | undefined>
-}) {
-  const content = useMemo(() => {
-    if (children) {
-      return children
-    }
-
-    if (!errors?.length) {
-      return null
-    }
-
-    const uniqueErrors = [
-      ...new Map(errors.map((error) => [error?.message, error])).values(),
-    ]
-
-    if (uniqueErrors?.length == 1) {
-      return uniqueErrors[0]?.message
-    }
-
-    return (
-      <ul className="ml-4 flex list-disc flex-col gap-1">
-        {uniqueErrors.map(
-          (error, index) =>
-            error?.message && <li key={index}>{error.message}</li>
-        )}
-      </ul>
-    )
-  }, [children, errors])
-
-  if (!content) {
-    return null
-  }
-
+}: React.ComponentProps<"div">) {
+  const descriptionId = useSlotId();
+  const errorMessageId = useSlotId();
+  console.log(
+    `FieldCheckbox: ${JSON.stringify({ descriptionId, errorMessageId }, null, 2)}`,
+  );
   return (
     <div
-      role="alert"
-      data-slot="field-error"
-      className={cn("text-destructive text-sm font-normal", className)}
+      data-slot="field"
+      className={twMerge(
+        "group/field grid grid-cols-[auto_1fr] gap-x-3 gap-y-1.5",
+        "*:data-[slot=checkbox]:col-span-full *:data-[slot=checkbox]:grid *:data-[slot=checkbox]:grid-cols-subgrid *:data-[slot=checkbox]:leading-snug",
+        "*:data-[slot=field-description]:col-start-2",
+        className,
+      )}
       {...props}
     >
-      {content}
+      <Rac.TextContext.Provider
+        value={{
+          slots: {
+            description: { id: descriptionId },
+            errorMessage: { id: errorMessageId },
+          },
+        }}
+      >
+        <Rac.CheckboxContext.Provider
+          value={{ "aria-describedby": descriptionId }}
+        >
+          {children}
+        </Rac.CheckboxContext.Provider>
+      </Rac.TextContext.Provider>
     </div>
-  )
+  );
 }
-*/
