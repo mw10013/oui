@@ -1,10 +1,10 @@
 "use client";
 
-import { CheckboxGroupEx } from "@/registry/default/components/oui-checkbox-group-ex";
 import { RadioGroupEx } from "@/registry/default/components/oui-radio-group-ex";
 import { SwitchEx } from "@/registry/default/components/oui-switch-ex";
 import { Button } from "@/registry/default/ui/oui-button";
 import { Checkbox } from "@/registry/default/ui/oui-checkbox";
+import { CheckboxGroup } from "@/registry/default/ui/oui-checkbox-group";
 import {
   FieldCheckbox,
   FieldDescription,
@@ -23,33 +23,6 @@ import {
 import { TextArea } from "@/registry/default/ui/oui-text-area";
 import { TextField } from "@/registry/default/ui/oui-text-field";
 import * as Rac from "react-aria-components";
-
-const items = [
-  {
-    id: "recents",
-    label: "Recents",
-  },
-  {
-    id: "home",
-    label: "Home",
-  },
-  {
-    id: "applications",
-    label: "Applications",
-  },
-  {
-    id: "desktop",
-    label: "Desktop",
-  },
-  {
-    id: "downloads",
-    label: "Downloads",
-  },
-  {
-    id: "documents",
-    label: "Documents",
-  },
-] as const;
 
 export default function Component() {
   return (
@@ -111,23 +84,18 @@ export default function Component() {
           You can manage your mobile notifications in the mobile settings page.
         </FieldDescription>
       </FieldCheckbox>
-      <CheckboxGroupEx
-        name="items"
-        labelClassName="text-base"
-        label="Sidebar"
-        description="Select the items you want to display in the sidebar."
-        defaultValue={["recents", "home"]}
-      >
-        {items.map((item) => (
-          <Checkbox
-            key={item.id}
-            value={item.id}
-            className="text-sm leading-tight font-normal"
-          >
-            {item.label}
-          </Checkbox>
-        ))}
-      </CheckboxGroupEx>
+      <CheckboxGroup defaultValue={["recents", "home"]}>
+        <FieldLabel className="text-base">Sidebar</FieldLabel>
+        <FieldDescription>
+          Select the items you want to show in the sidebar.
+        </FieldDescription>
+        <Checkbox value="recents">Recents</Checkbox>
+        <Checkbox value="home">Home</Checkbox>
+        <Checkbox value="applications">Applications</Checkbox>
+        <Checkbox value="desktop">Desktop</Checkbox>
+        <Checkbox value="downloads">Downloads</Checkbox>
+        <Checkbox value="documents">Documents</Checkbox>
+      </CheckboxGroup>
       <div>
         <h3 className="mb-4 text-lg font-medium">Email Notifications</h3>
         <div className="flex flex-col gap-4">

@@ -509,52 +509,6 @@
       }
     },
     {
-      "name": "oui-checkbox-group-ex",
-      "type": "registry:component",
-      "title": "Checkbox Group Ex",
-      "description": "Reusable wrapper for Checkbox Group.",
-      "files": [
-        {
-          "path": "registry/default/components/oui-checkbox-group-ex.tsx",
-          "type": "registry:component"
-        }
-      ],
-      "registryDependencies": [
-        "@oui/oui-checkbox-group",
-        "@oui/oui-field",
-        "@oui/oui-label",
-        "@oui/oui-text"
-      ],
-      "meta": {
-        "tags": [
-          "checkbox-group",
-          "checkbox-group-ex",
-          "field-error",
-          "label",
-          "text"
-        ]
-      }
-    },
-    {
-      "name": "oui-checkbox-group-ex-demo",
-      "type": "registry:component",
-      "files": [
-        {
-          "path": "registry/default/components/oui-checkbox-group-ex-demo.tsx",
-          "type": "registry:component"
-        }
-      ],
-      "registryDependencies": [
-        "@oui/oui-checkbox-group-ex",
-        "@oui/oui-checkbox"
-      ],
-      "meta": {
-        "tags": ["checkbox-group", "checkbox-group-ex", "checkbox"],
-        "canPreview": true,
-        "canOpenInV0": true
-      }
-    },
-    {
       "name": "oui-combo-box",
       "type": "registry:ui",
       "title": "Combo Box",
@@ -1120,7 +1074,7 @@
       ],
       "registryDependencies": [
         "@oui/oui-button",
-        "@oui/oui-checkbox-group-ex",
+        "@oui/oui-checkbox-group",
         "@oui/oui-checkbox",
         "@oui/oui-field",
         "@oui/oui-list-box",
@@ -1136,7 +1090,7 @@
         "tags": [
           "form",
           "button",
-          "checkbox-group-ex",
+          "checkbox-group",
           "checkbox",
           "field",
           "radio-group-ex",
@@ -1321,7 +1275,6 @@
         "@oui/oui-autocomplete-ex",
         "@oui/oui-badge-ex",
         "@oui/oui-card-ex",
-        "@oui/oui-checkbox-group-ex",
         "@oui/oui-combo-box-ex",
         "@oui/oui-dialog-ex-alert",
         "@oui/oui-dialog-ex-sheet",
