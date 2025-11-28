@@ -33,6 +33,10 @@ export default function Component() {
         <FieldCheckbox>
           <Checkbox isDisabled>Enable alerts</Checkbox>
         </FieldCheckbox>
+        <FieldSeparator />
+        <FieldCheckbox>
+          <Checkbox isInvalid>Enable pagers</Checkbox>
+        </FieldCheckbox>
       </FieldGroup>
     </div>
   );

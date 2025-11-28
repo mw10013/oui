@@ -464,25 +464,9 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["@oui/oui-checkbox"],
+      "registryDependencies": ["@oui/oui-checkbox", "@oui/oui-field"],
       "meta": {
-        "tags": ["checkbox", "disabled"],
-        "canPreview": true,
-        "canOpenInV0": true
-      }
-    },
-    {
-      "name": "oui-checkbox-demo-disabled",
-      "type": "registry:component",
-      "files": [
-        {
-          "path": "registry/default/components/oui-checkbox-demo-disabled.tsx",
-          "type": "registry:component"
-        }
-      ],
-      "registryDependencies": ["@oui/oui-checkbox"],
-      "meta": {
-        "tags": ["checkbox", "disabled"],
+        "tags": ["checkbox", "disabled", "invalid"],
         "canPreview": true,
         "canOpenInV0": true
       }

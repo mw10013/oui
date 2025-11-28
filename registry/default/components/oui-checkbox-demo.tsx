@@ -19,7 +19,7 @@ export default function Component() {
           <FieldLabel className="text-sm">
             Show these items on the desktop
           </FieldLabel>
-          <FieldDescription className="mb-2">
+          <FieldDescription>
             Select the items you want to show on the desktop.
           </FieldDescription>
           <Checkbox value="hard-disks" className="font-normal">
