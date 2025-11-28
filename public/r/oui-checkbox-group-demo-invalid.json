@@ -1,0 +1,26 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "oui-checkbox-group-demo-invalid",
+  "type": "registry:component",
+  "registryDependencies": [
+    "@oui/oui-checkbox-group",
+    "@oui/oui-checkbox",
+    "@oui/oui-field"
+  ],
+  "files": [
+    {
+      "path": "registry/default/components/oui-checkbox-group-demo-invalid.tsx",
+      "content": "\"use client\";\n\nimport { Checkbox } from \"@/registry/default/ui/oui-checkbox\";\nimport { CheckboxGroup } from \"@/registry/default/ui/oui-checkbox-group\";\nimport {\n  FieldDescription,\n  FieldError,\n  FieldGroup,\n  FieldLabel,\n} from \"@/registry/default/ui/oui-field\";\n\nexport default function Component() {\n  return (\n    <div className=\"w-full max-w-md\">\n      <FieldGroup>\n        <CheckboxGroup defaultValue={[\"hard-disks\"]}>\n          <FieldLabel>Show these items on the desktop</FieldLabel>\n          <FieldDescription>\n            Select the items you want to show on the desktop.\n          </FieldDescription>\n          <Checkbox value=\"hard-disks\">\n            Hard disks\n          </Checkbox>\n          <Checkbox value=\"external-disks\">\n            External disks\n          </Checkbox>\n          <Checkbox value=\"cds-dvds\" isDisabled>\n            CDs, DVDs, and iPods\n          </Checkbox>\n          <Checkbox value=\"connected-servers\">\n            Connected servers\n          </Checkbox>\n          <FieldError />\n        </CheckboxGroup>\n      </FieldGroup>\n    </div>\n  );\n}\n",
+      "type": "registry:component"
+    }
+  ],
+  "meta": {
+    "tags": [
+      "checkbox-group",
+      "checkbox",
+      "invalid"
+    ],
+    "canPreview": true,
+    "canOpenInV0": true
+  }
+}

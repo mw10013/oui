@@ -21,7 +21,8 @@ export function CheckboxGroup({
         className,
         fieldStyles({
           orientation,
-          className: "*:data-[slot=field-description]:mb-2"
+          className:
+            "*:data-[slot=checkbox]:font-normal *:data-[slot=field-description]:mb-2",
         }),
       )}
       {...props}

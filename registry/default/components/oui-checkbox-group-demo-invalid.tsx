@@ -14,9 +14,7 @@ export default function Component() {
     <div className="w-full max-w-md">
       <FieldGroup>
         <CheckboxGroup defaultValue={["hard-disks"]}>
-          <FieldLabel className="text-sm">
-            Show these items on the desktop
-          </FieldLabel>
+          <FieldLabel>Show these items on the desktop</FieldLabel>
           <FieldDescription>
             Select the items you want to show on the desktop.
           </FieldDescription>

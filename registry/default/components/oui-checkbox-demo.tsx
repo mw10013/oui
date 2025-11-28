@@ -22,16 +22,16 @@ export default function Component() {
           <FieldDescription>
             Select the items you want to show on the desktop.
           </FieldDescription>
-          <Checkbox value="hard-disks" className="font-normal">
+          <Checkbox value="hard-disks">
             Hard disks
           </Checkbox>
-          <Checkbox value="external-disks" className="font-normal">
+          <Checkbox value="external-disks">
             External disks
           </Checkbox>
-          <Checkbox value="cds-dvds" className="font-normal">
+          <Checkbox value="cds-dvds">
             CDs, DVDs, and iPods
           </Checkbox>
-          <Checkbox value="connected-servers" className="font-normal">
+          <Checkbox value="connected-servers">
             Connected servers
           </Checkbox>
           <FieldError />

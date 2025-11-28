@@ -500,10 +500,30 @@
       "registryDependencies": [
         "@oui/oui-checkbox-group",
         "@oui/oui-checkbox",
-        "@oui/oui-label"
+        "@oui/oui-field"
       ],
       "meta": {
         "tags": ["checkbox-group", "checkbox"],
+        "canPreview": true,
+        "canOpenInV0": true
+      }
+    },
+    {
+      "name": "oui-checkbox-group-demo-invalid",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/default/components/oui-checkbox-group-demo-invalid.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "@oui/oui-checkbox-group",
+        "@oui/oui-checkbox",
+        "@oui/oui-field"
+      ],
+      "meta": {
+        "tags": ["checkbox-group", "checkbox", "invalid"],
         "canPreview": true,
         "canOpenInV0": true
       }

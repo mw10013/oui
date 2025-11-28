@@ -5,12 +5,12 @@
   "registryDependencies": [
     "@oui/oui-checkbox-group",
     "@oui/oui-checkbox",
-    "@oui/oui-label"
+    "@oui/oui-field"
   ],
   "files": [
     {
       "path": "registry/default/components/oui-checkbox-group-demo.tsx",
-      "content": "\"use client\";\n\nimport { Checkbox } from \"@/registry/default/ui/oui-checkbox\";\nimport { CheckboxGroup } from \"@/registry/default/ui/oui-checkbox-group\";\nimport { Label } from \"@/registry/default/ui/oui-label\";\n\nexport default function Component() {\n  return (\n    <CheckboxGroup>\n      <Label>Favorite sports</Label>\n      <Checkbox value=\"soccer\">Soccer</Checkbox>\n      <Checkbox value=\"baseball\">Baseball</Checkbox>\n      <Checkbox value=\"basketball\">Basketball</Checkbox>\n    </CheckboxGroup>\n  );\n}\n",
+      "content": "\"use client\";\n\nimport { Checkbox } from \"@/registry/default/ui/oui-checkbox\";\nimport { CheckboxGroup } from \"@/registry/default/ui/oui-checkbox-group\";\nimport {\n  FieldDescription,\n  FieldError,\n  FieldGroup,\n  FieldLabel,\n} from \"@/registry/default/ui/oui-field\";\n\nexport default function Component() {\n  return (\n    <div className=\"w-full max-w-md\">\n      <FieldGroup>\n        <CheckboxGroup defaultValue={[\"hard-disks\"]}>\n          <FieldLabel className=\"text-sm\">\n            Show these items on the desktop\n          </FieldLabel>\n          <FieldDescription>\n            Select the items you want to show on the desktop.\n          </FieldDescription>\n          <Checkbox value=\"hard-disks\">\n            Hard disks\n          </Checkbox>\n          <Checkbox value=\"external-disks\">\n            External disks\n          </Checkbox>\n          <Checkbox value=\"cds-dvds\" isDisabled>\n            CDs, DVDs, and iPods\n          </Checkbox>\n          <Checkbox value=\"connected-servers\">\n            Connected servers\n          </Checkbox>\n          <FieldError />\n        </CheckboxGroup>\n      </FieldGroup>\n    </div>\n  );\n}\n",
       "type": "registry:component"
     }
   ],
