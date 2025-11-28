@@ -13,8 +13,6 @@ export function CheckboxGroup({
   children,
   ...props
 }: CheckboxGroupProps) {
-  // Oui.Checkbox uses labelComponentStyles which applies `leading-none`.
-  // CheckboxGroup is functionally a shadcn Field and applies `leading-snug` to checkboxes to align with FieldLabel.
   return (
     <Rac.CheckboxGroup
       data-slot="field"
@@ -23,7 +21,6 @@ export function CheckboxGroup({
         className,
         fieldStyles({
           orientation,
-          className: "**:data-[slot=checkbox]:leading-snug",
         }),
       )}
       {...props}

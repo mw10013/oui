@@ -58,9 +58,15 @@ function CheckboxDemo() {
 function OuiCheckboxDemo() {
   return (
     <div className="flex flex-col gap-6">
-      <Oui.Checkbox>Accept terms and conditions</Oui.Checkbox>
+      <Oui.Checkbox className="leading-none">
+        Accept terms and conditions
+      </Oui.Checkbox>
       <div className="flex items-start gap-3">
-        <Oui.Checkbox id="oui-terms-2" defaultSelected />
+        <Oui.Checkbox
+          id="oui-terms-2"
+          defaultSelected
+          className="leading-none"
+        />
         <div className="grid gap-2">
           <Oui.Label htmlFor="oui-terms-2">
             Accept terms and conditions
@@ -70,11 +76,13 @@ function OuiCheckboxDemo() {
           </p>
         </div>
       </div>
-      <Oui.Checkbox isDisabled>Enable notifications</Oui.Checkbox>
+      <Oui.Checkbox isDisabled className="leading-none">
+        Enable notifications
+      </Oui.Checkbox>
       <Oui.Checkbox
         defaultSelected
         className={twJoin(
-          "items-start rounded-lg border p-3 data-hovered:bg-accent/50 data-selected:border-blue-600 data-selected:bg-blue-50 dark:data-selected:border-blue-900 dark:data-selected:bg-blue-950",
+          "items-start rounded-lg border p-3 leading-none data-hovered:bg-accent/50 data-selected:border-blue-600 data-selected:bg-blue-50 dark:data-selected:border-blue-900 dark:data-selected:bg-blue-950",
           "**:data-[slot=checkbox-indicator]:group-data-selected:border-blue-600 **:data-[slot=checkbox-indicator]:group-data-selected:bg-blue-600 **:data-[slot=checkbox-indicator]:group-data-selected:text-white dark:**:data-[slot=checkbox-indicator]:group-data-selected:border-blue-700 dark:**:data-[slot=checkbox-indicator]:group-data-selected:bg-blue-700",
         )}
       >

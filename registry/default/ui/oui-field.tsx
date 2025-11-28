@@ -202,7 +202,7 @@ export function FieldCheckbox({
       data-slot="field"
       className={twMerge(
         "group/field grid grid-cols-[auto_1fr] gap-x-3 gap-y-1.5",
-        "*:data-[slot=checkbox]:col-span-full *:data-[slot=checkbox]:grid *:data-[slot=checkbox]:grid-cols-subgrid *:data-[slot=checkbox]:leading-snug",
+        "*:data-[slot=checkbox]:col-span-full *:data-[slot=checkbox]:grid *:data-[slot=checkbox]:grid-cols-subgrid",
         "*:data-[slot=field-description]:col-start-2",
         className,
       )}
