@@ -456,17 +456,17 @@
       }
     },
     {
-      "name": "oui-checkbox-demo-border",
+      "name": "oui-checkbox-demo-blue",
       "type": "registry:component",
       "files": [
         {
-          "path": "registry/default/components/oui-checkbox-demo-border.tsx",
+          "path": "registry/default/components/oui-checkbox-demo-blue.tsx",
           "type": "registry:component"
         }
       ],
       "registryDependencies": ["@oui/oui-checkbox"],
       "meta": {
-        "tags": ["checkbox"],
+        "tags": ["checkbox", "disabled"],
         "canPreview": true,
         "canOpenInV0": true
       }

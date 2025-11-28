@@ -1,0 +1,23 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "oui-checkbox-demo-blue",
+  "type": "registry:component",
+  "registryDependencies": [
+    "@oui/oui-checkbox"
+  ],
+  "files": [
+    {
+      "path": "registry/default/components/oui-checkbox-demo-blue.tsx",
+      "content": "\"use client\";\n\nimport { Checkbox } from \"@/registry/default/ui/oui-checkbox\";\nimport {\n  FieldCheckbox,\n  FieldContent,\n  FieldDescription,\n  FieldGroup,\n  FieldSeparator,\n  FieldTitle,\n} from \"@/registry/default/ui/oui-field\";\nimport { twJoin } from \"tailwind-merge\";\n\nexport default function Component() {\n  return (\n    <div className=\"w-full max-w-md\">\n      <FieldGroup>\n        <Checkbox\n          defaultSelected\n          className={twJoin(\n            \"items-start rounded-lg border p-3 data-hovered:bg-accent/50 data-selected:border-blue-600 data-selected:bg-blue-50 dark:data-selected:border-blue-900 dark:data-selected:bg-blue-950\",\n            \"*:data-[slot=checkbox-indicator]:group-data-selected:border-blue-600 *:data-[slot=checkbox-indicator]:group-data-selected:bg-blue-600 *:data-[slot=checkbox-indicator]:group-data-selected:text-white dark:*:data-[slot=checkbox-indicator]:group-data-selected:border-blue-700 dark:*:data-[slot=checkbox-indicator]:group-data-selected:bg-blue-700\",\n          )}\n        >\n          <FieldContent>\n            <FieldTitle>Enable notifications</FieldTitle>\n            <FieldDescription>\n              You can enable or disable notifications at any time.\n            </FieldDescription>\n          </FieldContent>\n        </Checkbox>\n        <FieldSeparator />\n        <FieldCheckbox>\n          <Checkbox isDisabled>Enable alerts</Checkbox>\n        </FieldCheckbox>\n      </FieldGroup>\n    </div>\n  );\n}\n",
+      "type": "registry:component"
+    }
+  ],
+  "meta": {
+    "tags": [
+      "checkbox",
+      "disabled"
+    ],
+    "canPreview": true,
+    "canOpenInV0": true
+  }
+}

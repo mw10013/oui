@@ -62,7 +62,7 @@ function OuiCheckboxDemo() {
       <div className="flex items-start gap-3">
         <Oui.Checkbox id="oui-terms-2" defaultSelected />
         <div className="grid gap-2">
-          <Oui.Label htmlFor="oui-terms-2" className="leading-none">
+          <Oui.Label htmlFor="oui-terms-2">
             Accept terms and conditions
           </Oui.Label>
           <p className="text-sm text-muted-foreground">
@@ -72,7 +72,6 @@ function OuiCheckboxDemo() {
       </div>
       <Oui.Checkbox isDisabled>Enable notifications</Oui.Checkbox>
       <Oui.Checkbox
-        id="toggle-2"
         defaultSelected
         className={twJoin(
           "items-start rounded-lg border p-3 data-hovered:bg-accent/50 data-selected:border-blue-600 data-selected:bg-blue-50 dark:data-selected:border-blue-900 dark:data-selected:bg-blue-950",
