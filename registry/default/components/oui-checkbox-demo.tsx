@@ -1,6 +1,5 @@
 "use client";
 
-import { FieldSeparator } from "@/registry/default/ui/field";
 import { Checkbox } from "@/registry/default/ui/oui-checkbox";
 import { CheckboxGroup } from "@/registry/default/ui/oui-checkbox-group";
 import {
@@ -9,6 +8,7 @@ import {
   FieldError,
   FieldGroup,
   FieldLabel,
+  FieldSeparator,
 } from "@/registry/default/ui/oui-field";
 
 export default function Component() {

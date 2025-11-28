@@ -444,9 +444,13 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["@oui/oui-checkbox"],
+      "registryDependencies": [
+        "@oui/oui-checkbox",
+        "@oui/oui-checkbox-group",
+        "@oui/oui-field"
+      ],
       "meta": {
-        "tags": ["checkbox"],
+        "tags": ["checkbox", "checkbox-group", "field"],
         "canPreview": true,
         "canOpenInV0": true
       }
@@ -479,38 +483,6 @@
       "registryDependencies": ["@oui/oui-checkbox"],
       "meta": {
         "tags": ["checkbox", "disabled"],
-        "canPreview": true,
-        "canOpenInV0": true
-      }
-    },
-    {
-      "name": "oui-checkbox-ex",
-      "type": "registry:component",
-      "title": "Checkbox Ex",
-      "description": "Reusable wrapper for Checkbox.",
-      "files": [
-        {
-          "path": "registry/default/components/oui-checkbox-ex.tsx",
-          "type": "registry:component"
-        }
-      ],
-      "registryDependencies": ["@oui/oui-checkbox", "@oui/oui-text"],
-      "meta": {
-        "tags": ["checkbox", "checkbox-ex", "text"]
-      }
-    },
-    {
-      "name": "oui-checkbox-ex-demo",
-      "type": "registry:component",
-      "files": [
-        {
-          "path": "registry/default/components/oui-checkbox-ex-demo.tsx",
-          "type": "registry:component"
-        }
-      ],
-      "registryDependencies": ["@oui/oui-checkbox-ex"],
-      "meta": {
-        "tags": ["checkbox", "checkbox-ex"],
         "canPreview": true,
         "canOpenInV0": true
       }
@@ -1164,7 +1136,6 @@
       ],
       "registryDependencies": [
         "@oui/oui-button",
-        "@oui/oui-checkbox-ex",
         "@oui/oui-checkbox-group-ex",
         "@oui/oui-checkbox",
         "@oui/oui-field",
@@ -1181,9 +1152,9 @@
         "tags": [
           "form",
           "button",
-          "checkbox-ex",
           "checkbox-group-ex",
           "checkbox",
+          "field",
           "radio-group-ex",
           "radio-group",
           "switch-ex",
@@ -1366,7 +1337,6 @@
         "@oui/oui-autocomplete-ex",
         "@oui/oui-badge-ex",
         "@oui/oui-card-ex",
-        "@oui/oui-checkbox-ex",
         "@oui/oui-checkbox-group-ex",
         "@oui/oui-combo-box-ex",
         "@oui/oui-dialog-ex-alert",

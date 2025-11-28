@@ -1,12 +1,12 @@
 "use client";
 
-import { CheckboxEx } from "@/registry/default/components/oui-checkbox-ex";
 import { CheckboxGroupEx } from "@/registry/default/components/oui-checkbox-group-ex";
 import { RadioGroupEx } from "@/registry/default/components/oui-radio-group-ex";
 import { SwitchEx } from "@/registry/default/components/oui-switch-ex";
 import { Button } from "@/registry/default/ui/oui-button";
 import { Checkbox } from "@/registry/default/ui/oui-checkbox";
 import {
+  FieldCheckbox,
   FieldDescription,
   FieldError,
   FieldLabel,
@@ -103,15 +103,14 @@ export default function Component() {
           Nothing
         </Radio>
       </RadioGroupEx>
-      <CheckboxEx
-        name="mobile"
-        descriptionClassName="leading-snug"
-        description="You can manage your mobile notifications in the mobile settings page."
-        containerClassName="shadow-xs rounded-md border p-4"
-        className="leading-snug"
-      >
-        Use different settings for my mobile devices
-      </CheckboxEx>
+      <FieldCheckbox className="rounded-md border p-4 shadow-xs">
+        <Checkbox name="mobile">
+          Use different settings for my mobile devices
+        </Checkbox>
+        <FieldDescription>
+          You can manage your mobile notifications in the mobile settings page.
+        </FieldDescription>
+      </FieldCheckbox>
       <CheckboxGroupEx
         name="items"
         labelClassName="text-base"

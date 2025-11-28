@@ -12,7 +12,6 @@ export const registryTags = [
   "card",
   "card-ex",
   "checkbox",
-  "checkbox-ex",
   "checkbox-group",
   "checkbox-group-ex",
   "combo-box",
