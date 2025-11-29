@@ -1,6 +1,5 @@
 "use client";
 
-import { RadioGroupEx } from "@/registry/default/components/oui-radio-group-ex";
 import { SwitchEx } from "@/registry/default/components/oui-switch-ex";
 import { Button } from "@/registry/default/ui/oui-button";
 import { Checkbox } from "@/registry/default/ui/oui-checkbox";
@@ -16,7 +15,7 @@ import {
 import { Input } from "@/registry/default/ui/oui-input";
 import { ListBoxItem } from "@/registry/default/ui/oui-list-box";
 import { Popover } from "@/registry/default/ui/oui-popover";
-import { Radio } from "@/registry/default/ui/oui-radio-group";
+import { Radio, RadioGroup } from "@/registry/default/ui/oui-radio-group";
 import {
   Select,
   SelectButton,
@@ -64,21 +63,12 @@ export default function Component() {
           </FieldDescription>
           <FieldError />
         </TextField>
-        <RadioGroupEx
-          name="type"
-          label="Notify me about..."
-          className="flex flex-col gap-3"
-        >
-          <Radio value="all" className="font-normal">
-            All new messages
-          </Radio>
-          <Radio value="mentions" className="font-normal">
-            Direct messages and mentions
-          </Radio>
-          <Radio value="none" className="font-normal">
-            Nothing
-          </Radio>
-        </RadioGroupEx>
+        <RadioGroup name="type">
+          <FieldLabel>Notify me about...</FieldLabel>
+          <Radio value="all">All new messages</Radio>
+          <Radio value="mentions">Direct messages and mentions</Radio>
+          <Radio value="none">Nothing</Radio>
+        </RadioGroup>
         <FieldCheckbox className="rounded-md border p-4 shadow-xs">
           <Checkbox name="mobile">
             Use different settings for my mobile devices
@@ -129,11 +119,11 @@ export default function Component() {
           </div>
         </div>
         <Field orientation="horizontal">
-            <Button type="submit">Submit</Button>
-            <Button variant="outline" type="button">
-              Cancel
-            </Button>
-          </Field>
+          <Button type="submit">Submit</Button>
+          <Button variant="outline" type="button">
+            Cancel
+          </Button>
+        </Field>
       </FieldGroup>
     </Rac.Form>
   );

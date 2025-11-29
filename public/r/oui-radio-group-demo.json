@@ -1,0 +1,24 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "oui-radio-group-demo",
+  "type": "registry:component",
+  "registryDependencies": [
+    "@oui/oui-field",
+    "@oui/oui-radio-group"
+  ],
+  "files": [
+    {
+      "path": "registry/default/components/oui-radio-group-demo.tsx",
+      "content": "\"use client\";\n\nimport {\n  Field,\n  FieldDescription,\n  FieldLabel,\n  FieldSet,\n} from \"@/registry/default/ui/oui-field\";\nimport { Radio, RadioGroup } from \"@/registry/default/ui/oui-radio-group\";\n\nexport default function Component() {\n  return (\n    <div className=\"w-full max-w-md\">\n      <FieldSet>\n        <FieldLabel>Subscription Plan</FieldLabel>\n        <FieldDescription>\n          Yearly and lifetime plans offer significant savings.\n        </FieldDescription>\n        <RadioGroup defaultValue=\"monthly\">\n          <Field orientation=\"horizontal\">\n            <Radio value=\"monthly\" className=\"font-normal\">\n              Monthly ($9.99/month)\n            </Radio>\n          </Field>\n          <Field orientation=\"horizontal\">\n            <Radio value=\"yearly\" className=\"font-normal\">\n              Yearly ($99.99/year)\n            </Radio>\n          </Field>\n          <Field orientation=\"horizontal\">\n            <Radio value=\"lifetime\" className=\"font-normal\">\n              Lifetime ($299.99)\n            </Radio>\n          </Field>\n        </RadioGroup>\n      </FieldSet>\n    </div>\n  );\n}\n",
+      "type": "registry:component"
+    }
+  ],
+  "meta": {
+    "tags": [
+      "radio-group",
+      "field"
+    ],
+    "canPreview": true,
+    "canOpenInV0": true
+  }
+}

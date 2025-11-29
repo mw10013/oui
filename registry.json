@@ -1099,7 +1099,6 @@
         "@oui/oui-field",
         "@oui/oui-list-box",
         "@oui/oui-popover",
-        "@oui/oui-radio-group-ex",
         "@oui/oui-radio-group",
         "@oui/oui-select",
         "@oui/oui-switch-ex",
@@ -1113,7 +1112,6 @@
           "checkbox-group",
           "checkbox",
           "field",
-          "radio-group-ex",
           "radio-group",
           "switch-ex",
           "text-area",
@@ -2189,6 +2187,23 @@
         "tags": ["radio-group"]
       }
     },
+    {
+      "name": "oui-radio-group-demo",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/default/components/oui-radio-group-demo.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": ["@oui/oui-field", "@oui/oui-radio-group"],
+      "meta": {
+        "tags": ["radio-group", "field"],
+        "canPreview": true,
+        "canOpenInV0": true
+      }
+    },
+
     {
       "name": "oui-radio-group-ex",
       "type": "registry:component",

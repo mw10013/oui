@@ -244,6 +244,7 @@ export const categories: Category[] = [
     slug: "radio-group",
     components: [
       { name: "oui-radio-group" },
+      { name: "oui-radio-group-demo" },
       { name: "oui-radio-group-ex" },
       { name: "oui-radio-group-ex-demo" },
       { name: "oui-radio-group-ex-demo-description" },
