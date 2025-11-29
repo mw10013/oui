@@ -1,24 +1,46 @@
 "use client";
 
+import type { FieldStylesProps } from "@/registry/default/ui/oui-field";
 import {
   composeTailwindRenderProps,
   groupFocusVisibleStyles,
 } from "@/registry/default/ui/oui-base";
+import { fieldStyles } from "@/registry/default/ui/oui-field";
 import { labelComponentStyles } from "@/registry/default/ui/oui-label";
 import { CircleIcon } from "lucide-react";
 import * as Rac from "react-aria-components";
 import { twMerge } from "tailwind-merge";
 
 /**
- * Derived from shadcn RadioGroup
+ * Derived from shadcn RadioGroup and Field
  */
-export function RadioGroup({ className, ...props }: Rac.RadioGroupProps) {
+export type RadioGroupProps = Rac.RadioGroupProps & FieldStylesProps;
+
+export function RadioGroup({
+  orientation = "vertical",
+  className,
+  children,
+
+  ...props
+}: RadioGroupProps) {
   return (
     <Rac.RadioGroup
       data-slot="radio-group"
-      className={composeTailwindRenderProps(className, "grid gap-3")}
+      data-orientation={orientation}
+      className={composeTailwindRenderProps(
+        className,
+        fieldStyles({
+          orientation,
+          className:
+            "*:data-[slot=field-description]:mb-2 *:data-[slot=radio]:font-normal",
+        }),
+      )}
       {...props}
-    />
+    >
+      {(renderProps) =>
+        typeof children === "function" ? children(renderProps) : children
+      }
+    </Rac.RadioGroup>
   );
 }
 
@@ -27,7 +49,7 @@ export interface RadioProps extends Rac.RadioProps {
 }
 
 /**
- * Derived from shadcn FormDemo FormItem and RadioGroupItem
+ * Derived from shadcn Label, Field (gap-3 but not items-start), FieldLabel (leading-snug overriding Label leading-none), RadioGroupItem
  * Radix has RadioGroupPrimitive.Item which is separate from label while RAC structures with a label.
  */
 export function Radio({
@@ -38,9 +60,10 @@ export function Radio({
 }: RadioProps) {
   return (
     <Rac.Radio
+      data-slot="radio"
       className={composeTailwindRenderProps(className, [
         labelComponentStyles,
-        "group items-start gap-3",
+        "group gap-3 leading-snug",
       ])}
       {...props}
     >

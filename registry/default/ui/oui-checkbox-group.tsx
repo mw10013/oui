@@ -8,8 +8,8 @@ import * as Rac from "react-aria-components";
 export type CheckboxGroupProps = Rac.CheckboxGroupProps & FieldStylesProps;
 
 export function CheckboxGroup({
-  className,
   orientation = "vertical",
+  className,
   children,
   ...props
 }: CheckboxGroupProps) {

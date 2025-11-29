@@ -10,7 +10,7 @@ import * as Rac from "react-aria-components";
 import { twMerge } from "tailwind-merge";
 
 /**
- * Derived from shadcn Label, Field (gap-3 but not items-start), FieldLabel (leading-snug overriding Label leading-none) and CheckboxPrimitive.Root
+ * Derived from shadcn Label, Field (gap-3 but not items-start), FieldLabel (leading-snug overriding Label leading-none) and Checkbox
  * Radix has CheckboxPrimitive.Root which is separate from label while RAC structures with a label.
  */
 export function Checkbox({ className, children, ...props }: Rac.CheckboxProps) {
