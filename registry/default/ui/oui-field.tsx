@@ -52,11 +52,14 @@ export const fieldStyles = cva(
   },
 );
 
+export type FieldProps = React.ComponentProps<"div"> &
+  VariantProps<typeof fieldStyles>;
+
 export function Field({
-  className,
   orientation = "vertical",
+  className,
   ...props
-}: React.ComponentProps<"div"> & VariantProps<typeof fieldStyles>) {
+}: FieldProps) {
   return (
     <div
       role="group"
@@ -202,7 +205,7 @@ export function useSlotId(deps: React.DependencyList = []): string | undefined {
  *   </Oui.FieldDescription>
  * </Oui.FieldCheckbox>
  * ```
- * 
+ *
  * Not necessary if you have no description.
  */
 export function FieldCheckbox({
@@ -225,6 +228,77 @@ export function FieldCheckbox({
       <Rac.Provider
         values={[
           [Rac.CheckboxContext, { "aria-describedby": descriptionId }],
+          [
+            Rac.TextContext,
+            {
+              slots: {
+                description: { id: descriptionId },
+              },
+            },
+          ],
+        ]}
+      >
+        {children}
+      </Rac.Provider>
+    </div>
+  );
+}
+
+/**
+ * Field to compose a switch with a label and field description.
+ *
+ * @example
+ * ```tsx
+ * #import * as Oui from "@/components/ui/oui-index";
+ *
+ * <Oui.FieldSwitch orientation="horizontal">
+ *   <Oui.FieldContent>
+ *     <Oui.FieldLabel>Multi-factor authentication</Oui.FieldLabel>
+ *     <Oui.FieldDescription>
+ *       Enable multi-factor authentication. If you do not have a two-factor
+ *       device, you can use a one-time code sent to your email.
+ *     </Oui.FieldDescription>
+ *   </Oui.FieldContent>
+ *   <Oui.Switch />
+ * </Oui.FieldSwitch>
+ * ```
+ *
+ * Not necessary if you have no description.
+ */
+export function FieldSwitch({
+  orientation = "vertical",
+  className,
+  children,
+  ...props
+}: FieldProps) {
+  const labelId = useSlotId();
+  const descriptionId = useSlotId();
+  const switchRef = React.useRef<HTMLLabelElement>(null);
+  return (
+    <div
+      role="group"
+      data-slot="field"
+      data-orientation={orientation}
+      className={twMerge(fieldStyles({ orientation }), className)}
+      {...props}
+    >
+      <Rac.Provider
+        values={[
+          [
+            Rac.SwitchContext,
+            {
+              ref: switchRef,
+              "aria-labelledby": labelId,
+              "aria-describedby": descriptionId,
+            },
+          ],
+          [
+            Rac.LabelContext,
+            {
+              id: labelId,
+              onClick: () => switchRef.current?.click(),
+            },
+          ],
           [
             Rac.TextContext,
             {

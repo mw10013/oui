@@ -9,20 +9,33 @@ import { labelComponentStyles } from "@/registry/default/ui/oui-label";
 import * as Rac from "react-aria-components";
 import { twMerge } from "tailwind-merge";
 
+/**
+ * Derived from shadcn Label, Field (gap-3 but not items-start), FieldLabel (leading-snug overriding Label leading-none)
+ */
 export function Switch({ className, ...props }: Rac.SwitchProps) {
   return (
     <Rac.Switch
-      {...props}
+      data-slot="switch"
       className={composeTailwindRenderProps(className, [
         labelComponentStyles,
-        "group",
+        "group gap-3 leading-snug",
       ])}
-    />
+      {...props}
+    >
+      {(renderProps) => (
+        <>
+          <SwitchIndicator />
+          {typeof props.children === "function"
+            ? props.children(renderProps)
+            : props.children}
+        </>
+      )}
+    </Rac.Switch>
   );
 }
 
 /**
- * Derived from shadcn SwitchPrimitive.Root and SwitchPrimitive.Thumb
+ * Derived from shadcn Switch (SwitchPrimitive.Root and SwitchPrimitive.Thumb)
  */
 export function SwitchIndicator({
   className,
@@ -30,6 +43,7 @@ export function SwitchIndicator({
 }: React.HTMLAttributes<HTMLDivElement>) {
   return (
     <div
+      data-slot="switch-indicator"
       className={twMerge(
         groupFocusVisibleStyles,
         "inline-flex h-[1.15rem] w-8 shrink-0 items-center rounded-full border border-transparent bg-input shadow-xs transition-all group-data-selected:bg-primary dark:bg-input/80 dark:group-data-selected:bg-primary",
@@ -37,7 +51,10 @@ export function SwitchIndicator({
       )}
       {...props}
     >
-      <span className="pointer-events-none block size-4 translate-x-0 rounded-full bg-background ring-0 transition-transform group-data-selected:translate-x-[calc(100%-2px)] dark:bg-foreground dark:group-data-selected:bg-primary-foreground" />
+      <span
+        data-slot="switch-thumb"
+        className="pointer-events-none block size-4 translate-x-0 rounded-full bg-background ring-0 transition-transform group-data-selected:translate-x-[calc(100%-2px)] dark:bg-foreground dark:group-data-selected:bg-primary-foreground"
+      />
     </div>
   );
 }

@@ -1,0 +1,24 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "oui-switch-demo",
+  "type": "registry:component",
+  "registryDependencies": [
+    "@oui/oui-switch",
+    "@oui/oui-field"
+  ],
+  "files": [
+    {
+      "path": "registry/default/components/oui-switch-demo.tsx",
+      "content": "\"use client\";\n\nimport {\n  FieldContent,\n  FieldDescription,\n  FieldLabel,\n  FieldSwitch,\n} from \"@/registry/default/ui/oui-field\";\nimport { Switch } from \"@/registry/default/ui/oui-switch\";\n\nexport default function Component() {\n  return (\n    <div className=\"w-full max-w-md\">\n      <FieldSwitch orientation=\"horizontal\">\n        <FieldContent>\n          <FieldLabel>Multi-factor authentication</FieldLabel>\n          <FieldDescription>\n            Enable multi-factor authentication. If you do not have a two-factor\n            device, you can use a one-time code sent to your email.\n          </FieldDescription>\n        </FieldContent>\n        <Switch />\n      </FieldSwitch>\n    </div>\n  );\n}\n",
+      "type": "registry:component"
+    }
+  ],
+  "meta": {
+    "tags": [
+      "switch",
+      "field"
+    ],
+    "canPreview": true,
+    "canOpenInV0": true
+  }
+}

@@ -303,6 +303,7 @@ export const categories: Category[] = [
     slug: "switch",
     components: [
       { name: "oui-switch" },
+      { name: "oui-switch-demo" },
       { name: "oui-switch-ex" },
       { name: "oui-switch-ex-demo" },
       { name: "oui-switch-ex-demo-blue" },
