@@ -1303,7 +1303,6 @@
         "@oui/oui-modal-ex-sheet",
         "@oui/oui-modal-ex",
         "@oui/oui-number-field-ex",
-        "@oui/oui-radio-group-ex",
         "@oui/oui-search-field-ex",
         "@oui/oui-sidebar-ex",
         "@oui/oui-slider-ex",
@@ -2203,68 +2202,18 @@
         "canOpenInV0": true
       }
     },
-
     {
-      "name": "oui-radio-group-ex",
-      "type": "registry:component",
-      "title": "Radio Group Ex",
-      "description": "Reusable wrapper for Radio Group.",
-      "files": [
-        {
-          "path": "registry/default/components/oui-radio-group-ex.tsx",
-          "type": "registry:component"
-        }
-      ],
-      "registryDependencies": [
-        "@oui/oui-field",
-        "@oui/oui-label",
-        "@oui/oui-radio-group",
-        "@oui/oui-text"
-      ],
-      "meta": {
-        "tags": [
-          "radio-group",
-          "radio-group-ex",
-          "field-error",
-          "label",
-          "text"
-        ]
-      }
-    },
-    {
-      "name": "oui-radio-group-ex-demo",
+      "name": "oui-radio-group-demo-green",
       "type": "registry:component",
       "files": [
         {
-          "path": "registry/default/components/oui-radio-group-ex-demo.tsx",
+          "path": "registry/default/components/oui-radio-group-demo-green.tsx",
           "type": "registry:component"
         }
       ],
-      "registryDependencies": [
-        "@oui/oui-radio-group-ex",
-        "@oui/oui-radio-group"
-      ],
+      "registryDependencies": ["@oui/oui-field", "@oui/oui-radio-group"],
       "meta": {
-        "tags": ["radio-group", "radio-group-ex"],
-        "canPreview": true,
-        "canOpenInV0": true
-      }
-    },
-    {
-      "name": "oui-radio-group-ex-demo-description",
-      "type": "registry:component",
-      "files": [
-        {
-          "path": "registry/default/components/oui-radio-group-ex-demo-description.tsx",
-          "type": "registry:component"
-        }
-      ],
-      "registryDependencies": [
-        "@oui/oui-radio-group-ex",
-        "@oui/oui-radio-group"
-      ],
-      "meta": {
-        "tags": ["radio-group", "radio-group-ex"],
+        "tags": ["radio-group", "field"],
         "canPreview": true,
         "canOpenInV0": true
       }

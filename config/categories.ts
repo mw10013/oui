@@ -245,9 +245,7 @@ export const categories: Category[] = [
     components: [
       { name: "oui-radio-group" },
       { name: "oui-radio-group-demo" },
-      { name: "oui-radio-group-ex" },
-      { name: "oui-radio-group-ex-demo" },
-      { name: "oui-radio-group-ex-demo-description" },
+      { name: "oui-radio-group-demo-green" },
     ],
   },
   {

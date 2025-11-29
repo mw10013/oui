@@ -9,7 +9,7 @@ import { fieldStyles } from "@/registry/default/ui/oui-field";
 import { labelComponentStyles } from "@/registry/default/ui/oui-label";
 import { CircleIcon } from "lucide-react";
 import * as Rac from "react-aria-components";
-import { twMerge } from "tailwind-merge";
+import { twJoin } from "tailwind-merge";
 
 /**
  * Derived from shadcn RadioGroup and Field
@@ -44,20 +44,11 @@ export function RadioGroup({
   );
 }
 
-export interface RadioProps extends Rac.RadioProps {
-  radioGroupItemClassName?: string;
-}
-
 /**
  * Derived from shadcn Label, Field (gap-3 but not items-start), FieldLabel (leading-snug overriding Label leading-none), RadioGroupItem
  * Radix has RadioGroupPrimitive.Item which is separate from label while RAC structures with a label.
  */
-export function Radio({
-  className,
-  children,
-  radioGroupItemClassName,
-  ...props
-}: RadioProps) {
+export function Radio({ className, children, ...props }: Rac.RadioProps) {
   return (
     <Rac.Radio
       data-slot="radio"
@@ -71,13 +62,10 @@ export function Radio({
         <>
           <div
             data-slot="radio-group-item"
-            className={twMerge(
-              [
-                groupFocusVisibleStyles,
-                "relative aspect-square size-4 shrink-0 rounded-full border border-input text-primary shadow-xs transition-[color,box-shadow] dark:bg-input/30",
-                "group-data-invalid:border-destructive group-data-invalid:ring-destructive/20 group-data-invalid:dark:ring-destructive/40",
-              ],
-              radioGroupItemClassName,
+            className={twJoin(
+              groupFocusVisibleStyles,
+              "relative aspect-square size-4 shrink-0 rounded-full border border-input text-primary shadow-xs transition-[color,box-shadow] dark:bg-input/30",
+              "group-data-invalid:border-destructive group-data-invalid:ring-destructive/20 group-data-invalid:dark:ring-destructive/40",
             )}
           >
             {renderProps.isSelected && (
