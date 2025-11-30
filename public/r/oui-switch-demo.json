@@ -16,7 +16,8 @@
   "meta": {
     "tags": [
       "switch",
-      "field"
+      "field",
+      "disabled"
     ],
     "canPreview": true,
     "canOpenInV0": true

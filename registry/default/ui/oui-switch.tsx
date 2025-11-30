@@ -1,16 +1,16 @@
 "use client";
 
-import React from "react";
 import {
   composeTailwindRenderProps,
   groupFocusVisibleStyles,
 } from "@/registry/default/ui/oui-base";
 import { labelComponentStyles } from "@/registry/default/ui/oui-label";
 import * as Rac from "react-aria-components";
-import { twMerge } from "tailwind-merge";
+import { twJoin } from "tailwind-merge";
 
 /**
- * Derived from shadcn Label, Field (gap-3 but not items-start), FieldLabel (leading-snug overriding Label leading-none)
+ * Derived from shadcn Label, Field (gap-3 but not items-start), FieldLabel (leading-snug overriding Label leading-none).
+ * indicator and thumb dervived from shadcn Switch (SwitchPrimitive.Root and SwitchPrimitive.Thumb)
  */
 export function Switch({ className, ...props }: Rac.SwitchProps) {
   return (
@@ -24,37 +24,23 @@ export function Switch({ className, ...props }: Rac.SwitchProps) {
     >
       {(renderProps) => (
         <>
-          <SwitchIndicator />
+          <span
+            data-slot="switch-indicator"
+            className={twJoin(
+              groupFocusVisibleStyles,
+              "inline-flex h-[1.15rem] w-8 shrink-0 items-center rounded-full border border-transparent bg-input shadow-xs transition-all group-data-selected:bg-primary dark:bg-input/80 dark:group-data-selected:bg-primary",
+            )}
+          >
+            <span
+              data-slot="switch-thumb"
+              className="pointer-events-none block size-4 translate-x-0 rounded-full bg-background ring-0 transition-transform group-data-selected:translate-x-[calc(100%-2px)] dark:bg-foreground dark:group-data-selected:bg-primary-foreground"
+            />
+          </span>
           {typeof props.children === "function"
             ? props.children(renderProps)
             : props.children}
         </>
       )}
     </Rac.Switch>
-  );
-}
-
-/**
- * Derived from shadcn Switch (SwitchPrimitive.Root and SwitchPrimitive.Thumb)
- */
-export function SwitchIndicator({
-  className,
-  ...props
-}: React.HTMLAttributes<HTMLDivElement>) {
-  return (
-    <div
-      data-slot="switch-indicator"
-      className={twMerge(
-        groupFocusVisibleStyles,
-        "inline-flex h-[1.15rem] w-8 shrink-0 items-center rounded-full border border-transparent bg-input shadow-xs transition-all group-data-selected:bg-primary dark:bg-input/80 dark:group-data-selected:bg-primary",
-        className,
-      )}
-      {...props}
-    >
-      <span
-        data-slot="switch-thumb"
-        className="pointer-events-none block size-4 translate-x-0 rounded-full bg-background ring-0 transition-transform group-data-selected:translate-x-[calc(100%-2px)] dark:bg-foreground dark:group-data-selected:bg-primary-foreground"
-      />
-    </div>
   );
 }

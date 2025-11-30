@@ -21,7 +21,8 @@
       "alert",
       "alert-ex-form",
       "form",
-      "field"
+      "field",
+      "disabled"
     ],
     "canPreview": true,
     "canOpenInV0": true

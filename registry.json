@@ -37,7 +37,7 @@
         "@oui/oui-text-field"
       ],
       "meta": {
-        "tags": ["alert", "alert-ex-form", "form", "field"],
+        "tags": ["alert", "alert-ex-form", "form", "field", "disabled"],
         "canPreview": true,
         "canOpenInV0": true
       }
@@ -2565,7 +2565,7 @@
       ],
       "registryDependencies": ["@oui/oui-switch", "@oui/oui-field"],
       "meta": {
-        "tags": ["switch", "field"],
+        "tags": ["switch", "field", "disabled"],
         "canPreview": true,
         "canOpenInV0": true
       }
