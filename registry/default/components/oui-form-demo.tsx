@@ -5,7 +5,6 @@ import { Checkbox } from "@/registry/default/ui/oui-checkbox";
 import { CheckboxGroup } from "@/registry/default/ui/oui-checkbox-group";
 import {
   Field,
-  FieldCheckbox,
   FieldContent,
   FieldDescription,
   FieldError,
@@ -14,6 +13,7 @@ import {
   FieldLegend,
   FieldSet,
   FieldSwitch,
+  FieldTitle,
 } from "@/registry/default/ui/oui-field";
 import { Input } from "@/registry/default/ui/oui-input";
 import { ListBoxItem } from "@/registry/default/ui/oui-list-box";
@@ -73,18 +73,17 @@ export default function Component() {
           <Radio value="mentions">Direct messages and mentions</Radio>
           <Radio value="none">Nothing</Radio>
         </RadioGroup>
-        <FieldCheckbox className="rounded-md border p-4 shadow-xs">
-          <Checkbox name="mobile" />
+        <Checkbox name="mobile">
           <FieldContent>
-            <FieldLabel>
+            <FieldTitle>
               Use different settings for my mobile devices
-            </FieldLabel>
+            </FieldTitle>
             <FieldDescription>
               You can manage your mobile notifications in the mobile settings
               page.
             </FieldDescription>
           </FieldContent>
-        </FieldCheckbox>
+        </Checkbox>
         <CheckboxGroup defaultValue={["recents", "home"]}>
           <FieldLabel className="text-base">Sidebar</FieldLabel>
           <FieldDescription>
@@ -102,7 +101,7 @@ export default function Component() {
           <FieldGroup>
             <FieldSwitch className="rounded-lg border p-4 shadow-xs">
               <FieldContent>
-                <FieldLabel>Marketing emails</FieldLabel>
+                <FieldTitle>Marketing emails</FieldTitle>
                 <FieldDescription>
                   Receive emails about new products, features, and more.
                 </FieldDescription>
@@ -111,7 +110,7 @@ export default function Component() {
             </FieldSwitch>
             <FieldSwitch className="rounded-lg border p-4 shadow-xs">
               <FieldContent>
-                <FieldLabel>Security emails</FieldLabel>
+                <FieldTitle>Security emails</FieldTitle>
                 <FieldDescription>
                   Receive emails about your account security.
                 </FieldDescription>

@@ -67,6 +67,7 @@ export function RadioGroup({
  * <Oui.RadioGroup defaultValue="starter" aria-label="Plans" className="max-w-sm">
  *   <Oui.Radio value="starter">
  *     <Oui.FieldContent>
+ *       { // Use FieldTitle instead of FieldLabel since Radio structures with a label }
  *       <Oui.FieldTitle>Starter Plan</Oui.FieldTitle>
  *       <Oui.FieldDescription>Perfect for small businesses</Oui.FieldDescription>
  *     </Oui.FieldContent>
@@ -87,7 +88,7 @@ export function Radio({ className, children, ...props }: Rac.RadioProps) {
       className={composeTailwindRenderProps(className, [
         labelComponentStyles,
         "group gap-3 leading-snug",
-        // Card styling when FieldDescription is nested inside Radio (aligned with shadcn FieldLabel)
+        // Card styling when FieldDescription is nested inside Radio
         "has-data-[slot=field-description]:items-start has-data-[slot=field-description]:rounded-md has-data-[slot=field-description]:border has-data-[slot=field-description]:p-4",
         "has-data-[slot=field-description]:data-hovered:bg-accent/50 has-data-[slot=field-description]:data-selected:border-primary has-data-[slot=field-description]:data-selected:bg-primary/5 dark:has-data-[slot=field-description]:data-selected:bg-primary/10",
       ])}
