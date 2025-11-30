@@ -15,7 +15,7 @@ export default function Component() {
   return (
     <div className="w-full max-w-md">
       <FieldGroup>
-        <FieldSwitch orientation="horizontal">
+        <FieldSwitch>
           <FieldContent>
             <FieldLabel>Multi-factor authentication</FieldLabel>
             <FieldDescription>
@@ -41,7 +41,6 @@ export default function Component() {
           </Field>
         </FieldGroup>
         <FieldSwitch
-          orientation="horizontal"
           className={twJoin(
             "rounded-lg border p-4 shadow-xs has-data-selected:border-blue-600",
             "**:data-[slot=switch-indicator]:group-data-selected:bg-blue-500 **:data-[slot=switch-indicator]:dark:group-data-selected:bg-blue-600",

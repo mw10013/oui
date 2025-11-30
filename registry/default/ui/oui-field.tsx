@@ -203,35 +203,41 @@ export function useSlotId(deps: React.DependencyList = []): string | undefined {
  *
  * <Oui.FieldCheckbox>
  *   <Oui.Checkbox defaultSelected>Sync Desktop & Documents folders</Oui.Checkbox>
- *   <Oui.FieldDescription>
- *     Your Desktop & Documents folders are being synced with iCloud Drive.
- *     You can access them from other devices.
- *   </Oui.FieldDescription>
+ *   <Oui.FieldContent>
+ *     <Oui.FieldLabel>Sync Desktop & Documents folders</Oui.FieldLabel>
+ *     <Oui.FieldDescription>
+ *       Your Desktop & Documents folders are being synced with iCloud Drive.
+ *       You can access them from other devices.
+ *     </Oui.FieldDescription>
+ *   </Oui.FieldContent>
  * </Oui.FieldCheckbox>
  * ```
  *
  * Not necessary if you have no description.
  */
 export function FieldCheckbox({
+  orientation = "horizontal",
   className,
   children,
   ...props
-}: React.ComponentProps<"div">) {
+}: FieldProps) {
+  const checkboxId = React.useId();
   const descriptionId = useSlotId();
   return (
     <div
+      role="group"
       data-slot="field"
-      className={twMerge(
-        "group/field grid grid-cols-[auto_1fr] gap-x-3 gap-y-1.5",
-        "*:data-[slot=checkbox]:col-span-full *:data-[slot=checkbox]:grid *:data-[slot=checkbox]:grid-cols-subgrid",
-        "*:data-[slot=field-description]:col-start-2",
-        className,
-      )}
+      data-orientation={orientation}
+      className={twMerge(fieldStyles({ orientation }), className)}
       {...props}
     >
       <Rac.Provider
         values={[
-          [Rac.CheckboxContext, { "aria-describedby": descriptionId }],
+          [
+            Rac.CheckboxContext,
+            { id: checkboxId, "aria-describedby": descriptionId },
+          ],
+          [Rac.LabelContext, { htmlFor: checkboxId }],
           [
             Rac.TextContext,
             {
@@ -269,7 +275,7 @@ export function FieldCheckbox({
  * Not necessary if you have no description.
  */
 export function FieldSwitch({
-  orientation = "vertical",
+  orientation = "horizontal",
   className,
   children,
   ...props

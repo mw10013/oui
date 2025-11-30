@@ -74,13 +74,16 @@ export default function Component() {
           <Radio value="none">Nothing</Radio>
         </RadioGroup>
         <FieldCheckbox className="rounded-md border p-4 shadow-xs">
-          <Checkbox name="mobile">
-            Use different settings for my mobile devices
-          </Checkbox>
-          <FieldDescription>
-            You can manage your mobile notifications in the mobile settings
-            page.
-          </FieldDescription>
+          <Checkbox name="mobile" />
+          <FieldContent>
+            <FieldLabel>
+              Use different settings for my mobile devices
+            </FieldLabel>
+            <FieldDescription>
+              You can manage your mobile notifications in the mobile settings
+              page.
+            </FieldDescription>
+          </FieldContent>
         </FieldCheckbox>
         <CheckboxGroup defaultValue={["recents", "home"]}>
           <FieldLabel className="text-base">Sidebar</FieldLabel>
@@ -97,10 +100,7 @@ export default function Component() {
         <FieldSet>
           <FieldLegend>Email Notifications</FieldLegend>
           <FieldGroup>
-            <FieldSwitch
-              orientation="horizontal"
-              className="rounded-lg border p-4 shadow-xs"
-            >
+            <FieldSwitch className="rounded-lg border p-4 shadow-xs">
               <FieldContent>
                 <FieldLabel>Marketing emails</FieldLabel>
                 <FieldDescription>
@@ -109,10 +109,7 @@ export default function Component() {
               </FieldContent>
               <Switch defaultSelected />
             </FieldSwitch>
-            <FieldSwitch
-              orientation="horizontal"
-              className="rounded-lg border p-4 shadow-xs"
-            >
+            <FieldSwitch className="rounded-lg border p-4 shadow-xs">
               <FieldContent>
                 <FieldLabel>Security emails</FieldLabel>
                 <FieldDescription>
