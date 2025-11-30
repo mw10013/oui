@@ -32,7 +32,7 @@ export function RadioGroup({
         fieldStyles({
           orientation,
           className:
-            "*:data-[slot=field-description]:mb-2 *:data-[slot=radio]:font-normal",
+            "*:data-[slot=field-description]:mb-2 **:data-[slot=radio]:font-normal",
         }),
       )}
       {...props}
@@ -47,6 +47,38 @@ export function RadioGroup({
 /**
  * Derived from shadcn Label, Field (gap-3 but not items-start), FieldLabel (leading-snug overriding Label leading-none), RadioGroupItem
  * Radix has RadioGroupPrimitive.Item which is separate from label while RAC structures with a label.
+ *
+ * @example
+ * ```tsx
+ * import * as Oui from "@/components/ui/oui-index";
+ *
+ * <Oui.RadioGroup defaultValue="monthly">
+ *   <Oui.Radio value="monthly">Monthly ($9.99/month)</Oui.Radio>
+ *   <Oui.Radio value="yearly">Yearly ($99.99/year)</Oui.Radio>
+ * </Oui.RadioGroup>
+ * ```
+ *
+ * Choice card: When a `FieldDescription` is nested inside `Radio`, it styles as a selectable card with border, padding, and hover/selected background colors.
+ *
+ * @example
+ * ```tsx
+ * import * as Oui from "@/registry/default/ui/oui-index";
+ *
+ * <Oui.RadioGroup defaultValue="starter" aria-label="Plans" className="max-w-sm">
+ *   <Oui.Radio value="starter">
+ *     <Oui.FieldContent>
+ *       <Oui.FieldTitle>Starter Plan</Oui.FieldTitle>
+ *       <Oui.FieldDescription>Perfect for small businesses</Oui.FieldDescription>
+ *     </Oui.FieldContent>
+ *   </Oui.Radio>
+ *   <Oui.Radio value="pro">
+ *     <Oui.FieldContent>
+ *       <Oui.FieldTitle>Pro Plan</Oui.FieldTitle>
+ *       <Oui.FieldDescription>Advanced features</Oui.FieldDescription>
+ *     </Oui.FieldContent>
+ *   </Oui.Radio>
+ * </Oui.RadioGroup>
+ * ```
  */
 export function Radio({ className, children, ...props }: Rac.RadioProps) {
   return (
@@ -55,6 +87,9 @@ export function Radio({ className, children, ...props }: Rac.RadioProps) {
       className={composeTailwindRenderProps(className, [
         labelComponentStyles,
         "group gap-3 leading-snug",
+        // Card styling when FieldDescription is nested inside Radio (aligned with shadcn FieldLabel)
+        "has-data-[slot=field-description]:items-start has-data-[slot=field-description]:rounded-md has-data-[slot=field-description]:border has-data-[slot=field-description]:p-4",
+        "has-data-[slot=field-description]:data-hovered:bg-accent/50 has-data-[slot=field-description]:data-selected:border-primary has-data-[slot=field-description]:data-selected:bg-primary/5 dark:has-data-[slot=field-description]:data-selected:bg-primary/10",
       ])}
       {...props}
     >
