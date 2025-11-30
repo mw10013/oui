@@ -195,7 +195,7 @@ export function useSlotId(deps: React.DependencyList = []): string | undefined {
 }
 
 /**
- * Field to compose a checkbox with a field description.
+ * Field to compose a checkbox with a label and description.
  *
  * @example
  * ```tsx
@@ -302,6 +302,67 @@ export function FieldSwitch({
             {
               slots: {
                 description: { id: descriptionId },
+              },
+            },
+          ],
+        ]}
+      >
+        {children}
+      </Rac.Provider>
+    </div>
+  );
+}
+
+/**
+ * Field to compose a radio with a label and description.
+ *
+ * Uses `slot="radioDescription"` to avoid conflict with RadioGroup's `description` slot.
+ *
+ * @example
+ * ```tsx
+ * #import * as Oui from "@/components/ui/oui-index";
+ *
+ * <Oui.FieldRadio>
+ *   <Oui.Radio value="option1">Option 1</Oui.Radio>
+ *   <Oui.FieldContent>
+ *     <Oui.FieldLabel>Option 1</Oui.FieldLabel>
+ *     <Oui.FieldDescription slot="radioDescription">
+ *       Description for option 1.
+ *     </Oui.FieldDescription>
+ *   </Oui.FieldContent>
+ * </Oui.FieldRadio>
+ * ```
+ *
+ * Not necessary if you have no description.
+ */
+export function FieldRadio({
+  orientation = "horizontal",
+  className,
+  children,
+  ...props
+}: FieldProps) {
+  const radioId = React.useId();
+  const descriptionId = useSlotId();
+  return (
+    <div
+      role="group"
+      data-slot="field"
+      data-orientation={orientation}
+      className={twMerge(fieldStyles({ orientation }), className)}
+      {...props}
+    >
+      <Rac.Provider
+        values={[
+          [
+            Rac.RadioContext,
+            { id: radioId, "aria-describedby": descriptionId },
+          ],
+          [Rac.LabelContext, { htmlFor: radioId }],
+          [
+            Rac.TextContext,
+            {
+              slots: {
+                radioDescription: { id: descriptionId },
               },
             },
           ],
