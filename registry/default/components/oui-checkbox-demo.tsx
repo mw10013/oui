@@ -31,7 +31,7 @@ export default function Component() {
         </CheckboxGroup>
         <FieldSeparator />
         <FieldCheckbox>
-          <Checkbox defaultSelected></Checkbox>
+          <Checkbox defaultSelected />
           <FieldContent>
             <FieldLabel>Sync Desktop & Documents folders</FieldLabel>
             <FieldDescription>

@@ -7,6 +7,7 @@ import {
   FieldGroup,
   FieldLabel,
   FieldSwitch,
+  FieldTitle,
 } from "@/registry/default/ui/oui-field";
 import { Switch } from "@/registry/default/ui/oui-switch";
 import { twJoin } from "tailwind-merge";
@@ -40,21 +41,31 @@ export default function Component() {
             </Switch>
           </Field>
         </FieldGroup>
-        <FieldSwitch
-          className={twJoin(
-            "rounded-lg border p-4 shadow-xs has-data-selected:border-blue-600",
-            "**:data-[slot=switch-indicator]:group-data-selected:bg-blue-500 **:data-[slot=switch-indicator]:dark:group-data-selected:bg-blue-600",
-          )}
-        >
+        <Switch defaultSelected>
           <FieldContent>
-            <FieldLabel>Share across devices</FieldLabel>
+            <FieldTitle>Share across devices</FieldTitle>
             <FieldDescription>
               Focus is shared across devices, and turns off when you leave the
               app.
             </FieldDescription>
           </FieldContent>
-          <Switch defaultSelected />
-        </FieldSwitch>
+        </Switch>
+        <Switch
+          defaultSelected
+          className={twJoin(
+            "flex-row-reverse",
+            "data-selected:border-blue-600 data-selected:bg-blue-50 dark:data-selected:border-blue-900 dark:data-selected:bg-blue-950",
+            "**:data-[slot=switch-indicator]:group-data-selected:bg-blue-500 **:data-[slot=switch-indicator]:dark:group-data-selected:bg-blue-600",
+          )}
+        >
+          <FieldContent>
+            <FieldTitle>Share across devices</FieldTitle>
+            <FieldDescription>
+              Focus is shared across devices, and turns off when you leave the
+              app.
+            </FieldDescription>
+          </FieldContent>
+        </Switch>
       </FieldGroup>
     </div>
   );

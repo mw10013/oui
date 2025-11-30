@@ -12,6 +12,31 @@ import { twMerge } from "tailwind-merge";
 /**
  * Derived from shadcn Label, Field (gap-3 but not items-start), FieldLabel (leading-snug overriding Label leading-none) and Checkbox
  * Radix has CheckboxPrimitive.Root which is separate from label while RAC structures with a label.
+ *
+ * @example
+ * ```tsx
+ * import * as Oui from "@/components/ui/oui-index";
+ *
+ * <CheckboxGroup defaultValue={["hard-disks"]}>
+ *   <Checkbox value="hard-disks">Hard disks</Checkbox>
+ *   <Checkbox value="external-disks">External disks</Checkbox>
+ * </CheckboxGroup>
+ * ```
+ *
+ * Card: When a `FieldDescription` is nested inside `Checkbox`, it styles as a selectable card with border, padding, and hover/selected background colors.
+ *
+ * @example
+ * ```tsx
+ * import * as Oui from "@/components/ui/oui-index";
+ *
+ * <Checkbox defaultSelected>
+ *   <FieldContent>
+ *     { // Use FieldTitle instead of FieldLabel since Checkbox structures with a label }
+ *     <FieldTitle>Enable notifications</FieldTitle>
+ *     <FieldDescription>You can do this anytime.</FieldDescription>
+ *  </FieldContent>
+ * </Checkbox>
+ * ```
  */
 export function Checkbox({ className, children, ...props }: Rac.CheckboxProps) {
   return (

@@ -19,6 +19,9 @@ export function Switch({ className, ...props }: Rac.SwitchProps) {
       className={composeTailwindRenderProps(className, [
         labelComponentStyles,
         "group gap-3 leading-snug",
+        // Card styling when FieldDescription is nested inside Checkbox
+        "has-data-[slot=field-description]:items-start has-data-[slot=field-description]:rounded-md has-data-[slot=field-description]:border has-data-[slot=field-description]:p-4",
+        "has-data-[slot=field-description]:data-hovered:bg-accent/50 has-data-[slot=field-description]:data-selected:border-primary has-data-[slot=field-description]:data-selected:bg-primary/5 dark:has-data-[slot=field-description]:data-selected:bg-primary/10",
       ])}
       {...props}
     >
