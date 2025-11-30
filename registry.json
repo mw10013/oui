@@ -1101,7 +1101,7 @@
         "@oui/oui-popover",
         "@oui/oui-radio-group",
         "@oui/oui-select",
-        "@oui/oui-switch-ex",
+        "@oui/oui-switch",
         "@oui/oui-text-area",
         "@oui/oui-text-field"
       ],
@@ -1113,7 +1113,7 @@
           "checkbox",
           "field",
           "radio-group",
-          "switch-ex",
+          "switch",
           "text-area",
           "text-field"
         ],
@@ -1306,7 +1306,6 @@
         "@oui/oui-search-field-ex",
         "@oui/oui-sidebar-ex",
         "@oui/oui-slider-ex",
-        "@oui/oui-switch-ex",
         "@oui/oui-text-field",
         "@oui/oui-tooltip-ex"
       ],
@@ -2555,7 +2554,7 @@
         "tags": ["switch"]
       }
     },
-        {
+    {
       "name": "oui-switch-demo",
       "type": "registry:component",
       "files": [
@@ -2567,90 +2566,6 @@
       "registryDependencies": ["@oui/oui-switch", "@oui/oui-field"],
       "meta": {
         "tags": ["switch", "field"],
-        "canPreview": true,
-        "canOpenInV0": true
-      }
-    },
-    {
-      "name": "oui-switch-ex",
-      "type": "registry:component",
-      "title": "Switch Ex",
-      "description": "Reusable wrapper for Switch.",
-      "files": [
-        {
-          "path": "registry/default/components/oui-switch-ex.tsx",
-          "type": "registry:component"
-        }
-      ],
-      "registryDependencies": [
-        "@oui/oui-base",
-        "@oui/oui-switch",
-        "@oui/oui-text"
-      ],
-      "meta": {
-        "tags": ["switch", "switch-ex", "text"]
-      }
-    },
-    {
-      "name": "oui-switch-ex-demo",
-      "type": "registry:component",
-      "files": [
-        {
-          "path": "registry/default/components/oui-switch-ex-demo.tsx",
-          "type": "registry:component"
-        }
-      ],
-      "registryDependencies": ["@oui/oui-switch-ex"],
-      "meta": {
-        "tags": ["switch", "switch-ex"],
-        "canPreview": true,
-        "canOpenInV0": true
-      }
-    },
-    {
-      "name": "oui-switch-ex-demo-blue",
-      "type": "registry:component",
-      "files": [
-        {
-          "path": "registry/default/components/oui-switch-ex-demo-blue.tsx",
-          "type": "registry:component"
-        }
-      ],
-      "registryDependencies": ["@oui/oui-switch-ex"],
-      "meta": {
-        "tags": ["switch", "switch-ex"],
-        "canPreview": true,
-        "canOpenInV0": true
-      }
-    },
-    {
-      "name": "oui-switch-ex-demo-description",
-      "type": "registry:component",
-      "files": [
-        {
-          "path": "registry/default/components/oui-switch-ex-demo-description.tsx",
-          "type": "registry:component"
-        }
-      ],
-      "registryDependencies": ["@oui/oui-switch-ex"],
-      "meta": {
-        "tags": ["switch", "switch-ex"],
-        "canPreview": true,
-        "canOpenInV0": true
-      }
-    },
-    {
-      "name": "oui-switch-ex-demo-disabled",
-      "type": "registry:component",
-      "files": [
-        {
-          "path": "registry/default/components/oui-switch-ex-demo-disabled.tsx",
-          "type": "registry:component"
-        }
-      ],
-      "registryDependencies": ["@oui/oui-switch-ex"],
-      "meta": {
-        "tags": ["switch", "switch-ex", "disabled"],
         "canPreview": true,
         "canOpenInV0": true
       }

@@ -72,5 +72,4 @@ export * from "@/registry/default/components/oui-number-field-ex";
 export * from "@/registry/default/components/oui-search-field-ex";
 export * from "@/registry/default/components/oui-sidebar-ex";
 export * from "@/registry/default/components/oui-slider-ex";
-export * from "@/registry/default/components/oui-switch-ex";
 export * from "@/registry/default/components/oui-tooltip-ex";

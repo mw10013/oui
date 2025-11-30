@@ -301,15 +301,7 @@ export const categories: Category[] = [
   {
     name: "Switch",
     slug: "switch",
-    components: [
-      { name: "oui-switch" },
-      { name: "oui-switch-demo" },
-      { name: "oui-switch-ex" },
-      { name: "oui-switch-ex-demo" },
-      { name: "oui-switch-ex-demo-blue" },
-      { name: "oui-switch-ex-demo-description" },
-      { name: "oui-switch-ex-demo-disabled" },
-    ],
+    components: [{ name: "oui-switch" }, { name: "oui-switch-demo" }],
   },
   {
     name: "Table",

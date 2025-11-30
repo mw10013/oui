@@ -88,6 +88,8 @@ export function FieldLabel({
         "group/field-label peer/field-label flex w-fit gap-2 leading-snug group-data-disabled/field:opacity-50",
         "has-[>[data-slot=field]]:w-full has-[>[data-slot=field]]:flex-col has-[>[data-slot=field]]:rounded-md has-[>[data-slot=field]]:border *:data-[slot=field]:p-4",
         "has-data-selected:border-primary has-data-selected:bg-primary/5 dark:has-data-selected:bg-primary/10",
+        // shadcn does not have. We use this for the case where an RAC control appears after the label.
+        "group-has-data-disabled/field:opacity-50",
         className,
       )}
       {...props}
@@ -125,6 +127,8 @@ export function FieldDescription({ className, ...props }: Rac.TextProps) {
         "[&:has(+_:not([aria-hidden])):not(:has(+_:not([aria-hidden])~_:not([aria-hidden])))]:-mt-1",
         "[[data-variant=legend]+&]:-mt-1.5",
         "[&>a]:underline [&>a]:underline-offset-4 [&>a:hover]:text-primary",
+        // shadcn does not have. We use this for the case where an RAC control appears after the description.
+        "group-has-data-disabled/field:opacity-50",
         className,
       )}
       {...props}
@@ -255,8 +259,7 @@ export function FieldCheckbox({
  *   <Oui.FieldContent>
  *     <Oui.FieldLabel>Multi-factor authentication</Oui.FieldLabel>
  *     <Oui.FieldDescription>
- *       Enable multi-factor authentication. If you do not have a two-factor
- *       device, you can use a one-time code sent to your email.
+ *       Enable multi-factor authentication.
  *     </Oui.FieldDescription>
  *   </Oui.FieldContent>
  *   <Oui.Switch />
@@ -271,9 +274,8 @@ export function FieldSwitch({
   children,
   ...props
 }: FieldProps) {
-  const labelId = useSlotId();
+  const switchId = React.useId();
   const descriptionId = useSlotId();
-  const switchRef = React.useRef<HTMLLabelElement>(null);
   return (
     <div
       role="group"
@@ -286,19 +288,9 @@ export function FieldSwitch({
         values={[
           [
             Rac.SwitchContext,
-            {
-              ref: switchRef,
-              "aria-labelledby": labelId,
-              "aria-describedby": descriptionId,
-            },
+            { id: switchId, "aria-describedby": descriptionId },
           ],
-          [
-            Rac.LabelContext,
-            {
-              id: labelId,
-              onClick: () => switchRef.current?.click(),
-            },
-          ],
+          [Rac.LabelContext, { htmlFor: switchId }],
           [
             Rac.TextContext,
             {

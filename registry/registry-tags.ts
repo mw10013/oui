@@ -53,7 +53,6 @@ export const registryTags = [
   "slider",
   "slider-ex",
   "switch",
-  "switch-ex",
   "table",
   "tabs",
   "text-area",

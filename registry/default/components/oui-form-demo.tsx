@@ -1,16 +1,19 @@
 "use client";
 
-import { SwitchEx } from "@/registry/default/components/oui-switch-ex";
 import { Button } from "@/registry/default/ui/oui-button";
 import { Checkbox } from "@/registry/default/ui/oui-checkbox";
 import { CheckboxGroup } from "@/registry/default/ui/oui-checkbox-group";
 import {
   Field,
   FieldCheckbox,
+  FieldContent,
   FieldDescription,
   FieldError,
   FieldGroup,
   FieldLabel,
+  FieldLegend,
+  FieldSet,
+  FieldSwitch,
 } from "@/registry/default/ui/oui-field";
 import { Input } from "@/registry/default/ui/oui-input";
 import { ListBoxItem } from "@/registry/default/ui/oui-list-box";
@@ -21,6 +24,7 @@ import {
   SelectButton,
   SelectValue,
 } from "@/registry/default/ui/oui-select";
+import { Switch } from "@/registry/default/ui/oui-switch";
 import { TextArea } from "@/registry/default/ui/oui-text-area";
 import { TextField } from "@/registry/default/ui/oui-text-field";
 import * as Rac from "react-aria-components";
@@ -90,34 +94,35 @@ export default function Component() {
           <Checkbox value="downloads">Downloads</Checkbox>
           <Checkbox value="documents">Documents</Checkbox>
         </CheckboxGroup>
-        <div>
-          <h3 className="mb-4 text-lg font-medium">Email Notifications</h3>
-          <div className="flex flex-col gap-4">
-            <SwitchEx
-              name="marketing_emails"
-              descriptionClassName="leading-snug"
-              description="Receive emails about new products, features, and more."
-              indicatorPosition="end"
-              // shadcn FormDemo FormItem: shadow-xs flex flex-row items-start justify-between rounded-lg border p-4
-              containerClassName="shadow-xs rounded-lg border p-4"
-              className="leading-snug"
+        <FieldSet>
+          <FieldLegend>Email Notifications</FieldLegend>
+          <FieldGroup>
+            <FieldSwitch
+              orientation="horizontal"
+              className="rounded-lg border p-4 shadow-xs"
             >
-              Marketing emails
-            </SwitchEx>
-            <SwitchEx
-              name="security_emails"
-              descriptionClassName="leading-snug"
-              description="Receive emails about your account security."
-              indicatorPosition="end"
-              // shadcn FormDemo FormItem: shadow-xs flex flex-row items-start justify-between rounded-lg border p-4
-              containerClassName="shadow-xs rounded-lg border p-4"
-              className="leading-normal"
-              isDisabled
+              <FieldContent>
+                <FieldLabel>Marketing emails</FieldLabel>
+                <FieldDescription>
+                  Receive emails about new products, features, and more.
+                </FieldDescription>
+              </FieldContent>
+              <Switch defaultSelected />
+            </FieldSwitch>
+            <FieldSwitch
+              orientation="horizontal"
+              className="rounded-lg border p-4 shadow-xs"
             >
-              Security emails
-            </SwitchEx>
-          </div>
-        </div>
+              <FieldContent>
+                <FieldLabel>Security emails</FieldLabel>
+                <FieldDescription>
+                  Receive emails about your account security.
+                </FieldDescription>
+              </FieldContent>
+              <Switch defaultSelected isDisabled />
+            </FieldSwitch>
+          </FieldGroup>
+        </FieldSet>
         <Field orientation="horizontal">
           <Button type="submit">Submit</Button>
           <Button variant="outline" type="button">
