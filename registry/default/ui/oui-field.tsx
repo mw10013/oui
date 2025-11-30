@@ -13,7 +13,7 @@ import {
 import { Label } from "@/registry/default/ui/oui-label";
 import { cva } from "class-variance-authority";
 import * as Rac from "react-aria-components";
-import { twJoin, twMerge } from "tailwind-merge";
+import { twMerge } from "tailwind-merge";
 import { composeTailwindRenderProps } from "./oui-base";
 
 export {
@@ -84,7 +84,7 @@ export function FieldLabel({
   return (
     <Label
       data-slot="field-label"
-      className={twJoin(
+      className={twMerge(
         "group/field-label peer/field-label flex w-fit gap-2 leading-snug group-data-disabled/field:opacity-50",
         "has-[>[data-slot=field]]:w-full has-[>[data-slot=field]]:flex-col has-[>[data-slot=field]]:rounded-md has-[>[data-slot=field]]:border *:data-[slot=field]:p-4",
         "has-data-selected:border-primary has-data-selected:bg-primary/5 dark:has-data-selected:bg-primary/10",
