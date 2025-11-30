@@ -2,7 +2,7 @@
 
 import { Checkbox } from "@/registry/default/ui/oui-checkbox";
 import {
-  FieldCheckbox,
+  Field,
   FieldContent,
   FieldDescription,
   FieldGroup,
@@ -30,13 +30,13 @@ export default function Component() {
           </FieldContent>
         </Checkbox>
         <FieldSeparator />
-        <FieldCheckbox>
+        <Field>
           <Checkbox isDisabled>Enable alerts</Checkbox>
-        </FieldCheckbox>
+        </Field>
         <FieldSeparator />
-        <FieldCheckbox>
+        <Field>
           <Checkbox isInvalid>Enable pagers</Checkbox>
-        </FieldCheckbox>
+        </Field>
       </FieldGroup>
     </div>
   );
