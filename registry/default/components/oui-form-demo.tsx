@@ -12,7 +12,6 @@ import {
   FieldLabel,
   FieldLegend,
   FieldSet,
-  FieldSwitch,
   FieldTitle,
 } from "@/registry/default/ui/oui-field";
 import { Input } from "@/registry/default/ui/oui-input";
