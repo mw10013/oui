@@ -99,24 +99,22 @@ export default function Component() {
         <FieldSet>
           <FieldLegend>Email Notifications</FieldLegend>
           <FieldGroup>
-            <FieldSwitch className="rounded-lg border p-4 shadow-xs">
+            <Switch defaultSelected className="flex-row-reverse">
               <FieldContent>
                 <FieldTitle>Marketing emails</FieldTitle>
                 <FieldDescription>
                   Receive emails about new products, features, and more.
                 </FieldDescription>
               </FieldContent>
-              <Switch defaultSelected />
-            </FieldSwitch>
-            <FieldSwitch className="rounded-lg border p-4 shadow-xs">
+            </Switch>
+            <Switch isDisabled className="flex-row-reverse">
               <FieldContent>
                 <FieldTitle>Security emails</FieldTitle>
                 <FieldDescription>
                   Receive emails about your account security.
                 </FieldDescription>
               </FieldContent>
-              <Switch defaultSelected isDisabled />
-            </FieldSwitch>
+            </Switch>
           </FieldGroup>
         </FieldSet>
         <Field orientation="horizontal">
