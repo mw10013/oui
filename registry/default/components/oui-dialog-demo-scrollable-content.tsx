@@ -8,7 +8,7 @@ import {
 } from "@/registry/default/ui/oui-dialog";
 import { Heading } from "@/registry/default/ui/oui-heading";
 import * as Rac from "react-aria-components";
-import { Modal, ModalOverlay } from "../ui/oui-modal";
+import { Modal, ModalOverlay } from "@/registry/default/ui/oui-modal";
 
 export default function Component() {
   return (

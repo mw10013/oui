@@ -655,110 +655,66 @@
       }
     },
     {
-      "name": "oui-dialog-ex",
+      "name": "oui-dialog-demo-alert",
       "type": "registry:component",
-      "title": "Dialog Ex",
-      "description": "Reusable wrapper for Dialog.",
       "files": [
         {
-          "path": "registry/default/components/oui-dialog-ex.tsx",
+          "path": "registry/default/components/oui-dialog-demo-alert.tsx",
           "type": "registry:component"
         }
       ],
       "registryDependencies": [
-        "@oui/oui-dialog",
         "@oui/oui-button",
+        "@oui/oui-dialog",
+        "@oui/oui-heading",
         "@oui/oui-modal"
       ],
       "meta": {
-        "tags": ["dialog", "dialog-ex", "modal"]
+        "tags": ["dialog", "modal", "heading"],
+        "canPreview": true,
+        "alignment": "flex-center",
+        "canOpenInV0": true
       }
     },
     {
-      "name": "oui-dialog-ex-demo",
+      "name": "oui-dialog-demo-scrollable-content",
       "type": "registry:component",
       "files": [
         {
-          "path": "registry/default/components/oui-dialog-ex-demo.tsx",
+          "path": "registry/default/components/oui-dialog-demo-scrollable-content.tsx",
           "type": "registry:component"
         }
       ],
       "registryDependencies": [
         "@oui/oui-button",
         "@oui/oui-dialog",
-        "@oui/oui-dialog-ex",
-        "@oui/oui-field",
         "@oui/oui-heading",
-        "@oui/oui-text-field"
+        "@oui/oui-modal"
       ],
       "meta": {
-        "tags": ["dialog", "dialog-ex", "modal", "heading"],
+        "tags": ["dialog", "modal", "heading"],
         "canPreview": true,
         "alignment": "flex-center",
         "canOpenInV0": true
       }
     },
     {
-      "name": "oui-dialog-ex-demo-alert",
+      "name": "oui-dialog-demo-sticky-footer",
       "type": "registry:component",
       "files": [
         {
-          "path": "registry/default/components/oui-dialog-ex-demo-alert.tsx",
+          "path": "registry/default/components/oui-dialog-demo-sticky-footer.tsx",
           "type": "registry:component"
         }
       ],
       "registryDependencies": [
         "@oui/oui-button",
         "@oui/oui-dialog",
-        "@oui/oui-dialog-ex",
-        "@oui/oui-heading"
+        "@oui/oui-heading",
+        "@oui/oui-modal"
       ],
       "meta": {
-        "tags": ["dialog", "dialog-ex", "modal", "heading"],
-        "canPreview": true,
-        "alignment": "flex-center",
-        "canOpenInV0": true
-      }
-    },
-    {
-      "name": "oui-dialog-ex-demo-scrollable-content",
-      "type": "registry:component",
-      "files": [
-        {
-          "path": "registry/default/components/oui-dialog-ex-demo-scrollable-content.tsx",
-          "type": "registry:component"
-        }
-      ],
-      "registryDependencies": [
-        "@oui/oui-button",
-        "@oui/oui-dialog",
-        "@oui/oui-dialog-ex",
-        "@oui/oui-heading"
-      ],
-      "meta": {
-        "tags": ["dialog", "dialog-ex", "modal", "heading"],
-        "canPreview": true,
-        "alignment": "flex-center",
-        "canOpenInV0": true
-      }
-    },
-    {
-      "name": "oui-dialog-ex-demo-sticky-footer",
-      "type": "registry:component",
-      "files": [
-        {
-          "path": "registry/default/components/oui-dialog-ex-demo-sticky-footer.tsx",
-          "type": "registry:component"
-        }
-      ],
-      "registryDependencies": [
-        "@oui/oui-button",
-        "@oui/oui-dialog",
-        "@oui/oui-dialog-ex",
-        "@oui/oui-heading"
-      ],
-      "meta": {
-        "tags": ["dialog", "dialog-ex", "modal", "heading"],
+        "tags": ["dialog", "modal", "heading"],
         "canPreview": true,
         "alignment": "flex-center",
         "canOpenInV0": true
@@ -1227,7 +1183,6 @@
         "@oui/oui-card-ex",
         "@oui/oui-dialog-ex-alert",
         "@oui/oui-dialog-ex-sheet",
-        "@oui/oui-dialog-ex",
         "@oui/oui-list-box-ex-pagination",
         "@oui/oui-modal-ex-sheet",
         "@oui/oui-number-field-ex",

@@ -14,7 +14,6 @@ export const registryTags = [
   "checkbox-group",
   "combo-box",
   "dialog",
-  "dialog-ex",
   "dialog-ex-alert",
   "dialog-ex-sheet",
   "disclosure",

@@ -60,7 +60,6 @@ export * from "@/registry/default/components/oui-badge-ex";
 export * from "@/registry/default/components/oui-card-ex";
 export * from "@/registry/default/components/oui-dialog-ex-alert";
 export * from "@/registry/default/components/oui-dialog-ex-sheet";
-export * from "@/registry/default/components/oui-dialog-ex";
 export * from "@/registry/default/components/oui-list-box-ex-pagination";
 export * from "@/registry/default/components/oui-modal-ex-sheet";
 export * from "@/registry/default/components/oui-number-field-ex";

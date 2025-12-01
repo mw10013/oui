@@ -8,13 +8,13 @@ import {
   DialogHeader,
 } from "@/registry/default/ui/oui-dialog";
 import { Heading } from "@/registry/default/ui/oui-heading";
+import { Modal, ModalOverlay } from "@/registry/default/ui/oui-modal";
 import * as Rac from "react-aria-components";
-import { Modal, ModalOverlay } from "../ui/oui-modal";
 
 export default function Component() {
   return (
     <Rac.DialogTrigger>
-      <Button variant="outline">Dialog Ex Alert</Button>
+      <Button variant="outline">Dialog Alert</Button>
       <ModalOverlay>
         <Modal>
           <Dialog role="alertdialog">

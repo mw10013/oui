@@ -17,7 +17,7 @@ import {
 } from "@/registry/default/ui/oui-dialog";
 import { Heading } from "@/registry/default/ui/oui-heading";
 import * as Rac from "react-aria-components";
-import { Modal, ModalOverlay } from "../ui/oui-modal";
+import { Modal, ModalOverlay } from "@/registry/default/ui/oui-modal";
 
 export interface DialogExAlertProps
   extends Rac.DialogProps,
@@ -165,11 +165,3 @@ export function DialogExAlertProvider({ children }: { children: ReactNode }) {
     </DialogExAlertContext.Provider>
   );
 }
-
-// <ModalEx
-//   className={modalClassName}
-//   isDismissable={false}
-//   isOpen={isOpen}
-//   onOpenChange={onOpenChange}
-//   defaultOpen={defaultOpen}
-// >}
