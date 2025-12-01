@@ -46,15 +46,6 @@ export function DialogEx({
         <Dialog {...props} />
       </Modal>
     </ModalOverlay>
-    // <ModalEx
-    //   className={modalClassName}
-    //   isDismissable={props.role !== "alertdialog"}
-    //   isOpen={isOpen}
-    //   defaultOpen={defaultOpen}
-    //   onOpenChange={onOpenChange}
-    // >
-    //   <Dialog {...props} />
-    // </ModalEx>
   );
   if (triggerElement) {
     return (
