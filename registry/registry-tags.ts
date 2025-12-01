@@ -33,7 +33,6 @@ export const registryTags = [
   "list-box",
   "list-box-ex-pagination",
   "menu",
-  "menu-ex",
   "modal",
   "modal-ex-sheet",
   "number-field",

@@ -4,22 +4,20 @@
   "type": "registry:component",
   "registryDependencies": [
     "@oui/oui-button",
+    "@oui/oui-menu",
     "@oui/oui-keyboard",
-    "@oui/oui-menu-ex",
-    "@oui/oui-menu"
+    "@oui/oui-popover"
   ],
   "files": [
     {
       "path": "registry/default/components/oui-keyboard-demo.tsx",
-      "content": "\"use client\";\n\nimport { MenuEx } from \"@/registry/default/components/oui-menu-ex\";\nimport { Button } from \"@/registry/default/ui/oui-button\";\nimport { Keyboard } from \"@/registry/default/ui/oui-keyboard\";\nimport { MenuItem } from \"@/registry/default/ui/oui-menu\";\n\nexport default function Component() {\n  return (\n    <MenuEx\n      triggerElement={<Button variant=\"outline\">Keyboard</Button>}\n      className=\"w-56\"\n    >\n      <MenuItem id=\"keyboard\">\n        Keyboard\n        <Keyboard>⌘K</Keyboard>\n      </MenuItem>\n    </MenuEx>\n  );\n}\n",
+      "content": "\"use client\";\n\nimport { Button } from \"@/registry/default/ui/oui-button\";\nimport { Keyboard } from \"@/registry/default/ui/oui-keyboard\";\nimport { Menu, MenuItem } from \"@/registry/default/ui/oui-menu\";\nimport { Popover } from \"@/registry/default/ui/oui-popover\";\nimport * as Rac from \"react-aria-components\";\n\nexport default function Component() {\n  return (\n    <Rac.MenuTrigger>\n      <Button variant=\"outline\">Keyboard</Button>\n      <Popover>\n        <Menu className=\"w-56\">\n          <MenuItem id=\"keyboard\">\n            Keyboard\n            <Keyboard>⌘K</Keyboard>\n          </MenuItem>\n        </Menu>\n      </Popover>\n    </Rac.MenuTrigger>\n  );\n}\n",
       "type": "registry:component"
     }
   ],
   "meta": {
     "tags": [
-      "keyboard",
-      "menu-ex",
-      "menu"
+      "keyboard"
     ],
     "canPreview": true,
     "canOpenInV0": true

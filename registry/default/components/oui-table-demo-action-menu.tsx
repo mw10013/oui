@@ -1,10 +1,10 @@
 "use client";
 
 import * as React from "react";
-import { MenuEx } from "@/registry/default/components/oui-menu-ex";
 import { Button } from "@/registry/default/ui/oui-button";
 import { Checkbox } from "@/registry/default/ui/oui-checkbox";
-import { MenuItem } from "@/registry/default/ui/oui-menu";
+import { Menu, MenuItem } from "@/registry/default/ui/oui-menu";
+import { Popover } from "@/registry/default/ui/oui-popover";
 import { Separator } from "@/registry/default/ui/oui-separator";
 import {
   Cell,
@@ -128,27 +128,30 @@ export default function Component() {
             <Cell>{invoice.paymentMethod}</Cell>
             <Cell className="text-right">{invoice.totalAmount}</Cell>
             <Cell className="text-right">
-              <MenuEx
-                triggerElement={
-                  <Button variant="ghost" className="size-8 p-0">
-                    <span className="sr-only">
-                      Open menu for {invoice.invoice}
-                    </span>
-                    <MoreHorizontal className="size-4" />
-                  </Button>
-                }
-                onAction={(key) => {
-                  // Placeholder for future action handling
-                  console.log(
-                    `Action: ${String(key)} for invoice ${invoice.invoice}`,
-                  );
-                }}
-              >
-                <MenuItem id="copyId">Copy payment ID</MenuItem>
-                <Separator variant="menu" />
-                <MenuItem id="viewCustomer">View customer</MenuItem>
-                <MenuItem id="viewDetails">View payment details</MenuItem>
-              </MenuEx>
+              <Rac.MenuTrigger>
+                <Button
+                  variant="ghost"
+                  className="size-8 p-0"
+                  aria-label={`Open menu for ${invoice.invoice}`}
+                >
+                  <MoreHorizontal className="size-4" />
+                </Button>
+                <Popover>
+                  <Menu
+                    onAction={(key) => {
+                      // Placeholder for future action handling
+                      console.log(
+                        `Action: ${String(key)} for invoice ${invoice.invoice}`,
+                      );
+                    }}
+                  >
+                    <MenuItem id="copyId">Copy payment ID</MenuItem>
+                    <Separator variant="menu" />
+                    <MenuItem id="viewCustomer">View customer</MenuItem>
+                    <MenuItem id="viewDetails">View payment details</MenuItem>
+                  </Menu>
+                </Popover>
+              </Rac.MenuTrigger>
             </Cell>
           </Row>
         )}

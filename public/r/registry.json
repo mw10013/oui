@@ -1126,11 +1126,11 @@
       "registryDependencies": [
         "@oui/oui-button",
         "@oui/oui-header",
-        "@oui/oui-menu-ex",
-        "@oui/oui-menu"
+        "@oui/oui-menu",
+        "@oui/oui-popover"
       ],
       "meta": {
-        "tags": ["header", "menu-ex", "menu"],
+        "tags": ["header", "menu"],
         "canPreview": true,
         "alignment": "flex-center",
         "canOpenInV0": true
@@ -1229,7 +1229,6 @@
         "@oui/oui-dialog-ex-sheet",
         "@oui/oui-dialog-ex",
         "@oui/oui-list-box-ex-pagination",
-        "@oui/oui-menu-ex",
         "@oui/oui-modal-ex-sheet",
         "@oui/oui-number-field-ex",
         "@oui/oui-sidebar-ex",
@@ -1356,12 +1355,12 @@
       ],
       "registryDependencies": [
         "@oui/oui-button",
+        "@oui/oui-menu",
         "@oui/oui-keyboard",
-        "@oui/oui-menu-ex",
-        "@oui/oui-menu"
+        "@oui/oui-popover"
       ],
       "meta": {
-        "tags": ["keyboard", "menu-ex", "menu"],
+        "tags": ["keyboard"],
         "canPreview": true,
         "canOpenInV0": true
       }
@@ -1760,31 +1759,11 @@
       }
     },
     {
-      "name": "oui-menu-ex",
-      "type": "registry:component",
-      "title": "Menu Ex",
-      "description": "Reusable wrapper for Menu.",
-      "files": [
-        {
-          "path": "registry/default/components/oui-menu-ex.tsx",
-          "type": "registry:component"
-        }
-      ],
-      "registryDependencies": [
-        "@oui/oui-button",
-        "@oui/oui-menu",
-        "@oui/oui-popover"
-      ],
-      "meta": {
-        "tags": ["menu", "menu-ex", "popover", "button"]
-      }
-    },
-    {
-      "name": "oui-menu-ex-demo",
+      "name": "oui-menu-demo",
       "type": "registry:component",
       "files": [
         {
-          "path": "registry/default/components/oui-menu-ex-demo.tsx",
+          "path": "registry/default/components/oui-menu-demo.tsx",
           "type": "registry:component"
         }
       ],
@@ -1793,29 +1772,21 @@
         "@oui/oui-header",
         "@oui/oui-keyboard",
         "@oui/oui-menu",
-        "@oui/oui-menu-ex",
         "@oui/oui-popover",
         "@oui/oui-separator"
       ],
       "meta": {
-        "tags": [
-          "menu",
-          "menu-ex",
-          "keyboard",
-          "popover",
-          "header",
-          "separator"
-        ],
+        "tags": ["menu", "keyboard", "popover", "header", "separator"],
         "canPreview": true,
         "canOpenInV0": true
       }
     },
     {
-      "name": "oui-menu-ex-demo-checkboxes",
+      "name": "oui-menu-demo-checkboxes",
       "type": "registry:component",
       "files": [
         {
-          "path": "registry/default/components/oui-menu-ex-demo-checkboxes.tsx",
+          "path": "registry/default/components/oui-menu-demo-checkboxes.tsx",
           "type": "registry:component"
         }
       ],
@@ -1823,21 +1794,22 @@
         "@oui/oui-button",
         "@oui/oui-header",
         "@oui/oui-menu",
-        "@oui/oui-menu-ex",
+        "@oui/oui-popover",
         "@oui/oui-separator"
       ],
+      "dependencies": ["lucide-react"],
       "meta": {
-        "tags": ["menu", "menu-ex", "header", "separator"],
+        "tags": ["menu", "header", "separator"],
         "canPreview": true,
         "canOpenInV0": true
       }
     },
     {
-      "name": "oui-menu-ex-demo-radio-group",
+      "name": "oui-menu-demo-radio-group",
       "type": "registry:component",
       "files": [
         {
-          "path": "registry/default/components/oui-menu-ex-demo-radio-group.tsx",
+          "path": "registry/default/components/oui-menu-demo-radio-group.tsx",
           "type": "registry:component"
         }
       ],
@@ -1845,20 +1817,20 @@
         "@oui/oui-button",
         "@oui/oui-header",
         "@oui/oui-menu",
-        "@oui/oui-menu-ex"
+        "@oui/oui-popover"
       ],
       "meta": {
-        "tags": ["menu", "menu-ex", "header"],
+        "tags": ["menu", "header"],
         "canPreview": true,
         "canOpenInV0": true
       }
     },
     {
-      "name": "oui-menu-ex-demo-avatar",
+      "name": "oui-menu-demo-avatar",
       "type": "registry:component",
       "files": [
         {
-          "path": "registry/default/components/oui-menu-ex-demo-avatar.tsx",
+          "path": "registry/default/components/oui-menu-demo-avatar.tsx",
           "type": "registry:component"
         }
       ],
@@ -1866,22 +1838,22 @@
         "avatar",
         "@oui/oui-button",
         "@oui/oui-menu",
-        "@oui/oui-menu-ex",
-        "@oui/oui-separator"
+        "@oui/oui-separator",
+        "@oui/oui-popover"
       ],
       "dependencies": ["lucide-react"],
       "meta": {
-        "tags": ["menu", "menu-ex", "avatar", "separator"],
+        "tags": ["menu", "avatar", "separator"],
         "canPreview": true,
         "canOpenInV0": true
       }
     },
     {
-      "name": "oui-menu-ex-demo-avatar-only",
+      "name": "oui-menu-demo-avatar-only",
       "type": "registry:component",
       "files": [
         {
-          "path": "registry/default/components/oui-menu-ex-demo-avatar-only.tsx",
+          "path": "registry/default/components/oui-menu-demo-avatar-only.tsx",
           "type": "registry:component"
         }
       ],
@@ -1889,22 +1861,22 @@
         "avatar",
         "@oui/oui-button",
         "@oui/oui-menu",
-        "@oui/oui-menu-ex",
-        "@oui/oui-separator"
+        "@oui/oui-separator",
+        "@oui/oui-popover"
       ],
       "dependencies": ["lucide-react"],
       "meta": {
-        "tags": ["menu", "menu-ex", "separator", "avatar"],
+        "tags": ["menu", "avatar"],
         "canPreview": true,
         "canOpenInV0": true
       }
     },
     {
-      "name": "oui-menu-ex-demo-icon",
+      "name": "oui-menu-demo-icon",
       "type": "registry:component",
       "files": [
         {
-          "path": "registry/default/components/oui-menu-ex-demo-icon.tsx",
+          "path": "registry/default/components/oui-menu-demo-icon.tsx",
           "type": "registry:component"
         }
       ],
@@ -1912,11 +1884,12 @@
         "@oui/oui-button",
         "@oui/oui-menu",
         "@oui/oui-menu-ex",
-        "@oui/oui-separator"
+        "@oui/oui-separator",
+        "@oui/oui-popover"
       ],
       "dependencies": ["lucide-react"],
       "meta": {
-        "tags": ["menu", "menu-ex", "separator", "icon"],
+        "tags": ["menu", "separator", "icon"],
         "canPreview": true,
         "canOpenInV0": true
       }
