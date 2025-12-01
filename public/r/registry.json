@@ -74,9 +74,9 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["@oui/oui-search-field-ex"],
+      "registryDependencies": ["@oui/oui-search-field"],
       "meta": {
-        "tags": ["autocomplete", "autocomplete-ex", "search-field-ex"]
+        "tags": ["autocomplete", "autocomplete-ex", "search-field"]
       }
     },
     {
@@ -1303,7 +1303,6 @@
         "@oui/oui-modal-ex-sheet",
         "@oui/oui-modal-ex",
         "@oui/oui-number-field-ex",
-        "@oui/oui-search-field-ex",
         "@oui/oui-sidebar-ex",
         "@oui/oui-slider-ex",
         "@oui/oui-text-field",
@@ -2266,46 +2265,17 @@
       }
     },
     {
-      "name": "oui-search-field-ex",
-      "type": "registry:component",
-      "title": "Search Field Ex",
-      "description": "Reusable wrapper for Search Field.",
-      "files": [
-        {
-          "path": "registry/default/components/oui-search-field-ex.tsx",
-          "type": "registry:component"
-        }
-      ],
-      "registryDependencies": [
-        "@oui/oui-field",
-        "@oui/oui-label",
-        "@oui/oui-input",
-        "@oui/oui-search-field",
-        "@oui/oui-text"
-      ],
-      "meta": {
-        "tags": [
-          "search-field",
-          "search-field-ex",
-          "field-error",
-          "label",
-          "input",
-          "text"
-        ]
-      }
-    },
-    {
-      "name": "oui-search-field-ex-demo",
+      "name": "oui-search-field-demo",
       "type": "registry:component",
       "files": [
         {
-          "path": "registry/default/components/oui-search-field-ex-demo.tsx",
+          "path": "registry/default/components/oui-search-field-demo.tsx",
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["@oui/oui-search-field-ex"],
+      "registryDependencies": ["@oui/oui-search-field"],
       "meta": {
-        "tags": ["search-field", "search-field-ex"],
+        "tags": ["search-field"],
         "canPreview": true,
         "canOpenInV0": true
       }

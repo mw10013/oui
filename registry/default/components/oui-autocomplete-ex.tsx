@@ -1,6 +1,10 @@
 "use client";
 
-import { SearchFieldEx } from "@/registry/default/components/oui-search-field-ex";
+import { FieldError } from "@/registry/default/ui/oui-field";
+import { Input } from "@/registry/default/ui/oui-input";
+import { Label } from "@/registry/default/ui/oui-label";
+import { SearchField } from "@/registry/default/ui/oui-search-field";
+import { Text } from "@/registry/default/ui/oui-text";
 import * as Rac from "react-aria-components";
 
 export interface AutocompleteExProps
@@ -30,13 +34,15 @@ export function AutocompleteEx({
 
   return (
     <Rac.Autocomplete {...props} filter={filter ?? defaultFilter}>
-      <SearchFieldEx
-        {...searchFieldProps}
-        label={label}
-        description={description}
-        errorMessage={errorMessage}
-        placeholder={placeholder}
-      />
+      <SearchField {...searchFieldProps}>
+        {label && typeof label === "string" ? <Label>{label}</Label> : label}
+        <Input
+          placeholder={placeholder}
+          className="[&::-webkit-search-cancel-button]:hidden"
+        />
+        {description && <Text slot="description">{description}</Text>}
+        <FieldError>{errorMessage}</FieldError>
+      </SearchField>
       {children}
     </Rac.Autocomplete>
   );

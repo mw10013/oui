@@ -26,6 +26,7 @@ export const inputVariants = cva(
           focusVisibleStyles,
           "rounded-md border border-input shadow-xs",
           "data-invalid:border-destructive data-invalid:ring-destructive/20 dark:data-invalid:ring-destructive/40",
+          "[&::-webkit-search-cancel-button]:hidden",
         ],
         ghost: "flex-1",
       },
