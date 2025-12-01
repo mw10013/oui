@@ -59,7 +59,6 @@ export const registryTags = [
   "text",
   "toggle-button",
   "tooltip",
-  "tooltip-ex",
   "tree",
 
   // Generic tags

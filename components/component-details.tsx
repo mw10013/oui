@@ -10,7 +10,7 @@ import {
   DialogHeader,
 } from "@/registry/default/ui/oui-dialog";
 import { Heading } from "@/registry/default/ui/oui-heading";
-import { OverlayArrow, Tooltip } from "@/registry/default/ui/oui-tooltip";
+import { Tooltip } from "@/registry/default/ui/oui-tooltip";
 import { CodeIcon } from "lucide-react";
 import * as Rac from "react-aria-components";
 
@@ -79,10 +79,7 @@ export function ComponentDetails({ component }: { component: RegistryItem }) {
                 <CodeIcon size={16} aria-hidden={true} />
               </Button>
             </span>
-            <Tooltip>
-              <OverlayArrow />
-              View code
-            </Tooltip>
+            <Tooltip>View code</Tooltip>
           </Rac.TooltipTrigger>
         }
         modalClassName="sm:max-w-[calc(100%-2rem)]"

@@ -1,6 +1,6 @@
 import { useCopy } from "@/hooks/use-copy";
 import { Button } from "@/registry/default/ui/oui-button";
-import { OverlayArrow, Tooltip } from "@/registry/default/ui/oui-tooltip";
+import { Tooltip } from "@/registry/default/ui/oui-tooltip";
 import * as Rac from "react-aria-components";
 import { twJoin } from "tailwind-merge";
 
@@ -56,10 +56,7 @@ export function CopyRegistry({ url }: { url: string | null }) {
           </svg>
         </div>
       </Button>
-      <Tooltip>
-        <OverlayArrow />
-        Copy Registry URL
-      </Tooltip>
+      <Tooltip>Copy Registry URL</Tooltip>
     </Rac.TooltipTrigger>
   );
 }

@@ -9,7 +9,7 @@
   "files": [
     {
       "path": "registry/default/components/oui-tooltip-demo.tsx",
-      "content": "\"use client\";\n\nimport { Button } from \"@/registry/default/ui/oui-button\";\nimport { OverlayArrow, Tooltip } from \"@/registry/default/ui/oui-tooltip\";\nimport { TooltipTrigger } from \"react-aria-components\";\n\nexport default function Component() {\n  return (\n    <TooltipTrigger>\n      <Button variant=\"outline\">Tooltip</Button>\n      <Tooltip>\n        <OverlayArrow />\n        This is a tooltip\n      </Tooltip>\n    </TooltipTrigger>\n  );\n}\n",
+      "content": "\"use client\";\n\nimport { Button } from \"@/registry/default/ui/oui-button\";\nimport { Tooltip } from \"@/registry/default/ui/oui-tooltip\";\nimport { TooltipTrigger } from \"react-aria-components\";\n\nexport default function Component() {\n  return (\n    <TooltipTrigger>\n      <Button variant=\"outline\">Tooltip</Button>\n      <Tooltip>This is a tooltip</Tooltip>\n    </TooltipTrigger>\n  );\n}\n",
       "type": "registry:component"
     }
   ],

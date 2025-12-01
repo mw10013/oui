@@ -1,5 +1,5 @@
 import { buttonClassName } from "@/registry/default/ui/oui-button";
-import { OverlayArrow, Tooltip } from "@/registry/default/ui/oui-tooltip";
+import { Tooltip } from "@/registry/default/ui/oui-tooltip";
 import * as Rac from "react-aria-components";
 
 // https://ui.shadcn.com/docs/registry/open-in-v0
@@ -34,10 +34,7 @@ export function OpenInV0({ componentSource }: { componentSource: string }) {
           ></path>
         </svg>
       </Rac.Link>
-      <Tooltip>
-        <OverlayArrow />
-        Open in v0
-      </Tooltip>
+      <Tooltip>Open in v0</Tooltip>
     </Rac.TooltipTrigger>
   );
 }

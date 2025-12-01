@@ -1304,9 +1304,7 @@
         "@oui/oui-modal-ex",
         "@oui/oui-number-field-ex",
         "@oui/oui-sidebar-ex",
-        "@oui/oui-slider-ex",
-        "@oui/oui-text-field",
-        "@oui/oui-tooltip-ex"
+        "@oui/oui-slider-ex"
       ],
       "meta": {
         "tags": ["index"]
@@ -2853,39 +2851,6 @@
       "registryDependencies": ["@oui/oui-button", "@oui/oui-tooltip"],
       "meta": {
         "tags": ["tooltip"],
-        "canPreview": true,
-        "alignment": "flex-center",
-        "canOpenInV0": true
-      }
-    },
-    {
-      "name": "oui-tooltip-ex",
-      "type": "registry:component",
-      "title": "Tooltip Ex",
-      "description": "Reusable wrapper for Tooltip.",
-      "files": [
-        {
-          "path": "registry/default/components/oui-tooltip-ex.tsx",
-          "type": "registry:component"
-        }
-      ],
-      "registryDependencies": ["@oui/oui-button", "@oui/oui-tooltip"],
-      "meta": {
-        "tags": ["tooltip", "tooltip-ex", "button"]
-      }
-    },
-    {
-      "name": "oui-tooltip-ex-demo",
-      "type": "registry:component",
-      "files": [
-        {
-          "path": "registry/default/components/oui-tooltip-ex-demo.tsx",
-          "type": "registry:component"
-        }
-      ],
-      "registryDependencies": ["@oui/oui-button", "@oui/oui-tooltip-ex"],
-      "meta": {
-        "tags": ["tooltip", "tooltip-ex"],
         "canPreview": true,
         "alignment": "flex-center",
         "canOpenInV0": true

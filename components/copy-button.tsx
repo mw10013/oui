@@ -1,6 +1,6 @@
 import { useCopy } from "@/hooks/use-copy";
 import { Button } from "@/registry/default/ui/oui-button";
-import { OverlayArrow, Tooltip } from "@/registry/default/ui/oui-tooltip";
+import { Tooltip } from "@/registry/default/ui/oui-tooltip";
 import * as Rac from "react-aria-components";
 import { twJoin, twMerge } from "tailwind-merge";
 
@@ -62,7 +62,6 @@ export function CopyButton({
           </div>
         </Button>
         <Tooltip className="px-2 py-1 text-xs text-muted-foreground">
-          <OverlayArrow />
           Copy
         </Tooltip>
       </Rac.TooltipTrigger>
