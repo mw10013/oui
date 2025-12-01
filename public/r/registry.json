@@ -984,49 +984,33 @@
       }
     },
     {
-      "name": "oui-disclosure-ex",
+      "name": "oui-disclosure-demo-group",
       "type": "registry:component",
-      "title": "Disclosure Ex",
-      "description": "Reusable wrapper for Disclosure.",
       "files": [
         {
-          "path": "registry/default/components/oui-disclosure-ex.tsx",
+          "path": "registry/default/components/oui-disclosure-demo-group.tsx",
           "type": "registry:component"
         }
       ],
       "registryDependencies": ["@oui/oui-disclosure", "@oui/oui-heading"],
       "meta": {
-        "tags": ["disclosure", "disclosure-ex", "heading"]
-      }
-    },
-    {
-      "name": "oui-disclosure-ex-demo",
-      "type": "registry:component",
-      "files": [
-        {
-          "path": "registry/default/components/oui-disclosure-ex-demo.tsx",
-          "type": "registry:component"
-        }
-      ],
-      "registryDependencies": ["@oui/oui-disclosure-ex"],
-      "meta": {
-        "tags": ["disclosure", "disclosure-ex"],
+        "tags": ["disclosure", "heading"],
         "canPreview": true,
         "canOpenInV0": true
       }
     },
     {
-      "name": "oui-disclosure-ex-demo-text",
+      "name": "oui-disclosure-demo-text",
       "type": "registry:component",
       "files": [
         {
-          "path": "registry/default/components/oui-disclosure-ex-demo-text.tsx",
+          "path": "registry/default/components/oui-disclosure-demo-text.tsx",
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["@oui/oui-disclosure-ex"],
+      "registryDependencies": ["@oui/oui-disclosure", "@oui/oui-heading"],
       "meta": {
-        "tags": ["disclosure", "disclosure-ex"],
+        "tags": ["disclosure", "heading"],
         "canPreview": true,
         "width": "wide",
         "canOpenInV0": true
@@ -1282,7 +1266,6 @@
         "@oui/oui-dialog-ex-alert",
         "@oui/oui-dialog-ex-sheet",
         "@oui/oui-dialog-ex",
-        "@oui/oui-disclosure-ex",
         "@oui/oui-list-box-ex-pagination",
         "@oui/oui-menu-ex",
         "@oui/oui-modal-ex-sheet",

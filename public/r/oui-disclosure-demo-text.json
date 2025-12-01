@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "oui-disclosure-demo-text",
+  "type": "registry:component",
+  "registryDependencies": [
+    "@oui/oui-disclosure",
+    "@oui/oui-heading"
+  ],
+  "files": [
+    {
+      "path": "registry/default/components/oui-disclosure-demo-text.tsx",
+      "content": "\"use client\";\n\nimport {\n  Disclosure,\n  DisclosureButton,\n  DisclosurePanel,\n} from \"@/registry/default/ui/oui-disclosure\";\nimport { Heading } from \"@/registry/default/ui/oui-heading\";\nimport * as Rac from \"react-aria-components\";\n\nexport default function Component() {\n  return (\n    <Rac.DisclosureGroup className=\"w-full\">\n      <Disclosure id=\"item-1-enterprise\">\n        <Heading variant=\"disclosure\">\n          <DisclosureButton>\n            What are the key considerations when implementing a comprehensive\n            enterprise-level authentication system?\n          </DisclosureButton>\n        </Heading>\n        <DisclosurePanel>\n          Implementing a robust enterprise authentication system requires\n          careful consideration of multiple factors. This includes secure\n          password hashing and storage, multi-factor authentication (MFA)\n          implementation, session management, OAuth2 and SSO integration,\n          regular security audits, rate limiting to prevent brute force attacks,\n          and maintaining detailed audit logs. Additionally, you&apos;ll need to\n          consider scalability, performance impact, and compliance with relevant\n          data protection regulations such as GDPR or HIPAA.\n        </DisclosurePanel>\n      </Disclosure>\n      <Disclosure id=\"item-2-distributed\">\n        <Heading variant=\"disclosure\">\n          <DisclosureButton>\n            How does modern distributed system architecture handle eventual\n            consistency and data synchronization across multiple regions?\n          </DisclosureButton>\n        </Heading>\n        <DisclosurePanel>\n          Modern distributed systems employ various strategies to maintain data\n          consistency across regions. This often involves using techniques like\n          CRDT (Conflict-Free Replicated Data Types), vector clocks, and gossip\n          protocols. Systems might implement event sourcing patterns, utilize\n          message queues for asynchronous updates, and employ sophisticated\n          conflict resolution strategies. Popular solutions like Amazon&apos;s\n          DynamoDB and Google&apos;s Spanner demonstrate different approaches to\n          solving these challenges, balancing between consistency, availability,\n          and partition tolerance as described in the CAP theorem.\n        </DisclosurePanel>\n      </Disclosure>\n    </Rac.DisclosureGroup>\n  );\n}\n",
+      "type": "registry:component"
+    }
+  ],
+  "meta": {
+    "tags": [
+      "disclosure",
+      "heading"
+    ],
+    "canPreview": true,
+    "width": "wide",
+    "canOpenInV0": true
+  }
+}
