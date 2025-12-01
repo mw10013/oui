@@ -655,28 +655,6 @@
       }
     },
     {
-      "name": "oui-dialog-demo-alert",
-      "type": "registry:component",
-      "files": [
-        {
-          "path": "registry/default/components/oui-dialog-demo-alert.tsx",
-          "type": "registry:component"
-        }
-      ],
-      "registryDependencies": [
-        "@oui/oui-button",
-        "@oui/oui-dialog",
-        "@oui/oui-heading",
-        "@oui/oui-modal"
-      ],
-      "meta": {
-        "tags": ["dialog", "modal", "heading"],
-        "canPreview": true,
-        "alignment": "flex-center",
-        "canOpenInV0": true
-      }
-    },
-    {
       "name": "oui-dialog-demo-scrollable-content",
       "type": "registry:component",
       "files": [
@@ -721,13 +699,11 @@
       }
     },
     {
-      "name": "oui-dialog-ex-alert",
+      "name": "oui-dialog-demo-alert",
       "type": "registry:component",
-      "title": "Dialog Ex Alert",
-      "description": "Reusable wrapper for an alert Dialog.",
       "files": [
         {
-          "path": "registry/default/components/oui-dialog-ex-alert.tsx",
+          "path": "registry/default/components/oui-dialog-demo-alert.tsx",
           "type": "registry:component"
         }
       ],
@@ -738,55 +714,29 @@
         "@oui/oui-modal"
       ],
       "meta": {
-        "tags": ["dialog", "dialog-ex-alert", "heading", "modal"]
-      }
-    },
-    {
-      "name": "oui-dialog-ex-alert-demo-confirm",
-      "type": "registry:component",
-      "files": [
-        {
-          "path": "registry/default/components/oui-dialog-ex-alert-demo-confirm.tsx",
-          "type": "registry:component"
-        }
-      ],
-      "registryDependencies": ["@oui/oui-button", "@oui/oui-dialog-ex-alert"],
-      "meta": {
-        "tags": ["dialog", "dialog-ex-alert"],
+        "tags": ["dialog", "modal", "heading"],
         "canPreview": true,
         "alignment": "flex-center",
         "canOpenInV0": true
       }
     },
     {
-      "name": "oui-dialog-ex-alert-demo-ack",
+      "name": "oui-dialog-demo-alert-confirm",
       "type": "registry:component",
       "files": [
         {
-          "path": "registry/default/components/oui-dialog-ex-alert-demo-ack.tsx",
+          "path": "registry/default/components/oui-dialog-demo-alert-confirm.tsx",
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["@oui/oui-button", "@oui/oui-dialog-ex-alert"],
-      "meta": {
-        "tags": ["dialog", "dialog-ex-alert"],
-        "canPreview": true,
-        "alignment": "flex-center",
-        "canOpenInV0": true
-      }
-    },
-    {
-      "name": "oui-dialog-ex-alert-demo-programmatic",
-      "type": "registry:component",
-      "files": [
-        {
-          "path": "registry/default/components/oui-dialog-ex-alert-demo-programmatic.tsx",
-          "type": "registry:component"
-        }
+      "registryDependencies": [
+        "@oui/oui-button",
+        "@oui/oui-dialog",
+        "@oui/oui-heading",
+        "@oui/oui-modal"
       ],
-      "registryDependencies": ["@oui/oui-button", "@oui/oui-dialog-ex-alert"],
       "meta": {
-        "tags": ["dialog", "dialog-ex-alert"],
+        "tags": ["dialog", "modal", "heading"],
         "canPreview": true,
         "alignment": "flex-center",
         "canOpenInV0": true

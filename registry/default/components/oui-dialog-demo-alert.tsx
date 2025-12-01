@@ -15,7 +15,7 @@ export default function Component() {
   return (
     <Rac.DialogTrigger>
       <Button variant="outline">Dialog Alert</Button>
-      <ModalOverlay>
+      <ModalOverlay isKeyboardDismissDisabled>
         <Modal>
           <Dialog role="alertdialog">
             <DialogHeader>
