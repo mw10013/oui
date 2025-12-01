@@ -1,12 +1,17 @@
 "use client";
 
-import { TooltipEx } from "@/registry/default/components/oui-tooltip-ex";
 import { Button } from "@/registry/default/ui/oui-button";
+import { OverlayArrow, Tooltip } from "@/registry/default/ui/oui-tooltip";
+import * as Rac from "react-aria-components";
 
 export default function Component() {
   return (
-    <TooltipEx triggerElement={<Button variant="outline">Tooltip Ex</Button>}>
-      This is a tooltip
-    </TooltipEx>
+    <Rac.TooltipTrigger>
+      <Button variant="outline">Tooltip Ex</Button>
+      <Tooltip>
+        <OverlayArrow />
+        This is a tooltip
+      </Tooltip>
+    </Rac.TooltipTrigger>
   );
 }

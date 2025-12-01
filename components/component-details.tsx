@@ -4,14 +4,15 @@ import { CodeBlock, highlight } from "@/components/code-block";
 import { ComponentInstall } from "@/components/component-install";
 import { CopyButton } from "@/components/copy-button";
 import { DialogEx } from "@/registry/default/components/oui-dialog-ex";
-import { TooltipEx } from "@/registry/default/components/oui-tooltip-ex";
 import { Button } from "@/registry/default/ui/oui-button";
 import {
   DialogDescription,
   DialogHeader,
 } from "@/registry/default/ui/oui-dialog";
 import { Heading } from "@/registry/default/ui/oui-heading";
+import { OverlayArrow, Tooltip } from "@/registry/default/ui/oui-tooltip";
 import { CodeIcon } from "lucide-react";
+import * as Rac from "react-aria-components";
 
 export function ComponentDetails({ component }: { component: RegistryItem }) {
   const [code, setCode] = React.useState<string | null>(null);
@@ -68,22 +69,21 @@ export function ComponentDetails({ component }: { component: RegistryItem }) {
       )} */}
       <DialogEx
         triggerElement={
-          <TooltipEx
-            delay={0}
-            triggerElement={
-              <span>
-                <Button
-                  variant="ghost"
-                  size="icon"
-                  className="text-muted-foreground/80 transition-none data-hovered:bg-transparent data-hovered:text-foreground lg:opacity-0 lg:group-focus-within/item:opacity-100 lg:group-hover/item:opacity-100"
-                >
-                  <CodeIcon size={16} aria-hidden={true} />
-                </Button>
-              </span>
-            }
-          >
-            View code
-          </TooltipEx>
+          <Rac.TooltipTrigger delay={0}>
+            <span>
+              <Button
+                variant="ghost"
+                size="icon"
+                className="text-muted-foreground/80 transition-none data-hovered:bg-transparent data-hovered:text-foreground lg:opacity-0 lg:group-focus-within/item:opacity-100 lg:group-hover/item:opacity-100"
+              >
+                <CodeIcon size={16} aria-hidden={true} />
+              </Button>
+            </span>
+            <Tooltip>
+              <OverlayArrow />
+              View code
+            </Tooltip>
+          </Rac.TooltipTrigger>
         }
         modalClassName="sm:max-w-[calc(100%-2rem)]"
       >
