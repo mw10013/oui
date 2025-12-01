@@ -557,91 +557,54 @@
       }
     },
     {
-      "name": "oui-combo-box-ex",
-      "type": "registry:component",
-      "title": "Combo Box Ex",
-      "description": "Reusable wrapper for Combo Box.",
-      "files": [
-        {
-          "path": "registry/default/components/oui-combo-box-ex.tsx",
-          "type": "registry:component"
-        }
-      ],
-      "registryDependencies": [
-        "@oui/oui-combo-box",
-        "@oui/oui-button",
-        "@oui/oui-field",
-        "@oui/oui-group",
-        "@oui/oui-input",
-        "@oui/oui-label",
-        "@oui/oui-popover",
-        "@oui/oui-text"
-      ],
-      "dependencies": ["lucide-react"],
-      "meta": {
-        "tags": [
-          "combo-box",
-          "combo-box-ex",
-          "input",
-          "popover",
-          "field-error",
-          "group",
-          "text"
-        ]
-      }
-    },
-    {
-      "name": "oui-combo-box-ex-demo",
+      "name": "oui-combo-box-demo-avatar",
       "type": "registry:component",
       "files": [
         {
-          "path": "registry/default/components/oui-combo-box-ex-demo.tsx",
-          "type": "registry:component"
-        }
-      ],
-      "registryDependencies": ["@oui/oui-combo-box-ex", "@oui/oui-list-box"],
-      "meta": {
-        "tags": ["combo-box", "combo-box-ex", "list-box"],
-        "canPreview": true,
-        "canOpenInV0": true
-      }
-    },
-    {
-      "name": "oui-combo-box-ex-demo-avatar",
-      "type": "registry:component",
-      "files": [
-        {
-          "path": "registry/default/components/oui-combo-box-ex-demo-avatar.tsx",
+          "path": "registry/default/components/oui-combo-box-demo-avatar.tsx",
           "type": "registry:component"
         }
       ],
       "registryDependencies": [
         "avatar",
-        "@oui/oui-combo-box-ex",
-        "@oui/oui-list-box"
+        "@oui/oui-button",
+        "@oui/oui-combo-box",
+        "@oui/oui-field",
+        "@oui/oui-group",
+        "@oui/oui-input",
+        "@oui/oui-label",
+        "@oui/oui-list-box",
+        "@oui/oui-popover"
       ],
+      "dependencies": ["lucide-react"],
       "meta": {
-        "tags": ["combo-box", "combo-box-ex", "avatar", "list-box"],
+        "tags": ["combo-box", "group", "list-box", "avatar"],
         "canPreview": true,
         "canOpenInV0": true
       }
     },
     {
-      "name": "oui-combo-box-ex-demo-header",
+      "name": "oui-combo-box-demo-header",
       "type": "registry:component",
       "files": [
         {
-          "path": "registry/default/components/oui-combo-box-ex-demo-header.tsx",
+          "path": "registry/default/components/oui-combo-box-demo-header.tsx",
           "type": "registry:component"
         }
       ],
       "registryDependencies": [
-        "@oui/oui-combo-box-ex",
+        "@oui/oui-button",
+        "@oui/oui-combo-box",
+        "@oui/oui-field",
+        "@oui/oui-group",
         "@oui/oui-header",
-        "@oui/oui-list-box"
+        "@oui/oui-input",
+        "@oui/oui-label",
+        "@oui/oui-list-box",
+        "@oui/oui-popover"
       ],
       "meta": {
-        "tags": ["combo-box", "combo-box-ex", "header", "list-box"],
+        "tags": ["combo-box", "header", "group", "list-box"],
         "canPreview": true,
         "canOpenInV0": true
       }
@@ -1262,7 +1225,6 @@
         "@oui/oui-alert-ex-form",
         "@oui/oui-badge-ex",
         "@oui/oui-card-ex",
-        "@oui/oui-combo-box-ex",
         "@oui/oui-dialog-ex-alert",
         "@oui/oui-dialog-ex-sheet",
         "@oui/oui-dialog-ex",

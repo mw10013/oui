@@ -1,0 +1,36 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "oui-combo-box-demo-avatar",
+  "type": "registry:component",
+  "dependencies": [
+    "lucide-react"
+  ],
+  "registryDependencies": [
+    "avatar",
+    "@oui/oui-button",
+    "@oui/oui-combo-box",
+    "@oui/oui-field",
+    "@oui/oui-group",
+    "@oui/oui-input",
+    "@oui/oui-label",
+    "@oui/oui-list-box",
+    "@oui/oui-popover"
+  ],
+  "files": [
+    {
+      "path": "registry/default/components/oui-combo-box-demo-avatar.tsx",
+      "content": "\"use client\";\n\nimport {\n  Avatar,\n  AvatarFallback,\n  AvatarImage,\n} from \"@/registry/default/ui/avatar\";\nimport { Button } from \"@/registry/default/ui/oui-button\";\nimport { ComboBox } from \"@/registry/default/ui/oui-combo-box\";\nimport { FieldError } from \"@/registry/default/ui/oui-field\";\nimport { Group } from \"@/registry/default/ui/oui-group\";\nimport { Input } from \"@/registry/default/ui/oui-input\";\nimport { Label } from \"@/registry/default/ui/oui-label\";\nimport { ListBoxItem } from \"@/registry/default/ui/oui-list-box\";\nimport { Popover } from \"@/registry/default/ui/oui-popover\";\nimport { ChevronsUpDown } from \"lucide-react\";\nimport * as Rac from \"react-aria-components\";\n\nconst users = [\n  {\n    id: \"1\",\n    username: \"shadcn\",\n  },\n  {\n    id: \"2\",\n    username: \"leerob\",\n  },\n  {\n    id: \"3\",\n    username: \"evilrabbit\",\n  },\n];\n\nexport default function Component() {\n  return (\n    <ComboBox defaultSelectedKey={users[0].id} className=\"md:max-w-[200px]\">\n      <Label>Combo Box with Avatar</Label>\n      <Group>\n        <Input variant=\"ghost\" placeholder=\"Select user...\" />\n        <Button variant=\"ghost\" size=\"icon\">\n          <ChevronsUpDown className=\"size-4 shrink-0 opacity-50\" />\n        </Button>\n      </Group>\n      <FieldError />\n      <Popover>\n        <Rac.ListBox items={users}>\n          {(item) => (\n            <ListBoxItem id={item.id} textValue={item.username}>\n              <div className=\"flex items-center gap-2\">\n                <Avatar className=\"size-5\">\n                  <AvatarImage\n                    src={`https://github.com/${item.username}.png`}\n                    alt={item.username}\n                  />\n                  <AvatarFallback>\n                    {item.username[0].toUpperCase()}\n                  </AvatarFallback>\n                </Avatar>\n                {item.username}\n              </div>\n            </ListBoxItem>\n          )}\n        </Rac.ListBox>\n      </Popover>\n    </ComboBox>\n  );\n}\n",
+      "type": "registry:component"
+    }
+  ],
+  "meta": {
+    "tags": [
+      "combo-box",
+      "group",
+      "list-box",
+      "avatar"
+    ],
+    "canPreview": true,
+    "canOpenInV0": true
+  }
+}

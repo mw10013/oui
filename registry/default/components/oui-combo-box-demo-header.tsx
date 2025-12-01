@@ -1,8 +1,15 @@
 "use client";
 
-import { ComboBoxEx } from "@/registry/default/components/oui-combo-box-ex";
+import { Button } from "@/registry/default/ui/oui-button";
+import { ComboBox } from "@/registry/default/ui/oui-combo-box";
+import { FieldError } from "@/registry/default/ui/oui-field";
+import { Group } from "@/registry/default/ui/oui-group";
 import { Header } from "@/registry/default/ui/oui-header";
+import { Input } from "@/registry/default/ui/oui-input";
+import { Label } from "@/registry/default/ui/oui-label";
 import { ListBoxItem } from "@/registry/default/ui/oui-list-box";
+import { Popover } from "@/registry/default/ui/oui-popover";
+import { ChevronsUpDown } from "lucide-react";
 import * as Rac from "react-aria-components";
 
 const timezones = [
@@ -43,19 +50,32 @@ const timezones = [
 
 export default function Component() {
   return (
-    <ComboBoxEx
-      label="Combo Box Ex with Headers"
+    <ComboBox
       defaultSelectedKey={timezones[0].timezones[0].value}
       className="md:max-w-[200px]"
     >
-      {timezones.map((group) => (
-        <Rac.ListBoxSection key={group.label}>
-          <Header variant="select">{group.label}</Header>
-          <Rac.Collection items={group.timezones}>
-            {(item) => <ListBoxItem id={item.value}>{item.label}</ListBoxItem>}
-          </Rac.Collection>
-        </Rac.ListBoxSection>
-      ))}
-    </ComboBoxEx>
+      <Label>Combo Box with Headers</Label>
+      <Group>
+        <Input variant="ghost" />
+        <Button variant="ghost" size="icon">
+          <ChevronsUpDown className="size-4 shrink-0 opacity-50" />
+        </Button>
+      </Group>
+      <FieldError />
+      <Popover>
+        <Rac.ListBox>
+          {timezones.map((group) => (
+            <Rac.ListBoxSection key={group.label}>
+              <Header variant="select">{group.label}</Header>
+              <Rac.Collection items={group.timezones}>
+                {(item) => (
+                  <ListBoxItem id={item.value}>{item.label}</ListBoxItem>
+                )}
+              </Rac.Collection>
+            </Rac.ListBoxSection>
+          ))}
+        </Rac.ListBox>
+      </Popover>
+    </ComboBox>
   );
 }
