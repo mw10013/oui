@@ -70,4 +70,3 @@ export * from "@/registry/default/components/oui-modal-ex-sheet";
 export * from "@/registry/default/components/oui-modal-ex";
 export * from "@/registry/default/components/oui-number-field-ex";
 export * from "@/registry/default/components/oui-sidebar-ex";
-export * from "@/registry/default/components/oui-slider-ex";

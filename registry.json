@@ -2458,49 +2458,17 @@
       }
     },
     {
-      "name": "oui-slider-ex",
-      "type": "registry:component",
-      "title": "Slider Ex",
-      "description": "Reusable wrapper for Slider.",
-      "files": [
-        {
-          "path": "registry/default/components/oui-slider-ex.tsx",
-          "type": "registry:component"
-        }
-      ],
-      "registryDependencies": ["@oui/oui-label", "@oui/oui-slider"],
-      "meta": {
-        "tags": ["slider", "slider-ex", "label"]
-      }
-    },
-    {
-      "name": "oui-slider-ex-demo",
+      "name": "oui-slider-demo",
       "type": "registry:component",
       "files": [
         {
-          "path": "registry/default/components/oui-slider-ex-demo.tsx",
+          "path": "registry/default/components/oui-slider-demo.tsx",
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["@oui/oui-slider-ex"],
+      "registryDependencies": ["@oui/oui-slider"],
       "meta": {
-        "tags": ["slider", "slider-ex"],
-        "canPreview": true,
-        "canOpenInV0": true
-      }
-    },
-    {
-      "name": "oui-slider-ex-demo-disabled",
-      "type": "registry:component",
-      "files": [
-        {
-          "path": "registry/default/components/oui-slider-ex-demo-disabled.tsx",
-          "type": "registry:component"
-        }
-      ],
-      "registryDependencies": ["@oui/oui-slider-ex"],
-      "meta": {
-        "tags": ["slider", "slider-ex", "disabled"],
+        "tags": ["slider"],
         "canPreview": true,
         "canOpenInV0": true
       }

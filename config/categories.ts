@@ -292,9 +292,7 @@ export const categories: Category[] = [
     slug: "slider",
     components: [
       { name: "oui-slider" },
-      { name: "oui-slider-ex" },
-      { name: "oui-slider-ex-demo" },
-      { name: "oui-slider-ex-demo-disabled" },
+      { name: "oui-slider-demo" },
     ],
   },
   {

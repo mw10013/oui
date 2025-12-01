@@ -1,0 +1,22 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "oui-slider-demo",
+  "type": "registry:component",
+  "registryDependencies": [
+    "@oui/oui-slider"
+  ],
+  "files": [
+    {
+      "path": "registry/default/components/oui-slider-demo.tsx",
+      "content": "\"use client\";\n\nimport {\n  Slider,\n  SliderOutput,\n  SliderThumb,\n  SliderTrack,\n} from \"@/registry/default/ui/oui-slider\";\n\nexport default function Component() {\n  return (\n    <Slider aria-label=\"SliderEx\" defaultValue={[50]} maxValue={100} step={1}>\n      <div className=\"flex items-center justify-between gap-2\">\n        <SliderOutput />\n      </div>\n      <SliderTrack>\n        <SliderThumb />\n      </SliderTrack>\n    </Slider>\n  );\n}\n",
+      "type": "registry:component"
+    }
+  ],
+  "meta": {
+    "tags": [
+      "slider"
+    ],
+    "canPreview": true,
+    "canOpenInV0": true
+  }
+}
