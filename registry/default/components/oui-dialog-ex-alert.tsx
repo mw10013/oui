@@ -8,7 +8,6 @@ import React, {
   useRef,
   useState,
 } from "react";
-import { ModalEx } from "@/registry/default/components/oui-modal-ex";
 import { Button } from "@/registry/default/ui/oui-button";
 import {
   Dialog,
@@ -18,6 +17,7 @@ import {
 } from "@/registry/default/ui/oui-dialog";
 import { Heading } from "@/registry/default/ui/oui-heading";
 import * as Rac from "react-aria-components";
+import { Modal, ModalOverlay } from "../ui/oui-modal";
 
 export interface DialogExAlertProps
   extends Rac.DialogProps,
@@ -54,36 +54,42 @@ export function DialogExAlert({
   ...props
 }: DialogExAlertProps) {
   return (
-    <ModalEx
-      className={modalClassName}
+    <ModalOverlay
       isDismissable={false}
       isOpen={isOpen}
       onOpenChange={onOpenChange}
       defaultOpen={defaultOpen}
     >
-      <Dialog role="alertdialog" {...props}>
-        <DialogHeader>
-          <Heading variant="alert" slot="title">
-            {title}
-          </Heading>
-          <DialogDescription>{children}</DialogDescription>
-        </DialogHeader>
-        <DialogFooter>
-          {type === "confirm" && (
-            <Button variant="outline" slot="close" autoFocus onPress={onCancel}>
-              {cancelLabel}
+      <Modal className={modalClassName}>
+        <Dialog role="alertdialog" {...props}>
+          <DialogHeader>
+            <Heading variant="alert" slot="title">
+              {title}
+            </Heading>
+            <DialogDescription>{children}</DialogDescription>
+          </DialogHeader>
+          <DialogFooter>
+            {type === "confirm" && (
+              <Button
+                variant="outline"
+                slot="close"
+                autoFocus
+                onPress={onCancel}
+              >
+                {cancelLabel}
+              </Button>
+            )}
+            <Button
+              slot="close"
+              onPress={onConfirm}
+              autoFocus={type === "acknowledge"}
+            >
+              {confirmLabel}
             </Button>
-          )}
-          <Button
-            slot="close"
-            onPress={onConfirm}
-            autoFocus={type === "acknowledge"}
-          >
-            {confirmLabel}
-          </Button>
-        </DialogFooter>
-      </Dialog>
-    </ModalEx>
+          </DialogFooter>
+        </Dialog>
+      </Modal>
+    </ModalOverlay>
   );
 }
 
@@ -159,3 +165,11 @@ export function DialogExAlertProvider({ children }: { children: ReactNode }) {
     </DialogExAlertContext.Provider>
   );
 }
+
+// <ModalEx
+//   className={modalClassName}
+//   isDismissable={false}
+//   isOpen={isOpen}
+//   onOpenChange={onOpenChange}
+//   defaultOpen={defaultOpen}
+// >}

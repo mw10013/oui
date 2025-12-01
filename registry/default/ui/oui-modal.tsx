@@ -10,6 +10,7 @@ import * as Rac from "react-aria-components";
 export function ModalOverlay({ className, ...props }: Rac.ModalOverlayProps) {
   return (
     <Rac.ModalOverlay
+      data-slot="modal-overlay"
       className={composeTailwindRenderProps(className, [
         "fixed inset-0 z-50 bg-black/50",
         "data-entering:animate-in data-entering:fade-in-0",

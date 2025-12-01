@@ -67,6 +67,5 @@ export * from "@/registry/default/components/oui-disclosure-ex";
 export * from "@/registry/default/components/oui-list-box-ex-pagination";
 export * from "@/registry/default/components/oui-menu-ex";
 export * from "@/registry/default/components/oui-modal-ex-sheet";
-export * from "@/registry/default/components/oui-modal-ex";
 export * from "@/registry/default/components/oui-number-field-ex";
 export * from "@/registry/default/components/oui-sidebar-ex";

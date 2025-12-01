@@ -2,10 +2,10 @@
 
 import type { DialogProps } from "@/registry/default/ui/oui-dialog";
 import type { ReactElement } from "react";
-import { ModalEx } from "@/registry/default/components/oui-modal-ex";
 import { Button } from "@/registry/default/ui/oui-button";
 import { Dialog } from "@/registry/default/ui/oui-dialog";
 import * as Rac from "react-aria-components";
+import { Modal, ModalOverlay } from "../ui/oui-modal";
 
 export interface DialogExProps
   extends DialogProps,
@@ -36,15 +36,25 @@ export function DialogEx({
   ...props
 }: DialogExProps) {
   const modal = (
-    <ModalEx
-      className={modalClassName}
+    <ModalOverlay
       isDismissable={props.role !== "alertdialog"}
       isOpen={isOpen}
       defaultOpen={defaultOpen}
       onOpenChange={onOpenChange}
     >
-      <Dialog {...props} />
-    </ModalEx>
+      <Modal className={modalClassName}>
+        <Dialog {...props} />
+      </Modal>
+    </ModalOverlay>
+    // <ModalEx
+    //   className={modalClassName}
+    //   isDismissable={props.role !== "alertdialog"}
+    //   isOpen={isOpen}
+    //   defaultOpen={defaultOpen}
+    //   onOpenChange={onOpenChange}
+    // >
+    //   <Dialog {...props} />
+    // </ModalEx>
   );
   if (triggerElement) {
     return (

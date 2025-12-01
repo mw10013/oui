@@ -219,11 +219,7 @@ export const categories: Category[] = [
   {
     name: "Modal",
     slug: "modal",
-    components: [
-      { name: "oui-modal" },
-      { name: "oui-modal-ex" },
-      { name: "oui-modal-ex-sheet" },
-    ],
+    components: [{ name: "oui-modal" }, { name: "oui-modal-ex-sheet" }],
   },
   {
     name: "Number Field",
@@ -290,10 +286,7 @@ export const categories: Category[] = [
   {
     name: "Slider",
     slug: "slider",
-    components: [
-      { name: "oui-slider" },
-      { name: "oui-slider-demo" },
-    ],
+    components: [{ name: "oui-slider" }, { name: "oui-slider-demo" }],
   },
   {
     name: "Switch",

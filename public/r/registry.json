@@ -719,10 +719,10 @@
       "registryDependencies": [
         "@oui/oui-dialog",
         "@oui/oui-button",
-        "@oui/oui-modal-ex"
+        "@oui/oui-modal"
       ],
       "meta": {
-        "tags": ["dialog", "dialog-ex", "modal-ex"]
+        "tags": ["dialog", "dialog-ex", "modal"]
       }
     },
     {
@@ -743,7 +743,7 @@
         "@oui/oui-text-field"
       ],
       "meta": {
-        "tags": ["dialog", "dialog-ex", "modal-ex", "heading"],
+        "tags": ["dialog", "dialog-ex", "modal", "heading"],
         "canPreview": true,
         "alignment": "flex-center",
         "canOpenInV0": true
@@ -765,7 +765,7 @@
         "@oui/oui-heading"
       ],
       "meta": {
-        "tags": ["dialog", "dialog-ex", "modal-ex", "heading"],
+        "tags": ["dialog", "dialog-ex", "modal", "heading"],
         "canPreview": true,
         "alignment": "flex-center",
         "canOpenInV0": true
@@ -787,7 +787,7 @@
         "@oui/oui-heading"
       ],
       "meta": {
-        "tags": ["dialog", "dialog-ex", "modal-ex", "heading"],
+        "tags": ["dialog", "dialog-ex", "modal", "heading"],
         "canPreview": true,
         "alignment": "flex-center",
         "canOpenInV0": true
@@ -809,7 +809,7 @@
         "@oui/oui-heading"
       ],
       "meta": {
-        "tags": ["dialog", "dialog-ex", "modal-ex", "heading"],
+        "tags": ["dialog", "dialog-ex", "modal", "heading"],
         "canPreview": true,
         "alignment": "flex-center",
         "canOpenInV0": true
@@ -830,10 +830,10 @@
         "@oui/oui-button",
         "@oui/oui-dialog",
         "@oui/oui-heading",
-        "@oui/oui-modal-ex"
+        "@oui/oui-modal"
       ],
       "meta": {
-        "tags": ["dialog", "dialog-ex-alert", "heading", "modal-ex"]
+        "tags": ["dialog", "dialog-ex-alert", "heading", "modal"]
       }
     },
     {
@@ -1301,7 +1301,6 @@
         "@oui/oui-list-box-ex-pagination",
         "@oui/oui-menu-ex",
         "@oui/oui-modal-ex-sheet",
-        "@oui/oui-modal-ex",
         "@oui/oui-number-field-ex",
         "@oui/oui-sidebar-ex",
         "@oui/oui-slider-ex"
@@ -2011,27 +2010,6 @@
       ],
       "meta": {
         "tags": ["modal"]
-      }
-    },
-    {
-      "name": "oui-modal-ex",
-      "type": "registry:component",
-      "title": "Modal Ex",
-      "description": "Reusable wrapper for a Modal.",
-      "files": [
-        {
-          "path": "registry/default/components/oui-modal-ex.tsx",
-          "type": "registry:component"
-        }
-      ],
-      "registryDependencies": [
-        "@oui/oui-modal",
-        "@oui/oui-label",
-        "@oui/oui-link",
-        "@oui/oui-text"
-      ],
-      "meta": {
-        "tags": ["modal", "modal-ex"]
       }
     },
     {
