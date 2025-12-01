@@ -1,14 +1,15 @@
 "use client";
 
-import { AutocompleteEx } from "@/registry/default/components/oui-autocomplete-ex";
 import {
   Avatar,
   AvatarFallback,
   AvatarImage,
 } from "@/registry/default/ui/avatar";
 import { FieldError, FieldLabel } from "@/registry/default/ui/oui-field";
+import { Input } from "@/registry/default/ui/oui-input";
 import { ListBoxItem } from "@/registry/default/ui/oui-list-box";
 import { Popover } from "@/registry/default/ui/oui-popover";
+import { SearchField } from "@/registry/default/ui/oui-search-field";
 import {
   Select,
   SelectButton,
@@ -32,6 +33,11 @@ const users = [
 ];
 
 export default function Component() {
+  /* eslint-disable-next-line @typescript-eslint/unbound-method --
+   * React Aria uses functional patterns, so destructured functions don't use 'this'
+   */
+  const { contains: defaultFilter } = Rac.useFilter({ sensitivity: "base" });
+
   return (
     <Select defaultValue={users[0].id}>
       <FieldLabel>Autocomplete Ex Users</FieldLabel>
@@ -40,10 +46,10 @@ export default function Component() {
       </SelectButton>
       <FieldError />
       <Popover>
-        <AutocompleteEx
-          placeholder="Select user..."
-          searchFieldProps={{ "aria-label": "User", autoFocus: true }}
-        >
+        <Rac.Autocomplete filter={defaultFilter}>
+          <SearchField aria-label="User" autoFocus>
+            <Input placeholder="Select user..." />
+          </SearchField>
           <Rac.ListBox items={users}>
             {(item) => (
               <ListBoxItem id={item.id} textValue={item.username}>
@@ -62,7 +68,7 @@ export default function Component() {
               </ListBoxItem>
             )}
           </Rac.ListBox>
-        </AutocompleteEx>
+        </Rac.Autocomplete>
       </Popover>
     </Select>
   );

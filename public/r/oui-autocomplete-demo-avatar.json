@@ -1,0 +1,31 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "oui-autocomplete-demo-avatar",
+  "type": "registry:component",
+  "registryDependencies": [
+    "avatar",
+    "@oui/oui-field",
+    "@oui/oui-input",
+    "@oui/oui-list-box",
+    "@oui/oui-popover",
+    "@oui/oui-select",
+    "@oui/oui-search-field"
+  ],
+  "files": [
+    {
+      "path": "registry/default/components/oui-autocomplete-demo-avatar.tsx",
+      "content": "\"use client\";\n\nimport {\n  Avatar,\n  AvatarFallback,\n  AvatarImage,\n} from \"@/registry/default/ui/avatar\";\nimport { FieldError, FieldLabel } from \"@/registry/default/ui/oui-field\";\nimport { Input } from \"@/registry/default/ui/oui-input\";\nimport { ListBoxItem } from \"@/registry/default/ui/oui-list-box\";\nimport { Popover } from \"@/registry/default/ui/oui-popover\";\nimport { SearchField } from \"@/registry/default/ui/oui-search-field\";\nimport {\n  Select,\n  SelectButton,\n  SelectValue,\n} from \"@/registry/default/ui/oui-select\";\nimport * as Rac from \"react-aria-components\";\n\nconst users = [\n  {\n    id: \"1\",\n    username: \"shadcn\",\n  },\n  {\n    id: \"2\",\n    username: \"leerob\",\n  },\n  {\n    id: \"3\",\n    username: \"evilrabbit\",\n  },\n];\n\nexport default function Component() {\n  /* eslint-disable-next-line @typescript-eslint/unbound-method --\n   * React Aria uses functional patterns, so destructured functions don't use 'this'\n   */\n  const { contains: defaultFilter } = Rac.useFilter({ sensitivity: \"base\" });\n\n  return (\n    <Select defaultValue={users[0].id}>\n      <FieldLabel>Autocomplete Ex Users</FieldLabel>\n      <SelectButton>\n        <SelectValue />\n      </SelectButton>\n      <FieldError />\n      <Popover>\n        <Rac.Autocomplete filter={defaultFilter}>\n          <SearchField aria-label=\"User\" autoFocus>\n            <Input placeholder=\"Select user...\" />\n          </SearchField>\n          <Rac.ListBox items={users}>\n            {(item) => (\n              <ListBoxItem id={item.id} textValue={item.username}>\n                <div className=\"flex items-center gap-2\">\n                  <Avatar className=\"size-5\">\n                    <AvatarImage\n                      src={`https://github.com/${item.username}.png`}\n                      alt={item.username}\n                    />\n                    <AvatarFallback>\n                      {item.username[0].toUpperCase()}\n                    </AvatarFallback>\n                  </Avatar>\n                  {item.username}\n                </div>\n              </ListBoxItem>\n            )}\n          </Rac.ListBox>\n        </Rac.Autocomplete>\n      </Popover>\n    </Select>\n  );\n}\n",
+      "type": "registry:component"
+    }
+  ],
+  "meta": {
+    "tags": [
+      "autocomplete",
+      "select",
+      "search-field",
+      "avatar"
+    ],
+    "canPreview": true,
+    "canOpenInV0": true
+  }
+}

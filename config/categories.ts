@@ -18,9 +18,8 @@ export const categories: Category[] = [
     slug: "autocomplete",
     components: [
       { name: "oui-autocomplete-demo" },
-      { name: "oui-autocomplete-ex" },
-      { name: "oui-autocomplete-ex-demo" },
-      { name: "oui-autocomplete-ex-demo-searchable" },
+      { name: "oui-autocomplete-demo-avatar" },
+      { name: "oui-autocomplete-demo-searchable" },
     ],
   },
   {

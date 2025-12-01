@@ -64,62 +64,48 @@
       }
     },
     {
-      "name": "oui-autocomplete-ex",
-      "type": "registry:component",
-      "title": "Autocomplete Ex",
-      "description": "Reusable wrapper for Autocomplete.",
-      "files": [
-        {
-          "path": "registry/default/components/oui-autocomplete-ex.tsx",
-          "type": "registry:component"
-        }
-      ],
-      "registryDependencies": ["@oui/oui-search-field"],
-      "meta": {
-        "tags": ["autocomplete", "autocomplete-ex", "search-field"]
-      }
-    },
-    {
-      "name": "oui-autocomplete-ex-demo",
+      "name": "oui-autocomplete-demo-avatar",
       "type": "registry:component",
       "files": [
         {
-          "path": "registry/default/components/oui-autocomplete-ex-demo.tsx",
+          "path": "registry/default/components/oui-autocomplete-demo-avatar.tsx",
           "type": "registry:component"
         }
       ],
       "registryDependencies": [
         "avatar",
-        "@oui/oui-autocomplete-ex",
         "@oui/oui-field",
+        "@oui/oui-input",
         "@oui/oui-list-box",
         "@oui/oui-popover",
-        "@oui/oui-select"
+        "@oui/oui-select",
+        "@oui/oui-search-field"
       ],
       "meta": {
-        "tags": ["autocomplete", "autocomplete-ex", "avatar", "select"],
+        "tags": ["autocomplete", "select", "search-field", "avatar"],
         "canPreview": true,
         "canOpenInV0": true
       }
     },
     {
-      "name": "oui-autocomplete-ex-demo-searchable",
+      "name": "oui-autocomplete-demo-searchable",
       "type": "registry:component",
       "files": [
         {
-          "path": "registry/default/components/oui-autocomplete-ex-demo-searchable.tsx",
+          "path": "registry/default/components/oui-autocomplete-demo-searchable.tsx",
           "type": "registry:component"
         }
       ],
       "registryDependencies": [
-        "@oui/oui-autocomplete-ex",
         "@oui/oui-field",
+        "@oui/oui-input",
         "@oui/oui-list-box",
         "@oui/oui-popover",
-        "@oui/oui-select"
+        "@oui/oui-select",
+        "@oui/oui-search-field"
       ],
       "meta": {
-        "tags": ["autocomplete", "autocomplete-ex", "select"],
+        "tags": ["autocomplete", "select", "search-field"],
         "canPreview": true,
         "canOpenInV0": true
       }
@@ -1290,7 +1276,6 @@
         "@oui/oui-text",
         "@oui/oui-tooltip",
         "@oui/oui-alert-ex-form",
-        "@oui/oui-autocomplete-ex",
         "@oui/oui-badge-ex",
         "@oui/oui-card-ex",
         "@oui/oui-combo-box-ex",

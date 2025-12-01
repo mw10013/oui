@@ -4,7 +4,6 @@ export const registryTags = [
   "alert",
   "alert-ex-form",
   "autocomplete",
-  "autocomplete-ex",
   "badge",
   "badge-ex",
   "base",

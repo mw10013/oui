@@ -1,0 +1,29 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "oui-autocomplete-demo-searchable",
+  "type": "registry:component",
+  "registryDependencies": [
+    "@oui/oui-field",
+    "@oui/oui-input",
+    "@oui/oui-list-box",
+    "@oui/oui-popover",
+    "@oui/oui-select",
+    "@oui/oui-search-field"
+  ],
+  "files": [
+    {
+      "path": "registry/default/components/oui-autocomplete-demo-searchable.tsx",
+      "content": "\"use client\";\n\nimport {\n  FieldDescription,\n  FieldError,\n  FieldLabel,\n} from \"@/registry/default/ui/oui-field\";\nimport { Input } from \"@/registry/default/ui/oui-input\";\nimport { ListBoxItem } from \"@/registry/default/ui/oui-list-box\";\nimport { Popover } from \"@/registry/default/ui/oui-popover\";\nimport { SearchField } from \"@/registry/default/ui/oui-search-field\";\nimport {\n  Select,\n  SelectButton,\n  SelectValue,\n} from \"@/registry/default/ui/oui-select\";\nimport * as Rac from \"react-aria-components\";\n\n/**\n * https://react-spectrum.adobe.com/react-aria/examples/status-select.html\n */\nexport default function Component() {\n  const languages = [\n    { id: \"1\", name: \"English\" },\n    { id: \"2\", name: \"Spanish\" },\n    { id: \"3\", name: \"French\" },\n    { id: \"4\", name: \"German\" },\n    { id: \"5\", name: \"Japanese\" },\n    { id: \"6\", name: \"Chinese\" },\n    { id: \"7\", name: \"Korean\" },\n    { id: \"8\", name: \"Italian\" },\n    { id: \"9\", name: \"Portuguese\" },\n    { id: \"10\", name: \"Russian\" },\n    { id: \"11\", name: \"Arabic\" },\n    { id: \"12\", name: \"Hindi\" },\n  ];\n\n  /* eslint-disable-next-line @typescript-eslint/unbound-method --\n   * React Aria uses functional patterns, so destructured functions don't use 'this'\n   */\n  const { contains: defaultFilter } = Rac.useFilter({ sensitivity: \"base\" });\n\n  return (\n    <Select>\n      <FieldLabel>Autocomplete Ex Language</FieldLabel>\n      <SelectButton>\n        <SelectValue />\n      </SelectButton>\n      <FieldDescription>Select your preferred language</FieldDescription>\n      <FieldError />\n      <Popover>\n        <Rac.Autocomplete filter={defaultFilter}>\n          <SearchField aria-label=\"Languages\" autoFocus>\n            <Input placeholder=\"Search languages\" />\n          </SearchField>\n          <Rac.ListBox items={languages}>\n            {(item) => <ListBoxItem>{item.name}</ListBoxItem>}\n          </Rac.ListBox>\n        </Rac.Autocomplete>\n      </Popover>\n    </Select>\n  );\n}\n",
+      "type": "registry:component"
+    }
+  ],
+  "meta": {
+    "tags": [
+      "autocomplete",
+      "select",
+      "search-field"
+    ],
+    "canPreview": true,
+    "canOpenInV0": true
+  }
+}

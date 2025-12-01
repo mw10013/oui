@@ -1,13 +1,14 @@
 "use client";
 
-import { AutocompleteEx } from "@/registry/default/components/oui-autocomplete-ex";
 import {
   FieldDescription,
   FieldError,
   FieldLabel,
 } from "@/registry/default/ui/oui-field";
+import { Input } from "@/registry/default/ui/oui-input";
 import { ListBoxItem } from "@/registry/default/ui/oui-list-box";
 import { Popover } from "@/registry/default/ui/oui-popover";
+import { SearchField } from "@/registry/default/ui/oui-search-field";
 import {
   Select,
   SelectButton,
@@ -34,6 +35,11 @@ export default function Component() {
     { id: "12", name: "Hindi" },
   ];
 
+  /* eslint-disable-next-line @typescript-eslint/unbound-method --
+   * React Aria uses functional patterns, so destructured functions don't use 'this'
+   */
+  const { contains: defaultFilter } = Rac.useFilter({ sensitivity: "base" });
+
   return (
     <Select>
       <FieldLabel>Autocomplete Ex Language</FieldLabel>
@@ -43,14 +49,14 @@ export default function Component() {
       <FieldDescription>Select your preferred language</FieldDescription>
       <FieldError />
       <Popover>
-        <AutocompleteEx
-          placeholder="Search languages"
-          searchFieldProps={{ "aria-label": "Languages", autoFocus: true }}
-        >
+        <Rac.Autocomplete filter={defaultFilter}>
+          <SearchField aria-label="Languages" autoFocus>
+            <Input placeholder="Search languages" />
+          </SearchField>
           <Rac.ListBox items={languages}>
             {(item) => <ListBoxItem>{item.name}</ListBoxItem>}
           </Rac.ListBox>
-        </AutocompleteEx>
+        </Rac.Autocomplete>
       </Popover>
     </Select>
   );
