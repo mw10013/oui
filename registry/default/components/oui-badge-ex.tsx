@@ -47,7 +47,7 @@ const badgeExVariants = cva(
  * </Rac.Link>
  */
 export function badgeExClassName<T>(
-  props: VariantProps<typeof badgeExVariants>,
+  props?: VariantProps<typeof badgeExVariants>,
   className?: string | ((renderProps: T) => string),
 ) {
   return Rac.composeRenderProps(className, (className) =>

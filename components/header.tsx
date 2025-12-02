@@ -11,11 +11,12 @@ export function Header() {
         <Rac.Link
           href="/"
           aria-label="Home"
-          className={Oui.buttonClassName({
-            variant: "ghost",
-            className:
-              "gap-px text-2xl/[1.1] font-bold tracking-tight text-foreground md:text-3xl/[1.1]",
-          })}
+          className={Oui.buttonClassName(
+            {
+              variant: "ghost",
+            },
+            "gap-px text-2xl/[1.1] font-bold tracking-tight text-foreground md:text-3xl/[1.1]",
+          )}
         >
           <Circle className="size-6" />
           ui
