@@ -4,11 +4,12 @@ import type { DialogProps } from "@/registry/default/ui/oui-dialog";
 import type { VariantProps } from "class-variance-authority";
 import type { ReactElement } from "react";
 import {
-  ModalExSheet,
+  modalExSheetClassName,
   modalExSheetVariants,
 } from "@/registry/default/components/oui-modal-ex-sheet";
 import { Button } from "@/registry/default/ui/oui-button";
 import { Dialog } from "@/registry/default/ui/oui-dialog";
+import { Modal, ModalOverlay } from "@/registry/default/ui/oui-modal";
 import * as Rac from "react-aria-components";
 
 export interface DialogExSheetProps
@@ -37,14 +38,11 @@ export function DialogExSheet({
       ) : (
         triggerElement
       )}
-      <ModalExSheet
-        className={modalClassName}
-        overlayClassName={overlayClassName}
-        side={side}
-        isDismissable
-      >
-        <Dialog {...props} />
-      </ModalExSheet>
+      <ModalOverlay className={overlayClassName} isDismissable>
+        <Modal className={modalExSheetClassName({ side }, modalClassName)}>
+          <Dialog {...props} />
+        </Modal>
+      </ModalOverlay>
     </Rac.DialogTrigger>
   );
 }

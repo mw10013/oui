@@ -55,6 +55,7 @@ export interface ModalExSheetProps
 /**
  * A modal that slides in from an edge of the screen, suitable for a "Sheet" component.
  * Derived from shadcn SheetContent.
+ * @deprecated Use inline ModalOverlay and Modal with modalExSheetClassName instead.
  * @param side - The side of the screen from which the modal will enter.
  */
 export function ModalExSheet({
