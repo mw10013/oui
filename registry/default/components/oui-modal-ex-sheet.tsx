@@ -33,6 +33,19 @@ export const modalExSheetVariants = cva(
   },
 );
 
+/**
+ * Returns a className function to style a Modal as a sheet that slides in from an edge of the screen.
+ *
+ */
+export function modalExSheetClassName<T>(
+  props?: VariantProps<typeof modalExSheetVariants>,
+  className?: string | ((renderProps: T) => string),
+) {
+  return Rac.composeRenderProps(className, (className) =>
+    twMerge(modalExSheetVariants(props), className),
+  );
+}
+
 export interface ModalExSheetProps
   extends Rac.ModalOverlayProps,
     Pick<VariantProps<typeof modalExSheetVariants>, "side"> {
@@ -53,11 +66,7 @@ export function ModalExSheet({
 }: ModalExSheetProps) {
   return (
     <ModalOverlay className={overlayClassName} {...props}>
-      <Modal
-        className={Rac.composeRenderProps(className, (className, renderProps) =>
-          twMerge(modalExSheetVariants({ ...renderProps, side, className })),
-        )}
-      >
+      <Modal className={modalExSheetClassName({ side }, className)}>
         {children}
       </Modal>
     </ModalOverlay>

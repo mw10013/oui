@@ -1,8 +1,9 @@
 "use client";
 
-import { DialogExSheet } from "@/registry/default/components/oui-dialog-ex-sheet";
+import { ModalExSheet } from "@/registry/default/components/oui-modal-ex-sheet";
 import { Button } from "@/registry/default/ui/oui-button";
 import {
+  Dialog,
   DialogDescription,
   DialogFooter,
   DialogHeader,
@@ -15,38 +16,41 @@ import * as Rac from "react-aria-components";
 
 export default function Component() {
   return (
-    <DialogExSheet
-      triggerElement={<Button variant="outline">Dialog Ex Sheet</Button>}
-      side="right"
-    >
-      <Rac.Form>
-        <DialogHeader>
-          <Heading slot="title">Edit profile</Heading>
-          <DialogDescription>
-            Make changes to your profile here. Click save when you&apos;re done.
-          </DialogDescription>
-        </DialogHeader>
-        <div className="grid gap-4 py-4">
-          <TextField name="name" autoFocus>
-            <FieldLabel>Name</FieldLabel>
-            <Input defaultValue="Pedro Duarte" />
-            <FieldError />
-          </TextField>
-          <TextField name="username">
-            <FieldLabel>Username</FieldLabel>
-            <Input defaultValue="@peduarte" />
-            <FieldError />
-          </TextField>
-        </div>
-        <DialogFooter>
-          <Button type="submit" slot="close">
-            Save changes
-          </Button>
-          <Button variant="outline" slot="close">
-            Close
-          </Button>
-        </DialogFooter>
-      </Rac.Form>
-    </DialogExSheet>
+    <Rac.DialogTrigger>
+      <Button variant="outline">Dialog Sheet</Button>
+      <ModalExSheet side="right" isDismissable>
+        <Dialog>
+          <Rac.Form>
+            <DialogHeader>
+              <Heading slot="title">Edit profile</Heading>
+              <DialogDescription>
+                Make changes to your profile here. Click save when you&apos;re
+                done.
+              </DialogDescription>
+            </DialogHeader>
+            <div className="grid gap-4 py-4">
+              <TextField name="name" autoFocus>
+                <FieldLabel>Name</FieldLabel>
+                <Input defaultValue="Pedro Duarte" />
+                <FieldError />
+              </TextField>
+              <TextField name="username">
+                <FieldLabel>Username</FieldLabel>
+                <Input defaultValue="@peduarte" />
+                <FieldError />
+              </TextField>
+            </div>
+            <DialogFooter>
+              <Button type="submit" slot="close">
+                Save changes
+              </Button>
+              <Button variant="outline" slot="close">
+                Close
+              </Button>
+            </DialogFooter>
+          </Rac.Form>
+        </Dialog>
+      </ModalExSheet>
+    </Rac.DialogTrigger>
   );
 }
