@@ -743,83 +743,6 @@
       }
     },
     {
-      "name": "oui-dialog-ex-sheet",
-      "type": "registry:component",
-      "title": "Dialog Ex Sheet",
-      "description": "Reusable wrapper for a sheet Dialog.",
-      "files": [
-        {
-          "path": "registry/default/components/oui-dialog-ex-sheet.tsx",
-          "type": "registry:component"
-        }
-      ],
-      "registryDependencies": [
-        "@oui/oui-button",
-        "@oui/oui-dialog",
-        "@oui/oui-modal-ex-sheet"
-      ],
-      "meta": {
-        "tags": ["dialog", "dialog-ex-sheet", "modal-ex-sheet", "sheet"]
-      }
-    },
-    {
-      "name": "oui-dialog-ex-sheet-demo",
-      "type": "registry:component",
-      "files": [
-        {
-          "path": "registry/default/components/oui-dialog-ex-sheet-demo.tsx",
-          "type": "registry:component"
-        }
-      ],
-      "registryDependencies": [
-        "@oui/oui-button",
-        "@oui/oui-dialog",
-        "@oui/oui-dialog-ex-sheet",
-        "@oui/oui-field",
-        "@oui/oui-heading",
-        "@oui/oui-text-field"
-      ],
-      "meta": {
-        "tags": [
-          "dialog",
-          "dialog-ex-sheet",
-          "modal-ex-sheet",
-          "heading",
-          "sheet"
-        ],
-        "canPreview": true,
-        "alignment": "flex-center",
-        "canOpenInV0": true
-      }
-    },
-    {
-      "name": "oui-dialog-ex-sheet-demo-sides",
-      "type": "registry:component",
-      "files": [
-        {
-          "path": "registry/default/components/oui-dialog-ex-sheet-demo-sides.tsx",
-          "type": "registry:component"
-        }
-      ],
-      "registryDependencies": [
-        "@oui/oui-button",
-        "@oui/oui-dialog",
-        "@oui/oui-dialog-ex-sheet",
-        "@oui/oui-heading"
-      ],
-      "meta": {
-        "tags": [
-          "dialog",
-          "dialog-ex-sheet",
-          "modal-ex-sheet",
-          "heading",
-          "sheet"
-        ],
-        "canPreview": true,
-        "canOpenInV0": true
-      }
-    },
-    {
       "name": "oui-disclosure",
       "type": "registry:ui",
       "title": "Disclosure",
@@ -1132,7 +1055,6 @@
         "@oui/oui-badge-ex",
         "@oui/oui-card-ex",
         "@oui/oui-dialog-ex-alert",
-        "@oui/oui-dialog-ex-sheet",
         "@oui/oui-list-box-ex-pagination",
         "@oui/oui-modal-ex-sheet",
         "@oui/oui-number-field-ex",
@@ -1834,6 +1756,55 @@
       "registryDependencies": ["@oui/oui-modal"],
       "meta": {
         "tags": ["modal", "modal-ex-sheet", "sheet"]
+      }
+    },
+    {
+      "name": "oui-modal-ex-sheet-demo",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/default/components/oui-modal-ex-sheet-demo.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "@oui/oui-button",
+        "@oui/oui-dialog",
+        "@oui/oui-field",
+        "@oui/oui-heading",
+        "@oui/oui-input",
+        "@oui/oui-modal",
+        "@oui/oui-modal-ex-sheet",
+        "@oui/oui-text-field"
+      ],
+      "meta": {
+        "tags": ["modal", "modal-ex-sheet", "dialog", "sheet"],
+        "canPreview": true,
+        "canOpenInV0": true
+      }
+    },
+    {
+      "name": "oui-modal-ex-sheet-demo-sides",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/default/components/oui-modal-ex-sheet.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "@oui/oui-button",
+        "@oui/oui-dialog",
+        "@oui/oui-heading",
+        "@oui/oui-label",
+        "@oui/oui-modal",
+        "@oui/oui-modal-ex-sheet",
+        "@oui/oui-text-field"
+      ],
+      "meta": {
+        "tags": ["modal", "modal-ex-sheet", "dialog", "sheet"],
+        "canPreview": true,
+        "canOpenInV0": true
       }
     },
     {

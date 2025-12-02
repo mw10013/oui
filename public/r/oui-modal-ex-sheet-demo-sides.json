@@ -1,11 +1,15 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
-  "name": "oui-modal-ex-sheet",
+  "name": "oui-modal-ex-sheet-demo-sides",
   "type": "registry:component",
-  "title": "Modal Ex Sheet",
-  "description": "Reusable wrapper for a sheet Modal.",
   "registryDependencies": [
-    "@oui/oui-modal"
+    "@oui/oui-button",
+    "@oui/oui-dialog",
+    "@oui/oui-heading",
+    "@oui/oui-label",
+    "@oui/oui-modal",
+    "@oui/oui-modal-ex-sheet",
+    "@oui/oui-text-field"
   ],
   "files": [
     {
@@ -18,7 +22,10 @@
     "tags": [
       "modal",
       "modal-ex-sheet",
+      "dialog",
       "sheet"
-    ]
+    ],
+    "canPreview": true,
+    "canOpenInV0": true
   }
 }

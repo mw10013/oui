@@ -18,7 +18,7 @@ const SHEET_SIDES = ["top", "right", "bottom", "left"] as const;
 export default function Component() {
   return (
     <div className="grid gap-2">
-      <Label>Dialog Sheet</Label>
+      <Label>Modal Ex Sheet</Label>
       <div className="flex flex-wrap gap-2">
         {SHEET_SIDES.map((side) => (
           <Rac.DialogTrigger key={side}>

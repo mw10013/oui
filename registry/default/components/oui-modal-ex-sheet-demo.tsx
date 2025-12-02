@@ -18,7 +18,7 @@ import * as Rac from "react-aria-components";
 export default function Component() {
   return (
     <Rac.DialogTrigger>
-      <Button variant="outline">Dialog Sheet</Button>
+      <Button variant="outline">Modal Ex Sheet</Button>
       <ModalOverlay isDismissable>
         <Modal className={modalExSheetClassName({ side: "right" })}>
           <Dialog>
