@@ -11,7 +11,7 @@
   "files": [
     {
       "path": "registry/default/components/oui-badge-ex-demo.tsx",
-      "content": "import { ArrowRightIcon } from \"lucide-react\";\nimport * as Rac from \"react-aria-components\";\nimport { badgeExClassName } from \"@/registry/default/components/oui-badge-ex\";\n\nexport default function Component() {\n  return (\n    <Rac.Link\n      href=\"https://github.com/mw10013/cloudflare-react-router-saas\"\n      target=\"_blank\"\n      rel=\"noopener noreferrer\"\n      className={badgeExClassName({\n        variant: \"secondary\",\n        className: \"rounded-full\",\n      })}\n    >\n      <span className=\"flex size-2 rounded-full bg-blue-500\" title=\"New\" />\n      Example: Open-source saas template using Oui <ArrowRightIcon />\n    </Rac.Link>\n  );\n}\n",
+      "content": "import { badgeExClassName } from \"@/registry/default/components/oui-badge-ex\";\nimport { ArrowRightIcon } from \"lucide-react\";\nimport * as Rac from \"react-aria-components\";\n\nexport default function Component() {\n  return (\n    <Rac.Link\n      href=\"https://github.com/mw10013/cloudflare-react-router-saas\"\n      target=\"_blank\"\n      rel=\"noopener noreferrer\"\n      className={badgeExClassName({ variant: \"secondary\" })}\n    >\n      <span className=\"flex size-2 rounded-full bg-blue-500\" title=\"New\" />\n      Example: Open-source saas template using Oui <ArrowRightIcon />\n    </Rac.Link>\n  );\n}\n",
       "type": "registry:component"
     }
   ],
