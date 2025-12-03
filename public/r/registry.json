@@ -1837,9 +1837,7 @@
         "@oui/oui-field",
         "@oui/oui-group",
         "@oui/oui-input",
-        "@oui/oui-label",
-        "@oui/oui-number-field",
-        "@oui/oui-text"
+        "@oui/oui-number-field"
       ],
       "dependencies": ["lucide-react"],
       "meta": {

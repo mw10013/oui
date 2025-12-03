@@ -14,7 +14,7 @@
   "files": [
     {
       "path": "registry/default/ui/oui-number-field.tsx",
-      "content": "\"use client\";\n\nimport { composeTailwindRenderProps } from \"@/registry/default/ui/oui-base\";\nimport * as Rac from \"react-aria-components\";\n\nexport function NumberField({ className, ...props }: Rac.NumberFieldProps) {\n  return (\n    <Rac.NumberField\n      className={composeTailwindRenderProps(className, \"group grid gap-2\")}\n      {...props}\n    />\n  );\n}\n",
+      "content": "\"use client\";\n\nimport type { FieldStylesProps } from \"@/registry/default/ui/oui-field\";\nimport { composeTailwindRenderProps } from \"@/registry/default/ui/oui-base\";\nimport { fieldStyles } from \"@/registry/default/ui/oui-field\";\nimport * as Rac from \"react-aria-components\";\n\nexport type NumberFieldProps = Rac.NumberFieldProps & FieldStylesProps;\n\n/**\n * Derived from shadcn Field\n */\nexport function NumberField({\n  className,\n  orientation = \"vertical\",\n  ...props\n}: NumberFieldProps) {\n  return (\n    <Rac.NumberField\n      data-slot=\"field\"\n      data-orientation={orientation}\n      className={composeTailwindRenderProps(\n        className,\n        fieldStyles({ orientation }),\n      )}\n      {...props}\n    />\n  );\n}\n",
       "type": "registry:ui"
     }
   ],

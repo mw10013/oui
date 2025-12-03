@@ -14,7 +14,7 @@
   "files": [
     {
       "path": "registry/default/ui/oui-text-field.tsx",
-      "content": "\"use client\";\n\nimport type { FieldStylesProps } from \"@/registry/default/ui/oui-field\";\nimport { composeTailwindRenderProps } from \"@/registry/default/ui/oui-base\";\nimport { fieldStyles } from \"@/registry/default/ui/oui-field\";\nimport * as Rac from \"react-aria-components\";\n\n/**\n * Derived styles from shadcn Field\n */\nexport type TextFieldProps = Rac.TextFieldProps & FieldStylesProps;\n\nexport function TextField({\n  className,\n  orientation = \"vertical\",\n  ...props\n}: TextFieldProps) {\n  return (\n    <Rac.TextField\n      data-slot=\"field\"\n      data-orientation={orientation}\n      className={composeTailwindRenderProps(\n        className,\n        fieldStyles({ orientation }),\n      )}\n      {...props}\n    />\n  );\n}\n",
+      "content": "\"use client\";\n\nimport type { FieldStylesProps } from \"@/registry/default/ui/oui-field\";\nimport { composeTailwindRenderProps } from \"@/registry/default/ui/oui-base\";\nimport { fieldStyles } from \"@/registry/default/ui/oui-field\";\nimport * as Rac from \"react-aria-components\";\n\nexport type TextFieldProps = Rac.TextFieldProps & FieldStylesProps;\n\n/**\n * Derived from shadcn Field\n */\nexport function TextField({\n  className,\n  orientation = \"vertical\",\n  ...props\n}: TextFieldProps) {\n  return (\n    <Rac.TextField\n      data-slot=\"field\"\n      data-orientation={orientation}\n      className={composeTailwindRenderProps(\n        className,\n        fieldStyles({ orientation }),\n      )}\n      {...props}\n    />\n  );\n}\n",
       "type": "registry:ui"
     }
   ],
