@@ -24,6 +24,7 @@ export const registryTags = [
   "heading",
   "index",
   "input",
+  "input-group",
   "keyboard",
   "label",
   "link",

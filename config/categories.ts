@@ -150,6 +150,11 @@ export const categories: Category[] = [
     ],
   },
   {
+    name: "Input Group",
+    slug: "input-group",
+    components: [{ name: "oui-input-group" }, { name: "oui-input-group-demo" }],
+  },
+  {
     name: "Keyboard",
     slug: "keyboard",
     components: [{ name: "oui-keyboard" }, { name: "oui-keyboard-demo" }],

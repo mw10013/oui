@@ -1154,6 +1154,56 @@
       }
     },
     {
+      "name": "oui-input-group",
+      "type": "registry:ui",
+      "title": "Input Group",
+      "description": "React aria components Group with shadcn characteristics.",
+      "files": [
+        {
+          "path": "registry/default/ui/oui-input.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "registryDependencies": [
+        "input-group",
+        "@oui/oui-base",
+        "@oui/oui-button",
+        "@oui/oui-input",
+        "@oui/oui-text-area"
+      ],
+      "dependencies": [
+        "react-aria-components",
+        "class-variance-authority",
+        "tailwind-merge"
+      ],
+      "meta": {
+        "tags": ["input-group"]
+      }
+    },
+    {
+      "name": "oui-input-group-demo",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/default/components/oui-input-group-demo.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "@oui/oui-input-group",
+        "@oui/oui-menu",
+        "@oui/oui-popover",
+        "@oui/oui-separator",
+        "@oui/oui-tooltip"
+      ],
+      "dependencies": ["lucide-react", "@tabler/icons-react"],
+      "meta": {
+        "tags": ["input-group"],
+        "canPreview": true,
+        "canOpenInV0": true
+      }
+    },
+    {
       "name": "oui-keyboard",
       "type": "registry:ui",
       "title": "Keyboard",

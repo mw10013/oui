@@ -1,30 +1,22 @@
 "use client";
 
-import OuiInputGroupDemo from "@/registry/default/components/oui-input-group-demo";
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuTrigger,
-} from "@/registry/default/ui/dropdown-menu";
 import {
   InputGroup,
   InputGroupAddon,
   InputGroupButton,
   InputGroupInput,
   InputGroupText,
-  InputGroupTextarea,
-} from "@/registry/default/ui/input-group";
-import { Separator } from "@/registry/default/ui/separator";
-import {
-  Tooltip,
-  TooltipContent,
-  TooltipTrigger,
-} from "@/registry/default/ui/tooltip";
+  InputGroupTextArea,
+} from "@/registry/default/ui/oui-input-group";
+import { Menu, MenuItem } from "@/registry/default/ui/oui-menu";
+import { Popover } from "@/registry/default/ui/oui-popover";
+import { Separator } from "@/registry/default/ui/oui-separator";
+import { Tooltip } from "@/registry/default/ui/oui-tooltip";
 import { IconCheck, IconInfoCircle, IconPlus } from "@tabler/icons-react";
 import { ArrowUpIcon, Search } from "lucide-react";
+import * as Rac from "react-aria-components";
 
-export function InputGroupDemo() {
+export default function OuiInputGroupDemo() {
   return (
     <div className="grid w-full max-w-sm gap-6">
       <InputGroup>
@@ -40,18 +32,16 @@ export function InputGroupDemo() {
           <InputGroupText>https://</InputGroupText>
         </InputGroupAddon>
         <InputGroupAddon align="inline-end">
-          <Tooltip>
-            <TooltipTrigger asChild>
-              <InputGroupButton className="rounded-full" size="icon-xs">
-                <IconInfoCircle />
-              </InputGroupButton>
-            </TooltipTrigger>
-            <TooltipContent>This is content in a tooltip.</TooltipContent>
-          </Tooltip>
+          <Rac.TooltipTrigger>
+            <InputGroupButton className="rounded-full" size="icon-xs">
+              <IconInfoCircle />
+            </InputGroupButton>
+            <Tooltip>This is content in a tooltip.</Tooltip>
+          </Rac.TooltipTrigger>
         </InputGroupAddon>
       </InputGroup>
       <InputGroup>
-        <InputGroupTextarea placeholder="Ask, Search or Chat..." />
+        <InputGroupTextArea placeholder="Ask, Search or Chat..." />
         <InputGroupAddon align="block-end">
           <InputGroupButton
             variant="outline"
@@ -60,27 +50,23 @@ export function InputGroupDemo() {
           >
             <IconPlus />
           </InputGroupButton>
-          <DropdownMenu>
-            <DropdownMenuTrigger asChild>
-              <InputGroupButton variant="ghost">Auto</InputGroupButton>
-            </DropdownMenuTrigger>
-            <DropdownMenuContent
-              side="top"
-              align="start"
-              className="[--radius:0.95rem]"
-            >
-              <DropdownMenuItem>Auto</DropdownMenuItem>
-              <DropdownMenuItem>Agent</DropdownMenuItem>
-              <DropdownMenuItem>Manual</DropdownMenuItem>
-            </DropdownMenuContent>
-          </DropdownMenu>
+          <Rac.MenuTrigger>
+            <InputGroupButton variant="ghost">Auto</InputGroupButton>
+            <Popover>
+              <Menu>
+                <MenuItem>Auto</MenuItem>
+                <MenuItem>Agent</MenuItem>
+                <MenuItem>Manual</MenuItem>
+              </Menu>
+            </Popover>
+          </Rac.MenuTrigger>
           <InputGroupText className="ml-auto">52% used</InputGroupText>
           <Separator orientation="vertical" className="h-4!" />
           <InputGroupButton
             variant="default"
             className="rounded-full"
             size="icon-xs"
-            disabled
+            isDisabled
           >
             <ArrowUpIcon />
             <span className="sr-only">Send</span>
@@ -95,15 +81,6 @@ export function InputGroupDemo() {
           </div>
         </InputGroupAddon>
       </InputGroup>
-    </div>
-  );
-}
-
-export default function RouteComponent() {
-  return (
-    <div className="mx-auto grid max-w-7xl grid-cols-2 gap-8 p-6 *:border *:border-foreground *:p-4">
-      <InputGroupDemo />
-      <OuiInputGroupDemo />
     </div>
   );
 }

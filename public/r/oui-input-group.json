@@ -1,0 +1,31 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "oui-input-group",
+  "type": "registry:ui",
+  "title": "Input Group",
+  "description": "React aria components Group with shadcn characteristics.",
+  "dependencies": [
+    "react-aria-components",
+    "class-variance-authority",
+    "tailwind-merge"
+  ],
+  "registryDependencies": [
+    "input-group",
+    "@oui/oui-base",
+    "@oui/oui-button",
+    "@oui/oui-input",
+    "@oui/oui-text-area"
+  ],
+  "files": [
+    {
+      "path": "registry/default/ui/oui-input.tsx",
+      "content": "\"use client\";\n\nimport type { VariantProps } from \"class-variance-authority\";\nimport {\n  composeTailwindRenderProps,\n  focusVisibleStyles,\n} from \"@/registry/default/ui/oui-base\";\nimport { cva } from \"class-variance-authority\";\nimport * as Rac from \"react-aria-components\";\n\n/**\n * Derived from shadcn Input.\n * The 'flex' base class enables flex item behavior in RAC Group layouts.\n */\nexport const inputVariants = cva(\n  [\n    \"flex h-9 w-full min-w-0 bg-transparent px-3 py-1 text-base transition-[color,box-shadow] outline-none placeholder:text-muted-foreground md:text-sm dark:bg-input/30\",\n    \"file:inline-flex file:h-7 file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground\",\n    \"selection:bg-primary selection:text-primary-foreground\",\n    \"data-disabled:pointer-events-none data-disabled:cursor-not-allowed data-disabled:opacity-50\",\n  ],\n  {\n    variants: {\n      variant: {\n        default: [\n          focusVisibleStyles,\n          \"rounded-md border border-input shadow-xs\",\n          \"data-invalid:border-destructive data-invalid:ring-destructive/20 dark:data-invalid:ring-destructive/40\",\n          \"[&::-webkit-search-cancel-button]:hidden\",\n        ],\n        ghost: \"flex-1\",\n      },\n    },\n    defaultVariants: {\n      variant: \"default\",\n    },\n  },\n);\n\nexport interface InputProps\n  extends Rac.InputProps,\n    VariantProps<typeof inputVariants> {}\n\nexport function Input({ variant, className, ...props }: InputProps) {\n  return (\n    <Rac.Input\n      data-slot=\"input\"\n      className={composeTailwindRenderProps(\n        className,\n        inputVariants({ variant }),\n      )}\n      {...props}\n    />\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "tags": [
+      "input-group"
+    ]
+  }
+}

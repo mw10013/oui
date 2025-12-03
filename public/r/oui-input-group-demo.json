@@ -1,0 +1,30 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "oui-input-group-demo",
+  "type": "registry:component",
+  "dependencies": [
+    "lucide-react",
+    "@tabler/icons-react"
+  ],
+  "registryDependencies": [
+    "@oui/oui-input-group",
+    "@oui/oui-menu",
+    "@oui/oui-popover",
+    "@oui/oui-separator",
+    "@oui/oui-tooltip"
+  ],
+  "files": [
+    {
+      "path": "registry/default/components/oui-input-group-demo.tsx",
+      "content": "\"use client\";\n\nimport {\n  InputGroup,\n  InputGroupAddon,\n  InputGroupButton,\n  InputGroupInput,\n  InputGroupText,\n  InputGroupTextArea,\n} from \"@/registry/default/ui/oui-input-group\";\nimport { Menu, MenuItem } from \"@/registry/default/ui/oui-menu\";\nimport { Popover } from \"@/registry/default/ui/oui-popover\";\nimport { Separator } from \"@/registry/default/ui/oui-separator\";\nimport { Tooltip } from \"@/registry/default/ui/oui-tooltip\";\nimport { IconCheck, IconInfoCircle, IconPlus } from \"@tabler/icons-react\";\nimport { ArrowUpIcon, Search } from \"lucide-react\";\nimport * as Rac from \"react-aria-components\";\n\nexport default function OuiInputGroupDemo() {\n  return (\n    <div className=\"grid w-full max-w-sm gap-6\">\n      <InputGroup>\n        <InputGroupInput placeholder=\"Search...\" />\n        <InputGroupAddon>\n          <Search />\n        </InputGroupAddon>\n        <InputGroupAddon align=\"inline-end\">12 results</InputGroupAddon>\n      </InputGroup>\n      <InputGroup>\n        <InputGroupInput placeholder=\"example.com\" className=\"pl-1!\" />\n        <InputGroupAddon>\n          <InputGroupText>https://</InputGroupText>\n        </InputGroupAddon>\n        <InputGroupAddon align=\"inline-end\">\n          <Rac.TooltipTrigger>\n            <InputGroupButton className=\"rounded-full\" size=\"icon-xs\">\n              <IconInfoCircle />\n            </InputGroupButton>\n            <Tooltip>This is content in a tooltip.</Tooltip>\n          </Rac.TooltipTrigger>\n        </InputGroupAddon>\n      </InputGroup>\n      <InputGroup>\n        <InputGroupTextArea placeholder=\"Ask, Search or Chat...\" />\n        <InputGroupAddon align=\"block-end\">\n          <InputGroupButton\n            variant=\"outline\"\n            className=\"rounded-full\"\n            size=\"icon-xs\"\n          >\n            <IconPlus />\n          </InputGroupButton>\n          <Rac.MenuTrigger>\n            <InputGroupButton variant=\"ghost\">Auto</InputGroupButton>\n            <Popover>\n              <Menu>\n                <MenuItem>Auto</MenuItem>\n                <MenuItem>Agent</MenuItem>\n                <MenuItem>Manual</MenuItem>\n              </Menu>\n            </Popover>\n          </Rac.MenuTrigger>\n          <InputGroupText className=\"ml-auto\">52% used</InputGroupText>\n          <Separator orientation=\"vertical\" className=\"h-4!\" />\n          <InputGroupButton\n            variant=\"default\"\n            className=\"rounded-full\"\n            size=\"icon-xs\"\n            isDisabled\n          >\n            <ArrowUpIcon />\n            <span className=\"sr-only\">Send</span>\n          </InputGroupButton>\n        </InputGroupAddon>\n      </InputGroup>\n      <InputGroup>\n        <InputGroupInput placeholder=\"@shadcn\" />\n        <InputGroupAddon align=\"inline-end\">\n          <div className=\"flex size-4 items-center justify-center rounded-full bg-primary text-primary-foreground\">\n            <IconCheck className=\"size-3\" />\n          </div>\n        </InputGroupAddon>\n      </InputGroup>\n    </div>\n  );\n}\n",
+      "type": "registry:component"
+    }
+  ],
+  "meta": {
+    "tags": [
+      "input-group"
+    ],
+    "canPreview": true,
+    "canOpenInV0": true
+  }
+}
