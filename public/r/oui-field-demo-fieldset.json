@@ -3,8 +3,14 @@
   "name": "oui-field-demo-fieldset",
   "type": "registry:component",
   "registryDependencies": [
+    "@oui/oui-button",
+    "@oui/oui-checkbox",
     "@oui/oui-field",
     "@oui/oui-input",
+    "@oui/oui-list-box",
+    "@oui/oui-popover",
+    "@oui/oui-select",
+    "@oui/oui-text-area",
     "@oui/oui-text-field"
   ],
   "files": [
@@ -16,8 +22,7 @@
   ],
   "meta": {
     "tags": [
-      "field",
-      "text-field"
+      "field"
     ],
     "canPreview": true,
     "canOpenInV0": true

@@ -112,7 +112,11 @@ export const categories: Category[] = [
   {
     name: "Field",
     slug: "field",
-    components: [{ name: "oui-field" }, { name: "oui-field-demo-fieldset" }],
+    components: [
+      { name: "oui-field" },
+      { name: "oui-field-demo" },
+      { name: "oui-field-demo-fieldset" },
+    ],
   },
   {
     name: "Form",

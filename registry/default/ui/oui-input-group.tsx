@@ -15,6 +15,28 @@ import { composeTailwindRenderProps } from "./oui-base";
 
 export { InputGroupAddon, InputGroupText };
 
+export function InputGroup({ className, ...props }: Rac.GroupProps) {
+  return (
+    <Rac.Group
+      data-slot="input-group"
+      className={composeTailwindRenderProps(className, [
+        "group/input-group relative flex w-full items-center rounded-md border border-input shadow-xs transition-[color,box-shadow] outline-none dark:bg-input/30",
+        "h-9 min-w-0 has-[>textarea]:h-auto",
+
+        "has-[>[data-align=inline-start]]:[&>input]:pl-2",
+        "has-[>[data-align=inline-end]]:[&>input]:pr-2",
+        "has-[>[data-align=block-start]]:h-auto has-[>[data-align=block-start]]:flex-col has-[>[data-align=block-start]]:[&>input]:pb-3",
+        "has-[>[data-align=block-end]]:h-auto has-[>[data-align=block-end]]:flex-col has-[>[data-align=block-end]]:[&>input]:pt-3",
+
+        "data-focus-visible:border-ring data-focus-visible:ring-[3px] data-focus-visible:ring-ring/50",
+
+        "data-invalid:border-destructive data-invalid:ring-destructive/20 dark:data-invalid:ring-destructive/40",
+      ])}
+      {...props}
+    />
+  );
+}
+
 const inputGroupButtonVariants = cva(
   "flex items-center gap-2 text-sm shadow-none",
   {
@@ -80,28 +102,6 @@ export function InputGroupTextArea({
         className,
         "flex-1 resize-none rounded-none border-0 bg-transparent py-3 shadow-none data-focus-visible:ring-0 dark:bg-transparent",
       )}
-      {...props}
-    />
-  );
-}
-
-export function InputGroup({ className, ...props }: Rac.GroupProps) {
-  return (
-    <Rac.Group
-      data-slot="input-group"
-      className={composeTailwindRenderProps(className, [
-        "group/input-group relative flex w-full items-center rounded-md border border-input shadow-xs transition-[color,box-shadow] outline-none dark:bg-input/30",
-        "h-9 min-w-0 has-[>textarea]:h-auto",
-
-        "has-[>[data-align=inline-start]]:[&>input]:pl-2",
-        "has-[>[data-align=inline-end]]:[&>input]:pr-2",
-        "has-[>[data-align=block-start]]:h-auto has-[>[data-align=block-start]]:flex-col has-[>[data-align=block-start]]:[&>input]:pb-3",
-        "has-[>[data-align=block-end]]:h-auto has-[>[data-align=block-end]]:flex-col has-[>[data-align=block-end]]:[&>input]:pt-3",
-
-        "data-focus-visible:border-ring data-focus-visible:ring-[3px] data-focus-visible:ring-ring/50",
-
-        "data-invalid:border-destructive data-invalid:ring-destructive/20 dark:data-invalid:ring-destructive/40",
-      ])}
       {...props}
     />
   );

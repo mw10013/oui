@@ -826,11 +826,11 @@
       }
     },
     {
-      "name": "oui-field-demo-fieldset",
+      "name": "oui-field-demo",
       "type": "registry:component",
       "files": [
         {
-          "path": "registry/default/components/oui-field-demo-fieldset.tsx",
+          "path": "registry/default/components/oui-field-demo.tsx",
           "type": "registry:component"
         }
       ],
@@ -840,7 +840,33 @@
         "@oui/oui-text-field"
       ],
       "meta": {
-        "tags": ["field", "text-field"],
+        "tags": ["field"],
+        "canPreview": true,
+        "canOpenInV0": true
+      }
+    },
+    {
+      "name": "oui-field-demo-fieldset",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/default/components/oui-field-demo-fieldset.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "@oui/oui-button",
+        "@oui/oui-checkbox",
+        "@oui/oui-field",
+        "@oui/oui-input",
+        "@oui/oui-list-box",
+        "@oui/oui-popover",
+        "@oui/oui-select",
+        "@oui/oui-text-area",
+        "@oui/oui-text-field"
+      ],
+      "meta": {
+        "tags": ["field"],
         "canPreview": true,
         "canOpenInV0": true
       }
