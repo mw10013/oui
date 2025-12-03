@@ -11,7 +11,7 @@ import { TextArea } from "@/registry/default/ui/oui-text-area";
 import { cva } from "class-variance-authority";
 import * as Rac from "react-aria-components";
 import { twMerge } from "tailwind-merge";
-import { composeTailwindRenderProps, focusVisibleStyles } from "./oui-base";
+import { composeTailwindRenderProps } from "./oui-base";
 
 export { InputGroupAddon, InputGroupText };
 
@@ -20,14 +20,15 @@ export function InputGroup({ className, ...props }: Rac.GroupProps) {
     <Rac.Group
       data-slot="input-group"
       className={composeTailwindRenderProps(className, [
-        focusVisibleStyles,
-        "group/input-group relative flex w-full items-center rounded-md border border-input shadow-xs transition-[color,box-shadow] dark:bg-input/30",
+        "group/input-group relative flex w-full items-center rounded-md border border-input shadow-xs transition-[color,box-shadow] outline-none dark:bg-input/30",
         "h-9 min-w-0 has-[>textarea]:h-auto",
 
         "has-[>[data-align=inline-start]]:[&>input]:pl-2",
         "has-[>[data-align=inline-end]]:[&>input]:pr-2",
         "has-[>[data-align=block-start]]:h-auto has-[>[data-align=block-start]]:flex-col has-[>[data-align=block-start]]:[&>input]:pb-3",
         "has-[>[data-align=block-end]]:h-auto has-[>[data-align=block-end]]:flex-col has-[>[data-align=block-end]]:[&>input]:pt-3",
+
+        "has-[[data-slot=input-group-control][data-focus-visible]]:border-ring has-[[data-slot=input-group-control][data-focus-visible]]:ring-[3px] has-[[data-slot=input-group-control][data-focus-visible]]:ring-ring/50",
 
         "data-invalid:border-destructive data-invalid:ring-destructive/20 dark:data-invalid:ring-destructive/40",
       ])}
