@@ -14,6 +14,7 @@ import {
   InputGroupText,
   InputGroupTextarea,
 } from "@/registry/default/ui/input-group";
+import * as Oui from "@/registry/default/ui/oui-index";
 import { Separator } from "@/registry/default/ui/separator";
 import {
   Tooltip,
@@ -22,6 +23,7 @@ import {
 } from "@/registry/default/ui/tooltip";
 import { IconCheck, IconInfoCircle, IconPlus } from "@tabler/icons-react";
 import { ArrowUpIcon, Search } from "lucide-react";
+import * as Rac from "react-aria-components";
 
 export function InputGroupDemo() {
   return (
@@ -100,8 +102,78 @@ export function InputGroupDemo() {
 
 export default function RouteComponent() {
   return (
-    <div className="mx-auto grid max-w-7xl grid-cols-1 gap-8 p-6 *:border *:border-foreground *:p-4">
+    <div className="mx-auto grid max-w-7xl grid-cols-2 gap-8 p-6 *:border *:border-foreground *:p-4">
       <InputGroupDemo />
+      <OuiInputGroupDemo />
+    </div>
+  );
+}
+
+export function OuiInputGroupDemo() {
+  return (
+    <div className="grid w-full max-w-sm gap-6">
+      <Oui.InputGroup>
+        <Oui.InputGroupInput placeholder="Search..." />
+        <Oui.InputGroupAddon>
+          <Search />
+        </Oui.InputGroupAddon>
+        <Oui.InputGroupAddon align="inline-end">12 results</Oui.InputGroupAddon>
+      </Oui.InputGroup>
+      <Oui.InputGroup>
+        <Oui.InputGroupInput placeholder="example.com" className="pl-1!" />
+        <Oui.InputGroupAddon>
+          <Oui.InputGroupText>https://</Oui.InputGroupText>
+        </Oui.InputGroupAddon>
+        <Oui.InputGroupAddon align="inline-end">
+          <Rac.TooltipTrigger>
+            <Oui.InputGroupButton className="rounded-full" size="icon-xs">
+              <IconInfoCircle />
+            </Oui.InputGroupButton>
+            <Oui.Tooltip>This is content in a tooltip.</Oui.Tooltip>
+          </Rac.TooltipTrigger>
+        </Oui.InputGroupAddon>
+      </Oui.InputGroup>
+      <Oui.InputGroup>
+        <Oui.InputGroupTextArea placeholder="Ask, Search or Chat..." />
+        <Oui.InputGroupAddon align="block-end">
+          <Oui.InputGroupButton
+            variant="outline"
+            className="rounded-full"
+            size="icon-xs"
+          >
+            <IconPlus />
+          </Oui.InputGroupButton>
+          <Rac.MenuTrigger>
+            <Oui.InputGroupButton variant="ghost">Auto</Oui.InputGroupButton>
+            <Oui.Popover>
+              <Oui.Menu>
+                <Oui.MenuItem>Auto</Oui.MenuItem>
+                <Oui.MenuItem>Agent</Oui.MenuItem>
+                <Oui.MenuItem>Manual</Oui.MenuItem>
+              </Oui.Menu>
+            </Oui.Popover>
+          </Rac.MenuTrigger>
+          <Oui.InputGroupText className="ml-auto">52% used</Oui.InputGroupText>
+          <Oui.Separator orientation="vertical" className="h-4!" />
+          <Oui.InputGroupButton
+            variant="default"
+            className="rounded-full"
+            size="icon-xs"
+            isDisabled
+          >
+            <ArrowUpIcon />
+            <span className="sr-only">Send</span>
+          </Oui.InputGroupButton>
+        </Oui.InputGroupAddon>
+      </Oui.InputGroup>
+      <Oui.InputGroup>
+        <Oui.InputGroupInput placeholder="@shadcn" />
+        <Oui.InputGroupAddon align="inline-end">
+          <div className="flex size-4 items-center justify-center rounded-full bg-primary text-primary-foreground">
+            <IconCheck className="size-3" />
+          </div>
+        </Oui.InputGroupAddon>
+      </Oui.InputGroup>
     </div>
   );
 }

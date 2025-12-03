@@ -34,6 +34,7 @@ export * from "@/registry/default/ui/oui-group";
 export * from "@/registry/default/ui/oui-header";
 export * from "@/registry/default/ui/oui-heading";
 export * from "@/registry/default/ui/oui-input";
+export * from "@/registry/default/ui/oui-input-group";
 export * from "@/registry/default/ui/oui-keyboard";
 export * from "@/registry/default/ui/oui-label";
 export * from "@/registry/default/ui/oui-link";
