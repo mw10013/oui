@@ -1186,7 +1186,7 @@
       "description": "React aria components Group with shadcn characteristics.",
       "files": [
         {
-          "path": "registry/default/ui/oui-input.tsx",
+          "path": "registry/default/ui/oui-input-group.tsx",
           "type": "registry:ui"
         }
       ],
