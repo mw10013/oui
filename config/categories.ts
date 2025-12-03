@@ -220,8 +220,7 @@ export const categories: Category[] = [
     slug: "number-field",
     components: [
       { name: "oui-number-field" },
-      { name: "oui-number-field-ex" },
-      { name: "oui-number-field-ex-demo" },
+      { name: "oui-number-field-demo" },
     ],
   },
   {

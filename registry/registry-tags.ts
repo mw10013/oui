@@ -33,7 +33,6 @@ export const registryTags = [
   "modal",
   "modal-ex-sheet",
   "number-field",
-  "number-field-ex",
   "popover",
   "radio-group",
   "search-field",

@@ -1,0 +1,33 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "oui-number-field-demo",
+  "type": "registry:component",
+  "dependencies": [
+    "lucide-react"
+  ],
+  "registryDependencies": [
+    "@oui/oui-button",
+    "@oui/oui-field",
+    "@oui/oui-group",
+    "@oui/oui-input",
+    "@oui/oui-label",
+    "@oui/oui-number-field",
+    "@oui/oui-text"
+  ],
+  "files": [
+    {
+      "path": "registry/default/components/oui-number-field-demo.tsx",
+      "content": "\"use client\";\n\nimport { Button } from \"@/registry/default/ui/oui-button\";\nimport { FieldError } from \"@/registry/default/ui/oui-field\";\nimport { Group } from \"@/registry/default/ui/oui-group\";\nimport { Input } from \"@/registry/default/ui/oui-input\";\nimport { Label } from \"@/registry/default/ui/oui-label\";\nimport { NumberField } from \"@/registry/default/ui/oui-number-field\";\nimport { Text } from \"@/registry/default/ui/oui-text\";\nimport { ChevronDown, ChevronUp } from \"lucide-react\";\nimport * as Rac from \"react-aria-components\";\n\nexport default function Component() {\n  return (\n    <Rac.Form\n      method=\"post\"\n      validationBehavior=\"aria\"\n      onSubmit={(e) => {\n        e.preventDefault();\n      }}\n      className=\"grid w-full max-w-sm gap-6\"\n    >\n      <NumberField name=\"age\">\n        <Label>Age</Label>\n        <Group>\n          <Input variant=\"ghost\" placeholder=\"age\" className=\"tabular-nums\" />\n          <div className=\"flex h-[calc(100%+2px)] flex-col\">\n            <Rac.Button\n              slot=\"increment\"\n              className=\"-me-px flex h-1/2 w-6 flex-1 items-center justify-center border border-input bg-background text-sm text-muted-foreground/80 transition-shadow hover:bg-accent hover:text-foreground disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50\"\n            >\n              <ChevronUp size={12} strokeWidth={2} aria-hidden=\"true\" />\n            </Rac.Button>\n            <Rac.Button\n              slot=\"decrement\"\n              className=\"-me-px -mt-px flex h-1/2 w-6 flex-1 items-center justify-center border border-input bg-background text-sm text-muted-foreground/80 transition-shadow hover:bg-accent hover:text-foreground disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50\"\n            >\n              <ChevronDown size={12} strokeWidth={2} aria-hidden=\"true\" />\n            </Rac.Button>\n          </div>\n        </Group>\n        <Text slot=\"description\">This is your age.</Text>\n        <FieldError />\n      </NumberField>\n      <NumberField name=\"quantity\">\n        <Label>Quantity</Label>\n        <Group>\n          <Input variant=\"ghost\" className=\"tabular-nums\" />\n          <div className=\"flex h-[calc(100%+2px)] flex-col\">\n            <Rac.Button\n              slot=\"increment\"\n              className=\"-me-px flex h-1/2 w-6 flex-1 items-center justify-center border border-input bg-background text-sm text-muted-foreground/80 transition-shadow hover:bg-accent hover:text-foreground disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50\"\n            >\n              <ChevronUp size={12} strokeWidth={2} aria-hidden=\"true\" />\n            </Rac.Button>\n            <Rac.Button\n              slot=\"decrement\"\n              className=\"-me-px -mt-px flex h-1/2 w-6 flex-1 items-center justify-center border border-input bg-background text-sm text-muted-foreground/80 transition-shadow hover:bg-accent hover:text-foreground disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50\"\n            >\n              <ChevronDown size={12} strokeWidth={2} aria-hidden=\"true\" />\n            </Rac.Button>\n          </div>\n        </Group>\n        <Text slot=\"description\">Your best quantity.</Text>\n        <FieldError />\n      </NumberField>\n      <Button type=\"submit\">Submit</Button>\n    </Rac.Form>\n  );\n}\n",
+      "type": "registry:component"
+    }
+  ],
+  "meta": {
+    "tags": [
+      "number-field",
+      "group",
+      "field"
+    ],
+    "canPreview": true,
+    "canOpenInV0": true
+  }
+}

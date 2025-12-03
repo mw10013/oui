@@ -1057,7 +1057,6 @@
         "@oui/oui-dialog-ex-alert",
         "@oui/oui-list-box-ex-pagination",
         "@oui/oui-modal-ex-sheet",
-        "@oui/oui-number-field-ex",
         "@oui/oui-sidebar-ex",
         "@oui/oui-slider-ex"
       ],
@@ -1825,17 +1824,16 @@
       }
     },
     {
-      "name": "oui-number-field-ex",
+      "name": "oui-number-field-demo",
       "type": "registry:component",
-      "title": "Number Field Ex",
-      "description": "Reusable wrapper for Number Field.",
       "files": [
         {
-          "path": "registry/default/components/oui-number-field-ex.tsx",
+          "path": "registry/default/components/oui-number-field-demo.tsx",
           "type": "registry:component"
         }
       ],
       "registryDependencies": [
+        "@oui/oui-button",
         "@oui/oui-field",
         "@oui/oui-group",
         "@oui/oui-input",
@@ -1845,29 +1843,7 @@
       ],
       "dependencies": ["lucide-react"],
       "meta": {
-        "tags": [
-          "number-field",
-          "number-field-ex",
-          "input",
-          "label",
-          "field-error",
-          "text",
-          "group"
-        ]
-      }
-    },
-    {
-      "name": "oui-number-field-ex-demo",
-      "type": "registry:component",
-      "files": [
-        {
-          "path": "registry/default/components/oui-number-field-ex-demo.tsx",
-          "type": "registry:component"
-        }
-      ],
-      "registryDependencies": ["@oui/oui-button", "@oui/oui-number-field-ex"],
-      "meta": {
-        "tags": ["number-field", "number-field-ex", "button"],
+        "tags": ["number-field", "group", "field"],
         "canPreview": true,
         "canOpenInV0": true
       }
