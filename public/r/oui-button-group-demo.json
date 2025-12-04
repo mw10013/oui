@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "oui-button-group-demo",
+  "type": "registry:component",
+  "registryDependencies": [
+    "@oui/oui-button-group",
+    "@oui/oui-button"
+  ],
+  "files": [
+    {
+      "path": "registry/default/components/oui-button-group-demo.tsx",
+      "content": "\"use client\";\n\nimport * as React from \"react\";\nimport { Button } from \"@/registry/default/ui/oui-button\";\nimport { ButtonGroup } from \"@/registry/default/ui/oui-button-group\";\nimport { Menu, MenuItem } from \"@/registry/default/ui/oui-menu\";\nimport { Popover } from \"@/registry/default/ui/oui-popover\";\nimport { Separator } from \"@/registry/default/ui/oui-separator\";\nimport {\n  ArchiveIcon,\n  ArrowLeftIcon,\n  CalendarPlusIcon,\n  ClockIcon,\n  ListFilterPlusIcon,\n  MailCheckIcon,\n  MoreHorizontalIcon,\n  TagIcon,\n  Trash2Icon,\n} from \"lucide-react\";\nimport * as Rac from \"react-aria-components\";\n\nexport default function OuiButtonGroupDemo() {\n  const [label, setLabel] = React.useState(\"personal\");\n\n  return (\n    <ButtonGroup>\n      <ButtonGroup className=\"hidden sm:flex\">\n        <Button variant=\"outline\" size=\"icon\" aria-label=\"Go Back\">\n          <ArrowLeftIcon />\n        </Button>\n      </ButtonGroup>\n      <ButtonGroup>\n        <Button variant=\"outline\">Archive</Button>\n        <Button variant=\"outline\">Report</Button>\n      </ButtonGroup>\n      <ButtonGroup>\n        <Button variant=\"outline\">Snooze</Button>\n        <Rac.MenuTrigger>\n          <Button variant=\"outline\" size=\"icon\" aria-label=\"More Options\">\n            <MoreHorizontalIcon />\n          </Button>\n          <Popover placement=\"bottom end\">\n            <Menu className=\"w-52\">\n              <MenuItem>\n                <MailCheckIcon />\n                Mark as Read\n              </MenuItem>\n              <MenuItem>\n                <ArchiveIcon />\n                Archive\n              </MenuItem>\n              <Separator />\n              <MenuItem>\n                <ClockIcon />\n                Snooze\n              </MenuItem>\n              <MenuItem>\n                <CalendarPlusIcon />\n                Add to Calendar\n              </MenuItem>\n              <MenuItem>\n                <ListFilterPlusIcon />\n                Add to List\n              </MenuItem>\n              <Rac.SubmenuTrigger>\n                <MenuItem>\n                  <TagIcon />\n                  Label As...\n                </MenuItem>\n                <Popover>\n                  <Menu\n                    selectionMode=\"single\"\n                    selectedKeys={new Set([label])}\n                    onSelectionChange={(keys) => {\n                      setLabel(Array.from(keys)[0] as string);\n                    }}\n                  >\n                    <MenuItem id=\"personal\">Personal</MenuItem>\n                    <MenuItem id=\"work\">Work</MenuItem>\n                    <MenuItem id=\"other\">Other</MenuItem>\n                  </Menu>\n                </Popover>\n              </Rac.SubmenuTrigger>\n              <Separator />\n              <MenuItem variant=\"destructive\">\n                <Trash2Icon />\n                Trash\n              </MenuItem>\n            </Menu>\n          </Popover>\n        </Rac.MenuTrigger>\n      </ButtonGroup>\n    </ButtonGroup>\n  );\n}\n",
+      "type": "registry:component"
+    }
+  ],
+  "meta": {
+    "tags": [
+      "button-group",
+      "button"
+    ],
+    "canPreview": true,
+    "alignment": "text-center",
+    "canOpenInV0": true
+  }
+}

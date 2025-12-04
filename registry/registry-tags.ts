@@ -8,6 +8,7 @@ export const registryTags = [
   "badge-ex",
   "base",
   "button",
+  "button-group",
   "card",
   "card-ex",
   "checkbox",

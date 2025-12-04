@@ -52,6 +52,14 @@ export const categories: Category[] = [
     ],
   },
   {
+    name: "Button Group",
+    slug: "button-group",
+    components: [
+      { name: "oui-button-group" },
+      { name: "oui-button-group-demo" },
+    ],
+  },
+  {
     name: "Card",
     slug: "card",
     components: [{ name: "oui-card-ex" }],

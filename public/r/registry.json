@@ -385,6 +385,40 @@
       }
     },
     {
+      "name": "oui-button-group",
+      "type": "registry:ui",
+      "title": "Button Group",
+      "description": "Shadcn Button Group with react aria component characteristics.",
+      "files": [
+        {
+          "path": "registry/default/ui/oui-button-group.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "registryDependencies": ["button-group", "@oui/oui-base"],
+      "dependencies": ["react-aria-components", "class-variance-authority"],
+      "meta": {
+        "tags": ["button-group"]
+      }
+    },
+    {
+      "name": "oui-button-group-demo",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/default/components/oui-button-group-demo.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": ["@oui/oui-button-group", "@oui/oui-button"],
+      "meta": {
+        "tags": ["button-group", "button"],
+        "canPreview": true,
+        "alignment": "text-center",
+        "canOpenInV0": true
+      }
+    },
+    {
       "name": "oui-card-ex",
       "type": "registry:component",
       "title": "Card Ex",
@@ -1048,6 +1082,7 @@
       "registryDependencies": [
         "@oui/oui-base",
         "@oui/oui-button",
+        "@oui/oui-button-group",
         "@oui/oui-checkbox-group",
         "@oui/oui-checkbox",
         "@oui/oui-dialog",
