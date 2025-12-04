@@ -894,11 +894,11 @@ export function OuiInputGroupCustom() {
       <Oui.InputGroup>
         <Oui.InputGroupTextArea
           data-slot="input-group-control"
-          className="flex field-sizing-content min-h-16 w-full resize-none rounded-md bg-transparent px-3 py-2.5 text-base transition-[color,box-shadow] outline-none md:text-sm"
           placeholder="Autoresize textarea..."
+          className="flex field-sizing-content min-h-16 w-full resize-none rounded-md bg-transparent px-3 py-2.5 text-base transition-[color,box-shadow] outline-none md:text-sm"
         />
         <Oui.InputGroupAddon align="block-end">
-          <Oui.InputGroupButton className="ml-auto" size="sm" variant="default">
+          <Oui.InputGroupButton size="sm" variant="default" className="ml-auto">
             Submit
           </Oui.InputGroupButton>
         </Oui.InputGroupAddon>
