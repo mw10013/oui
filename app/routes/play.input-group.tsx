@@ -627,36 +627,44 @@ export function InputGroupSpinner() {
 export function OuiInputGroupSpinner() {
   return (
     <div className="grid w-full max-w-sm gap-4">
-      <Oui.InputGroup isDisabled>
-        <Oui.InputGroupInput placeholder="Searching..." disabled />
-        <Oui.InputGroupAddon align="inline-end">
-          <Spinner />
-        </Oui.InputGroupAddon>
-      </Oui.InputGroup>
-      <Oui.InputGroup data-disabled>
-        <Oui.InputGroupInput placeholder="Processing..." disabled />
-        <Oui.InputGroupAddon>
-          <Spinner />
-        </Oui.InputGroupAddon>
-      </Oui.InputGroup>
-      <Oui.InputGroup data-disabled>
-        <Oui.InputGroupInput placeholder="Saving changes..." disabled />
-        <Oui.InputGroupAddon align="inline-end">
-          <Oui.InputGroupText>Saving...</Oui.InputGroupText>
-          <Spinner />
-        </Oui.InputGroupAddon>
-      </Oui.InputGroup>
-      <Oui.InputGroup data-disabled>
-        <Oui.InputGroupInput placeholder="Refreshing data..." disabled />
-        <Oui.InputGroupAddon>
-          <LoaderIcon className="animate-spin" />
-        </Oui.InputGroupAddon>
-        <Oui.InputGroupAddon align="inline-end">
-          <Oui.InputGroupText className="text-muted-foreground">
-            Please wait...
-          </Oui.InputGroupText>
-        </Oui.InputGroupAddon>
-      </Oui.InputGroup>
+      <Oui.TextField isDisabled>
+        <Oui.InputGroup>
+          <Oui.InputGroupInput placeholder="Searching..." />
+          <Oui.InputGroupAddon align="inline-end">
+            <Spinner />
+          </Oui.InputGroupAddon>
+        </Oui.InputGroup>
+      </Oui.TextField>
+      <Oui.TextField isDisabled>
+        <Oui.InputGroup>
+          <Oui.InputGroupInput placeholder="Processing..." />
+          <Oui.InputGroupAddon>
+            <Spinner />
+          </Oui.InputGroupAddon>
+        </Oui.InputGroup>
+      </Oui.TextField>
+      <Oui.TextField isDisabled>
+        <Oui.InputGroup>
+          <Oui.InputGroupInput placeholder="Saving changes..." />
+          <Oui.InputGroupAddon align="inline-end">
+            <Oui.InputGroupText>Saving...</Oui.InputGroupText>
+            <Spinner />
+          </Oui.InputGroupAddon>
+        </Oui.InputGroup>
+      </Oui.TextField>
+      <Oui.TextField isDisabled>
+        <Oui.InputGroup>
+          <Oui.InputGroupInput placeholder="Refreshing data..." />
+          <Oui.InputGroupAddon>
+            <LoaderIcon className="animate-spin" />
+          </Oui.InputGroupAddon>
+          <Oui.InputGroupAddon align="inline-end">
+            <Oui.InputGroupText className="text-muted-foreground">
+              Please wait...
+            </Oui.InputGroupText>
+          </Oui.InputGroupAddon>
+        </Oui.InputGroup>
+      </Oui.TextField>
     </div>
   );
 }
