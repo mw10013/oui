@@ -578,7 +578,7 @@ export function OuiInputGroupTextareaExample() {
           <Oui.InputGroupButton className="ml-auto" size="icon-xs">
             <IconRefresh />
           </Oui.InputGroupButton>
-          <Oui.InputGroupButton variant="ghost" size="icon-xs">
+          <Oui.InputGroupButton size="icon-xs">
             <IconCopy />
           </Oui.InputGroupButton>
         </Oui.InputGroupAddon>
@@ -627,7 +627,7 @@ export function InputGroupSpinner() {
 export function OuiInputGroupSpinner() {
   return (
     <div className="grid w-full max-w-sm gap-4">
-      <Oui.InputGroup data-disabled>
+      <Oui.InputGroup isDisabled>
         <Oui.InputGroupInput placeholder="Searching..." disabled />
         <Oui.InputGroupAddon align="inline-end">
           <Spinner />

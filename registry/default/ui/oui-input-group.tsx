@@ -5,7 +5,7 @@ import {
   InputGroupAddon,
   InputGroupText,
 } from "@/registry/default/ui/input-group";
-import { Button, buttonVariants } from "@/registry/default/ui/oui-button";
+import { Button } from "@/registry/default/ui/oui-button";
 import { Input } from "@/registry/default/ui/oui-input";
 import { TextArea } from "@/registry/default/ui/oui-text-area";
 import { cva } from "class-variance-authority";
@@ -56,14 +56,13 @@ const inputGroupButtonVariants = cva(
 );
 
 export function InputGroupButton({
-  className,
   type = "button",
   variant = "ghost",
   size = "xs",
+  className,
   ...props
-}: Omit<Rac.ButtonProps, "size"> &
-  VariantProps<typeof inputGroupButtonVariants> &
-  Pick<VariantProps<typeof buttonVariants>, "variant">) {
+}: Omit<React.ComponentProps<typeof Button>, "size"> &
+  VariantProps<typeof inputGroupButtonVariants>) {
   return (
     <Button
       type={type}
@@ -77,7 +76,7 @@ export function InputGroupButton({
   );
 }
 
-export function InputGroupInput({ className, ...props }: Rac.InputProps) {
+export function InputGroupInput({ className, ...props }: React.ComponentProps<typeof Input>) {
   return (
     <Input
       data-slot="input-group-control"

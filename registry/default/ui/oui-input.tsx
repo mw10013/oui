@@ -1,6 +1,7 @@
 "use client";
 
 import type { VariantProps } from "class-variance-authority";
+import * as React from "react";
 import {
   composeTailwindRenderProps,
   focusVisibleStyles,
@@ -37,11 +38,12 @@ export const inputVariants = cva(
   },
 );
 
-export interface InputProps
-  extends Rac.InputProps,
-    VariantProps<typeof inputVariants> {}
-
-export function Input({ variant, className, ...props }: InputProps) {
+export function Input({
+  variant,
+  className,
+  ...props
+}: React.ComponentProps<typeof Rac.Input> &
+  VariantProps<typeof inputVariants>) {
   return (
     <Rac.Input
       data-slot="input"
