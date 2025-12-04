@@ -352,7 +352,7 @@ export function OuiInputGroupButtonExample() {
           <Oui.InputGroupButton
             aria-label="Copy"
             size="icon-xs"
-            onClick={() => {
+            onPress={() => {
               void copy("https://x.com/shadcn");
             }}
           >
@@ -367,15 +367,18 @@ export function OuiInputGroupButtonExample() {
               <IconInfoCircle />
             </Oui.InputGroupButton>
           </Oui.InputGroupAddon>
-          <Oui.Tooltip>This is content in a tooltip.</Oui.Tooltip>
+          <Oui.Tooltip className="flex flex-col gap-1 rounded-xl text-sm">
+            <p className="font-medium">Your connection is not secure.</p>
+            <p>You should not enter any sensitive information on this site.</p>
+          </Oui.Tooltip>
         </Rac.TooltipTrigger>
         <Oui.InputGroupAddon className="pl-1.5 text-muted-foreground">
           https://
         </Oui.InputGroupAddon>
-        <Oui.InputGroupInput id="input-secure-19" />
+        <Oui.InputGroupInput />
         <Oui.InputGroupAddon align="inline-end">
           <Oui.InputGroupButton
-            onClick={() => {
+            onPress={() => {
               setIsFavorite(!isFavorite);
             }}
             size="icon-xs"
