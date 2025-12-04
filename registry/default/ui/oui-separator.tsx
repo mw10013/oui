@@ -41,13 +41,14 @@ export interface SeparatorProps
  * Derived from shadcn Separator and DropdownMenuSeparator
  */
 export function Separator({
-  className,
   variant,
   orientation,
+  className,
   ...props
 }: SeparatorProps) {
   return (
     <Rac.Separator
+      data-slot="separator"
       orientation={orientation}
       className={twMerge(
         separatorVariants({

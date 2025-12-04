@@ -4,9 +4,8 @@ import type { Selection } from "react-aria-components";
 import * as React from "react";
 import { Button } from "@/registry/default/ui/oui-button";
 import { Header } from "@/registry/default/ui/oui-header";
-import { Menu, MenuItem } from "@/registry/default/ui/oui-menu";
+import { Menu, MenuItem, MenuSeparator } from "@/registry/default/ui/oui-menu";
 import { Popover } from "@/registry/default/ui/oui-popover";
-import { Separator } from "@/registry/default/ui/oui-separator";
 import {
   CreditCardIcon,
   LogOutIcon,
@@ -36,7 +35,7 @@ export default function Component() {
               <Settings2Icon className="mr-2 size-4" /> Settings
             </MenuItem>
           </Rac.MenuSection>
-          <Separator variant="menu" />
+          <MenuSeparator />
           <Rac.MenuSection
             selectionMode="multiple"
             selectedKeys={appearanceSelectedKeys}
@@ -49,7 +48,7 @@ export default function Component() {
             </MenuItem>
             <MenuItem id="panel">Panel</MenuItem>
           </Rac.MenuSection>
-          <Separator variant="menu" />
+          <MenuSeparator />
           <Rac.MenuSection>
             <MenuItem id="signOut" textValue="Sign Out">
               <LogOutIcon className="mr-2 size-4" /> Sign Out

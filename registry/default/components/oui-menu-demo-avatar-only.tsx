@@ -6,9 +6,8 @@ import {
   AvatarImage,
 } from "@/registry/default/ui/avatar";
 import { Button } from "@/registry/default/ui/oui-button";
-import { Menu, MenuItem } from "@/registry/default/ui/oui-menu";
+import { Menu, MenuItem, MenuSeparator } from "@/registry/default/ui/oui-menu";
 import { Popover } from "@/registry/default/ui/oui-popover";
-import { Separator } from "@/registry/default/ui/oui-separator";
 import {
   BadgeCheckIcon,
   BellIcon,
@@ -48,14 +47,14 @@ export default function Component() {
               </div>
             </Rac.Header>
           </Rac.MenuSection>
-          <Separator variant="menu" />
+          <MenuSeparator />
           <Rac.MenuSection>
             <MenuItem id="upgradeAvatarOnly" textValue="Upgrade to Pro">
               <SparklesIcon className="mr-2 size-4" />
               Upgrade to Pro
             </MenuItem>
           </Rac.MenuSection>
-          <Separator variant="menu" />
+          <MenuSeparator />
           <Rac.MenuSection>
             <MenuItem id="accountAvatarOnly" textValue="Account">
               <BadgeCheckIcon className="mr-2 size-4" />
@@ -70,7 +69,7 @@ export default function Component() {
               Notifications
             </MenuItem>
           </Rac.MenuSection>
-          <Separator variant="menu" />
+          <MenuSeparator />
           <MenuItem id="signOutAvatarOnly" textValue="Sign Out">
             <LogOut className="mr-2 size-4" />
             Sign Out

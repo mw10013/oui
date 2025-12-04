@@ -1,9 +1,8 @@
 "use client";
 
 import { Button } from "@/registry/default/ui/oui-button";
-import { Menu, MenuItem } from "@/registry/default/ui/oui-menu";
+import { Menu, MenuItem, MenuSeparator } from "@/registry/default/ui/oui-menu";
 import { Popover } from "@/registry/default/ui/oui-popover";
-import { Separator } from "@/registry/default/ui/oui-separator";
 import {
   MoreHorizontalIcon,
   PencilIcon,
@@ -28,7 +27,7 @@ export default function Component() {
             <ShareIcon className="mr-2 size-4 text-muted-foreground" />
             Share
           </MenuItem>
-          <Separator variant="menu" />
+          <MenuSeparator />
           <MenuItem
             id="deleteIconColor"
             textValue="Delete"

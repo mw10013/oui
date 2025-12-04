@@ -48,7 +48,7 @@ export function AppSidebar() {
                   user@example.com
                 </Rac.Header>
               </Rac.MenuSection>
-              <Oui.Separator variant="menu" />
+              <Oui.MenuSeparator />
               <Oui.MenuItem id="signOut" textValue="Sign Out">
                 <LogOut className="mr-2 size-4" />
                 Sign Out

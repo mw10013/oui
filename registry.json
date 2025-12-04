@@ -1709,11 +1709,10 @@
         "@oui/oui-header",
         "@oui/oui-keyboard",
         "@oui/oui-menu",
-        "@oui/oui-popover",
-        "@oui/oui-separator"
+        "@oui/oui-popover"
       ],
       "meta": {
-        "tags": ["menu", "keyboard", "popover", "header", "separator"],
+        "tags": ["menu", "keyboard", "popover", "header"],
         "canPreview": true,
         "canOpenInV0": true
       }
@@ -1731,12 +1730,11 @@
         "@oui/oui-button",
         "@oui/oui-header",
         "@oui/oui-menu",
-        "@oui/oui-popover",
-        "@oui/oui-separator"
+        "@oui/oui-popover"
       ],
       "dependencies": ["lucide-react"],
       "meta": {
-        "tags": ["menu", "header", "separator"],
+        "tags": ["menu", "header"],
         "canPreview": true,
         "canOpenInV0": true
       }
@@ -1775,12 +1773,11 @@
         "avatar",
         "@oui/oui-button",
         "@oui/oui-menu",
-        "@oui/oui-separator",
         "@oui/oui-popover"
       ],
       "dependencies": ["lucide-react"],
       "meta": {
-        "tags": ["menu", "avatar", "separator"],
+        "tags": ["menu", "avatar"],
         "canPreview": true,
         "canOpenInV0": true
       }
@@ -1798,7 +1795,6 @@
         "avatar",
         "@oui/oui-button",
         "@oui/oui-menu",
-        "@oui/oui-separator",
         "@oui/oui-popover"
       ],
       "dependencies": ["lucide-react"],
@@ -1820,13 +1816,11 @@
       "registryDependencies": [
         "@oui/oui-button",
         "@oui/oui-menu",
-        "@oui/oui-menu-ex",
-        "@oui/oui-separator",
         "@oui/oui-popover"
       ],
       "dependencies": ["lucide-react"],
       "meta": {
-        "tags": ["menu", "separator", "icon"],
+        "tags": ["menu", "icon"],
         "canPreview": true,
         "canOpenInV0": true
       }
@@ -2398,14 +2392,12 @@
       "registryDependencies": [
         "@oui/oui-button",
         "@oui/oui-checkbox",
-        "@oui/oui-menu-ex",
         "@oui/oui-menu",
-        "@oui/oui-separator",
         "@oui/oui-table"
       ],
       "dependencies": ["lucide-react"],
       "meta": {
-        "tags": ["table", "menu", "menu-ex", "separator", "checkbox"],
+        "tags": ["table", "menu", "checkbox"],
         "canPreview": true,
         "width": "wide",
         "canOpenInV0": true

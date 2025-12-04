@@ -3,9 +3,8 @@
 import { Button } from "@/registry/default/ui/oui-button";
 import { Header } from "@/registry/default/ui/oui-header";
 import { Keyboard } from "@/registry/default/ui/oui-keyboard";
-import { Menu, MenuItem } from "@/registry/default/ui/oui-menu";
+import { Menu, MenuItem, MenuSeparator } from "@/registry/default/ui/oui-menu";
 import { Popover } from "@/registry/default/ui/oui-popover";
-import { Separator } from "@/registry/default/ui/oui-separator";
 import * as Rac from "react-aria-components";
 
 export default function Component() {
@@ -33,7 +32,7 @@ export default function Component() {
               <Keyboard>⌘K</Keyboard>
             </MenuItem>
           </Rac.MenuSection>
-          <Separator variant="menu" />
+          <MenuSeparator />
           <Rac.MenuSection>
             <MenuItem id="team">Team</MenuItem>
             <Rac.SubmenuTrigger>
@@ -42,7 +41,7 @@ export default function Component() {
                 <Menu>
                   <MenuItem id="email">Email</MenuItem>
                   <MenuItem id="message">Message</MenuItem>
-                  <Separator variant="menu" />
+                  <MenuSeparator />
                   <MenuItem id="more">More...</MenuItem>
                 </Menu>
               </Popover>
@@ -52,7 +51,7 @@ export default function Component() {
               <Keyboard>⌘+T</Keyboard>
             </MenuItem>
           </Rac.MenuSection>
-          <Separator variant="menu" />
+          <MenuSeparator />
           <Rac.MenuSection>
             <MenuItem id="github">GitHub</MenuItem>
             <MenuItem id="support">Support</MenuItem>
@@ -60,7 +59,7 @@ export default function Component() {
               API
             </MenuItem>
           </Rac.MenuSection>
-          <Separator variant="menu" />
+          <MenuSeparator />
           <MenuItem id="logout">
             Log out
             <Keyboard>⇧⌘Q</Keyboard>

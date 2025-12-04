@@ -3,9 +3,8 @@
 import * as React from "react";
 import { Button } from "@/registry/default/ui/oui-button";
 import { Checkbox } from "@/registry/default/ui/oui-checkbox";
-import { Menu, MenuItem } from "@/registry/default/ui/oui-menu";
+import { Menu, MenuItem, MenuSeparator } from "@/registry/default/ui/oui-menu";
 import { Popover } from "@/registry/default/ui/oui-popover";
-import { Separator } from "@/registry/default/ui/oui-separator";
 import {
   Cell,
   Column,
@@ -146,7 +145,7 @@ export default function Component() {
                     }}
                   >
                     <MenuItem id="copyId">Copy payment ID</MenuItem>
-                    <Separator variant="menu" />
+                    <MenuSeparator />
                     <MenuItem id="viewCustomer">View customer</MenuItem>
                     <MenuItem id="viewDetails">View payment details</MenuItem>
                   </Menu>

@@ -167,7 +167,7 @@ export function OuiButtonGroupDemo() {
                 <ArchiveIcon />
                 Archive
               </Oui.MenuItem>
-              <Oui.Separator />
+              <Oui.MenuSeparator />
               <Oui.MenuItem>
                 <ClockIcon />
                 Snooze
@@ -199,7 +199,7 @@ export function OuiButtonGroupDemo() {
                   </Oui.Menu>
                 </Oui.Popover>
               </Rac.SubmenuTrigger>
-              <Oui.Separator />
+              <Oui.MenuSeparator />
               <Oui.MenuItem variant="destructive">
                 <Trash2Icon />
                 Trash
