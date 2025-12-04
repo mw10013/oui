@@ -33,13 +33,14 @@ export function TextArea({
 }: ComponentProps<typeof Rac.TextArea>) {
   return (
     <Rac.TextArea
-      {...props}
-      className={composeTailwindRenderProps(className, [
-        focusVisibleStyles,
-        "flex field-sizing-content min-h-16 w-full rounded-md border border-input bg-transparent px-3 py-2 text-base shadow-xs transition-[color,box-shadow] placeholder:text-muted-foreground md:text-sm dark:bg-input/30",
-        "data-invalid:border-destructive data-invalid:ring-destructive/20 dark:data-invalid:ring-destructive/40",
-        "data-disabled:cursor-not-allowed data-disabled:opacity-50",
-      ])}
+    data-slot="text-area"
+    className={composeTailwindRenderProps(className, [
+      focusVisibleStyles,
+      "flex field-sizing-content min-h-16 w-full rounded-md border border-input bg-transparent px-3 py-2 text-base shadow-xs transition-[color,box-shadow] placeholder:text-muted-foreground md:text-sm dark:bg-input/30",
+      "data-invalid:border-destructive data-invalid:ring-destructive/20 dark:data-invalid:ring-destructive/40",
+      "data-disabled:cursor-not-allowed data-disabled:opacity-50",
+    ])}
+    {...props}
     />
   );
 }

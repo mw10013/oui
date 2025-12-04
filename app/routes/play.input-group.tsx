@@ -720,9 +720,7 @@ export function OuiInputGroupLabel() {
         <Oui.InputGroup>
           <Oui.InputGroupInput placeholder="shadcn@vercel.com" />
           <Oui.InputGroupAddon align="block-start">
-            <Oui.FieldLabel className="text-foreground">
-              Email
-            </Oui.FieldLabel>
+            <Oui.FieldLabel className="text-foreground">Email</Oui.FieldLabel>
             <Rac.TooltipTrigger>
               <Oui.InputGroupButton
                 variant="ghost"
@@ -802,7 +800,7 @@ export function OuiInputGroupDropdown() {
             >
               <MoreHorizontal />
             </Oui.InputGroupButton>
-            <Oui.Popover>
+            <Oui.Popover placement="bottom end">
               <Oui.Menu>
                 <Oui.MenuItem>Settings</Oui.MenuItem>
                 <Oui.MenuItem>Copy path</Oui.MenuItem>
@@ -819,7 +817,7 @@ export function OuiInputGroupDropdown() {
             <Oui.InputGroupButton variant="ghost" className="pr-1.5! text-xs">
               Search In... <ChevronDownIcon className="size-3" />
             </Oui.InputGroupButton>
-            <Oui.Popover>
+            <Oui.Popover placement="bottom end" className="[--radius:0.95rem]">
               <Oui.Menu>
                 <Oui.MenuItem>Documentation</Oui.MenuItem>
                 <Oui.MenuItem>Blog Posts</Oui.MenuItem>
