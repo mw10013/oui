@@ -277,309 +277,6 @@ export function OuiInputGroupTextExample() {
   );
 }
 
-export function OuiInputGroupButtonExample() {
-  const { copied, copy } = useCopy();
-  const [isFavorite, setIsFavorite] = React.useState(false);
-
-  return (
-    <div className="grid w-full max-w-sm gap-6">
-      <Oui.InputGroup>
-        <Oui.InputGroupInput placeholder="https://x.com/shadcn" readOnly />
-        <Oui.InputGroupAddon align="inline-end">
-          <Oui.InputGroupButton
-            aria-label="Copy"
-            size="icon-xs"
-            onClick={() => {
-              void copy("https://x.com/shadcn");
-            }}
-          >
-            {copied ? <IconCheck /> : <IconCopy />}
-          </Oui.InputGroupButton>
-        </Oui.InputGroupAddon>
-      </Oui.InputGroup>
-      <Oui.InputGroup className="[--radius:9999px]">
-        <Rac.TooltipTrigger>
-          <Oui.InputGroupAddon>
-            <Oui.InputGroupButton variant="secondary" size="icon-xs">
-              <IconInfoCircle />
-            </Oui.InputGroupButton>
-          </Oui.InputGroupAddon>
-          <Oui.Tooltip>This is content in a tooltip.</Oui.Tooltip>
-        </Rac.TooltipTrigger>
-        <Oui.InputGroupAddon className="pl-1.5 text-muted-foreground">
-          https://
-        </Oui.InputGroupAddon>
-        <Oui.InputGroupInput id="input-secure-19" />
-        <Oui.InputGroupAddon align="inline-end">
-          <Oui.InputGroupButton
-            onClick={() => {
-              setIsFavorite(!isFavorite);
-            }}
-            size="icon-xs"
-          >
-            <IconStar
-              data-favorite={isFavorite}
-              className="data-[favorite=true]:fill-blue-600 data-[favorite=true]:stroke-blue-600"
-            />
-          </Oui.InputGroupButton>
-        </Oui.InputGroupAddon>
-      </Oui.InputGroup>
-      <Oui.InputGroup>
-        <Oui.InputGroupInput placeholder="Type to search..." />
-        <Oui.InputGroupAddon align="inline-end">
-          <Oui.InputGroupButton variant="secondary">
-            Search
-          </Oui.InputGroupButton>
-        </Oui.InputGroupAddon>
-      </Oui.InputGroup>
-    </div>
-  );
-}
-
-export function OuiInputGroupTooltip() {
-  return (
-    <div className="grid w-full max-w-sm gap-4">
-      <Oui.InputGroup>
-        <Oui.InputGroupInput placeholder="Enter password" type="password" />
-        <Oui.InputGroupAddon align="inline-end">
-          <Rac.TooltipTrigger>
-            <Oui.InputGroupButton
-              variant="ghost"
-              aria-label="Info"
-              size="icon-xs"
-            >
-              <IconInfoCircle />
-            </Oui.InputGroupButton>
-            <Oui.Tooltip>
-              <p>Password must be at least 8 characters</p>
-            </Oui.Tooltip>
-          </Rac.TooltipTrigger>
-        </Oui.InputGroupAddon>
-      </Oui.InputGroup>
-      <Oui.InputGroup>
-        <Oui.InputGroupInput placeholder="Your email address" />
-        <Oui.InputGroupAddon align="inline-end">
-          <Rac.TooltipTrigger>
-            <Oui.InputGroupButton
-              variant="ghost"
-              aria-label="Help"
-              size="icon-xs"
-            >
-              <HelpCircle />
-            </Oui.InputGroupButton>
-            <Oui.Tooltip>
-              <p>We'll use this to send you notifications</p>
-            </Oui.Tooltip>
-          </Rac.TooltipTrigger>
-        </Oui.InputGroupAddon>
-      </Oui.InputGroup>
-      <Oui.InputGroup>
-        <Oui.InputGroupInput placeholder="Enter API key" />
-        <Rac.TooltipTrigger>
-          <Oui.InputGroupAddon>
-            <Oui.InputGroupButton
-              variant="ghost"
-              aria-label="Help"
-              size="icon-xs"
-            >
-              <HelpCircle />
-            </Oui.InputGroupButton>
-          </Oui.InputGroupAddon>
-          <Oui.Tooltip>
-            <p>Click for help with API keys</p>
-          </Oui.Tooltip>
-        </Rac.TooltipTrigger>
-      </Oui.InputGroup>
-    </div>
-  );
-}
-
-export function OuiInputGroupTextareaExample() {
-  return (
-    <div className="grid w-full max-w-md gap-4">
-      <Oui.InputGroup>
-        <Oui.InputGroupTextArea
-          id="textarea-code-32"
-          placeholder="console.log('Hello, world!');"
-          className="min-h-[200px]"
-        />
-        <Oui.InputGroupAddon align="block-end" className="border-t">
-          <Oui.InputGroupText>Line 1, Column 1</Oui.InputGroupText>
-          <Oui.InputGroupButton size="sm" className="ml-auto" variant="default">
-            Run <IconCornerDownLeft />
-          </Oui.InputGroupButton>
-        </Oui.InputGroupAddon>
-        <Oui.InputGroupAddon align="block-start" className="border-b">
-          <Oui.InputGroupText className="font-mono font-medium">
-            <IconBrandJavascript />
-            script.js
-          </Oui.InputGroupText>
-          <Oui.InputGroupButton className="ml-auto" size="icon-xs">
-            <IconRefresh />
-          </Oui.InputGroupButton>
-          <Oui.InputGroupButton variant="ghost" size="icon-xs">
-            <IconCopy />
-          </Oui.InputGroupButton>
-        </Oui.InputGroupAddon>
-      </Oui.InputGroup>
-    </div>
-  );
-}
-
-export function OuiInputGroupSpinner() {
-  return (
-    <div className="grid w-full max-w-sm gap-4">
-      <Oui.InputGroup data-disabled>
-        <Oui.InputGroupInput placeholder="Searching..." disabled />
-        <Oui.InputGroupAddon align="inline-end">
-          <Spinner />
-        </Oui.InputGroupAddon>
-      </Oui.InputGroup>
-      <Oui.InputGroup data-disabled>
-        <Oui.InputGroupInput placeholder="Processing..." disabled />
-        <Oui.InputGroupAddon>
-          <Spinner />
-        </Oui.InputGroupAddon>
-      </Oui.InputGroup>
-      <Oui.InputGroup data-disabled>
-        <Oui.InputGroupInput placeholder="Saving changes..." disabled />
-        <Oui.InputGroupAddon align="inline-end">
-          <Oui.InputGroupText>Saving...</Oui.InputGroupText>
-          <Spinner />
-        </Oui.InputGroupAddon>
-      </Oui.InputGroup>
-      <Oui.InputGroup data-disabled>
-        <Oui.InputGroupInput placeholder="Refreshing data..." disabled />
-        <Oui.InputGroupAddon>
-          <LoaderIcon className="animate-spin" />
-        </Oui.InputGroupAddon>
-        <Oui.InputGroupAddon align="inline-end">
-          <Oui.InputGroupText className="text-muted-foreground">
-            Please wait...
-          </Oui.InputGroupText>
-        </Oui.InputGroupAddon>
-      </Oui.InputGroup>
-    </div>
-  );
-}
-
-export function OuiInputGroupLabel() {
-  return (
-    <div className="grid w-full max-w-sm gap-4">
-      <Oui.InputGroup>
-        <Oui.InputGroupInput id="email" placeholder="shadcn" />
-        <Oui.InputGroupAddon>
-          <Oui.Label htmlFor="email">@</Oui.Label>
-        </Oui.InputGroupAddon>
-      </Oui.InputGroup>
-      <Oui.InputGroup>
-        <Oui.InputGroupInput id="email-2" placeholder="shadcn@vercel.com" />
-        <Oui.InputGroupAddon align="block-start">
-          <Oui.Label htmlFor="email-2" className="text-foreground">
-            Email
-          </Oui.Label>
-          <Rac.TooltipTrigger>
-            <Oui.InputGroupButton
-              variant="ghost"
-              aria-label="Help"
-              className="ml-auto rounded-full"
-              size="icon-xs"
-            >
-              <IconInfoCircle />
-            </Oui.InputGroupButton>
-            <Oui.Tooltip>
-              <p>We'll use this to send you notifications</p>
-            </Oui.Tooltip>
-          </Rac.TooltipTrigger>
-        </Oui.InputGroupAddon>
-      </Oui.InputGroup>
-    </div>
-  );
-}
-
-export function OuiInputGroupDropdown() {
-  return (
-    <div className="grid w-full max-w-sm gap-4">
-      <Oui.InputGroup>
-        <Oui.InputGroupInput placeholder="Enter file name" />
-        <Oui.InputGroupAddon align="inline-end">
-          <Rac.MenuTrigger>
-            <Oui.InputGroupButton
-              variant="ghost"
-              aria-label="More"
-              size="icon-xs"
-            >
-              <MoreHorizontal />
-            </Oui.InputGroupButton>
-            <Oui.Popover>
-              <Oui.Menu>
-                <Oui.MenuItem>Settings</Oui.MenuItem>
-                <Oui.MenuItem>Copy path</Oui.MenuItem>
-                <Oui.MenuItem>Open location</Oui.MenuItem>
-              </Oui.Menu>
-            </Oui.Popover>
-          </Rac.MenuTrigger>
-        </Oui.InputGroupAddon>
-      </Oui.InputGroup>
-      <Oui.InputGroup className="[--radius:1rem]">
-        <Oui.InputGroupInput placeholder="Enter search query" />
-        <Oui.InputGroupAddon align="inline-end">
-          <Rac.MenuTrigger>
-            <Oui.InputGroupButton variant="ghost" className="pr-1.5! text-xs">
-              Search In... <ChevronDownIcon className="size-3" />
-            </Oui.InputGroupButton>
-            <Oui.Popover>
-              <Oui.Menu>
-                <Oui.MenuItem>Documentation</Oui.MenuItem>
-                <Oui.MenuItem>Blog Posts</Oui.MenuItem>
-                <Oui.MenuItem>Changelog</Oui.MenuItem>
-              </Oui.Menu>
-            </Oui.Popover>
-          </Rac.MenuTrigger>
-        </Oui.InputGroupAddon>
-      </Oui.InputGroup>
-    </div>
-  );
-}
-
-export function OuiInputGroupButtonGroup() {
-  return (
-    <div className="grid w-full max-w-sm gap-6">
-      <ButtonGroup>
-        <ButtonGroupText asChild>
-          <Oui.Label htmlFor="url">https://</Oui.Label>
-        </ButtonGroupText>
-        <Oui.InputGroup>
-          <Oui.InputGroupInput id="url" />
-          <Oui.InputGroupAddon align="inline-end">
-            <Link2Icon />
-          </Oui.InputGroupAddon>
-        </Oui.InputGroup>
-        <ButtonGroupText>.com</ButtonGroupText>
-      </ButtonGroup>
-    </div>
-  );
-}
-
-export function OuiInputGroupCustom() {
-  return (
-    <div className="grid w-full max-w-sm gap-6">
-      <Oui.InputGroup>
-        <Oui.InputGroupTextArea
-          data-slot="input-group-control"
-          className="flex field-sizing-content min-h-16 w-full resize-none rounded-md bg-transparent px-3 py-2.5 text-base transition-[color,box-shadow] outline-none md:text-sm"
-          placeholder="Autoresize textarea..."
-        />
-        <Oui.InputGroupAddon align="block-end">
-          <Oui.InputGroupButton className="ml-auto" size="sm" variant="default">
-            Submit
-          </Oui.InputGroupButton>
-        </Oui.InputGroupAddon>
-      </Oui.InputGroup>
-    </div>
-  );
-}
-
 export function InputGroupButtonExample() {
   const { copied, copy } = useCopy();
   const [isFavorite, setIsFavorite] = React.useState(false);
@@ -639,6 +336,65 @@ export function InputGroupButtonExample() {
           <InputGroupButton variant="secondary">Search</InputGroupButton>
         </InputGroupAddon>
       </InputGroup>
+    </div>
+  );
+}
+
+export function OuiInputGroupButtonExample() {
+  const { copied, copy } = useCopy();
+  const [isFavorite, setIsFavorite] = React.useState(false);
+
+  return (
+    <div className="grid w-full max-w-sm gap-6">
+      <Oui.InputGroup>
+        <Oui.InputGroupInput placeholder="https://x.com/shadcn" readOnly />
+        <Oui.InputGroupAddon align="inline-end">
+          <Oui.InputGroupButton
+            aria-label="Copy"
+            size="icon-xs"
+            onClick={() => {
+              void copy("https://x.com/shadcn");
+            }}
+          >
+            {copied ? <IconCheck /> : <IconCopy />}
+          </Oui.InputGroupButton>
+        </Oui.InputGroupAddon>
+      </Oui.InputGroup>
+      <Oui.InputGroup className="[--radius:9999px]">
+        <Rac.TooltipTrigger>
+          <Oui.InputGroupAddon>
+            <Oui.InputGroupButton variant="secondary" size="icon-xs">
+              <IconInfoCircle />
+            </Oui.InputGroupButton>
+          </Oui.InputGroupAddon>
+          <Oui.Tooltip>This is content in a tooltip.</Oui.Tooltip>
+        </Rac.TooltipTrigger>
+        <Oui.InputGroupAddon className="pl-1.5 text-muted-foreground">
+          https://
+        </Oui.InputGroupAddon>
+        <Oui.InputGroupInput id="input-secure-19" />
+        <Oui.InputGroupAddon align="inline-end">
+          <Oui.InputGroupButton
+            onClick={() => {
+              setIsFavorite(!isFavorite);
+            }}
+            size="icon-xs"
+          >
+            <IconStar
+              data-favorite={isFavorite}
+              className="data-[favorite=true]:fill-blue-600 data-[favorite=true]:stroke-blue-600"
+            />
+          </Oui.InputGroupButton>
+        </Oui.InputGroupAddon>
+      </Oui.InputGroup>
+      <Oui.InputGroup>
+        <Oui.InputGroupInput placeholder="Type to search..." />
+        <Oui.InputGroupAddon align="inline-end">
+          <Oui.InputGroupButton variant="secondary">
+            Search
+          </Oui.InputGroupButton>
+        </Oui.InputGroupAddon>
+      </Oui.InputGroup>
     </div>
   );
 }
@@ -707,6 +463,64 @@ export function InputGroupTooltip() {
   );
 }
 
+export function OuiInputGroupTooltip() {
+  return (
+    <div className="grid w-full max-w-sm gap-4">
+      <Oui.InputGroup>
+        <Oui.InputGroupInput placeholder="Enter password" type="password" />
+        <Oui.InputGroupAddon align="inline-end">
+          <Rac.TooltipTrigger>
+            <Oui.InputGroupButton
+              variant="ghost"
+              aria-label="Info"
+              size="icon-xs"
+            >
+              <IconInfoCircle />
+            </Oui.InputGroupButton>
+            <Oui.Tooltip>
+              <p>Password must be at least 8 characters</p>
+            </Oui.Tooltip>
+          </Rac.TooltipTrigger>
+        </Oui.InputGroupAddon>
+      </Oui.InputGroup>
+      <Oui.InputGroup>
+        <Oui.InputGroupInput placeholder="Your email address" />
+        <Oui.InputGroupAddon align="inline-end">
+          <Rac.TooltipTrigger>
+            <Oui.InputGroupButton
+              variant="ghost"
+              aria-label="Help"
+              size="icon-xs"
+            >
+              <HelpCircle />
+            </Oui.InputGroupButton>
+            <Oui.Tooltip>
+              <p>We'll use this to send you notifications</p>
+            </Oui.Tooltip>
+          </Rac.TooltipTrigger>
+        </Oui.InputGroupAddon>
+      </Oui.InputGroup>
+      <Oui.InputGroup>
+        <Oui.InputGroupInput placeholder="Enter API key" />
+        <Rac.TooltipTrigger>
+          <Oui.InputGroupAddon>
+            <Oui.InputGroupButton
+              variant="ghost"
+              aria-label="Help"
+              size="icon-xs"
+            >
+              <HelpCircle />
+            </Oui.InputGroupButton>
+          </Oui.InputGroupAddon>
+          <Oui.Tooltip>
+            <p>Click for help with API keys</p>
+          </Oui.Tooltip>
+        </Rac.TooltipTrigger>
+      </Oui.InputGroup>
+    </div>
+  );
+}
+
 export function InputGroupTextareaExample() {
   return (
     <div className="grid w-full max-w-md gap-4">
@@ -735,6 +549,38 @@ export function InputGroupTextareaExample() {
           </InputGroupButton>
         </InputGroupAddon>
       </InputGroup>
+    </div>
+  );
+}
+
+export function OuiInputGroupTextareaExample() {
+  return (
+    <div className="grid w-full max-w-md gap-4">
+      <Oui.InputGroup>
+        <Oui.InputGroupTextArea
+          id="textarea-code-32"
+          placeholder="console.log('Hello, world!');"
+          className="min-h-[200px]"
+        />
+        <Oui.InputGroupAddon align="block-end" className="border-t">
+          <Oui.InputGroupText>Line 1, Column 1</Oui.InputGroupText>
+          <Oui.InputGroupButton size="sm" className="ml-auto" variant="default">
+            Run <IconCornerDownLeft />
+          </Oui.InputGroupButton>
+        </Oui.InputGroupAddon>
+        <Oui.InputGroupAddon align="block-start" className="border-b">
+          <Oui.InputGroupText className="font-mono font-medium">
+            <IconBrandJavascript />
+            script.js
+          </Oui.InputGroupText>
+          <Oui.InputGroupButton className="ml-auto" size="icon-xs">
+            <IconRefresh />
+          </Oui.InputGroupButton>
+          <Oui.InputGroupButton variant="ghost" size="icon-xs">
+            <IconCopy />
+          </Oui.InputGroupButton>
+        </Oui.InputGroupAddon>
+      </Oui.InputGroup>
     </div>
   );
 }
@@ -776,6 +622,43 @@ export function InputGroupSpinner() {
   );
 }
 
+export function OuiInputGroupSpinner() {
+  return (
+    <div className="grid w-full max-w-sm gap-4">
+      <Oui.InputGroup data-disabled>
+        <Oui.InputGroupInput placeholder="Searching..." disabled />
+        <Oui.InputGroupAddon align="inline-end">
+          <Spinner />
+        </Oui.InputGroupAddon>
+      </Oui.InputGroup>
+      <Oui.InputGroup data-disabled>
+        <Oui.InputGroupInput placeholder="Processing..." disabled />
+        <Oui.InputGroupAddon>
+          <Spinner />
+        </Oui.InputGroupAddon>
+      </Oui.InputGroup>
+      <Oui.InputGroup data-disabled>
+        <Oui.InputGroupInput placeholder="Saving changes..." disabled />
+        <Oui.InputGroupAddon align="inline-end">
+          <Oui.InputGroupText>Saving...</Oui.InputGroupText>
+          <Spinner />
+        </Oui.InputGroupAddon>
+      </Oui.InputGroup>
+      <Oui.InputGroup data-disabled>
+        <Oui.InputGroupInput placeholder="Refreshing data..." disabled />
+        <Oui.InputGroupAddon>
+          <LoaderIcon className="animate-spin" />
+        </Oui.InputGroupAddon>
+        <Oui.InputGroupAddon align="inline-end">
+          <Oui.InputGroupText className="text-muted-foreground">
+            Please wait...
+          </Oui.InputGroupText>
+        </Oui.InputGroupAddon>
+      </Oui.InputGroup>
+    </div>
+  );
+}
+
 export function InputGroupLabel() {
   return (
     <div className="grid w-full max-w-sm gap-4">
@@ -808,6 +691,40 @@ export function InputGroupLabel() {
           </Tooltip>
         </InputGroupAddon>
       </InputGroup>
+    </div>
+  );
+}
+
+export function OuiInputGroupLabel() {
+  return (
+    <div className="grid w-full max-w-sm gap-4">
+      <Oui.InputGroup>
+        <Oui.InputGroupInput id="email" placeholder="shadcn" />
+        <Oui.InputGroupAddon>
+          <Oui.Label htmlFor="email">@</Oui.Label>
+        </Oui.InputGroupAddon>
+      </Oui.InputGroup>
+      <Oui.InputGroup>
+        <Oui.InputGroupInput id="email-2" placeholder="shadcn@vercel.com" />
+        <Oui.InputGroupAddon align="block-start">
+          <Oui.Label htmlFor="email-2" className="text-foreground">
+            Email
+          </Oui.Label>
+          <Rac.TooltipTrigger>
+            <Oui.InputGroupButton
+              variant="ghost"
+              aria-label="Help"
+              className="ml-auto rounded-full"
+              size="icon-xs"
+            >
+              <IconInfoCircle />
+            </Oui.InputGroupButton>
+            <Oui.Tooltip>
+              <p>We'll use this to send you notifications</p>
+            </Oui.Tooltip>
+          </Rac.TooltipTrigger>
+        </Oui.InputGroupAddon>
+      </Oui.InputGroup>
     </div>
   );
 }
@@ -857,6 +774,51 @@ export function InputGroupDropdown() {
   );
 }
 
+export function OuiInputGroupDropdown() {
+  return (
+    <div className="grid w-full max-w-sm gap-4">
+      <Oui.InputGroup>
+        <Oui.InputGroupInput placeholder="Enter file name" />
+        <Oui.InputGroupAddon align="inline-end">
+          <Rac.MenuTrigger>
+            <Oui.InputGroupButton
+              variant="ghost"
+              aria-label="More"
+              size="icon-xs"
+            >
+              <MoreHorizontal />
+            </Oui.InputGroupButton>
+            <Oui.Popover>
+              <Oui.Menu>
+                <Oui.MenuItem>Settings</Oui.MenuItem>
+                <Oui.MenuItem>Copy path</Oui.MenuItem>
+                <Oui.MenuItem>Open location</Oui.MenuItem>
+              </Oui.Menu>
+            </Oui.Popover>
+          </Rac.MenuTrigger>
+        </Oui.InputGroupAddon>
+      </Oui.InputGroup>
+      <Oui.InputGroup className="[--radius:1rem]">
+        <Oui.InputGroupInput placeholder="Enter search query" />
+        <Oui.InputGroupAddon align="inline-end">
+          <Rac.MenuTrigger>
+            <Oui.InputGroupButton variant="ghost" className="pr-1.5! text-xs">
+              Search In... <ChevronDownIcon className="size-3" />
+            </Oui.InputGroupButton>
+            <Oui.Popover>
+              <Oui.Menu>
+                <Oui.MenuItem>Documentation</Oui.MenuItem>
+                <Oui.MenuItem>Blog Posts</Oui.MenuItem>
+                <Oui.MenuItem>Changelog</Oui.MenuItem>
+              </Oui.Menu>
+            </Oui.Popover>
+          </Rac.MenuTrigger>
+        </Oui.InputGroupAddon>
+      </Oui.InputGroup>
+    </div>
+  );
+}
+
 export function InputGroupButtonGroup() {
   return (
     <div className="grid w-full max-w-sm gap-6">
@@ -870,6 +832,25 @@ export function InputGroupButtonGroup() {
             <Link2Icon />
           </InputGroupAddon>
         </InputGroup>
+        <ButtonGroupText>.com</ButtonGroupText>
+      </ButtonGroup>
+    </div>
+  );
+}
+
+export function OuiInputGroupButtonGroup() {
+  return (
+    <div className="grid w-full max-w-sm gap-6">
+      <ButtonGroup>
+        <ButtonGroupText asChild>
+          <Oui.Label htmlFor="url">https://</Oui.Label>
+        </ButtonGroupText>
+        <Oui.InputGroup>
+          <Oui.InputGroupInput id="url" />
+          <Oui.InputGroupAddon align="inline-end">
+            <Link2Icon />
+          </Oui.InputGroupAddon>
+        </Oui.InputGroup>
         <ButtonGroupText>.com</ButtonGroupText>
       </ButtonGroup>
     </div>
@@ -891,6 +872,25 @@ export function InputGroupCustom() {
           </InputGroupButton>
         </InputGroupAddon>
       </InputGroup>
+    </div>
+  );
+}
+
+export function OuiInputGroupCustom() {
+  return (
+    <div className="grid w-full max-w-sm gap-6">
+      <Oui.InputGroup>
+        <Oui.InputGroupTextArea
+          data-slot="input-group-control"
+          className="flex field-sizing-content min-h-16 w-full resize-none rounded-md bg-transparent px-3 py-2.5 text-base transition-[color,box-shadow] outline-none md:text-sm"
+          placeholder="Autoresize textarea..."
+        />
+        <Oui.InputGroupAddon align="block-end">
+          <Oui.InputGroupButton className="ml-auto" size="sm" variant="default">
+            Submit
+          </Oui.InputGroupButton>
+        </Oui.InputGroupAddon>
+      </Oui.InputGroup>
     </div>
   );
 }
