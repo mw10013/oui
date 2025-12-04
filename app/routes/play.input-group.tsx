@@ -708,33 +708,37 @@ export function InputGroupLabel() {
 export function OuiInputGroupLabel() {
   return (
     <div className="grid w-full max-w-sm gap-4">
-      <Oui.InputGroup>
-        <Oui.InputGroupInput id="email" placeholder="shadcn" />
-        <Oui.InputGroupAddon>
-          <Oui.Label htmlFor="email">@</Oui.Label>
-        </Oui.InputGroupAddon>
-      </Oui.InputGroup>
-      <Oui.InputGroup>
-        <Oui.InputGroupInput id="email-2" placeholder="shadcn@vercel.com" />
-        <Oui.InputGroupAddon align="block-start">
-          <Oui.Label htmlFor="email-2" className="text-foreground">
-            Email
-          </Oui.Label>
-          <Rac.TooltipTrigger>
-            <Oui.InputGroupButton
-              variant="ghost"
-              aria-label="Help"
-              className="ml-auto rounded-full"
-              size="icon-xs"
-            >
-              <IconInfoCircle />
-            </Oui.InputGroupButton>
-            <Oui.Tooltip>
-              <p>We'll use this to send you notifications</p>
-            </Oui.Tooltip>
-          </Rac.TooltipTrigger>
-        </Oui.InputGroupAddon>
-      </Oui.InputGroup>
+      <Oui.TextField>
+        <Oui.InputGroup>
+          <Oui.InputGroupInput placeholder="shadcn" />
+          <Oui.InputGroupAddon>
+            <Oui.FieldLabel>@</Oui.FieldLabel>
+          </Oui.InputGroupAddon>
+        </Oui.InputGroup>
+      </Oui.TextField>
+      <Oui.TextField>
+        <Oui.InputGroup>
+          <Oui.InputGroupInput placeholder="shadcn@vercel.com" />
+          <Oui.InputGroupAddon align="block-start">
+            <Oui.FieldLabel className="text-foreground">
+              Email
+            </Oui.FieldLabel>
+            <Rac.TooltipTrigger>
+              <Oui.InputGroupButton
+                variant="ghost"
+                aria-label="Help"
+                className="ml-auto rounded-full"
+                size="icon-xs"
+              >
+                <IconInfoCircle />
+              </Oui.InputGroupButton>
+              <Oui.Tooltip>
+                We'll use this to send you notifications
+              </Oui.Tooltip>
+            </Rac.TooltipTrigger>
+          </Oui.InputGroupAddon>
+        </Oui.InputGroup>
+      </Oui.TextField>
     </div>
   );
 }
