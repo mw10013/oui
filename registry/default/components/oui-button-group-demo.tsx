@@ -3,9 +3,8 @@
 import * as React from "react";
 import { Button } from "@/registry/default/ui/oui-button";
 import { ButtonGroup } from "@/registry/default/ui/oui-button-group";
-import { Menu, MenuItem } from "@/registry/default/ui/oui-menu";
+import { Menu, MenuItem, MenuSeparator } from "@/registry/default/ui/oui-menu";
 import { Popover } from "@/registry/default/ui/oui-popover";
-import { Separator } from "@/registry/default/ui/oui-separator";
 import {
   ArchiveIcon,
   ArrowLeftIcon,
@@ -49,7 +48,7 @@ export default function OuiButtonGroupDemo() {
                 <ArchiveIcon />
                 Archive
               </MenuItem>
-              <Separator />
+              <MenuSeparator />
               <MenuItem>
                 <ClockIcon />
                 Snooze
@@ -81,7 +80,7 @@ export default function OuiButtonGroupDemo() {
                   </Menu>
                 </Popover>
               </Rac.SubmenuTrigger>
-              <Separator />
+              <MenuSeparator />
               <MenuItem variant="destructive">
                 <Trash2Icon />
                 Trash
