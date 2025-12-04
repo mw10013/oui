@@ -71,24 +71,17 @@ export function buttonClassName<T>(
   );
 }
 
-export interface ButtonProps
-  extends Rac.ButtonProps,
-    VariantProps<typeof buttonVariants> {}
-
-export function Button({ className, variant, size, ...props }: ButtonProps) {
+export function Button({
+  variant,
+  size,
+  className,
+  ...props
+}: React.ComponentProps<typeof Rac.Button> &
+  VariantProps<typeof buttonVariants>) {
   return (
     <Rac.Button
       data-slot="button"
-      className={Rac.composeRenderProps(className, (className, renderProps) =>
-        twMerge(
-          buttonVariants({
-            ...renderProps,
-            variant,
-            size,
-            className,
-          }),
-        ),
-      )}
+      className={buttonClassName({ variant, size }, className)}
       {...props}
     />
   );

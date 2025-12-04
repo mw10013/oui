@@ -561,7 +561,6 @@ export function OuiInputGroupTextareaExample() {
     <div className="grid w-full max-w-md gap-4">
       <Oui.InputGroup>
         <Oui.InputGroupTextArea
-          id="textarea-code-32"
           placeholder="console.log('Hello, world!');"
           className="min-h-[200px]"
         />
