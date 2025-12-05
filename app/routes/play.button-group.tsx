@@ -678,17 +678,32 @@ export function OuiButtonGroupSelect() {
   return (
     <Oui.ButtonGroup>
       <Oui.ButtonGroup>
-        <Select value={currency} onValueChange={setCurrency}>
-          <SelectTrigger className="font-mono">{currency}</SelectTrigger>
-          <SelectContent className="min-w-24">
-            {CURRENCIES.map((currency) => (
-              <SelectItem key={currency.value} value={currency.value}>
-                {currency.value}{" "}
-                <span className="text-muted-foreground">{currency.label}</span>
-              </SelectItem>
-            ))}
-          </SelectContent>
-        </Select>
+        <Oui.Select
+          value={currency}
+          onChange={(value) => {
+            if (value) setCurrency(value as string);
+          }}
+        >
+          <Oui.SelectButton className="font-mono">
+            <Oui.SelectValue>
+              {({ selectedItems }) =>
+                selectedItems.length > 0
+                  ? (selectedItems[0] as (typeof CURRENCIES)[0]).value
+                  : ""
+              }
+            </Oui.SelectValue>
+          </Oui.SelectButton>
+          <Oui.Popover placement="bottom start">
+            <Rac.ListBox items={CURRENCIES}>
+              {(item: { value: string; label: string }) => (
+                <Oui.ListBoxItem id={item.value} textValue={item.value}>
+                  {item.value}{" "}
+                  <span className="text-muted-foreground">{item.label}</span>
+                </Oui.ListBoxItem>
+              )}
+            </Rac.ListBox>
+          </Oui.Popover>
+        </Oui.Select>
         <Oui.Input placeholder="10.00" pattern="[0-9]*" />
       </Oui.ButtonGroup>
       <Oui.ButtonGroup>
