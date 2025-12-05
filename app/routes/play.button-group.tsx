@@ -673,29 +673,24 @@ export function ButtonGroupSelect() {
 }
 
 export function OuiButtonGroupSelect() {
-  const [currency, setCurrency] = React.useState("$");
+  const [currency, setCurrency] = React.useState<Rac.Key | null>("$");
 
   return (
     <Oui.ButtonGroup>
       <Oui.ButtonGroup>
-        <Oui.Select
+        <Oui.Select<(typeof CURRENCIES)[number]>
+          className="w-auto flex-row *:w-auto"
           value={currency}
-          onChange={(value) => {
-            if (value) setCurrency(value as string);
-          }}
+          onChange={setCurrency}
         >
           <Oui.SelectButton className="font-mono">
-            <Oui.SelectValue>
-              {({ selectedItems }) =>
-                selectedItems.length > 0
-                  ? (selectedItems[0] as (typeof CURRENCIES)[0]).value
-                  : ""
-              }
+            <Oui.SelectValue<(typeof CURRENCIES)[number]>>
+              {({ selectedItems }) => selectedItems[0]?.value ?? ""}
             </Oui.SelectValue>
           </Oui.SelectButton>
           <Oui.Popover placement="bottom start">
             <Rac.ListBox items={CURRENCIES}>
-              {(item: { value: string; label: string }) => (
+              {(item) => (
                 <Oui.ListBoxItem id={item.value} textValue={item.value}>
                   {item.value}{" "}
                   <span className="text-muted-foreground">{item.label}</span>
