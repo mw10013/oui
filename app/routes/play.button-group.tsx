@@ -492,12 +492,12 @@ export function ButtonGroupInputGroup() {
             <Tooltip>
               <TooltipTrigger asChild>
                 <Oui.InputGroupButton
-                  onClick={() => {
+                  onPress={() => {
                     setVoiceEnabled(!voiceEnabled);
                   }}
                   size="icon-xs"
-                  data-active={voiceEnabled}
-                  className="data-[active=true]:bg-orange-100 data-[active=true]:text-orange-700 dark:data-[active=true]:bg-orange-800 dark:data-[active=true]:text-orange-100"
+                  data-active={voiceEnabled ? true : undefined}
+                  className="data-active:bg-orange-100 data-active:text-orange-700 dark:data-active:bg-orange-800 dark:data-active:text-orange-100"
                   aria-pressed={voiceEnabled}
                 >
                   <AudioLinesIcon />
@@ -523,32 +523,33 @@ export function OuiButtonGroupInputGroup() {
         </Oui.Button>
       </Oui.ButtonGroup>
       <Oui.ButtonGroup>
-        <Oui.InputGroup>
-          <Oui.InputGroupInput
-            placeholder={
-              voiceEnabled ? "Record and send audio..." : "Send a message..."
-            }
-            disabled={voiceEnabled}
-          />
-          <Oui.InputGroupAddon align="inline-end">
-            <Tooltip>
-              <TooltipTrigger asChild>
-                <Oui.InputGroupButton
-                  onClick={() => {
-                    setVoiceEnabled(!voiceEnabled);
-                  }}
-                  size="icon-xs"
-                  data-active={voiceEnabled}
-                  className="data-[active=true]:bg-orange-100 data-[active=true]:text-orange-700 dark:data-[active=true]:bg-orange-800 dark:data-[active=true]:text-orange-100"
-                  aria-pressed={voiceEnabled}
-                >
-                  <AudioLinesIcon />
-                </Oui.InputGroupButton>
-              </TooltipTrigger>
-              <TooltipContent>Voice Mode</TooltipContent>
-            </Tooltip>
-          </Oui.InputGroupAddon>
-        </Oui.InputGroup>
+        <Oui.TextField isDisabled={voiceEnabled}>
+          <Oui.InputGroup>
+            <Oui.InputGroupInput
+              placeholder={
+                voiceEnabled ? "Record and send audio..." : "Send a message..."
+              }
+            />
+            <Oui.InputGroupAddon align="inline-end">
+              <Tooltip>
+                <TooltipTrigger asChild>
+                  <Oui.InputGroupButton
+                    onPress={() => {
+                      setVoiceEnabled(!voiceEnabled);
+                    }}
+                    size="icon-xs"
+                    data-active={voiceEnabled ? true : undefined}
+                    className="data-active:bg-orange-100 data-active:text-orange-700 dark:data-active:bg-orange-800 dark:data-active:text-orange-100"
+                    aria-pressed={voiceEnabled}
+                  >
+                    <AudioLinesIcon />
+                  </Oui.InputGroupButton>
+                </TooltipTrigger>
+                <TooltipContent>Voice Mode</TooltipContent>
+              </Tooltip>
+            </Oui.InputGroupAddon>
+          </Oui.InputGroup>
+        </Oui.TextField>
       </Oui.ButtonGroup>
     </Oui.ButtonGroup>
   );
