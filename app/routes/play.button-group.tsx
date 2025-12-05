@@ -20,6 +20,12 @@ import {
   DropdownMenuTrigger,
 } from "@/registry/default/ui/dropdown-menu";
 import { Input } from "@/registry/default/ui/input";
+import {
+  InputGroup,
+  InputGroupAddon,
+  InputGroupButton,
+  InputGroupInput,
+} from "@/registry/default/ui/input-group";
 import * as Oui from "@/registry/default/ui/oui-index";
 import {
   Select,
@@ -481,32 +487,32 @@ export function ButtonGroupInputGroup() {
         </Button>
       </ButtonGroup>
       <ButtonGroup>
-        <Oui.InputGroup>
-          <Oui.InputGroupInput
+        <InputGroup>
+          <InputGroupInput
             placeholder={
               voiceEnabled ? "Record and send audio..." : "Send a message..."
             }
             disabled={voiceEnabled}
           />
-          <Oui.InputGroupAddon align="inline-end">
+          <InputGroupAddon align="inline-end">
             <Tooltip>
               <TooltipTrigger asChild>
-                <Oui.InputGroupButton
-                  onPress={() => {
+                <InputGroupButton
+                  onClick={() => {
                     setVoiceEnabled(!voiceEnabled);
                   }}
                   size="icon-xs"
-                  data-active={voiceEnabled ? true : undefined}
-                  className="data-active:bg-orange-100 data-active:text-orange-700 dark:data-active:bg-orange-800 dark:data-active:text-orange-100"
+                  data-active={voiceEnabled}
+                  className="data-[active=true]:bg-orange-100 data-[active=true]:text-orange-700 dark:data-[active=true]:bg-orange-800 dark:data-[active=true]:text-orange-100"
                   aria-pressed={voiceEnabled}
                 >
                   <AudioLinesIcon />
-                </Oui.InputGroupButton>
+                </InputGroupButton>
               </TooltipTrigger>
               <TooltipContent>Voice Mode</TooltipContent>
             </Tooltip>
-          </Oui.InputGroupAddon>
-        </Oui.InputGroup>
+          </InputGroupAddon>
+        </InputGroup>
       </ButtonGroup>
     </ButtonGroup>
   );
@@ -531,22 +537,20 @@ export function OuiButtonGroupInputGroup() {
               }
             />
             <Oui.InputGroupAddon align="inline-end">
-              <Tooltip>
-                <TooltipTrigger asChild>
-                  <Oui.InputGroupButton
-                    onPress={() => {
-                      setVoiceEnabled(!voiceEnabled);
-                    }}
-                    size="icon-xs"
-                    data-active={voiceEnabled ? true : undefined}
-                    className="data-active:bg-orange-100 data-active:text-orange-700 dark:data-active:bg-orange-800 dark:data-active:text-orange-100"
-                    aria-pressed={voiceEnabled}
-                  >
-                    <AudioLinesIcon />
-                  </Oui.InputGroupButton>
-                </TooltipTrigger>
-                <TooltipContent>Voice Mode</TooltipContent>
-              </Tooltip>
+              <Rac.TooltipTrigger>
+                <Oui.InputGroupButton
+                  onPress={() => {
+                    setVoiceEnabled(!voiceEnabled);
+                  }}
+                  size="icon-xs"
+                  data-active={voiceEnabled ? true : undefined}
+                  className="data-active:bg-orange-100 data-active:text-orange-700 dark:data-active:bg-orange-800 dark:data-active:text-orange-100"
+                  aria-pressed={voiceEnabled}
+                >
+                  <AudioLinesIcon />
+                </Oui.InputGroupButton>
+                <Oui.Tooltip>Voice Mode</Oui.Tooltip>
+              </Rac.TooltipTrigger>
             </Oui.InputGroupAddon>
           </Oui.InputGroup>
         </Oui.TextField>
@@ -680,16 +684,16 @@ export function OuiButtonGroupSelect() {
     <Oui.ButtonGroup>
       <Oui.ButtonGroup>
         <Oui.Select<(typeof CURRENCIES)[number]>
-          className="w-auto flex-row *:w-auto"
           value={currency}
           onChange={setCurrency}
+          className="w-auto flex-row *:w-auto"
         >
           <Oui.SelectButton className="font-mono">
             <Oui.SelectValue<(typeof CURRENCIES)[number]>>
               {({ selectedItems }) => selectedItems[0]?.value ?? ""}
             </Oui.SelectValue>
           </Oui.SelectButton>
-          <Oui.Popover placement="bottom start">
+          <Oui.Popover placement="bottom start" className="min-w-24">
             <Rac.ListBox items={CURRENCIES}>
               {(item) => (
                 <Oui.ListBoxItem id={item.value} textValue={item.value}>
