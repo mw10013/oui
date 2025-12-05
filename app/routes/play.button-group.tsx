@@ -529,31 +529,31 @@ export function OuiButtonGroupInputGroup() {
         </Oui.Button>
       </Oui.ButtonGroup>
       <Oui.ButtonGroup>
-        <Oui.TextField isDisabled={voiceEnabled}>
-          <Oui.InputGroup>
+        <Oui.InputGroup>
+          <Oui.TextField isDisabled={voiceEnabled}>
             <Oui.InputGroupInput
               placeholder={
                 voiceEnabled ? "Record and send audio..." : "Send a message..."
               }
             />
-            <Oui.InputGroupAddon align="inline-end">
-              <Rac.TooltipTrigger>
-                <Oui.InputGroupButton
-                  onPress={() => {
-                    setVoiceEnabled(!voiceEnabled);
-                  }}
-                  size="icon-xs"
-                  data-active={voiceEnabled ? true : undefined}
-                  className="data-active:bg-orange-100 data-active:text-orange-700 dark:data-active:bg-orange-800 dark:data-active:text-orange-100"
-                  aria-pressed={voiceEnabled}
-                >
-                  <AudioLinesIcon />
-                </Oui.InputGroupButton>
-                <Oui.Tooltip>Voice Mode</Oui.Tooltip>
-              </Rac.TooltipTrigger>
-            </Oui.InputGroupAddon>
-          </Oui.InputGroup>
-        </Oui.TextField>
+          </Oui.TextField>
+          <Oui.InputGroupAddon align="inline-end">
+            <Rac.TooltipTrigger>
+              <Oui.InputGroupButton
+                onPress={() => {
+                  setVoiceEnabled(!voiceEnabled);
+                }}
+                size="icon-xs"
+                data-active={voiceEnabled ? true : undefined}
+                className="data-active:bg-orange-100 data-active:text-orange-700 dark:data-active:bg-orange-800 dark:data-active:text-orange-100"
+                aria-pressed={voiceEnabled}
+              >
+                <AudioLinesIcon />
+              </Oui.InputGroupButton>
+              <Oui.Tooltip>Voice Mode</Oui.Tooltip>
+            </Rac.TooltipTrigger>
+          </Oui.InputGroupAddon>
+        </Oui.InputGroup>
       </Oui.ButtonGroup>
     </Oui.ButtonGroup>
   );
