@@ -9,6 +9,7 @@ export function ComboBox<T extends object>({
 }: Rac.ComboBoxProps<T>) {
   return (
     <Rac.ComboBox
+    data-slot="combo-box"
       className={composeTailwindRenderProps(
         className,
         "group flex flex-col gap-2",

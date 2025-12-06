@@ -1,8 +1,8 @@
 "use client";
 
 import { Button } from "@/registry/default/ui/oui-button";
+import { ButtonGroup } from "@/registry/default/ui/oui-button-group";
 import { ComboBox } from "@/registry/default/ui/oui-combo-box";
-import { Group } from "@/registry/default/ui/oui-group";
 import { Input } from "@/registry/default/ui/oui-input";
 import { Label } from "@/registry/default/ui/oui-label";
 import { ListBoxItem } from "@/registry/default/ui/oui-list-box";
@@ -14,12 +14,12 @@ export default function Component() {
   return (
     <ComboBox>
       <Label>Combo Box</Label>
-      <Group>
-        <Input variant="ghost" />
-        <Button variant="ghost" size="icon">
-          <ChevronDown className="size-4 shrink-0 opacity-50" />
+      <ButtonGroup>
+        <Input />
+        <Button variant="outline">
+          <ChevronDown className="opacity-50" />
         </Button>
-      </Group>
+      </ButtonGroup>
       <Popover>
         <Rac.ListBox>
           <ListBoxItem>Aardvark</ListBoxItem>

@@ -9,6 +9,7 @@ export default defineConfig(
     ".wrangler/",
     "worker-configuration.d.ts",
     ".react-router/",
+    "build/",
     "refs/",
     "registry/default/ui/field.tsx",
     "registry/default/ui/sidebar.tsx",
