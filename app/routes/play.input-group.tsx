@@ -853,18 +853,20 @@ export function InputGroupButtonGroup() {
 export function OuiInputGroupButtonGroup() {
   return (
     <div className="grid w-full max-w-sm gap-6">
-      <ButtonGroup>
-        <ButtonGroupText asChild>
-          <Oui.Label htmlFor="url">https://</Oui.Label>
-        </ButtonGroupText>
-        <Oui.InputGroup>
-          <Oui.InputGroupInput id="url" />
-          <Oui.InputGroupAddon align="inline-end">
-            <Link2Icon />
-          </Oui.InputGroupAddon>
-        </Oui.InputGroup>
-        <ButtonGroupText>.com</ButtonGroupText>
-      </ButtonGroup>
+      <Oui.TextField>
+        <Oui.ButtonGroup>
+          <Oui.ButtonGroupText>
+            <Oui.FieldLabel>https://</Oui.FieldLabel>
+          </Oui.ButtonGroupText>
+          <Oui.InputGroup>
+            <Oui.InputGroupInput />
+            <Oui.InputGroupAddon align="inline-end">
+              <Link2Icon />
+            </Oui.InputGroupAddon>
+          </Oui.InputGroup>
+          <Oui.ButtonGroupText>.com</Oui.ButtonGroupText>
+        </Oui.ButtonGroup>
+      </Oui.TextField>
     </div>
   );
 }
