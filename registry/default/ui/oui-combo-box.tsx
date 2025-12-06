@@ -1,18 +1,21 @@
 "use client";
 
+import type { FieldStylesProps } from "@/registry/default/ui/oui-field";
 import { composeTailwindRenderProps } from "@/registry/default/ui/oui-base";
+import { fieldStyles } from "@/registry/default/ui/oui-field";
 import * as Rac from "react-aria-components";
 
 export function ComboBox<T extends object>({
   className,
+  orientation,
   ...props
-}: Rac.ComboBoxProps<T>) {
+}: Rac.ComboBoxProps<T> & FieldStylesProps) {
   return (
     <Rac.ComboBox
-    data-slot="combo-box"
+      data-slot="combo-box"
       className={composeTailwindRenderProps(
         className,
-        "group flex flex-col gap-2",
+        fieldStyles({ orientation }),
       )}
       {...props}
     />

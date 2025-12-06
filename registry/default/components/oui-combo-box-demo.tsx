@@ -3,8 +3,8 @@
 import { Button } from "@/registry/default/ui/oui-button";
 import { ButtonGroup } from "@/registry/default/ui/oui-button-group";
 import { ComboBox } from "@/registry/default/ui/oui-combo-box";
+import { FieldLabel } from "@/registry/default/ui/oui-field";
 import { Input } from "@/registry/default/ui/oui-input";
-import { Label } from "@/registry/default/ui/oui-label";
 import { ListBoxItem } from "@/registry/default/ui/oui-list-box";
 import { Popover } from "@/registry/default/ui/oui-popover";
 import { ChevronDown } from "lucide-react";
@@ -13,7 +13,7 @@ import * as Rac from "react-aria-components";
 export default function Component() {
   return (
     <ComboBox>
-      <Label>Combo Box</Label>
+      <FieldLabel>Combo Box</FieldLabel>
       <ButtonGroup>
         <Input />
         <Button variant="outline">
