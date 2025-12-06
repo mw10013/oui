@@ -8,10 +8,13 @@ import {
   FieldGroup,
   FieldLabel,
 } from "@/registry/default/ui/oui-field";
-import { Group } from "@/registry/default/ui/oui-group";
-import { Input } from "@/registry/default/ui/oui-input";
+import {
+  InputGroup,
+  InputGroupButton,
+  InputGroupInput,
+} from "@/registry/default/ui/oui-input-group";
 import { NumberField } from "@/registry/default/ui/oui-number-field";
-import { ChevronDown, ChevronUp } from "lucide-react";
+import { Minus, Plus } from "lucide-react";
 import * as Rac from "react-aria-components";
 
 export default function Component() {
@@ -26,45 +29,56 @@ export default function Component() {
       <FieldGroup>
         <NumberField name="age">
           <FieldLabel>Age</FieldLabel>
-          <Group>
-            <Input variant="ghost" placeholder="age" className="tabular-nums" />
-            <div className="flex h-[calc(100%+2px)] flex-col">
-              <Rac.Button
-                slot="increment"
-                className="-me-px flex h-1/2 w-6 flex-1 items-center justify-center border border-input bg-background text-sm text-muted-foreground/80 transition-shadow hover:bg-accent hover:text-foreground disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50"
-              >
-                <ChevronUp size={12} strokeWidth={2} aria-hidden="true" />
-              </Rac.Button>
-              <Rac.Button
-                slot="decrement"
-                className="-me-px -mt-px flex h-1/2 w-6 flex-1 items-center justify-center border border-input bg-background text-sm text-muted-foreground/80 transition-shadow hover:bg-accent hover:text-foreground disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50"
-              >
-                <ChevronDown size={12} strokeWidth={2} aria-hidden="true" />
-              </Rac.Button>
-            </div>
-          </Group>
+          <InputGroup>
+            <InputGroupButton
+              slot="decrement"
+              size="icon-sm"
+              variant="ghost"
+              className="h-full rounded-r-none"
+            >
+              <Minus />
+            </InputGroupButton>
+            <InputGroupInput
+              variant="ghost"
+              placeholder="age"
+              className="text-center tabular-nums"
+            />
+            <InputGroupButton
+              slot="increment"
+              size="icon-sm"
+              variant="ghost"
+              className="h-full rounded-l-none"
+            >
+              <Plus />
+            </InputGroupButton>
+          </InputGroup>
           <FieldDescription>This is your age.</FieldDescription>
           <FieldError />
         </NumberField>
         <NumberField name="quantity">
           <FieldLabel>Quantity</FieldLabel>
-          <Group>
-            <Input variant="ghost" className="tabular-nums" />
-            <div className="flex h-[calc(100%+2px)] flex-col">
-              <Rac.Button
-                slot="increment"
-                className="-me-px flex h-1/2 w-6 flex-1 items-center justify-center border border-input bg-background text-sm text-muted-foreground/80 transition-shadow hover:bg-accent hover:text-foreground disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50"
-              >
-                <ChevronUp size={12} strokeWidth={2} aria-hidden="true" />
-              </Rac.Button>
-              <Rac.Button
-                slot="decrement"
-                className="-me-px -mt-px flex h-1/2 w-6 flex-1 items-center justify-center border border-input bg-background text-sm text-muted-foreground/80 transition-shadow hover:bg-accent hover:text-foreground disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50"
-              >
-                <ChevronDown size={12} strokeWidth={2} aria-hidden="true" />
-              </Rac.Button>
-            </div>
-          </Group>
+          <InputGroup>
+            <InputGroupButton
+              slot="decrement"
+              size="icon-sm"
+              variant="ghost"
+              className="h-full rounded-r-none"
+            >
+              <Minus />
+            </InputGroupButton>
+            <InputGroupInput
+              variant="ghost"
+              className="text-center tabular-nums"
+            />
+            <InputGroupButton
+              slot="increment"
+              size="icon-sm"
+              variant="ghost"
+              className="h-full rounded-l-none"
+            >
+              <Plus />
+            </InputGroupButton>
+          </InputGroup>
           <FieldDescription>Your best quantity.</FieldDescription>
           <FieldError />
         </NumberField>
