@@ -57,6 +57,8 @@ export const buttonGroupVariants = cva(
     "has-[select[aria-hidden=true]:last-child]:[&>[data-slot=select-trigger]:last-of-type]:rounded-r-md [&>[data-slot=select-trigger]:not([class*='w-'])]:w-fit",
     // RAC Select: restore right rounding when wrapper with hidden select is last-child
     "has-[[aria-hidden=true]_select:last-child]:[&>[data-slot=select-button]:last-of-type]:rounded-r-md [&>[data-slot=select-button]:not([class*='w-'])]:w-fit",
+    // RAC Select: default wrapper width to fit content inside ButtonGroup
+    "[&>[data-slot=select]]:w-fit",
     // RAC Select: propagate border styles to nested SelectButton based on wrapper position
     "[&>[data-slot=select]:not(:last-child)>[data-slot=select-button]]:rounded-r-none",
     "[&>[data-slot=select]:not(:first-of-type)>[data-slot=select-button]]:rounded-l-none",
