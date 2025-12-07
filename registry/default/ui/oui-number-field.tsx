@@ -17,7 +17,8 @@ export function NumberField({
 }: NumberFieldProps) {
   return (
     <Rac.NumberField
-      data-slot="field"
+      data-slot="number-field"
+      data-slot-type="field"
       data-orientation={orientation}
       className={composeTailwindRenderProps(
         className,

@@ -22,6 +22,7 @@ export function Select<T extends object, M extends SelectionMode = "single">({
   return (
     <Rac.Select
       data-slot="select"
+      data-slot-type="field"
       className={composeTailwindRenderProps(
         className,
         fieldStyles({ orientation }),

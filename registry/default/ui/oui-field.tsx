@@ -55,6 +55,15 @@ export const fieldStyles = cva(
 export type FieldProps = React.ComponentProps<"div"> &
   VariantProps<typeof fieldStyles>;
 
+/**
+ * Oui RAC fields use specific slots (e.g., data-slot="text-field") plus data-slot-type="field".
+ * Shadcn legacy styles still target data-slot="field", so we mirror selectors with data-slot-type="field".
+ *
+ * Why? Shadcn's Field component is a generic wrapper for layout (e.g., <Field><Label/><Input/></Field>).
+ * RAC components like TextField are self-contained fields that render their own structure (label, input, etc.),
+ * so they don't need an extra wrapper. To reuse fieldStyles for layout, we use data-slot-type="field"
+ * on RAC components, allowing shared Tailwind selectors without breaking shadcn compatibility.
+ */
 export function Field({
   orientation = "vertical",
   className,
@@ -64,6 +73,7 @@ export function Field({
     <div
       role="group"
       data-slot="field"
+      data-slot-type="field"
       data-orientation={orientation}
       className={twMerge(fieldStyles({ orientation }), className)}
       {...props}
@@ -87,6 +97,8 @@ export function FieldLabel({
       className={twMerge(
         "group/field-label peer/field-label flex w-fit gap-2 leading-snug group-data-disabled/field:opacity-50",
         "has-[>[data-slot=field]]:w-full has-[>[data-slot=field]]:flex-col has-[>[data-slot=field]]:rounded-md has-[>[data-slot=field]]:border *:data-[slot=field]:p-4",
+        // Duplicate for Oui RAC components using data-slot-type=field
+        "has-[>[data-slot-type=field]]:w-full has-[>[data-slot-type=field]]:flex-col has-[>[data-slot-type=field]]:rounded-md has-[>[data-slot-type=field]]:border *:data-[slot-type=field]:p-4",
         "has-data-selected:border-primary has-data-selected:bg-primary/5 dark:has-data-selected:bg-primary/10",
         // shadcn does not have. We use this for the case where an RAC control appears after the label.
         "group-has-data-disabled/field:opacity-50",
@@ -226,7 +238,8 @@ export function FieldCheckbox({
   return (
     <div
       role="group"
-      data-slot="field"
+      data-slot="field-checkbox"
+      data-slot-type="field"
       data-orientation={orientation}
       className={twMerge(fieldStyles({ orientation }), className)}
       {...props}
@@ -285,7 +298,8 @@ export function FieldSwitch({
   return (
     <div
       role="group"
-      data-slot="field"
+      data-slot="field-switch"
+      data-slot-type="field"
       data-orientation={orientation}
       className={twMerge(fieldStyles({ orientation }), className)}
       {...props}
@@ -346,7 +360,8 @@ export function FieldRadio({
   return (
     <div
       role="group"
-      data-slot="field"
+      data-slot="field-radio"
+      data-slot-type="field"
       data-orientation={orientation}
       className={twMerge(fieldStyles({ orientation }), className)}
       {...props}

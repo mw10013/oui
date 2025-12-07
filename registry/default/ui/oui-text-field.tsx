@@ -17,7 +17,8 @@ export function TextField({
 }: TextFieldProps) {
   return (
     <Rac.TextField
-      data-slot="field"
+      data-slot="text-field"
+      data-slot-type="field"
       data-orientation={orientation}
       className={composeTailwindRenderProps(
         className,

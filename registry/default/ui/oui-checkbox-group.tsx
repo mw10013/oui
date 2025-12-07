@@ -15,7 +15,8 @@ export function CheckboxGroup({
 }: CheckboxGroupProps) {
   return (
     <Rac.CheckboxGroup
-      data-slot="field"
+      data-slot="checkbox-group"
+      data-slot-type="field"
       data-orientation={orientation}
       className={composeTailwindRenderProps(
         className,

@@ -87,6 +87,7 @@ function Field({
     <div
       role="group"
       data-slot="field"
+      data-slot-type="field"
       data-orientation={orientation}
       className={cn(fieldVariants({ orientation }), className)}
       {...props}
