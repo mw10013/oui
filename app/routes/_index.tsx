@@ -52,11 +52,7 @@ interface CategoryCardProps {
   componentCount?: number;
 }
 
-function CategoryCard({
-  slug,
-  name,
-  componentCount: componentsCount,
-}: CategoryCardProps) {
+function CategoryCard({ slug, name }: CategoryCardProps) {
   const href = `/${slug}`;
   // const imageBasePath = `/thumbs/${slug}`;
   // const alt = `${name} components`;
