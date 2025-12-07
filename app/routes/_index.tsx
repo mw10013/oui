@@ -2,6 +2,7 @@ import { Announcement } from "@/components/announcement";
 import { categories } from "@/config/categories";
 import { Link } from "@/registry/default/ui/oui-link";
 import { Funnel } from "lucide-react";
+import * as ReactRouter from "react-router";
 
 export default function RouteComponent() {
   return (
@@ -15,16 +16,15 @@ export default function RouteComponent() {
             React Aria Components with Shadcn characteristics.
           </h1>
           <p className="mb-8 text-lg text-muted-foreground">
-            {/* An open-source collection of copy-and-paste components for UIs. */}
             Copy-and-paste react aria components that run side-by-side with
             shadcn components.
           </p>
           <Link
-            href="/filter"
-            className="mr-4 inline-flex items-center text-sm"
+            href={ReactRouter.href("/filter")}
+            className="inline-flex items-center text-sm"
             underline="hover"
           >
-            <Funnel className="me-2" size={14} />
+            <Funnel className="me-2 size-4" />
             Filter by Tags
           </Link>
         </div>

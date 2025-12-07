@@ -1,6 +1,9 @@
+import * as ReactRouter from "react-router";
+
 export interface Category {
   slug: string;
   name: string;
+  sideBySideHref?: string;
   components: { name: string }[];
 }
 
@@ -120,6 +123,7 @@ export const categories: Category[] = [
   {
     name: "Field",
     slug: "field",
+    sideBySideHref: ReactRouter.href("/side-by-side/field"),
     components: [
       { name: "oui-field" },
       { name: "oui-field-demo" },
@@ -159,6 +163,7 @@ export const categories: Category[] = [
   {
     name: "Input Group",
     slug: "input-group",
+    // sideBySideHref: ReactRouter.href("/side-by-side/input-group"),
     components: [{ name: "oui-input-group" }, { name: "oui-input-group-demo" }],
   },
   {

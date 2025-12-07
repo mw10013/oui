@@ -6,7 +6,9 @@ import { PageGrid } from "@/components/page-grid";
 import { PageHeader } from "@/components/page-header";
 import { getCategory } from "@/config/categories";
 import { getComponentsByNames } from "@/lib/utils";
+import * as Oui from "@/registry/default/ui/oui-index";
 import { invariant } from "@epic-web/invariant";
+import { Columns } from "lucide-react";
 
 export function loader({ params }: Route.LoaderArgs) {
   const category = getCategory(params.category);
@@ -14,11 +16,15 @@ export function loader({ params }: Route.LoaderArgs) {
   const components = getComponentsByNames(
     category.components.map((item) => item.name),
   );
-  return { categoryName: category.name, components };
+  return {
+    categoryName: category.name,
+    sideBySideHref: category.sideBySideHref,
+    components,
+  };
 }
 
 export default function RouteComponent({
-  loaderData: { categoryName, components },
+  loaderData: { categoryName, sideBySideHref, components },
 }: Route.ComponentProps) {
   return (
     <>
@@ -33,6 +39,16 @@ export default function RouteComponent({
         content={`${categoryName} components - Copy-and-paste react aria components that run side-by-side with shadcn components.`}
       />
       <PageHeader title={categoryName} className="mb-10" />
+      {sideBySideHref && (
+        <Oui.Link
+          href={sideBySideHref}
+          className="inline-flex items-center text-sm"
+          underline="hover"
+        >
+          <Columns className="me-2 size-4" />
+          Side-by-Side
+        </Oui.Link>
+      )}
       <PageGrid>
         {components.map((component) => (
           <ComponentCard key={component.name} component={component}>
