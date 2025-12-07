@@ -4,24 +4,20 @@ import { XIcon } from "lucide-react";
 import * as Rac from "react-aria-components";
 import { twJoin, twMerge } from "tailwind-merge";
 
-export interface DialogProps extends Rac.DialogProps {
-  /**
-   * If `true`, hides the close button for non-'alertdialog' role.
-   * 'alertdialog' role never shows a close button.
-   * @default false
-   */
-  hideCloseButtonForNonAlert?: boolean;
-}
-
 /**
  * Derived from shadcn DialogContent.
+ *
+ * @param showCloseButton - Show the close button for non-'alertdialog' role. 'alertdialog' role never shows a close button to ensure users cannot dismiss alerts without taking action, per accessibility guidelines.
+ * @default true
  */
 export function Dialog({
-  hideCloseButtonForNonAlert = false,
+  showCloseButton = true,
   className,
   children,
   ...props
-}: DialogProps) {
+}: React.ComponentProps<typeof Rac.Dialog> & {
+  showCloseButton?: boolean;
+}) {
   return (
     <Rac.Dialog
       data-slot="dialog"
@@ -31,7 +27,7 @@ export function Dialog({
       {(renderProps) => (
         <>
           {typeof children === "function" ? children(renderProps) : children}
-          {!hideCloseButtonForNonAlert && props.role !== "alertdialog" && (
+          {showCloseButton && props.role !== "alertdialog" && (
             <Rac.Button
               data-slot="dialog-close-button"
               slot="close"

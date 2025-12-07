@@ -18,7 +18,7 @@ export default function Component() {
     <Rac.DialogTrigger>
       <Button variant="outline">Popover</Button>
       <Popover className="w-80">
-        <Dialog hideCloseButtonForNonAlert>
+        <Dialog showCloseButton={false}>
           <DialogHeader>
             <Heading variant="popover" slot="title">
               Dimensions
