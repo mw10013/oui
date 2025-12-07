@@ -76,14 +76,16 @@ export function InputGroupButton({
   );
 }
 
-export function InputGroupInput({ className, ...props }: React.ComponentProps<typeof Input>) {
+export function InputGroupInput({
+  className,
+  ...props
+}: React.ComponentProps<typeof Input>) {
   return (
     <Input
       data-slot="input-group-control"
-      variant="ghost"
       className={composeTailwindRenderProps(
         className,
-        "rounded-none border-0 bg-transparent shadow-none data-focus-visible:ring-0 dark:bg-transparent",
+        "flex-1 rounded-none border-0 bg-transparent shadow-none data-focus-visible:ring-0 dark:bg-transparent",
       )}
       {...props}
     />
