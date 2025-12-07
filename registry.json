@@ -581,17 +581,17 @@
         }
       ],
       "registryDependencies": [
-        "@oui/oui-combo-box",
         "@oui/oui-button",
-        "@oui/oui-group",
+        "@oui/oui-button-group",
+        "@oui/oui-combo-box",
+        "@oui/oui-field",
         "@oui/oui-input",
-        "@oui/oui-label",
         "@oui/oui-list-box",
         "@oui/oui-popover"
       ],
       "dependencies": ["lucide-react"],
       "meta": {
-        "tags": ["combo-box", "input", "list-box", "popover"],
+        "tags": ["combo-box", "group", "button-group", "list-box", "popover"],
         "canPreview": true,
         "canOpenInV0": true
       }
@@ -608,17 +608,16 @@
       "registryDependencies": [
         "avatar",
         "@oui/oui-button",
+        "@oui/oui-button-group",
         "@oui/oui-combo-box",
         "@oui/oui-field",
-        "@oui/oui-group",
         "@oui/oui-input",
-        "@oui/oui-label",
         "@oui/oui-list-box",
         "@oui/oui-popover"
       ],
       "dependencies": ["lucide-react"],
       "meta": {
-        "tags": ["combo-box", "group", "list-box", "avatar"],
+        "tags": ["combo-box", "group", "button-group", "list-box", "avatar"],
         "canPreview": true,
         "canOpenInV0": true
       }
@@ -634,17 +633,23 @@
       ],
       "registryDependencies": [
         "@oui/oui-button",
+        "@oui/oui-button-group",
         "@oui/oui-combo-box",
         "@oui/oui-field",
-        "@oui/oui-group",
         "@oui/oui-header",
         "@oui/oui-input",
-        "@oui/oui-label",
         "@oui/oui-list-box",
         "@oui/oui-popover"
       ],
       "meta": {
-        "tags": ["combo-box", "header", "group", "list-box"],
+        "tags": [
+          "combo-box",
+          "group",
+          "button-group",
+          "header",
+          "list-box",
+          "popover"
+        ],
         "canPreview": true,
         "canOpenInV0": true
       }
@@ -950,45 +955,6 @@
       }
     },
     {
-      "name": "oui-group",
-      "type": "registry:ui",
-      "title": "Group",
-      "description": "React aria components Group with shadcn characteristics.",
-      "files": [
-        {
-          "path": "registry/default/ui/oui-group.tsx",
-          "type": "registry:ui"
-        }
-      ],
-      "registryDependencies": ["@oui/oui-base"],
-      "dependencies": ["react-aria-components"],
-      "meta": {
-        "tags": ["group"]
-      }
-    },
-    {
-      "name": "oui-group-demo",
-      "type": "registry:component",
-      "files": [
-        {
-          "path": "registry/default/components/oui-group-demo.tsx",
-          "type": "registry:component"
-        }
-      ],
-      "registryDependencies": [
-        "@oui/oui-button",
-        "@oui/oui-group",
-        "@oui/oui-input",
-        "@oui/oui-label"
-      ],
-      "dependencies": ["lucide-react"],
-      "meta": {
-        "tags": ["group", "button", "input", "label"],
-        "canPreview": true,
-        "canOpenInV0": true
-      }
-    },
-    {
       "name": "oui-header",
       "type": "registry:ui",
       "title": "Header",
@@ -1094,7 +1060,6 @@
         "@oui/oui-dialog",
         "@oui/oui-disclosure",
         "@oui/oui-field",
-        "@oui/oui-group",
         "@oui/oui-header",
         "@oui/oui-heading",
         "@oui/oui-input",
@@ -1945,13 +1910,14 @@
       ],
       "registryDependencies": [
         "@oui/oui-button",
+        "@oui/oui-button-group",
         "@oui/oui-field",
-        "@oui/oui-input-group",
+        "@oui/oui-input",
         "@oui/oui-number-field"
       ],
       "dependencies": ["lucide-react"],
       "meta": {
-        "tags": ["number-field", "input-group", "field"],
+        "tags": ["number-field", "field", "group", "button-group"],
         "canPreview": true,
         "canOpenInV0": true
       }

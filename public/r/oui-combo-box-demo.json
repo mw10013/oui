@@ -6,11 +6,11 @@
     "lucide-react"
   ],
   "registryDependencies": [
-    "@oui/oui-combo-box",
     "@oui/oui-button",
-    "@oui/oui-group",
+    "@oui/oui-button-group",
+    "@oui/oui-combo-box",
+    "@oui/oui-field",
     "@oui/oui-input",
-    "@oui/oui-label",
     "@oui/oui-list-box",
     "@oui/oui-popover"
   ],
@@ -24,7 +24,8 @@
   "meta": {
     "tags": [
       "combo-box",
-      "input",
+      "group",
+      "button-group",
       "list-box",
       "popover"
     ],

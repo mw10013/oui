@@ -8,11 +8,10 @@
   "registryDependencies": [
     "avatar",
     "@oui/oui-button",
+    "@oui/oui-button-group",
     "@oui/oui-combo-box",
     "@oui/oui-field",
-    "@oui/oui-group",
     "@oui/oui-input",
-    "@oui/oui-label",
     "@oui/oui-list-box",
     "@oui/oui-popover"
   ],
@@ -27,6 +26,7 @@
     "tags": [
       "combo-box",
       "group",
+      "button-group",
       "list-box",
       "avatar"
     ],

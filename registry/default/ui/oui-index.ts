@@ -31,7 +31,6 @@ export * from "@/registry/default/ui/oui-combo-box";
 export * from "@/registry/default/ui/oui-dialog";
 export * from "@/registry/default/ui/oui-disclosure";
 export * from "@/registry/default/ui/oui-field";
-export * from "@/registry/default/ui/oui-group";
 export * from "@/registry/default/ui/oui-header";
 export * from "@/registry/default/ui/oui-heading";
 export * from "@/registry/default/ui/oui-input";

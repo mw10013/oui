@@ -7,8 +7,9 @@
   ],
   "registryDependencies": [
     "@oui/oui-button",
+    "@oui/oui-button-group",
     "@oui/oui-field",
-    "@oui/oui-input-group",
+    "@oui/oui-input",
     "@oui/oui-number-field"
   ],
   "files": [
@@ -21,8 +22,9 @@
   "meta": {
     "tags": [
       "number-field",
-      "input-group",
-      "field"
+      "field",
+      "group",
+      "button-group"
     ],
     "canPreview": true,
     "canOpenInV0": true

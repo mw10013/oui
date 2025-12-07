@@ -4,12 +4,11 @@
   "type": "registry:component",
   "registryDependencies": [
     "@oui/oui-button",
+    "@oui/oui-button-group",
     "@oui/oui-combo-box",
     "@oui/oui-field",
-    "@oui/oui-group",
     "@oui/oui-header",
     "@oui/oui-input",
-    "@oui/oui-label",
     "@oui/oui-list-box",
     "@oui/oui-popover"
   ],
@@ -23,9 +22,11 @@
   "meta": {
     "tags": [
       "combo-box",
-      "header",
       "group",
-      "list-box"
+      "button-group",
+      "header",
+      "list-box",
+      "popover"
     ],
     "canPreview": true,
     "canOpenInV0": true
