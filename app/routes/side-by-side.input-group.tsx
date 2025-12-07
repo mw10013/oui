@@ -912,74 +912,222 @@ export function OuiInputGroupCustom() {
 export default function RouteComponent() {
   return (
     <div className="mx-auto max-w-7xl space-y-8 p-6">
+      <div className="hidden md:mb-4 md:grid md:grid-cols-2 md:gap-8">
+        <div className="text-center text-sm font-medium text-muted-foreground">
+          Shadcn
+        </div>
+        <div className="text-center text-sm font-medium text-muted-foreground">
+          Oui
+        </div>
+      </div>
       <div>
         <h2 className="mb-4 text-lg font-semibold">Icon</h2>
-        <div className="grid grid-cols-2 gap-8">
-          <InputGroupIcon />
-          <OuiInputGroupIcon />
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
+          <div>
+            <p className="mb-2 block text-sm text-muted-foreground md:hidden">
+              Shadcn
+            </p>
+            <div className="flex justify-center">
+              <InputGroupIcon />
+            </div>
+          </div>
+          <div>
+            <p className="mb-2 block text-sm text-muted-foreground md:hidden">
+              Oui
+            </p>
+            <div className="flex justify-center">
+              <OuiInputGroupIcon />
+            </div>
+          </div>
         </div>
       </div>
       <div>
         <h2 className="mb-4 text-lg font-semibold">Text</h2>
-        <div className="grid grid-cols-2 gap-8">
-          <InputGroupTextExample />
-          <OuiInputGroupTextExample />
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
+          <div>
+            <p className="mb-2 block text-sm text-muted-foreground md:hidden">
+              Shadcn
+            </p>
+            <div className="flex justify-center">
+              <InputGroupTextExample />
+            </div>
+          </div>
+          <div>
+            <p className="mb-2 block text-sm text-muted-foreground md:hidden">
+              Oui
+            </p>
+            <div className="flex justify-center">
+              <OuiInputGroupTextExample />
+            </div>
+          </div>
         </div>
       </div>
       <div>
         <h2 className="mb-4 text-lg font-semibold">Button</h2>
-        <div className="grid grid-cols-2 gap-8">
-          <InputGroupButtonExample />
-          <OuiInputGroupButtonExample />
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
+          <div>
+            <p className="mb-2 block text-sm text-muted-foreground md:hidden">
+              Shadcn
+            </p>
+            <div className="flex justify-center">
+              <InputGroupButtonExample />
+            </div>
+          </div>
+          <div>
+            <p className="mb-2 block text-sm text-muted-foreground md:hidden">
+              Oui
+            </p>
+            <div className="flex justify-center">
+              <OuiInputGroupButtonExample />
+            </div>
+          </div>
         </div>
       </div>
       <div>
         <h2 className="mb-4 text-lg font-semibold">Tooltip</h2>
-        <div className="grid grid-cols-2 gap-8">
-          <InputGroupTooltip />
-          <OuiInputGroupTooltip />
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
+          <div>
+            <p className="mb-2 block text-sm text-muted-foreground md:hidden">
+              Shadcn
+            </p>
+            <div className="flex justify-center">
+              <InputGroupTooltip />
+            </div>
+          </div>
+          <div>
+            <p className="mb-2 block text-sm text-muted-foreground md:hidden">
+              Oui
+            </p>
+            <div className="flex justify-center">
+              <OuiInputGroupTooltip />
+            </div>
+          </div>
         </div>
       </div>
       <div>
         <h2 className="mb-4 text-lg font-semibold">Textarea</h2>
-        <div className="grid grid-cols-2 gap-8">
-          <InputGroupTextareaExample />
-          <OuiInputGroupTextareaExample />
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
+          <div>
+            <p className="mb-2 block text-sm text-muted-foreground md:hidden">
+              Shadcn
+            </p>
+            <div className="flex justify-center">
+              <InputGroupTextareaExample />
+            </div>
+          </div>
+          <div>
+            <p className="mb-2 block text-sm text-muted-foreground md:hidden">
+              Oui
+            </p>
+            <div className="flex justify-center">
+              <OuiInputGroupTextareaExample />
+            </div>
+          </div>
         </div>
       </div>
       <div>
         <h2 className="mb-4 text-lg font-semibold">Spinner</h2>
-        <div className="grid grid-cols-2 gap-8">
-          <InputGroupSpinner />
-          <OuiInputGroupSpinner />
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
+          <div>
+            <p className="mb-2 block text-sm text-muted-foreground md:hidden">
+              Shadcn
+            </p>
+            <div className="flex justify-center">
+              <InputGroupSpinner />
+            </div>
+          </div>
+          <div>
+            <p className="mb-2 block text-sm text-muted-foreground md:hidden">
+              Oui
+            </p>
+            <div className="flex justify-center">
+              <OuiInputGroupSpinner />
+            </div>
+          </div>
         </div>
       </div>
       <div>
         <h2 className="mb-4 text-lg font-semibold">Label</h2>
-        <div className="grid grid-cols-2 gap-8">
-          <InputGroupLabel />
-          <OuiInputGroupLabel />
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
+          <div>
+            <p className="mb-2 block text-sm text-muted-foreground md:hidden">
+              Shadcn
+            </p>
+            <div className="flex justify-center">
+              <InputGroupLabel />
+            </div>
+          </div>
+          <div>
+            <p className="mb-2 block text-sm text-muted-foreground md:hidden">
+              Oui
+            </p>
+            <div className="flex justify-center">
+              <OuiInputGroupLabel />
+            </div>
+          </div>
         </div>
       </div>
       <div>
         <h2 className="mb-4 text-lg font-semibold">Dropdown</h2>
-        <div className="grid grid-cols-2 gap-8">
-          <InputGroupDropdown />
-          <OuiInputGroupDropdown />
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
+          <div>
+            <p className="mb-2 block text-sm text-muted-foreground md:hidden">
+              Shadcn
+            </p>
+            <div className="flex justify-center">
+              <InputGroupDropdown />
+            </div>
+          </div>
+          <div>
+            <p className="mb-2 block text-sm text-muted-foreground md:hidden">
+              Oui
+            </p>
+            <div className="flex justify-center">
+              <OuiInputGroupDropdown />
+            </div>
+          </div>
         </div>
       </div>
       <div>
         <h2 className="mb-4 text-lg font-semibold">Button Group</h2>
-        <div className="grid grid-cols-2 gap-8">
-          <InputGroupButtonGroup />
-          <OuiInputGroupButtonGroup />
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
+          <div>
+            <p className="mb-2 block text-sm text-muted-foreground md:hidden">
+              Shadcn
+            </p>
+            <div className="flex justify-center">
+              <InputGroupButtonGroup />
+            </div>
+          </div>
+          <div>
+            <p className="mb-2 block text-sm text-muted-foreground md:hidden">
+              Oui
+            </p>
+            <div className="flex justify-center">
+              <OuiInputGroupButtonGroup />
+            </div>
+          </div>
         </div>
       </div>
       <div>
         <h2 className="mb-4 text-lg font-semibold">Custom</h2>
-        <div className="grid grid-cols-2 gap-8">
-          <InputGroupCustom />
-          <OuiInputGroupCustom />
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
+          <div>
+            <p className="mb-2 block text-sm text-muted-foreground md:hidden">
+              Shadcn
+            </p>
+            <div className="flex justify-center">
+              <InputGroupCustom />
+            </div>
+          </div>
+          <div>
+            <p className="mb-2 block text-sm text-muted-foreground md:hidden">
+              Oui
+            </p>
+            <div className="flex justify-center">
+              <OuiInputGroupCustom />
+            </div>
+          </div>
         </div>
       </div>
     </div>
