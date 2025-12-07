@@ -76,9 +76,9 @@ function CategoryCard({
             {name}
           </Link>
         </h2>
-        <p className="text-[13px] text-muted-foreground">
+        {/* <p className="text-[13px] text-muted-foreground">
           {componentsCount} {componentsCount === 1 ? "Component" : "Components"}
-        </p>
+        </p> */}
       </div>
     </div>
   );
