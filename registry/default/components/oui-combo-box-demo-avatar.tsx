@@ -5,12 +5,11 @@ import {
   AvatarFallback,
   AvatarImage,
 } from "@/registry/default/ui/avatar";
+import { ButtonGroup } from "@/registry/default/ui/oui-button-group";
 import { Button } from "@/registry/default/ui/oui-button";
 import { ComboBox } from "@/registry/default/ui/oui-combo-box";
-import { FieldError } from "@/registry/default/ui/oui-field";
-import { Group } from "@/registry/default/ui/oui-group";
+import { FieldError, FieldLabel } from "@/registry/default/ui/oui-field";
 import { Input } from "@/registry/default/ui/oui-input";
-import { Label } from "@/registry/default/ui/oui-label";
 import { ListBoxItem } from "@/registry/default/ui/oui-list-box";
 import { Popover } from "@/registry/default/ui/oui-popover";
 import { ChevronsUpDown } from "lucide-react";
@@ -34,13 +33,13 @@ const users = [
 export default function Component() {
   return (
     <ComboBox defaultSelectedKey={users[0].id} className="md:max-w-[200px]">
-      <Label>Combo Box with Avatar</Label>
-      <Group>
-        <Input variant="ghost" placeholder="Select user..." />
-        <Button variant="ghost" size="icon">
-          <ChevronsUpDown className="size-4 shrink-0 opacity-50" />
+      <FieldLabel>Combo Box with Avatar</FieldLabel>
+      <ButtonGroup>
+        <Input placeholder="Select user..." />
+        <Button variant="outline">
+          <ChevronsUpDown className="opacity-50" />
         </Button>
-      </Group>
+      </ButtonGroup>
       <FieldError />
       <Popover>
         <Rac.ListBox items={users}>

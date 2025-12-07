@@ -1,12 +1,11 @@
 "use client";
 
 import { Button } from "@/registry/default/ui/oui-button";
+import { ButtonGroup } from "@/registry/default/ui/oui-button-group";
 import { ComboBox } from "@/registry/default/ui/oui-combo-box";
-import { FieldError } from "@/registry/default/ui/oui-field";
-import { Group } from "@/registry/default/ui/oui-group";
+import { FieldError, FieldLabel } from "@/registry/default/ui/oui-field";
 import { Header } from "@/registry/default/ui/oui-header";
 import { Input } from "@/registry/default/ui/oui-input";
-import { Label } from "@/registry/default/ui/oui-label";
 import { ListBoxItem } from "@/registry/default/ui/oui-list-box";
 import { Popover } from "@/registry/default/ui/oui-popover";
 import { ChevronsUpDown } from "lucide-react";
@@ -54,13 +53,13 @@ export default function Component() {
       defaultSelectedKey={timezones[0].timezones[0].value}
       className="md:max-w-[200px]"
     >
-      <Label>Combo Box with Headers</Label>
-      <Group>
-        <Input variant="ghost" />
-        <Button variant="ghost" size="icon">
-          <ChevronsUpDown className="size-4 shrink-0 opacity-50" />
+      <FieldLabel>Combo Box with Headers</FieldLabel>
+      <ButtonGroup>
+        <Input />
+        <Button variant="outline" size="icon">
+          <ChevronsUpDown className="opacity-50" />
         </Button>
-      </Group>
+      </ButtonGroup>
       <FieldError />
       <Popover>
         <Rac.ListBox>

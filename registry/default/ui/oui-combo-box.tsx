@@ -13,6 +13,7 @@ export function ComboBox<T extends object>({
   return (
     <Rac.ComboBox
       data-slot="combo-box"
+      data-slot-type="field"
       className={composeTailwindRenderProps(
         className,
         fieldStyles({ orientation }),

@@ -64,9 +64,9 @@ export const buttonGroupVariants = cva(
     "[&>[data-slot=select]:not(:first-of-type)>[data-slot=select-button]]:rounded-l-none",
     "[&>[data-slot=select]:not(:first-of-type)>[data-slot=select-button]]:border-l-0",
 
-    // When inside a field (group/field), remove focus ring from the input and apply focusVisibleStyles (with rounding/offset) to the ButtonGroup when the input is keyboard-focused.
+    // When input is a child, remove focus ring from the input and apply focusVisibleStyles (with rounding/offset) to the ButtonGroup when the input is keyboard-focused.
+    "[&:has(>input)>input[data-focus-visible]]:!border-input [&:has(>input[data-focus-visible])>input[data-focus-visible]]:!ring-0",
     "[&:has(>input[data-focus-visible])]:rounded-md [&:has(>input[data-focus-visible])]:border-ring [&:has(>input[data-focus-visible])]:ring-[3px] [&:has(>input[data-focus-visible])]:ring-ring/50 [&:has(>input[data-focus-visible])]:ring-offset-2 [&:has(>input[data-focus-visible])]:ring-offset-background",
-    "[&:has(>input[data-focus-visible])>input[data-focus-visible]]:!border-input [&:has(>input[data-focus-visible])>input[data-focus-visible]]:!ring-0 [&:has(>input[data-focus-visible])>input[data-focus-visible]]:!ring-transparent [&:has(>input[data-focus-visible])>input[data-focus-visible]]:!ring-offset-0",
   ],
   {
     variants: {
