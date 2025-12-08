@@ -14,10 +14,10 @@ import {
   DialogDescription,
   DialogFooter,
   DialogHeader,
+  DialogTitle,
 } from "@/registry/default/ui/oui-dialog";
-import { Heading } from "@/registry/default/ui/oui-heading";
-import * as Rac from "react-aria-components";
 import { Modal, ModalOverlay } from "@/registry/default/ui/oui-modal";
+import * as Rac from "react-aria-components";
 
 export interface DialogExAlertProps
   extends Rac.DialogProps,
@@ -63,9 +63,7 @@ export function DialogExAlert({
       <Modal className={modalClassName}>
         <Dialog role="alertdialog" {...props}>
           <DialogHeader>
-            <Heading variant="alert" slot="title">
-              {title}
-            </Heading>
+            <DialogTitle>{title}</DialogTitle>
             <DialogDescription>{children}</DialogDescription>
           </DialogHeader>
           <DialogFooter>
@@ -199,4 +197,3 @@ function ProgrammaticAlert() {
     </Button>
   );
 }
-

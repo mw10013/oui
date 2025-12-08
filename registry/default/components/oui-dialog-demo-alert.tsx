@@ -6,8 +6,8 @@ import {
   DialogDescription,
   DialogFooter,
   DialogHeader,
+  DialogTitle,
 } from "@/registry/default/ui/oui-dialog";
-import { Heading } from "@/registry/default/ui/oui-heading";
 import { Modal, ModalOverlay } from "@/registry/default/ui/oui-modal";
 import * as Rac from "react-aria-components";
 
@@ -19,9 +19,7 @@ export default function Component() {
         <Modal>
           <Dialog role="alertdialog">
             <DialogHeader>
-              <Heading variant="alert" slot="title">
-                Session Expired
-              </Heading>
+              <DialogTitle>Session Expired</DialogTitle>
               <DialogDescription>
                 Your session has expired due to inactivity. Please log in again
                 to continue using the application.

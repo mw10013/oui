@@ -5,7 +5,6 @@
   "registryDependencies": [
     "@oui/oui-button",
     "@oui/oui-dialog",
-    "@oui/oui-heading",
     "@oui/oui-label",
     "@oui/oui-modal",
     "@oui/oui-modal-ex-sheet",

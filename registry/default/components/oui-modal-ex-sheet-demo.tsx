@@ -7,9 +7,9 @@ import {
   DialogDescription,
   DialogFooter,
   DialogHeader,
+  DialogTitle,
 } from "@/registry/default/ui/oui-dialog";
 import { FieldError, FieldLabel } from "@/registry/default/ui/oui-field";
-import { Heading } from "@/registry/default/ui/oui-heading";
 import { Input } from "@/registry/default/ui/oui-input";
 import { Modal, ModalOverlay } from "@/registry/default/ui/oui-modal";
 import { TextField } from "@/registry/default/ui/oui-text-field";
@@ -24,7 +24,7 @@ export default function Component() {
           <Dialog>
             <Rac.Form>
               <DialogHeader>
-                <Heading slot="title">Edit profile</Heading>
+                <DialogTitle>Edit profile</DialogTitle>
                 <DialogDescription>
                   Make changes to your profile here. Click save when you&apos;re
                   done.

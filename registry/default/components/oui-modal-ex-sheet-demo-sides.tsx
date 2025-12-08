@@ -7,8 +7,8 @@ import {
   DialogDescription,
   DialogFooter,
   DialogHeader,
+  DialogTitle,
 } from "@/registry/default/ui/oui-dialog";
-import { Heading } from "@/registry/default/ui/oui-heading";
 import { Label } from "@/registry/default/ui/oui-label";
 import { Modal, ModalOverlay } from "@/registry/default/ui/oui-modal";
 import * as Rac from "react-aria-components";
@@ -29,7 +29,7 @@ export default function Component() {
               <Modal className={modalExSheetClassName({ side })}>
                 <Dialog>
                   <DialogHeader>
-                    <Heading slot="title">Edit profile</Heading>
+                    <DialogTitle>Edit profile</DialogTitle>
                     <DialogDescription>
                       Make changes to your profile here. Click save when
                       you&apos;re done.

@@ -72,7 +72,7 @@ export function OuiDialogDemo() {
           <Oui.Dialog>
             <Rac.Form>
               <Oui.DialogHeader>
-                <Oui.Heading slot="title">Edit profile</Oui.Heading>
+                <Oui.DialogTitle>Edit profile</Oui.DialogTitle>
                 <Oui.DialogDescription>
                   Make changes to your profile here. Click save when you're
                   done.
@@ -155,7 +155,7 @@ export function OuiDialogCloseButton() {
         <Oui.Modal className="sm:max-w-md">
           <Oui.Dialog>
             <Oui.DialogHeader>
-              <Oui.Heading slot="title">Share link</Oui.Heading>
+              <Oui.DialogTitle>Share link</Oui.DialogTitle>
               <Oui.DialogDescription>
                 Anyone who has this link will be able to view this.
               </Oui.DialogDescription>
@@ -212,9 +212,9 @@ export function OuiDialogAlert() {
         <Oui.Modal>
           <Oui.Dialog role="alertdialog">
             <Oui.DialogHeader>
-              <Oui.Heading variant="alert" slot="title">
+              <Oui.Dialog variant="alert" slot="title">
                 Are you absolutely sure?
-              </Oui.Heading>
+              </Oui.Dialog>
               <Oui.DialogDescription>
                 This action cannot be undone. This will permanently delete your
                 account and remove your data from our servers.

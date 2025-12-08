@@ -87,6 +87,26 @@ export function DialogFooter({
 }
 
 /**
+ * Wraps Rac.Heading with slot="title".
+ * 
+ * Derived from shadcn DialogTitle
+ *  
+ */
+export function DialogTitle({
+  className,
+  ...props
+}: React.ComponentProps<typeof Rac.Heading>) {
+  return (
+    <Rac.Heading
+      data-slot="dialog-title"
+      slot="title"
+      className={twMerge("text-lg leading-none font-semibold", className)}
+      {...props}
+    />
+  );
+}
+
+/**
  * Derived from shadcn DialogDescription
  */
 export function DialogDescription({

@@ -3,15 +3,7 @@ import * as React from "react";
 import { CodeBlock, highlight } from "@/components/code-block";
 import { ComponentInstall } from "@/components/component-install";
 import { CopyButton } from "@/components/copy-button";
-import { Button } from "@/registry/default/ui/oui-button";
-import {
-  Dialog,
-  DialogDescription,
-  DialogHeader,
-} from "@/registry/default/ui/oui-dialog";
-import { Heading } from "@/registry/default/ui/oui-heading";
-import { Modal, ModalOverlay } from "@/registry/default/ui/oui-modal";
-import { Tooltip } from "@/registry/default/ui/oui-tooltip";
+import * as Oui from "@/registry/default/ui/oui-index";
 import { CodeIcon } from "lucide-react";
 import * as Rac from "react-aria-components";
 
@@ -70,26 +62,26 @@ export function ComponentDetails({ component }: { component: RegistryItem }) {
       )} */}
       <Rac.DialogTrigger>
         <Rac.TooltipTrigger delay={0}>
-          <Button
+          <Oui.Button
             variant="ghost"
             size="icon"
             className="text-muted-foreground/80 transition-none data-hovered:bg-transparent data-hovered:text-foreground lg:opacity-0 lg:group-focus-within/item:opacity-100 lg:group-hover/item:opacity-100"
           >
             <CodeIcon size={16} aria-hidden={true} />
-          </Button>
-          <Tooltip>View code</Tooltip>
+          </Oui.Button>
+          <Oui.Tooltip>View code</Oui.Tooltip>
         </Rac.TooltipTrigger>
-        <ModalOverlay isDismissable>
-          <Modal className="sm:max-w-[calc(100%-2rem)]">
-            <Dialog>
-              <DialogHeader>
-                <Heading slot="title" className="text-left">
+        <Oui.ModalOverlay isDismissable>
+          <Oui.Modal className="sm:max-w-[calc(100%-2rem)]">
+            <Oui.Dialog>
+              <Oui.DialogHeader>
+                <Oui.DialogTitle className="text-left">
                   Installation
-                </Heading>
-                <DialogDescription className="sr-only">
+                </Oui.DialogTitle>
+                <Oui.DialogDescription className="sr-only">
                   Use the CLI to add components to your project
-                </DialogDescription>
-              </DialogHeader>
+                </Oui.DialogDescription>
+              </Oui.DialogHeader>
               <div className="min-w-0 space-y-5">
                 <ComponentInstall name={component.name} />
                 <div className="space-y-4">
@@ -121,9 +113,9 @@ export function ComponentDetails({ component }: { component: RegistryItem }) {
                   </div>
                 </div>
               </div>
-            </Dialog>
-          </Modal>
-        </ModalOverlay>
+            </Oui.Dialog>
+          </Oui.Modal>
+        </Oui.ModalOverlay>
       </Rac.DialogTrigger>
     </div>
   );

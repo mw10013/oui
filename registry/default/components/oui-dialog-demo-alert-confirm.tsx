@@ -7,8 +7,8 @@ import {
   DialogDescription,
   DialogFooter,
   DialogHeader,
+  DialogTitle,
 } from "@/registry/default/ui/oui-dialog";
-import { Heading } from "@/registry/default/ui/oui-heading";
 import { Modal, ModalOverlay } from "@/registry/default/ui/oui-modal";
 
 export default function Component() {
@@ -32,9 +32,7 @@ export default function Component() {
         <Modal>
           <Dialog role="alertdialog">
             <DialogHeader>
-              <Heading variant="alert" slot="title">
-                Are you absolutely sure?
-              </Heading>
+              <DialogTitle>Are you absolutely sure?</DialogTitle>
               <DialogDescription>
                 This action cannot be undone. This will permanently delete your
                 account and remove your data from our servers.

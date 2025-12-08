@@ -6,8 +6,8 @@ import {
   DialogDescription,
   DialogFooter,
   DialogHeader,
+  DialogTitle,
 } from "@/registry/default/ui/oui-dialog";
-import { Heading } from "@/registry/default/ui/oui-heading";
 import * as Rac from "react-aria-components";
 import { Modal, ModalOverlay } from "../ui/oui-modal";
 
@@ -19,7 +19,7 @@ export default function Component() {
         <Modal className="sm:max-w-lg">
           <Dialog>
             <DialogHeader>
-              <Heading slot="title">Scrollable Content</Heading>
+              <DialogTitle>Scrollable Content</DialogTitle>
               <DialogDescription>
                 This is a dialog with scrollable content.
               </DialogDescription>

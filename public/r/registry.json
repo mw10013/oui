@@ -686,14 +686,13 @@
       "registryDependencies": [
         "@oui/oui-button",
         "@oui/oui-dialog",
-        "@oui/oui-heading",
         "@oui/oui-input",
         "@oui/oui-label",
         "@oui/oui-modal",
         "@oui/oui-text-field"
       ],
       "meta": {
-        "tags": ["dialog", "heading", "modal", "text-field"],
+        "tags": ["dialog", "modal", "text-field"],
         "canPreview": true,
         "alignment": "flex-center",
         "canOpenInV0": true
@@ -711,11 +710,10 @@
       "registryDependencies": [
         "@oui/oui-button",
         "@oui/oui-dialog",
-        "@oui/oui-heading",
         "@oui/oui-modal"
       ],
       "meta": {
-        "tags": ["dialog", "modal", "heading"],
+        "tags": ["dialog", "modal"],
         "canPreview": true,
         "alignment": "flex-center",
         "canOpenInV0": true
@@ -733,11 +731,10 @@
       "registryDependencies": [
         "@oui/oui-button",
         "@oui/oui-dialog",
-        "@oui/oui-heading",
         "@oui/oui-modal"
       ],
       "meta": {
-        "tags": ["dialog", "modal", "heading"],
+        "tags": ["dialog", "modal"],
         "canPreview": true,
         "alignment": "flex-center",
         "canOpenInV0": true
@@ -755,11 +752,10 @@
       "registryDependencies": [
         "@oui/oui-button",
         "@oui/oui-dialog",
-        "@oui/oui-heading",
         "@oui/oui-modal"
       ],
       "meta": {
-        "tags": ["dialog", "modal", "heading"],
+        "tags": ["dialog", "modal"],
         "canPreview": true,
         "alignment": "flex-center",
         "canOpenInV0": true
@@ -777,11 +773,10 @@
       "registryDependencies": [
         "@oui/oui-button",
         "@oui/oui-dialog",
-        "@oui/oui-heading",
         "@oui/oui-modal"
       ],
       "meta": {
-        "tags": ["dialog", "modal", "heading"],
+        "tags": ["dialog", "modal"],
         "canPreview": true,
         "alignment": "flex-center",
         "canOpenInV0": true
@@ -1846,7 +1841,6 @@
         "@oui/oui-button",
         "@oui/oui-dialog",
         "@oui/oui-field",
-        "@oui/oui-heading",
         "@oui/oui-input",
         "@oui/oui-modal",
         "@oui/oui-modal-ex-sheet",
@@ -1870,7 +1864,6 @@
       "registryDependencies": [
         "@oui/oui-button",
         "@oui/oui-dialog",
-        "@oui/oui-heading",
         "@oui/oui-label",
         "@oui/oui-modal",
         "@oui/oui-modal-ex-sheet",
@@ -1956,13 +1949,12 @@
         "@oui/oui-button",
         "@oui/oui-dialog",
         "@oui/oui-field",
-        "@oui/oui-heading",
         "@oui/oui-input",
         "@oui/oui-popover",
         "@oui/oui-text-field"
       ],
       "meta": {
-        "tags": ["popover", "dialog", "heading", "field", "text-field"],
+        "tags": ["popover", "dialog", "field", "text-field"],
         "canPreview": true,
         "alignment": "flex-center",
         "canOpenInV0": true

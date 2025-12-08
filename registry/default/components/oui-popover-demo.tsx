@@ -5,9 +5,9 @@ import {
   Dialog,
   DialogDescription,
   DialogHeader,
+  DialogTitle,
 } from "@/registry/default/ui/oui-dialog";
 import { FieldGroup, FieldLabel } from "@/registry/default/ui/oui-field";
-import { Heading } from "@/registry/default/ui/oui-heading";
 import { Input } from "@/registry/default/ui/oui-input";
 import { Popover } from "@/registry/default/ui/oui-popover";
 import { TextField } from "@/registry/default/ui/oui-text-field";
@@ -20,9 +20,7 @@ export default function Component() {
       <Popover className="w-80">
         <Dialog showCloseButton={false}>
           <DialogHeader>
-            <Heading variant="popover" slot="title">
-              Dimensions
-            </Heading>
+            <DialogTitle>Dimensions</DialogTitle>
             <DialogDescription>
               Set the dimensions for the layer.
             </DialogDescription>
