@@ -277,6 +277,7 @@ export const categories: Category[] = [
   {
     name: "Select",
     slug: "select",
+    sideBySideHref: ReactRouter.href("/side-by-side/select"),
     components: [
       { name: "oui-select" },
       { name: "oui-select-demo" },
