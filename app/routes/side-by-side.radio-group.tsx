@@ -1,12 +1,16 @@
 "use client";
 
-import OuiRadioGroupDemo from "@/registry/default/components/oui-radio-group-demo";
+import {
+  SideBySidePage,
+  SideBySideSection,
+} from "@/components/side-by-side-page";
 import {
   Field,
   FieldDescription,
   FieldLabel,
   FieldSet,
 } from "@/registry/default/ui/field";
+import * as Oui from "@/registry/default/ui/oui-index";
 import { RadioGroup, RadioGroupItem } from "@/registry/default/ui/radio-group";
 
 function RadioGroupDemo() {
@@ -42,11 +46,35 @@ function RadioGroupDemo() {
   );
 }
 
+function OuiRadioGroupDemo() {
+  return (
+    <div className="w-full max-w-md">
+      <Oui.FieldSet>
+        <Oui.FieldLabel>Subscription Plan</Oui.FieldLabel>
+        <Oui.FieldDescription>
+          Yearly and lifetime plans offer significant savings.
+        </Oui.FieldDescription>
+        <Oui.RadioGroup defaultValue="monthly">
+          <Oui.Radio value="monthly">Monthly ($9.99/month)</Oui.Radio>
+          <Oui.Radio value="yearly">Yearly ($99.99/year)</Oui.Radio>
+          <Oui.Radio value="lifetime">Lifetime ($299.99)</Oui.Radio>
+        </Oui.RadioGroup>
+      </Oui.FieldSet>
+    </div>
+  );
+}
+
 export default function RouteComponent() {
   return (
-    <div className="mx-auto grid max-w-7xl grid-cols-2 gap-8 p-6 *:border *:border-foreground *:p-4">
-      <RadioGroupDemo />
-      <OuiRadioGroupDemo />
-    </div>
+    <SideBySidePage
+      title="Radio Group"
+      sourceHref="https://github.com/mw10013/oui/blob/main/app/routes/side-by-side.radio-group.tsx"
+    >
+      <SideBySideSection
+        title="Field"
+        shadcn={<RadioGroupDemo />}
+        oui={<OuiRadioGroupDemo />}
+      />
+    </SideBySidePage>
   );
 }

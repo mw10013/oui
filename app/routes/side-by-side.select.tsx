@@ -78,7 +78,7 @@ function OuiFieldSelectDemo() {
 export default function RouteComponent() {
   return (
     <SideBySidePage
-      title="Checkbox"
+      title="Select"
       sourceHref="https://github.com/mw10013/oui/blob/main/app/routes/side-by-side.select.tsx"
     >
       <SideBySideSection

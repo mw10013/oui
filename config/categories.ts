@@ -250,6 +250,7 @@ export const categories: Category[] = [
   {
     name: "Radio Group",
     slug: "radio-group",
+    sideBySideHref: ReactRouter.href("/side-by-side/radio-group"),
     components: [
       { name: "oui-radio-group" },
       { name: "oui-radio-group-demo" },
