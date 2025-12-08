@@ -346,6 +346,7 @@ export const categories: Category[] = [
   {
     name: "Toggle Button",
     slug: "toggle-button",
+    sideBySideHref: ReactRouter.href("/side-by-side/toggle-button"),
     components: [
       { name: "oui-toggle-button" },
       { name: "oui-toggle-button-demo" },
