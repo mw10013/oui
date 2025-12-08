@@ -1,7 +1,7 @@
 "use client";
 
 import * as React from "react";
-import SideBySidePage from "@/components/side-by-side-page";
+import { SideBySidePage } from "@/components/side-by-side-page";
 import { SideBySideSection } from "@/components/side-by-side-section";
 import { useCopy } from "@/hooks/use-copy";
 import {

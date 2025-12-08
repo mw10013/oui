@@ -3,7 +3,7 @@ import { PageHeader } from "@/components/page-header";
 import * as Oui from "@/registry/default/ui/oui-index";
 import { Code } from "lucide-react";
 
-export default function SideBySidePage({
+export function SideBySidePage({
   title,
   sourceHref,
   children,

@@ -1,4 +1,5 @@
-import OuiFieldDemo from "@/registry/default/components/oui-field-demo";
+import { SideBySidePage } from "@/components/side-by-side-page";
+import { SideBySideSection } from "@/components/side-by-side-section";
 import { Button } from "@/registry/default/ui/button";
 import { Checkbox } from "@/registry/default/ui/checkbox";
 import {
@@ -11,6 +12,7 @@ import {
   FieldSet,
 } from "@/registry/default/ui/field";
 import { Input } from "@/registry/default/ui/input";
+import * as Oui from "@/registry/default/ui/oui-index";
 import {
   Select,
   SelectContent,
@@ -19,6 +21,7 @@ import {
   SelectValue,
 } from "@/registry/default/ui/select";
 import { Textarea } from "@/registry/default/ui/textarea";
+import * as Rac from "react-aria-components";
 
 function FieldDemo() {
   return (
@@ -151,11 +154,129 @@ function FieldDemo() {
   );
 }
 
+function OuiFieldDemo() {
+  return (
+    <div className="w-full max-w-md">
+      <Rac.Form>
+        <Oui.FieldGroup>
+          <Oui.FieldSet>
+            <Oui.FieldLegend>Payment Method</Oui.FieldLegend>
+            <Oui.FieldDescription>
+              All transactions are secure and encrypted
+            </Oui.FieldDescription>
+            <Oui.FieldGroup>
+              <Oui.TextField isRequired>
+                <Oui.FieldLabel>Name on Card</Oui.FieldLabel>
+                <Oui.Input placeholder="Evil Rabbit" />
+              </Oui.TextField>
+              <Oui.TextField isRequired>
+                <Oui.FieldLabel>Card Number</Oui.FieldLabel>
+                <Oui.Input placeholder="1234 5678 9012 3456" />
+                <Oui.FieldDescription>
+                  Enter your 16-digit card number
+                </Oui.FieldDescription>
+              </Oui.TextField>
+              <div className="grid grid-cols-3 gap-4">
+                <Oui.Select placeholder="MM">
+                  <Oui.FieldLabel>Month</Oui.FieldLabel>
+                  <Oui.SelectButton>
+                    <Oui.SelectValue />
+                  </Oui.SelectButton>
+                  <Oui.Popover>
+                    <Rac.ListBox>
+                      <Oui.ListBoxItem>01</Oui.ListBoxItem>
+                      <Oui.ListBoxItem>02</Oui.ListBoxItem>
+                      <Oui.ListBoxItem>03</Oui.ListBoxItem>
+                      <Oui.ListBoxItem>04</Oui.ListBoxItem>
+                      <Oui.ListBoxItem>05</Oui.ListBoxItem>
+                      <Oui.ListBoxItem>06</Oui.ListBoxItem>
+                      <Oui.ListBoxItem>07</Oui.ListBoxItem>
+                      <Oui.ListBoxItem>08</Oui.ListBoxItem>
+                      <Oui.ListBoxItem>09</Oui.ListBoxItem>
+                      <Oui.ListBoxItem>10</Oui.ListBoxItem>
+                      <Oui.ListBoxItem>11</Oui.ListBoxItem>
+                      <Oui.ListBoxItem>12</Oui.ListBoxItem>
+                    </Rac.ListBox>
+                  </Oui.Popover>
+                </Oui.Select>
+                <Oui.Select placeholder="YYYY">
+                  <Oui.FieldLabel>Year</Oui.FieldLabel>
+                  <Oui.SelectButton>
+                    <Oui.SelectValue />
+                  </Oui.SelectButton>
+                  <Oui.Popover>
+                    <Rac.ListBox>
+                      <Oui.ListBoxItem>2024</Oui.ListBoxItem>
+                      <Oui.ListBoxItem>2025</Oui.ListBoxItem>
+                      <Oui.ListBoxItem>2026</Oui.ListBoxItem>
+                      <Oui.ListBoxItem>2027</Oui.ListBoxItem>
+                      <Oui.ListBoxItem>2028</Oui.ListBoxItem>
+                      <Oui.ListBoxItem>2029</Oui.ListBoxItem>
+                    </Rac.ListBox>
+                  </Oui.Popover>
+                </Oui.Select>
+                <Oui.TextField isRequired>
+                  <Oui.FieldLabel>CVV</Oui.FieldLabel>
+                  <Oui.Input placeholder="123" />
+                </Oui.TextField>
+              </div>
+            </Oui.FieldGroup>
+          </Oui.FieldSet>
+          <Oui.FieldSeparator />
+          <Oui.FieldSet>
+            <Oui.FieldLegend>Billing Address</Oui.FieldLegend>
+            <Oui.FieldDescription>
+              The billing address associated with your payment method
+            </Oui.FieldDescription>
+            <Oui.FieldGroup>
+              <Oui.Field orientation="horizontal">
+                <Oui.Checkbox
+                  id="oui-checkout-7j9-same-as-shipping-wgm"
+                  defaultSelected
+                />
+                <Oui.FieldLabel
+                  htmlFor="oui-checkout-7j9-same-as-shipping-wgm"
+                  className="font-normal"
+                >
+                  Same as shipping address
+                </Oui.FieldLabel>
+              </Oui.Field>
+            </Oui.FieldGroup>
+          </Oui.FieldSet>
+          <Oui.FieldSet>
+            <Oui.FieldGroup>
+              <Oui.TextField>
+                <Oui.FieldLabel>Comments</Oui.FieldLabel>
+                <Oui.TextArea
+                  placeholder="Add any additional comments"
+                  className="resize-none"
+                />
+              </Oui.TextField>
+            </Oui.FieldGroup>
+          </Oui.FieldSet>
+          <Oui.Field orientation="horizontal">
+            <Oui.Button type="submit">Submit</Oui.Button>
+            <Oui.Button variant="outline" type="button">
+              Cancel
+            </Oui.Button>
+          </Oui.Field>
+        </Oui.FieldGroup>
+      </Rac.Form>
+    </div>
+  );
+}
+
 export default function RouteComponent() {
   return (
-    <div className="mx-auto grid max-w-7xl grid-cols-2 gap-8 p-6 *:border *:border-foreground *:p-4">
-      <FieldDemo />
-      <OuiFieldDemo />
-    </div>
+    <SideBySidePage
+      title="Field"
+      sourceHref="https://github.com/mw10013/oui/blob/main/app/routes/side-by-side.field.tsx"
+    >
+      <SideBySideSection
+        title="Form"
+        shadcn={<FieldDemo />}
+        oui={<OuiFieldDemo />}
+      />
+    </SideBySidePage>
   );
 }
