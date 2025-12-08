@@ -1,6 +1,9 @@
 "use client";
 
-import OuiFieldCheckboxDemo from "@/registry/default/components/oui-checkbox-demo";
+import {
+  SideBySidePage,
+  SideBySideSection,
+} from "@/components/side-by-side-page";
 import { Checkbox } from "@/registry/default/ui/checkbox";
 import {
   Field,
@@ -16,7 +19,7 @@ import { Label } from "@/registry/default/ui/label";
 import * as Oui from "@/registry/default/ui/oui-index";
 import { twJoin } from "tailwind-merge";
 
-function CheckboxDemo() {
+function BasicCheckbox() {
   return (
     <div className="flex flex-col gap-6">
       <div className="flex items-center gap-3">
@@ -55,7 +58,7 @@ function CheckboxDemo() {
   );
 }
 
-function OuiCheckboxDemo() {
+function OuiBasicCheckbox() {
   return (
     <div className="flex flex-col gap-6">
       <Oui.Checkbox className="leading-none">
@@ -99,7 +102,7 @@ function OuiCheckboxDemo() {
   );
 }
 
-function FieldCheckboxDemo() {
+function FieldCheckbox() {
   return (
     <div className="w-full max-w-md">
       <FieldGroup>
@@ -167,13 +170,57 @@ function FieldCheckboxDemo() {
   );
 }
 
+function OuiFieldCheckbox() {
+  return (
+    <div className="w-full max-w-md">
+      <Oui.FieldGroup>
+        <Oui.CheckboxGroup defaultValue={["hard-disks"]}>
+          <Oui.FieldLabel className="text-sm">
+            Show these items on the desktop
+          </Oui.FieldLabel>
+          <Oui.FieldDescription>
+            Select the items you want to show on the desktop.
+          </Oui.FieldDescription>
+          <Oui.Checkbox value="hard-disks">Hard disks</Oui.Checkbox>
+          <Oui.Checkbox value="external-disks">External disks</Oui.Checkbox>
+          <Oui.Checkbox value="cds-dvds">CDs, DVDs, and iPods</Oui.Checkbox>
+          <Oui.Checkbox value="connected-servers">
+            Connected servers
+          </Oui.Checkbox>
+          <Oui.FieldError />
+        </Oui.CheckboxGroup>
+        <Oui.FieldSeparator />
+        <Oui.FieldCheckbox>
+          <Oui.Checkbox defaultSelected />
+          <Oui.FieldContent>
+            <Oui.FieldLabel>Sync Desktop & Documents folders</Oui.FieldLabel>
+            <Oui.FieldDescription>
+              Your Desktop & Documents folders are being synced with iCloud
+              Drive. You can access them from other devices.
+            </Oui.FieldDescription>
+          </Oui.FieldContent>
+        </Oui.FieldCheckbox>
+      </Oui.FieldGroup>
+    </div>
+  );
+}
+
 export default function RouteComponent() {
   return (
-    <div className="mx-auto grid max-w-7xl grid-cols-2 gap-8 p-6 *:border *:border-foreground *:p-4">
-      <CheckboxDemo />
-      <OuiCheckboxDemo />
-      <FieldCheckboxDemo />
-      <OuiFieldCheckboxDemo />
-    </div>
+    <SideBySidePage
+      title="Checkbox"
+      sourceHref="https://github.com/mw10013/oui/blob/main/app/routes/side-by-side.checkbox.tsx"
+    >
+      <SideBySideSection
+        title="Basic"
+        shadcn={<BasicCheckbox />}
+        oui={<OuiBasicCheckbox />}
+      />
+      <SideBySideSection
+        title="Field"
+        shadcn={<FieldCheckbox />}
+        oui={<OuiFieldCheckbox />}
+      />
+    </SideBySidePage>
   );
 }

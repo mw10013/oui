@@ -71,6 +71,7 @@ export const categories: Category[] = [
   {
     name: "Checkbox",
     slug: "checkbox",
+    sideBySideHref: ReactRouter.href("/side-by-side/checkbox"),
     components: [
       { name: "oui-checkbox" },
       { name: "oui-checkbox-demo" },
