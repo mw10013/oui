@@ -1,5 +1,7 @@
-import { SideBySidePage } from "@/components/side-by-side-page";
-import { SideBySideSection } from "@/components/side-by-side-section";
+import {
+  SideBySidePage,
+  SideBySideSection,
+} from "@/components/side-by-side-page";
 import { Button } from "@/registry/default/ui/button";
 import { Checkbox } from "@/registry/default/ui/checkbox";
 import {
