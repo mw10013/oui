@@ -32,15 +32,6 @@ export default function RouteComponent() {
             <BookmarkIcon />
             Bookmark
           </ToggleButton>
-          <ToggleButton
-            aria-label="Toggle bookmark"
-            size="sm"
-            variant="outline"
-            className="data-focus-visible:border-transparent data-focus-visible:ring-offset-4 data-focus-visible:ring-offset-background"
-          >
-            <BookmarkIcon />
-            Bookmark
-          </ToggleButton>
           <ToggleButton aria-label="Toggle italic" variant="outline">
             <Italic />
           </ToggleButton>

@@ -305,6 +305,7 @@ export const categories: Category[] = [
   {
     name: "Switch",
     slug: "switch",
+    sideBySideHref: ReactRouter.href("/side-by-side/switch"),
     components: [{ name: "oui-switch" }, { name: "oui-switch-demo" }],
   },
   {

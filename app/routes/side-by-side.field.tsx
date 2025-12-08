@@ -268,6 +268,64 @@ function OuiFieldDemo() {
   );
 }
 
+function FieldDemoFieldset() {
+  return (
+    <div className="w-full max-w-md">
+      <FieldSet>
+        <FieldLegend>Address Information</FieldLegend>
+        <FieldDescription>
+          We need your address to deliver your order.
+        </FieldDescription>
+        <FieldGroup>
+          <Field>
+            <FieldLabel htmlFor="street">Street Address</FieldLabel>
+            <Input id="street" type="text" placeholder="123 Main St" />
+          </Field>
+          <div className="grid grid-cols-2 gap-4">
+            <Field>
+              <FieldLabel htmlFor="city">City</FieldLabel>
+              <Input id="city" type="text" placeholder="New York" />
+            </Field>
+            <Field>
+              <FieldLabel htmlFor="zip">Postal Code</FieldLabel>
+              <Input id="zip" type="text" placeholder="90502" />
+            </Field>
+          </div>
+        </FieldGroup>
+      </FieldSet>
+    </div>
+  );
+}
+
+function OuiFieldDemoFieldset() {
+  return (
+    <div className="w-full max-w-md">
+      <Oui.FieldSet>
+        <Oui.FieldLegend>Address Information</Oui.FieldLegend>
+        <Oui.FieldDescription>
+          We need your address to deliver your order.
+        </Oui.FieldDescription>
+        <Oui.FieldGroup>
+          <Oui.TextField>
+            <Oui.FieldLabel>Street Address</Oui.FieldLabel>
+            <Oui.Input placeholder="123 Main St" />
+          </Oui.TextField>
+          <div className="grid grid-cols-2 gap-4">
+            <Oui.TextField>
+              <Oui.FieldLabel>City</Oui.FieldLabel>
+              <Oui.Input placeholder="New York" />
+            </Oui.TextField>
+            <Oui.TextField>
+              <Oui.FieldLabel>Postal Code</Oui.FieldLabel>
+              <Oui.Input placeholder="90502" />
+            </Oui.TextField>
+          </div>
+        </Oui.FieldGroup>
+      </Oui.FieldSet>
+    </div>
+  );
+}
+
 export default function RouteComponent() {
   return (
     <SideBySidePage
@@ -278,6 +336,11 @@ export default function RouteComponent() {
         title="Form"
         shadcn={<FieldDemo />}
         oui={<OuiFieldDemo />}
+      />
+      <SideBySideSection
+        title="Fieldset"
+        shadcn={<FieldDemoFieldset />}
+        oui={<OuiFieldDemoFieldset />}
       />
     </SideBySidePage>
   );
