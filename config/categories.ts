@@ -57,6 +57,7 @@ export const categories: Category[] = [
   {
     name: "Button Group",
     slug: "button-group",
+    sideBySideHref: ReactRouter.href("/side-by-side/button-group"),
     components: [
       { name: "oui-button-group" },
       { name: "oui-button-group-demo" },

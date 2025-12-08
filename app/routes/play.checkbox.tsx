@@ -170,10 +170,10 @@ function FieldCheckboxDemo() {
 export default function RouteComponent() {
   return (
     <div className="mx-auto grid max-w-7xl grid-cols-2 gap-8 p-6 *:border *:border-foreground *:p-4">
-      <FieldCheckboxDemo />
-      <OuiFieldCheckboxDemo />
       <CheckboxDemo />
       <OuiCheckboxDemo />
+      <FieldCheckboxDemo />
+      <OuiFieldCheckboxDemo />
     </div>
   );
 }
