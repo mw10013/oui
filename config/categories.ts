@@ -335,6 +335,7 @@ export const categories: Category[] = [
   {
     name: "Text Field",
     slug: "text-field",
+    sideBySideHref: ReactRouter.href("/side-by-side/text-field"),
     components: [
       { name: "oui-text-field" },
       { name: "oui-text-field-demo" },
