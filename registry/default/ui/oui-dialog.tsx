@@ -5,10 +5,17 @@ import * as Rac from "react-aria-components";
 import { twJoin, twMerge } from "tailwind-merge";
 
 /**
- * Derived from shadcn DialogContent.
+ * Dialog supports both regular dialogs and alert dialogs.
+ * For regular dialogs, use without a role prop. For alert dialogs, set role="alertdialog".
+ * Unlike Shadcn UI and Radix UI, which provide separate Dialog and AlertDialog components,
+ * this RAC-based implementation uses a single Dialog component configurable via the role prop.
+ * Alert dialogs are meant for important prompts requiring user action and do not display
+ * a close button by default to prevent dismissal without interaction, per accessibility guidelines.
  *
  * @param showCloseButton - Show the close button for non-'alertdialog' role. 'alertdialog' role never shows a close button to ensure users cannot dismiss alerts without taking action, per accessibility guidelines.
  * @default true
+ *
+ * Derived from shadcn DialogContent.
  */
 export function Dialog({
   showCloseButton = true,
@@ -88,9 +95,9 @@ export function DialogFooter({
 
 /**
  * Wraps Rac.Heading with slot="title".
- * 
+ *
  * Derived from shadcn DialogTitle
- *  
+ *
  */
 export function DialogTitle({
   className,
