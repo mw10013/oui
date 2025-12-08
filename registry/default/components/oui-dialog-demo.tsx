@@ -30,14 +30,14 @@ export default function Component() {
                 </DialogDescription>
               </DialogHeader>
               <div className="grid gap-4 py-4">
-                <TextField name="name" autoFocus>
+                <TextField name="name" autoFocus defaultValue="Pedro Duarte">
                   <FieldLabel>Name</FieldLabel>
-                  <Input defaultValue="Pedro Duarte" />
+                  <Input />
                   <FieldError />
                 </TextField>
-                <TextField name="username">
+                <TextField name="username" defaultValue="@peduarte">
                   <FieldLabel>Username</FieldLabel>
-                  <Input defaultValue="@peduarte" />
+                  <Input />
                   <FieldError />
                 </TextField>
               </div>

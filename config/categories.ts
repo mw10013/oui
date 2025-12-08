@@ -100,6 +100,7 @@ export const categories: Category[] = [
   {
     name: "Dialog",
     slug: "dialog",
+    sideBySideHref: ReactRouter.href("/side-by-side/dialog"),
     components: [
       { name: "oui-dialog" },
       { name: "oui-dialog-demo" },

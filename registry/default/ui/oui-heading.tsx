@@ -1,6 +1,7 @@
 "use client";
 
 import type { VariantProps } from "class-variance-authority";
+import * as React from "react";
 import { cva } from "class-variance-authority";
 import * as Rac from "react-aria-components";
 import { twMerge } from "tailwind-merge";
@@ -22,11 +23,12 @@ export const headingVariants = cva(undefined, {
   },
 });
 
-export interface HeadingProps
-  extends Rac.HeadingProps,
-    VariantProps<typeof headingVariants> {}
-
-export function Heading({ className, variant, ...props }: HeadingProps) {
+export function Heading({
+  className,
+  variant,
+  ...props
+}: React.ComponentProps<typeof Rac.Heading> &
+  VariantProps<typeof headingVariants>) {
   return (
     <Rac.Heading
       className={twMerge(headingVariants({ className, variant }))}
