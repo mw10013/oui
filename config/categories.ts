@@ -329,6 +329,7 @@ export const categories: Category[] = [
   {
     name: "Text Area",
     slug: "text-area",
+    sideBySideHref: ReactRouter.href("/side-by-side/text-area"),
     components: [{ name: "oui-text-area" }, { name: "oui-text-area-demo" }],
   },
   {
