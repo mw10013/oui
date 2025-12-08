@@ -1,6 +1,8 @@
 "use client";
 
 import * as React from "react";
+import SideBySidePage from "@/components/side-by-side-page";
+import { SideBySideSection } from "@/components/side-by-side-section";
 import { useCopy } from "@/hooks/use-copy";
 import {
   ButtonGroup,
@@ -53,36 +55,6 @@ import {
   StarIcon,
 } from "lucide-react";
 import * as Rac from "react-aria-components";
-
-function SideBySideSection({
-  title,
-  shadcn,
-  oui,
-}: {
-  title: string;
-  shadcn: React.ReactNode;
-  oui: React.ReactNode;
-}) {
-  return (
-    <div>
-      <h2 className="mb-4 text-lg font-semibold">{title}</h2>
-      <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
-        <div>
-          <p className="mb-2 block text-sm text-muted-foreground md:hidden">
-            Shadcn
-          </p>
-          <div className="flex justify-center">{shadcn}</div>
-        </div>
-        <div>
-          <p className="mb-2 block text-sm text-muted-foreground md:hidden">
-            Oui
-          </p>
-          <div className="flex justify-center">{oui}</div>
-        </div>
-      </div>
-    </div>
-  );
-}
 
 export function InputGroupDemo() {
   return (
@@ -941,15 +913,10 @@ export function OuiInputGroupCustom() {
 
 export default function RouteComponent() {
   return (
-    <div className="mx-auto max-w-7xl space-y-8 p-6">
-      <div className="hidden md:mb-4 md:grid md:grid-cols-2 md:gap-8">
-        <div className="text-center text-sm font-medium text-muted-foreground">
-          Shadcn
-        </div>
-        <div className="text-center text-sm font-medium text-muted-foreground">
-          Oui
-        </div>
-      </div>
+    <SideBySidePage
+      title="Input Group"
+      sourceHref="https://github.com/mw10013/oui/blob/main/app/routes/side-by-side.input-group.tsx"
+    >
       <SideBySideSection
         title="Icon"
         shadcn={<InputGroupIcon />}
@@ -1000,6 +967,6 @@ export default function RouteComponent() {
         shadcn={<InputGroupCustom />}
         oui={<OuiInputGroupCustom />}
       />
-    </div>
+    </SideBySidePage>
   );
 }
