@@ -54,6 +54,36 @@ import {
 } from "lucide-react";
 import * as Rac from "react-aria-components";
 
+function SideBySideSection({
+  title,
+  shadcn,
+  oui,
+}: {
+  title: string;
+  shadcn: React.ReactNode;
+  oui: React.ReactNode;
+}) {
+  return (
+    <div>
+      <h2 className="mb-4 text-lg font-semibold">{title}</h2>
+      <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
+        <div>
+          <p className="mb-2 block text-sm text-muted-foreground md:hidden">
+            Shadcn
+          </p>
+          <div className="flex justify-center">{shadcn}</div>
+        </div>
+        <div>
+          <p className="mb-2 block text-sm text-muted-foreground md:hidden">
+            Oui
+          </p>
+          <div className="flex justify-center">{oui}</div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
 export function InputGroupDemo() {
   return (
     <div className="grid w-full max-w-sm gap-6">
@@ -920,216 +950,56 @@ export default function RouteComponent() {
           Oui
         </div>
       </div>
-      <div>
-        <h2 className="mb-4 text-lg font-semibold">Icon</h2>
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
-          <div>
-            <p className="mb-2 block text-sm text-muted-foreground md:hidden">
-              Shadcn
-            </p>
-            <div className="flex justify-center">
-              <InputGroupIcon />
-            </div>
-          </div>
-          <div>
-            <p className="mb-2 block text-sm text-muted-foreground md:hidden">
-              Oui
-            </p>
-            <div className="flex justify-center">
-              <OuiInputGroupIcon />
-            </div>
-          </div>
-        </div>
-      </div>
-      <div>
-        <h2 className="mb-4 text-lg font-semibold">Text</h2>
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
-          <div>
-            <p className="mb-2 block text-sm text-muted-foreground md:hidden">
-              Shadcn
-            </p>
-            <div className="flex justify-center">
-              <InputGroupTextExample />
-            </div>
-          </div>
-          <div>
-            <p className="mb-2 block text-sm text-muted-foreground md:hidden">
-              Oui
-            </p>
-            <div className="flex justify-center">
-              <OuiInputGroupTextExample />
-            </div>
-          </div>
-        </div>
-      </div>
-      <div>
-        <h2 className="mb-4 text-lg font-semibold">Button</h2>
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
-          <div>
-            <p className="mb-2 block text-sm text-muted-foreground md:hidden">
-              Shadcn
-            </p>
-            <div className="flex justify-center">
-              <InputGroupButtonExample />
-            </div>
-          </div>
-          <div>
-            <p className="mb-2 block text-sm text-muted-foreground md:hidden">
-              Oui
-            </p>
-            <div className="flex justify-center">
-              <OuiInputGroupButtonExample />
-            </div>
-          </div>
-        </div>
-      </div>
-      <div>
-        <h2 className="mb-4 text-lg font-semibold">Tooltip</h2>
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
-          <div>
-            <p className="mb-2 block text-sm text-muted-foreground md:hidden">
-              Shadcn
-            </p>
-            <div className="flex justify-center">
-              <InputGroupTooltip />
-            </div>
-          </div>
-          <div>
-            <p className="mb-2 block text-sm text-muted-foreground md:hidden">
-              Oui
-            </p>
-            <div className="flex justify-center">
-              <OuiInputGroupTooltip />
-            </div>
-          </div>
-        </div>
-      </div>
-      <div>
-        <h2 className="mb-4 text-lg font-semibold">Textarea</h2>
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
-          <div>
-            <p className="mb-2 block text-sm text-muted-foreground md:hidden">
-              Shadcn
-            </p>
-            <div className="flex justify-center">
-              <InputGroupTextareaExample />
-            </div>
-          </div>
-          <div>
-            <p className="mb-2 block text-sm text-muted-foreground md:hidden">
-              Oui
-            </p>
-            <div className="flex justify-center">
-              <OuiInputGroupTextareaExample />
-            </div>
-          </div>
-        </div>
-      </div>
-      <div>
-        <h2 className="mb-4 text-lg font-semibold">Spinner</h2>
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
-          <div>
-            <p className="mb-2 block text-sm text-muted-foreground md:hidden">
-              Shadcn
-            </p>
-            <div className="flex justify-center">
-              <InputGroupSpinner />
-            </div>
-          </div>
-          <div>
-            <p className="mb-2 block text-sm text-muted-foreground md:hidden">
-              Oui
-            </p>
-            <div className="flex justify-center">
-              <OuiInputGroupSpinner />
-            </div>
-          </div>
-        </div>
-      </div>
-      <div>
-        <h2 className="mb-4 text-lg font-semibold">Label</h2>
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
-          <div>
-            <p className="mb-2 block text-sm text-muted-foreground md:hidden">
-              Shadcn
-            </p>
-            <div className="flex justify-center">
-              <InputGroupLabel />
-            </div>
-          </div>
-          <div>
-            <p className="mb-2 block text-sm text-muted-foreground md:hidden">
-              Oui
-            </p>
-            <div className="flex justify-center">
-              <OuiInputGroupLabel />
-            </div>
-          </div>
-        </div>
-      </div>
-      <div>
-        <h2 className="mb-4 text-lg font-semibold">Dropdown</h2>
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
-          <div>
-            <p className="mb-2 block text-sm text-muted-foreground md:hidden">
-              Shadcn
-            </p>
-            <div className="flex justify-center">
-              <InputGroupDropdown />
-            </div>
-          </div>
-          <div>
-            <p className="mb-2 block text-sm text-muted-foreground md:hidden">
-              Oui
-            </p>
-            <div className="flex justify-center">
-              <OuiInputGroupDropdown />
-            </div>
-          </div>
-        </div>
-      </div>
-      <div>
-        <h2 className="mb-4 text-lg font-semibold">Button Group</h2>
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
-          <div>
-            <p className="mb-2 block text-sm text-muted-foreground md:hidden">
-              Shadcn
-            </p>
-            <div className="flex justify-center">
-              <InputGroupButtonGroup />
-            </div>
-          </div>
-          <div>
-            <p className="mb-2 block text-sm text-muted-foreground md:hidden">
-              Oui
-            </p>
-            <div className="flex justify-center">
-              <OuiInputGroupButtonGroup />
-            </div>
-          </div>
-        </div>
-      </div>
-      <div>
-        <h2 className="mb-4 text-lg font-semibold">Custom</h2>
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
-          <div>
-            <p className="mb-2 block text-sm text-muted-foreground md:hidden">
-              Shadcn
-            </p>
-            <div className="flex justify-center">
-              <InputGroupCustom />
-            </div>
-          </div>
-          <div>
-            <p className="mb-2 block text-sm text-muted-foreground md:hidden">
-              Oui
-            </p>
-            <div className="flex justify-center">
-              <OuiInputGroupCustom />
-            </div>
-          </div>
-        </div>
-      </div>
+      <SideBySideSection
+        title="Icon"
+        shadcn={<InputGroupIcon />}
+        oui={<OuiInputGroupIcon />}
+      />
+      <SideBySideSection
+        title="Text"
+        shadcn={<InputGroupTextExample />}
+        oui={<OuiInputGroupTextExample />}
+      />
+      <SideBySideSection
+        title="Button"
+        shadcn={<InputGroupButtonExample />}
+        oui={<OuiInputGroupButtonExample />}
+      />
+      <SideBySideSection
+        title="Tooltip"
+        shadcn={<InputGroupTooltip />}
+        oui={<OuiInputGroupTooltip />}
+      />
+      <SideBySideSection
+        title="Textarea"
+        shadcn={<InputGroupTextareaExample />}
+        oui={<OuiInputGroupTextareaExample />}
+      />
+      <SideBySideSection
+        title="Spinner"
+        shadcn={<InputGroupSpinner />}
+        oui={<OuiInputGroupSpinner />}
+      />
+      <SideBySideSection
+        title="Label"
+        shadcn={<InputGroupLabel />}
+        oui={<OuiInputGroupLabel />}
+      />
+      <SideBySideSection
+        title="Dropdown"
+        shadcn={<InputGroupDropdown />}
+        oui={<OuiInputGroupDropdown />}
+      />
+      <SideBySideSection
+        title="Button Group"
+        shadcn={<InputGroupButtonGroup />}
+        oui={<OuiInputGroupButtonGroup />}
+      />
+      <SideBySideSection
+        title="Custom"
+        shadcn={<InputGroupCustom />}
+        oui={<OuiInputGroupCustom />}
+      />
     </div>
   );
 }
