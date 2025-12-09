@@ -160,15 +160,16 @@ export function OuiDialogCloseButton() {
                 Anyone who has this link will be able to view this.
               </Oui.DialogDescription>
             </Oui.DialogHeader>
-            <div className="flex items-center space-x-2">
-              <div className="grid flex-1 gap-2">
-                <Oui.FieldLabel className="sr-only">Link</Oui.FieldLabel>
-                <Oui.Input
-                  defaultValue="https://ui.shadcn.com/docs/installation"
-                  readOnly
-                />
-              </div>
-            </div>
+            <Oui.FieldGroup>
+              <Oui.TextField
+                aria-label="Link"
+                isReadOnly
+                autoFocus
+                defaultValue="https://ui.shadcn.com/docs/installation"
+              >
+                <Oui.Input />
+              </Oui.TextField>
+            </Oui.FieldGroup>
             <Oui.DialogFooter className="sm:justify-start">
               <Oui.Button variant="secondary" slot="close">
                 Close
@@ -212,9 +213,7 @@ export function OuiDialogAlert() {
         <Oui.Modal>
           <Oui.Dialog role="alertdialog">
             <Oui.DialogHeader>
-              <Oui.DialogTitle>
-                Are you absolutely sure?
-              </Oui.DialogTitle>
+              <Oui.DialogTitle>Are you absolutely sure?</Oui.DialogTitle>
               <Oui.DialogDescription>
                 This action cannot be undone. This will permanently delete your
                 account and remove your data from our servers.
