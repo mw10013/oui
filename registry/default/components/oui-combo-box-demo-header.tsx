@@ -4,9 +4,8 @@ import { Button } from "@/registry/default/ui/oui-button";
 import { ButtonGroup } from "@/registry/default/ui/oui-button-group";
 import { ComboBox } from "@/registry/default/ui/oui-combo-box";
 import { FieldError, FieldLabel } from "@/registry/default/ui/oui-field";
-import { Header } from "@/registry/default/ui/oui-header";
 import { Input } from "@/registry/default/ui/oui-input";
-import { ListBoxItem } from "@/registry/default/ui/oui-list-box";
+import { ListBoxHeader, ListBoxItem } from "@/registry/default/ui/oui-list-box";
 import { Popover } from "@/registry/default/ui/oui-popover";
 import { ChevronsUpDown } from "lucide-react";
 import * as Rac from "react-aria-components";
@@ -65,7 +64,7 @@ export default function Component() {
         <Rac.ListBox>
           {timezones.map((group) => (
             <Rac.ListBoxSection key={group.label}>
-              <Header variant="select">{group.label}</Header>
+              <ListBoxHeader>{group.label}</ListBoxHeader>
               <Rac.Collection items={group.timezones}>
                 {(item) => (
                   <ListBoxItem id={item.value}>{item.label}</ListBoxItem>

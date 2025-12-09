@@ -2,8 +2,7 @@
 
 import { useState } from "react";
 import { FieldDescription, FieldLabel } from "@/registry/default/ui/oui-field";
-import { Header } from "@/registry/default/ui/oui-header";
-import { ListBoxItem } from "@/registry/default/ui/oui-list-box";
+import { ListBoxHeader, ListBoxItem } from "@/registry/default/ui/oui-list-box";
 import { Popover } from "@/registry/default/ui/oui-popover";
 import {
   Select,
@@ -30,7 +29,7 @@ export default function Component() {
       <Popover>
         <Rac.ListBox>
           <Rac.ListBoxSection id="mammals">
-            <Header variant="select">Mammals</Header>
+            <ListBoxHeader>Mammals</ListBoxHeader>
             <Rac.Collection>
               <ListBoxItem id="Koala">Koala</ListBoxItem>
               <ListBoxItem id="Kangaroo">Kangaroo</ListBoxItem>
@@ -42,7 +41,7 @@ export default function Component() {
             </Rac.Collection>
           </Rac.ListBoxSection>
           <Rac.ListBoxSection id="birds">
-            <Header variant="select">Birds</Header>
+            <ListBoxHeader>Birds</ListBoxHeader>
             <Rac.Collection>
               <ListBoxItem id="Bald Eagle">Bald Eagle</ListBoxItem>
             </Rac.Collection>

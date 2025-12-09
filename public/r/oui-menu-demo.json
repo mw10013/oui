@@ -4,7 +4,6 @@
   "type": "registry:component",
   "registryDependencies": [
     "@oui/oui-button",
-    "@oui/oui-header",
     "@oui/oui-keyboard",
     "@oui/oui-menu",
     "@oui/oui-popover"
@@ -20,8 +19,7 @@
     "tags": [
       "menu",
       "keyboard",
-      "popover",
-      "header"
+      "popover"
     ],
     "canPreview": true,
     "canOpenInV0": true

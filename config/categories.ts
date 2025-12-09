@@ -142,7 +142,7 @@ export const categories: Category[] = [
   {
     name: "Header",
     slug: "header",
-    components: [{ name: "oui-header" }, { name: "oui-header-demo" }],
+    components: [{ name: "oui-header" }],
   },
   {
     name: "Heading",

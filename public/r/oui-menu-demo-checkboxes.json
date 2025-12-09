@@ -7,7 +7,6 @@
   ],
   "registryDependencies": [
     "@oui/oui-button",
-    "@oui/oui-header",
     "@oui/oui-menu",
     "@oui/oui-popover"
   ],
@@ -20,8 +19,7 @@
   ],
   "meta": {
     "tags": [
-      "menu",
-      "header"
+      "menu"
     ],
     "canPreview": true,
     "canOpenInV0": true

@@ -636,7 +636,6 @@
         "@oui/oui-button-group",
         "@oui/oui-combo-box",
         "@oui/oui-field",
-        "@oui/oui-header",
         "@oui/oui-input",
         "@oui/oui-list-box",
         "@oui/oui-popover"
@@ -646,7 +645,6 @@
           "combo-box",
           "group",
           "button-group",
-          "header",
           "list-box",
           "popover"
         ],
@@ -968,28 +966,6 @@
       ],
       "meta": {
         "tags": ["header"]
-      }
-    },
-    {
-      "name": "oui-header-demo",
-      "type": "registry:component",
-      "files": [
-        {
-          "path": "registry/default/components/oui-header-demo.tsx",
-          "type": "registry:component"
-        }
-      ],
-      "registryDependencies": [
-        "@oui/oui-button",
-        "@oui/oui-header",
-        "@oui/oui-menu",
-        "@oui/oui-popover"
-      ],
-      "meta": {
-        "tags": ["header", "menu"],
-        "canPreview": true,
-        "alignment": "flex-center",
-        "canOpenInV0": true
       }
     },
     {
@@ -1646,13 +1622,12 @@
       ],
       "registryDependencies": [
         "@oui/oui-button",
-        "@oui/oui-header",
         "@oui/oui-keyboard",
         "@oui/oui-menu",
         "@oui/oui-popover"
       ],
       "meta": {
-        "tags": ["menu", "keyboard", "popover", "header"],
+        "tags": ["menu", "keyboard", "popover"],
         "canPreview": true,
         "canOpenInV0": true
       }
@@ -1668,13 +1643,12 @@
       ],
       "registryDependencies": [
         "@oui/oui-button",
-        "@oui/oui-header",
         "@oui/oui-menu",
         "@oui/oui-popover"
       ],
       "dependencies": ["lucide-react"],
       "meta": {
-        "tags": ["menu", "header"],
+        "tags": ["menu"],
         "canPreview": true,
         "canOpenInV0": true
       }
@@ -1690,12 +1664,11 @@
       ],
       "registryDependencies": [
         "@oui/oui-button",
-        "@oui/oui-header",
         "@oui/oui-menu",
         "@oui/oui-popover"
       ],
       "meta": {
-        "tags": ["menu", "header"],
+        "tags": ["menu"],
         "canPreview": true,
         "canOpenInV0": true
       }
@@ -2104,13 +2077,12 @@
       ],
       "registryDependencies": [
         "@oui/oui-field",
-        "@oui/oui-header",
         "@oui/oui-list-box",
         "@oui/oui-popover",
         "@oui/oui-select"
       ],
       "meta": {
-        "tags": ["select", "multiple", "disabled", "header"],
+        "tags": ["select", "multiple", "disabled"],
         "canPreview": true,
         "canOpenInV0": true
       }
