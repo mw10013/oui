@@ -116,6 +116,7 @@ export const categories: Category[] = [
   {
     name: "Disclosure",
     slug: "disclosure",
+    sideBySideHref: ReactRouter.href("/side-by-side/disclosure"),
     components: [
       { name: "oui-disclosure" },
       { name: "oui-disclosure-demo" },
