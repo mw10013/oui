@@ -8,7 +8,7 @@
   "files": [
     {
       "path": "registry/default/components/oui-search-field-demo.tsx",
-      "content": "\"use client\";\n\nimport { FieldError } from \"@/registry/default/ui/oui-field\";\nimport { Input } from \"@/registry/default/ui/oui-input\";\nimport { Label } from \"@/registry/default/ui/oui-label\";\nimport { SearchField } from \"@/registry/default/ui/oui-search-field\";\nimport { Text } from \"@/registry/default/ui/oui-text\";\n\nexport default function Component() {\n  return (\n    <SearchField>\n      <Label>Search Field</Label>\n      <Input placeholder=\"Search...\" />\n      <Text slot=\"description\">Enter a search term</Text>\n      <FieldError>Search term is required</FieldError>\n    </SearchField>\n  );\n}\n",
+      "content": "\"use client\";\n\nimport {\n  FieldDescription,\n  FieldError,\n  FieldLabel,\n} from \"@/registry/default/ui/oui-field\";\nimport { Input } from \"@/registry/default/ui/oui-input\";\nimport { SearchField } from \"@/registry/default/ui/oui-search-field\";\n\nexport default function Component() {\n  return (\n    <SearchField>\n      <FieldLabel>Search Field</FieldLabel>\n      <Input placeholder=\"Search...\" />\n      <FieldDescription>Enter a search term</FieldDescription>\n      <FieldError />\n    </SearchField>\n  );\n}\n",
       "type": "registry:component"
     }
   ],

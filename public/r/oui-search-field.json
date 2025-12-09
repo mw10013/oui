@@ -13,7 +13,7 @@
   "files": [
     {
       "path": "registry/default/ui/oui-search-field.tsx",
-      "content": "\"use client\";\n\nimport { composeTailwindRenderProps } from \"@/registry/default/ui/oui-base\";\nimport * as Rac from \"react-aria-components\";\n\n/**\n * Derived styles from shadcn FormItem\n */\nexport function SearchField({ className, ...props }: Rac.SearchFieldProps) {\n  return (\n    <Rac.SearchField\n      className={composeTailwindRenderProps(className, \"group grid gap-2\")}\n      {...props}\n    />\n  );\n}\n",
+      "content": "\"use client\";\n\nimport type { FieldStylesProps } from \"@/registry/default/ui/oui-field\";\nimport * as React from \"react\";\nimport { composeTailwindRenderProps } from \"@/registry/default/ui/oui-base\";\nimport { fieldStyles } from \"@/registry/default/ui/oui-field\";\nimport * as Rac from \"react-aria-components\";\n\n/**\n * Derived from shadcn Field\n */\nexport function SearchField({\n  className,\n  orientation = \"vertical\",\n  ...props\n}: React.ComponentProps<typeof Rac.SearchField> & FieldStylesProps) {\n  return (\n    <Rac.SearchField\n      data-slot=\"search-field\"\n      data-slot-type=\"field\"\n      data-orientation={orientation}\n      className={composeTailwindRenderProps(\n        className,\n        fieldStyles({ orientation }),\n      )}\n      {...props}\n    />\n  );\n}\n",
       "type": "registry:ui"
     }
   ],

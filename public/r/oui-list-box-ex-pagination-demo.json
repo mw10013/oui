@@ -14,7 +14,8 @@
   ],
   "meta": {
     "tags": [
-      "list-box"
+      "list-box",
+      "list-box-ex-pagination"
     ],
     "canPreview": true,
     "canOpenInV0": true

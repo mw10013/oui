@@ -53,7 +53,6 @@ export * from "@/registry/default/ui/oui-table";
 export * from "@/registry/default/ui/oui-tabs";
 export * from "@/registry/default/ui/oui-text-area";
 export * from "@/registry/default/ui/oui-text-field";
-export * from "@/registry/default/ui/oui-text";
 export * from "@/registry/default/ui/oui-tooltip";
 
 export * from "@/registry/default/components/oui-alert-ex-form";

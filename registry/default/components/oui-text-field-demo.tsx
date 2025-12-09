@@ -2,6 +2,7 @@
 
 import {
   FieldDescription,
+  FieldError,
   FieldGroup,
   FieldLabel,
   FieldSet,
@@ -22,6 +23,7 @@ export default function Component() {
               <FieldDescription>
                 Choose a unique username for your account.
               </FieldDescription>
+              <FieldError />
             </TextField>
             <TextField>
               <FieldLabel>Password</FieldLabel>
@@ -29,6 +31,7 @@ export default function Component() {
                 Must be at least 8 characters long.
               </FieldDescription>
               <Input type="password" placeholder="••••••••" />
+              <FieldError />
             </TextField>
           </FieldGroup>
         </FieldSet>

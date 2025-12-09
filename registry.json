@@ -641,13 +641,7 @@
         "@oui/oui-popover"
       ],
       "meta": {
-        "tags": [
-          "combo-box",
-          "group",
-          "button-group",
-          "list-box",
-          "popover"
-        ],
+        "tags": ["combo-box", "group", "button-group", "list-box", "popover"],
         "canPreview": true,
         "canOpenInV0": true
       }
@@ -1026,7 +1020,6 @@
         "@oui/oui-tabs",
         "@oui/oui-text-area",
         "@oui/oui-text-field",
-        "@oui/oui-text",
         "@oui/oui-tooltip",
         "@oui/oui-alert-ex-form",
         "@oui/oui-badge-ex",
@@ -1563,12 +1556,7 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": [
-        "@oui/oui-button",
-        "@oui/oui-label",
-        "@oui/oui-link",
-        "@oui/oui-text"
-      ],
+      "registryDependencies": ["@oui/oui-button"],
       "meta": {
         "tags": ["list-box", "list-box-ex-pagination"]
       }
@@ -1584,7 +1572,7 @@
       ],
       "registryDependencies": ["@oui/oui-list-box-ex-pagination"],
       "meta": {
-        "tags": ["list-box"],
+        "tags": ["list-box", "list-box-ex-pagination"],
         "canPreview": true,
         "canOpenInV0": true
       }
@@ -2343,48 +2331,6 @@
         "tags": ["tabs"],
         "canPreview": true,
         "width": "wide",
-        "canOpenInV0": true
-      }
-    },
-    {
-      "name": "oui-text",
-      "type": "registry:ui",
-      "title": "Text",
-      "description": "React aria components Text with shadcn characteristics.",
-      "files": [
-        {
-          "path": "registry/default/ui/oui-text.tsx",
-          "type": "registry:ui"
-        }
-      ],
-      "registryDependencies": [],
-      "dependencies": [
-        "react-aria-components",
-        "class-variance-authority",
-        "tailwind-merge"
-      ],
-      "meta": {
-        "tags": ["text"]
-      }
-    },
-    {
-      "name": "oui-text-demo",
-      "type": "registry:component",
-      "files": [
-        {
-          "path": "registry/default/components/oui-text-demo.tsx",
-          "type": "registry:component"
-        }
-      ],
-      "registryDependencies": [
-        "@oui/oui-input",
-        "@oui/oui-label",
-        "@oui/oui-text-field",
-        "@oui/oui-text"
-      ],
-      "meta": {
-        "tags": ["text", "input", "label", "text-field"],
-        "canPreview": true,
         "canOpenInV0": true
       }
     },

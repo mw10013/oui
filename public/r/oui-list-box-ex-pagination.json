@@ -5,10 +5,7 @@
   "title": "List Box Ex Pagination",
   "description": "Reusable wrapper for List Box with pagination.",
   "registryDependencies": [
-    "@oui/oui-button",
-    "@oui/oui-label",
-    "@oui/oui-link",
-    "@oui/oui-text"
+    "@oui/oui-button"
   ],
   "files": [
     {

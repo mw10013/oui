@@ -116,8 +116,8 @@ export function FieldLabel({
 export function FieldDescription({ className, ...props }: Rac.TextProps) {
   return (
     <Rac.Text
-      slot="description"
       data-slot="field-description"
+      slot="description"
       elementType="p"
       className={twMerge(
         "text-sm leading-normal font-normal text-muted-foreground group-has-data-[orientation=horizontal]/field:text-balance",
