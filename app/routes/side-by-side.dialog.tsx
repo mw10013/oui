@@ -212,9 +212,9 @@ export function OuiDialogAlert() {
         <Oui.Modal>
           <Oui.Dialog role="alertdialog">
             <Oui.DialogHeader>
-              <Oui.Dialog variant="alert" slot="title">
+              <Oui.DialogTitle>
                 Are you absolutely sure?
-              </Oui.Dialog>
+              </Oui.DialogTitle>
               <Oui.DialogDescription>
                 This action cannot be undone. This will permanently delete your
                 account and remove your data from our servers.

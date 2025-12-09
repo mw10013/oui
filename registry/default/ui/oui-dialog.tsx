@@ -5,14 +5,14 @@ import * as Rac from "react-aria-components";
 import { twJoin, twMerge } from "tailwind-merge";
 
 /**
- * Dialog supports both regular dialogs and alert dialogs.
- * For regular dialogs, use without a role prop. For alert dialogs, set role="alertdialog".
- * Unlike Shadcn UI and Radix UI, which provide separate Dialog and AlertDialog components,
- * this RAC-based implementation uses a single Dialog component configurable via the role prop.
- * Alert dialogs are meant for important prompts requiring user action and do not display
- * a close button by default to prevent dismissal without interaction, per accessibility guidelines.
+ * Supports both regular dialogs and alert dialogs.
+ * For regular dialogs, omit the role prop. For alert dialogs, set role="alertdialog".
+ * Alert dialogs are for important prompts requiring user action and do not show
+ * a close button to prevent dismissal without interaction, per accessibility guidelines.
  *
- * @param showCloseButton - Show the close button for non-'alertdialog' role. 'alertdialog' role never shows a close button to ensure users cannot dismiss alerts without taking action, per accessibility guidelines.
+ * @param role - The ARIA role for the dialog.
+ * @default undefined
+ * @param showCloseButton - Show the close button. Overridden to false for role="alertdialog".
  * @default true
  *
  * Derived from shadcn DialogContent.
@@ -27,8 +27,8 @@ export function Dialog({
 }) {
   return (
     <Rac.Dialog
-      data-slot="dialog"
-      className={twMerge("grid gap-4 outline-none", className)}
+      data-slot={props.role === "alertdialog" ? "alert-dialog" : "dialog"}
+      className={twMerge("group grid gap-4 outline-none", className)}
       {...props}
     >
       {(renderProps) => (
@@ -96,7 +96,7 @@ export function DialogFooter({
 /**
  * Wraps Rac.Heading with slot="title".
  *
- * Derived from shadcn DialogTitle
+ * Derived from shadcn DialogTitle and AlertDialogTitle
  *
  */
 export function DialogTitle({
@@ -107,7 +107,10 @@ export function DialogTitle({
     <Rac.Heading
       data-slot="dialog-title"
       slot="title"
-      className={twMerge("text-lg leading-none font-semibold", className)}
+      className={twMerge(
+        "text-lg font-semibold group-data-[slot=dialog]:leading-none",
+        className,
+      )}
       {...props}
     />
   );
