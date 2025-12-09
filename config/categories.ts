@@ -327,7 +327,7 @@ export const categories: Category[] = [
   {
     name: "Text",
     slug: "text",
-    components: [{ name: "oui-text" }, { name: "oui-text-demo" }],
+    components: [{ name: "oui-text" }],
   },
   {
     name: "Text Area",

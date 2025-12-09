@@ -9,6 +9,8 @@ import * as Rac from "react-aria-components";
 export function SearchField({ className, ...props }: Rac.SearchFieldProps) {
   return (
     <Rac.SearchField
+      data-slot="search-field"
+      data-slot-type="field"
       className={composeTailwindRenderProps(className, "group grid gap-2")}
       {...props}
     />
