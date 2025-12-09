@@ -140,16 +140,6 @@ export const categories: Category[] = [
     components: [{ name: "oui-form-demo" }],
   },
   {
-    name: "Header",
-    slug: "header",
-    components: [{ name: "oui-header" }],
-  },
-  {
-    name: "Heading",
-    slug: "heading",
-    components: [{ name: "oui-heading" }],
-  },
-  {
     name: "Index",
     slug: "index",
     components: [{ name: "oui-index" }, { name: "oui-react-router-index" }],

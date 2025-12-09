@@ -942,44 +942,6 @@
       }
     },
     {
-      "name": "oui-header",
-      "type": "registry:ui",
-      "title": "Header",
-      "description": "React aria components Header with shadcn characteristics.",
-      "files": [
-        {
-          "path": "registry/default/ui/oui-header.tsx",
-          "type": "registry:ui"
-        }
-      ],
-      "registryDependencies": [],
-      "dependencies": [
-        "react-aria-components",
-        "class-variance-authority",
-        "tailwind-merge"
-      ],
-      "meta": {
-        "tags": ["header"]
-      }
-    },
-    {
-      "name": "oui-heading",
-      "type": "registry:ui",
-      "title": "Heading",
-      "description": "React aria components Heading with shadcn characteristics.",
-      "files": [
-        {
-          "path": "registry/default/ui/oui-heading.tsx",
-          "type": "registry:ui"
-        }
-      ],
-      "registryDependencies": [],
-      "dependencies": ["react-aria-components", "tailwind-merge"],
-      "meta": {
-        "tags": ["heading"]
-      }
-    },
-    {
       "name": "oui-index",
       "type": "registry:ui",
       "title": "Oui Index",
@@ -999,8 +961,6 @@
         "@oui/oui-dialog",
         "@oui/oui-disclosure",
         "@oui/oui-field",
-        "@oui/oui-header",
-        "@oui/oui-heading",
         "@oui/oui-input",
         "@oui/oui-keyboard",
         "@oui/oui-label",
