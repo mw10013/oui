@@ -1,37 +1,20 @@
 "use client";
 
-import type { VariantProps } from "class-variance-authority";
 import * as React from "react";
-import { cva } from "class-variance-authority";
 import * as Rac from "react-aria-components";
 import { twMerge } from "tailwind-merge";
 
 /**
- * Derived from shadcn DialogTitle, AlertDialogTitle, PopoverDemo, AccordionHeader
+ * Derived from shadcn DialogTitle
  */
-export const headingVariants = cva(undefined, {
-  variants: {
-    variant: {
-      default: "text-lg leading-none font-semibold",
-      alert: "text-lg font-semibold",
-      popover: "text-base leading-none font-medium",
-      disclosure: "flex",
-    },
-  },
-  defaultVariants: {
-    variant: "default",
-  },
-});
-
 export function Heading({
   className,
-  variant,
   ...props
-}: React.ComponentProps<typeof Rac.Heading> &
-  VariantProps<typeof headingVariants>) {
+}: React.ComponentProps<typeof Rac.Heading>) {
   return (
     <Rac.Heading
-      className={twMerge(headingVariants({ className, variant }))}
+      data-slot="heading"
+      className={twMerge("text-lg leading-none font-semibold", className)}
       {...props}
     />
   );

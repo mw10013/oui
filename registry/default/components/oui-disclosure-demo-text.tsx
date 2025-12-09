@@ -3,21 +3,21 @@
 import {
   Disclosure,
   DisclosureButton,
+  DisclosureHeading,
   DisclosurePanel,
 } from "@/registry/default/ui/oui-disclosure";
-import { Heading } from "@/registry/default/ui/oui-heading";
 import * as Rac from "react-aria-components";
 
 export default function Component() {
   return (
     <Rac.DisclosureGroup className="w-full">
       <Disclosure id="item-1-enterprise">
-        <Heading variant="disclosure">
+        <DisclosureHeading>
           <DisclosureButton>
             What are the key considerations when implementing a comprehensive
             enterprise-level authentication system?
           </DisclosureButton>
-        </Heading>
+        </DisclosureHeading>
         <DisclosurePanel>
           Implementing a robust enterprise authentication system requires
           careful consideration of multiple factors. This includes secure
@@ -30,12 +30,12 @@ export default function Component() {
         </DisclosurePanel>
       </Disclosure>
       <Disclosure id="item-2-distributed">
-        <Heading variant="disclosure">
+        <DisclosureHeading>
           <DisclosureButton>
             How does modern distributed system architecture handle eventual
             consistency and data synchronization across multiple regions?
           </DisclosureButton>
-        </Heading>
+        </DisclosureHeading>
         <DisclosurePanel>
           Modern distributed systems employ various strategies to maintain data
           consistency across regions. This often involves using techniques like

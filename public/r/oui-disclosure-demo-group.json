@@ -3,20 +3,18 @@
   "name": "oui-disclosure-demo-group",
   "type": "registry:component",
   "registryDependencies": [
-    "@oui/oui-disclosure",
-    "@oui/oui-heading"
+    "@oui/oui-disclosure"
   ],
   "files": [
     {
       "path": "registry/default/components/oui-disclosure-demo-group.tsx",
-      "content": "\"use client\";\n\nimport {\n  Disclosure,\n  DisclosureButton,\n  DisclosurePanel,\n} from \"@/registry/default/ui/oui-disclosure\";\nimport { Heading } from \"@/registry/default/ui/oui-heading\";\nimport * as Rac from \"react-aria-components\";\n\nexport default function Component() {\n  return (\n    <Rac.DisclosureGroup className=\"w-full\">\n      <Disclosure id=\"item-1\">\n        <Heading variant=\"disclosure\">\n          <DisclosureButton>Is it accessible?</DisclosureButton>\n        </Heading>\n        <DisclosurePanel>\n          Yes. It adheres to the WAI-ARIA design pattern.\n        </DisclosurePanel>\n      </Disclosure>\n      <Disclosure id=\"item-2\">\n        <Heading variant=\"disclosure\">\n          <DisclosureButton>Is it styled?</DisclosureButton>\n        </Heading>\n        <DisclosurePanel>\n          Yes. It comes with default styles that matches the other\n          components&apos; aesthetic.\n        </DisclosurePanel>\n      </Disclosure>\n      <Disclosure id=\"item-3\">\n        <Heading variant=\"disclosure\">\n          <DisclosureButton>Is it animated?</DisclosureButton>\n        </Heading>\n        <DisclosurePanel>\n          Yes. It&apos;s animated by default, but you can disable it if you\n          prefer.\n        </DisclosurePanel>\n      </Disclosure>\n    </Rac.DisclosureGroup>\n  );\n}\n",
+      "content": "\"use client\";\n\nimport {\n  Disclosure,\n  DisclosureButton,\n  DisclosureHeading,\n  DisclosurePanel,\n} from \"@/registry/default/ui/oui-disclosure\";\nimport * as Rac from \"react-aria-components\";\n\nexport default function Component() {\n  return (\n    <Rac.DisclosureGroup className=\"w-full\">\n      <Disclosure id=\"item-1\">\n        <DisclosureHeading>\n          <DisclosureButton>Is it accessible?</DisclosureButton>\n        </DisclosureHeading>\n        <DisclosurePanel>\n          Yes. It adheres to the WAI-ARIA design pattern.\n        </DisclosurePanel>\n      </Disclosure>\n      <Disclosure id=\"item-2\">\n        <DisclosureHeading>\n          <DisclosureButton>Is it styled?</DisclosureButton>\n        </DisclosureHeading>\n        <DisclosurePanel>\n          Yes. It comes with default styles that matches the other\n          components&apos; aesthetic.\n        </DisclosurePanel>\n      </Disclosure>\n      <Disclosure id=\"item-3\">\n        <DisclosureHeading>\n          <DisclosureButton>Is it animated?</DisclosureButton>\n        </DisclosureHeading>\n        <DisclosurePanel>\n          Yes. It&apos;s animated by default, but you can disable it if you\n          prefer.\n        </DisclosurePanel>\n      </Disclosure>\n    </Rac.DisclosureGroup>\n  );\n}\n",
       "type": "registry:component"
     }
   ],
   "meta": {
     "tags": [
-      "disclosure",
-      "heading"
+      "disclosure"
     ],
     "canPreview": true,
     "canOpenInV0": true

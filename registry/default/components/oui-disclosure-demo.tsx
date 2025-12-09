@@ -3,16 +3,16 @@
 import {
   Disclosure,
   DisclosureButton,
+  DisclosureHeading,
   DisclosurePanel,
 } from "@/registry/default/ui/oui-disclosure";
-import { Heading } from "@/registry/default/ui/oui-heading";
 
 export default function Component() {
   return (
     <Disclosure>
-      <Heading variant="disclosure">
+      <DisclosureHeading>
         <DisclosureButton>System Requirements</DisclosureButton>
-      </Heading>
+      </DisclosureHeading>
       <DisclosurePanel>Details about system requirements here.</DisclosurePanel>
     </Disclosure>
   );

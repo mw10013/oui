@@ -793,10 +793,10 @@
           "type": "registry:ui"
         }
       ],
-      "registryDependencies": ["@oui/oui-heading"],
+      "registryDependencies": ["@oui/oui-base"],
       "dependencies": ["react-aria-components", "lucide-react"],
       "meta": {
-        "tags": ["disclosure", "heading"]
+        "tags": ["disclosure"]
       }
     },
     {
@@ -808,9 +808,9 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["@oui/oui-disclosure", "@oui/oui-heading"],
+      "registryDependencies": ["@oui/oui-disclosure"],
       "meta": {
-        "tags": ["disclosure", "heading"],
+        "tags": ["disclosure"],
         "canPreview": true,
         "canOpenInV0": true
       }
@@ -824,9 +824,9 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["@oui/oui-disclosure", "@oui/oui-heading"],
+      "registryDependencies": ["@oui/oui-disclosure"],
       "meta": {
-        "tags": ["disclosure", "heading"],
+        "tags": ["disclosure"],
         "canPreview": true,
         "canOpenInV0": true
       }
@@ -840,9 +840,9 @@
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["@oui/oui-disclosure", "@oui/oui-heading"],
+      "registryDependencies": ["@oui/oui-disclosure"],
       "meta": {
-        "tags": ["disclosure", "heading"],
+        "tags": ["disclosure"],
         "canPreview": true,
         "width": "wide",
         "canOpenInV0": true
@@ -1004,35 +1004,9 @@
         }
       ],
       "registryDependencies": [],
-      "dependencies": [
-        "react-aria-components",
-        "class-variance-authority",
-        "tailwind-merge"
-      ],
+      "dependencies": ["react-aria-components", "tailwind-merge"],
       "meta": {
         "tags": ["heading"]
-      }
-    },
-    {
-      "name": "oui-heading-demo",
-      "type": "registry:component",
-      "files": [
-        {
-          "path": "registry/default/components/oui-heading-demo.tsx",
-          "type": "registry:component"
-        }
-      ],
-      "registryDependencies": [
-        "@oui/oui-button",
-        "@oui/oui-dialog",
-        "@oui/oui-heading",
-        "@oui/oui-modal"
-      ],
-      "meta": {
-        "tags": ["heading", "dialog", "modal"],
-        "canPreview": true,
-        "alignment": "flex-center",
-        "canOpenInV0": true
       }
     },
     {
