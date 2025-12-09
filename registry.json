@@ -984,11 +984,9 @@
         "@oui/oui-alert-ex-form",
         "@oui/oui-badge-ex",
         "@oui/oui-card-ex",
-        "@oui/oui-dialog-ex-alert",
         "@oui/oui-list-box-ex-pagination",
         "@oui/oui-modal-ex-sheet",
-        "@oui/oui-sidebar-ex",
-        "@oui/oui-slider-ex"
+        "@oui/oui-sidebar-ex"
       ],
       "meta": {
         "tags": ["index"]
