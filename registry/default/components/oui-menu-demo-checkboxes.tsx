@@ -3,8 +3,12 @@
 import type { Selection } from "react-aria-components";
 import * as React from "react";
 import { Button } from "@/registry/default/ui/oui-button";
-import { Header } from "@/registry/default/ui/oui-header";
-import { Menu, MenuItem, MenuSeparator } from "@/registry/default/ui/oui-menu";
+import {
+  Menu,
+  MenuHeader,
+  MenuItem,
+  MenuSeparator,
+} from "@/registry/default/ui/oui-menu";
 import { Popover } from "@/registry/default/ui/oui-popover";
 import {
   CreditCardIcon,
@@ -24,7 +28,7 @@ export default function Component() {
       <Popover>
         <Menu className="w-56">
           <Rac.MenuSection>
-            <Header variant="menu">Account</Header>
+            <MenuHeader>Account</MenuHeader>
             <MenuItem id="profile" textValue="Profile">
               <UserIcon className="mr-2 size-4" /> Profile
             </MenuItem>
@@ -41,7 +45,7 @@ export default function Component() {
             selectedKeys={appearanceSelectedKeys}
             onSelectionChange={setAppearanceSelectedKeys}
           >
-            <Header variant="menu">Appearance</Header>
+            <MenuHeader>Appearance</MenuHeader>
             <MenuItem id="statusBar">Status Bar</MenuItem>
             <MenuItem id="activityBar" isDisabled>
               Activity Bar

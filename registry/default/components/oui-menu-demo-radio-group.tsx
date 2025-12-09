@@ -3,8 +3,7 @@
 import type { Selection } from "react-aria-components";
 import * as React from "react";
 import { Button } from "@/registry/default/ui/oui-button";
-import { Header } from "@/registry/default/ui/oui-header";
-import { Menu, MenuItem } from "@/registry/default/ui/oui-menu";
+import { Menu, MenuHeader, MenuItem } from "@/registry/default/ui/oui-menu";
 import { Popover } from "@/registry/default/ui/oui-popover";
 import * as Rac from "react-aria-components";
 
@@ -23,9 +22,7 @@ export default function Component() {
             selectedKeys={panelPositionKey}
             onSelectionChange={setPanelPositionKey}
           >
-            <Header variant="menu" inset>
-              Panel Position
-            </Header>
+            <MenuHeader>Panel Position</MenuHeader>
             <MenuItem id="top">Top</MenuItem>
             <MenuItem id="bottom">Bottom</MenuItem>
             <MenuItem id="right" isDisabled>

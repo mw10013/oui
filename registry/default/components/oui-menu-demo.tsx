@@ -1,9 +1,13 @@
 "use client";
 
 import { Button } from "@/registry/default/ui/oui-button";
-import { Header } from "@/registry/default/ui/oui-header";
 import { Keyboard } from "@/registry/default/ui/oui-keyboard";
-import { Menu, MenuItem, MenuSeparator } from "@/registry/default/ui/oui-menu";
+import {
+  Menu,
+  MenuHeader,
+  MenuItem,
+  MenuSeparator,
+} from "@/registry/default/ui/oui-menu";
 import { Popover } from "@/registry/default/ui/oui-popover";
 import * as Rac from "react-aria-components";
 
@@ -14,7 +18,7 @@ export default function Component() {
       <Popover>
         <Menu className="w-56">
           <Rac.MenuSection>
-            <Header variant="menu">My Account</Header>
+            <MenuHeader>My Account</MenuHeader>
             <MenuItem id="profile">
               Profile
               <Keyboard>⇧⌘P</Keyboard>

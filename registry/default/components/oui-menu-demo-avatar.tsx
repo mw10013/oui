@@ -6,7 +6,12 @@ import {
   AvatarImage,
 } from "@/registry/default/ui/avatar";
 import { Button } from "@/registry/default/ui/oui-button";
-import { Menu, MenuItem, MenuSeparator } from "@/registry/default/ui/oui-menu";
+import {
+  Menu,
+  MenuHeader,
+  MenuItem,
+  MenuSeparator,
+} from "@/registry/default/ui/oui-menu";
 import { Popover } from "@/registry/default/ui/oui-popover";
 import {
   BadgeCheckIcon,
@@ -40,7 +45,7 @@ export default function Component() {
       <Popover>
         <Menu className="w-56">
           <Rac.MenuSection>
-            <Rac.Header>
+            <MenuHeader>
               <div className="flex items-center gap-2 px-1 py-1.5 text-left text-sm">
                 <Avatar>
                   <AvatarImage
@@ -56,7 +61,7 @@ export default function Component() {
                   </span>
                 </div>
               </div>
-            </Rac.Header>
+            </MenuHeader>
           </Rac.MenuSection>
           <MenuSeparator />
           <Rac.MenuSection>

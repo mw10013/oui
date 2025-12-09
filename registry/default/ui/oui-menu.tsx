@@ -117,6 +117,29 @@ export function MenuItem<T extends object>({
 }
 
 /**
+ * Derived from shadcn DropdownMenuLabel
+ */
+export function MenuHeader({
+  className,
+  inset,
+  ...props
+}: React.ComponentProps<typeof Rac.Header> & {
+  inset?: boolean;
+}) {
+  return (
+    <Rac.Header
+      data-slot="menu-header"
+      data-inset={inset}
+      className={twMerge(
+        "px-2 py-1.5 text-sm font-medium data-inset:pl-8",
+        className,
+      )}
+      {...props}
+    />
+  );
+}
+
+/**
  * Derived from shadcn DropdownMenuSeparator
  */
 export function MenuSeparator({
