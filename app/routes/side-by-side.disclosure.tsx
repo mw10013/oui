@@ -28,7 +28,7 @@ export function AccordionSingle() {
 
 export function OuiDisclosureSingle() {
   return (
-    <Oui.Disclosure>
+    <Oui.Disclosure className="w-full">
       <Oui.DisclosureHeading>
         <Oui.DisclosureButton>Is it accessible?</Oui.DisclosureButton>
       </Oui.DisclosureHeading>
