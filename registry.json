@@ -1940,6 +1940,23 @@
       }
     },
     {
+      "name": "oui-react-router-theme-toggle-button",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/default/components/oui-react-router-theme-toggle-button.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": ["@oui/oui-toggle-button"],
+      "dependencies": ["remix-themes"],
+      "meta": {
+        "tags": ["toggle-button", "react-router", "theme"],
+        "canPreview": true,
+        "alignment": "flex-center"
+      }
+    },
+    {
       "name": "oui-search-field",
       "type": "registry:ui",
       "title": "Search Field",
@@ -2433,6 +2450,7 @@
           "type": "registry:ui"
         }
       ],
+      "registryDependencies": ["@oui/oui-base", "@oui/oui-toggle-button"],
       "dependencies": [
         "react-aria-components",
         "class-variance-authority",
@@ -2443,20 +2461,20 @@
       }
     },
     {
-      "name": "oui-react-router-theme-toggle-button",
+      "name": "oui-toggle-button-group-demo",
       "type": "registry:component",
       "files": [
         {
-          "path": "registry/default/components/oui-react-router-theme-toggle-button.tsx",
+          "path": "registry/default/components/oui-toggle-button-group-demo.tsx",
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["@oui/oui-toggle-button"],
-      "dependencies": ["remix-themes"],
+      "registryDependencies": ["@oui/oui-toggle-button-group"],
       "meta": {
-        "tags": ["toggle-button", "react-router", "theme"],
+        "tags": ["toggle-button-group", "toggle-button"],
         "canPreview": true,
-        "alignment": "flex-center"
+        "alignment": "flex-center",
+        "canOpenInV0": true
       }
     },
     {

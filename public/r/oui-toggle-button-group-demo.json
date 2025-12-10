@@ -1,0 +1,24 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "oui-toggle-button-group-demo",
+  "type": "registry:component",
+  "registryDependencies": [
+    "@oui/oui-toggle-button-group"
+  ],
+  "files": [
+    {
+      "path": "registry/default/components/oui-toggle-button-group-demo.tsx",
+      "content": "\"use client\";\n\nimport { ToggleButton } from \"@/registry/default/ui/oui-toggle-button\";\nimport { ToggleButtonGroup } from \"@/registry/default/ui/oui-toggle-button-group\";\nimport { Bold, Italic, Underline } from \"lucide-react\";\n\nexport default function Component() {\n  return (\n    <ToggleButtonGroup selectionMode=\"multiple\" variant=\"outline\">\n      <ToggleButton id=\"bold\" aria-label=\"Toggle bold\">\n        <Bold className=\"size-4\" />\n      </ToggleButton>\n      <ToggleButton id=\"italic\" aria-label=\"Toggle italic\">\n        <Italic className=\"size-4\" />\n      </ToggleButton>\n      <ToggleButton id=\"strikethrough\" aria-label=\"Toggle strikethrough\">\n        <Underline className=\"size-4\" />\n      </ToggleButton>\n    </ToggleButtonGroup>\n  );\n}\n",
+      "type": "registry:component"
+    }
+  ],
+  "meta": {
+    "tags": [
+      "toggle-button-group",
+      "toggle-button"
+    ],
+    "canPreview": true,
+    "alignment": "flex-center",
+    "canOpenInV0": true
+  }
+}

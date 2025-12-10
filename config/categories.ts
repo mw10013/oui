@@ -343,7 +343,10 @@ export const categories: Category[] = [
     name: "Toggle Button Group",
     slug: "toggle-button-group",
     sideBySideHref: ReactRouter.href("/side-by-side/toggle-button-group"),
-    components: [{ name: "oui-toggle-button-group" }],
+    components: [
+      { name: "oui-toggle-button-group" },
+      { name: "oui-toggle-button-group-demo" },
+    ],
   },
   {
     name: "Tooltip",

@@ -9,6 +9,10 @@
     "class-variance-authority",
     "tailwind-merge"
   ],
+  "registryDependencies": [
+    "@oui/oui-base",
+    "@oui/oui-toggle-button"
+  ],
   "files": [
     {
       "path": "registry/default/ui/oui-toggle-button-group.tsx",
