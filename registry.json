@@ -2423,6 +2423,26 @@
       }
     },
     {
+      "name": "oui-toggle-button-group",
+      "type": "registry:ui",
+      "title": "Toggle Button Group",
+      "description": "React aria components Toggle Button Group with shadcn characteristics.",
+      "files": [
+        {
+          "path": "registry/default/ui/oui-toggle-button-group.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "dependencies": [
+        "react-aria-components",
+        "class-variance-authority",
+        "tailwind-merge"
+      ],
+      "meta": {
+        "tags": ["toggle-button-group"]
+      }
+    },
+    {
       "name": "oui-react-router-theme-toggle-button",
       "type": "registry:component",
       "files": [

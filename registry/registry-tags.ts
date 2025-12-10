@@ -47,6 +47,7 @@ export const registryTags = [
   "text-area",
   "text-field",
   "toggle-button",
+  "toggle-button-group",
   "tooltip",
   "tree",
 

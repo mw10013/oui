@@ -1,0 +1,24 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "oui-toggle-button-group",
+  "type": "registry:ui",
+  "title": "Toggle Button Group",
+  "description": "React aria components Toggle Button Group with shadcn characteristics.",
+  "dependencies": [
+    "react-aria-components",
+    "class-variance-authority",
+    "tailwind-merge"
+  ],
+  "files": [
+    {
+      "path": "registry/default/ui/oui-toggle-button-group.tsx",
+      "content": "\"use client\";\n\nimport type { VariantProps } from \"class-variance-authority\";\nimport * as React from \"react\";\nimport { cva } from \"class-variance-authority\";\nimport * as Rac from \"react-aria-components\";\nimport { twMerge } from \"tailwind-merge\";\n\n/**\n * Derived from shadcn Toggle Group.\n * Rac.ToggleButtonGroup does not have built-in variants, but we add spacing.\n */\nexport const toggleButtonGroupVariants = cva(\n  \"group/toggle-button-group flex w-fit items-center gap-[--gap]\",\n  {\n    variants: {\n      orientation: {\n        horizontal: \"\",\n        vertical: \"flex-col\",\n      },\n      spacing: {\n        default: \"\",\n        0: \"gap-0\",\n        1: \"gap-1\",\n        2: \"gap-2\",\n        3: \"gap-3\",\n        4: \"gap-4\",\n      },\n    },\n    defaultVariants: {\n      orientation: \"horizontal\",\n      spacing: \"default\",\n    },\n  },\n);\n\nexport function ToggleButtonGroup({\n  className,\n  orientation,\n  spacing,\n  ...props\n}: React.ComponentProps<typeof Rac.ToggleButtonGroup> &\n  VariantProps<typeof toggleButtonGroupVariants>) {\n  return (\n    <Rac.ToggleButtonGroup\n      data-slot=\"toggle-button-group\"\n      className={Rac.composeRenderProps(className, (className, renderProps) =>\n        twMerge(\n          toggleButtonGroupVariants({\n            ...renderProps,\n            orientation,\n            spacing,\n            className,\n          }),\n        ),\n      )}\n      {...props}\n    />\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "tags": [
+      "toggle-button-group"
+    ]
+  }
+}

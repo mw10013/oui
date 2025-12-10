@@ -1,6 +1,7 @@
 "use client";
 
 import type { VariantProps } from "class-variance-authority";
+import * as React from "react";
 import {
   disabledStyles,
   focusVisibleStyles,
@@ -41,16 +42,13 @@ export const toggleButtonVariants = cva(
   },
 );
 
-export interface ToggleButtonProps
-  extends Rac.ToggleButtonProps,
-    VariantProps<typeof toggleButtonVariants> {}
-
 export function ToggleButton({
   className,
   variant,
   size,
   ...props
-}: ToggleButtonProps) {
+}: React.ComponentProps<typeof Rac.ToggleButton> &
+  VariantProps<typeof toggleButtonVariants>) {
   return (
     <Rac.ToggleButton
       data-slot="toggle-button"
