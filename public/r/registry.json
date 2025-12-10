@@ -659,7 +659,7 @@
       ],
       "registryDependencies": ["@oui/oui-field", "@oui/oui-base"],
       "dependencies": ["react-aria-components", "@internationalized/date"],
-      "meta": {
+      "meta": { 
         "tags": ["date-field"]
       }
     },
