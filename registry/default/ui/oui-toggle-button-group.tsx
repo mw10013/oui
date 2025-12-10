@@ -4,7 +4,7 @@ import type { VariantProps } from "class-variance-authority";
 import * as React from "react";
 import { toggleButtonVariants } from "@/registry/default/ui/oui-toggle-button";
 import * as Rac from "react-aria-components";
-import { twMerge } from "tailwind-merge";
+import { twJoin } from "tailwind-merge";
 import { composeTailwindRenderProps } from "./oui-base";
 
 /**
@@ -40,10 +40,10 @@ export function ToggleButtonGroup({
       {(renderProps) => (
         <Rac.ToggleButtonContext.Provider
           value={{
-            className: twMerge(
+            className: twJoin(
               toggleButtonVariants({ variant, size }),
               "w-auto min-w-0 shrink-0 px-3 data-focus-visible:z-10 data-focused:z-10",
-              "group-data-[spacing=0]/toggle-group:rounded-none group-data-[spacing=0]/toggle-group:shadow-none group-data-[spacing=0]/toggle-group:first:rounded-l-md group-data-[spacing=0]/toggle-group:last:rounded-r-md group-data-[spacing=0]/toggle-group:group-data-[variant=outline]/toggle-group:border-l-0 group-data-[spacing=0]/toggle-group:group-data-[variant=outline]/toggle-group:first:border-l",
+              "group-data-[spacing=0]/toggle-group:rounded-none group-data-[spacing=0]/toggle-group:shadow-none group-data-[spacing=0]/toggle-group:group-data-[variant=outline]/toggle-group:border-l-0 group-data-[spacing=0]/toggle-group:first:rounded-l-md group-data-[spacing=0]/toggle-group:group-data-[variant=outline]/toggle-group:first:border-l group-data-[spacing=0]/toggle-group:last:rounded-r-md",
             ),
           }}
         >
