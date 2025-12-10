@@ -42,6 +42,12 @@ export const toggleButtonVariants = cva(
   },
 );
 
+/**
+ * Derived from shadcn Toggle.
+ *
+ * Unlike standard RAC ToggleButton, this component supports className overrides via ToggleButtonContext,
+ * allowing ToggleButtonGroup to control styles of child buttons.
+ */
 export function ToggleButton({
   className,
   variant,
@@ -49,17 +55,23 @@ export function ToggleButton({
   ...props
 }: React.ComponentProps<typeof Rac.ToggleButton> &
   VariantProps<typeof toggleButtonVariants>) {
+  const context = React.useContext(Rac.ToggleButtonContext);
+  const contextClassName =
+    context && "className" in context && typeof context.className === "string"
+      ? context.className
+      : undefined;
   return (
     <Rac.ToggleButton
       data-slot="toggle-button"
       className={Rac.composeRenderProps(className, (className, renderProps) =>
         twMerge(
-          toggleButtonVariants({
-            ...renderProps,
-            variant,
-            size,
-            className,
-          }),
+          contextClassName ??
+            toggleButtonVariants({
+              ...renderProps,
+              variant,
+              size,
+            }),
+          className,
         ),
       )}
       {...props}

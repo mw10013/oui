@@ -29,23 +29,15 @@ function ShadcnOutline() {
 
 function OuiOutline() {
   return (
-    <Oui.ToggleButtonGroup selectionMode="multiple">
-      <Oui.ToggleButton id="bold" variant="outline" aria-label="Toggle bold">
-        <Bold className="h-4 w-4" />
+    <Oui.ToggleButtonGroup selectionMode="multiple" variant="outline">
+      <Oui.ToggleButton id="bold" aria-label="Toggle bold">
+        <Bold className="size-4" />
       </Oui.ToggleButton>
-      <Oui.ToggleButton
-        id="italic"
-        variant="outline"
-        aria-label="Toggle italic"
-      >
-        <Italic className="h-4 w-4" />
+      <Oui.ToggleButton id="italic" aria-label="Toggle italic">
+        <Italic className="size-4" />
       </Oui.ToggleButton>
-      <Oui.ToggleButton
-        id="strikethrough"
-        variant="outline"
-        aria-label="Toggle strikethrough"
-      >
-        <Underline className="h-4 w-4" />
+      <Oui.ToggleButton id="strikethrough" aria-label="Toggle strikethrough">
+        <Underline className="size-4" />
       </Oui.ToggleButton>
     </Oui.ToggleButtonGroup>
   );
@@ -71,13 +63,13 @@ function OuiSingle() {
   return (
     <Oui.ToggleButtonGroup selectionMode="single">
       <Oui.ToggleButton id="bold" aria-label="Toggle bold">
-        <Bold className="h-4 w-4" />
+        <Bold className="size-4" />
       </Oui.ToggleButton>
       <Oui.ToggleButton id="italic" aria-label="Toggle italic">
-        <Italic className="h-4 w-4" />
+        <Italic className="size-4" />
       </Oui.ToggleButton>
       <Oui.ToggleButton id="strikethrough" aria-label="Toggle strikethrough">
-        <Underline className="h-4 w-4" />
+        <Underline className="size-4" />
       </Oui.ToggleButton>
     </Oui.ToggleButtonGroup>
   );
@@ -101,19 +93,15 @@ function ShadcnSmall() {
 
 function OuiSmall() {
   return (
-    <Oui.ToggleButtonGroup selectionMode="single">
-      <Oui.ToggleButton id="bold" size="sm" aria-label="Toggle bold">
-        <Bold className="h-4 w-4" />
+    <Oui.ToggleButtonGroup selectionMode="single" size="sm">
+      <Oui.ToggleButton id="bold" aria-label="Toggle bold">
+        <Bold className="size-4" />
       </Oui.ToggleButton>
-      <Oui.ToggleButton id="italic" size="sm" aria-label="Toggle italic">
-        <Italic className="h-4 w-4" />
+      <Oui.ToggleButton id="italic" aria-label="Toggle italic">
+        <Italic className="size-4" />
       </Oui.ToggleButton>
-      <Oui.ToggleButton
-        id="strikethrough"
-        size="sm"
-        aria-label="Toggle strikethrough"
-      >
-        <Underline className="h-4 w-4" />
+      <Oui.ToggleButton id="strikethrough" aria-label="Toggle strikethrough">
+        <Underline className="size-4" />
       </Oui.ToggleButton>
     </Oui.ToggleButtonGroup>
   );
@@ -137,19 +125,15 @@ function ShadcnLarge() {
 
 function OuiLarge() {
   return (
-    <Oui.ToggleButtonGroup selectionMode="multiple">
+    <Oui.ToggleButtonGroup selectionMode="multiple" size="lg">
       <Oui.ToggleButton id="bold" size="lg" aria-label="Toggle bold">
-        <Bold className="h-4 w-4" />
+        <Bold className="size-4" />
       </Oui.ToggleButton>
-      <Oui.ToggleButton id="italic" size="lg" aria-label="Toggle italic">
-        <Italic className="h-4 w-4" />
+      <Oui.ToggleButton id="italic" aria-label="Toggle italic">
+        <Italic className="size-4" />
       </Oui.ToggleButton>
-      <Oui.ToggleButton
-        id="strikethrough"
-        size="lg"
-        aria-label="Toggle strikethrough"
-      >
-        <Underline className="h-4 w-4" />
+      <Oui.ToggleButton id="strikethrough" aria-label="Toggle strikethrough">
+        <Underline className="size-4" />
       </Oui.ToggleButton>
     </Oui.ToggleButtonGroup>
   );
@@ -175,13 +159,13 @@ function OuiDisabled() {
   return (
     <Oui.ToggleButtonGroup selectionMode="multiple" isDisabled>
       <Oui.ToggleButton id="bold" aria-label="Toggle bold">
-        <Bold className="h-4 w-4" />
+        <Bold className="size-4" />
       </Oui.ToggleButton>
       <Oui.ToggleButton id="italic" aria-label="Toggle italic">
-        <Italic className="h-4 w-4" />
+        <Italic className="size-4" />
       </Oui.ToggleButton>
       <Oui.ToggleButton id="strikethrough" aria-label="Toggle strikethrough">
-        <Underline className="h-4 w-4" />
+        <Underline className="size-4" />
       </Oui.ToggleButton>
     </Oui.ToggleButtonGroup>
   );
@@ -220,11 +204,14 @@ function ShadcnSpacing() {
 
 function OuiSpacing() {
   return (
-    <Oui.ToggleButtonGroup selectionMode="multiple" spacing={2}>
+    <Oui.ToggleButtonGroup
+      selectionMode="multiple"
+      variant="outline"
+      size="sm"
+      spacing={2}
+    >
       <Oui.ToggleButton
         id="star"
-        variant="outline"
-        size="sm"
         aria-label="Toggle star"
         className="data-selected:bg-transparent data-selected:*:[svg]:fill-yellow-500 data-selected:*:[svg]:stroke-yellow-500"
       >
@@ -233,8 +220,6 @@ function OuiSpacing() {
       </Oui.ToggleButton>
       <Oui.ToggleButton
         id="heart"
-        variant="outline"
-        size="sm"
         aria-label="Toggle heart"
         className="data-selected:bg-transparent data-selected:*:[svg]:fill-red-500 data-selected:*:[svg]:stroke-red-500"
       >
@@ -243,8 +228,6 @@ function OuiSpacing() {
       </Oui.ToggleButton>
       <Oui.ToggleButton
         id="bookmark"
-        variant="outline"
-        size="sm"
         aria-label="Toggle bookmark"
         className="data-selected:bg-transparent data-selected:*:[svg]:fill-blue-500 data-selected:*:[svg]:stroke-blue-500"
       >
