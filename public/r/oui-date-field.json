@@ -1,0 +1,27 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "oui-date-field",
+  "type": "registry:ui",
+  "title": "Date Field",
+  "description": "React aria components DateField with shadcn characteristics.",
+  "dependencies": [
+    "react-aria-components",
+    "@internationalized/date"
+  ],
+  "registryDependencies": [
+    "@oui/oui-field",
+    "@oui/oui-base"
+  ],
+  "files": [
+    {
+      "path": "registry/default/ui/oui-date-field.tsx",
+      "content": "\"use client\";\n\nimport type { FieldStylesProps } from \"@/registry/default/ui/oui-field\";\nimport * as React from \"react\";\nimport { composeTailwindRenderProps } from \"@/registry/default/ui/oui-base\";\nimport { fieldStyles } from \"@/registry/default/ui/oui-field\";\nimport * as Rac from \"react-aria-components\";\n\n/**\n * Derived from shadcn Field\n */\nexport function DateField({\n  className,\n  orientation = \"vertical\",\n  ...props\n}: React.ComponentProps<typeof Rac.DateField> & FieldStylesProps) {\n  return (\n    <Rac.DateField\n      data-slot=\"date-field\"\n      data-slot-type=\"field\"\n      data-orientation={orientation}\n      className={composeTailwindRenderProps(\n        className,\n        fieldStyles({ orientation }),\n      )}\n      {...props}\n    />\n  );\n}\n\nexport function DateFieldInput({\n  ...props\n}: React.ComponentProps<typeof Rac.DateInput>) {\n  return <Rac.DateInput {...props} />;\n}\n\nexport function DateFieldSegment({\n  ...props\n}: React.ComponentProps<typeof Rac.DateSegment>) {\n  return <Rac.DateSegment {...props} />;\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "tags": [
+      "date-field"
+    ]
+  }
+}

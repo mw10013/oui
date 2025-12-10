@@ -28,6 +28,7 @@ export * from "@/registry/default/ui/oui-button-group";
 export * from "@/registry/default/ui/oui-checkbox-group";
 export * from "@/registry/default/ui/oui-checkbox";
 export * from "@/registry/default/ui/oui-combo-box";
+export * from "@/registry/default/ui/oui-date-field";
 export * from "@/registry/default/ui/oui-dialog";
 export * from "@/registry/default/ui/oui-disclosure";
 export * from "@/registry/default/ui/oui-field";

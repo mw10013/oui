@@ -1,0 +1,27 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "oui-date-field-demo",
+  "type": "registry:component",
+  "dependencies": [
+    "@internationalized/date"
+  ],
+  "registryDependencies": [
+    "@oui/oui-date-field",
+    "@oui/oui-field"
+  ],
+  "files": [
+    {
+      "path": "registry/default/components/oui-date-field-demo.tsx",
+      "content": "\"use client\";\n\nimport {\n  DateField,\n  DateFieldInput,\n  DateFieldSegment,\n} from \"@/registry/default/ui/oui-date-field\";\nimport {\n  FieldDescription,\n  FieldError,\n  FieldGroup,\n  FieldLabel,\n  FieldSet,\n} from \"@/registry/default/ui/oui-field\";\nimport { parseDate } from \"@internationalized/date\";\nimport * as Rac from \"react-aria-components\";\n\nexport default function Component() {\n  return (\n    <div className=\"w-full max-w-md\">\n      <Rac.Form>\n        <FieldSet>\n          <FieldGroup>\n            <DateField defaultValue={parseDate(\"2020-02-03\")}>\n              <FieldLabel>Birth date</FieldLabel>\n              <DateFieldInput>\n                {(segment) => <DateFieldSegment segment={segment} />}\n              </DateFieldInput>\n              <FieldDescription>Enter your date of birth.</FieldDescription>\n              <FieldError />\n            </DateField>\n          </FieldGroup>\n        </FieldSet>\n      </Rac.Form>\n    </div>\n  );\n}\n",
+      "type": "registry:component"
+    }
+  ],
+  "meta": {
+    "tags": [
+      "date-field",
+      "field"
+    ],
+    "canPreview": true,
+    "canOpenInV0": true
+  }
+}

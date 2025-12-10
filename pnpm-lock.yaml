@@ -11,6 +11,9 @@ importers:
       '@epic-web/invariant':
         specifier: 1.0.0
         version: 1.0.0
+      '@internationalized/date':
+        specifier: 3.10.0
+        version: 3.10.0
       '@tabler/icons-react':
         specifier: 3.35.0
         version: 3.35.0(react@19.2.0)

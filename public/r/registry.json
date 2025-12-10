@@ -647,6 +647,40 @@
       }
     },
     {
+      "name": "oui-date-field",
+      "type": "registry:ui",
+      "title": "Date Field",
+      "description": "React aria components DateField with shadcn characteristics.",
+      "files": [
+        {
+          "path": "registry/default/ui/oui-date-field.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "registryDependencies": ["@oui/oui-field", "@oui/oui-base"],
+      "dependencies": ["react-aria-components", "@internationalized/date"],
+      "meta": {
+        "tags": ["date-field"]
+      }
+    },
+    {
+      "name": "oui-date-field-demo",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/default/components/oui-date-field-demo.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": ["@oui/oui-date-field", "@oui/oui-field"],
+      "dependencies": ["@internationalized/date"],
+      "meta": {
+        "tags": ["date-field", "field"],
+        "canPreview": true,
+        "canOpenInV0": true
+      }
+    },
+    {
       "name": "oui-dialog",
       "type": "registry:ui",
       "title": "Dialog",

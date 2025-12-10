@@ -98,6 +98,11 @@ export const categories: Category[] = [
     ],
   },
   {
+    name: "Date Field",
+    slug: "date-field",
+    components: [{ name: "oui-date-field" }, { name: "oui-date-field-demo" }],
+  },
+  {
     name: "Dialog",
     slug: "dialog",
     sideBySideHref: ReactRouter.href("/side-by-side/dialog"),
