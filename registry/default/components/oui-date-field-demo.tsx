@@ -12,7 +12,6 @@ import {
   FieldLabel,
   FieldSet,
 } from "@/registry/default/ui/oui-field";
-import { parseDate } from "@internationalized/date";
 import * as Rac from "react-aria-components";
 
 export default function Component() {
@@ -21,7 +20,7 @@ export default function Component() {
       <Rac.Form>
         <FieldSet>
           <FieldGroup>
-            <DateField defaultValue={parseDate("2020-02-03")}>
+            <DateField name="birthday">
               <FieldLabel>Birth date</FieldLabel>
               <DateFieldInput>
                 {(segment) => <DateFieldSegment segment={segment} />}
