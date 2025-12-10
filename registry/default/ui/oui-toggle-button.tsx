@@ -45,8 +45,8 @@ export const toggleButtonVariants = cva(
 /**
  * Derived from shadcn Toggle.
  *
- * Unlike standard RAC ToggleButton, this component supports string className overrides via ToggleButtonContext,
- * allowing ToggleButtonGroup to control styles of child buttons.
+ * Unlike standard RAC ToggleButton, this component supports string className overrides (not merge) via 
+ * ToggleButtonContext, allowing ToggleButtonGroup to control styles of child buttons.
  */
 export function ToggleButton({
   className,
@@ -65,6 +65,7 @@ export function ToggleButton({
       data-slot="toggle-button"
       className={composeTailwindRenderProps(
         className,
+        // Override with context className string if provided (from ToggleButtonGroup)
         contextClassName ??
           toggleButtonVariants({
             variant,
