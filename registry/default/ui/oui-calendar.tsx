@@ -87,6 +87,9 @@ export function CalendarButton({
   );
 }
 
+/**
+ * Derived from shadcn Calendar classNames table.
+ */
 export function CalendarGrid({
   className,
   ...props
@@ -94,7 +97,7 @@ export function CalendarGrid({
   return (
     <Rac.CalendarGrid
       data-slot="calendar-grid"
-      className={twMerge("mt-1 w-full border-collapse space-y-1", className)}
+      className={twMerge("w-full border-collapse", className)}
       {...props}
     />
   );
@@ -108,7 +111,8 @@ export function CalendarHeaderCell({
     <Rac.CalendarHeaderCell
       data-slot="calendar-header-cell"
       className={twMerge(
-        "w-9 text-[0.8rem] font-normal text-muted-foreground",
+        // "w-9 text-[0.8rem] font-normal text-muted-foreground",
+        "flex-1 rounded-md text-[0.8rem] font-normal text-muted-foreground select-none",
         className,
       )}
       {...props}

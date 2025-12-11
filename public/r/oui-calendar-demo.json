@@ -8,7 +8,7 @@
   "files": [
     {
       "path": "registry/default/components/oui-calendar-demo.tsx",
-      "content": "\"use client\";\n\nimport {\n  Calendar,\n  CalendarButton,\n  CalendarCell,\n  CalendarGrid,\n  CalendarHeader,\n  CalendarHeading,\n} from \"@/registry/default/ui/oui-calendar\";\n\nexport default function Component() {\n  return (\n    <Calendar aria-label=\"Event date\" className=\"rounded-md border shadow-sm\">\n      <CalendarHeader>\n        <CalendarButton slot=\"previous\" />\n        <CalendarHeading />\n        <CalendarButton slot=\"next\" />\n      </CalendarHeader>\n      <CalendarGrid>{(date) => <CalendarCell date={date} />}</CalendarGrid>\n    </Calendar>\n  );\n}\n",
+      "content": "\"use client\";\n\nimport {\n  Calendar,\n  CalendarButton,\n  CalendarCell,\n  CalendarGrid,\n  CalendarHeader,\n  CalendarHeaderCell,\n  CalendarHeading,\n} from \"@/registry/default/ui/oui-calendar\";\nimport * as Rac from \"react-aria-components\";\n\nexport default function Component() {\n  return (\n    <Calendar aria-label=\"Event date\" className=\"rounded-md border shadow-sm\">\n      <CalendarHeader>\n        <CalendarButton slot=\"previous\" />\n        <CalendarHeading />\n        <CalendarButton slot=\"next\" />\n      </CalendarHeader>\n      <CalendarGrid>\n        <Rac.CalendarGridHeader>\n          {(day) => <CalendarHeaderCell>{day}</CalendarHeaderCell>}\n        </Rac.CalendarGridHeader>\n        <Rac.CalendarGridBody>\n          {(date) => <CalendarCell date={date} />}\n        </Rac.CalendarGridBody>\n      </CalendarGrid>\n    </Calendar>\n  );\n}\n",
       "type": "registry:component"
     }
   ],

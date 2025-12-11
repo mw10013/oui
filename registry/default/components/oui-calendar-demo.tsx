@@ -6,8 +6,10 @@ import {
   CalendarCell,
   CalendarGrid,
   CalendarHeader,
+  CalendarHeaderCell,
   CalendarHeading,
 } from "@/registry/default/ui/oui-calendar";
+import * as Rac from "react-aria-components";
 
 export default function Component() {
   return (
@@ -17,7 +19,14 @@ export default function Component() {
         <CalendarHeading />
         <CalendarButton slot="next" />
       </CalendarHeader>
-      <CalendarGrid>{(date) => <CalendarCell date={date} />}</CalendarGrid>
+      <CalendarGrid>
+        <Rac.CalendarGridHeader>
+          {(day) => <CalendarHeaderCell>{day}</CalendarHeaderCell>}
+        </Rac.CalendarGridHeader>
+        <Rac.CalendarGridBody>
+          {(date) => <CalendarCell date={date} />}
+        </Rac.CalendarGridBody>
+      </CalendarGrid>
     </Calendar>
   );
 }
