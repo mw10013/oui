@@ -55,6 +55,35 @@ export function CalendarHeader() {
   );
 }
 
+export function CalendarGrid({
+  className,
+  ...props
+}: React.ComponentProps<typeof Rac.CalendarGrid>) {
+  return (
+    <Rac.CalendarGrid
+      data-slot="calendar-grid"
+      className={twMerge("mt-1 w-full border-collapse space-y-1", className)}
+      {...props}
+    />
+  );
+}
+
+export function CalendarHeaderCell({
+  className,
+  ...props
+}: React.ComponentProps<typeof Rac.CalendarHeaderCell>) {
+  return (
+    <Rac.CalendarHeaderCell
+      data-slot="calendar-header-cell"
+      className={twMerge(
+        "w-9 text-[0.8rem] font-normal text-muted-foreground",
+        className,
+      )}
+      {...props}
+    />
+  );
+}
+
 export const calendarCellStyles = twJoin(
   focusVisibleStyles,
   "mt-1 flex h-8 w-8 cursor-default items-center justify-center rounded-md text-sm font-normal transition-shadow forced-color-adjust-none",
@@ -77,41 +106,4 @@ export function CalendarCell({
       {...props}
     />
   );
-}
-
-export function CalendarGrid({
-  className,
-  ...props
-}: React.ComponentProps<typeof Rac.CalendarGrid>) {
-  return (
-    <Rac.CalendarGrid
-      data-slot="calendar-grid"
-      className={twMerge("mt-1 w-full border-collapse space-y-1", className)}
-      {...props}
-    />
-  );
-}
-
-export function CalendarGridBody({
-  ...props
-}: React.ComponentProps<typeof Rac.CalendarGridBody>) {
-  return <Rac.CalendarGridBody data-slot="calendar-grid-body" {...props} />;
-}
-
-export function CalendarGridHeader() {
-  return (
-    <Rac.CalendarGridHeader data-slot="calendar-grid-header">
-      {(day) => (
-        <CalendarHeaderCell className="w-9 text-[0.8rem] font-normal text-muted-foreground">
-          {day}
-        </CalendarHeaderCell>
-      )}
-    </Rac.CalendarGridHeader>
-  );
-}
-
-export function CalendarHeaderCell({
-  ...props
-}: React.ComponentProps<typeof Rac.CalendarHeaderCell>) {
-  return <Rac.CalendarHeaderCell data-slot="calendar-header-cell" {...props} />;
 }
