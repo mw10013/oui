@@ -5,10 +5,14 @@ import {
   composeTailwindRenderProps,
   focusVisibleStyles,
 } from "@/registry/default/ui/oui-base";
+import { Button } from "@/registry/default/ui/oui-button";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import * as Rac from "react-aria-components";
 import { twJoin, twMerge } from "tailwind-merge";
 
+/**
+ * Derived from shadcn Calendar.
+ */
 export function Calendar<T extends Rac.DateValue>({
   className,
   ...props
@@ -30,7 +34,8 @@ export function CalendarHeader() {
 
   return (
     <header className="flex w-full items-center justify-between">
-      <Rac.Button
+      <CalendarButton slot="previous" />
+      {/* <Rac.Button
         className="inline-flex h-7 w-7 items-center justify-center gap-2 rounded-md border border-input bg-background p-0 text-sm font-medium whitespace-nowrap ring-offset-background transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0"
         slot="previous"
       >
@@ -39,7 +44,7 @@ export function CalendarHeader() {
         ) : (
           <ChevronLeft aria-hidden className="h-4 w-4" />
         )}
-      </Rac.Button>
+      </Rac.Button> */}
       <Rac.Heading className="text-sm font-medium" />
       <Rac.Button
         className="inline-flex h-7 w-7 items-center justify-center gap-2 rounded-md border border-input bg-background p-0 text-sm font-medium whitespace-nowrap ring-offset-background transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0"
@@ -52,6 +57,32 @@ export function CalendarHeader() {
         )}
       </Rac.Button>
     </header>
+  );
+}
+
+export function CalendarButton({
+  slot,
+  variant = "ghost",
+  size = "icon-sm",
+  ...props
+}: Omit<React.ComponentProps<typeof Button>, "slot"> & {
+  slot: "previous" | "next";
+}) {
+  const { direction } = Rac.useLocale();
+  return (
+    <Button slot={slot} variant={variant} size={size} {...props}>
+      {slot === "previous" ? (
+        direction === "rtl" ? (
+          <ChevronRight aria-hidden />
+        ) : (
+          <ChevronLeft aria-hidden />
+        )
+      ) : direction === "rtl" ? (
+        <ChevronLeft aria-hidden />
+      ) : (
+        <ChevronRight aria-hidden />
+      )}
+    </Button>
   );
 }
 

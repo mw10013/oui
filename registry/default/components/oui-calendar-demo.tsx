@@ -9,7 +9,7 @@ import {
 
 export default function Component() {
   return (
-    <Calendar aria-label="Event date">
+    <Calendar aria-label="Event date" className="rounded-md border shadow-sm">
       <CalendarHeader />
       <CalendarGrid>{(date) => <CalendarCell date={date} />}</CalendarGrid>
     </Calendar>
