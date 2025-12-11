@@ -64,6 +64,11 @@ export const categories: Category[] = [
     ],
   },
   {
+    name: "Calendar",
+    slug: "calendar",
+    components: [{ name: "oui-calendar" }, { name: "oui-calendar-demo" }],
+  },
+  {
     name: "Card",
     slug: "card",
     components: [{ name: "oui-card-ex" }],

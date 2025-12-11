@@ -425,6 +425,43 @@
       }
     },
     {
+      "name": "oui-calendar",
+      "type": "registry:ui",
+      "title": "Calendar",
+      "description": "React aria components Calendar with shadcn characteristics.",
+      "files": [
+        {
+          "path": "registry/default/ui/oui-calendar.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "registryDependencies": ["@oui/oui-base"],
+      "dependencies": [
+        "react-aria-components",
+        "lucide-react",
+        "tailwind-merge"
+      ],
+      "meta": {
+        "tags": ["calendar"]
+      }
+    },
+    {
+      "name": "oui-calendar-demo",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/default/components/oui-calendar-demo.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": ["@oui/oui-calendar"],
+      "meta": {
+        "tags": ["calendar"],
+        "canPreview": true,
+        "canOpenInV0": true
+      }
+    },
+    {
       "name": "oui-card-ex",
       "type": "registry:component",
       "title": "Card Ex",
