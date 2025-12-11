@@ -8,7 +8,7 @@ import {
 import { Button } from "@/registry/default/ui/oui-button";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import * as Rac from "react-aria-components";
-import { twJoin, twMerge } from "tailwind-merge";
+import { twMerge } from "tailwind-merge";
 
 /**
  * Derived from shadcn Calendar.
@@ -103,6 +103,9 @@ export function CalendarGrid({
   );
 }
 
+/**
+ * Derived from shadcn Calendar classNames week_day.
+ */
 export function CalendarHeaderCell({
   className,
   ...props
@@ -111,7 +114,6 @@ export function CalendarHeaderCell({
     <Rac.CalendarHeaderCell
       data-slot="calendar-header-cell"
       className={twMerge(
-        // "w-9 text-[0.8rem] font-normal text-muted-foreground",
         "flex-1 rounded-md text-[0.8rem] font-normal text-muted-foreground select-none",
         className,
       )}
@@ -120,17 +122,9 @@ export function CalendarHeaderCell({
   );
 }
 
-export const calendarCellStyles = twJoin(
-  focusVisibleStyles,
-  "mt-1 flex h-8 w-8 cursor-default items-center justify-center rounded-md text-sm font-normal transition-shadow forced-color-adjust-none",
-  "data-hovered:bg-accent data-hovered:text-accent-foreground",
-  "data-selected:bg-primary data-selected:text-primary-foreground data-selected:data-hovered:bg-primary data-selected:data-hovered:text-primary-foreground",
-  "data-disabled:text-muted-foreground data-disabled:opacity-50",
-  "data-outside-month:text-muted-foreground data-outside-month:opacity-50",
-  "data-pressed:border-ring data-pressed:ring-[3px] data-pressed:ring-ring/50",
-  "data-unavailable:text-muted-foreground data-unavailable:opacity-50",
-);
-
+/**
+ * Derived from shadcn CalendarDayButton
+ */
 export function CalendarCell({
   className,
   ...props
@@ -138,7 +132,16 @@ export function CalendarCell({
   return (
     <Rac.CalendarCell
       data-slot="calendar-cell"
-      className={composeTailwindRenderProps(className, calendarCellStyles)}
+      className={composeTailwindRenderProps(className, [
+        focusVisibleStyles,
+        "mt-1 flex h-8 w-8 cursor-default items-center justify-center rounded-md text-sm font-normal transition-shadow forced-color-adjust-none",
+        "data-hovered:bg-accent data-hovered:text-accent-foreground",
+        "data-selected:bg-primary data-selected:text-primary-foreground data-selected:data-hovered:bg-primary data-selected:data-hovered:text-primary-foreground",
+        "data-disabled:text-muted-foreground data-disabled:opacity-50",
+        "data-outside-month:text-muted-foreground data-outside-month:opacity-50",
+        "data-pressed:border-ring data-pressed:ring-[3px] data-pressed:ring-ring/50",
+        "data-unavailable:text-muted-foreground data-unavailable:opacity-50",
+      ])}
       {...props}
     />
   );
