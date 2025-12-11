@@ -22,41 +22,42 @@ export function Calendar<T extends Rac.DateValue>({
       data-slot="calendar"
       className={composeTailwindRenderProps(
         className,
-        "flex w-fit flex-col gap-3 bg-card p-3",
+        // w-fit from shadcn classNames root
+        "group/calendar w-fit bg-background p-3 in-data-[slot=card-content]:bg-transparent in-data-[slot=popover-content]:bg-transparent",
       )}
       {...props}
     />
   );
 }
 
-export function CalendarHeader() {
-  const { direction } = Rac.useLocale();
-
+/**
+ * Derived from shadcn Calendar classNames nav.
+ */
+export function CalendarHeader({
+  className,
+  ...props
+}: React.ComponentProps<"nav">) {
   return (
-    <header className="flex w-full items-center justify-between">
-      <CalendarButton slot="previous" />
-      {/* <Rac.Button
-        className="inline-flex h-7 w-7 items-center justify-center gap-2 rounded-md border border-input bg-background p-0 text-sm font-medium whitespace-nowrap ring-offset-background transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0"
-        slot="previous"
-      >
-        {direction === "rtl" ? (
-          <ChevronRight aria-hidden className="h-4 w-4" />
-        ) : (
-          <ChevronLeft aria-hidden className="h-4 w-4" />
-        )}
-      </Rac.Button> */}
-      <Rac.Heading className="text-sm font-medium" />
-      <Rac.Button
-        className="inline-flex h-7 w-7 items-center justify-center gap-2 rounded-md border border-input bg-background p-0 text-sm font-medium whitespace-nowrap ring-offset-background transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0"
-        slot="next"
-      >
-        {direction === "rtl" ? (
-          <ChevronLeft aria-hidden className="h-4 w-4" />
-        ) : (
-          <ChevronRight aria-hidden className="h-4 w-4" />
-        )}
-      </Rac.Button>
-    </header>
+    <header
+      className={twMerge("flex w-full items-center justify-between", className)}
+      {...props}
+    />
+  );
+}
+
+/**
+ * Derived from shadcn Calendar classNames caption_label.
+ */
+export function CalendarHeading({
+  className,
+  ...props
+}: React.ComponentProps<typeof Rac.Heading>) {
+  return (
+    <Rac.Heading
+      data-slot="calendar-heading"
+      className={twMerge("text-sm font-medium", className)}
+      {...props}
+    />
   );
 }
 
