@@ -16,7 +16,6 @@ import {
   PopoverTrigger,
 } from "@/registry/default/ui/popover";
 import { ChevronDownIcon } from "lucide-react";
-import * as Rac from "react-aria-components";
 import { type DateRange } from "react-day-picker";
 
 export function CalendarDemo() {
@@ -44,12 +43,12 @@ export function OuiCalendarDemo() {
         <Oui.CalendarButton slot="next" />
       </Oui.CalendarHeader>
       <Oui.CalendarGrid>
-        <Rac.CalendarGridHeader>
+        <Oui.CalendarGridHeader>
           {(day) => <Oui.CalendarHeaderCell>{day}</Oui.CalendarHeaderCell>}
-        </Rac.CalendarGridHeader>
-        <Rac.CalendarGridBody>
+        </Oui.CalendarGridHeader>
+        <Oui.CalendarGridBody>
           {(date) => <Oui.CalendarCell date={date} />}
-        </Rac.CalendarGridBody>
+        </Oui.CalendarGridBody>
       </Oui.CalendarGrid>
     </Oui.Calendar>
   );
@@ -127,12 +126,12 @@ export function OuiCalendarMonthYear() {
         <Oui.CalendarButton slot="next" />
       </Oui.CalendarHeader>
       <Oui.CalendarGrid>
-        <Rac.CalendarGridHeader>
+        <Oui.CalendarGridHeader>
           {(day) => <Oui.CalendarHeaderCell>{day}</Oui.CalendarHeaderCell>}
-        </Rac.CalendarGridHeader>
-        <Rac.CalendarGridBody>
+        </Oui.CalendarGridHeader>
+        <Oui.CalendarGridBody>
           {(date) => <Oui.CalendarCell date={date} />}
-        </Rac.CalendarGridBody>
+        </Oui.CalendarGridBody>
       </Oui.CalendarGrid>
     </Oui.Calendar>
   );
@@ -335,12 +334,12 @@ export function OuiCalendarCustomCellSize() {
         <Oui.CalendarButton slot="next" />
       </Oui.CalendarHeader>
       <Oui.CalendarGrid>
-        <Rac.CalendarGridHeader>
+        <Oui.CalendarGridHeader>
           {(day) => <Oui.CalendarHeaderCell>{day}</Oui.CalendarHeaderCell>}
-        </Rac.CalendarGridHeader>
-        <Rac.CalendarGridBody>
+        </Oui.CalendarGridHeader>
+        <Oui.CalendarGridBody>
           {(date) => <Oui.CalendarCell date={date} />}
-        </Rac.CalendarGridBody>
+        </Oui.CalendarGridBody>
       </Oui.CalendarGrid>
     </Oui.Calendar>
   );

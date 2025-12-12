@@ -110,10 +110,8 @@ export function CalendarGrid({
       data-slot="calendar-grid"
       className={twMerge(
         "w-full border-collapse",
-        "[&_thead_tr]:flex",
-        "[&_tbody_tr]:flex",
         // "[&_tbody_tr]:w-full ",
-        "[&_tbody_tr]:mt-2",
+        // "[&_tbody_tr]:mt-2",
         // "[&_thead_th]:p-0",
         // "[&_tbody_td]:p-0",
         className,
@@ -124,7 +122,23 @@ export function CalendarGrid({
 }
 
 /**
- * Derived from shadcn Calendar classNames week_day.
+ * Derived from shadcn Calendar classNames weekdays for nested tr.
+ */
+export function CalendarGridHeader({
+  className,
+  ...props
+}: React.ComponentProps<typeof Rac.CalendarGridHeader>) {
+  return (
+    <Rac.CalendarGridHeader
+      data-slot="calendar-grid-header"
+      className={twMerge("[&_tr]:flex", className)}
+      {...props}
+    />
+  );
+}
+
+/**
+ * Derived from shadcn Calendar classNames weekday.
  */
 export function CalendarHeaderCell({
   className,
@@ -137,6 +151,28 @@ export function CalendarHeaderCell({
         "flex-1 rounded-md text-[0.8rem] font-normal text-muted-foreground select-none",
         className,
       )}
+      {...props}
+    />
+  );
+}
+
+/**
+ * Derived from shadcn Calendar classNames week for nested tr and day for nested td.
+ */
+export function CalendarGridBody({
+  className,
+  ...props
+}: React.ComponentProps<typeof Rac.CalendarGridBody>) {
+  return (
+    <Rac.CalendarGridBody
+      data-slot="calendar-grid-body"
+      className={twMerge(
+        // shadcn Calendar classNames week
+        "[&_tr]:mt-2 [&_tr]:flex [&_tr]:w-full", 
+        // shadcn Calendar classNames day
+        // Not sure how to handle this one: [&:last-child[data-selected=true]_button]:rounded-r-md 
+        "[&_td]:relative [&_td]:w-full [&_td]:h-full [&_td]:p-0 [&_td]:text-center [&_td]:[&:last-child[data-selected=true]_button]:rounded-r-md [&_td]:group/day [&_td]:aspect-square [&_td]:select-none",
+        className)}
       {...props}
     />
   );
