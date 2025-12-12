@@ -66,6 +66,7 @@ export const categories: Category[] = [
   {
     name: "Calendar",
     slug: "calendar",
+    sideBySideHref: ReactRouter.href("/side-by-side/calendar"),
     components: [{ name: "oui-calendar" }, { name: "oui-calendar-demo" }],
   },
   {

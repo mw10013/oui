@@ -435,7 +435,7 @@
           "type": "registry:ui"
         }
       ],
-      "registryDependencies": ["@oui/oui-base"],
+      "registryDependencies": ["@oui/oui-base", "@oui/oui-button"],
       "dependencies": [
         "react-aria-components",
         "lucide-react",
@@ -1027,6 +1027,7 @@
         "@oui/oui-base",
         "@oui/oui-button",
         "@oui/oui-button-group",
+        "@oui/oui-calendar",
         "@oui/oui-checkbox-group",
         "@oui/oui-checkbox",
         "@oui/oui-combo-box",

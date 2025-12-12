@@ -2,11 +2,10 @@
 
 import * as React from "react";
 import { composeTailwindRenderProps } from "@/registry/default/ui/oui-base";
-import { Button } from "@/registry/default/ui/oui-button";
+import { Button, buttonVariants } from "@/registry/default/ui/oui-button";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import * as Rac from "react-aria-components";
 import { twMerge } from "tailwind-merge";
-import { buttonVariants } from "./button";
 
 /**
  * Derived from shadcn Calendar.

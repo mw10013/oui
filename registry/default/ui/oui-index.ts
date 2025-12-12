@@ -25,6 +25,7 @@ export * from "@/registry/default/ui/oui-base";
  */
 export * from "@/registry/default/ui/oui-button";
 export * from "@/registry/default/ui/oui-button-group";
+export * from "@/registry/default/ui/oui-calendar";
 export * from "@/registry/default/ui/oui-checkbox-group";
 export * from "@/registry/default/ui/oui-checkbox";
 export * from "@/registry/default/ui/oui-combo-box";
