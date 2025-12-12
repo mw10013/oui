@@ -168,11 +168,12 @@ export function CalendarGridBody({
       data-slot="calendar-grid-body"
       className={twMerge(
         // shadcn Calendar classNames week
-        "[&_tr]:mt-2 [&_tr]:flex [&_tr]:w-full", 
+        "[&_tr]:mt-2 [&_tr]:flex [&_tr]:w-full",
         // shadcn Calendar classNames day
-        // Not sure how to handle this one: [&:last-child[data-selected=true]_button]:rounded-r-md 
-        "[&_td]:relative [&_td]:w-full [&_td]:h-full [&_td]:p-0 [&_td]:text-center [&_td]:[&:last-child[data-selected=true]_button]:rounded-r-md [&_td]:group/day [&_td]:aspect-square [&_td]:select-none",
-        className)}
+        // Not sure how to handle this one: [&:last-child[data-selected=true]_button]:rounded-r-md
+        "[&_td]:group/day [&_td]:relative [&_td]:aspect-square [&_td]:h-full [&_td]:w-full [&_td]:p-0 [&_td]:text-center [&_td]:select-none [&_td]:[&:last-child[data-selected=true]_button]:rounded-r-md",
+        className,
+      )}
       {...props}
     />
   );
