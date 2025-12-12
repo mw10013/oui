@@ -1,14 +1,12 @@
 "use client";
 
 import * as React from "react";
-import {
-  composeTailwindRenderProps,
-  focusVisibleStyles,
-} from "@/registry/default/ui/oui-base";
+import { composeTailwindRenderProps } from "@/registry/default/ui/oui-base";
 import { Button } from "@/registry/default/ui/oui-button";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import * as Rac from "react-aria-components";
 import { twMerge } from "tailwind-merge";
+import { buttonVariants } from "./button";
 
 /**
  * Derived from shadcn Calendar.
@@ -23,7 +21,7 @@ export function Calendar<T extends Rac.DateValue>({
       className={composeTailwindRenderProps(
         className,
         // w-fit from shadcn classNames root
-        "group/calendar w-fit bg-background p-3 in-data-[slot=card-content]:bg-transparent in-data-[slot=popover-content]:bg-transparent",
+        "group/calendar w-fit bg-background p-3 [--cell-size:--spacing(8)] in-data-[slot=card-content]:bg-transparent in-data-[slot=popover-content]:bg-transparent",
       )}
       {...props}
     />
@@ -61,17 +59,28 @@ export function CalendarHeading({
   );
 }
 
+/**
+ * Derived from shadcn Calendar classNames button_previous and button_next.
+ */
 export function CalendarButton({
   slot,
   variant = "ghost",
-  size = "icon-sm",
+  className,
   ...props
 }: Omit<React.ComponentProps<typeof Button>, "slot"> & {
   slot: "previous" | "next";
 }) {
   const { direction } = Rac.useLocale();
   return (
-    <Button slot={slot} variant={variant} size={size} {...props}>
+    <Button
+      slot={slot}
+      variant={variant}
+      className={composeTailwindRenderProps(
+        className,
+        "size-(--cell-size) p-0 select-none",
+      )}
+      {...props}
+    >
       {slot === "previous" ? (
         direction === "rtl" ? (
           <ChevronRight aria-hidden />
@@ -133,16 +142,49 @@ export function CalendarCell({
     <Rac.CalendarCell
       data-slot="calendar-cell"
       className={composeTailwindRenderProps(className, [
-        focusVisibleStyles,
-        "mt-1 flex h-8 w-8 cursor-default items-center justify-center rounded-md text-sm font-normal transition-shadow forced-color-adjust-none",
-        "data-hovered:bg-accent data-hovered:text-accent-foreground",
-        "data-selected:bg-primary data-selected:text-primary-foreground data-selected:data-hovered:bg-primary data-selected:data-hovered:text-primary-foreground",
-        "data-disabled:text-muted-foreground data-disabled:opacity-50",
-        "data-outside-month:text-muted-foreground data-outside-month:opacity-50",
-        "data-pressed:border-ring data-pressed:ring-[3px] data-pressed:ring-ring/50",
+        buttonVariants({ variant: "ghost", size: "icon" }),
+        "flex aspect-square size-auto w-full min-w-(--cell-size) cursor-default flex-col gap-1 leading-none font-normal",
+        "data-selected:bg-primary data-selected:text-primary-foreground",
+        "group-data-[slot=range-calendar]:data-selected:bg-accent group-data-[slot=range-calendar]:data-selected:text-accent-foreground",
+        "group-data-[slot=range-calendar]:data-selection-start:bg-primary group-data-[slot=range-calendar]:data-selection-start:text-primary-foreground",
+        "group-data-[slot=range-calendar]:data-selection-end:bg-primary group-data-[slot=range-calendar]:data-selection-end:text-primary-foreground",
+        "group-data-[slot=range-calendar]:data-selected:rounded-none group-data-[slot=range-calendar]:data-selection-end:rounded-r-md group-data-[slot=range-calendar]:data-selection-start:rounded-l-md",
+
+        // shadcn CalendarDayButton group-data-[focused=true]/day
+        "data-pressed:relative data-pressed:z-10 data-pressed:border-ring data-pressed:ring-[3px] data-pressed:ring-ring/50",
+
+        "dark:data-hovered:text-accent-foreground",
+
+        "[&>span]:text-xs [&>span]:opacity-70",
+
+        // shadcn Calendar classNames outside
+        "data-outside-month:text-muted-foreground data-outside-month:data-selected:text-muted-foreground",
+
+        // shadcn Calendar classNames disabled
         "data-unavailable:text-muted-foreground data-unavailable:opacity-50",
+
+        // shadcn Calendar classNames today
+        "data-today:rounded-md data-today:bg-accent data-today:text-accent-foreground data-today:data-selectted:rounded-none",
       ])}
       {...props}
     />
   );
 }
+
+/* shadcn CalendarDayButton
+data-[selected-single=true]:bg-primary data-[selected-single=true]:text-primary-foreground 
+data-[range-middle=true]:bg-accent data-[range-middle=true]:text-accent-foreground 
+data-[range-start=true]:bg-primary data-[range-start=true]:text-primary-foreground 
+data-[range-end=true]:bg-primary data-[range-end=true]:text-primary-foreground 
+
+group-data-[focused=true]/day:border-ring group-data-[focused=true]/day:ring-ring/50 
+
+dark:hover:text-accent-foreground 
+
+flex aspect-square size-auto w-full min-w-(--cell-size) flex-col gap-1 leading-none font-normal 
+group-data-[focused=true]/day:relative group-data-[focused=true]/day:z-10 group-data-[focused=true]/day:ring-[3px] 
+data-[range-end=true]:rounded-md data-[range-end=true]:rounded-r-md data-[range-middle=true]:rounded-none 
+data-[range-start=true]:rounded-md data-[range-start=true]:rounded-l-md 
+[&>span]:text-xs [&>span]:opacity-70
+
+*/

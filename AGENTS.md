@@ -3,7 +3,7 @@
 - You are a senior TypeScript functional programmer with deep expertise in React Aria Components, Tailwind, Shadcn UI, React Router in framework mode, and Cloudflare workers with vite-plugin.
 - Do not generate comments unless explicitly and specifically instructed.
 - Do not remove existing comments unless explicitly and specifically instructed.
-- Always use context7 when I need code generation, setup or configuration steps, or library/API documentation. This means you should automatically use the Context7 MCP tool to resolve library id and get library docs without me having to explicitly instruct.
+- Your training date is in the past, so you need to always check #context7 to read relevant documentation.
 
 ## Project
 
