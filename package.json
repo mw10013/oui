@@ -22,7 +22,8 @@
     "tail:PRODUCTION": "wrangler tail oui",
     "registry:build": "rm -rf public/r && shadcn build",
     "migrate:radix": "shadcn migrate radix",
-    "refs:react-spectrum": "rm -rf refs/react-spectrum && mkdir -p refs/react-spectrum && curl -L https://github.com/adobe/react-spectrum/archive/refs/tags/react-aria-components@1.13.0.tar.gz | tar -xz -C refs/react-spectrum --strip-components=1"
+    "refs:react-spectrum": "rm -rf refs/react-spectrum && mkdir -p refs/react-spectrum && curl -L https://github.com/adobe/react-spectrum/archive/refs/tags/react-aria-components@1.13.0.tar.gz | tar -xz -C refs/react-spectrum --strip-components=1",
+    "refs:react-day-picker": "rm -rf refs/react-day-picker && mkdir -p refs/react-day-picker && curl -L https://github.com/gpbl/react-day-picker/archive/refs/tags/v9.12.0.tar.gz | tar -xz -C refs/react-day-picker --strip-components=1"
   },
   "dependencies": {
     "@epic-web/invariant": "1.0.0",

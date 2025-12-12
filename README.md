@@ -64,6 +64,15 @@ pnpm dev
     - Build command: CLOUDFLARE_ENV=production pnpm build
     - Deploy command: pnpm exec wrangler deploy
 
+## Llms
+
+Reference source code for React Aria Components and React Day Picker is stored in the `refs` directory for LLM scanning and reference.
+
+```
+pnpm refs:react-spectrum
+pnpm refs:react-day-picker
+```
+
 ## Credit
 
 Concept by [https://coss.com/origin](https://coss.com/origin)

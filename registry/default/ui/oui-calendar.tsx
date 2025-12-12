@@ -105,7 +105,16 @@ export function CalendarGrid({
   return (
     <Rac.CalendarGrid
       data-slot="calendar-grid"
-      className={twMerge("w-full border-collapse", className)}
+      className={twMerge(
+        "w-full border-collapse",
+        "[&_thead_tr]:flex",
+        "[&_tbody_tr]:flex",
+        // "[&_tbody_tr]:w-full ",
+        "[&_tbody_tr]:mt-2",
+        // "[&_thead_th]:p-0",
+        // "[&_tbody_td]:p-0",
+        className,
+      )}
       {...props}
     />
   );
@@ -162,7 +171,7 @@ export function CalendarCell({
         "data-unavailable:text-muted-foreground data-unavailable:opacity-50",
 
         // shadcn Calendar classNames today
-        "data-today:rounded-md data-today:bg-accent data-today:text-accent-foreground data-today:data-selectted:rounded-none",
+        "data-today:rounded-md data-today:bg-accent data-today:text-accent-foreground data-today:data-selected:rounded-none",
       ])}
       {...props}
     />
