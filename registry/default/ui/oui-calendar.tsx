@@ -149,13 +149,12 @@ export function CalendarCell({
         "group-data-[slot=range-calendar]:data-selection-start:bg-primary group-data-[slot=range-calendar]:data-selection-start:text-primary-foreground",
         "group-data-[slot=range-calendar]:data-selection-end:bg-primary group-data-[slot=range-calendar]:data-selection-end:text-primary-foreground",
         "group-data-[slot=range-calendar]:data-selected:rounded-none group-data-[slot=range-calendar]:data-selection-end:rounded-r-md group-data-[slot=range-calendar]:data-selection-start:rounded-l-md",
+        "dark:data-hovered:text-accent-foreground",
+        "[&>span]:text-xs [&>span]:opacity-70",
 
         // shadcn CalendarDayButton group-data-[focused=true]/day
         "data-pressed:relative data-pressed:z-10 data-pressed:border-ring data-pressed:ring-[3px] data-pressed:ring-ring/50",
-
-        "dark:data-hovered:text-accent-foreground",
-
-        "[&>span]:text-xs [&>span]:opacity-70",
+        "data-selected:relative data-selected:z-10 data-selected:border-ring data-selected:ring-[3px] data-selected:ring-ring/50",
 
         // shadcn Calendar classNames outside
         "data-outside-month:text-muted-foreground data-outside-month:data-selected:text-muted-foreground",
