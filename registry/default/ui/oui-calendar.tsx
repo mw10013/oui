@@ -17,11 +17,14 @@ export function Calendar<T extends Rac.DateValue>({
   return (
     <Rac.Calendar
       data-slot="calendar"
-      className={composeTailwindRenderProps(
-        className,
-        // w-fit from shadcn classNames root
-        "group/calendar w-fit bg-background p-3 [--cell-size:--spacing(8)] in-data-[slot=card-content]:bg-transparent in-data-[slot=popover-content]:bg-transparent",
-      )}
+      className={composeTailwindRenderProps(className, [
+        // shadcn Calendar
+        "group/calendar bg-background p-3 [--cell-size:--spacing(8)] in-data-[slot=card-content]:bg-transparent in-data-[slot=popover-content]:bg-transparent",
+        // shadcn Calendar classNames root
+        "w-fit",
+        // shadcn Calendar classNames month
+        "flex flex-col gap-4",
+      ])}
       {...props}
     />
   );
