@@ -3,6 +3,7 @@
   "name": "oui-date-picker-demo",
   "type": "registry:component",
   "registryDependencies": [
+    "@oui/oui-button-group",
     "@oui/oui-calendar",
     "@oui/oui-date-field",
     "@oui/oui-date-picker",
@@ -13,7 +14,7 @@
   "files": [
     {
       "path": "registry/default/components/oui-date-picker-demo.tsx",
-      "content": "\"use client\";\n\nimport {\n  Calendar,\n  CalendarButton,\n  CalendarCell,\n  CalendarGrid,\n  CalendarGridBody,\n  CalendarGridHeader,\n  CalendarHeader,\n  CalendarHeaderCell,\n  CalendarHeading,\n} from \"@/registry/default/ui/oui-calendar\";\nimport { DateFieldSegment } from \"@/registry/default/ui/oui-date-field\";\nimport {\n  DatePicker,\n  DatePickerButton,\n  DatePickerInput,\n} from \"@/registry/default/ui/oui-date-picker\";\nimport { Dialog } from \"@/registry/default/ui/oui-dialog\";\nimport { FieldDescription, FieldLabel } from \"@/registry/default/ui/oui-field\";\nimport { Popover } from \"@/registry/default/ui/oui-popover\";\nimport * as Rac from \"react-aria-components\";\n\nexport default function Component() {\n  return (\n    <div className=\"w-full max-w-md\">\n      <DatePicker>\n        <FieldLabel>Event date</FieldLabel>\n        <Rac.Group>\n          <DatePickerInput>\n            {(segment) => <DateFieldSegment segment={segment} />}\n          </DatePickerInput>\n          <DatePickerButton />\n        </Rac.Group>\n        <FieldDescription>Select the date of the event.</FieldDescription>\n        <Popover>\n          <Dialog>\n            <Calendar>\n              <CalendarHeader>\n                <CalendarButton slot=\"previous\" />\n                <CalendarHeading />\n                <CalendarButton slot=\"next\" />\n              </CalendarHeader>\n              <CalendarGrid>\n                <CalendarGridHeader>\n                  {(day) => <CalendarHeaderCell>{day}</CalendarHeaderCell>}\n                </CalendarGridHeader>\n                <CalendarGridBody>\n                  {(date) => <CalendarCell date={date} />}\n                </CalendarGridBody>\n              </CalendarGrid>\n            </Calendar>\n          </Dialog>\n        </Popover>\n      </DatePicker>\n    </div>\n  );\n}\n",
+      "content": "\"use client\";\n\nimport { ButtonGroup } from \"@/registry/default/ui/oui-button-group\";\nimport {\n  Calendar,\n  CalendarButton,\n  CalendarCell,\n  CalendarGrid,\n  CalendarGridBody,\n  CalendarGridHeader,\n  CalendarHeader,\n  CalendarHeaderCell,\n  CalendarHeading,\n} from \"@/registry/default/ui/oui-calendar\";\nimport {\n  DateFieldInput,\n  DateFieldSegment,\n} from \"@/registry/default/ui/oui-date-field\";\nimport {\n  DatePicker,\n  DatePickerButton,\n} from \"@/registry/default/ui/oui-date-picker\";\nimport { Dialog } from \"@/registry/default/ui/oui-dialog\";\nimport { FieldDescription, FieldLabel } from \"@/registry/default/ui/oui-field\";\nimport { Popover } from \"@/registry/default/ui/oui-popover\";\n\nexport default function Component() {\n  return (\n    <div className=\"w-full max-w-md\">\n      <DatePicker>\n        <FieldLabel>Event date</FieldLabel>\n        <ButtonGroup>\n          <DateFieldInput>\n            {(segment) => <DateFieldSegment segment={segment} />}\n          </DateFieldInput>\n          <DatePickerButton />\n        </ButtonGroup>\n        <FieldDescription>Select the date of the event.</FieldDescription>\n        <Popover>\n          <Dialog showCloseButton={false}>\n            <Calendar>\n              <CalendarHeader>\n                <CalendarButton slot=\"previous\" />\n                <CalendarHeading />\n                <CalendarButton slot=\"next\" />\n              </CalendarHeader>\n              <CalendarGrid>\n                <CalendarGridHeader>\n                  {(day) => <CalendarHeaderCell>{day}</CalendarHeaderCell>}\n                </CalendarGridHeader>\n                <CalendarGridBody>\n                  {(date) => <CalendarCell date={date} />}\n                </CalendarGridBody>\n              </CalendarGrid>\n            </Calendar>\n          </Dialog>\n        </Popover>\n      </DatePicker>\n    </div>\n  );\n}\n",
       "type": "registry:component"
     }
   ],
@@ -21,7 +22,8 @@
     "tags": [
       "date-picker",
       "calendar",
-      "date-field"
+      "date-field",
+      "button-group"
     ],
     "canPreview": true,
     "canOpenInV0": true

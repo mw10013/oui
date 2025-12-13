@@ -748,6 +748,7 @@
         }
       ],
       "registryDependencies": [
+        "@oui/oui-button-group",
         "@oui/oui-calendar",
         "@oui/oui-date-field",
         "@oui/oui-date-picker",
@@ -756,7 +757,7 @@
         "@oui/oui-popover"
       ],
       "meta": {
-        "tags": ["date-picker", "calendar", "date-field"],
+        "tags": ["date-picker", "calendar", "date-field", "button-group"],
         "canPreview": true,
         "canOpenInV0": true
       }

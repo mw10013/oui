@@ -1,5 +1,6 @@
 "use client";
 
+import { ButtonGroup } from "@/registry/default/ui/oui-button-group";
 import {
   Calendar,
   CalendarButton,
@@ -22,22 +23,18 @@ import {
 import { Dialog } from "@/registry/default/ui/oui-dialog";
 import { FieldDescription, FieldLabel } from "@/registry/default/ui/oui-field";
 import { Popover } from "@/registry/default/ui/oui-popover";
-import * as Rac from "react-aria-components";
 
 export default function Component() {
   return (
     <div className="w-full max-w-md">
       <DatePicker>
         <FieldLabel>Event date</FieldLabel>
-        <Rac.Group>
-          {/* <DatePickerInput>
-            {(segment) => <DateFieldSegment segment={segment} />}
-          </DatePickerInput> */}
+        <ButtonGroup>
           <DateFieldInput>
             {(segment) => <DateFieldSegment segment={segment} />}
           </DateFieldInput>
           <DatePickerButton />
-        </Rac.Group>
+        </ButtonGroup>
         <FieldDescription>Select the date of the event.</FieldDescription>
         <Popover>
           <Dialog showCloseButton={false}>

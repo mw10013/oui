@@ -7,7 +7,6 @@ import {
   focusVisibleStyles,
 } from "@/registry/default/ui/oui-base";
 import { fieldStyles } from "@/registry/default/ui/oui-field";
-import { inputStyles } from "@/registry/default/ui/oui-input";
 import { ChevronDown } from "lucide-react";
 import * as Rac from "react-aria-components";
 
@@ -29,6 +28,9 @@ export function DatePicker({
   );
 }
 
+/**
+ * Derived from shadcn SelectTrigger.
+ */
 export function DatePickerButton({
   className,
   size = "default",
@@ -55,21 +57,5 @@ export function DatePickerButton({
         </>
       ))}
     </Rac.Button>
-  );
-}
-
-export function DatePickerInput({
-  className,
-  ...props
-}: React.ComponentProps<typeof Rac.DateInput>) {
-  return (
-    <Rac.DateInput
-      data-slot="date-picker-input"
-      className={composeTailwindRenderProps(className, [
-        inputStyles,
-        "flex items-center data-focus-within:border-ring data-focus-within:ring-[3px] data-focus-within:ring-ring/50",
-      ])}
-      {...props}
-    />
   );
 }
