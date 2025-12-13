@@ -11,11 +11,13 @@ import {
   CalendarHeaderCell,
   CalendarHeading,
 } from "@/registry/default/ui/oui-calendar";
-import { DateFieldSegment } from "@/registry/default/ui/oui-date-field";
+import {
+  DateFieldInput,
+  DateFieldSegment,
+} from "@/registry/default/ui/oui-date-field";
 import {
   DatePicker,
   DatePickerButton,
-  DatePickerInput,
 } from "@/registry/default/ui/oui-date-picker";
 import { Dialog } from "@/registry/default/ui/oui-dialog";
 import { FieldDescription, FieldLabel } from "@/registry/default/ui/oui-field";
@@ -28,14 +30,17 @@ export default function Component() {
       <DatePicker>
         <FieldLabel>Event date</FieldLabel>
         <Rac.Group>
-          <DatePickerInput>
+          {/* <DatePickerInput>
             {(segment) => <DateFieldSegment segment={segment} />}
-          </DatePickerInput>
+          </DatePickerInput> */}
+          <DateFieldInput>
+            {(segment) => <DateFieldSegment segment={segment} />}
+          </DateFieldInput>
           <DatePickerButton />
         </Rac.Group>
         <FieldDescription>Select the date of the event.</FieldDescription>
         <Popover>
-          <Dialog>
+          <Dialog showCloseButton={false}>
             <Calendar>
               <CalendarHeader>
                 <CalendarButton slot="previous" />
