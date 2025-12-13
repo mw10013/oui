@@ -1,0 +1,27 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "oui-date-picker",
+  "type": "registry:ui",
+  "title": "Date Picker",
+  "description": "React aria components DatePicker with shadcn characteristics.",
+  "dependencies": [
+    "lucide-react"
+  ],
+  "registryDependencies": [
+    "@oui/oui-field",
+    "@oui/oui-base",
+    "@oui/oui-input"
+  ],
+  "files": [
+    {
+      "path": "registry/default/ui/oui-date-picker.tsx",
+      "content": "\"use client\";\n\nimport type { FieldStylesProps } from \"@/registry/default/ui/oui-field\";\nimport {\n  composeTailwindRenderProps,\n  disabledStyles,\n  focusVisibleStyles,\n} from \"@/registry/default/ui/oui-base\";\nimport { fieldStyles } from \"@/registry/default/ui/oui-field\";\nimport { inputStyles } from \"@/registry/default/ui/oui-input\";\nimport { ChevronDown } from \"lucide-react\";\nimport * as Rac from \"react-aria-components\";\n\nexport function DatePicker({\n  className,\n  orientation,\n  ...props\n}: React.ComponentProps<typeof Rac.DatePicker> & FieldStylesProps) {\n  return (\n    <Rac.DatePicker\n      data-slot=\"date-picker\"\n      data-slot-type=\"field\"\n      className={composeTailwindRenderProps(\n        className,\n        fieldStyles({ orientation }),\n      )}\n      {...props}\n    />\n  );\n}\n\nexport function DatePickerButton({\n  className,\n  size = \"default\",\n  children,\n  ...props\n}: Rac.ButtonProps & {\n  size?: \"sm\" | \"default\";\n}) {\n  return (\n    <Rac.Button\n      data-slot=\"date-picker-button\"\n      data-size={size}\n      className={composeTailwindRenderProps(className, [\n        focusVisibleStyles,\n        disabledStyles,\n        \"flex w-fit items-center justify-between gap-2 rounded-md border border-input bg-transparent px-3 py-2 text-sm whitespace-nowrap shadow-xs transition-[color,box-shadow] aria-invalid:border-destructive aria-invalid:ring-destructive/20 data-disabled:cursor-not-allowed data-[size=default]:h-9 data-[size=sm]:h-8 dark:bg-input/30 dark:aria-invalid:ring-destructive/40 dark:data-hovered:bg-input/50 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4 [&_svg:not([class*='text-'])]:text-muted-foreground\",\n      ])}\n      {...props}\n    >\n      {Rac.composeRenderProps(children, (children) => (\n        <>\n          {children}\n          <ChevronDown className=\"size-4 opacity-50\" aria-hidden=\"true\" />\n        </>\n      ))}\n    </Rac.Button>\n  );\n}\n\nexport function DatePickerInput({\n  className,\n  ...props\n}: React.ComponentProps<typeof Rac.DateInput>) {\n  return (\n    <Rac.DateInput\n      data-slot=\"date-picker-input\"\n      className={composeTailwindRenderProps(className, [\n        inputStyles,\n        \"flex items-center data-focus-within:border-ring data-focus-within:ring-[3px] data-focus-within:ring-ring/50\",\n      ])}\n      {...props}\n    />\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "tags": [
+      "date-picker"
+    ]
+  }
+}

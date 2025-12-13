@@ -696,7 +696,7 @@
       ],
       "registryDependencies": ["@oui/oui-field", "@oui/oui-base"],
       "dependencies": ["react-aria-components", "@internationalized/date"],
-      "meta": { 
+      "meta": {
         "tags": ["date-field"]
       }
     },
@@ -713,6 +713,50 @@
       "dependencies": ["@internationalized/date"],
       "meta": {
         "tags": ["date-field", "field"],
+        "canPreview": true,
+        "canOpenInV0": true
+      }
+    },
+    {
+      "name": "oui-date-picker",
+      "type": "registry:ui",
+      "title": "Date Picker",
+      "description": "React aria components DatePicker with shadcn characteristics.",
+      "files": [
+        {
+          "path": "registry/default/ui/oui-date-picker.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "registryDependencies": [
+        "@oui/oui-field",
+        "@oui/oui-base",
+        "@oui/oui-input"
+      ],
+      "dependencies": ["lucide-react"],
+      "meta": {
+        "tags": ["date-picker"]
+      }
+    },
+    {
+      "name": "oui-date-picker-demo",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/default/components/oui-date-picker-demo.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "@oui/oui-calendar",
+        "@oui/oui-date-field",
+        "@oui/oui-date-picker",
+        "@oui/oui-dialog",
+        "@oui/oui-field",
+        "@oui/oui-popover"
+      ],
+      "meta": {
+        "tags": ["date-picker", "calendar", "date-field"],
         "canPreview": true,
         "canOpenInV0": true
       }

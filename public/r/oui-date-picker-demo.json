@@ -1,0 +1,29 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "oui-date-picker-demo",
+  "type": "registry:component",
+  "registryDependencies": [
+    "@oui/oui-calendar",
+    "@oui/oui-date-field",
+    "@oui/oui-date-picker",
+    "@oui/oui-dialog",
+    "@oui/oui-field",
+    "@oui/oui-popover"
+  ],
+  "files": [
+    {
+      "path": "registry/default/components/oui-date-picker-demo.tsx",
+      "content": "\"use client\";\n\nimport {\n  Calendar,\n  CalendarButton,\n  CalendarCell,\n  CalendarGrid,\n  CalendarGridBody,\n  CalendarGridHeader,\n  CalendarHeader,\n  CalendarHeaderCell,\n  CalendarHeading,\n} from \"@/registry/default/ui/oui-calendar\";\nimport { DateFieldSegment } from \"@/registry/default/ui/oui-date-field\";\nimport {\n  DatePicker,\n  DatePickerButton,\n  DatePickerInput,\n} from \"@/registry/default/ui/oui-date-picker\";\nimport { Dialog } from \"@/registry/default/ui/oui-dialog\";\nimport { FieldDescription, FieldLabel } from \"@/registry/default/ui/oui-field\";\nimport { Popover } from \"@/registry/default/ui/oui-popover\";\nimport * as Rac from \"react-aria-components\";\n\nexport default function Component() {\n  return (\n    <div className=\"w-full max-w-md\">\n      <DatePicker>\n        <FieldLabel>Event date</FieldLabel>\n        <Rac.Group>\n          <DatePickerInput>\n            {(segment) => <DateFieldSegment segment={segment} />}\n          </DatePickerInput>\n          <DatePickerButton />\n        </Rac.Group>\n        <FieldDescription>Select the date of the event.</FieldDescription>\n        <Popover>\n          <Dialog>\n            <Calendar>\n              <CalendarHeader>\n                <CalendarButton slot=\"previous\" />\n                <CalendarHeading />\n                <CalendarButton slot=\"next\" />\n              </CalendarHeader>\n              <CalendarGrid>\n                <CalendarGridHeader>\n                  {(day) => <CalendarHeaderCell>{day}</CalendarHeaderCell>}\n                </CalendarGridHeader>\n                <CalendarGridBody>\n                  {(date) => <CalendarCell date={date} />}\n                </CalendarGridBody>\n              </CalendarGrid>\n            </Calendar>\n          </Dialog>\n        </Popover>\n      </DatePicker>\n    </div>\n  );\n}\n",
+      "type": "registry:component"
+    }
+  ],
+  "meta": {
+    "tags": [
+      "date-picker",
+      "calendar",
+      "date-field"
+    ],
+    "canPreview": true,
+    "canOpenInV0": true
+  }
+}
