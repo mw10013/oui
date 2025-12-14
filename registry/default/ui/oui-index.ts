@@ -26,6 +26,7 @@ export * from "@/registry/default/ui/oui-base";
 export * from "@/registry/default/ui/oui-button";
 export * from "@/registry/default/ui/oui-button-group";
 export * from "@/registry/default/ui/oui-calendar";
+export * from "@/registry/default/ui/oui-card";
 export * from "@/registry/default/ui/oui-checkbox-group";
 export * from "@/registry/default/ui/oui-checkbox";
 export * from "@/registry/default/ui/oui-combo-box";
@@ -60,6 +61,5 @@ export * from "@/registry/default/ui/oui-tooltip";
 
 export * from "@/registry/default/components/oui-alert-ex-form";
 export * from "@/registry/default/components/oui-badge-ex";
-export * from "@/registry/default/components/oui-card-ex";
 export * from "@/registry/default/ui/oui-pagination";
 export * from "@/registry/default/components/oui-sidebar-ex";

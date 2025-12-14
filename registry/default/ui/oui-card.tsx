@@ -1,7 +1,12 @@
 "use client";
 
+import * as React from "react";
+import { focusVisibleStyles } from "@/registry/default/ui/oui-base";
+import * as Rac from "react-aria-components";
+import { twMerge } from "tailwind-merge";
+
 /**
- * The `oui-card-ex` module provides CardExGridListItem to use with shadcn Card.
+ * React aria components GridListItem with shadcn characteristics for Card.
  *
  * @example
  * ```tsx
@@ -18,14 +23,10 @@
  * </Card>
  * ```
  */
-import { focusVisibleStyles } from "@/registry/default/ui/oui-base";
-import * as Rac from "react-aria-components";
-import { twMerge } from "tailwind-merge";
-
-export function CardExGridListItem({
+export function CardGridListItem({
   className,
   ...props
-}: Rac.GridListItemProps) {
+}: React.ComponentProps<typeof Rac.GridListItem>) {
   return (
     <Rac.GridListItem
       {...props}

@@ -462,19 +462,19 @@
       }
     },
     {
-      "name": "oui-card-ex",
-      "type": "registry:component",
-      "title": "Card Ex",
-      "description": "Extension providing CardExGridListItem for shadcn Card.",
+      "name": "oui-card",
+      "type": "registry:ui",
+      "title": "Card",
+      "description": "CardGridListItem for shadcn Card.",
       "files": [
         {
-          "path": "registry/default/components/oui-card-ex.tsx",
-          "type": "registry:component"
+          "path": "registry/default/ui/oui-card.tsx",
+          "type": "registry:ui"
         }
       ],
       "registryDependencies": ["@oui/oui-base"],
       "meta": {
-        "tags": ["card", "card-ex", "grid-list"]
+        "tags": ["card", "grid-list"]
       }
     },
     {
@@ -1073,6 +1073,7 @@
         "@oui/oui-button",
         "@oui/oui-button-group",
         "@oui/oui-calendar",
+        "@oui/oui-card",
         "@oui/oui-checkbox-group",
         "@oui/oui-checkbox",
         "@oui/oui-combo-box",
@@ -1104,7 +1105,6 @@
         "@oui/oui-tooltip",
         "@oui/oui-alert-ex-form",
         "@oui/oui-badge-ex",
-        "@oui/oui-card-ex",
         "@oui/oui-sidebar-ex"
       ],
       "meta": {

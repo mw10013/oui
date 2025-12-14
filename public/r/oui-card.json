@@ -1,0 +1,23 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "oui-card",
+  "type": "registry:ui",
+  "title": "Card",
+  "description": "CardGridListItem for shadcn Card.",
+  "registryDependencies": [
+    "@oui/oui-base"
+  ],
+  "files": [
+    {
+      "path": "registry/default/ui/oui-card.tsx",
+      "content": "\"use client\";\n\nimport * as React from \"react\";\nimport { focusVisibleStyles } from \"@/registry/default/ui/oui-base\";\nimport * as Rac from \"react-aria-components\";\nimport { twMerge } from \"tailwind-merge\";\n\n/**\n * React aria components GridListItem with shadcn characteristics for Card.\n *\n * @example\n * ```tsx\n * import * as Oui from \"@/components/ui/oui-index\";\n *\n * <Card>\n *   <CardContent>\n *     <Rac.GridList aria-label=\"Items\">\n *       <Oui.CardExGridListItem textValue=\"Item 1\">\n *         Item content\n *       </Oui.CardExGridListItem>\n *     </Rac.GridList>\n *   </CardContent>\n * </Card>\n * ```\n */\nexport function CardGridListItem({\n  className,\n  ...props\n}: React.ComponentProps<typeof Rac.GridListItem>) {\n  return (\n    <Rac.GridListItem\n      {...props}\n      className={Rac.composeRenderProps(className, (className) =>\n        twMerge(\n          focusVisibleStyles,\n          \"rounded-md data-focus-visible:ring-offset-4 data-focus-visible:ring-offset-card\",\n          className,\n        ),\n      )}\n    />\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "tags": [
+      "card",
+      "grid-list"
+    ]
+  }
+}

@@ -11,7 +11,6 @@ export const registryTags = [
   "button-group",
   "calendar",
   "card",
-  "card-ex",
   "checkbox",
   "checkbox-group",
   "combo-box",

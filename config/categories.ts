@@ -72,7 +72,7 @@ export const categories: Category[] = [
   {
     name: "Card",
     slug: "card",
-    components: [{ name: "oui-card-ex" }],
+    components: [{ name: "oui-card" }],
   },
   {
     name: "Checkbox",
