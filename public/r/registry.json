@@ -1088,6 +1088,7 @@
         "@oui/oui-menu",
         "@oui/oui-modal",
         "@oui/oui-number-field",
+        "@oui/oui-pagination",
         "@oui/oui-popover",
         "@oui/oui-radio-group",
         "@oui/oui-search-field",
@@ -1103,7 +1104,6 @@
         "@oui/oui-alert-ex-form",
         "@oui/oui-badge-ex",
         "@oui/oui-card-ex",
-        "@oui/oui-list-box-ex-pagination",
         "@oui/oui-modal-ex-sheet",
         "@oui/oui-sidebar-ex"
       ],
@@ -1623,38 +1623,6 @@
       }
     },
     {
-      "name": "oui-list-box-ex-pagination",
-      "type": "registry:component",
-      "title": "List Box Ex Pagination",
-      "description": "Reusable wrapper for List Box with pagination.",
-      "files": [
-        {
-          "path": "registry/default/components/oui-list-box-ex-pagination.tsx",
-          "type": "registry:component"
-        }
-      ],
-      "registryDependencies": ["@oui/oui-button"],
-      "meta": {
-        "tags": ["list-box", "list-box-ex-pagination"]
-      }
-    },
-    {
-      "name": "oui-list-box-ex-pagination-demo",
-      "type": "registry:component",
-      "files": [
-        {
-          "path": "registry/default/components/oui-list-box-ex-pagination-demo.tsx",
-          "type": "registry:component"
-        }
-      ],
-      "registryDependencies": ["@oui/oui-list-box-ex-pagination"],
-      "meta": {
-        "tags": ["list-box", "list-box-ex-pagination"],
-        "canPreview": true,
-        "canOpenInV0": true
-      }
-    },
-    {
       "name": "oui-menu",
       "type": "registry:ui",
       "title": "Menu",
@@ -1923,6 +1891,39 @@
       "dependencies": ["lucide-react"],
       "meta": {
         "tags": ["number-field", "field", "group", "button-group"],
+        "canPreview": true,
+        "canOpenInV0": true
+      }
+    },
+    {
+      "name": "oui-pagination",
+      "type": "registry:ui",
+      "title": "Pagination",
+      "description": "React aria components List Box with shadcn characteristics for pagination.",
+      "files": [
+        {
+          "path": "registry/default/ui/oui-pagination.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "registryDependencies": ["@oui/oui-base", "@oui/oui-button"],
+      "dependencies": ["react-aria-components", "tailwind-merge"],
+      "meta": {
+        "tags": ["pagination"]
+      }
+    },
+    {
+      "name": "oui-pagination-demo",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/default/components/oui-pagination-demo.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": ["@oui/oui-pagination"],
+      "meta": {
+        "tags": ["pagination"],
         "canPreview": true,
         "canOpenInV0": true
       }

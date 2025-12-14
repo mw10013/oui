@@ -36,11 +36,13 @@ export const registryTags = [
   "modal",
   "modal-ex-sheet",
   "number-field",
+  "pagination",
   "popover",
   "radio-group",
   "search-field",
   "select",
   "separator",
+  "sheet",
   "sidebar",
   "sidebar-ex",
   "slider",
@@ -64,7 +66,6 @@ export const registryTags = [
   "multiple",
   "provider",
   "react-router",
-  "sheet",
   "theme",
 ] as const;
 

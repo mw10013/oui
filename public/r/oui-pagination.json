@@ -1,0 +1,27 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "oui-pagination",
+  "type": "registry:ui",
+  "title": "Pagination",
+  "description": "React aria components List Box with shadcn characteristics for pagination.",
+  "dependencies": [
+    "react-aria-components",
+    "tailwind-merge"
+  ],
+  "registryDependencies": [
+    "@oui/oui-base",
+    "@oui/oui-button"
+  ],
+  "files": [
+    {
+      "path": "registry/default/ui/oui-pagination.tsx",
+      "content": "\"use client\";\n\nimport { composeTailwindRenderProps } from \"@/registry/default/ui/oui-base\";\nimport { buttonVariants } from \"@/registry/default/ui/oui-button\";\nimport * as Rac from \"react-aria-components\";\nimport { twMerge } from \"tailwind-merge\";\n\n/**\n * RAC ListBox with shadcn characteristics for pagination.\n *\n * Derived from shadcn Pagination component.\n */\nexport function Pagination<T extends object>({\n  className,\n  \"aria-label\": ariaLabel = \"Pagination\",\n  ...props\n}: Rac.ListBoxProps<T>) {\n  return (\n    <nav aria-label=\"pagination\" className=\"mx-auto flex w-full justify-center\">\n      <Rac.ListBox\n        data-slot=\"pagination\"\n        aria-label={ariaLabel}\n        orientation=\"horizontal\"\n        selectionMode=\"single\"\n        className={composeTailwindRenderProps(\n          className,\n          \"flex flex-row items-center gap-1\",\n        )}\n        {...props}\n      />\n    </nav>\n  );\n}\n\n/**\n * Pagination item styled as a button. Selected items use outline variant, others use ghost.\n */\nexport function PaginationItem<T extends object>({\n  textValue,\n  className,\n  children,\n  ...props\n}: Rac.ListBoxItemProps<T>) {\n  return (\n    <Rac.ListBoxItem\n      textValue={\n        textValue ??\n        (typeof children === \"string\"\n          ? children\n          : typeof children === \"number\"\n            ? String(children)\n            : undefined)\n      }\n      className={Rac.composeRenderProps(className, (className, renderProps) =>\n        twMerge(\n          \"cursor-pointer\",\n          buttonVariants({\n            ...renderProps,\n            variant: renderProps.isSelected ? \"outline\" : \"ghost\",\n            className,\n          }),\n        ),\n      )}\n      {...props}\n    >\n      {children}\n    </Rac.ListBoxItem>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "tags": [
+      "pagination"
+    ]
+  }
+}

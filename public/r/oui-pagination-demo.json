@@ -1,0 +1,22 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "oui-pagination-demo",
+  "type": "registry:component",
+  "registryDependencies": [
+    "@oui/oui-pagination"
+  ],
+  "files": [
+    {
+      "path": "registry/default/components/oui-pagination-demo.tsx",
+      "content": "\"use client\";\n\nimport {\n  Pagination,\n  PaginationItem,\n} from \"@/registry/default/ui/oui-pagination\";\n\nexport default function Component() {\n  return (\n    <div className=\"flex flex-col gap-6\">\n      <Pagination defaultSelectedKeys={[\"2\"]}>\n        <PaginationItem id=\"prev\">Previous</PaginationItem>\n        <PaginationItem id=\"1\">1</PaginationItem>\n        <PaginationItem id=\"2\">2</PaginationItem>\n        <PaginationItem id=\"3\">3</PaginationItem>\n        <PaginationItem id=\"next\">Next</PaginationItem>\n      </Pagination>\n    </div>\n  );\n}\n",
+      "type": "registry:component"
+    }
+  ],
+  "meta": {
+    "tags": [
+      "pagination"
+    ],
+    "canPreview": true,
+    "canOpenInV0": true
+  }
+}

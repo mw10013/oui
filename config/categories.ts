@@ -251,6 +251,11 @@ export const categories: Category[] = [
     ],
   },
   {
+    name: "Pagination",
+    slug: "pagination",
+    components: [{ name: "oui-pagination" }, { name: "oui-pagination-demo" }],
+  },
+  {
     name: "Popover",
     slug: "popover",
     components: [{ name: "oui-popover" }, { name: "oui-popover-demo" }],
