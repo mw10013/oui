@@ -1,5 +1,5 @@
-import type { AlertExFormActionResult } from "@/registry/default/components/oui-alert-ex-form";
-import { AlertExForm } from "@/registry/default/components/oui-alert-ex-form";
+import type { AlertFormActionResult } from "@/registry/default/ui/oui-alert";
+import { AlertForm } from "@/registry/default/ui/oui-alert";
 import { Button } from "@/registry/default/ui/oui-button";
 import { FieldError, FieldLabel } from "@/registry/default/ui/oui-field";
 import { Input } from "@/registry/default/ui/oui-input";
@@ -7,7 +7,7 @@ import { TextField } from "@/registry/default/ui/oui-text-field";
 import * as Rac from "react-aria-components";
 
 export default function Component() {
-  const actionData: AlertExFormActionResult = {
+  const actionData: AlertFormActionResult = {
     success: false,
     message: "Failed to send magic link",
     details: "Please check your email address and try again.",
@@ -19,7 +19,7 @@ export default function Component() {
       className="flex max-w-sm flex-col gap-6"
       validationErrors={actionData.validationErrors}
     >
-      <AlertExForm
+      <AlertForm
         success={actionData.success}
         message={actionData.message}
         details={actionData.details}

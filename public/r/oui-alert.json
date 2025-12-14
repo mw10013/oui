@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "oui-alert",
+  "type": "registry:ui",
+  "title": "Alert",
+  "description": "A shadcn Alert for a form displaying form action result.",
+  "dependencies": [
+    "react-aria-components"
+  ],
+  "registryDependencies": [
+    "alert"
+  ],
+  "files": [
+    {
+      "path": "registry/default/ui/oui-alert.tsx",
+      "content": "import {\n  Alert,\n  AlertDescription,\n  AlertTitle,\n} from \"@/registry/default/ui/alert\";\nimport * as Rac from \"react-aria-components\";\n\nexport interface AlertFormActionResult {\n  success: boolean;\n  message?: string;\n  details?: string | string[];\n  validationErrors?: Rac.FormProps[\"validationErrors\"];\n}\n\n/**\n * A shadcn Alert for a form displaying form action result.\n * @param props - Component props including success, message, details.\n */\nexport function AlertForm({\n  success,\n  message,\n  details,\n  className,\n  ...props\n}: React.ComponentProps<typeof Alert> &\n  Partial<Pick<AlertFormActionResult, \"success\" | \"message\" | \"details\">>) {\n  const detailsArray = Array.isArray(details)\n    ? details\n    : details\n      ? [details]\n      : [];\n  if (success === undefined) return null;\n  if (!message && detailsArray.length === 0) return null;\n\n  return (\n    <Alert\n      data-slot=\"alert-form\"\n      variant={success ? \"default\" : \"destructive\"}\n      className={className}\n      {...props}\n    >\n      {message && <AlertTitle>{message}</AlertTitle>}\n      {detailsArray.length > 0 && (\n        <AlertDescription>\n          {detailsArray.map((detail, i) => (\n            <div key={i}>{detail}</div>\n          ))}\n        </AlertDescription>\n      )}\n    </Alert>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "tags": [
+      "alert"
+    ]
+  }
+}

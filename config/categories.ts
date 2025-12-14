@@ -12,8 +12,8 @@ export const categories: Category[] = [
     name: "Alert",
     slug: "alert",
     components: [
-      { name: "oui-alert-ex-form" },
-      { name: "oui-alert-ex-form-demo" },
+      { name: "oui-alert" },
+      { name: "oui-alert-demo" },
     ],
   },
   {
@@ -216,8 +216,6 @@ export const categories: Category[] = [
       { name: "oui-list-box" },
       { name: "oui-list-box-demo" },
       { name: "oui-list-box-demo-multiple" },
-      { name: "oui-list-box-ex-pagination" },
-      { name: "oui-list-box-ex-pagination-demo" },
     ],
   },
   {
@@ -236,11 +234,7 @@ export const categories: Category[] = [
   {
     name: "Modal",
     slug: "modal",
-    components: [
-      { name: "oui-modal" },
-      { name: "oui-modal-ex-sheet-demo" },
-      { name: "oui-modal-ex-sheet-demo-sides" },
-    ],
+    components: [{ name: "oui-modal" }],
   },
   {
     name: "Number Field",

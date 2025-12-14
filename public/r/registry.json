@@ -4,40 +4,40 @@
   "homepage": "https://oui.mw10013.workers.dev",
   "items": [
     {
-      "name": "oui-alert-ex-form",
-      "type": "registry:component",
-      "title": "Alert Ex Form",
-      "description": "Reusable wrapper for shadcn Alert that displays an alert for form action result.",
+      "name": "oui-alert",
+      "type": "registry:ui",
+      "title": "Alert",
+      "description": "A shadcn Alert for a form displaying form action result.",
       "files": [
         {
-          "path": "registry/default/components/oui-alert-ex-form.tsx",
-          "type": "registry:component"
+          "path": "registry/default/ui/oui-alert.tsx",
+          "type": "registry:ui"
         }
       ],
       "registryDependencies": ["alert"],
       "dependencies": ["react-aria-components"],
       "meta": {
-        "tags": ["alert", "alert-ex-form"]
+        "tags": ["alert"]
       }
     },
     {
-      "name": "oui-alert-ex-form-demo",
+      "name": "oui-alert-demo",
       "type": "registry:component",
       "files": [
         {
-          "path": "registry/default/components/oui-alert-ex-form-demo.tsx",
+          "path": "registry/default/components/oui-alert-demo.tsx",
           "type": "registry:component"
         }
       ],
       "registryDependencies": [
-        "@oui/oui-alert-ex-form",
+        "@oui/oui-alert",
         "@oui/oui-button",
         "@oui/oui-field",
         "@oui/oui-input",
         "@oui/oui-text-field"
       ],
       "meta": {
-        "tags": ["alert", "alert-ex-form", "form", "field", "disabled"],
+        "tags": ["alert", "form"],
         "canPreview": true,
         "canOpenInV0": true
       }
@@ -1061,7 +1061,7 @@
       "name": "oui-index",
       "type": "registry:ui",
       "title": "Oui Index",
-      "description": "All ui and ex (extension or reusable wrapper) components. No demos.",
+      "description": "All oui ui components.",
       "files": [
         {
           "path": "registry/default/ui/oui-index.ts",
@@ -1069,6 +1069,7 @@
         }
       ],
       "registryDependencies": [
+        "@oui/oui-alert",
         "@oui/oui-badge",
         "@oui/oui-base",
         "@oui/oui-button",
@@ -1104,8 +1105,7 @@
         "@oui/oui-tabs",
         "@oui/oui-text-area",
         "@oui/oui-text-field",
-        "@oui/oui-tooltip",
-        "@oui/oui-alert-ex-form"
+        "@oui/oui-tooltip"
       ],
       "meta": {
         "tags": ["index"]

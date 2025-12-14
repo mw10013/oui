@@ -1,5 +1,5 @@
 /**
- * The `oui-index` module exports all ui and ex (extension and reusable wrapper) components.
+ * The `oui-index` module exports all oui ui components.
  * No demos.
  *
  * @example
@@ -10,10 +10,10 @@
  * ```
  */
 
-export * from "@/registry/default/ui/oui-base";
+export * from "@/registry/default/ui/oui-alert";
 
 /**
- * The `oui-index` module exports all ui and ex (extension and reusable wrapper) components.
+ * The `oui-index` module exports all oui ui components.
  * No demos.
  *
  * @example
@@ -24,6 +24,7 @@ export * from "@/registry/default/ui/oui-base";
  * ```
  */
 export * from "@/registry/default/ui/oui-badge";
+export * from "@/registry/default/ui/oui-base";
 export * from "@/registry/default/ui/oui-button";
 export * from "@/registry/default/ui/oui-button-group";
 export * from "@/registry/default/ui/oui-calendar";
@@ -61,5 +62,3 @@ export * from "@/registry/default/ui/oui-text-field";
 export * from "@/registry/default/ui/oui-toggle-button";
 export * from "@/registry/default/ui/oui-toggle-button-group";
 export * from "@/registry/default/ui/oui-tooltip";
-
-export * from "@/registry/default/components/oui-alert-ex-form";

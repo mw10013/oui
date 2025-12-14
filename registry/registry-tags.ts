@@ -1,8 +1,7 @@
 // Before adding a new tag, ensure it doesn't already exist in the array.
 export const registryTags = [
-  // Oui ui and ex tags
+  // Oui ui tags
   "alert",
-  "alert-ex-form",
   "autocomplete",
   "badge",
   "base",
@@ -29,10 +28,8 @@ export const registryTags = [
   "label",
   "link",
   "list-box",
-  "list-box-ex-pagination",
   "menu",
   "modal",
-  "modal-ex-sheet",
   "number-field",
   "pagination",
   "popover",
