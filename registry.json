@@ -1079,6 +1079,7 @@
         "@oui/oui-checkbox-group",
         "@oui/oui-checkbox",
         "@oui/oui-combo-box",
+        "@oui/oui-date-field",
         "@oui/oui-dialog",
         "@oui/oui-disclosure",
         "@oui/oui-field",
@@ -1105,6 +1106,8 @@
         "@oui/oui-tabs",
         "@oui/oui-text-area",
         "@oui/oui-text-field",
+        "@oui/oui-toggle-button",
+        "@oui/oui-toggle-button-group",
         "@oui/oui-tooltip"
       ],
       "meta": {
