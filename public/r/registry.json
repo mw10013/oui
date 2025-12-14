@@ -1096,6 +1096,7 @@
         "@oui/oui-select",
         "@oui/oui-separator",
         "@oui/oui-sheet",
+        "@oui/oui-sidebar",
         "@oui/oui-slider",
         "@oui/oui-switch",
         "@oui/oui-table",
@@ -1104,8 +1105,7 @@
         "@oui/oui-text-field",
         "@oui/oui-tooltip",
         "@oui/oui-alert-ex-form",
-        "@oui/oui-badge-ex",
-        "@oui/oui-sidebar-ex"
+        "@oui/oui-badge-ex"
       ],
       "meta": {
         "tags": ["index"]
@@ -2252,20 +2252,20 @@
       }
     },
     {
-      "name": "oui-sidebar-ex",
-      "type": "registry:component",
-      "title": "Sidebar Ex",
-      "description": "Extension providing SidebarExTrigger, SidebarExTree, and SidebarExButton for shadcn Sidebar.",
+      "name": "oui-sidebar",
+      "type": "registry:ui",
+      "title": "Sidebar",
+      "description": "Sidebar Trigger, Sidebar Tree, and Sidebar Button for shadcn Sidebar.",
       "files": [
         {
-          "path": "registry/default/components/oui-sidebar-ex.tsx",
-          "type": "registry:component"
+          "path": "registry/default/ui/oui-sidebar.tsx",
+          "type": "registry:ui"
         }
       ],
       "registryDependencies": ["sidebar", "@oui/oui-base", "@oui/oui-button"],
       "dependencies": ["lucide-react"],
       "meta": {
-        "tags": ["sidebar", "sidebar-ex", "tree"]
+        "tags": ["sidebar", "tree"]
       }
     },
     {

@@ -317,7 +317,7 @@ export const categories: Category[] = [
   {
     name: "Sidebar",
     slug: "sidebar",
-    components: [{ name: "oui-sidebar-ex" }],
+    components: [{ name: "oui-sidebar" }],
   },
   {
     name: "Slider",

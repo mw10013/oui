@@ -1,7 +1,7 @@
 import {
-  SidebarExTree,
-  SidebarExTrigger,
-} from "@/registry/default/components/oui-sidebar-ex";
+  SidebarTree,
+  SidebarTrigger,
+} from "@/registry/default/ui/oui-sidebar";
 import * as Oui from "@/registry/default/ui/oui-index";
 import {
   Sidebar,
@@ -31,16 +31,16 @@ export function AppSidebar() {
   return (
     <Sidebar>
       <SidebarContent>
-        <SidebarExTree aria-label="Admin Navigation" items={items} />
+        <SidebarTree aria-label="Admin Navigation" items={items} />
       </SidebarContent>
       <SidebarFooter>
         <Rac.MenuTrigger>
-          <Oui.SidebarExButton>
+          <Oui.SidebarButton>
             <div className="grid flex-1 text-left text-sm leading-tight">
               <span className="truncate font-medium">user@example.com</span>
             </div>
             <ChevronsUpDown className="ml-auto size-4" />
-          </Oui.SidebarExButton>
+          </Oui.SidebarButton>
           <Oui.Popover>
             <Oui.Menu className="min-w-56 rounded-lg">
               <Rac.MenuSection>
@@ -66,7 +66,7 @@ export default function RouteComponent() {
     <SidebarProvider>
       <AppSidebar />
       <main>
-        <SidebarExTrigger />
+        <SidebarTrigger />
         <div className="flex flex-col gap-2 px-4">Sidebar Playground</div>
       </main>
     </SidebarProvider>
