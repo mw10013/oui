@@ -3,7 +3,7 @@
   "name": "oui-sheet",
   "type": "registry:ui",
   "title": "Sheet",
-  "description": "Modal sheet component for sliding in from edges.",
+  "description": "A className function to style a react aria components Modal as a shadcn Sheet.",
   "dependencies": [
     "react-aria-components",
     "class-variance-authority"

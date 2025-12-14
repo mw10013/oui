@@ -8,7 +8,7 @@ export function Announcement() {
       href="https://github.com/mw10013/cloudflare-react-router-saas"
       target="_blank"
       rel="noopener noreferrer"
-      className={Oui.badgeExClassName({ variant: "secondary" })}
+      className={Oui.badgeClassName({ variant: "secondary" })}
     >
       <span className="flex size-2 rounded-full bg-blue-500" title="New" />
       Example: Open-source saas template using Oui <ArrowRightIcon />

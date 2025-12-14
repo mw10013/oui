@@ -111,34 +111,34 @@
       }
     },
     {
-      "name": "oui-badge-ex",
-      "type": "registry:component",
-      "title": "Badge Ex",
-      "description": "Badge extension that provides a className function to style a react aria component as a shadcn Badge",
+      "name": "oui-badge",
+      "type": "registry:ui",
+      "title": "Badge",
+      "description": "A className function to style a react aria component as a shadcn Badge",
       "files": [
         {
-          "path": "registry/default/components/oui-badge-ex.tsx",
-          "type": "registry:component"
+          "path": "registry/default/ui/oui-badge.tsx",
+          "type": "registry:ui"
         }
       ],
       "registryDependencies": ["@oui/oui-base"],
       "meta": {
-        "tags": ["badge", "badge-ex"]
+        "tags": ["badge"]
       }
     },
     {
-      "name": "oui-badge-ex-demo",
+      "name": "oui-badge-demo",
       "type": "registry:component",
       "files": [
         {
-          "path": "registry/default/components/oui-badge-ex-demo.tsx",
+          "path": "registry/default/components/oui-badge-demo.tsx",
           "type": "registry:component"
         }
       ],
-      "registryDependencies": ["@oui/oui-badge-ex"],
+      "registryDependencies": ["@oui/oui-badge"],
       "dependencies": ["lucide-react"],
       "meta": {
-        "tags": ["badge", "badge-ex"],
+        "tags": ["badge"],
         "canPreview": true,
         "canOpenInV0": true
       }
@@ -1069,6 +1069,7 @@
         }
       ],
       "registryDependencies": [
+        "@oui/oui-badge",
         "@oui/oui-base",
         "@oui/oui-button",
         "@oui/oui-button-group",
@@ -1104,8 +1105,7 @@
         "@oui/oui-text-area",
         "@oui/oui-text-field",
         "@oui/oui-tooltip",
-        "@oui/oui-alert-ex-form",
-        "@oui/oui-badge-ex"
+        "@oui/oui-alert-ex-form"
       ],
       "meta": {
         "tags": ["index"]
@@ -2192,7 +2192,7 @@
       "name": "oui-sheet",
       "type": "registry:ui",
       "title": "Sheet",
-      "description": "Modal sheet component for sliding in from edges.",
+      "description": "A className function to style a react aria components Modal as a shadcn Sheet.",
       "files": [
         {
           "path": "registry/default/ui/oui-sheet.tsx",
