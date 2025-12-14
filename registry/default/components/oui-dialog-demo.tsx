@@ -20,8 +20,8 @@ export default function Component() {
       <Button variant="outline">Dialog</Button>
       <ModalOverlay isDismissable>
         <Modal className="sm:max-w-[425px]">
-          <Dialog>
-            <Rac.Form>
+          <Rac.Form>
+            <Dialog>
               <DialogHeader>
                 <DialogTitle>Edit profile</DialogTitle>
                 <DialogDescription>
@@ -29,18 +29,16 @@ export default function Component() {
                   done.
                 </DialogDescription>
               </DialogHeader>
-              <div className="grid gap-4 py-4">
-                <TextField name="name" autoFocus defaultValue="Pedro Duarte">
-                  <FieldLabel>Name</FieldLabel>
-                  <Input />
-                  <FieldError />
-                </TextField>
-                <TextField name="username" defaultValue="@peduarte">
-                  <FieldLabel>Username</FieldLabel>
-                  <Input />
-                  <FieldError />
-                </TextField>
-              </div>
+              <TextField name="name" autoFocus defaultValue="Pedro Duarte">
+                <FieldLabel>Name</FieldLabel>
+                <Input />
+                <FieldError />
+              </TextField>
+              <TextField name="username" defaultValue="@peduarte">
+                <FieldLabel>Username</FieldLabel>
+                <Input />
+                <FieldError />
+              </TextField>
               <DialogFooter>
                 <Button variant="outline" slot="close">
                   Cancel
@@ -49,8 +47,8 @@ export default function Component() {
                   Save changes
                 </Button>
               </DialogFooter>
-            </Rac.Form>
-          </Dialog>
+            </Dialog>
+          </Rac.Form>
         </Modal>
       </ModalOverlay>
     </Rac.DialogTrigger>

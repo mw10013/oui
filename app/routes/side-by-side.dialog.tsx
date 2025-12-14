@@ -69,8 +69,8 @@ export function OuiDialogDemo() {
       <Oui.Button variant="outline">Edit Profile</Oui.Button>
       <Oui.ModalOverlay isDismissable>
         <Oui.Modal className="sm:max-w-[425px]">
-          <Oui.Dialog>
-            <Rac.Form>
+          <Rac.Form>
+            <Oui.Dialog>
               <Oui.DialogHeader>
                 <Oui.DialogTitle>Edit profile</Oui.DialogTitle>
                 <Oui.DialogDescription>
@@ -83,14 +83,19 @@ export function OuiDialogDemo() {
                   name="name"
                   autoFocus
                   defaultValue="Pedro Duarte"
+                  className="grid grid-cols-4 items-center gap-4"
                 >
                   <Oui.FieldLabel>Name</Oui.FieldLabel>
-                  <Oui.Input />
+                  <Oui.Input className="col-span-3" />
                   <Oui.FieldError />
                 </Oui.TextField>
-                <Oui.TextField name="username" defaultValue="@peduarte">
+                <Oui.TextField
+                  name="username"
+                  defaultValue="@peduarte"
+                  className="grid grid-cols-4 items-center gap-4"
+                >
                   <Oui.FieldLabel>Username</Oui.FieldLabel>
-                  <Oui.Input />
+                  <Oui.Input className="col-span-3" />
                   <Oui.FieldError />
                 </Oui.TextField>
               </div>
@@ -102,8 +107,8 @@ export function OuiDialogDemo() {
                   Save changes
                 </Oui.Button>
               </Oui.DialogFooter>
-            </Rac.Form>
-          </Oui.Dialog>
+            </Oui.Dialog>
+          </Rac.Form>
         </Oui.Modal>
       </Oui.ModalOverlay>
     </Rac.DialogTrigger>
