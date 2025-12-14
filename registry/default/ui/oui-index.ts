@@ -1,6 +1,5 @@
 /**
- * The `oui-index` module exports all oui ui components.
- * No demos.
+ * The `oui-index` module exports all oui components.
  *
  * @example
  * ```ts
@@ -13,8 +12,7 @@
 export * from "@/registry/default/ui/oui-alert";
 
 /**
- * The `oui-index` module exports all oui ui components.
- * No demos.
+ * The `oui-index` module exports all oui components.
  *
  * @example
  * ```ts
