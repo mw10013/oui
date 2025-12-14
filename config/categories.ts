@@ -306,6 +306,15 @@ export const categories: Category[] = [
     components: [{ name: "oui-separator-demo" }],
   },
   {
+    name: "Sheet",
+    slug: "sheet",
+    components: [
+      { name: "oui-sheet" },
+      { name: "oui-sheet-demo" },
+      { name: "oui-sheet-demo-sides" },
+    ],
+  },
+  {
     name: "Sidebar",
     slug: "sidebar",
     components: [{ name: "oui-sidebar-ex" }],

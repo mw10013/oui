@@ -1,6 +1,5 @@
 "use client";
 
-import { modalExSheetClassName } from "@/registry/default/components/oui-modal-ex-sheet";
 import { Button } from "@/registry/default/ui/oui-button";
 import {
   Dialog,
@@ -11,6 +10,7 @@ import {
 } from "@/registry/default/ui/oui-dialog";
 import { Label } from "@/registry/default/ui/oui-label";
 import { Modal, ModalOverlay } from "@/registry/default/ui/oui-modal";
+import { sheetModalClassName } from "@/registry/default/ui/oui-sheet";
 import * as Rac from "react-aria-components";
 
 const SHEET_SIDES = ["top", "right", "bottom", "left"] as const;
@@ -18,7 +18,7 @@ const SHEET_SIDES = ["top", "right", "bottom", "left"] as const;
 export default function Component() {
   return (
     <div className="grid gap-2">
-      <Label>Modal Ex Sheet</Label>
+      <Label>Sheet</Label>
       <div className="flex flex-wrap gap-2">
         {SHEET_SIDES.map((side) => (
           <Rac.DialogTrigger key={side}>
@@ -26,7 +26,7 @@ export default function Component() {
               {side}
             </Button>
             <ModalOverlay isDismissable>
-              <Modal className={modalExSheetClassName({ side })}>
+              <Modal className={sheetModalClassName({ side })}>
                 <Dialog>
                   <DialogHeader>
                     <DialogTitle>Edit profile</DialogTitle>

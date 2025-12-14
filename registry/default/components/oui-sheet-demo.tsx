@@ -1,6 +1,5 @@
 "use client";
 
-import { modalExSheetClassName } from "@/registry/default/components/oui-modal-ex-sheet";
 import { Button } from "@/registry/default/ui/oui-button";
 import {
   Dialog,
@@ -9,20 +8,25 @@ import {
   DialogHeader,
   DialogTitle,
 } from "@/registry/default/ui/oui-dialog";
-import { FieldError, FieldLabel } from "@/registry/default/ui/oui-field";
+import {
+  FieldError,
+  FieldGroup,
+  FieldLabel,
+} from "@/registry/default/ui/oui-field";
 import { Input } from "@/registry/default/ui/oui-input";
 import { Modal, ModalOverlay } from "@/registry/default/ui/oui-modal";
+import { sheetModalClassName } from "@/registry/default/ui/oui-sheet";
 import { TextField } from "@/registry/default/ui/oui-text-field";
 import * as Rac from "react-aria-components";
 
 export default function Component() {
   return (
     <Rac.DialogTrigger>
-      <Button variant="outline">Modal Ex Sheet</Button>
+      <Button variant="outline">Sheet</Button>
       <ModalOverlay isDismissable>
-        <Modal className={modalExSheetClassName({ side: "right" })}>
-          <Dialog>
-            <Rac.Form>
+        <Modal className={sheetModalClassName({ side: "right" })}>
+          <Rac.Form>
+            <Dialog>
               <DialogHeader>
                 <DialogTitle>Edit profile</DialogTitle>
                 <DialogDescription>
@@ -30,7 +34,7 @@ export default function Component() {
                   done.
                 </DialogDescription>
               </DialogHeader>
-              <div className="grid gap-4 py-4">
+              <FieldGroup className="gap-4 py-4">
                 <TextField name="name" autoFocus>
                   <FieldLabel>Name</FieldLabel>
                   <Input defaultValue="Pedro Duarte" />
@@ -41,7 +45,7 @@ export default function Component() {
                   <Input defaultValue="@peduarte" />
                   <FieldError />
                 </TextField>
-              </div>
+              </FieldGroup>
               <DialogFooter>
                 <Button type="submit" slot="close">
                   Save changes
@@ -50,8 +54,8 @@ export default function Component() {
                   Close
                 </Button>
               </DialogFooter>
-            </Rac.Form>
-          </Dialog>
+            </Dialog>
+          </Rac.Form>
         </Modal>
       </ModalOverlay>
     </Rac.DialogTrigger>

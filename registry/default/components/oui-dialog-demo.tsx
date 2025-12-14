@@ -29,16 +29,18 @@ export default function Component() {
                   done.
                 </DialogDescription>
               </DialogHeader>
-              <TextField name="name" autoFocus defaultValue="Pedro Duarte">
-                <FieldLabel>Name</FieldLabel>
-                <Input />
-                <FieldError />
-              </TextField>
-              <TextField name="username" defaultValue="@peduarte">
-                <FieldLabel>Username</FieldLabel>
-                <Input />
-                <FieldError />
-              </TextField>
+              <div className="grid gap-4 py-4">
+                <TextField name="name" autoFocus defaultValue="Pedro Duarte">
+                  <FieldLabel>Name</FieldLabel>
+                  <Input />
+                  <FieldError />
+                </TextField>
+                <TextField name="username" defaultValue="@peduarte">
+                  <FieldLabel>Username</FieldLabel>
+                  <Input />
+                  <FieldError />
+                </TextField>
+              </div>
               <DialogFooter>
                 <Button variant="outline" slot="close">
                   Cancel

@@ -1094,6 +1094,7 @@
         "@oui/oui-search-field",
         "@oui/oui-select",
         "@oui/oui-separator",
+        "@oui/oui-sheet",
         "@oui/oui-slider",
         "@oui/oui-switch",
         "@oui/oui-table",
@@ -1104,7 +1105,6 @@
         "@oui/oui-alert-ex-form",
         "@oui/oui-badge-ex",
         "@oui/oui-card-ex",
-        "@oui/oui-modal-ex-sheet",
         "@oui/oui-sidebar-ex"
       ],
       "meta": {
@@ -1793,69 +1793,6 @@
       }
     },
     {
-      "name": "oui-modal-ex-sheet",
-      "type": "registry:component",
-      "title": "Modal Ex Sheet",
-      "description": "Reusable wrapper for a sheet Modal.",
-      "files": [
-        {
-          "path": "registry/default/components/oui-modal-ex-sheet.tsx",
-          "type": "registry:component"
-        }
-      ],
-      "registryDependencies": ["@oui/oui-modal"],
-      "meta": {
-        "tags": ["modal", "modal-ex-sheet", "sheet"]
-      }
-    },
-    {
-      "name": "oui-modal-ex-sheet-demo",
-      "type": "registry:component",
-      "files": [
-        {
-          "path": "registry/default/components/oui-modal-ex-sheet-demo.tsx",
-          "type": "registry:component"
-        }
-      ],
-      "registryDependencies": [
-        "@oui/oui-button",
-        "@oui/oui-dialog",
-        "@oui/oui-field",
-        "@oui/oui-input",
-        "@oui/oui-modal",
-        "@oui/oui-modal-ex-sheet",
-        "@oui/oui-text-field"
-      ],
-      "meta": {
-        "tags": ["modal", "modal-ex-sheet", "dialog", "sheet"],
-        "canPreview": true,
-        "canOpenInV0": true
-      }
-    },
-    {
-      "name": "oui-modal-ex-sheet-demo-sides",
-      "type": "registry:component",
-      "files": [
-        {
-          "path": "registry/default/components/oui-modal-ex-sheet.tsx",
-          "type": "registry:component"
-        }
-      ],
-      "registryDependencies": [
-        "@oui/oui-button",
-        "@oui/oui-dialog",
-        "@oui/oui-label",
-        "@oui/oui-modal",
-        "@oui/oui-modal-ex-sheet",
-        "@oui/oui-text-field"
-      ],
-      "meta": {
-        "tags": ["modal", "modal-ex-sheet", "dialog", "sheet"],
-        "canPreview": true,
-        "canOpenInV0": true
-      }
-    },
-    {
       "name": "oui-number-field",
       "type": "registry:ui",
       "title": "Number Field",
@@ -2247,6 +2184,69 @@
       "registryDependencies": ["@oui/oui-separator"],
       "meta": {
         "tags": ["separator"],
+        "canPreview": true,
+        "canOpenInV0": true
+      }
+    },
+    {
+      "name": "oui-sheet",
+      "type": "registry:ui",
+      "title": "Sheet",
+      "description": "Modal sheet component for sliding in from edges.",
+      "files": [
+        {
+          "path": "registry/default/ui/oui-sheet.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "registryDependencies": ["@oui/oui-base"],
+      "dependencies": ["react-aria-components", "class-variance-authority"],
+      "meta": {
+        "tags": ["sheet"]
+      }
+    },
+    {
+      "name": "oui-sheet-demo",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/default/components/oui-sheet-demo.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "@oui/oui-button",
+        "@oui/oui-dialog",
+        "@oui/oui-field",
+        "@oui/oui-input",
+        "@oui/oui-modal",
+        "@oui/oui-sheet",
+        "@oui/oui-text-field"
+      ],
+      "meta": {
+        "tags": ["sheet", "modal"],
+        "canPreview": true,
+        "canOpenInV0": true
+      }
+    },
+    {
+      "name": "oui-sheet-demo-sides",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/default/components/oui-sheet-demo-sides.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "@oui/oui-button",
+        "@oui/oui-dialog",
+        "@oui/oui-label",
+        "@oui/oui-modal",
+        "@oui/oui-sheet"
+      ],
+      "meta": {
+        "tags": ["sheet", "modal"],
         "canPreview": true,
         "canOpenInV0": true
       }
