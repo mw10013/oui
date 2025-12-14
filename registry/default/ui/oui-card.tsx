@@ -15,9 +15,9 @@ import { twMerge } from "tailwind-merge";
  * <Card>
  *   <CardContent>
  *     <Rac.GridList aria-label="Items">
- *       <Oui.CardExGridListItem textValue="Item 1">
+ *       <Oui.CardGridListItem textValue="Item 1">
  *         Item content
- *       </Oui.CardExGridListItem>
+ *       </Oui.CardGridListItem>
  *     </Rac.GridList>
  *   </CardContent>
  * </Card>
